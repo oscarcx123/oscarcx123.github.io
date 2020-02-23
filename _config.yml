@@ -113,6 +113,7 @@ symbols_count_time:
 # 备份hexo源文件
 backup:
   type: git
+  theme: next
   repository:
     github: git@github.com:oscarcx123/oscarcx123.github.io.git,hexo_source
     
