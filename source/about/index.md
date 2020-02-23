@@ -152,4 +152,6 @@ Minor <- Economics + Hungarian
     * 页面跳转不打断播放（[theme-next-pjax](https://github.com/theme-next/theme-next-pjax)）
 * 字数统计和阅读时长 - [hexo-symbols-count-time](https://github.com/theme-next/hexo-symbols-count-time)
 * 动态背景 - [theme-next-canvas-nest](https://github.com/theme-next/theme-next-canvas-nest)
-* Reading progress bar - 主题设置里开启
+* 阅读进度条 - 主题设置里找到Reading progress bar开启
+* 备份源文件 - [hexo-git-backup](https://github.com/coneycode/hexo-git-backup)
+    * 用Git bash执行hexo b就不会报错
