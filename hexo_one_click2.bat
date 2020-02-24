@@ -6,6 +6,4 @@ if "%confirm%"=="y" (
     call hexo_backup.bat
     call hexo_deploy.bat
     echo done!
-) else (
-    echo Be careful next time!
-pause
+)
