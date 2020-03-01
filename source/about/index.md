@@ -116,17 +116,20 @@ Minor <- Economics + Hungarian
 
 ## 游戏
 
-不太喜欢实时竞技类型的游戏，音游玩的稍微多些。
+不太喜欢实时竞技类型的游戏，RPG和音游玩的稍微多些。
 
-* Arcaea
-    * ptt 10.09
-    * 两周年活动把半价曲包都解锁了
-* Cytus
-    * 只打到8级曲
-* osu!mania
-    * [个人主页](https://osu.ppy.sh/users/13929448)
-    * 主要玩4k模式，5k水平还凑合，67k不行。
-    * 不打算冲全球10000名了，感觉难度太大
+* 音游
+    * Arcaea
+        * ptt 10.09
+        * 两周年活动把半价曲包都解锁了
+    * Cytus
+        * 只打到8级曲
+    * osu!mania
+        * [个人主页](https://osu.ppy.sh/users/13929448)
+        * 主要玩4k模式，5k水平还凑合，67k不行。
+        * 不打算冲全球10000名了，感觉难度太大
+* RPG
+    * Another Eden
 
 ## 动漫
 
@@ -154,4 +157,6 @@ Minor <- Economics + Hungarian
 * 动态背景 - [theme-next-canvas-nest](https://github.com/theme-next/theme-next-canvas-nest)
 * 阅读进度条 - 主题设置里找到Reading progress bar开启
 * 备份源文件 - [hexo-git-backup](https://github.com/coneycode/hexo-git-backup)
-    * 用Git bash执行hexo b就不会报错
+* 隐藏部分分类（比如日记） - [hexo-generator-index2](https://github.com/Jamling/hexo-generator-index2)
+* 批处理实现一键备份+部署
+* hexo server自动打开浏览器 - 修改Hexo/node_modules/hexo-server/lib/server.js

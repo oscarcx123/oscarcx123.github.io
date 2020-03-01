@@ -15,7 +15,7 @@ timezone: ''
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://yoursite.com
 root: /
-permalink: :category/:year:month:day-:urlname.html
+permalink: :category/:post_title.html
 permalink_defaults:
   urlname: index
 pretty_urls:
@@ -61,6 +61,16 @@ index_generator:
   path: ''
   per_page: 10
   order_by: -date
+
+# index2 generator是否包含官方的hexo-generator-index，默认true（包含）
+index2_include_index: true # defult is true
+
+# 配置index2 generator，可以是数组或对象
+index2_generator:
+  per_page: 10
+  order_by: -date
+  exclude:
+    - category 日记 # 不包含分类
 
 # Category & Tag
 default_category: uncategorized
