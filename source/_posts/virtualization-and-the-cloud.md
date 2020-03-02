@@ -47,32 +47,32 @@ IBM很早就支持虚拟化，但是虚拟化一直到1999年才受到大量关�
 # Requirements for virtualization
 
 hypervisor的几个要点：
-* Safety: 完全掌控虚拟化的资源
-    * 使用interpreter，例如Bochs
-* Fidelity: 虚拟机中的表现应该与实机的表现一致
+* 安全性（Safety）: 完全掌控虚拟化的资源
+    * 使用解释器（interpreter），例如Bochs
+* 保真性（Fidelity）: 虚拟机中的表现应该与实机的表现一致
     * [Popek and Goldberg virtualization requirements](https://zh.wikipedia.org/wiki/%E6%B3%A2%E4%BD%A9%E5%85%8B%E4%B8%8E%E6%88%88%E5%BE%B7%E5%A0%A1%E8%99%9A%E6%8B%9F%E5%8C%96%E9%9C%80%E6%B1%82)
     * 敏感指令（sensitive instructions）
         * 控制敏感指令：试图改变系统资源配置的指令
         * 行为敏感指令：其行为或结果取决于资源配置状态（如重定位寄存器的内容或处理器所处模式）的指令
         * 例如：I/O, change the [MMU](https://zh.wikipedia.org/wiki/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E5%8D%95%E5%85%83) / memory management unit settings
-    * 优先级指令（privileged instructions）
+    * 特权指令（privileged instructions）
         * 当处理器处于用户态时[自陷](https://en.wikipedia.org/wiki/Trap_(computing))，处于内核态时不自陷的指令
     * 用人话来说：if you try to do something in user mode that you should not be doing in user mode, the hardware should trap
         * IBM/370符合此特性，但是Intel 386不符合
         * 2005年，Intel和AMD在CPU中引入了虚拟化
             * Intel -> VT (Virtualization Technology)
             * AMD -> SVM (Secure Virtual Machine)
-        * [trap-and-emulate](https://stackoverflow.com/questions/20388156/what-is-meant-by-trap-and-emulate-virtualization)的虚拟机方法成为可能
-        * 2005年以前的x86虚拟化（例如VMWare的解决方案），是通过对Guest OS中的代码进行实时的[binary translation](https://zh.wikipedia.org/wiki/%E4%BA%8C%E8%BF%9B%E5%88%B6%E7%BF%BB%E8%AF%91)来规避一些优先级指令的
-* Efficiency: 大部分虚拟机中的代码不应该被hypervisor干涉
+        * [陷入并模拟](https://stackoverflow.com/questions/20388156/what-is-meant-by-trap-and-emulate-virtualization)（trap-and-emulate）的虚拟机方法成为可能
+        * 2005年以前的x86虚拟化（例如VMWare的解决方案），是通过对Guest OS中的代码进行实时的[二进制翻译](https://zh.wikipedia.org/wiki/%E4%BA%8C%E8%BF%9B%E5%88%B6%E7%BF%BB%E8%AF%91)（binary translation）来规避一些特权指令的
+* 高效性（Efficiency）: 大部分虚拟机中的代码不应该被hypervisor干涉
 
 虚拟化的不同形态：
-* [paravirtualization](https://en.wikipedia.org/wiki/Paravirtualization)（半虚拟化）
-    * [hypercalls](https://www.cnblogs.com/echo1937/p/7227385.html) -> 向Guest OS提供了一套“系统调用”
+* [半虚拟化](https://en.wikipedia.org/wiki/Paravirtualization)（paravirtualization）
+    * [虚拟化调用](https://www.cnblogs.com/echo1937/p/7227385.html)（hypercalls） -> 向Guest OS提供了一套“系统调用”
     * 实际上可以看作对Guest OS提供了一套API (Application Programming Interface) 
-    * 让Guest OS知道自己在虚拟机上跑（非ring0状态），一些优先级指令就会修改成跟VMM约定好的其它方式，因此Guest OS需要针对hypervisor做出一定的更改
+    * 让Guest OS知道自己在虚拟机上跑（非ring0状态），一些特权指令就会修改成跟VMM约定好的其它方式，因此Guest OS需要针对hypervisor做出一定的更改
     * 没有捕获异常、翻译、模拟，性能损耗很低
-* [full virtualization](https://zh.wikipedia.org/wiki/%E5%85%A8%E8%99%9A%E6%8B%9F%E5%8C%96)（全虚拟化）
+* [全虚拟化](https://zh.wikipedia.org/wiki/%E5%85%A8%E8%99%9A%E6%8B%9F%E5%8C%96)（full virtualization）
     * 任何可以运行在裸机上的软件（通常是操作系统）都可以未经修改地运行在虚拟机中
 
 虚拟化的不同思路：
@@ -150,12 +150,12 @@ x86支持4级的保护环（protection rings）
 
 关于Guest OS内核的敏感指令：
 * hypervisor会通过重写代码确保他们不再存在
-* 一次重写一个[basic block](https://en.wikipedia.org/wiki/Basic_block)
+* 一次重写一个[基本块](https://en.wikipedia.org/wiki/Basic_block)（basic block）
     * 只有一个[入口点](https://zh.wikipedia.org/wiki/%E5%85%A5%E5%8F%A3%E7%82%B9)（entry point）, 一个出口点
     * 没有jump，call，trap，return，或者其它改变控制流的指令
-* 执行basic block之前，hypervisor会检查里面是否有敏感指令
+* 执行基本块之前，hypervisor会检查里面是否有敏感指令
     * 如果有就转交给hypervisor处理
-* translated blocks会被缓存，而且大部分代码都不含敏感指令，因此并不会造成很大的开销
+* 翻译过的基本块（translated blocks）会被缓存，而且大部分代码都不含敏感指令，因此并不会造成很大的开销
 * binary translator可以忽略全部用户进程，因为他们本来就运行在非特权模式下
 
 在实际应用中，运行在Ring 1的操作系统代码会被全部翻译，因为binary translation的性能比trap好多了
@@ -307,11 +307,11 @@ hypervisor还可以进行I/O指令的转换，例如让Guest OS以为使用的�
 
 [输入输出内存管理单元](https://zh.wikipedia.org/wiki/%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E5%8D%95%E5%85%83)（I/O MMU / Input–output memory management unit）
 * 对I/O进行虚拟化，跟虚拟化内存一样
-* Device pass through
+* 设备穿透（Device pass through）
 	* 物理设备可以直接分配给虚拟机
-* Device isolation 
+* 设备隔离（Device isolation）
 	* 确保分配给虚拟机的设备可以直接访问该虚拟机，并且不会损害其它Guest OS的完整性
-* interrupt remapping
+* 中断重映射（interrupt remapping）
 	* 确保设备产生的中断能够抵达对应的虚拟机
 * 允许32位的设备访问4GB以上的内存
 
@@ -351,7 +351,7 @@ hypervisor还可以进行I/O指令的转换，例如让Guest OS以为使用的�
 [Virtual appliance](https://en.wikipedia.org/wiki/Virtual_appliance)
 * 是预先配置好的虚拟机镜像，开箱即用
 * 解决了软件发行的环境依赖问题
-* 例如：Amazon’s EC2 cloud就提供很多打包好的虚拟机镜像给用户使用（这就是SaaS模式）
+* 例如：Amazon's EC2 cloud就提供很多打包好的虚拟机镜像给用户使用（这就是SaaS模式）
 * 跟docker比较类似，但是docker容器不是虚拟机
 
 ![](https://raw.githubusercontent.com/oscarcx123/hexo_resource/master/img/VM%20and%20docker%20comparison.png)
