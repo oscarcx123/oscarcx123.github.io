@@ -154,6 +154,7 @@ Minor <- Economics + Hungarian
     * 把该项目的dist文件夹复制到themes\next\source
     * 页面跳转不打断播放（[theme-next-pjax](https://github.com/theme-next/theme-next-pjax)）
 * 字数统计和阅读时长 - [hexo-symbols-count-time](https://github.com/theme-next/hexo-symbols-count-time)
+    * 代码块不计入字数（exclude_codeblock: true）
 * 动态背景 - [theme-next-canvas-nest](https://github.com/theme-next/theme-next-canvas-nest)
 * 阅读进度条 - 主题设置里找到Reading progress bar开启
 * 备份源文件 - [hexo-git-backup](https://github.com/coneycode/hexo-git-backup)

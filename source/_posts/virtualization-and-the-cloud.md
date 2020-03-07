@@ -8,7 +8,9 @@ tags:
 date: 2020-03-01 17:09:25
 permalink: 
 ---
-自学了Modern Operating Systems 4e的第七章Virtualization and the Cloud，顺手就整理了笔记。
+自学了《现代操作系统》（Modern Operating Systems 4e）第七章“虚拟化和云”（Virtualization and the Cloud），顺手就整理了笔记。
+
+<!--more-->
 
 # Introduction
 [虚拟机监视器](https://zh.wikipedia.org/wiki/Hypervisor)（VMM -> Virtual Machine Monitor / hypervisor）在同一物理硬件上虚拟出多个机器

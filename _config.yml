@@ -119,7 +119,7 @@ symbols_count_time:
   time: true
   total_symbols: true
   total_time: true
-  exclude_codeblock: false
+  exclude_codeblock: true
 
 # 备份hexo源文件
 backup:
