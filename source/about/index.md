@@ -147,6 +147,8 @@ Minor <- Economics + Hungarian
 
 这个博客使用的是Hexo + GitHub，只要GitHub不倒闭，应该就一直都会在的吧
 
+2020.03.07 - 修改“日记”分类为“随笔”
+
 ## 个性化
 
 * 主题 - NexT.Gemini
@@ -158,6 +160,6 @@ Minor <- Economics + Hungarian
 * 动态背景 - [theme-next-canvas-nest](https://github.com/theme-next/theme-next-canvas-nest)
 * 阅读进度条 - 主题设置里找到Reading progress bar开启
 * 备份源文件 - [hexo-git-backup](https://github.com/coneycode/hexo-git-backup)
-* 隐藏部分分类（比如日记） - [hexo-generator-index2](https://github.com/Jamling/hexo-generator-index2)
+* 隐藏部分分类（比如随笔） - [hexo-generator-index2](https://github.com/Jamling/hexo-generator-index2)
 * 批处理实现一键备份+部署
 * hexo server自动打开浏览器 - 修改Hexo/node_modules/hexo-server/lib/server.js
