@@ -2,7 +2,7 @@
 title: {{ title }}
 date: {{ date }}
 categories: 
-- 日记
+- 随笔
 permalink:
 urlname: diary
 ---

@@ -8,7 +8,7 @@ tags:
 date: 2020-03-01 17:09:25
 permalink: 
 ---
-自学了《现代操作系统》（Modern Operating Systems 4e）第七章“虚拟化和云”（Virtualization and the Cloud），顺手就整理了笔记。
+Modern Operating Systems 4e `Chapter 7 Virtualization and the Cloud`自学笔记
 
 <!--more-->
 
