@@ -215,7 +215,14 @@ Configuring luci-compat.
 Configuring luci-app-p910nd.
 ```
 
-到这里就装好了，然后登入LuCI，进入“服务” > “p910nd - Printer server”。
+到这里就装好了，然后把打印机用USB连到路由器上，输入`dmesg | grep printer`，如果返回类似下面这个就代表打印机被识别了。
+
+```bash
+[   12.358708] usblp 1-1:1.0: usblp0: USB Bidirectional printer dev 2 if 0 alt 0 proto 2 vid 0x04F9 pid 0x0062
+```
+然后记得重启路由器！
+
+登入LuCI，进入“服务” > “p910nd - Printer server”。
 
 * enable打勾
 * 如果默认的设备（/dev/usb/lp0）不对，可以自行修改（ls /dev/usb/lp*可以查看打印机是否被识别）

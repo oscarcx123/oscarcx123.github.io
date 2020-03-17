@@ -134,6 +134,7 @@ Minor <- Economics + Hungarian
         * 不打算冲全球10000名了，感觉难度太大
 * RPG
     * Another Eden
+    * Sdorica
     * 魔塔
 
 ## 动漫
