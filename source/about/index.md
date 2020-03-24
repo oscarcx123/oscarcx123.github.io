@@ -129,6 +129,7 @@ Minor <- Economics + Hungarian
         * 很久没玩了
     * osu!mania
         * [个人主页](https://osu.ppy.sh/users/13929448)
+        * 最高全球排名：#17,402 (2020/02/24)
         * 下落速度：26
         * 主要玩4k模式，5k水平还凑合，67k不行。
         * 不打算冲全球10000名了，感觉难度太大
@@ -136,6 +137,7 @@ Minor <- Economics + Hungarian
     * Another Eden
     * Sdorica
     * 魔塔
+    * Caves of Qud (Roguelike)
 
 ## 动漫
 
