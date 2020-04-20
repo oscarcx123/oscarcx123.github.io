@@ -2,7 +2,13 @@
 title: 关于我
 date: 2020-02-21 15:52:18
 ---
-欢迎来到这里！我是oscarcx123~
+欢迎来到这里！我是Azure~
+
+其实也知道写东西没人看，博客也没有做任何SEO优化，但是我还是喜欢写。具体原因我自己也说不清楚，可能还是想记录当下，以及分享自己所学的一点东西吧。我认为，在计算机技术这个圈子，分享是相当重要的，否则也就不会有那么多前辈们的帖子供我们参考。
+
+我偶尔也会路过其他人的博客，一般只要我点进去了，都会四处翻看一下。绝大部分个人博客其实都挺有意思的。
+
+这个关于页面，估计没几个人比我写得长的了。写这么多也不是为了炫耀，只是让我很清楚的看到自己在哪些方面还有欠缺，然后针对性的去填坑。当然，也顺便看看能不能遇到兴趣爱好相同的人~
 
 # 技能树
 
@@ -110,8 +116,9 @@ Minor <- Economics + Hungarian
 
 ## 科技
 
-* Office365用户（学校送的）
-* Android忠实粉丝（因为不太喜欢苹果的产品）
+* Win10教育版用户（从学校白嫖的）
+* Office365用户（还是从学校白嫖的）
+* Android忠实粉丝（自由度比较高。。。好吧就是穷）
 * 经常会看看科技新闻
 
 ## 游戏
@@ -134,14 +141,21 @@ Minor <- Economics + Hungarian
         * 主要玩4k模式，5k水平还凑合，67k不行。
         * 不打算冲全球10000名了，感觉难度太大
 * RPG
+    * Pokémon
+        * Core series
+        * Mystery Dungeon games (Roguelike)
+        * Ranger series
+        * Pinball games
     * Another Eden
     * Sdorica
     * 魔塔
     * Caves of Qud (Roguelike)
+* TCG
+    * Pokémon TCG Online
 
 ## 动漫
 
-不看，不感兴趣，但是动漫的OP会听一听
+不看，不感兴趣，但是因为玩osu!mania，所以动漫的OP会听一听
 
 # 关于博客
 
@@ -151,7 +165,7 @@ Minor <- Economics + Hungarian
 
 感觉很多人都开了博客，我也开一个玩玩看
 
-以前折腾过WordPress和基于Google App Engine的博客，然而没多久就关掉了
+以前在VPS和树莓派上折腾过WordPress，也在Google App Engine上部署过[Doodle](https://bitbucket.org/keakon/doodle/wiki/Home)博客，然而都比较短命
 
 这个博客使用的是Hexo + GitHub，只要GitHub不倒闭，应该就一直都会在的吧
 
