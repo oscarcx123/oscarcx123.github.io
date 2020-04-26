@@ -25,21 +25,21 @@ permalink:
 
 真是无话可说呢，还好这时已经做出两个索罗亚克GX，一个索罗亚克，后场上还有一个梦幻EX，那就给索罗亚克上浮石，接着Stand in再撤退换上梦幻EX，抄袭我方索罗亚克GX的技能直接干掉对面虛吾伊德GX。卡组里头的梦幻EX还是相当好用的，经常可以出其不意地打击对方的格斗系和超能系精灵。当然后面对方就是兵败如山倒了，我方上索罗亚克乘胜追击，很快对面就投降了。
 
-![](https://raw.githubusercontent.com/oscarcx123/hexo_resource/master/img/azureblog_ptcg_online_std_tournament_3.png)
+![](https://raw.githubusercontent.com/oscarcx123/hexo_resource/master/img/azureblog_ptcg_online_std_tournament_3.jpg)
 
-![](https://raw.githubusercontent.com/oscarcx123/hexo_resource/master/img/azureblog_ptcg_online_std_tournament_4.png)
+![](https://raw.githubusercontent.com/oscarcx123/hexo_resource/master/img/azureblog_ptcg_online_std_tournament_4.jpg)
 
 这里虽然显示我拿了六张奖品卡，可是还剩下两张奖品卡，所以胜利是因为对面投降了。
 
 第三局，对手又稍微厉害了一点，我的手气更差了一点。开局lele，对面我一开始以为是水火凤王，后来才发现是水火银伴。我除了几个能量什么过牌的卡都没有，万般无奈之下，只能用lele上双无色能量开打。对面过牌那叫一个顺，连续使用两张Max elixir，然后又不停地用各种训练师卡过牌，我就只能在那里一脸愣逼。才没几个回合，四张Max elixir全都被他用完了。还好后来抓到一张Brigette，也算是勉强打开了局面，可是由于对面能量优势实在是太大，因为之前对面在我只有lele的时候，利用水火贴了不少能量（一能量发动Power Heater，伤害20，从牌堆里给后场两个精灵一只从贴一个火系能量）。我方成型之后就是用索罗亚克与玛狃拉和对面硬碰硬了，毕竟对面后场铺满了Ability怪。不过最后还是比较可惜，我的索罗亚克GX被对面Guzma抓上来，然后银伴使用GX技能，对面获胜。
 
-![](https://raw.githubusercontent.com/oscarcx123/hexo_resource/master/img/azureblog_ptcg_online_std_tournament_5.png)
+![](https://raw.githubusercontent.com/oscarcx123/hexo_resource/master/img/azureblog_ptcg_online_std_tournament_5.jpg)
 
-![](https://raw.githubusercontent.com/oscarcx123/hexo_resource/master/img/azureblog_ptcg_online_std_tournament_6.png)
+![](https://raw.githubusercontent.com/oscarcx123/hexo_resource/master/img/azureblog_ptcg_online_std_tournament_6.jpg)
 
 可以看到，如果对面没有抽到Guzma的话，由于我场上是玛狃拉，对面是一定输的。
 
-![](https://raw.githubusercontent.com/oscarcx123/hexo_resource/master/img/azureblog_ptcg_online_std_tournament_7.png)
+![](https://raw.githubusercontent.com/oscarcx123/hexo_resource/master/img/azureblog_ptcg_online_std_tournament_7.jpg)
 
 这是最终结果
 

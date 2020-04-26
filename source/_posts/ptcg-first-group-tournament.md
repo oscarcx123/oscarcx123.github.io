@@ -449,7 +449,7 @@ int main (void)
 
 ### 3号选手
 
-![](https://raw.githubusercontent.com/oscarcx123/hexo_resource/master/img/azureblog_ptcg_first_group_tournament_deck_3.png)
+![](https://raw.githubusercontent.com/oscarcx123/hexo_resource/master/img/azureblog_ptcg_first_group_tournament_deck_3.jpg)
 
 ### 4号选手
 
@@ -485,7 +485,7 @@ int main (void)
 
 ### 11号选手
 
-![](https://raw.githubusercontent.com/oscarcx123/hexo_resource/master/img/azureblog_ptcg_first_group_tournament_deck_11.png)
+![](https://raw.githubusercontent.com/oscarcx123/hexo_resource/master/img/azureblog_ptcg_first_group_tournament_deck_11.jpg)
 
 ### 12号选手
 

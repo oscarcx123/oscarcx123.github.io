@@ -11,26 +11,26 @@ permalink:
 
 <!--more-->
 
-![](https://raw.githubusercontent.com/oscarcx123/hexo_resource/master/img/ptcg_hengshu_sm7_booster_box_1.jpeg)
+![](https://raw.githubusercontent.com/oscarcx123/hexo_resource/master/img/ptcg_hengshu_sm7_booster_box_1.jpg)
 
 未拆封的盒子
 
-![](https://raw.githubusercontent.com/oscarcx123/hexo_resource/master/img/ptcg_hengshu_sm7_booster_box_2.jpeg)
+![](https://raw.githubusercontent.com/oscarcx123/hexo_resource/master/img/ptcg_hengshu_sm7_booster_box_2.jpg)
 
 开到的所有高罕以及祠堂1张
 
-![](https://raw.githubusercontent.com/oscarcx123/hexo_resource/master/img/ptcg_hengshu_sm7_booster_box_3.jpeg)
+![](https://raw.githubusercontent.com/oscarcx123/hexo_resource/master/img/ptcg_hengshu_sm7_booster_box_3.jpg)
 
 开到的所有holo rare
 
-![](https://raw.githubusercontent.com/oscarcx123/hexo_resource/master/img/ptcg_hengshu_sm7_booster_box_4.jpeg)
+![](https://raw.githubusercontent.com/oscarcx123/hexo_resource/master/img/ptcg_hengshu_sm7_booster_box_4.jpg)
 
 开到的所有reverse holo
 
-![](https://raw.githubusercontent.com/oscarcx123/hexo_resource/master/img/ptcg_hengshu_sm7_booster_box_5.jpeg)
+![](https://raw.githubusercontent.com/oscarcx123/hexo_resource/master/img/ptcg_hengshu_sm7_booster_box_5.jpg)
 
 开到的可能有用的精灵卡
 
-![](https://raw.githubusercontent.com/oscarcx123/hexo_resource/master/img/ptcg_hengshu_sm7_booster_box_6.jpeg)
+![](https://raw.githubusercontent.com/oscarcx123/hexo_resource/master/img/ptcg_hengshu_sm7_booster_box_6.jpg)
 
 开到的所有训练师平卡

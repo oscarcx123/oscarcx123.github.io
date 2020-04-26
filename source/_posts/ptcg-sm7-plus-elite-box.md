@@ -31,15 +31,11 @@ permalink:
 
 开到的一些闪卡和训练师卡
 
-![](https://raw.githubusercontent.com/oscarcx123/hexo_resource/master/img/ptcg_sm7_plus_elite_box_5.png)
-
-开到金龙奈的那一刻，我截图了，以上是见证奇迹的朋友。星空跟时光的名字为了保护隐私进行了打码。
-
-![](https://raw.githubusercontent.com/oscarcx123/hexo_resource/master/img/ptcg_sm7_plus_elite_box_6.jpg)
+![](https://raw.githubusercontent.com/oscarcx123/hexo_resource/master/img/ptcg_sm7_plus_elite_box_5.jpg)
 
 刚刚开完包的现场
 
-![](https://raw.githubusercontent.com/oscarcx123/hexo_resource/master/img/ptcg_sm7_plus_elite_box_7.jpg)
+![](https://raw.githubusercontent.com/oscarcx123/hexo_resource/master/img/ptcg_sm7_plus_elite_box_6.jpg)
 
 开到的所有好东西
 
@@ -47,7 +43,7 @@ permalink:
 
 不过。。。。。。
 
-![](https://raw.githubusercontent.com/oscarcx123/hexo_resource/master/img/ptcg_sm7_plus_elite_box_8.jpg)
+![](https://raw.githubusercontent.com/oscarcx123/hexo_resource/master/img/ptcg_sm7_plus_elite_box_7.jpg)
 
 欧皇横竖把一张code换了之后又出货
 
