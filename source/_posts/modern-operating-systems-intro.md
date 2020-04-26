@@ -7,7 +7,7 @@ tags:
 date: 2020-03-10 17:19:05
 permalink: 
 ---
-Modern Operating Systems 4e `Chapter 1 Introduction`自学笔记
+《现代操作系统》第一章自学笔记
 
 <!--more-->
 

@@ -1,6 +1,8 @@
 ---
 title: 关于AzureTCG
 date: 2018-08-17 02:37:08
+categories:
+  - 归档
 tags:
   - AzureTCG
 permalink: 

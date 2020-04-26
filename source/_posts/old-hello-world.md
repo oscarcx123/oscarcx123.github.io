@@ -1,6 +1,8 @@
 ---
 title: 终于建好了博客（AzureBlog）
 date: 2018-03-04 13:00:54
+categories:
+  - 归档
 tags:
   - AzureBlog
 permalink: 
