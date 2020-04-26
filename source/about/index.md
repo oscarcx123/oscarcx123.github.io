@@ -161,15 +161,55 @@ Minor <- Economics + Hungarian
 
 ## 概述
 
-2020.02.21 - 建立博客
+这是我第三个博客，希望能够长时间写下去~
 
-感觉很多人都开了博客，我也开一个玩玩看
+### AzureBlog
 
-以前在VPS和树莓派上折腾过WordPress，也在Google App Engine上部署过[Doodle](https://bitbucket.org/keakon/doodle/wiki/Home)博客，然而都比较短命
+存活时间：2018/3/4 - 2018/8
 
-这个博客使用的是Hexo + GitHub，只要GitHub不倒闭，应该就一直都会在的吧
+博客软件：[Doodle](https://bitbucket.org/keakon/doodle/wiki/Home)
+
+部署平台：Google App Engine
+
+图床：Flickr
+
+网址：azureblogoscar.appspot.com
+
+AzureBlog是我第一个博客。当时啥也不懂，就跟着一篇教程搭建了个人博客，使用的还不是主流的博客软件。
+
+### AzureTCG
+
+存活时间：2018/8/17 - 2018/11
+
+博客软件：[WordPress](https://wordpress.com)
+
+部署平台：Raspberry Pi 3b+
+
+图床：本地储存
+
+网址：azuretcg.tk
+
+AzureTCG是我第二个博客。这回学聪明了，换到了一个主流博客软件，并且迁移了AzureBlog的全部内容。由于家里是公网ip，当时直接在路由器上开启了DMZ功能，然后去搞了个免费的`.tk`域名，看起来就是个正儿八经的网站。记得当时博客的少量文章还被谷歌收录了，不过现在已经搜不到了。
+
+### Azure
+
+上线时间：2020/2/21
+
+博客软件：[Hexo](https://hexo.io)
+
+部署平台：GitHub
+
+图床：GitHub
+
+只要GitHub不倒闭，应该就一直都会在的吧~
+
+## 时间线
+
+2020.02.21 - 建立Hexo博客
 
 2020.03.07 - 修改“日记”分类为“随笔”
+
+2020.04.24 - 恢复并迁移了旧博客的数据
 
 ## 个性化
 
