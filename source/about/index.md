@@ -4,16 +4,17 @@ date: 2020-02-21 15:52:18
 ---
 欢迎来到这里！我是Azure~
 
-其实也知道写东西没人看，博客也没有做任何SEO优化，但是我还是喜欢写。具体原因我自己也说不清楚，可能还是想记录当下，以及分享自己所学的一点东西吧。我认为，在计算机技术这个圈子，分享是相当重要的，否则也就不会有那么多前辈们的帖子供我们参考。
-
-我偶尔也会路过其他人的博客，一般只要我点进去了，都会四处翻看一下。绝大部分个人博客其实都挺有意思的。
-
-这个关于页面，估计没几个人比我写得长的了。写这么多也不是为了炫耀，只是让我很清楚的看到自己在哪些方面还有欠缺，然后针对性的去填坑。当然，也顺便看看能不能遇到兴趣爱好相同的人~
+虽然说技术圈子分享很重要，但是也知道写东西没人看的啦。。。
 
 # 技能树
 
 ## 计算机
 
+一句话总结：除了Python其它都半桶水
+
+<details>
+<summary>缩减占地面积，感兴趣就看</summary>
+<pre>
 * Python（主力语言，比较熟悉，自学）
     * PyQt5（写过几个GUI项目，CSDN发过一篇[教程](https://blog.csdn.net/AzureMouse/article/details/90338961)）
     * Pygame（写了[Python魔塔样板](https://github.com/oscarcx123/MagicTower-Python)，本人目前最大的项目）
@@ -36,21 +37,24 @@ date: 2020-02-21 15:52:18
     * Raspbian（有个树莓派3b+）
     * VPS（五花八门）
 
-一句话总结：除了Python其它都半桶水
-
 未来希望能够点亮：C++, Machine Learning, MongoDB
-
 未来希望能够提升：Web开发, Java(Android)
+</pre>
+</details>
 
 ## 学术
 
+大学狗一只~
+
+<details>
+<summary>缩减占地面积，感兴趣就看</summary>
+<pre>
 Major <- Finance + Business Information System
-
 Minor <- Economics + Hungarian
-
-商业信息系统其实是在大三被辅导员忽悠选的，不过上课技术性的内容不多，所以就当是水多一个专业了。
-
+BIS是被忽悠选的，不过技术相关内容少，就当水多一个专业。
 未来：硕士有点想往Computational Finance的方向走
+</pre>
+</details>
 
 ## 音乐
 
@@ -58,6 +62,9 @@ Minor <- Economics + Hungarian
 
 钢琴弹了十几年，水平还不错，在外面可以用“自己是钢琴系”来忽悠别人
 
+<details>
+<summary>缩减占地面积，感兴趣就看</summary>
+<pre>
 弹过下面这些作品：
 * 肖邦
     * 革命练习曲 (Op.10, No.12)
@@ -82,62 +89,40 @@ Minor <- Economics + Hungarian
     * Etude in C# Minor (Op.42, No.5)
 
 未来展望：希望大学毕业之前能把下面这些曲子搞定
-
-* Liszt: Mazeppa (S.139/4)
-* Rachmaninoff: Moment Musicaux in E Minor (Op.16, No.4)
-* Chopin: Ballade No.4 in F minor (Op.52, No.4)
+\* Liszt: Mazeppa (S.139/4)
+\* Rachmaninoff: Moment Musicaux in E Minor (Op.16, No.4)
+\* Chopin: Ballade No.4 in F minor (Op.52, No.4)
 
 感觉是有生之年系列。。。
+</pre>
+</details>
 
-### 竖笛
+### 其它
 
-以前无聊自学的，有钢琴基础学这个很容易，巴洛克式和德式都玩过
-
-### 作曲
-
-以前写过几首短小的作品，大部分都是纯钢琴，有一个是钢琴+小提琴的，不拿出来丢人现眼了
-
-### 扒谱
-
-扒过两个钢琴谱：
-
-* Mozart: Divertimento No 17 In D Major, K 334 Menuetto
-* Tchaikovsky: Sleeping Beauty Waltz
-
-### 乐理
-
-考过ABRSM的5级乐理，不过大部分知识都忘得差不多了
-
-### 听歌
-
-古典音乐听得比较多。
-
-日本动漫歌曲，国语/粤语歌曲也偶尔听听。
-
-## 科技
-
-* Win10教育版用户（从学校白嫖的）
-* Office365用户（还是从学校白嫖的）
-* Android忠实粉丝（自由度比较高。。。好吧就是穷）
-* 经常会看看科技新闻
+* 【竖笛】巴洛克式和德式都玩过
+* 【作曲】几首短小的钢琴作品
+* 【扒谱】两个钢琴谱
+* 【乐理】ABRSM考过5级，基本都忘光了。。。
+* 【听歌】古典音乐，动漫OP，国/粤歌曲
 
 ## 游戏
 
 不太喜欢实时竞技类型的游戏，RPG和音游玩的稍微多些。
 
+<details>
+<summary>缩减占地面积，感兴趣就看</summary>
+<pre>
 * 音游
     * Arcaea
         * ptt 10.22
         * 下落速度：3.5
-        * 两周年活动把半价曲包和单曲都解锁了
-        * 三周年活动把新增的半价曲包和单曲都解锁了
     * Cytus
         * 只打到8级曲
         * 很久没玩了
     * osu!mania
         * [个人主页](https://osu.ppy.sh/users/13929448)
         * 最高全球排名：#17,402 (2020/02/24)
-        * 下落速度：26
+        * 下落速度：27
         * 主要玩4k模式，5k水平还凑合，67k不行。
         * 不打算冲全球10000名了，感觉难度太大
 * RPG
@@ -152,10 +137,8 @@ Minor <- Economics + Hungarian
     * Caves of Qud (Roguelike)
 * TCG
     * Pokémon TCG Online
-
-## 动漫
-
-不看，不感兴趣，但是因为玩osu!mania，所以动漫的OP会听一听
+</pre>
+</details>
 
 # 关于博客
 
@@ -165,43 +148,63 @@ Minor <- Economics + Hungarian
 
 ### AzureBlog
 
-存活时间：2018/3/4 - 2018/8
-
-博客软件：[Doodle](https://bitbucket.org/keakon/doodle/wiki/Home)
-
-部署平台：Google App Engine
-
-图床：Flickr
-
-网址：azureblogoscar.appspot.com
-
 AzureBlog是我第一个博客。当时啥也不懂，就跟着一篇教程搭建了个人博客，使用的还不是主流的博客软件。
+
+<details>
+<summary>缩减占地面积，感兴趣就看</summary>
+<pre>
+存活时间：2018/3/4 - 2018/8
+博客软件：[Doodle](https://bitbucket.org/keakon/doodle/wiki/Home)
+部署平台：Google App Engine
+图床：Flickr
+网址：azureblogoscar.appspot.com
+</pre>
+</details>
 
 ### AzureTCG
 
-存活时间：2018/8/17 - 2018/11
-
-博客软件：[WordPress](https://wordpress.com)
-
-部署平台：Raspberry Pi 3b+
-
-图床：本地储存
-
-网址：azuretcg.tk
-
 AzureTCG是我第二个博客。这回学聪明了，换到了一个主流博客软件，并且迁移了AzureBlog的全部内容。由于家里是公网ip，当时直接在路由器上开启了DMZ功能，然后去搞了个免费的`.tk`域名，看起来就是个正儿八经的网站。记得当时博客的少量文章还被谷歌收录了，不过现在已经搜不到了。
+
+<details>
+<summary>缩减占地面积，感兴趣就看</summary>
+<pre>
+存活时间：2018/8/17 - 2018/11
+博客软件：[WordPress](https://wordpress.com)
+部署平台：Raspberry Pi 3b+
+图床：本地储存
+网址：azuretcg.tk
+</pre>
+</details>
+
+### Azure's Note
+
+Azure's Note严格来讲并不算博客。当时需要一个地方记录零碎的技巧知识，又看到docsify在文档方面表现不俗，于是在zhaouv的力荐和帮助下，建立了依托于GitHub Page的网站。
+
+<details>
+<summary>缩减占地面积，感兴趣就看</summary>
+<pre>
+上线时间：2019/4/5
+博客软件：[docsify v4.5.5](https://docsify.js.org/)
+部署平台：GitHub
+图床：GitHub
+</pre>
+</details>
 
 ### Azure
 
-上线时间：2020/2/21
-
-博客软件：[Hexo](https://hexo.io)
-
-部署平台：GitHub
-
-图床：GitHub
+因为docsify逐渐满足不了需求，就找到了Hexo来搭建真正的博客。
 
 只要GitHub不倒闭，应该就一直都会在的吧~
+
+<details>
+<summary>缩减占地面积，感兴趣就看</summary>
+<pre>
+上线时间：2020/2/21
+博客软件：[Hexo](https://hexo.io)
+部署平台：GitHub
+图床：GitHub
+</pre>
+</details>
 
 ## 时间线
 
