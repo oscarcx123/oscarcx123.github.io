@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-64x64-dragon.jpg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-64x64-dragon.jpg">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-64x64-dragon.jpg">
+  <link rel="mask-icon" href="/images/favicon-64x64-dragon.jpg" color="#222">
+  <meta name="google-site-verification" content="-QMh-gRPduq5T_vg3_Pwi3kZsNSiyuEpPBaDIXV8J34">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"oscarcx.com","root":"/","images":"/images","scheme":"Gemini","version":"8.3.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
+  </script>
+<meta name="description" content="这篇文章主要专注于Adobe Premiere在音游视频方面的应用。如果你打了个好成绩，想跟大家分享下你那盖世无双的操作手法，但又从来没剪过片子，那你来对地方了~ 先说明一下，我也是摸索了半天，现炒现卖的。写下来，第一是可以给后人参考，第二是怕我自己又给忘了。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Adobe Premiere 入门教学">
+<meta property="og:url" content="https://oscarcx.com/tech/adobe-premiere-tutorial.html">
+<meta property="og:site_name" content="Azure">
+<meta property="og:description" content="这篇文章主要专注于Adobe Premiere在音游视频方面的应用。如果你打了个好成绩，想跟大家分享下你那盖世无双的操作手法，但又从来没剪过片子，那你来对地方了~ 先说明一下，我也是摸索了半天，现炒现卖的。写下来，第一是可以给后人参考，第二是怕我自己又给忘了。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/adobe_premiere_tutorial_a1.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/adobe_premiere_tutorial_a2.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/adobe_premiere_tutorial_a3.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/adobe_premiere_tutorial_a4.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/adobe_premiere_tutorial_a5.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/adobe_premiere_tutorial_a6.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/adobe_premiere_tutorial_a7.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/adobe_premiere_tutorial_a8.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/adobe_premiere_tutorial_a9.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/adobe_premiere_tutorial_a10.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/adobe_premiere_tutorial_b1.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/adobe_premiere_tutorial_b2.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/adobe_premiere_tutorial_b3.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/adobe_premiere_tutorial_b4.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/adobe_premiere_tutorial_b5.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/adobe_premiere_tutorial_b6.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/adobe_premiere_tutorial_b7.png">
+<meta property="article:published_time" content="2021-01-24T21:55:33.000Z">
+<meta property="article:modified_time" content="2021-07-14T11:14:28.747Z">
+<meta property="article:author" content="oscarcx123">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://oscarcx.com/hexo_resource/img/adobe_premiere_tutorial_a1.png">
+
+
+<link rel="canonical" href="https://oscarcx.com/tech/adobe-premiere-tutorial.html">
+
+
+<script data-pjax class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+<title>Adobe Premiere 入门教学 | Azure</title>
+  
+
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+  <link rel="stylesheet" href="/aplayer/APlayer.min.css">
+  <div id="aplayer"></div>
+  <script type="text/javascript" src="/aplayer/APlayer.min.js"></script>
+  <script type="text/javascript" src="/aplayer/music.js"></script>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">Azure</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
+        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
+        <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%87%86%E5%A4%87%E5%B7%A5%E5%85%B7"><span class="nav-number">1.</span> <span class="nav-text">准备工具</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%89%8B%E5%85%83%E8%A7%86%E9%A2%91"><span class="nav-number">2.</span> <span class="nav-text">手元视频</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#0x00-%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C"><span class="nav-number">2.1.</span> <span class="nav-text">0x00 - 准备工作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0x01-%E5%88%9B%E5%BB%BA%E6%97%B6%E9%97%B4%E8%BD%B4"><span class="nav-number">2.2.</span> <span class="nav-text">0x01 - 创建时间轴</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0x02-%E5%AF%B9%E9%BD%90%E9%9F%B3%E8%BD%A8"><span class="nav-number">2.3.</span> <span class="nav-text">0x02 - 对齐音轨</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BF%AB%E6%8D%B7%E9%94%AE"><span class="nav-number">2.3.1.</span> <span class="nav-text">快捷键</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AF%B9%E9%BD%90%E6%8A%80%E5%B7%A7"><span class="nav-number">2.3.2.</span> <span class="nav-text">对齐技巧</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%9F%B3%E9%A2%91%E5%A2%9E%E5%B9%85"><span class="nav-number">2.3.3.</span> <span class="nav-text">音频增幅</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A3%81%E5%89%AA%E5%A4%9A%E4%BD%99%E9%9F%B3%E8%BD%A8"><span class="nav-number">2.3.4.</span> <span class="nav-text">裁剪多余音轨</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0x03-%E8%B0%83%E6%95%B4%E8%A7%86%E9%A2%91%E4%BD%8D%E7%BD%AE"><span class="nav-number">2.4.</span> <span class="nav-text">0x03 - 调整视频位置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0x04-%E5%AF%BC%E5%87%BA%E8%A7%86%E9%A2%91"><span class="nav-number">2.5.</span> <span class="nav-text">0x04 - 导出视频</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%A4%9A%E4%BA%BA%E5%9B%9E%E6%94%BE%E8%A7%86%E9%A2%91"><span class="nav-number">3.</span> <span class="nav-text">多人回放视频</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#0x00-%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C-1"><span class="nav-number">3.1.</span> <span class="nav-text">0x00 - 准备工作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0x01-%E8%A3%81%E5%89%AA%E7%94%BB%E9%9D%A2"><span class="nav-number">3.2.</span> <span class="nav-text">0x01 - 裁剪画面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0x02-%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF"><span class="nav-number">3.3.</span> <span class="nav-text">0x02 - 添加背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0x03-%E6%B7%A1%E5%85%A5%E6%B7%A1%E5%87%BA"><span class="nav-number">3.4.</span> <span class="nav-text">0x03 - 淡入淡出</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0x04-%E5%AF%BC%E5%87%BA%E8%A7%86%E9%A2%91-1"><span class="nav-number">3.5.</span> <span class="nav-text">0x04 - 导出视频</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99"><span class="nav-number">4.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="oscarcx123"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">oscarcx123</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">19</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/oscarcx123" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;oscarcx123" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://oscarcx.com/tech/adobe-premiere-tutorial.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="oscarcx123">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Azure">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Adobe Premiere 入门教学
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-01-24 16:55:33" itemprop="dateCreated datePublished" datetime="2021-01-24T16:55:33-05:00">2021-01-24</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/tech/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+        </span>
+    </span>
+
+  
+      </div>
+      <div class="post-meta">
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>3.4k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>3 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>这篇文章主要专注于Adobe Premiere在音游视频方面的应用。如果你打了个好成绩，想跟大家分享下你那盖世无双的操作手法，但又从来没剪过片子，那你来对地方了~</p>
+<p>先说明一下，我也是摸索了半天，现炒现卖的。写下来，第一是可以给后人参考，第二是怕我自己又给忘了。</p>
+<span id="more"></span>
+
+<h1 id="准备工具"><a href="#准备工具" class="headerlink" title="准备工具"></a>准备工具</h1><ul>
+<li>Adobe Premiere Pro（从官网下载）</li>
+<li>激活 - 八仙过海各显神通！<ul>
+<li>有条件的还是支持正版，毕竟Adobe开发这么强大又方便的剪辑软件也不容易</li>
+</ul>
+</li>
+</ul>
+<h1 id="手元视频"><a href="#手元视频" class="headerlink" title="手元视频"></a>手元视频</h1><h2 id="0x00-准备工作"><a href="#0x00-准备工作" class="headerlink" title="0x00 - 准备工作"></a>0x00 - 准备工作</h2><p>首先当然是用OBS录制视频，然后在Adobe Pr新建一个项目并导入素材。</p>
+<p>注意：Adobe Pr不支持直接导入mkv格式的素材。OBS录制的格式可以在 Settings &gt; Output &gt; Recording Format 那里修改，默认应该是mkv，可以提前修改为mp4。如果已经录完了，可以借助ffmpeg，使用下面命令转换格式。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i input.mkv -codec copy output.mp4</span><br></pre></td></tr></table></figure>
+
+<p>导入素材相当容易，直接把视频拖到素材库（红框所示处）就行了。</p>
+<p><img data-src="https://oscarcx.com/hexo_resource/img/adobe_premiere_tutorial_a1.png"></p>
+<h2 id="0x01-创建时间轴"><a href="#0x01-创建时间轴" class="headerlink" title="0x01 - 创建时间轴"></a>0x01 - 创建时间轴</h2><p>这个容易，直接把素材库里的视频拖到右手边的时间轴上。</p>
+<p>注意：因为两个视频是同时播放的，所以在时间轴上应该是上下堆叠的关系，而不是首尾衔接。</p>
+<p><img data-src="https://oscarcx.com/hexo_resource/img/adobe_premiere_tutorial_a2.png"></p>
+<p>其中V1，V2是视频（Video）轨道，A1，A2是音频（Audio）轨道。</p>
+<h2 id="0x02-对齐音轨"><a href="#0x02-对齐音轨" class="headerlink" title="0x02 - 对齐音轨"></a>0x02 - 对齐音轨</h2><p>不难发现，playback视频和handcam视频的长度并不一样，所以这里需要把两段视频对齐。因为当时录制手元的时候，声音是直接外放的，那么两个视频的音轨应该非常相似。所以，这里可以通过观察音轨波形来对齐。</p>
+<h3 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h3><p>如果不熟悉操作的话，这里会让人非常抓狂。因此废话不多说，我直接把几个操作方式列出来：</p>
+<ul>
+<li>鼠标滚轮 - 横向移动时间轴</li>
+<li>Alt + 鼠标滚轮 - 横向放大时间轴（变宽）</li>
+<li>Ctrl + 鼠标滚轮 - 纵向移动时间轴（方便查看不同的轨道）</li>
+<li>在时间轴最左边的面板上下拖动 - 调整轨道高度</li>
+<li>双击对应区域（小窗口）的标题框 - 放大到全屏 / 恢复到小窗口</li>
+<li>方向键<ul>
+<li>上 - 进度条跳转到高亮轨道的开头</li>
+<li>下 - 进度条跳转到高亮轨道的结尾</li>
+<li>左 / 右 - 步进（左右移动进度条）</li>
+</ul>
+</li>
+</ul>
+<p>如果音轨没有显示波形，可以点时间轴面板上的“扳手”，勾选“显示音频波形”。</p>
+<p>经过一番操作，就能见到类似的结果。</p>
+<p><img data-src="https://oscarcx.com/hexo_resource/img/adobe_premiere_tutorial_a3.png"></p>
+<h3 id="对齐技巧"><a href="#对齐技巧" class="headerlink" title="对齐技巧"></a>对齐技巧</h3><p>不难看出，两个视频的音轨都有一段很明显的静音区域，这是因为那时候游戏正在加载中，背景音乐会停掉。所以，我们需要把下面的音轨往右拖动，上面的视频轨道也会跟着一起走的。但是，这里似乎没法很精准的对齐两个音轨，所以还需要用点小技巧。</p>
+<p>回到主界面，在预览窗口这里是可以直接看到效果，而且有个进度条可以拖动。</p>
+<p><img data-src="https://oscarcx.com/hexo_resource/img/adobe_premiere_tutorial_a4.png"></p>
+<p>因为这个进度条同时也会显示在时间线内，所以刚好可以辅助对齐音轨。稍微把进度条拖动到静音段落那里，就能看到下面的结果。在进度条的辅助下，一眼就能看出来下面音轨提早了（偏向左边）。</p>
+<p><img data-src="https://oscarcx.com/hexo_resource/img/adobe_premiere_tutorial_a5.png"></p>
+<p>然后该怎么做就不需要多说了吧~</p>
+<p>注意：这里对齐的时候，最小单位应该是视频的帧（frame），所以音轨可能无法完美对齐。不过一帧以内的误差，通常也都看不出来了，所以对齐的差不多就可以了。</p>
+<h3 id="音频增幅"><a href="#音频增幅" class="headerlink" title="音频增幅"></a>音频增幅</h3><p>接下来还有点小问题。观察发现，两个音轨的波形高度相去甚远，这样会导致前后音量不一致的问题（耳朵聋了）。因此，这里可以对handcam音轨右键选中 &gt; 音频增益，在弹出的窗口中单击数字，就会出现文本框，然后就可以输入增幅了。这里根据实际情况填写增幅，如果感觉不太行就 Ctrl + Z 进行撤销。最后效果如下所示。</p>
+<p><img data-src="https://oscarcx.com/hexo_resource/img/adobe_premiere_tutorial_a6.png"></p>
+<h3 id="裁剪多余音轨"><a href="#裁剪多余音轨" class="headerlink" title="裁剪多余音轨"></a>裁剪多余音轨</h3><p>由于录制手元的时候没有戴耳机，因此两个音轨都包含了BGM，一起播放出来的话那叫一个惨不忍睹。好在游戏在加载时有一个静音段，我们可以在那里进行音轨的接力。</p>
+<p>在进行操作之前，我们需要把音频和视频解绑（右键选中相关轨道 &gt; 取消链接），这样在裁剪的时候就不会把视频一起剪掉。</p>
+<p>在时间轴的左侧，有个“剃刀工具”。剃刀工具会自动吸附在进度条所在位置上，效果就是一刀两段。切割之后就可以选中不要的段落，直接删除。</p>
+<p><img data-src="https://oscarcx.com/hexo_resource/img/adobe_premiere_tutorial_a7.png"></p>
+<p>最后的成品如下所示。</p>
+<p><img data-src="https://oscarcx.com/hexo_resource/img/adobe_premiere_tutorial_a8.png"></p>
+<p>那么关于音轨的处理就告一段落了。</p>
+<h2 id="0x03-调整视频位置"><a href="#0x03-调整视频位置" class="headerlink" title="0x03 - 调整视频位置"></a>0x03 - 调整视频位置</h2><p>默认的手元位置就是正中央，然而这挡住了后面的回放录像，所以我们需要把手元视频手动调整到右下角。</p>
+<p>在时间轴选中对应视频，然后就可以在“效果控件”看到一些参数了。</p>
+<p>修改参数的方法有很多：</p>
+<ul>
+<li>直接左右拖动修改</li>
+<li>选中数字然后自己填写</li>
+<li>还可以选中对应条目，然后在右边的预览窗口直接拖动<ul>
+<li>拖动的时候，可以同时按下Ctrl进行吸附</li>
+</ul>
+</li>
+</ul>
+<p><img data-src="https://oscarcx.com/hexo_resource/img/adobe_premiere_tutorial_a9.png"></p>
+<h2 id="0x04-导出视频"><a href="#0x04-导出视频" class="headerlink" title="0x04 - 导出视频"></a>0x04 - 导出视频</h2><p>文件 &gt; 导出 &gt; 媒体 （或者直接 Ctrl + M ）。</p>
+<p><img data-src="https://oscarcx.com/hexo_resource/img/adobe_premiere_tutorial_a10.png"></p>
+<p>这个界面基本不需要改任何东西。但是对于一般投稿的话，不需要把码率设置的太高，所以这里我把默认的10改成了2。如果对视频体积有要求，甚至改成1.5也是可以的。</p>
+<p>确认无误之后就点击导出，这里如果机器配置不行的话，要等好一会儿。。。</p>
+<p>到这里也就大功告成啦！</p>
+<p>成品：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1RA411p7xA">sakuzyo - Amenoho Akari [BMS LV.04 Stream] 95.15% （带手元）</a></p>
+<h1 id="多人回放视频"><a href="#多人回放视频" class="headerlink" title="多人回放视频"></a>多人回放视频</h1><h2 id="0x00-准备工作-1"><a href="#0x00-准备工作-1" class="headerlink" title="0x00 - 准备工作"></a>0x00 - 准备工作</h2><p>首先还是导入素材，对齐音轨，这些都是上面详细写过的，就不再赘述了。</p>
+<p>反正常规操作弄完之后差不多就这样。</p>
+<p><img data-src="https://oscarcx.com/hexo_resource/img/adobe_premiere_tutorial_b1.png"></p>
+<p>这里值得一提的是，我把V1给复制到V3去了。复制的方法很简单，就是在左手边选中V3（变成高亮），然后把进度条放到开头，选中V1轨道上的视频，Ctrl + C，Ctrl + V，就贴上去了。这么做是因为我希望分别处理开头和回放这两个部分，其中开头是全屏展示我的成绩和进步情况，回放是分屏展示玩家对抗。当然可能有更好的方法，但是我觉得这样比较直观。</p>
+<h2 id="0x01-裁剪画面"><a href="#0x01-裁剪画面" class="headerlink" title="0x01 - 裁剪画面"></a>0x01 - 裁剪画面</h2><p>现在问题来了，两个人的回放需要一左一右同时展现，这里就需要用到裁剪功能。</p>
+<p>在左下方找到“效果”，搜索“裁剪”，然后把“裁剪”这个条目直接拖到右边时间轴上的视频里，这样就能在左上方的“效果控件”找到裁剪相关的参数。</p>
+<p><img data-src="https://oscarcx.com/hexo_resource/img/adobe_premiere_tutorial_b2.png"></p>
+<p>这里我直接从左边剪掉了40%的画面。所以为了横向铺满画面，要怎么调节其它参数呢？</p>
+<p>其实这个是可以算的啊，小学数学题~</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">整个画布大小是1920*1080</span><br><span class="line">单个视频的横向长度是1920 * 0.6 = 1152</span><br><span class="line">单个视频要占据的横向长度是1920 * 0.5 = 960</span><br><span class="line">所以单个视频的缩放百分比是960 / 1152 = 83.33%</span><br></pre></td></tr></table></figure>
+
+<p>调节完参数之后，效果如下。</p>
+<p><img data-src="https://oscarcx.com/hexo_resource/img/adobe_premiere_tutorial_b3.png"></p>
+<p>注意：这里拖动画面的时候，用到了Ctrl吸附，一定要记得检查多个画面是否对齐了！我之前就在这里翻车了，左边的画面比右边高了3像素。因为导出成品的时间相对比较长，所以我个人比较推荐看右上方的预览窗口。不过，在检查的时候，不能只看预览小窗，一定要看全屏的预览（双击预览小窗的标题栏），否则就可能跟我一样看漏了。当然，直接看效果控件里的“位置”参数也行。</p>
+<h2 id="0x02-添加背景"><a href="#0x02-添加背景" class="headerlink" title="0x02 - 添加背景"></a>0x02 - 添加背景</h2><p>虽然现在已经做出了多人回放的效果，但是上面多出了一个黑色的矩形，太难看了，所以还是加上一个背景。</p>
+<p>图片跟视频的处理方法是一样的，都是先拖进素材库，然后放上时间轴，占用的也是视频的轨道（例如V1，V2等）。图片持续时间也是可以通过拖拽图片轨道的长度来修改。</p>
+<p>背景通常都是放在最下面，所以这里还需要改变一下图层的顺序，直接在几条视频轨道直接拖动腾挪就可以了。</p>
+<p><img data-src="https://oscarcx.com/hexo_resource/img/adobe_premiere_tutorial_b4.png"></p>
+<p>背景图片有了，再用文字工具往上面加点字吧。这里我使用了若干空格来填充左右两侧的空间，从而让两边留出一样的空间，等下就可以把头像放在那里。这次用的默认字体和字号，有需要的也可以直接修改这些参数。</p>
+<p><img data-src="https://oscarcx.com/hexo_resource/img/adobe_premiere_tutorial_b5.png"></p>
+<p>然后再把头像加上去。头像作为静态图片，操作方式跟前面添加背景是一模一样的，如法炮制即可。</p>
+<p><img data-src="https://oscarcx.com/hexo_resource/img/adobe_premiere_tutorial_b6.png"></p>
+<p>不过，如果经常做这种类型的视频，其实我觉得准备一套背景模板会更好，这样每次填入头像和id就可以用了。</p>
+<h2 id="0x03-淡入淡出"><a href="#0x03-淡入淡出" class="headerlink" title="0x03 - 淡入淡出"></a>0x03 - 淡入淡出</h2><p>现在视频看起来已经像模像样了~</p>
+<p>视频的结尾需要显示一张分数的截图，直接蹦出来略显突兀，因此最好加上淡入的效果。我翻了好几个b站的教程，好像都在讲什么遮罩，我看了半天一脸茫然。后来看了个YouTube视频才发现竟然如此简单，根本不像一些教程说的那么麻烦。。。当然这也可能是Adobe Premiere新增的功能，反正现在确实有傻瓜式的方法。</p>
+<p>找到左下角的“效果窗口”，视频过渡（Video Transitions） &gt; 溶解（Dissolve） &gt; 胶片溶解（Film Dissolve），直接拖拽到视频轨道的开头或者结尾，就会自动完成淡入淡出的效果，如下所示。</p>
+<p><img data-src="https://oscarcx.com/hexo_resource/img/adobe_premiere_tutorial_b7.png"></p>
+<h2 id="0x04-导出视频-1"><a href="#0x04-导出视频-1" class="headerlink" title="0x04 - 导出视频"></a>0x04 - 导出视频</h2><p>这就没啥好说的了，跟前面的导出是一样的。不过由于这次用了很多轨道，导出速度会比之前慢一些。</p>
+<p>成品：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Ty4y117gg/">Otenba Koimusume [BMS Lv.05 Stream] 94.38%</a></p>
+<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><p>如果懂英语的话，强烈推荐<a target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCCOCVxg0ZiLo6GQ0xctkM7g">Adobe in a Minute - YouTube</a>这个频道，讲解简洁易懂，一个知识点一分钟就给讲清楚了。</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/tech/genshin-direct-download.html" rel="prev" title="提取原神下载直链">
+                  <i class="fa fa-chevron-left"></i> 提取原神下载直链
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/game/shenzhen-io-walkthrough.html" rel="next" title="Shenzhen I/O 过关流程">
+                  Shenzhen I/O 过关流程 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2020 – 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fas fa-terminal"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">oscarcx123</span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="fa fa-chart-line"></i>
+        </span>
+        <span title="站点总字数">116k</span>
+      </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="fa fa-coffee"></i>
+        </span>
+        <span title="站点阅读时长">1:46</span>
+      </span>
+</div>
+  <div class="powered-info">
+    <span class="post-meta-item">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v5.4.0 强力驱动
+    </span>
+    <span class="post-meta-item"> 主题 – <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v8.3.0
+    </span>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script size="300" alpha="0.6" zIndex="-1" src="/js/ribbon.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@next-theme/pjax@0.4.0/pjax.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lozad@1.16.0/dist/lozad.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '.page-configurations',
+    '.main-inner',
+    '.post-toc-wrap',
+    '.languages',
+    '.pjax'
+  ],
+  analytics: false,
+  cacheBust: false,
+  scrollRestoration: false,
+  scrollTo: !CONFIG.bookmark.enable
+});
+
+document.addEventListener('pjax:success', () => {
+  pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'));
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  const hasTOC = document.querySelector('.post-toc');
+  document.querySelector('.sidebar-inner').classList.toggle('sidebar-nav-active', hasTOC);
+  document.querySelector(hasTOC ? '.sidebar-nav-toc' : '.sidebar-nav-overview').click();
+  NexT.utils.updateSidebarPosition();
+});
+</script>
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+    <div class="pjax">
+
+
+    </div>
+</body>
+</html>

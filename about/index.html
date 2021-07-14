@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-64x64-dragon.jpg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-64x64-dragon.jpg">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-64x64-dragon.jpg">
+  <link rel="mask-icon" href="/images/favicon-64x64-dragon.jpg" color="#222">
+  <meta name="google-site-verification" content="-QMh-gRPduq5T_vg3_Pwi3kZsNSiyuEpPBaDIXV8J34">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"oscarcx.com","root":"/","images":"/images","scheme":"Gemini","version":"8.3.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
+  </script>
+<meta name="description" content="欢迎来到这里！我是Azure~ 技能树计算机TLDR：除了Python其它都半桶水  Python（主力语言，比较熟悉，自学） PyQt5（写过几个GUI项目，CSDN发过一篇教程） Pygame（写了Python魔塔样板，本人目前最大的项目） OpenCV（做手游辅助用到过） Selenium（以前爬过实体集换式卡牌的价格）   R（稍微了解一些，在DataCamp学完了Data Analyst">
+<meta property="og:type" content="website">
+<meta property="og:title" content="关于我">
+<meta property="og:url" content="https://oscarcx.com/about/index.html">
+<meta property="og:site_name" content="Azure">
+<meta property="og:description" content="欢迎来到这里！我是Azure~ 技能树计算机TLDR：除了Python其它都半桶水  Python（主力语言，比较熟悉，自学） PyQt5（写过几个GUI项目，CSDN发过一篇教程） Pygame（写了Python魔塔样板，本人目前最大的项目） OpenCV（做手游辅助用到过） Selenium（以前爬过实体集换式卡牌的价格）   R（稍微了解一些，在DataCamp学完了Data Analyst">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-02-21T20:52:18.000Z">
+<meta property="article:modified_time" content="2021-07-14T11:14:28.751Z">
+<meta property="article:author" content="oscarcx123">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://oscarcx.com/about/">
+
+
+<script data-pjax class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+<title>关于我 | Azure
+</title>
+  
+
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+  <link rel="stylesheet" href="/aplayer/APlayer.min.css">
+  <div id="aplayer"></div>
+  <script type="text/javascript" src="/aplayer/APlayer.min.js"></script>
+  <script type="text/javascript" src="/aplayer/music.js"></script>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">Azure</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
+        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
+        <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%8A%80%E8%83%BD%E6%A0%91"><span class="nav-number">1.</span> <span class="nav-text">技能树</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA"><span class="nav-number">1.1.</span> <span class="nav-text">计算机</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B9%90%E5%99%A8"><span class="nav-number">1.2.</span> <span class="nav-text">乐器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B8%B8%E6%88%8F"><span class="nav-number">1.3.</span> <span class="nav-text">游戏</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8A%A8%E6%BC%AB"><span class="nav-number">1.4.</span> <span class="nav-text">动漫</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%97%B4%E7%BA%BF"><span class="nav-number">2.</span> <span class="nav-text">博客时间线</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%89%8D%E4%B8%96%E4%BB%8A%E7%94%9F"><span class="nav-number">3.</span> <span class="nav-text">博客的前世今生</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#AzureBlog"><span class="nav-number">3.1.</span> <span class="nav-text">AzureBlog</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#AzureTCG"><span class="nav-number">3.2.</span> <span class="nav-text">AzureTCG</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Azure%E2%80%99s-Note"><span class="nav-number">3.3.</span> <span class="nav-text">Azure’s Note</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Azure"><span class="nav-number">3.4.</span> <span class="nav-text">Azure</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="oscarcx123"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">oscarcx123</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">19</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/oscarcx123" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;oscarcx123" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner page posts-expand">
+  
+  
+
+
+    
+    
+    
+    <div class="post-block" lang="zh-CN"><header class="post-header">
+
+<h1 class="post-title" itemprop="name headline">关于我
+</h1>
+
+<div class="post-meta-container">
+</div>
+
+</header>
+
+      
+      
+      <div class="post-body">
+          <p>欢迎来到这里！我是Azure~</p>
+<h1 id="技能树"><a href="#技能树" class="headerlink" title="技能树"></a>技能树</h1><h2 id="计算机"><a href="#计算机" class="headerlink" title="计算机"></a>计算机</h2><p>TLDR：除了Python其它都半桶水</p>
+<ul>
+<li>Python（主力语言，比较熟悉，自学）<ul>
+<li>PyQt5（写过几个GUI项目，CSDN发过一篇<a target="_blank" rel="noopener" href="https://blog.csdn.net/AzureMouse/article/details/90338961">教程</a>）</li>
+<li>Pygame（写了<a target="_blank" rel="noopener" href="https://github.com/oscarcx123/MagicTower-Python">Python魔塔样板</a>，本人目前最大的项目）</li>
+<li>OpenCV（做手游辅助用到过）</li>
+<li>Selenium（以前爬过实体集换式卡牌的价格）</li>
+</ul>
+</li>
+<li>R（稍微了解一些，在DataCamp学完了<a target="_blank" rel="noopener" href="https://www.datacamp.com/tracks/data-analyst-with-r">Data Analyst with R</a>）<ul>
+<li>Tidyverse（dplyr, ggplot2, tidyr, readr）</li>
+<li>data.table</li>
+</ul>
+</li>
+<li>PostgreSQL（增查删改，各种套娃）</li>
+<li>Web<ul>
+<li>Javascript（稍微了解一点，以前给<a target="_blank" rel="noopener" href="https://h5mota.com/games/douluomota/">斗罗魔塔</a>写了几千行脚本）</li>
+<li>Html（稍微了解一点，在freecodecamp学完了Responsive Web Design）</li>
+<li>CSS（稍微了解一点，也是在freecodecamp学的）</li>
+</ul>
+</li>
+<li>Linux（用过Ubuntu、Manjaro、Raspbian）</li>
+</ul>
+<h2 id="乐器"><a href="#乐器" class="headerlink" title="乐器"></a>乐器</h2><p>钢琴弹了十几年，水平还不错，在外面可以用“自己是钢琴系”来忽悠别人</p>
+<details>
+<summary>缩减占地面积，感兴趣就看</summary>
+<pre>
+弹过下面这些作品（还有很多懒得写了）：
+* 肖邦
+    * 革命练习曲 (Op.10, No.12)
+    * 蝴蝶练习曲 (Op.25, No.12)
+    * 幻想即兴曲 (Op.66, No.4)
+    * 第一叙事曲 (Op.23, No.1)
+    * 第二叙事曲 (Op.38, No.2)
+    * 第二谐谑曲 (Op.31, No.2)
+    * 降A大调波兰舞曲 (Op. 53)
+    * 若干夜曲，圆舞曲
+* 李斯特
+    * 匈牙利狂想曲第六号 (S.244/6)
+    * 匈牙利狂想曲第二号 (S.244/2)
+    * 钟(S.141/3)
+* 拉赫玛尼诺夫
+    * Prelude in G Minor (Op.23, No.5)
+    * Prelude in F# Minor (Op.23, No.1)
+    * Prelude in B♭ Major (Op.23, No.2)
+    * Prelude in B Minor (Op.32, No.10)
+    * Prelude in C# Minor (Op.3, No.2)
+* 斯克里亚宾
+    * Etude in C# Minor (Op.42, No.5)
+
+<p>（行动力太差，已经没机会了）希望大学毕业之前能把下面这些曲子搞定<br>* Liszt: Mazeppa (S.139/4)<br>* Rachmaninoff: Moment Musicaux in E Minor (Op.16, No.4)<br>* Chopin: Ballade No.4 in F minor (Op.52, No.4)<br></pre></p>
+</details>
+
+<h2 id="游戏"><a href="#游戏" class="headerlink" title="游戏"></a>游戏</h2><p>不太喜欢实时竞技类型的游戏，RPG和音游玩的稍微多些。</p>
+<p>osu!mania</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://osu.ppy.sh/users/13929448">个人主页</a></li>
+<li><a target="_blank" rel="noopener" href="https://space.bilibili.com/482290952">游戏回放和手元</a></li>
+<li>最高全球排名：#3,636 (7,049 pp) @ 2021/7/1</li>
+</ul>
+<h2 id="动漫"><a href="#动漫" class="headerlink" title="动漫"></a>动漫</h2><p>先这么凑合放着，有空研究下折叠表格。</p>
+<table>
+<thead>
+<tr>
+<th>No.</th>
+<th>名称</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>无职转生 ～到了异世界就拿出真本事～</td>
+<td>S1 (1/2)</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Re：从零开始的异世界生活</td>
+<td>S1 + S2 + OVA</td>
+</tr>
+<tr>
+<td>3</td>
+<td>魔法科高中的劣等生</td>
+<td>S1 + S2 + Movie</td>
+</tr>
+<tr>
+<td>4</td>
+<td>天才麻将少女（咲-Saki-）</td>
+<td>S1 + S1.5 + S2</td>
+</tr>
+<tr>
+<td>5</td>
+<td>可塑性记忆</td>
+<td>S1</td>
+</tr>
+<tr>
+<td>6</td>
+<td>某科学的超电磁炮</td>
+<td>S1 + S2，缺 S3</td>
+</tr>
+<tr>
+<td>7</td>
+<td>灼眼的夏娜</td>
+<td>S1-S3 + OVA + Movie + Shanatan</td>
+</tr>
+<tr>
+<td>8</td>
+<td>轻音少女（K-ON）</td>
+<td>S1 + S2 + Movie</td>
+</tr>
+<tr>
+<td>9</td>
+<td>幸运☆星</td>
+<td>S1 + OVA</td>
+</tr>
+<tr>
+<td>10</td>
+<td>我的妹妹不可能那么可爱</td>
+<td>S1 + S2 + SP + PSP</td>
+</tr>
+<tr>
+<td>11</td>
+<td>零之使魔</td>
+<td>S1-S4 + SP</td>
+</tr>
+<tr>
+<td>12</td>
+<td>加速世界</td>
+<td>S1 + Movie（坑爹）+ SP</td>
+</tr>
+</tbody></table>
+<h1 id="博客时间线"><a href="#博客时间线" class="headerlink" title="博客时间线"></a>博客时间线</h1><table>
+<thead>
+<tr>
+<th>日期</th>
+<th>事件</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>2020.02.21</td>
+<td>建立Hexo博客</td>
+</tr>
+<tr>
+<td>2020.04.24</td>
+<td>恢复并迁移了旧博客的数据</td>
+</tr>
+<tr>
+<td>2020.08.09</td>
+<td>使用Travis-CI构建博客</td>
+</tr>
+<tr>
+<td>2020.11.08</td>
+<td>移除全部非技术类文章</td>
+</tr>
+<tr>
+<td>2021.04.10</td>
+<td>购买了域名oscarcx.com</td>
+</tr>
+<tr>
+<td>2021.04.12</td>
+<td>NexT主题升级到v8.3.0</td>
+</tr>
+</tbody></table>
+<h1 id="博客的前世今生"><a href="#博客的前世今生" class="headerlink" title="博客的前世今生"></a>博客的前世今生</h1><h2 id="AzureBlog"><a href="#AzureBlog" class="headerlink" title="AzureBlog"></a>AzureBlog</h2><p>AzureBlog是我第一个博客。当时啥也不懂，就跟着一篇教程搭建了个人博客，使用的还不是主流的博客软件。</p>
+<ul>
+<li>存活时间：2018/3/4 - 2018/8</li>
+<li>博客软件：<a target="_blank" rel="noopener" href="https://bitbucket.org/keakon/doodle/wiki/Home">Doodle</a></li>
+<li>部署平台：Google App Engine</li>
+<li>图床：Flickr</li>
+<li>网址：azureblogoscar.appspot.com</li>
+</ul>
+<h2 id="AzureTCG"><a href="#AzureTCG" class="headerlink" title="AzureTCG"></a>AzureTCG</h2><p>AzureTCG是我第二个博客。这回学聪明了，换到了一个主流博客软件，并且迁移了AzureBlog的全部内容。由于家里是公网ip，当时直接在路由器上开启了DMZ功能，然后去搞了个免费的<code>.tk</code>域名，看起来就是个正儿八经的网站。记得当时博客的少量文章还被谷歌收录了，不过现在已经搜不到了。</p>
+<ul>
+<li>存活时间：2018/8/17 - 2018/11</li>
+<li>博客软件：<a target="_blank" rel="noopener" href="https://wordpress.com/">WordPress</a></li>
+<li>部署平台：Raspberry Pi 3b+</li>
+<li>图床：本地储存</li>
+<li>网址：azuretcg.tk</li>
+</ul>
+<h2 id="Azure’s-Note"><a href="#Azure’s-Note" class="headerlink" title="Azure’s Note"></a>Azure’s Note</h2><p>Azure’s Note严格来讲并不算博客。当时需要一个地方记录零碎的技巧知识，又看到docsify在文档方面表现不俗，于是在zhaouv的力荐和帮助下，建立了依托于GitHub Page的网站。目前已经停止更新。</p>
+<ul>
+<li>上线时间：2019/4/5</li>
+<li>博客软件：<a target="_blank" rel="noopener" href="https://docsify.js.org/">docsify v4.5.5</a></li>
+<li>部署平台：GitHub</li>
+<li>图床：GitHub</li>
+<li>网址：oscarcx123.github.io/tree</li>
+</ul>
+<h2 id="Azure"><a href="#Azure" class="headerlink" title="Azure"></a>Azure</h2><p>因为docsify逐渐满足不了需求，就找到了Hexo来搭建真正的博客。只要GitHub不倒闭，应该就一直都会在的吧~</p>
+<ul>
+<li>上线时间：2020/2/21</li>
+<li>博客软件：<a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a></li>
+<li>部署平台：GitHub</li>
+<li>图床：GitHub</li>
+<li>网址：oscarcx.com</li>
+</ul>
+
+      </div>
+      
+      
+      
+    </div>
+
+    
+    
+
+
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2020 – 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fas fa-terminal"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">oscarcx123</span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="fa fa-chart-line"></i>
+        </span>
+        <span title="站点总字数">116k</span>
+      </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="fa fa-coffee"></i>
+        </span>
+        <span title="站点阅读时长">1:46</span>
+      </span>
+</div>
+  <div class="powered-info">
+    <span class="post-meta-item">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v5.4.0 强力驱动
+    </span>
+    <span class="post-meta-item"> 主题 – <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v8.3.0
+    </span>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script size="300" alpha="0.6" zIndex="-1" src="/js/ribbon.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@next-theme/pjax@0.4.0/pjax.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lozad@1.16.0/dist/lozad.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '.page-configurations',
+    '.main-inner',
+    '.post-toc-wrap',
+    '.languages',
+    '.pjax'
+  ],
+  analytics: false,
+  cacheBust: false,
+  scrollRestoration: false,
+  scrollTo: !CONFIG.bookmark.enable
+});
+
+document.addEventListener('pjax:success', () => {
+  pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'));
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  const hasTOC = document.querySelector('.post-toc');
+  document.querySelector('.sidebar-inner').classList.toggle('sidebar-nav-active', hasTOC);
+  document.querySelector(hasTOC ? '.sidebar-nav-toc' : '.sidebar-nav-overview').click();
+  NexT.utils.updateSidebarPosition();
+});
+</script>
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+    <div class="pjax">
+
+
+    </div>
+</body>
+</html>

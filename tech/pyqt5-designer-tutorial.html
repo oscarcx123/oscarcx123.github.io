@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-64x64-dragon.jpg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-64x64-dragon.jpg">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-64x64-dragon.jpg">
+  <link rel="mask-icon" href="/images/favicon-64x64-dragon.jpg" color="#222">
+  <meta name="google-site-verification" content="-QMh-gRPduq5T_vg3_Pwi3kZsNSiyuEpPBaDIXV8J34">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"oscarcx.com","root":"/","images":"/images","scheme":"Gemini","version":"8.3.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
+  </script>
+<meta name="description" content="在网上看了不少关于PyQt5的中文教程，但是无外乎是过时了，讲解不清晰易懂，或者资料不完整。Youtube上面倒是有不少视频，但是不少Youtuber居然还在手写ui而不是利用方便快捷的Qt Designer。仅有的几个视频虽然利用了Qt Designer来设计UI，但是他们并没有将UI跟逻辑分离，这种行为并不是我期望的。 为此，我花费了不少时间在网上寻找各种资料。于是乎，我最终还是下定决心把自己">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PyQt5（designer）入门教程">
+<meta property="og:url" content="https://oscarcx.com/tech/pyqt5-designer-tutorial.html">
+<meta property="og:site_name" content="Azure">
+<meta property="og:description" content="在网上看了不少关于PyQt5的中文教程，但是无外乎是过时了，讲解不清晰易懂，或者资料不完整。Youtube上面倒是有不少视频，但是不少Youtuber居然还在手写ui而不是利用方便快捷的Qt Designer。仅有的几个视频虽然利用了Qt Designer来设计UI，但是他们并没有将UI跟逻辑分离，这种行为并不是我期望的。 为此，我花费了不少时间在网上寻找各种资料。于是乎，我最终还是下定决心把自己">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/pyqt5_0x01_designer_install_success.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/pyqt5_0x02_new_form.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/pyqt5_0x02_designer_ui.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/pyqt5_0x03_designer_create_label.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/pyqt5_0x03_designer_change_label_text.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/pyqt5_0x03_designer_create_pushbutton.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/pyqt5_0x03_designer_create_menu.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/pyqt5_0x03_designer_preview.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/pyqt5_0x03_designer_code_helloworld.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/pyqt5_0x03_designer_run_helloworld.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/pyqt5_0x03_designer_layout_helloworld.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/pyqt5_0x04_designer_pushbutton_id.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/pyqt5_0x05_conversion_ui.png">
+<meta property="article:published_time" content="2019-04-06T01:52:00.000Z">
+<meta property="article:modified_time" content="2021-07-14T11:14:28.751Z">
+<meta property="article:author" content="oscarcx123">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="PyQt5">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://oscarcx.com/hexo_resource/img/pyqt5_0x01_designer_install_success.png">
+
+
+<link rel="canonical" href="https://oscarcx.com/tech/pyqt5-designer-tutorial.html">
+
+
+<script data-pjax class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+<title>PyQt5（designer）入门教程 | Azure</title>
+  
+
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+  <link rel="stylesheet" href="/aplayer/APlayer.min.css">
+  <div id="aplayer"></div>
+  <script type="text/javascript" src="/aplayer/APlayer.min.js"></script>
+  <script type="text/javascript" src="/aplayer/music.js"></script>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">Azure</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
+        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
+        <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#0x00-%E5%AE%89%E8%A3%85%E7%8E%AF%E5%A2%83%E6%B8%85%E5%8D%95"><span class="nav-number">1.</span> <span class="nav-text">0x00 安装环境清单</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0x01-%E5%AE%89%E8%A3%85PyQt5"><span class="nav-number">2.</span> <span class="nav-text">0x01 安装PyQt5</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0x02-%E5%88%9D%E8%AF%86Qt-Designer"><span class="nav-number">3.</span> <span class="nav-text">0x02 初识Qt Designer</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0x03-HelloWorld"><span class="nav-number">4.</span> <span class="nav-text">0x03 HelloWorld!</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0x04-Interaction"><span class="nav-number">5.</span> <span class="nav-text">0x04 Interaction</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0x05-Conversion"><span class="nav-number">6.</span> <span class="nav-text">0x05 Conversion</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0x06-threading"><span class="nav-number">7.</span> <span class="nav-text">0x06 threading</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0x0-%E5%B0%8F%E7%BB%93"><span class="nav-number">8.</span> <span class="nav-text">0x0? 小结</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="oscarcx123"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">oscarcx123</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">19</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/oscarcx123" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;oscarcx123" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://oscarcx.com/tech/pyqt5-designer-tutorial.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="oscarcx123">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Azure">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          PyQt5（designer）入门教程
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-04-05 21:52:00" itemprop="dateCreated datePublished" datetime="2019-04-05T21:52:00-04:00">2019-04-05</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/tech/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+        </span>
+    </span>
+
+  
+      </div>
+      <div class="post-meta">
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>5.1k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>5 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>在网上看了不少关于PyQt5的中文教程，但是无外乎是过时了，讲解不清晰易懂，或者资料不完整。Youtube上面倒是有不少视频，但是不少Youtuber居然还在手写ui而不是利用方便快捷的Qt Designer。仅有的几个视频虽然利用了Qt Designer来设计UI，但是他们并没有将UI跟逻辑分离，这种行为并不是我期望的。</p>
+<p>为此，我花费了不少时间在网上寻找各种资料。于是乎，我最终还是下定决心把自己的学习过程给记录下来。记录下来是给我自己复习跟参考的，如果有人能够从中受益，那也挺好，不用浪费时间去到处找答案。</p>
+<p>注：本文在2019/4/5于<a target="_blank" rel="noopener" href="https://github.com/oscarcx123/tree">个人轨迹树</a>首发，然后在2019/5/19发布到<a target="_blank" rel="noopener" href="https://blog.csdn.net/AzureMouse/article/details/90338961">CSDN</a>，截至2021年7月，在CSDN累计阅读数超过15万，获得众多读者一致好评。不知道为什么那么多人看，可能是因为我不卖关子吧，不需要关注这个关注那个号的。</p>
+<span id="more"></span>
+
+<h2 id="0x00-安装环境清单"><a href="#0x00-安装环境清单" class="headerlink" title="0x00 安装环境清单"></a>0x00 安装环境清单</h2><p>我使用的环境如下：</p>
+<ul>
+<li>Windows 10 (Build 17763)</li>
+<li>Python 3.7.2</li>
+<li>VSCode 1.33.0</li>
+<li>PyQt5</li>
+<li>Qt Designer</li>
+</ul>
+<p>如果你使用的是OSX或者Linux，请自行替换教程中的一些操作。</p>
+<p>本文并不讨论Python和VSCode的安装，如果没有VSCode，你可以用各种同类IDE替代或者安装它。</p>
+<p>本文不讨论多Python共存，毕竟Python2.7在2020年就要退役了，而且我本人也没这需求。</p>
+<h2 id="0x01-安装PyQt5"><a href="#0x01-安装PyQt5" class="headerlink" title="0x01 安装PyQt5"></a>0x01 安装PyQt5</h2><p>下面直接使用pip来安装PyQt5，此处可能是pip/pip3，或者两者皆可，后面不再重复</p>
+<p>直接pip安装PyQt5</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install PyQt5</span><br></pre></td></tr></table></figure>
+
+<p>由于Qt Designer已经在Python3.5版本从PyQt5转移到了tools，因此我们还需要安装pyqt5-tools</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install pyqt5-tools</span><br></pre></td></tr></table></figure>
+
+<p>到这一步，PyQt5就安装完成了，你可以通过下面若干可选的操作来检查是否已经安装成功：</p>
+<ul>
+<li>Win+S呼出Cornata主面板（搜索框），输入designer，如果看到跟下图类似的结果说明PyQt Designer已经被安装</li>
+</ul>
+<p><img data-src="https://oscarcx.com/hexo_resource/img/pyqt5_0x01_designer_install_success.png" alt="designer_install"></p>
+<ul>
+<li>在cmd中输入pyuic5，如果返回“Error: one input ui-file must be specified”说明安装成功。</li>
+</ul>
+<h2 id="0x02-初识Qt-Designer"><a href="#0x02-初识Qt-Designer" class="headerlink" title="0x02 初识Qt Designer"></a>0x02 初识Qt Designer</h2><p>注：Qt Designer的界面是全英文的，幸运的是有汉化方法，不过因为我本人用不上，所以如果有这方面需求可以自行搜索。</p>
+<p>我比较习惯用Win+S呼出Cornata主面板（搜索框）来启动各种应用，那么这里就是在搜索框中输入designer并敲回车，就能够启动Qt Designer了。</p>
+<p>初次启动会弹出这个“New Form”窗口，一般来说选择“Main Window”然后点击“Create”就可以了。下方有个“Show this Dialogue on Startup”的checkbox，如果不想每次启动都看到这个“New Form”窗口，可以取消勾选。</p>
+<p><img data-src="https://oscarcx.com/hexo_resource/img/pyqt5_0x02_new_form.png" alt="new_form"></p>
+<p>创建“Main Window”之后，我们会看到如下画面</p>
+<p><img data-src="https://oscarcx.com/hexo_resource/img/pyqt5_0x02_designer_ui.png" alt="designer_ui"></p>
+<p>下面就来简单介绍下整个画面的构成：</p>
+<ul>
+<li><p>左侧的“Widget Box”就是各种可以自由拖动的组件</p>
+</li>
+<li><p>中间的“MainWindow - untitled”窗体就是画布</p>
+</li>
+<li><p>右上方的”Object Inspector”可以查看当前ui的结构</p>
+</li>
+<li><p>右侧中部的”Property Editor”可以设置当前选中组件的属性</p>
+</li>
+<li><p>右下方的”Resource Browser”可以添加各种素材，比如图片，背景等等，目前可以不管</p>
+</li>
+</ul>
+<p>大致了解了每个板块之后，就可以正式开始编写第一个UI了</p>
+<h2 id="0x03-HelloWorld"><a href="#0x03-HelloWorld" class="headerlink" title="0x03 HelloWorld!"></a>0x03 HelloWorld!</h2><p>注：从这里开始，相关代码可以在<a target="_blank" rel="noopener" href="https://github.com/oscarcx123/tree/assets/code/pyqt5">/assets/code/pyqt5</a>中找到</p>
+<p>通常来说，编写GUI有两种方法：第一种就是直接使用方便快捷的Qt Designer，第二种就是写代码。在有Qt Designer的情况下，是完全不推荐费时费力去手写GUI代码的。Qt Designer可以所见即所得，并且可以方便的修改并做出各种调整。</p>
+<p>按照惯例，我们先来实现一个能够显示HelloWorld的窗口。</p>
+<p>1）添加文本</p>
+<p>在左侧的“Widget Box”栏目中找到“Display Widgets”分类，将“Label”拖拽到屏幕中间的“MainWindow”画布上，你就获得了一个仅用于显示文字的文本框，如下图所示。</p>
+<p><img data-src="https://oscarcx.com/hexo_resource/img/pyqt5_0x03_designer_create_label.png" alt="designer_create_label"></p>
+<p>2）编辑文本</p>
+<p>双击上图中的“TextLabel”，就可以对文本进行编辑，这里我们将其改成“HelloWorld!”，如下图所示。如果文字没有完全展示出来，可以自行拖拽空间改变尺寸。</p>
+<p><strong>特别提醒，编辑完文本之后记得敲击回车令其生效！</strong></p>
+<p><img data-src="https://oscarcx.com/hexo_resource/img/pyqt5_0x03_designer_change_label_text.png" alt="designer_change_label_text"></p>
+<p>3）添加按钮</p>
+<p>使用同样的方法添加一个按钮（PushButton）并将其显示的文本改成“HelloWorld!”，如下图所示。</p>
+<p><img data-src="https://oscarcx.com/hexo_resource/img/pyqt5_0x03_designer_create_pushbutton.png" alt="designer_create_pushbutton"></p>
+<p>4）修改窗口标题</p>
+<p>下面修改窗口标题。选中右上方的”Object Inspector”中的“MainWindow”，然后在右侧中部的”Property Editor”中找到“windowTitle”这个属性，在Value这一栏进行修改，修改完记得敲击回车。</p>
+<p>5）编辑菜单栏</p>
+<p>注意到画布的左上方有个“Type Here”，双击它即可开始编辑菜单栏。菜单栏支持创建多级菜单以及分割线（separator）。我随意创建了一些菜单项目，如下图所示。</p>
+<p><img data-src="https://oscarcx.com/hexo_resource/img/pyqt5_0x03_designer_create_menu.png" alt="designer_create_menu"></p>
+<p>6）预览</p>
+<p>使用快捷键Ctrl+R预览当前编写的GUI（或者从菜单栏的Form &gt; Preview / Preview in进入）</p>
+<p><img data-src="https://oscarcx.com/hexo_resource/img/pyqt5_0x03_designer_preview.png" alt="designer_preview"></p>
+<p>7）保存</p>
+<p>如果觉得完成了，那就可以保存成*.ui的文件，这里我们保存为HelloWorld.ui。为了方便演示，我将文件保存到D盘。</p>
+<p>8）生成Python代码</p>
+<p>使用cmd将目录切到D盘并执行下面的命令。请自行将下面命令中的name替换成文件名，比如本例中的“HelloWorld.ui”</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pyuic5 -o name.py name.ui</span><br></pre></td></tr></table></figure>
+
+<p>生成的代码应该类似下图所示</p>
+<p><img data-src="https://oscarcx.com/hexo_resource/img/pyqt5_0x03_designer_code_helloworld.png" alt="designer_code_helloworld"></p>
+<p>9）运行Python代码</p>
+<p>此时尝试运行刚刚生成的“HelloWorld.py”是没用的，因为生成的文件并没有程序入口。因此我们在同一个目录下另外创建一个程序叫做“main.py”，并输入如下内容。在本例中，gui_file_name就是HelloWorld，请自行替换。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="keyword">from</span> PyQt5.QtWidgets <span class="keyword">import</span> QApplication, QMainWindow</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> gui_file_name</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    app = QApplication(sys.argv)</span><br><span class="line">    MainWindow = QMainWindow()</span><br><span class="line">    ui = gui_file_name.Ui_MainWindow()</span><br><span class="line">    ui.setupUi(MainWindow)</span><br><span class="line">    MainWindow.show()</span><br><span class="line">    sys.exit(app.exec_())</span><br></pre></td></tr></table></figure>
+
+<p>然后运行“main.py”，你就能看到刚刚编写的GUI了！</p>
+<p><img data-src="https://oscarcx.com/hexo_resource/img/pyqt5_0x03_designer_run_helloworld.png" alt="designer_run_helloworld"></p>
+<p>10）组件自适应</p>
+<p>如果你刚刚尝试去缩放窗口，会发现组件并不会自适应缩放，因此我们需要回到Qt Designer中进行一些额外的设置。</p>
+<p>点击画布空白处，然后在上方工具栏找到grid layout或者form layout，在本例中我们使用grid layout。两种layout的图标如下图所示。</p>
+<p><img data-src="https://oscarcx.com/hexo_resource/img/pyqt5_0x03_designer_layout_helloworld.png" alt="designer_layout_helloworld"></p>
+<p>顺带一提，上图中layout的左边有三条横线以及三条竖线的图标，这两个是用于对齐组件，非常实用。</p>
+<p>设置grid layout后，我们使用Ctrl+R预览，这次组件可以自适应了！因为我们已经将UI（HelloWorld.py/HelloWorld.ui）跟逻辑（main.py）分离，因此直接重复步骤7-8即可完成UI的更新，无需改动逻辑（main.py）部分。</p>
+<h2 id="0x04-Interaction"><a href="#0x04-Interaction" class="headerlink" title="0x04 Interaction"></a>0x04 Interaction</h2><p>刚刚写的HelloWorld中，我们设置的按钮（PushButton）是没有实际作用的，因为我们并没有告诉这个按钮应该做什么。实际上，要让这个按钮做点什么只需要增加一行代码就可以了。</p>
+<p>1）获取按钮id</p>
+<p>打开HelloWorld.ui，在designer中选中对应的按钮，从“Property Editor”中可以得知这个按钮的“objectName”叫做“pushButton”，如下图所示。</p>
+<p><img data-src="https://oscarcx.com/hexo_resource/img/pyqt5_0x04_designer_pushbutton_id.png" alt="designer_pushbutton_id"></p>
+<p>2）设置触发</p>
+<p>Qt中有“信号和槽(signal and slot)”这个概念，不过目前无需深究，也无需在Designer中去设置对应按钮的“信号和槽”，直接在“main.py”中“MainWindow.show()”的后面加入下面这样的一行代码</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ui.pushButton.clicked.connect(click_success)</span><br></pre></td></tr></table></figure>
+
+<p>下面简单解释下这行代码</p>
+<ul>
+<li>pushButton就是刚刚获取的按钮id</li>
+<li>clicked就是信号，因为是点击，所以我们这里用clicked</li>
+<li>click_success就是对应要调用的槽，注意这里函数并不写成click_success()</li>
+</ul>
+<p>3）设置函数</p>
+<p>既然刚刚设置了按钮的触发并绑定了一个函数click_success，我们就要在“main.py”中实现它。示例如下</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">click_success</span>():</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;啊哈哈哈我终于成功了！&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>4）运行！</p>
+<p>UI跟逻辑分离的好处就在这里，我们这次不用去管“HelloWorld.py”了，直接运行修改完的“main.py”。点击按钮，这次你会发现在控制台中有了我们预设的输出。</p>
+<h2 id="0x05-Conversion"><a href="#0x05-Conversion" class="headerlink" title="0x05 Conversion"></a>0x05 Conversion</h2><p>这次我们来进行实战演练，编写一个带GUI的汇率转换器。</p>
+<p>1）设计UI</p>
+<p><img data-src="https://oscarcx.com/hexo_resource/img/pyqt5_0x05_conversion_ui.png" alt="conversion_ui"></p>
+<p>通过上面的讲解，你应该能够毫无压力的设计上面这样的UI并获得对应的代码。如果不行，那么不建议继续往下阅读，应当回头复习。</p>
+<p>2）传参</p>
+<p>现在我们有了GUI的代码以及上一节中使用的“main.py”，我们可以开始编写这个汇率转换器的逻辑部分。</p>
+<p>在上一节，我们介绍了如何让按钮响应点击操作，但是并没有接受任何参数，而且只是在控制台输出。但是，上一节中说明了并不能通过正常的方式进行传参。因此，对于传参，有两种解决方案，一种是使用lambda，还有一种是使用functool.partial。在接下来的环节中我们会使用partial。</p>
+<p>partial的用法如下所示：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">partial(function, arg1, arg2, ......)</span><br></pre></td></tr></table></figure>
+
+<p>既然使用partial传参，那么我们就要在程序（main.py）的头部加上下面这行。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> functools <span class="keyword">import</span> partial</span><br></pre></td></tr></table></figure>
+
+<p>然后我们把上一节中的按钮触发那行代码修改成下面这样。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ui.pushButton.clicked.connect(partial(convert, ui))</span><br></pre></td></tr></table></figure>
+
+<p>3）编写convert函数</p>
+<p>首先，我们要获取用户输入的数字。为了使得教程简洁易懂，我们这次只讲解单向的汇率转换。既然是单项的转换，那么我们只需要获取左侧的文本框id。在本例中，左侧的文本框id为lineEdit。如果你对此感到一头雾水，请停下并回头复习。</p>
+<p>获取文本使用的是text()方法，因此读取用户输入的代码如下</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">input</span> = ui.lineEdit.text()</span><br></pre></td></tr></table></figure>
+
+<p>接着我们进行汇率转换，注意这里要进行类型转换</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">result = <span class="built_in">float</span>(<span class="built_in">input</span>) * <span class="number">6.7</span></span><br></pre></td></tr></table></figure>
+
+<p>最后我们让右边的文本框显示结果</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ui.lineEdit_2.setText(<span class="built_in">str</span>(result))</span><br></pre></td></tr></table></figure>
+
+<p>下面是convert函数的代码</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">convert</span>(<span class="params">ui</span>):</span></span><br><span class="line">    <span class="built_in">input</span> = ui.lineEdit.text()</span><br><span class="line">    result = <span class="built_in">float</span>(<span class="built_in">input</span>) * <span class="number">6.7</span></span><br><span class="line">    ui.lineEdit_2.setText(<span class="built_in">str</span>(result))</span><br></pre></td></tr></table></figure>
+
+<p>一个简单的汇率转换器就这样诞生了！</p>
+<p>那么，如何知道一个组件都有什么方法呢？直接去<a target="_blank" rel="noopener" href="https://doc.qt.io/archives/qt-4.8/qtgui-module.html">Qt官方文档</a>查看就可以了。本节使用到的lineEdit的相关方法在<a target="_blank" rel="noopener" href="https://doc.qt.io/archives/qt-4.8/qtextedit.html">这里</a></p>
+<h2 id="0x06-threading"><a href="#0x06-threading" class="headerlink" title="0x06 threading"></a>0x06 threading</h2><p>1）前言</p>
+<p>这几天在用PyQt5写东西的时候遇到这样一个问题，网上资料也特别少，我感觉值得拿出来说一说。</p>
+<p>我的程序中使用了threading模块，GUI作为主线程去启动负责逻辑处理的子线程。其中，我设计的GUI里头有一个日志框，用来代替终端显示各种日志输出。既然子线程是负责逻辑处理，那么想当然的就会直接在子线程操作GUI的显示。</p>
+<p>都说了想当然，那当然不行咯，在子线程对GUI操作的时候，终端会出现下面这个错误，但是程序又不会马上闪退。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">QObject::connect: Cannot queue arguments of <span class="built_in">type</span> <span class="string">&#x27;QTextCursor&#x27;</span></span><br><span class="line">(Make sure <span class="string">&#x27;QTextCursor&#x27;</span> <span class="keyword">is</span> registered using qRegisterMetaType().)</span><br></pre></td></tr></table></figure>
+
+<p>更让人摸不着头脑的是，过一阵子闪退的时候，会出现下面这句话：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">段错误，核心已转储</span><br></pre></td></tr></table></figure>
+
+<p>这啥玩意儿？能说人话么？一番搜索之后，发现这个原来英语叫做“Segmentation fault (core dumped)”。</p>
+<p>“Segmentation fault”用人话来说大概就是“你尝试访问你无法访问的内存”。</p>
+<p>然后我把上面的报错信息搜索了下，发现之前有人在StackOverflow问过，但是答案牛头不对马嘴，不过倒是在评论区发现了大佬的留言。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">It is likely that the asker was not actually directly using QTextCursor, but rather using GUI code from a thread that was not the GUI thread. Attempting this seems to result in this error arising from Qt-internal code, e.g. for QTextEdit.append()</span><br></pre></td></tr></table></figure>
+
+<p>简而言之，就是说虽然报错显示QTextCursor，但是实际上是在其它线程通过Qt内部的方法间接调用了这个东西。</p>
+<p>热心大佬还留了个<a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/2104779/qobject-qplaintextedit-multithreading-issues">链接</a>，我跟过去看了，收获不少。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">It appears you&#x27;re trying to access QtGui classes from a thread other than the main thread. Like in some other GUI toolkits (e.g. Java Swing), that&#x27;s not allowed.</span><br><span class="line"></span><br><span class="line">Although QObject is reentrant, the GUI classes, notably QWidget and all its subclasses, are not reentrant. They can only be used from the main thread.</span><br></pre></td></tr></table></figure>
+
+<p>这个终于说到点子上了，一句话总结就是子线程不能调用主线程的QtGui类。</p>
+<p>所以大佬给出的方案如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">A solution is to use signals and slots for communication between the main thread (where the GUI objects live) and your secondary thread(s). Basically, you emit signals in one thread that get delivered to the QObjects via the other thread.</span><br></pre></td></tr></table></figure>
+
+<p>大概翻译下，就是说可以通过信号和槽来完成子线程跟GUI所在的主线程的通信，就是通过在子线程释放信号，传递到主线程的槽来完成。</p>
+<p>可惜的是，大佬并没有给出示例代码，那接下来就是动手实践了。</p>
+<p>2）实践</p>
+<p>首先我们在子线程的代码中创建一个对象，并且继承QObject（因为需要释放信号）。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">UpdateLog</span>(<span class="params">QObject</span>):</span></span><br><span class="line">    update_signal = pyqtSignal()</span><br><span class="line"> </span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self</span>):</span></span><br><span class="line">        QObject.__init__(self)</span><br><span class="line"> </span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">update</span>(<span class="params">self</span>):</span></span><br><span class="line">        self.update_signal.emit()</span><br></pre></td></tr></table></figure>
+
+<p><code>update_signal = pyqtSignal()</code>就是使用Signal类来创建一个自定义的信号。</p>
+<p><code>self.update_signal.emit()</code>就是当条件满足的时候，子线程可以调用UpdateLog类的update方法，就会发出信号。</p>
+<p>做完这些之后，主线程中别忘了连击信号和槽，比如<code>self.afk.utils.logger.update_signal.connect(self.write_log)</code>。然后现在再尝试运行程序，就没有任何问题了。</p>
+<p>不仅如此，其实其它需要共享的信息，也可以通过自定义信号和槽来传递。</p>
+<p>那么，现在就可以愉快的在PyQt程序中使用threading模块了。</p>
+<h2 id="0x0-小结"><a href="#0x0-小结" class="headerlink" title="0x0? 小结"></a>0x0? 小结</h2><p>本文只是抛砖引玉，上面这些只是PyQt5的入门内容。不过学会了简单的交互方法，其它的也差不多能依葫芦画瓢做出来。</p>
+<p>本文中设计的程序在/assets/code/pyqt5中。</p>
+<p>那么，就先写到这里了！</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Python/" rel="tag"># Python</a>
+              <a href="/tags/PyQt5/" rel="tag"># PyQt5</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+            </div>
+            <div class="post-nav-item">
+                <a href="/tech/reverse-engineering.html" rel="next" title="逆向工程学习记录">
+                  逆向工程学习记录 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2020 – 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fas fa-terminal"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">oscarcx123</span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="fa fa-chart-line"></i>
+        </span>
+        <span title="站点总字数">116k</span>
+      </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="fa fa-coffee"></i>
+        </span>
+        <span title="站点阅读时长">1:46</span>
+      </span>
+</div>
+  <div class="powered-info">
+    <span class="post-meta-item">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v5.4.0 强力驱动
+    </span>
+    <span class="post-meta-item"> 主题 – <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v8.3.0
+    </span>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script size="300" alpha="0.6" zIndex="-1" src="/js/ribbon.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@next-theme/pjax@0.4.0/pjax.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lozad@1.16.0/dist/lozad.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '.page-configurations',
+    '.main-inner',
+    '.post-toc-wrap',
+    '.languages',
+    '.pjax'
+  ],
+  analytics: false,
+  cacheBust: false,
+  scrollRestoration: false,
+  scrollTo: !CONFIG.bookmark.enable
+});
+
+document.addEventListener('pjax:success', () => {
+  pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'));
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  const hasTOC = document.querySelector('.post-toc');
+  document.querySelector('.sidebar-inner').classList.toggle('sidebar-nav-active', hasTOC);
+  document.querySelector(hasTOC ? '.sidebar-nav-toc' : '.sidebar-nav-overview').click();
+  NexT.utils.updateSidebarPosition();
+});
+</script>
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+    <div class="pjax">
+
+
+    </div>
+</body>
+</html>
