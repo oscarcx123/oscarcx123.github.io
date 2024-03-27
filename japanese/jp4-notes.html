@@ -1,0 +1,1703 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-64x64-dragon.jpg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-64x64-dragon.jpg">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-64x64-dragon.jpg">
+  <link rel="mask-icon" href="/images/favicon-64x64-dragon.jpg" color="#222">
+  <meta name="google-site-verification" content="-QMh-gRPduq5T_vg3_Pwi3kZsNSiyuEpPBaDIXV8J34">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"oscarcx.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.18.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":true,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+
+
+  <style type="text/css">
+
+div.hcb-content.hcb-block.hcbnote, details.hcb-content.box.hcbnote,div.hcb-content.hcb-block.hcbabstract, details.hcb-content.box.hcbabstract,div.hcb-content.hcb-block.hcbinfo, details.hcb-content.box.hcbinfo,div.hcb-content.hcb-block.hcbtip, details.hcb-content.box.hcbtip,div.hcb-content.hcb-block.hcbsuccess, details.hcb-content.box.hcbsuccess,div.hcb-content.hcb-block.hcbquestion, details.hcb-content.box.hcbquestion,div.hcb-content.hcb-block.hcbwarning, details.hcb-content.box.hcbwarning,div.hcb-content.hcb-block.hcbfailure, details.hcb-content.box.hcbfailure,div.hcb-content.hcb-block.hcbdanger, details.hcb-content.box.hcbdanger,div.hcb-content.hcb-block.hcbbug, details.hcb-content.box.hcbbug,div.hcb-content.hcb-block.hcbexample, details.hcb-content.box.hcbexample,div.hcb-content.hcb-block.hcbquote, details.hcb-content.box.hcbquote {
+  border: .05rem solid #448aff;
+  border-radius: .2rem;
+  font-size: 0.96rem;
+  margin: 1.5625em 0;
+  padding: 0 1.2rem;
+  transition: box-shadow 250ms;
+}
+div.hcb-content.hcb-block.hcbnote, details.hcb-content.box.hcbnote {
+  border-color: #448aff;
+}
+div.hcb-content.hcb-block.hcbabstract, details.hcb-content.box.hcbabstract {
+  border-color: #00b0ff;
+}
+div.hcb-content.hcb-block.hcbinfo, details.hcb-content.box.hcbinfo {
+  border-color: #00b8d4;
+}
+div.hcb-content.hcb-block.hcbtip, details.hcb-content.box.hcbtip {
+  border-color: #00bfa5;
+}
+div.hcb-content.hcb-block.hcbsuccess, details.hcb-content.box.hcbsuccess {
+  border-color: #00c853;
+}
+div.hcb-content.hcb-block.hcbquestion, details.hcb-content.box.hcbquestion {
+  border-color: #64dd17;
+}
+div.hcb-content.hcb-block.hcbwarning, details.hcb-content.box.hcbwarning {
+  border-color: #ff9100;
+}
+div.hcb-content.hcb-block.hcbfailure, details.hcb-content.box.hcbfailure {
+  border-color: #ff5252;
+}
+div.hcb-content.hcb-block.hcbdanger, details.hcb-content.box.hcbdanger {
+  border-color: #ff1744;
+}
+div.hcb-content.hcb-block.hcbbug, details.hcb-content.box.hcbbug {
+  border-color: #f50057;
+}
+div.hcb-content.hcb-block.hcbexample, details.hcb-content.box.hcbexample {
+  border-color: #7c4dff;
+}
+div.hcb-content.hcb-block.hcbquote, details.hcb-content.box.hcbquote {
+  border-color: #9e9e9e;
+}
+div.hcb-content.hcb-block.hcbnote:focus-within, details.hcb-content.box.hcbnote:focus-within {
+  box-shadow: 0 0 0 .2rem #448aff1a;
+}
+div.hcb-content.hcb-block.hcbabstract:focus-within, details.hcb-content.box.hcbabstract:focus-within {
+  box-shadow: 0 0 0 .2rem #00b0ff1a;
+}
+div.hcb-content.hcb-block.hcbinfo:focus-within, details.hcb-content.box.hcbinfo:focus-within {
+  box-shadow: 0 0 0 .2rem #00b8d41a;
+}
+div.hcb-content.hcb-block.hcbtip:focus-within, details.hcb-content.box.hcbtip:focus-within {
+  box-shadow: 0 0 0 .2rem #00bfa51a;
+}
+div.hcb-content.hcb-block.hcbsuccess:focus-within, details.hcb-content.box.hcbsuccess:focus-within {
+  box-shadow: 0 0 0 .2rem #00c8531a;
+}
+div.hcb-content.hcb-block.hcbquestion:focus-within, details.hcb-content.box.hcbquestion:focus-within {
+  box-shadow: 0 0 0 .2rem #64dd171a;
+}
+div.hcb-content.hcb-block.hcbwarning:focus-within, details.hcb-content.box.hcbwarning:focus-within {
+  box-shadow: 0 0 0 .2rem #ff91001a;
+}
+div.hcb-content.hcb-block.hcbfailure:focus-within, details.hcb-content.box.hcbfailure:focus-within {
+  box-shadow: 0 0 0 .2rem #ff52521a;
+}
+div.hcb-content.hcb-block.hcbdanger:focus-within, details.hcb-content.box.hcbdanger:focus-within {
+  box-shadow: 0 0 0 .2rem #ff17441a;
+}
+div.hcb-content.hcb-block.hcbbug:focus-within, details.hcb-content.box.hcbbug:focus-within {
+  box-shadow: 0 0 0 .2rem #f500571a;
+}
+div.hcb-content.hcb-block.hcbexample:focus-within, details.hcb-content.box.hcbexample:focus-within {
+  box-shadow: 0 0 0 .2rem #7c4dff1a;
+}
+div.hcb-content.hcb-block.hcbquote:focus-within, details.hcb-content.box.hcbquote:focus-within {
+  box-shadow: 0 0 0 .2rem #9e9e9e1a;
+}
+div.hcb-content.hcb-block.hcbnote *, details.hcb-content.box.hcbnote *,div.hcb-content.hcb-block.hcbabstract *, details.hcb-content.box.hcbabstract *,div.hcb-content.hcb-block.hcbinfo *, details.hcb-content.box.hcbinfo *,div.hcb-content.hcb-block.hcbtip *, details.hcb-content.box.hcbtip *,div.hcb-content.hcb-block.hcbsuccess *, details.hcb-content.box.hcbsuccess *,div.hcb-content.hcb-block.hcbquestion *, details.hcb-content.box.hcbquestion *,div.hcb-content.hcb-block.hcbwarning *, details.hcb-content.box.hcbwarning *,div.hcb-content.hcb-block.hcbfailure *, details.hcb-content.box.hcbfailure *,div.hcb-content.hcb-block.hcbdanger *, details.hcb-content.box.hcbdanger *,div.hcb-content.hcb-block.hcbbug *, details.hcb-content.box.hcbbug *,div.hcb-content.hcb-block.hcbexample *, details.hcb-content.box.hcbexample *,div.hcb-content.hcb-block.hcbquote *, details.hcb-content.box.hcbquote * {
+  box-sizing: border-box;
+}
+div.hcb-content.hcb-block.hcbnote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbnote > summary,div.hcb-content.hcb-block.hcbabstract > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbabstract > summary,div.hcb-content.hcb-block.hcbinfo > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbinfo > summary,div.hcb-content.hcb-block.hcbtip > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbtip > summary,div.hcb-content.hcb-block.hcbsuccess > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbsuccess > summary,div.hcb-content.hcb-block.hcbquestion > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquestion > summary,div.hcb-content.hcb-block.hcbwarning > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbwarning > summary,div.hcb-content.hcb-block.hcbfailure > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbfailure > summary,div.hcb-content.hcb-block.hcbdanger > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbdanger > summary,div.hcb-content.hcb-block.hcbbug > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbbug > summary,div.hcb-content.hcb-block.hcbexample > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbexample > summary,div.hcb-content.hcb-block.hcbquote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquote > summary {
+  border-top-right-radius: 0.1rem;
+  border-top-left-radius: 0.1rem;
+  border-left-width: 0.2rem;
+  display: block;
+  min-height: 1rem;
+  border: none;
+  font-weight: 700;
+  margin: 0 -1.2rem 1rem;
+  padding: 0.4rem 0.6rem;
+  position: relative;
+  outline: none;
+}
+details.hcb-content.box.hcbnote > summary,details.hcb-content.box.hcbabstract > summary,details.hcb-content.box.hcbinfo > summary,details.hcb-content.box.hcbtip > summary,details.hcb-content.box.hcbsuccess > summary,details.hcb-content.box.hcbquestion > summary,details.hcb-content.box.hcbwarning > summary,details.hcb-content.box.hcbfailure > summary,details.hcb-content.box.hcbdanger > summary,details.hcb-content.box.hcbbug > summary,details.hcb-content.box.hcbexample > summary,details.hcb-content.box.hcbquote > summary {
+  cursor: pointer;
+}
+details.hcb-content.box.hcbnote:not([open]) > summary,details.hcb-content.box.hcbabstract:not([open]) > summary,details.hcb-content.box.hcbinfo:not([open]) > summary,details.hcb-content.box.hcbtip:not([open]) > summary,details.hcb-content.box.hcbsuccess:not([open]) > summary,details.hcb-content.box.hcbquestion:not([open]) > summary,details.hcb-content.box.hcbwarning:not([open]) > summary,details.hcb-content.box.hcbfailure:not([open]) > summary,details.hcb-content.box.hcbdanger:not([open]) > summary,details.hcb-content.box.hcbbug:not([open]) > summary,details.hcb-content.box.hcbexample:not([open]) > summary,details.hcb-content.box.hcbquote:not([open]) > summary {
+  margin-bottom: 0;
+}
+div.hcb-content.hcb-block.hcbnote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbnote > summary {
+  background-color: #448aff1a;
+}
+div.hcb-content.hcb-block.hcbabstract > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbabstract > summary {
+  background-color: #00b0ff1a;
+}
+div.hcb-content.hcb-block.hcbinfo > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbinfo > summary {
+  background-color: #00b8d41a;
+}
+div.hcb-content.hcb-block.hcbtip > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbtip > summary {
+  background-color: #00bfa51a;
+}
+div.hcb-content.hcb-block.hcbsuccess > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbsuccess > summary {
+  background-color: #00c8531a;
+}
+div.hcb-content.hcb-block.hcbquestion > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquestion > summary {
+  background-color: #64dd171a;
+}
+div.hcb-content.hcb-block.hcbwarning > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbwarning > summary {
+  background-color: #ff91001a;
+}
+div.hcb-content.hcb-block.hcbfailure > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbfailure > summary {
+  background-color: #ff52521a;
+}
+div.hcb-content.hcb-block.hcbdanger > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbdanger > summary {
+  background-color: #ff17441a;
+}
+div.hcb-content.hcb-block.hcbbug > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbbug > summary {
+  background-color: #f500571a;
+}
+div.hcb-content.hcb-block.hcbexample > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbexample > summary {
+  background-color: #7c4dff1a;
+}
+div.hcb-content.hcb-block.hcbquote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquote > summary {
+  background-color: #9e9e9e1a;
+}
+div.hcb-content.hcb-block.hcbnote > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbnote > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #448aff;
+}
+div.hcb-content.hcb-block.hcbabstract > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbabstract > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00b0ff;
+}
+div.hcb-content.hcb-block.hcbinfo > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbinfo > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00b8d4;
+}
+div.hcb-content.hcb-block.hcbtip > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbtip > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00bfa5;
+}
+div.hcb-content.hcb-block.hcbsuccess > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbsuccess > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00c853;
+}
+div.hcb-content.hcb-block.hcbquestion > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbquestion > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #64dd17;
+}
+div.hcb-content.hcb-block.hcbwarning > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbwarning > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff9100;
+}
+div.hcb-content.hcb-block.hcbfailure > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbfailure > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff5252;
+}
+div.hcb-content.hcb-block.hcbdanger > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbdanger > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff1744;
+}
+div.hcb-content.hcb-block.hcbbug > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbbug > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #f50057;
+}
+div.hcb-content.hcb-block.hcbexample > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbexample > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #7c4dff;
+}
+div.hcb-content.hcb-block.hcbquote > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbquote > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #9e9e9e;
+}
+details.hcb-content.box.hcbnote > summary > div.hcb-box-open-button,details.hcb-content.box.hcbabstract > summary > div.hcb-box-open-button,details.hcb-content.box.hcbinfo > summary > div.hcb-box-open-button,details.hcb-content.box.hcbtip > summary > div.hcb-box-open-button,details.hcb-content.box.hcbsuccess > summary > div.hcb-box-open-button,details.hcb-content.box.hcbquestion > summary > div.hcb-box-open-button,details.hcb-content.box.hcbwarning > summary > div.hcb-box-open-button,details.hcb-content.box.hcbfailure > summary > div.hcb-box-open-button,details.hcb-content.box.hcbdanger > summary > div.hcb-box-open-button,details.hcb-content.box.hcbbug > summary > div.hcb-box-open-button,details.hcb-content.box.hcbexample > summary > div.hcb-box-open-button,details.hcb-content.box.hcbquote > summary > div.hcb-box-open-button {
+  float: right;
+}
+details.hcb-content.box.hcbnote > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbabstract > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbinfo > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbtip > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbsuccess > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbquestion > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbwarning > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbfailure > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbdanger > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbbug > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbexample > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbquote > summary > div.hcb-box-open-button > i {
+  margin: 0 0.6rem 0 0.6rem;
+  font-size: 0.7rem;
+  transition: transform 250ms
+}
+details.hcb-content.box.hcbnote:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbabstract:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbinfo:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbtip:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbsuccess:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquestion:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbwarning:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbfailure:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbdanger:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbbug:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbexample:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquote:not([open]) > summary > div.hcb-box-open-button i {
+  transform: rotate(270deg);
+}
+details.hcb-content.box.hcbnote[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbabstract[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbinfo[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbtip[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbsuccess[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquestion[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbwarning[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbfailure[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbdanger[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbbug[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbexample[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquote[open] > summary > div.hcb-box-open-button i {
+  transform: rotate(180deg);
+}
+details.hcb-content.box.hcbnote summary div.hcb-box-open-button i {
+  color: #448aff;
+}
+details.hcb-content.box.hcbabstract summary div.hcb-box-open-button i {
+  color: #00b0ff;
+}
+details.hcb-content.box.hcbinfo summary div.hcb-box-open-button i {
+  color: #00b8d4;
+}
+details.hcb-content.box.hcbtip summary div.hcb-box-open-button i {
+  color: #00bfa5;
+}
+details.hcb-content.box.hcbsuccess summary div.hcb-box-open-button i {
+  color: #00c853;
+}
+details.hcb-content.box.hcbquestion summary div.hcb-box-open-button i {
+  color: #64dd17;
+}
+details.hcb-content.box.hcbwarning summary div.hcb-box-open-button i {
+  color: #ff9100;
+}
+details.hcb-content.box.hcbfailure summary div.hcb-box-open-button i {
+  color: #ff5252;
+}
+details.hcb-content.box.hcbdanger summary div.hcb-box-open-button i {
+  color: #ff1744;
+}
+details.hcb-content.box.hcbbug summary div.hcb-box-open-button i {
+  color: #f50057;
+}
+details.hcb-content.box.hcbexample summary div.hcb-box-open-button i {
+  color: #7c4dff;
+}
+details.hcb-content.box.hcbquote summary div.hcb-box-open-button i {
+  color: #9e9e9e;
+}
+div.hcb-content.hcb-cards * {
+  box-sizing: border-box;
+}
+input.hcb-content.hcb-cards-input {
+  display: none;
+}
+div.hcb-content.hcb-cards-labels {
+  position: relative;
+  box-shadow: 0 -0.05rem #00000012 inset;
+  display: flex;
+  margin-bottom: 1.25rem;
+}
+div.hcb-content.hcb-cards-labels:before {
+  background: var(--cards-color);
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: translateX(var(--md-indicator-x));
+  transition: width 225ms, transform 250ms;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  width: var(--md-indicator-width);
+}
+label.hcb-content.hcb-cards-label {
+  border-bottom: 0.1rem solid #0000;
+  border-radius: 0.1rem 0.1rem 0 0;
+  cursor: pointer;
+  color: #0000008a;
+  font-size: 0.92em;
+  font-weight: 700;
+  padding: 0 1.25rem 0.625rem;
+  transition: color 250ms;
+}
+label.hcb-content.hcb-cards-label.active, label.hcb-content.hcb-cards-label:hover {
+  color: var(--cards-color);
+}
+div.hcb-content.hcb-cards-content {
+  display: none;
+}
+div.hcb-content.hcb-cards-content.active {
+  display: block;
+}
+</style>
+    <meta name="description" content="跟单词死磕到底！">
+<meta property="og:type" content="article">
+<meta property="og:title" content="新标日中级下笔记（N2）">
+<meta property="og:url" content="https://oscarcx.com/japanese/jp4-notes.html">
+<meta property="og:site_name" content="Azure">
+<meta property="og:description" content="跟单词死磕到底！">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/stickers/dino_13.jpg">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/jp4_ishigaki.jpg">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/jp4_yadai.jpg">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/jp4_hei.jpg">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/jp4_shime.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/stickers/dino_15.jpg">
+<meta property="article:published_time" content="2024-01-18T18:30:00.000Z">
+<meta property="article:modified_time" content="2024-03-27T02:38:56.053Z">
+<meta property="article:author" content="oscarcx123">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://oscarcx.com/hexo_resource/stickers/dino_13.jpg">
+
+
+<link rel="canonical" href="https://oscarcx.com/japanese/jp4-notes.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://oscarcx.com/japanese/jp4-notes.html","path":"japanese/jp4-notes.html","title":"新标日中级下笔记（N2）"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>新标日中级下笔记（N2） | Azure</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<style type="text/css">
+.spoiler {
+  display: inline;
+}
+p.spoiler {
+  display: flex;
+}
+.spoiler a {
+  pointer-events: none;
+}
+.spoiler-blur, .spoiler-blur > * {
+  transition: text-shadow .5s ease;
+}
+.spoiler .spoiler-blur, .spoiler .spoiler-blur > * {
+  color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  text-shadow: 0 0 10px grey;
+  cursor: pointer;
+}
+.spoiler .spoiler-blur:hover, .spoiler .spoiler-blur:hover > * {
+  text-shadow: 0 0 5px grey;
+}
+.spoiler-box, .spoiler-box > * {
+  transition: color .5s ease,
+  background-color .5s ease;
+}
+.spoiler .spoiler-box, .spoiler .spoiler-box > * {
+  color: black;
+  background-color: black;
+  text-shadow: none;
+}</style></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Azure</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#l17-%E5%8C%97%E4%BA%AC%E3%81%AE%E9%A1%94"><span class="nav-number">1.</span> <span class="nav-text"> L17 - 北京の顔</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E8%AF%8D"><span class="nav-number">1.1.</span> <span class="nav-text"> 单词</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BC%9A%E8%AF%9D"><span class="nav-number">1.2.</span> <span class="nav-text"> 会话</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%AD%E6%B3%95"><span class="nav-number">1.3.</span> <span class="nav-text"> 语法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#l18-%E6%89%8B%E7%B4%99"><span class="nav-number">2.</span> <span class="nav-text"> L18 - 手紙</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E8%AF%8D-2"><span class="nav-number">2.1.</span> <span class="nav-text"> 单词</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BC%9A%E8%AF%9D-2"><span class="nav-number">2.2.</span> <span class="nav-text"> 会话</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%AD%E6%B3%95-2"><span class="nav-number">2.3.</span> <span class="nav-text"> 语法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#l19"><span class="nav-number">3.</span> <span class="nav-text"> L19</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E8%AF%8D-3"><span class="nav-number">3.1.</span> <span class="nav-text"> 单词</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BC%9A%E8%AF%9D-3"><span class="nav-number">3.2.</span> <span class="nav-text"> 会话</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%AD%E6%B3%95-3"><span class="nav-number">3.3.</span> <span class="nav-text"> 语法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#l20"><span class="nav-number">4.</span> <span class="nav-text"> L20</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E8%AF%8D-4"><span class="nav-number">4.1.</span> <span class="nav-text"> 单词</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BC%9A%E8%AF%9D-4"><span class="nav-number">4.2.</span> <span class="nav-text"> 会话</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%AD%E6%B3%95-4"><span class="nav-number">4.3.</span> <span class="nav-text"> 语法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#l21"><span class="nav-number">5.</span> <span class="nav-text"> L21</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E8%AF%8D-5"><span class="nav-number">5.1.</span> <span class="nav-text"> 单词</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BC%9A%E8%AF%9D-5"><span class="nav-number">5.2.</span> <span class="nav-text"> 会话</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%AD%E6%B3%95-5"><span class="nav-number">5.3.</span> <span class="nav-text"> 语法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#l22"><span class="nav-number">6.</span> <span class="nav-text"> L22</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E8%AF%8D-6"><span class="nav-number">6.1.</span> <span class="nav-text"> 单词</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BC%9A%E8%AF%9D-6"><span class="nav-number">6.2.</span> <span class="nav-text"> 会话</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%AD%E6%B3%95-6"><span class="nav-number">6.3.</span> <span class="nav-text"> 语法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#l23"><span class="nav-number">7.</span> <span class="nav-text"> L23</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E8%AF%8D-7"><span class="nav-number">7.1.</span> <span class="nav-text"> 单词</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BC%9A%E8%AF%9D-7"><span class="nav-number">7.2.</span> <span class="nav-text"> 会话</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%AD%E6%B3%95-7"><span class="nav-number">7.3.</span> <span class="nav-text"> 语法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#l24"><span class="nav-number">8.</span> <span class="nav-text"> L24</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E8%AF%8D-8"><span class="nav-number">8.1.</span> <span class="nav-text"> 单词</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BC%9A%E8%AF%9D-8"><span class="nav-number">8.2.</span> <span class="nav-text"> 会话</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%AD%E6%B3%95-8"><span class="nav-number">8.3.</span> <span class="nav-text"> 语法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#l25"><span class="nav-number">9.</span> <span class="nav-text"> L25</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E8%AF%8D-9"><span class="nav-number">9.1.</span> <span class="nav-text"> 单词</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BC%9A%E8%AF%9D-9"><span class="nav-number">9.2.</span> <span class="nav-text"> 会话</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%AD%E6%B3%95-9"><span class="nav-number">9.3.</span> <span class="nav-text"> 语法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#l26"><span class="nav-number">10.</span> <span class="nav-text"> L26</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E8%AF%8D-10"><span class="nav-number">10.1.</span> <span class="nav-text"> 单词</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BC%9A%E8%AF%9D-10"><span class="nav-number">10.2.</span> <span class="nav-text"> 会话</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%AD%E6%B3%95-10"><span class="nav-number">10.3.</span> <span class="nav-text"> 语法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#l27"><span class="nav-number">11.</span> <span class="nav-text"> L27</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E8%AF%8D-11"><span class="nav-number">11.1.</span> <span class="nav-text"> 单词</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BC%9A%E8%AF%9D-11"><span class="nav-number">11.2.</span> <span class="nav-text"> 会话</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%AD%E6%B3%95-11"><span class="nav-number">11.3.</span> <span class="nav-text"> 语法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#l28"><span class="nav-number">12.</span> <span class="nav-text"> L28</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E8%AF%8D-12"><span class="nav-number">12.1.</span> <span class="nav-text"> 单词</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BC%9A%E8%AF%9D-12"><span class="nav-number">12.2.</span> <span class="nav-text"> 会话</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%AD%E6%B3%95-12"><span class="nav-number">12.3.</span> <span class="nav-text"> 语法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#l29"><span class="nav-number">13.</span> <span class="nav-text"> L29</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E8%AF%8D-13"><span class="nav-number">13.1.</span> <span class="nav-text"> 单词</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BC%9A%E8%AF%9D-13"><span class="nav-number">13.2.</span> <span class="nav-text"> 会话</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%AD%E6%B3%95-13"><span class="nav-number">13.3.</span> <span class="nav-text"> 语法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#l30"><span class="nav-number">14.</span> <span class="nav-text"> L30</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E8%AF%8D-14"><span class="nav-number">14.1.</span> <span class="nav-text"> 单词</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BC%9A%E8%AF%9D-14"><span class="nav-number">14.2.</span> <span class="nav-text"> 会话</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%AD%E6%B3%95-14"><span class="nav-number">14.3.</span> <span class="nav-text"> 语法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#l31"><span class="nav-number">15.</span> <span class="nav-text"> L31</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E8%AF%8D-15"><span class="nav-number">15.1.</span> <span class="nav-text"> 单词</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BC%9A%E8%AF%9D-15"><span class="nav-number">15.2.</span> <span class="nav-text"> 会话</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%AD%E6%B3%95-15"><span class="nav-number">15.3.</span> <span class="nav-text"> 语法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#l32"><span class="nav-number">16.</span> <span class="nav-text"> L32</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E8%AF%8D-16"><span class="nav-number">16.1.</span> <span class="nav-text"> 单词</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BC%9A%E8%AF%9D-16"><span class="nav-number">16.2.</span> <span class="nav-text"> 会话</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%AD%E6%B3%95-16"><span class="nav-number">16.3.</span> <span class="nav-text"> 语法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%94%89%E6%9D%A5%E4%B8%8D%E5%8A%A8%E4%BA%86"><span class="nav-number">17.</span> <span class="nav-text"> 唉，来不动了</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="oscarcx123"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">oscarcx123</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">31</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/oscarcx123" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;oscarcx123" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://oscarcx.com/japanese/jp4-notes.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="oscarcx123">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Azure">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="新标日中级下笔记（N2） | Azure">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          新标日中级下笔记（N2）
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2024-01-18 13:30:00" itemprop="dateCreated datePublished" datetime="2024-01-18T13:30:00-05:00">2024-01-18</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/japanese/" itemprop="url" rel="index"><span itemprop="name">日语</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>5.4k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>18 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>跟单词死磕到底！</p>
+<span id="more"></span>
+<p><strong>N5</strong>：狗，大狗，黑狗，我有狗。</p>
+<p><strong>N4</strong>：一条黑狗，一只小狗，傻狗，养狗。</p>
+<p><strong>N3</strong>：狗叫，喂狗，遛狗，逗狗玩。</p>
+<p><strong>N2</strong>：饲养狗，犬，大型犬，猎犬，警犬。</p>
+<p><strong>N1</strong>：豢养狗，吠，刍狗，狗皮膏药。</p>
+<p><strong>现实中交流</strong>：京巴，杜宾，金毛，拉布拉多，沙皮，松狮，比熊，萨摩耶，德牧，二哈。</p>
+<p>先狗一波。</p>
+<p>狗眼看人低。</p>
+<p>背单词背单词背单词！！！<img data-src="https://oscarcx.com/hexo_resource/stickers/dino_13.jpg" style="margin:0; display: inline;"></p>
+<h1 id="l17-北京の顔"><a class="markdownIt-Anchor" href="#l17-北京の顔"></a> L17 - 北京の顔</h1>
+<h2 id="单词"><a class="markdownIt-Anchor" href="#单词"></a> 单词</h2>
+<p>成果（せいか）[1] - 成果</p>
+<ul>
+<li>研究の成果をあげる</li>
+</ul>
+<p>以上（いじょう）[1] - 以上，超出</p>
+<ul>
+<li>これ / それ以上 - further，above，anymore
+<ul>
+<li>自己用「これ」，别人用「それ」</li>
+<li>もうこれ以上待てない</li>
+<li>あなたはそれ以上食べられますか？</li>
+</ul>
+</li>
+<li>以上５名が合格</li>
+<li>以上です - That's all</li>
+</ul>
+<p>一例（いちれい）[0] - 一个例子</p>
+<ul>
+<li>（一）例を挙げる</li>
+<li>一例として、私の経験を紹介する</li>
+</ul>
+<p>お世辞（おせじ）[0] - 恭维话，奉承话</p>
+<ul>
+<li>お世辞を言う</li>
+<li>お世辞でも嬉しい</li>
+</ul>
+<p>売り込む（うりこむ）[3] - 推销；出卖秘密；（金融市场）大量抛售</p>
+<ul>
+<li>新製品を売り込む</li>
+<li>志望する会社に自分を売り込む</li>
+<li>情報を売り込む</li>
+<li>中国本土の株式市場の売り込みが続いています</li>
+</ul>
+<p>戦略（せんりゃく）[0] - 战略</p>
+<ul>
+<li>戦略を立てる</li>
+</ul>
+<p>敏感（びんかん）[0] - 敏感</p>
+<ul>
+<li>温度の変化に敏感だ</li>
+<li>刺激に敏感な肌</li>
+<li>敏感肌</li>
+</ul>
+<p>間（あいだ）[0] - 之间，间隔，期间；关系</p>
+<ul>
+<li>東京と横浜の間を走る電車</li>
+<li>間をあけて植える</li>
+<li>二人の間を裂く</li>
+<li>間に立つ - 居中调解</li>
+</ul>
+<p>生木を裂く - 棒打鸳鸯（拆散相爱的夫妻或情侣）</p>
+<ul>
+<li>友人の彼女が好きだったので生木を裂いて彼女を自分のものにした</li>
+</ul>
+<p>大した（たいした）[1] - 惊人的，了不起的；（后接否定）没什么了不起的</p>
+<ul>
+<li>大した発明</li>
+<li>大した問題ではない</li>
+<li>大したこと（は）ないよ - 没什么了不起的啦</li>
+<li>大したことではない - 不是什么了不起的事情</li>
+</ul>
+<p>ラベル（label）[1] - 标签</p>
+<ul>
+<li>ラベルを貼る</li>
+<li>ラベルを剥がす</li>
+</ul>
+<p>～ども - …们</p>
+<ul>
+<li>前接第一人称代名词，表示自谦</li>
+<li>前接其它表示人的名词，表示轻蔑</li>
+<li>野郎ども、私ども</li>
+</ul>
+<p>意外（いがい）[0] - 意外</p>
+<ul>
+<li>意外な出来事 / 事件</li>
+<li>意外に思う</li>
+<li>注：作副词时，「意外に」=「意外と」，后者比较口语化，是较新的用法（<a target="_blank" rel="noopener" href="https://japanese.stackexchange.com/questions/2714/is-there-any-difference-between-%E6%84%8F%E5%A4%96%E3%81%AB-and-%E6%84%8F%E5%A4%96%E3%81%A8">Is there any difference between 意外に and 意外と?</a>）</li>
+</ul>
+<p>案外（あんがい）[1] - 意想不到，出乎意外</p>
+<ul>
+<li>案外面白かった = 意外と面白かった</li>
+<li>彼女には案外な一面がある</li>
+</ul>
+<p>概略（がいりゃく）[0] - 概要，概略，梗概</p>
+<ul>
+<li>事件の概略</li>
+</ul>
+<p>堅苦しい（かたくるしい）[5] - 严格，死板，一本正经</p>
+<ul>
+<li>堅苦しい規則</li>
+<li>堅苦しい話</li>
+</ul>
+<p>温暖（おんだん）[0] - 温暖</p>
+<ul>
+<li>気候の温暖な地方</li>
+<li>地球温暖化</li>
+</ul>
+<p>放る（ほうる）[0] - 抛，扔；放弃；弃置不顾，不加理睬（ておく）</p>
+<ul>
+<li>ボールを放る</li>
+<li>試験を放る</li>
+<li>仕事を放っておく</li>
+<li>放っておいてよ - 你不要管我了（Leave me alone）</li>
+</ul>
+<p>～込む - ～进</p>
+<p>飛び込む（とびこむ）[3] - 跳入，跳进；车死；突然闯进</p>
+<ul>
+<li>プールに飛び込む</li>
+<li>電車に飛び込んで死ぬ</li>
+<li>財布を落として交番に飛び込む</li>
+</ul>
+<p>投げ込む（なげこむ）[3] - 投进，投入</p>
+<ul>
+<li>手紙をポストに投げ込む</li>
+</ul>
+<p>放り込む（ほうりこむ）[4] - 扔进</p>
+<ul>
+<li>ランドセルを家に放り込む</li>
+</ul>
+<p>ほっとく（「ほっておく」の音変化）[0] - 弃置不顾，不加理睬</p>
+<ul>
+<li>ほっといて = 放っておいてよ</li>
+<li>ほっとけ！ - 别理他了</li>
+</ul>
+<p>持ち込む（もちこむ）[3] - 带进，带入；提出（问题，意见等）</p>
+<ul>
+<li>危険物を汽車に持ち込まないでください</li>
+<li>出版社に企画を持ち込む</li>
+</ul>
+<p>流れ込む（ながれこむ）[4] - 流进，流入</p>
+<ul>
+<li>失業者が都会に流れ込む</li>
+<li>廃水が海に流れ込む</li>
+</ul>
+<p>潜り込む（もぐりこむ）[4] - 潜入，钻入</p>
+<ul>
+<li>水に潜り込む</li>
+<li>会場に潜り込む</li>
+<li>布団に潜り込む</li>
+</ul>
+<p>落ち込む（おちこむ）[3] - 掉进，掉入；下陷；下降；低落，消沉</p>
+<ul>
+<li>穴に落ち込む</li>
+<li>痩せて目が落ち込む</li>
+<li>景気 / 成績が落ち込む</li>
+<li>失恋して落ち込む</li>
+<li>落ち込んでいないで、しっかりしろよ！</li>
+</ul>
+<p>勉強になる - 学到东西，有收获</p>
+<ul>
+<li>（大変）勉強になりました</li>
+</ul>
+<p>見事（みごと）[1] - 精彩，出色；（反語的）完全，彻底</p>
+<ul>
+<li>桜が見事に咲く（=素晴らしい）</li>
+<li>見事に失敗する（=すっかり）</li>
+<li>見事な腕前</li>
+<li>お見事！</li>
+</ul>
+<p>カロリー（calorie）[1] - 卡路里</p>
+<ul>
+<li>低カロリーの食事</li>
+</ul>
+<p>見直す（みなおす）[0] - 重看，重新审视，另眼相看</p>
+<ul>
+<li>提出前に作文を見直す</li>
+<li>彼の人柄を見直す</li>
+</ul>
+<p>一時（いちじ）[2] - 临时，一时，暂时</p>
+<ul>
+<li>都合により一時休業する</li>
+<li>一時的な現象</li>
+</ul>
+<p>憩い（いこい）[0] - 休憩，休息</p>
+<ul>
+<li>憩いの場</li>
+<li>憩いの時間</li>
+</ul>
+<p>憩う（いこう）[2] - 休憩，休息</p>
+<ul>
+<li>鳥が水辺に憩う</li>
+</ul>
+<p>無数（むすう）[2] - 无数</p>
+<ul>
+<li>無数の人</li>
+<li>地球の外に星が無数にある</li>
+</ul>
+<p>存在（そんざい）[0] - 存在</p>
+<ul>
+<li>存在を疑う</li>
+<li>神の存在を信じる</li>
+<li>歴史上に存在する人物</li>
+</ul>
+<p>遡る（さかのぼる）[4] - 逆流而上；追溯【×溯る／×泝る】</p>
+<ul>
+<li>川を遡る</li>
+<li>歴史を遡る</li>
+<li>清の時代に遡る</li>
+<li>1000年前まで遡る</li>
+</ul>
+<p>敵（てき）[0] - 敌人，敌；对手，敌手</p>
+<ul>
+<li>敵は本能寺にあり</li>
+</ul>
+<p>石垣（いしがき）[0] - 石墙，石围墙，石垣</p>
+<p><img data-src="https://oscarcx.com/hexo_resource/img/jp4_ishigaki.jpg" alt="" /></p>
+<p>住居（じゅうきょ）[1] - 住宅，住处，居住地，住址</p>
+<ul>
+<li>東京に住居を定める</li>
+</ul>
+<p>取り囲む（とりかこむ）[0] - 围，包围，环绕</p>
+<ul>
+<li>テーブルを取り囲む</li>
+<li>新聞記者に取り囲まれる</li>
+</ul>
+<p>頻繁（ひんぱん）[0] - 频繁</p>
+<ul>
+<li>事件が頻繁に起こる</li>
+</ul>
+<p>屋台（やたい）[1] - 货摊子，路边摊</p>
+<ul>
+<li>おでんの屋台</li>
+</ul>
+<p><img data-src="https://oscarcx.com/hexo_resource/img/jp4_yadai.jpg" alt="" /></p>
+<p>時には（ときには）[2] - 有时，偶尔（=場合によっては；たまには）</p>
+<ul>
+<li>時には遅く帰ることもある</li>
+</ul>
+<p>置き場（おきば）[0] - 存放处</p>
+<ul>
+<li>自転車置き場</li>
+<li>ごみ置き場</li>
+</ul>
+<p>刃物（はもの）[1] - 刀，刀具</p>
+<ul>
+<li>刃物を研ぐ</li>
+</ul>
+<p>研ぐ（とぐ）[1] - 磨刀；擦亮；淘米</p>
+<ul>
+<li>刀を研ぐ</li>
+<li>鏡を研ぐ</li>
+<li>米を研ぐ</li>
+</ul>
+<p>爪を研ぐ - 摩拳擦掌</p>
+<ul>
+<li>相手の失敗を爪を研いで待つ</li>
+</ul>
+<p>家屋（かおく）[1] - 房屋，住房（正式，=家）</p>
+<ul>
+<li>台風で家屋が壊れる</li>
+</ul>
+<p>東西南北（とうざいなんぼく）[5] - 东西南北，四面八方</p>
+<ul>
+<li>東西南北から人が集まる</li>
+</ul>
+<p>改造（かいぞう）[0] - 改造，改组</p>
+<ul>
+<li>家屋の改造</li>
+<li>内閣を改造する</li>
+</ul>
+<p>せいぜい（精々）[1] - 最多，充其量；尽量，尽可能</p>
+<ul>
+<li>原価はせいぜい千円ぐらいだろう</li>
+<li>集まってもせいぜい10人ぐらいだ</li>
+<li>せいぜい勉強しなさい</li>
+</ul>
+<p>繋ぐ（つなぐ）[0] - 连接，拴，系</p>
+<ul>
+<li>手を繋ぐ</li>
+<li>船を岸に繫ぐ</li>
+<li>犬を繋いでおく</li>
+</ul>
+<p>動き（うごき）[3] - 动作，动向</p>
+<ul>
+<li>敵の動きを探る</li>
+<li>動きが速い</li>
+</ul>
+<p>指定（してい）[0] - 指定（普通 / 官方）</p>
+<ul>
+<li>約束の時間と場所を指定してください</li>
+<li>公園に指定する</li>
+</ul>
+<p>保存（ほぞん）[0] - 保存</p>
+<ul>
+<li>冷蔵庫でアイスを保存する</li>
+</ul>
+<p>混在（こんざい）[0] - 并存，混在一起</p>
+<ul>
+<li>氷と水とが混在する</li>
+<li>様々な要素が混在する</li>
+</ul>
+<p>変革（へんかく）[0] - 変革</p>
+<ul>
+<li>制度を変革する</li>
+<li>変革の時代を迎える</li>
+<li>日本経済は変革を迫られている</li>
+</ul>
+<p>～箇所（かしょ）[-2] -～处，～个地方</p>
+<ul>
+<li>「箇」「ヶ」「か」「カ」都可以</li>
+<li>一ヶ所、二ヶ所、3ヶ所</li>
+</ul>
+<p>年配（ねんぱい）[0] - 大龄（中年）；年纪；年上</p>
+<ul>
+<li>年配の方</li>
+<li>同じ年配の人</li>
+<li>二歳年配の人</li>
+</ul>
+<p>旅（たび）[2] - 旅程，旅途</p>
+<ul>
+<li>自分探しの旅に出る</li>
+<li>旅人（たびびと）[0] - 旅人，旅行者</li>
+</ul>
+<p>見上げる（みあげる）[0] - 仰望，往上看；景仰，敬重</p>
+<ul>
+<li>夜空 / 星空を見上げる</li>
+<li>見上げた人物</li>
+</ul>
+<p>先祖（せんぞ）[1] - 祖先</p>
+<ul>
+<li>先祖代々 - 祖祖辈辈</li>
+<li>先祖を祭る</li>
+</ul>
+<p>方角（ほうがく）[0] - 方位；方向</p>
+<ul>
+<li>方角を失う - 迷失方向</li>
+</ul>
+<p>応募（おうぼ）[0] - 报名参加，应征；应募</p>
+<ul>
+<li>コンクールに応募する</li>
+</ul>
+<p>誇り（ほこり）[0] - 骄傲，自豪，自尊心</p>
+<ul>
+<li>誇りに思う</li>
+<li>自分の仕事に誇りを持つ</li>
+<li>メンバーの一員として誇りを感じる</li>
+</ul>
+<p>彫る（ほる）[1] - 雕刻，刻写《「掘る」と同語源》</p>
+<ul>
+<li>仏像を彫る</li>
+<li>机に名前を彫る</li>
+</ul>
+<p>今にも（いまにも）[1] - 眼看就要，马上</p>
+<ul>
+<li>今にも泣き出しそうな顔をしている</li>
+<li>今にも降り出しそうな天気だ</li>
+</ul>
+<p>捕まる（つかまる）[3] - 被抓住，被逮捕</p>
+<ul>
+<li>犯人が捕まる</li>
+</ul>
+<p>籠（かご）[0] - 筐，篮，笼</p>
+<ul>
+<li>籠の鳥 / 籠の中の鳥 - 没有自由的人（笼中鸟）</li>
+<li>籠の鳥のような生活</li>
+<li>鳥籠</li>
+<li>籠を編む</li>
+</ul>
+<p>塀（へい）[0] - 墙，院墙，围墙，栅栏</p>
+<p><img data-src="https://oscarcx.com/hexo_resource/img/jp4_hei.jpg" alt="" /></p>
+<p>正確（せいかく）[0] - 正确</p>
+<ul>
+<li>正確な判断 / 発音</li>
+<li>正確に答える</li>
+<li>不正確なメモ</li>
+</ul>
+<p>人工（じんこう）[0] - 人工，人造</p>
+<ul>
+<li>人工知能</li>
+<li>人工衛星</li>
+<li>人工の湖</li>
+</ul>
+<p>打ち上げ（うちあげ）[0] -（火箭、烟花等）发射；庆功宴</p>
+<ul>
+<li>ロケットの打ち上げは成功した</li>
+<li>学園祭の打ち上げをする</li>
+<li>打ち上げ花火 -（空中绽放的）烟花，烟火</li>
+</ul>
+<p>日当たり（ひあたり）[0] - 向阳（阳光照射得到）</p>
+<ul>
+<li>日当たりのよい家</li>
+</ul>
+<p>植える（うえる）[0] - 种，植，栽</p>
+<ul>
+<li>花 / 木を植える</li>
+</ul>
+<p>欠かす（かかす）[0] - 缺，缺少</p>
+<ul>
+<li>授業を一日も欠かさない</li>
+<li>毎日欠かさず練習する</li>
+</ul>
+<p>四方（しほう）[2] - 四方，周围；四海</p>
+<ul>
+<li>四方から来る</li>
+<li>四方に人材を求める</li>
+</ul>
+<p>塩分（えんぶん）[1] - 盐分</p>
+<ul>
+<li>塩分を多量に含む</li>
+<li>塩分を控えたメニュー</li>
+</ul>
+<p>献立（こんだて）[0] - 菜单；（计划）筹备</p>
+<ul>
+<li>献立を見せてください</li>
+<li>会議の献立をする</li>
+</ul>
+<p>寄付（きふ）[1] - 捐助，捐赠</p>
+<ul>
+<li>寄付を募る</li>
+<li>学校にピアノを寄付する</li>
+<li>寄付金（きふきん）[2] - 捐款</li>
+</ul>
+<p>幸い（さいわい）[0] - 幸运；幸好</p>
+<ul>
+<li>幸いを祈る</li>
+<li>幸い間に合った</li>
+<li>不幸中の幸い - 不幸中的万幸</li>
+<li>～れば幸いです</li>
+<li>ご参考になれば幸いです</li>
+<li>どうかこれからも温かい目で見守っていただければ幸いです</li>
+</ul>
+<p>徐々に（じょじょに）[1] - 徐徐，渐渐，逐步</p>
+<ul>
+<li>車が徐々に動き出す</li>
+</ul>
+<p>コンクール（FR:concours）[3] - 比赛，竞赛</p>
+<ul>
+<li>ピアノコンクール</li>
+<li>写真コンクール</li>
+</ul>
+<p>入賞（にゅうしょう）[0] - 获奖，得奖</p>
+<ul>
+<li>マラソンで3位に入賞する</li>
+</ul>
+<p>沿う（そう）[0] - 沿着，顺着</p>
+<ul>
+<li>この道に沿ってまっすぐ行く</li>
+<li>川に沿って進む</li>
+</ul>
+<p>抗議（こうぎ）[1] - 抗议</p>
+<ul>
+<li>抗議を申し込む</li>
+<li>審判のジャッジに抗議する</li>
+</ul>
+<p>沿い（ぞい）[0] - 沿…</p>
+<ul>
+<li>川沿い、海沿い、山沿い（都是0调）</li>
+<li>川沿いに散歩する</li>
+<li>海沿いの町</li>
+</ul>
+<h2 id="会话"><a class="markdownIt-Anchor" href="#会话"></a> 会话</h2>
+<h2 id="语法"><a class="markdownIt-Anchor" href="#语法"></a> 语法</h2>
+<h1 id="l18-手紙"><a class="markdownIt-Anchor" href="#l18-手紙"></a> L18 - 手紙</h1>
+<h2 id="单词-2"><a class="markdownIt-Anchor" href="#单词-2"></a> 单词</h2>
+<p>売り込み（うりこみ）[0] - 推销；（金融市场）大量抛售</p>
+<ul>
+<li>売り込みを図る</li>
+<li>中国本土の株式市場の売り込みが続いています</li>
+</ul>
+<p>正直（しょうじき）[3] - 老实，正直</p>
+<ul>
+<li>正直な人</li>
+<li>馬鹿正直（ばかしょうじき）[3] - 过于老实</li>
+<li>正直に言うと、…</li>
+</ul>
+<p>ベース（base）[1] - 基础，基准；基地</p>
+<ul>
+<li>黒をベースにして色を組み合わせる</li>
+</ul>
+<p>物足りない（ものたりない）[0] - 不够充足，不过瘾</p>
+<ul>
+<li>説明が物足りない - 说明不到位</li>
+<li>彼は優しいけど、恋人としてはなんか物足りない気がする</li>
+</ul>
+<p>当～ - 本～，这～</p>
+<ul>
+<li>当店、当ホテル、当案件</li>
+</ul>
+<p>弊～ - 敝～，鄙～</p>
+<ul>
+<li>弊社、弊店</li>
+</ul>
+<p>率直（そっちょく）[0] - 坦率，直率，直爽</p>
+<ul>
+<li>率直な意見を求める</li>
+<li>率直に言えば</li>
+<li>率直に言うと、君のほうが悪い</li>
+</ul>
+<p>興味深い（きょうみぶかい）[5] - 很有兴趣，颇有意思</p>
+<ul>
+<li>実に興味深い話だ</li>
+<li>興味深い問題</li>
+</ul>
+<p>売り切れ（うりきれ）[0] - 卖完，售完，售罄</p>
+<ul>
+<li>本日売り切れ</li>
+</ul>
+<p>もっとも（×尤も）[3] - 〘形動〙合理，正当；〘接〙话虽如此，但是，可是</p>
+<ul>
+<li>彼女が怒るのももっともだ（=当然）</li>
+<li>毎日5時まで会社に勤めています。もっとも土曜日は午前だけです。（=ただ、ただし）</li>
+<li>注：「最も」と同語源（世界で最も高い山は？）</li>
+</ul>
+<p>限り（かぎり）[1] - 限度，极限，止境</p>
+<ul>
+<li>欲望には限りがない</li>
+<li>声の限り</li>
+</ul>
+<p>畑（はたけ）[0] - 旱田，旱地</p>
+<ul>
+<li>畑を耕す</li>
+<li>花畑（はなばたけ）[3] - 花田</li>
+</ul>
+<p>失業者（しつぎょうしゃ）[3] - 失业者</p>
+<ul>
+<li>失業者が都会に流れ込む</li>
+</ul>
+<p>正社員（せいしゃいん）[3] - 正式职员，正社员</p>
+<ul>
+<li>派遣社員（はけんしゃいん）[4] - 派遣社员</li>
+<li>フリーター（freeter）[2] - 打零工生活的人（自由职业者）</li>
+<li>ニート（neet）[1] - 啃老族</li>
+</ul>
+<p>作業（さぎょう）[1] - 操作，工作，作业</p>
+<ul>
+<li>作業員（さぎょういん）[2] - 操作员</li>
+</ul>
+<p>ミス（miss）[1] - 失误，错误</p>
+<ul>
+<li>～をミスする</li>
+<li>計算ミス</li>
+<li>ミスる（ミスの動詞化）[2] - 失误，犯错误</li>
+<li>わー、ミスった！どうしよう！</li>
+</ul>
+<p>情報（じょうほう）[0] - 情报，信息，消息</p>
+<ul>
+<li>情報を集める</li>
+<li>情報が漏れる - 情报泄露</li>
+</ul>
+<p>素材（そざい）[0] - 素材，原材料</p>
+<ul>
+<li>小説の素材を集める</li>
+<li>（顔の）素材がいい - 容貌底子好</li>
+</ul>
+<p>お気に召す（おきにめす）[4] - 中意，合意（=気に入る）</p>
+<ul>
+<li>お気に召していただけたら幸いです</li>
+</ul>
+<p>はっきり [3] - 清楚，明确</p>
+<ul>
+<li>字が小さくて、はっきり見えない</li>
+<li>はっきり言ってよ！</li>
+</ul>
+<p>再選（さいせん）[0] - 再选，重新当选</p>
+<ul>
+<li>首相に再選される</li>
+<li>再選を果たす - 再次当选</li>
+</ul>
+<p>カボチャ（PT:Camboja）[0] - 南瓜</p>
+<ul>
+<li>词源是葡语的“柬埔寨”（Cambodia）</li>
+</ul>
+<p>集まり（あつまり）[4] - 集合；集会</p>
+<ul>
+<li>客の集まりが悪い</li>
+<li>今日の集まりは8時からです</li>
+</ul>
+<p>記録（きろく）[0] - 记载，记录；（成绩）记录</p>
+<ul>
+<li>記録を破る</li>
+<li>記録に残す - 留下记录</li>
+<li>名前を記録する</li>
+</ul>
+<p>掲載（けいさい）[0] - 登载，刊登</p>
+<ul>
+<li>雑誌に論文を掲載する</li>
+</ul>
+<p>説（せつ）[1] - 学说，论点，主张；传闻（=うわさ）</p>
+<ul>
+<li>新しい説を立てる</li>
+<li>彼女が結婚したという説がある</li>
+</ul>
+<p>システム（system）[1] - 系统，体系</p>
+<ul>
+<li>金融システムの安定</li>
+</ul>
+<p>前～（ぜん～）- 前～</p>
+<ul>
+<li>前日、前回、前半生</li>
+</ul>
+<p>存ずる / 存じる（ぞんじる）[3] - 打算，想；知道，认识</p>
+<ul>
+<li>「思う」「考える」的自谦语（打算，想）</li>
+<li>「知る」「承知する」的自谦语（知道，认识）</li>
+<li>ご満足いただけると存じます</li>
+<li>ありがたく存じます</li>
+<li>光栄に存じます</li>
+<li>その方なら存じております</li>
+</ul>
+<p>許す（ゆるす）[2] - 原谅，宽恕；允许，容许</p>
+<ul>
+<li>絶対に許さん（許さない）</li>
+<li>許してください</li>
+<li>入学を許す</li>
+</ul>
+<p>後日（ごじつ）[1] - 改日，将来，日后</p>
+<ul>
+<li>後日談（ごじつだん）[3] - 后日谈（事件等告一段落之后的谈话、故事）</li>
+<li>また後日お目にかかります</li>
+</ul>
+<p>折（おり）[2] - 机会，时机，时候</p>
+<ul>
+<li>折を見て話す</li>
+<li>お会いした折にお渡しします</li>
+<li>東京へ行った折（に）、彼を訪ねた</li>
+</ul>
+<p>勝手（かって）[0] - 〘形動〙任意，随便；〘名〙情况；生计；方便</p>
+<ul>
+<li>勝手に渡しの部屋に入るな！</li>
+<li>勝手にしろ！もう知らないから！</li>
+<li>勝手が違う - 与预想中不同</li>
+<li>勝手が苦しい</li>
+<li>勝手が悪い家</li>
+</ul>
+<p>請求（せいきゅう）[0] - 请求，索取，要求</p>
+<ul>
+<li>支払いを請求する</li>
+<li>請求書（せいきゅうしょ）[0] - 帐单，付款通知单</li>
+<li>離婚後、慰謝料を請求する</li>
+</ul>
+<p>慰謝料（いしゃりょう）[2] - 补偿金，抚恤金，赔偿费</p>
+<ul>
+<li>自分が慰謝料を請求できるかどうか</li>
+</ul>
+<p>送付（そうふ）[1] - 寄送，发送，寄出</p>
+<ul>
+<li>請求書を送付する</li>
+<li>合格書を送付する</li>
+</ul>
+<p>なお（▽猶／▽尚）[1] - 更加，并且，还（=さらに）</p>
+<ul>
+<li>物価はなお上がる</li>
+</ul>
+<p>なう（now）[1] -（网络用语）现在在……</p>
+<ul>
+<li>東京駅なう</li>
+<li>アキバなう</li>
+</ul>
+<p>不明（ふめい）[0] - 不清楚，不明确，不明白</p>
+<ul>
+<li>企画の意図が不明だ</li>
+<li>行方不明</li>
+<li>意識不明 - 失去意识</li>
+</ul>
+<p>気軽（きがる）[0] - 轻松愉快，舒畅，爽快，随便</p>
+<ul>
+<li>気軽に引き受ける</li>
+<li>気軽にお話できる友人がいますか？</li>
+<li>まずはお気軽にご相談ください</li>
+<li>いつでも気軽にお立ち寄りください</li>
+</ul>
+<p>問い合わせる（といあわせる）[5] - 询问，打听</p>
+<ul>
+<li>電話で事務局に会議の日程を問い合わせる</li>
+</ul>
+<p>お目にかかる - 拜会，见面，会见（「会う」的自谦语）</p>
+<ul>
+<li>人 + にお目にかかる</li>
+<li>木村先生にお目にかかったことがある</li>
+</ul>
+<p>お目にかける - 给别人看，给您看，供观赏（「見せる」的自谦语）</p>
+<ul>
+<li>今回の特別展示品を皆様のお目にかけたいと思います</li>
+</ul>
+<p>吉日（きちじつ）[0] - 吉日</p>
+<ul>
+<li>凶日（きょうじつ）[0] - 凶日</li>
+</ul>
+<p>一層（いっそう）[0] - 更加，越发，更；一层</p>
+<ul>
+<li>寒さが一層厳しくなる</li>
+</ul>
+<p>〆（しめ）[2] - 封，缄（=締め）</p>
+<ul>
+<li>〆切 = 締め切り（截止）</li>
+</ul>
+<p><img data-src="https://oscarcx.com/hexo_resource/img/jp4_shime.png" alt="" /></p>
+<p>委員（いいん）[1] - 委员</p>
+<ul>
+<li>学級委員（がっきゅういいん）[5] - 班长</li>
+</ul>
+<p>目撃者（もくげきしゃ）[4] - 目击者</p>
+<ul>
+<li>殺人事件の目撃者</li>
+<li>殺人の現場を目撃する</li>
+</ul>
+<p>進化（しんか）[1] - 进化</p>
+<ul>
+<li>先端技術は日々進化している</li>
+<li>退化（たいか）[1] - 退化</li>
+<li>記憶力が退化する</li>
+</ul>
+<p>ピカピカ - 〘副〙闪闪发光；〘形動〙锃亮；崭新，刚刚成为</p>
+<ul>
+<li>トイレをピカピカにする</li>
+<li>星がピカピカ（と）瞬いている</li>
+<li>買ったばかりのぴかぴかな家具</li>
+<li>ぴかぴかの1年生</li>
+</ul>
+<p>合併（がっぺい）[0] - 合并</p>
+<ul>
+<li>両社が合併する</li>
+</ul>
+<p>ゲームセンター（game center）[0] - 游戏厅</p>
+<ul>
+<li>ゲーセン [0]</li>
+</ul>
+<p>～殿（どの）[1] - ～先生（敬意）</p>
+<ul>
+<li>和「さん」「様」一样加在人名后面</li>
+</ul>
+<p>～宛て（あて）[0] - 寄给……（前面接人）</p>
+<ul>
+<li>「宛て」也可写作「宛」</li>
+<li>手紙は私宛に出してください</li>
+<li>市役所宛ての荷物</li>
+</ul>
+<p>越える（こえる）[0] - 越过，超过</p>
+<ul>
+<li>峠を越える</li>
+<li>一万人を越える</li>
+<li>国境を越える</li>
+</ul>
+<p>工事（こうじ）[1] - 工程，工事，施工</p>
+<ul>
+<li>工事現場</li>
+<li>工事のために、～</li>
+<li>道路を工事する</li>
+</ul>
+<p>花火（はなび）[1] - 烟花</p>
+<ul>
+<li>花火大会</li>
+<li>花火を打ち上げる</li>
+</ul>
+<p>一瞬（いっしゅん）[0] - 一瞬，一刹那</p>
+<ul>
+<li>一瞬の出来事</li>
+<li>一瞬、自分の目を疑った</li>
+</ul>
+<p>下記（かき）[1] - 下列，下述，the following</p>
+<ul>
+<li>詳細は下記の通り</li>
+</ul>
+<p>上記（じょうき）[1] - 上述，above-mentioned</p>
+<ul>
+<li>集合時間は上記の通り</li>
+</ul>
+<p>感想（かんそう）[0] - 感想</p>
+<ul>
+<li>旅行の感想を聞かせてください</li>
+<li>感想を述べる</li>
+</ul>
+<p>購買（こうばい）[0] - 购买</p>
+<ul>
+<li>購買意欲（こうばいいよく）[5] - 购买欲</li>
+<li>購買力（こうばいりょく）[3] - 购买力</li>
+<li>購買力が低下する</li>
+</ul>
+<p>再度（さいど）[1] - 再度，再次（=もう一度、もう一回）</p>
+<ul>
+<li>再度挑戦する</li>
+</ul>
+<p>係員（かかりいん）[3] - 主管人员，负责人</p>
+<ul>
+<li>駅の係員</li>
+</ul>
+<p>了承（りょうしょう）[0] - 知晓，谅解</p>
+<ul>
+<li>ご了承ください - 请您谅解</li>
+<li>ご了承のほどお願い申し上げます - 请您谅解</li>
+</ul>
+<p>願う（ねがう）[2] - 希望，要求，恳求</p>
+<ul>
+<li>神前で合格を願う</li>
+<li>成功を心から願う</li>
+<li>援助を願う</li>
+</ul>
+<p>あっという間（あっというま）[0] - 一瞬间，一眨眼之间</p>
+<ul>
+<li>人生はあっという間ですね</li>
+<li>彼はあっという間に彼女に恋をした</li>
+<li>桜の花はあっという間に散ってしまう</li>
+<li>光があっという間に消えた</li>
+</ul>
+<h2 id="会话-2"><a class="markdownIt-Anchor" href="#会话-2"></a> 会话</h2>
+<h2 id="语法-2"><a class="markdownIt-Anchor" href="#语法-2"></a> 语法</h2>
+<h1 id="l19"><a class="markdownIt-Anchor" href="#l19"></a> L19</h1>
+<h2 id="单词-3"><a class="markdownIt-Anchor" href="#单词-3"></a> 单词</h2>
+<p>離婚に伴う慰謝料について</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<h2 id="会话-3"><a class="markdownIt-Anchor" href="#会话-3"></a> 会话</h2>
+<h2 id="语法-3"><a class="markdownIt-Anchor" href="#语法-3"></a> 语法</h2>
+<h1 id="l20"><a class="markdownIt-Anchor" href="#l20"></a> L20</h1>
+<h2 id="单词-4"><a class="markdownIt-Anchor" href="#单词-4"></a> 单词</h2>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<h2 id="会话-4"><a class="markdownIt-Anchor" href="#会话-4"></a> 会话</h2>
+<h2 id="语法-4"><a class="markdownIt-Anchor" href="#语法-4"></a> 语法</h2>
+<h1 id="l21"><a class="markdownIt-Anchor" href="#l21"></a> L21</h1>
+<h2 id="单词-5"><a class="markdownIt-Anchor" href="#单词-5"></a> 单词</h2>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<h2 id="会话-5"><a class="markdownIt-Anchor" href="#会话-5"></a> 会话</h2>
+<h2 id="语法-5"><a class="markdownIt-Anchor" href="#语法-5"></a> 语法</h2>
+<h1 id="l22"><a class="markdownIt-Anchor" href="#l22"></a> L22</h1>
+<h2 id="单词-6"><a class="markdownIt-Anchor" href="#单词-6"></a> 单词</h2>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<h2 id="会话-6"><a class="markdownIt-Anchor" href="#会话-6"></a> 会话</h2>
+<h2 id="语法-6"><a class="markdownIt-Anchor" href="#语法-6"></a> 语法</h2>
+<h1 id="l23"><a class="markdownIt-Anchor" href="#l23"></a> L23</h1>
+<h2 id="单词-7"><a class="markdownIt-Anchor" href="#单词-7"></a> 单词</h2>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<h2 id="会话-7"><a class="markdownIt-Anchor" href="#会话-7"></a> 会话</h2>
+<h2 id="语法-7"><a class="markdownIt-Anchor" href="#语法-7"></a> 语法</h2>
+<h1 id="l24"><a class="markdownIt-Anchor" href="#l24"></a> L24</h1>
+<h2 id="单词-8"><a class="markdownIt-Anchor" href="#单词-8"></a> 单词</h2>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<h2 id="会话-8"><a class="markdownIt-Anchor" href="#会话-8"></a> 会话</h2>
+<h2 id="语法-8"><a class="markdownIt-Anchor" href="#语法-8"></a> 语法</h2>
+<h1 id="l25"><a class="markdownIt-Anchor" href="#l25"></a> L25</h1>
+<h2 id="单词-9"><a class="markdownIt-Anchor" href="#单词-9"></a> 单词</h2>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<h2 id="会话-9"><a class="markdownIt-Anchor" href="#会话-9"></a> 会话</h2>
+<h2 id="语法-9"><a class="markdownIt-Anchor" href="#语法-9"></a> 语法</h2>
+<h1 id="l26"><a class="markdownIt-Anchor" href="#l26"></a> L26</h1>
+<h2 id="单词-10"><a class="markdownIt-Anchor" href="#单词-10"></a> 单词</h2>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<h2 id="会话-10"><a class="markdownIt-Anchor" href="#会话-10"></a> 会话</h2>
+<h2 id="语法-10"><a class="markdownIt-Anchor" href="#语法-10"></a> 语法</h2>
+<h1 id="l27"><a class="markdownIt-Anchor" href="#l27"></a> L27</h1>
+<h2 id="单词-11"><a class="markdownIt-Anchor" href="#单词-11"></a> 单词</h2>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<h2 id="会话-11"><a class="markdownIt-Anchor" href="#会话-11"></a> 会话</h2>
+<h2 id="语法-11"><a class="markdownIt-Anchor" href="#语法-11"></a> 语法</h2>
+<h1 id="l28"><a class="markdownIt-Anchor" href="#l28"></a> L28</h1>
+<h2 id="单词-12"><a class="markdownIt-Anchor" href="#单词-12"></a> 单词</h2>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<h2 id="会话-12"><a class="markdownIt-Anchor" href="#会话-12"></a> 会话</h2>
+<h2 id="语法-12"><a class="markdownIt-Anchor" href="#语法-12"></a> 语法</h2>
+<h1 id="l29"><a class="markdownIt-Anchor" href="#l29"></a> L29</h1>
+<h2 id="单词-13"><a class="markdownIt-Anchor" href="#单词-13"></a> 单词</h2>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<h2 id="会话-13"><a class="markdownIt-Anchor" href="#会话-13"></a> 会话</h2>
+<h2 id="语法-13"><a class="markdownIt-Anchor" href="#语法-13"></a> 语法</h2>
+<h1 id="l30"><a class="markdownIt-Anchor" href="#l30"></a> L30</h1>
+<h2 id="单词-14"><a class="markdownIt-Anchor" href="#单词-14"></a> 单词</h2>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<h2 id="会话-14"><a class="markdownIt-Anchor" href="#会话-14"></a> 会话</h2>
+<h2 id="语法-14"><a class="markdownIt-Anchor" href="#语法-14"></a> 语法</h2>
+<h1 id="l31"><a class="markdownIt-Anchor" href="#l31"></a> L31</h1>
+<h2 id="单词-15"><a class="markdownIt-Anchor" href="#单词-15"></a> 单词</h2>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<h2 id="会话-15"><a class="markdownIt-Anchor" href="#会话-15"></a> 会话</h2>
+<h2 id="语法-15"><a class="markdownIt-Anchor" href="#语法-15"></a> 语法</h2>
+<h1 id="l32"><a class="markdownIt-Anchor" href="#l32"></a> L32</h1>
+<h2 id="单词-16"><a class="markdownIt-Anchor" href="#单词-16"></a> 单词</h2>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<p>（）[] -</p>
+<h2 id="会话-16"><a class="markdownIt-Anchor" href="#会话-16"></a> 会话</h2>
+<h2 id="语法-16"><a class="markdownIt-Anchor" href="#语法-16"></a> 语法</h2>
+<h1 id="唉来不动了"><a class="markdownIt-Anchor" href="#唉来不动了"></a> 唉，来不动了</h1>
+<p>嘻嘻，怎么可能，看我卷死你们<img data-src="https://oscarcx.com/hexo_resource/stickers/dino_15.jpg" style="margin:0; display: inline;"></p>
+<p>与其羡慕别人几个月多少，不如老老实实去多学那几分钟。</p>
+<p>不是每个人都有天赋，你看到别人天赋却没看到别人的付出。我只是信奉努力，虽然不一定有回报但是至少你认真过。</p>
+<p>别人一天2小时能弄明白，我不行那我就3小时，4小时，别问问就多学多练。</p>
+<p>匍匐前进我觉得我还能抢救！</p>
+<p>改编自 <a target="_blank" rel="noopener" href="https://osu.ppy.sh/users/8021339/mania">Mi-a (Residual Pain)</a> 的个人主页简介，我觉得写的挺好就搬过来了</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/japanese/jp-grammar.html" rel="prev" title="标准日语语法笔记">
+                  <i class="fa fa-angle-left"></i> 标准日语语法笔记
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/tech/osumania-top-player-analysis-2024.html" rel="next" title="osu!mania前1000名数据分析 (2024)">
+                  osu!mania前1000名数据分析 (2024) <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 2020 – 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-terminal"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">oscarcx123</span>
+        <span class="post-meta-item">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-chart-line"></i>
+          </span>
+          <span title="站点总字数">233k</span>
+        </span>
+        <span class="post-meta-item">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-coffee"></i>
+          </span>
+          <span title="站点阅读时长">12:56</span>
+        </span>
+  </div>
+  <div class="powered-by">
+    <span class="post-meta-item">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v6.3.0 强力驱动
+    </span>
+    <span class="post-meta-item"> 主题 – <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v8.18.1
+    </span>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script size="300" alpha="0.6" zIndex="-1" src="/js/ribbon.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.6.0/pjax.min.js" integrity="sha256-vxLn1tSKWD4dqbMRyv940UYw4sXgMtYcK6reefzZrao=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.0.8/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/pjax.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/katex.min.css" integrity="sha256-3574TpfThVfeAhg+I4+N39EJiLN3QUkuEsMVe8hWAR4=" crossorigin="anonymous">
+  <script class="next-config" data-name="katex" type="application/json">{"copy_tex_js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/contrib/copy-tex.min.js","integrity":"sha256-Us54+rSGDSTvIhKKUs4kygE2ipA0RXpWWh0/zLqw3bs="}}</script>
+  <script src="/js/third-party/math/katex.js"></script>
+
+
+<script type="text/javascript">
+  // 显示“展开”和“折叠”
+  function collapsableTitle(x) {
+    var nav = document.getElementsByClassName("sidebar-nav-toc")[0];
+    if (x.matches) { // If media query matches
+      var content = document.getElementsByClassName("sidebar-panel-container")[0];
+      if (content.style.display = "none") {
+        nav.textContent = "文章目录 [展开]";
+      }
+      else {
+        nav.textContent = "文章目录 [折叠]";
+      }
+    } 
+    else {
+      nav.textContent = "文章目录";
+    }
+  }
+
+  var x = window.matchMedia("(max-width: 991px)"); // media query
+  collapsableTitle(x);
+  x.addListener(collapsableTitle);
+
+  // 控制目录的折叠
+  var tos = document.getElementsByClassName("sidebar-nav")[0];
+  var i;
+
+  tos.addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = document.getElementsByClassName("sidebar-panel-container")[0];
+    var nav = document.getElementsByClassName("sidebar-nav-toc")[0];
+    if (content.style.display === "block" && window.innerWidth < 991) {
+      content.style.display = "none";
+      nav.textContent = "文章目录 [展开]";
+    } else {
+      content.style.display = "block";
+      if (window.innerWidth < 991) {
+        nav.textContent = "文章目录 [折叠]";
+      }
+    }
+  });
+
+  // 因为启用pjax，需要监听complete事件，来实现默认折叠效果
+  document.addEventListener('pjax:complete', function() {
+    if (window.innerWidth < 991) {
+      let content = document.getElementsByClassName("sidebar-panel-container")[0];
+      content.style.display = "none";
+      let nav = document.getElementsByClassName("sidebar-nav-toc")[0];
+      nav.textContent = "文章目录 [展开]";
+      }
+    });
+  </script>
+</body>
+</html>
