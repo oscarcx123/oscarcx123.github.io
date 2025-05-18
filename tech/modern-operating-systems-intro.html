@@ -1,0 +1,2131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-64x64-dragon.jpg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-64x64-dragon.jpg">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-64x64-dragon.jpg">
+  <link rel="mask-icon" href="/images/favicon-64x64-dragon.jpg" color="#222">
+  <meta name="google-site-verification" content="-QMh-gRPduq5T_vg3_Pwi3kZsNSiyuEpPBaDIXV8J34">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"oscarcx.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.18.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":true,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+
+
+  <style type="text/css">
+
+div.hcb-content.hcb-block.hcbnote, details.hcb-content.box.hcbnote,div.hcb-content.hcb-block.hcbabstract, details.hcb-content.box.hcbabstract,div.hcb-content.hcb-block.hcbinfo, details.hcb-content.box.hcbinfo,div.hcb-content.hcb-block.hcbtip, details.hcb-content.box.hcbtip,div.hcb-content.hcb-block.hcbsuccess, details.hcb-content.box.hcbsuccess,div.hcb-content.hcb-block.hcbquestion, details.hcb-content.box.hcbquestion,div.hcb-content.hcb-block.hcbwarning, details.hcb-content.box.hcbwarning,div.hcb-content.hcb-block.hcbfailure, details.hcb-content.box.hcbfailure,div.hcb-content.hcb-block.hcbdanger, details.hcb-content.box.hcbdanger,div.hcb-content.hcb-block.hcbbug, details.hcb-content.box.hcbbug,div.hcb-content.hcb-block.hcbexample, details.hcb-content.box.hcbexample,div.hcb-content.hcb-block.hcbquote, details.hcb-content.box.hcbquote {
+  border: .05rem solid #448aff;
+  border-radius: .2rem;
+  font-size: 0.96rem;
+  margin: 1.5625em 0;
+  padding: 0 1.2rem;
+  transition: box-shadow 250ms;
+}
+div.hcb-content.hcb-block.hcbnote, details.hcb-content.box.hcbnote {
+  border-color: #448aff;
+}
+div.hcb-content.hcb-block.hcbabstract, details.hcb-content.box.hcbabstract {
+  border-color: #00b0ff;
+}
+div.hcb-content.hcb-block.hcbinfo, details.hcb-content.box.hcbinfo {
+  border-color: #00b8d4;
+}
+div.hcb-content.hcb-block.hcbtip, details.hcb-content.box.hcbtip {
+  border-color: #00bfa5;
+}
+div.hcb-content.hcb-block.hcbsuccess, details.hcb-content.box.hcbsuccess {
+  border-color: #00c853;
+}
+div.hcb-content.hcb-block.hcbquestion, details.hcb-content.box.hcbquestion {
+  border-color: #64dd17;
+}
+div.hcb-content.hcb-block.hcbwarning, details.hcb-content.box.hcbwarning {
+  border-color: #ff9100;
+}
+div.hcb-content.hcb-block.hcbfailure, details.hcb-content.box.hcbfailure {
+  border-color: #ff5252;
+}
+div.hcb-content.hcb-block.hcbdanger, details.hcb-content.box.hcbdanger {
+  border-color: #ff1744;
+}
+div.hcb-content.hcb-block.hcbbug, details.hcb-content.box.hcbbug {
+  border-color: #f50057;
+}
+div.hcb-content.hcb-block.hcbexample, details.hcb-content.box.hcbexample {
+  border-color: #7c4dff;
+}
+div.hcb-content.hcb-block.hcbquote, details.hcb-content.box.hcbquote {
+  border-color: #9e9e9e;
+}
+div.hcb-content.hcb-block.hcbnote:focus-within, details.hcb-content.box.hcbnote:focus-within {
+  box-shadow: 0 0 0 .2rem #448aff1a;
+}
+div.hcb-content.hcb-block.hcbabstract:focus-within, details.hcb-content.box.hcbabstract:focus-within {
+  box-shadow: 0 0 0 .2rem #00b0ff1a;
+}
+div.hcb-content.hcb-block.hcbinfo:focus-within, details.hcb-content.box.hcbinfo:focus-within {
+  box-shadow: 0 0 0 .2rem #00b8d41a;
+}
+div.hcb-content.hcb-block.hcbtip:focus-within, details.hcb-content.box.hcbtip:focus-within {
+  box-shadow: 0 0 0 .2rem #00bfa51a;
+}
+div.hcb-content.hcb-block.hcbsuccess:focus-within, details.hcb-content.box.hcbsuccess:focus-within {
+  box-shadow: 0 0 0 .2rem #00c8531a;
+}
+div.hcb-content.hcb-block.hcbquestion:focus-within, details.hcb-content.box.hcbquestion:focus-within {
+  box-shadow: 0 0 0 .2rem #64dd171a;
+}
+div.hcb-content.hcb-block.hcbwarning:focus-within, details.hcb-content.box.hcbwarning:focus-within {
+  box-shadow: 0 0 0 .2rem #ff91001a;
+}
+div.hcb-content.hcb-block.hcbfailure:focus-within, details.hcb-content.box.hcbfailure:focus-within {
+  box-shadow: 0 0 0 .2rem #ff52521a;
+}
+div.hcb-content.hcb-block.hcbdanger:focus-within, details.hcb-content.box.hcbdanger:focus-within {
+  box-shadow: 0 0 0 .2rem #ff17441a;
+}
+div.hcb-content.hcb-block.hcbbug:focus-within, details.hcb-content.box.hcbbug:focus-within {
+  box-shadow: 0 0 0 .2rem #f500571a;
+}
+div.hcb-content.hcb-block.hcbexample:focus-within, details.hcb-content.box.hcbexample:focus-within {
+  box-shadow: 0 0 0 .2rem #7c4dff1a;
+}
+div.hcb-content.hcb-block.hcbquote:focus-within, details.hcb-content.box.hcbquote:focus-within {
+  box-shadow: 0 0 0 .2rem #9e9e9e1a;
+}
+div.hcb-content.hcb-block.hcbnote *, details.hcb-content.box.hcbnote *,div.hcb-content.hcb-block.hcbabstract *, details.hcb-content.box.hcbabstract *,div.hcb-content.hcb-block.hcbinfo *, details.hcb-content.box.hcbinfo *,div.hcb-content.hcb-block.hcbtip *, details.hcb-content.box.hcbtip *,div.hcb-content.hcb-block.hcbsuccess *, details.hcb-content.box.hcbsuccess *,div.hcb-content.hcb-block.hcbquestion *, details.hcb-content.box.hcbquestion *,div.hcb-content.hcb-block.hcbwarning *, details.hcb-content.box.hcbwarning *,div.hcb-content.hcb-block.hcbfailure *, details.hcb-content.box.hcbfailure *,div.hcb-content.hcb-block.hcbdanger *, details.hcb-content.box.hcbdanger *,div.hcb-content.hcb-block.hcbbug *, details.hcb-content.box.hcbbug *,div.hcb-content.hcb-block.hcbexample *, details.hcb-content.box.hcbexample *,div.hcb-content.hcb-block.hcbquote *, details.hcb-content.box.hcbquote * {
+  box-sizing: border-box;
+}
+div.hcb-content.hcb-block.hcbnote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbnote > summary,div.hcb-content.hcb-block.hcbabstract > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbabstract > summary,div.hcb-content.hcb-block.hcbinfo > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbinfo > summary,div.hcb-content.hcb-block.hcbtip > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbtip > summary,div.hcb-content.hcb-block.hcbsuccess > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbsuccess > summary,div.hcb-content.hcb-block.hcbquestion > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquestion > summary,div.hcb-content.hcb-block.hcbwarning > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbwarning > summary,div.hcb-content.hcb-block.hcbfailure > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbfailure > summary,div.hcb-content.hcb-block.hcbdanger > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbdanger > summary,div.hcb-content.hcb-block.hcbbug > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbbug > summary,div.hcb-content.hcb-block.hcbexample > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbexample > summary,div.hcb-content.hcb-block.hcbquote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquote > summary {
+  border-top-right-radius: 0.1rem;
+  border-top-left-radius: 0.1rem;
+  border-left-width: 0.2rem;
+  display: block;
+  min-height: 1rem;
+  border: none;
+  font-weight: 700;
+  margin: 0 -1.2rem 1rem;
+  padding: 0.4rem 0.6rem;
+  position: relative;
+  outline: none;
+}
+details.hcb-content.box.hcbnote > summary,details.hcb-content.box.hcbabstract > summary,details.hcb-content.box.hcbinfo > summary,details.hcb-content.box.hcbtip > summary,details.hcb-content.box.hcbsuccess > summary,details.hcb-content.box.hcbquestion > summary,details.hcb-content.box.hcbwarning > summary,details.hcb-content.box.hcbfailure > summary,details.hcb-content.box.hcbdanger > summary,details.hcb-content.box.hcbbug > summary,details.hcb-content.box.hcbexample > summary,details.hcb-content.box.hcbquote > summary {
+  cursor: pointer;
+}
+details.hcb-content.box.hcbnote:not([open]) > summary,details.hcb-content.box.hcbabstract:not([open]) > summary,details.hcb-content.box.hcbinfo:not([open]) > summary,details.hcb-content.box.hcbtip:not([open]) > summary,details.hcb-content.box.hcbsuccess:not([open]) > summary,details.hcb-content.box.hcbquestion:not([open]) > summary,details.hcb-content.box.hcbwarning:not([open]) > summary,details.hcb-content.box.hcbfailure:not([open]) > summary,details.hcb-content.box.hcbdanger:not([open]) > summary,details.hcb-content.box.hcbbug:not([open]) > summary,details.hcb-content.box.hcbexample:not([open]) > summary,details.hcb-content.box.hcbquote:not([open]) > summary {
+  margin-bottom: 0;
+}
+div.hcb-content.hcb-block.hcbnote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbnote > summary {
+  background-color: #448aff1a;
+}
+div.hcb-content.hcb-block.hcbabstract > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbabstract > summary {
+  background-color: #00b0ff1a;
+}
+div.hcb-content.hcb-block.hcbinfo > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbinfo > summary {
+  background-color: #00b8d41a;
+}
+div.hcb-content.hcb-block.hcbtip > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbtip > summary {
+  background-color: #00bfa51a;
+}
+div.hcb-content.hcb-block.hcbsuccess > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbsuccess > summary {
+  background-color: #00c8531a;
+}
+div.hcb-content.hcb-block.hcbquestion > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquestion > summary {
+  background-color: #64dd171a;
+}
+div.hcb-content.hcb-block.hcbwarning > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbwarning > summary {
+  background-color: #ff91001a;
+}
+div.hcb-content.hcb-block.hcbfailure > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbfailure > summary {
+  background-color: #ff52521a;
+}
+div.hcb-content.hcb-block.hcbdanger > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbdanger > summary {
+  background-color: #ff17441a;
+}
+div.hcb-content.hcb-block.hcbbug > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbbug > summary {
+  background-color: #f500571a;
+}
+div.hcb-content.hcb-block.hcbexample > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbexample > summary {
+  background-color: #7c4dff1a;
+}
+div.hcb-content.hcb-block.hcbquote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquote > summary {
+  background-color: #9e9e9e1a;
+}
+div.hcb-content.hcb-block.hcbnote > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbnote > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #448aff;
+}
+div.hcb-content.hcb-block.hcbabstract > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbabstract > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00b0ff;
+}
+div.hcb-content.hcb-block.hcbinfo > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbinfo > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00b8d4;
+}
+div.hcb-content.hcb-block.hcbtip > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbtip > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00bfa5;
+}
+div.hcb-content.hcb-block.hcbsuccess > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbsuccess > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00c853;
+}
+div.hcb-content.hcb-block.hcbquestion > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbquestion > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #64dd17;
+}
+div.hcb-content.hcb-block.hcbwarning > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbwarning > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff9100;
+}
+div.hcb-content.hcb-block.hcbfailure > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbfailure > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff5252;
+}
+div.hcb-content.hcb-block.hcbdanger > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbdanger > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff1744;
+}
+div.hcb-content.hcb-block.hcbbug > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbbug > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #f50057;
+}
+div.hcb-content.hcb-block.hcbexample > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbexample > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #7c4dff;
+}
+div.hcb-content.hcb-block.hcbquote > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbquote > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #9e9e9e;
+}
+details.hcb-content.box.hcbnote > summary > div.hcb-box-open-button,details.hcb-content.box.hcbabstract > summary > div.hcb-box-open-button,details.hcb-content.box.hcbinfo > summary > div.hcb-box-open-button,details.hcb-content.box.hcbtip > summary > div.hcb-box-open-button,details.hcb-content.box.hcbsuccess > summary > div.hcb-box-open-button,details.hcb-content.box.hcbquestion > summary > div.hcb-box-open-button,details.hcb-content.box.hcbwarning > summary > div.hcb-box-open-button,details.hcb-content.box.hcbfailure > summary > div.hcb-box-open-button,details.hcb-content.box.hcbdanger > summary > div.hcb-box-open-button,details.hcb-content.box.hcbbug > summary > div.hcb-box-open-button,details.hcb-content.box.hcbexample > summary > div.hcb-box-open-button,details.hcb-content.box.hcbquote > summary > div.hcb-box-open-button {
+  float: right;
+}
+details.hcb-content.box.hcbnote > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbabstract > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbinfo > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbtip > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbsuccess > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbquestion > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbwarning > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbfailure > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbdanger > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbbug > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbexample > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbquote > summary > div.hcb-box-open-button > i {
+  margin: 0 0.6rem 0 0.6rem;
+  font-size: 0.7rem;
+  transition: transform 250ms
+}
+details.hcb-content.box.hcbnote:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbabstract:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbinfo:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbtip:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbsuccess:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquestion:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbwarning:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbfailure:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbdanger:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbbug:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbexample:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquote:not([open]) > summary > div.hcb-box-open-button i {
+  transform: rotate(270deg);
+}
+details.hcb-content.box.hcbnote[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbabstract[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbinfo[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbtip[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbsuccess[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquestion[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbwarning[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbfailure[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbdanger[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbbug[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbexample[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquote[open] > summary > div.hcb-box-open-button i {
+  transform: rotate(180deg);
+}
+details.hcb-content.box.hcbnote summary div.hcb-box-open-button i {
+  color: #448aff;
+}
+details.hcb-content.box.hcbabstract summary div.hcb-box-open-button i {
+  color: #00b0ff;
+}
+details.hcb-content.box.hcbinfo summary div.hcb-box-open-button i {
+  color: #00b8d4;
+}
+details.hcb-content.box.hcbtip summary div.hcb-box-open-button i {
+  color: #00bfa5;
+}
+details.hcb-content.box.hcbsuccess summary div.hcb-box-open-button i {
+  color: #00c853;
+}
+details.hcb-content.box.hcbquestion summary div.hcb-box-open-button i {
+  color: #64dd17;
+}
+details.hcb-content.box.hcbwarning summary div.hcb-box-open-button i {
+  color: #ff9100;
+}
+details.hcb-content.box.hcbfailure summary div.hcb-box-open-button i {
+  color: #ff5252;
+}
+details.hcb-content.box.hcbdanger summary div.hcb-box-open-button i {
+  color: #ff1744;
+}
+details.hcb-content.box.hcbbug summary div.hcb-box-open-button i {
+  color: #f50057;
+}
+details.hcb-content.box.hcbexample summary div.hcb-box-open-button i {
+  color: #7c4dff;
+}
+details.hcb-content.box.hcbquote summary div.hcb-box-open-button i {
+  color: #9e9e9e;
+}
+div.hcb-content.hcb-cards * {
+  box-sizing: border-box;
+}
+input.hcb-content.hcb-cards-input {
+  display: none;
+}
+div.hcb-content.hcb-cards-labels {
+  position: relative;
+  box-shadow: 0 -0.05rem #00000012 inset;
+  display: flex;
+  margin-bottom: 1.25rem;
+}
+div.hcb-content.hcb-cards-labels:before {
+  background: var(--cards-color);
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: translateX(var(--md-indicator-x));
+  transition: width 225ms, transform 250ms;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  width: var(--md-indicator-width);
+}
+label.hcb-content.hcb-cards-label {
+  border-bottom: 0.1rem solid #0000;
+  border-radius: 0.1rem 0.1rem 0 0;
+  cursor: pointer;
+  color: #0000008a;
+  font-size: 0.92em;
+  font-weight: 700;
+  padding: 0 1.25rem 0.625rem;
+  transition: color 250ms;
+}
+label.hcb-content.hcb-cards-label.active, label.hcb-content.hcb-cards-label:hover {
+  color: var(--cards-color);
+}
+div.hcb-content.hcb-cards-content {
+  display: none;
+}
+div.hcb-content.hcb-cards-content.active {
+  display: block;
+}
+</style>
+    <meta name="description" content="《现代操作系统》第一章自学笔记">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Modern Operating Systems Intro">
+<meta property="og:url" content="https://oscarcx.com/tech/modern-operating-systems-intro.html">
+<meta property="og:site_name" content="Cow">
+<meta property="og:description" content="《现代操作系统》第一章自学笔记">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/OS_4e_fig_1_1.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/OS_4e_fig_1_2.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/MULTICS_timeline.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/1998924_20130219075643.jpg">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/gs88_071.jpg">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/OS_4e_fig_1_6.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/OS_4e_fig_1_7.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/OS_4e_fig_1_8.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/OS_4e_fig_1_9.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/OS_4e_fig_1_10.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/OS_4e_fig_1_11.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/OS_4e_fig_1_12.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/OS_4e_fig_1_13.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/OS_4e_fig_1_15.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/OS_4e_fig_1_17.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/OS_4e_fig_1_20.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/OS_4e_fig_1_21.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/OS_4e_fig_1_22.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/OS_4e_fig_1_24.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/OS_4e_fig_1_26.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/OS_4e_fig_1_30.png">
+<meta property="article:published_time" content="2020-03-10T17:19:05.000Z">
+<meta property="article:modified_time" content="2025-05-18T16:05:39.209Z">
+<meta property="article:author" content="oscarcx123">
+<meta property="article:tag" content="OS">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://oscarcx.com/hexo_resource/img/OS_4e_fig_1_1.png">
+
+
+<link rel="canonical" href="https://oscarcx.com/tech/modern-operating-systems-intro.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://oscarcx.com/tech/modern-operating-systems-intro.html","path":"tech/modern-operating-systems-intro.html","title":"Modern Operating Systems Intro"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Modern Operating Systems Intro | Cow</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<style type="text/css">
+.spoiler {
+  display: inline;
+}
+p.spoiler {
+  display: flex;
+}
+.spoiler a {
+  pointer-events: none;
+}
+.spoiler-blur, .spoiler-blur > * {
+  transition: text-shadow .5s ease;
+}
+.spoiler .spoiler-blur, .spoiler .spoiler-blur > * {
+  color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  text-shadow: 0 0 10px grey;
+  cursor: pointer;
+}
+.spoiler .spoiler-blur:hover, .spoiler .spoiler-blur:hover > * {
+  text-shadow: 0 0 5px grey;
+}
+.spoiler-box, .spoiler-box > * {
+  transition: color .5s ease,
+  background-color .5s ease;
+}
+.spoiler .spoiler-box, .spoiler .spoiler-box > * {
+  color: black;
+  background-color: black;
+  text-shadow: none;
+}</style></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Cow</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#what-is-an-operating-system"><span class="nav-number">1.</span> <span class="nav-text"> What is an Operating System?</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#the-operating-system-as-an-extended-machine"><span class="nav-number">1.1.</span> <span class="nav-text"> The Operating System as an Extended Machine</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#the-operating-system-as-a-resource-manager"><span class="nav-number">1.2.</span> <span class="nav-text"> The Operating System as a Resource Manager</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#history-of-operating-systems"><span class="nav-number">2.</span> <span class="nav-text"> History of Operating Systems</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#gen-1-194555-vacuum-tubes"><span class="nav-number">2.1.</span> <span class="nav-text"> Gen 1 (1945–55): Vacuum Tubes</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#gen-2-195565-transistors-and-batch-systems"><span class="nav-number">2.2.</span> <span class="nav-text"> Gen 2 (1955–65): Transistors and Batch Systems</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#gen-3-19651980-ics-and-multiprogramming"><span class="nav-number">2.3.</span> <span class="nav-text"> Gen 3 (1965–1980): ICs and Multiprogramming</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#gen-4-1980present-personal-computers"><span class="nav-number">2.4.</span> <span class="nav-text"> Gen 4 (1980–Present): Personal Computers</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#gen-5-1990present-mobile-computers"><span class="nav-number">2.5.</span> <span class="nav-text"> Gen 5 (1990–Present): Mobile Computers</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#computer-hardware-review"><span class="nav-number">3.</span> <span class="nav-text"> Computer Hardware Review</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#processors"><span class="nav-number">3.1.</span> <span class="nav-text"> Processors</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#multithreaded-and-multicore-chips"><span class="nav-number">3.1.1.</span> <span class="nav-text"> Multithreaded and Multicore Chips</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#memory"><span class="nav-number">3.2.</span> <span class="nav-text"> Memory</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#disks"><span class="nav-number">3.3.</span> <span class="nav-text"> Disks</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#io-devices"><span class="nav-number">3.4.</span> <span class="nav-text"> I&#x2F;O Devices</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#buses"><span class="nav-number">3.5.</span> <span class="nav-text"> Buses</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#booting-the-computer"><span class="nav-number">3.6.</span> <span class="nav-text"> Booting the Computer</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#the-operating-system-zoo"><span class="nav-number">4.</span> <span class="nav-text"> The Operating System Zoo</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#mainframe-operating-systems"><span class="nav-number">4.1.</span> <span class="nav-text"> Mainframe Operating Systems</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#server-operating-systems"><span class="nav-number">4.2.</span> <span class="nav-text"> Server Operating Systems</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#multiprocessor-operating-systems"><span class="nav-number">4.3.</span> <span class="nav-text"> Multiprocessor Operating Systems</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#personal-computer-operating-systems"><span class="nav-number">4.4.</span> <span class="nav-text"> Personal Computer Operating Systems</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#handheld-computer-operating-systems"><span class="nav-number">4.5.</span> <span class="nav-text"> Handheld Computer Operating Systems</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#embedded-operating-systems"><span class="nav-number">4.6.</span> <span class="nav-text"> Embedded Operating Systems</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#sensor-node-operating-systems"><span class="nav-number">4.7.</span> <span class="nav-text"> Sensor-Node Operating Systems</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#real-time-operating-systems"><span class="nav-number">4.8.</span> <span class="nav-text"> Real-Time Operating Systems</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#smart-card-operating-systems"><span class="nav-number">4.9.</span> <span class="nav-text"> Smart Card Operating Systems</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#operating-system-concepts"><span class="nav-number">5.</span> <span class="nav-text"> Operating System Concepts</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#processes"><span class="nav-number">5.1.</span> <span class="nav-text"> Processes</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#address-spaces"><span class="nav-number">5.2.</span> <span class="nav-text"> Address Spaces</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#files"><span class="nav-number">5.3.</span> <span class="nav-text"> Files</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#inputoutput"><span class="nav-number">5.4.</span> <span class="nav-text"> Input&#x2F;Output</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#protection"><span class="nav-number">5.5.</span> <span class="nav-text"> Protection</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#the-shell"><span class="nav-number">5.6.</span> <span class="nav-text"> The Shell</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ontogeny-recapitulates-phylogeny"><span class="nav-number">5.7.</span> <span class="nav-text"> Ontogeny Recapitulates Phylogeny</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#system-calls"><span class="nav-number">6.</span> <span class="nav-text"> System Calls</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#system-calls-for-process-management"><span class="nav-number">6.1.</span> <span class="nav-text"> System Calls for Process Management</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#system-calls-for-file-management"><span class="nav-number">6.2.</span> <span class="nav-text"> System Calls for File Management</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#system-calls-for-directory-management"><span class="nav-number">6.3.</span> <span class="nav-text"> System Calls for Directory Management</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#miscellaneous-system-calls"><span class="nav-number">6.4.</span> <span class="nav-text"> Miscellaneous System Calls</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#the-windows-win32-api"><span class="nav-number">6.5.</span> <span class="nav-text"> The Windows Win32 API</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#operating-system-structure"><span class="nav-number">7.</span> <span class="nav-text"> Operating System Structure</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#monolithic-systems"><span class="nav-number">7.1.</span> <span class="nav-text"> Monolithic Systems</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#layered-systems"><span class="nav-number">7.2.</span> <span class="nav-text"> Layered Systems</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#microkernels"><span class="nav-number">7.3.</span> <span class="nav-text"> Microkernels</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#client-server-model"><span class="nav-number">7.4.</span> <span class="nav-text"> Client-Server Model</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#virtual-machines"><span class="nav-number">7.5.</span> <span class="nav-text"> Virtual Machines</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#the-java-virtual-machine"><span class="nav-number">7.5.1.</span> <span class="nav-text"> The Java Virtual Machine</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#exokernels"><span class="nav-number">7.6.</span> <span class="nav-text"> Exokernels</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#the-world-according-to-c"><span class="nav-number">8.</span> <span class="nav-text"> The World According to C</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#the-c-language"><span class="nav-number">8.1.</span> <span class="nav-text"> The C Language</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#header-files"><span class="nav-number">8.2.</span> <span class="nav-text"> Header Files</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#large-programming-projects"><span class="nav-number">8.3.</span> <span class="nav-text"> Large Programming Projects</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="oscarcx123"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">oscarcx123</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">32</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/oscarcx123" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;oscarcx123" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://oscarcx.com/tech/modern-operating-systems-intro.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="oscarcx123">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Cow">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Modern Operating Systems Intro | Cow">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Modern Operating Systems Intro
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2020-03-10 17:19:05" itemprop="dateCreated datePublished" datetime="2020-03-10T17:19:05+00:00">2020-03-10</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/tech/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>7.7k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>26 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>《现代操作系统》第一章自学笔记</p>
+<span id="more"></span>
+<p>操作系统（Operating System）</p>
+<ul>
+<li>主流系统：Windows, Linux, FreeBSD, OS X</li>
+<li>交互（interface）方式：
+<ul>
+<li>shell</li>
+<li>GUI（Graphical User Interface）</li>
+<li>运行在用户态最底层，可以启动其它程序（例如浏览器）</li>
+</ul>
+</li>
+<li>运行模式：
+<ul>
+<li>内核态（kernel mode / supervisor mode）
+<ul>
+<li>操作系统运行在内核态</li>
+<li>可以执行任意指令</li>
+<li>对硬件有完整控制权</li>
+</ul>
+</li>
+<li>用户态（user mode）
+<ul>
+<li>其它软件都运行在用户态</li>
+<li>只能执行部分指令（例如无法进行I/O）</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/OS_4e_fig_1_1.png" alt="" /></p>
+<p>普通软件可以随意替换重写，但是操作系统的组件，例如时钟中断处理程序（clock interrupt handler），就不可更改或重写，因为此程序受硬件保护。嵌入式系统(embedded systems)（没有内核态）和解释系统(intepreted systems)（非硬件方式区分组件）可能不受此规则约束。</p>
+<p>操作系统的进化：</p>
+<ul>
+<li>Windows
+<ul>
+<li>Windows 95/98/Me</li>
+<li>Windows NT/2000/XP/Vista/Windows 7</li>
+<li>两条线完全不一样，只是UI看起来相似</li>
+</ul>
+</li>
+<li>UNIX系
+<ul>
+<li>System V, Solaris, FreeBSD（来源于UNIX）</li>
+<li>Linux（从UNIX依葫芦画瓢得来）</li>
+</ul>
+</li>
+</ul>
+<h1 id="what-is-an-operating-system"><a class="markdownIt-Anchor" href="#what-is-an-operating-system"></a> What is an Operating System?</h1>
+<p>操作系统有两大功能：</p>
+<ul>
+<li>提供清晰易用的硬件资源管理方法（provide clean abstract set of resources）</li>
+<li>管理硬件资源（manage these hardware resources）</li>
+</ul>
+<h2 id="the-operating-system-as-an-extended-machine"><a class="markdownIt-Anchor" href="#the-operating-system-as-an-extended-machine"></a> The Operating System as an Extended Machine</h2>
+<p>计算机底层是相当原始的，通过抽象化（abstraction）提升易用性，以SATA(Serial ATA)硬盘为例：</p>
+<ul>
+<li>最初是超过450页的说明文档</li>
+<li>然后是硬盘驱动（disk driver），提供读写硬盘块接口</li>
+<li>最后是操作系统提供的文件系统</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/OS_4e_fig_1_2.png" alt="" /></p>
+<h2 id="the-operating-system-as-a-resource-manager"><a class="markdownIt-Anchor" href="#the-operating-system-as-a-resource-manager"></a> The Operating System as a Resource Manager</h2>
+<p>多路复用（multiplexing）</p>
+<ul>
+<li>时间上复用（time）
+<ul>
+<li>不同用户或程序轮流使用资源</li>
+<li>队列管理以及使用时长由操作系统决定</li>
+<li>例子：多个程序在一个CPU上跑，打印队列</li>
+</ul>
+</li>
+<li>空间上复用（space）
+<ul>
+<li>不同用户或程序取得部分资源</li>
+<li>例子：内存，硬盘</li>
+</ul>
+</li>
+</ul>
+<h1 id="history-of-operating-systems"><a class="markdownIt-Anchor" href="#history-of-operating-systems"></a> History of Operating Systems</h1>
+<p><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%9F%A5%E5%B0%94%E6%96%AF%C2%B7%E5%B7%B4%E8%B4%9D%E5%A5%87">Charles Babbage</a> (1792–1871)提出了<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%B7%AE%E5%88%86%E6%A9%9F">差分机</a>，是计算机先驱</p>
+<p><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%84%9B%E9%81%94%C2%B7%E5%8B%92%E8%8A%99%E8%95%BE%E7%B5%B2">Ada Lovelace</a>是世界上第一个程序员</p>
+<h2 id="gen-1-194555-vacuum-tubes"><a class="markdownIt-Anchor" href="#gen-1-194555-vacuum-tubes"></a> Gen 1 (1945–55): Vacuum Tubes</h2>
+<ul>
+<li>电脑使用<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%9C%9F%E7%A9%BA%E7%AE%A1">真空管</a></li>
+<li>没有编程语言（包括汇编），使用<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Plugboard">插线板</a>（plugboards）</li>
+<li>没有操作系统</li>
+<li>1950s，出现了<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%89%93%E5%AD%94%E5%8D%A1">穿孔卡片</a>（punched cards）</li>
+<li>例子：Colossus (Bletchley Park, England), Mark I (Harvard), ENIAC (UPenn)</li>
+</ul>
+<h2 id="gen-2-195565-transistors-and-batch-systems"><a class="markdownIt-Anchor" href="#gen-2-195565-transistors-and-batch-systems"></a> Gen 2 (1955–65): Transistors and Batch Systems</h2>
+<p>1950s中期，<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%99%B6%E4%BD%93%E7%AE%A1">晶体管</a>（transistor）被发明</p>
+<p><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%A4%A7%E5%9E%8B%E8%AE%A1%E7%AE%97%E6%9C%BA">大型机</a>（mainframes）</p>
+<ul>
+<li>放在带空调的大型电脑房</li>
+<li>需要专业操作员</li>
+<li>数百万美元的价格，只有大公司、主要政府机构、大学才用得起</li>
+</ul>
+<p>运行作业（job -&gt; a program / a set of programs）的过程：</p>
+<ul>
+<li>在纸上写程序（用FORTRAN或者汇编）</li>
+<li>穿孔成卡片</li>
+<li>把卡片交给操作员</li>
+<li>运行完成后，操作员会获取打印的输出</li>
+</ul>
+<p>因为操作员东跑西跑，很浪费时间，所以出现了批处理系统（batch system）</p>
+<ul>
+<li>由小型机器（例如IBM 1401）从卡片收集输入</li>
+<li>积攒一定量之后，拿去大型机（如IBM 7094）计算</li>
+<li>计算完成后，由小型机器（例如IBM 1401）负责打印输出内容</li>
+<li>在计算机之间负责传输数据的介质是磁带（tape）</li>
+</ul>
+<p>输入作业的结构：</p>
+<ul>
+<li>$JOB card
+<ul>
+<li>最大运行时间</li>
+<li>计费账号</li>
+<li>程序员名字</li>
+</ul>
+</li>
+<li>$FORTRAN card
+<ul>
+<li>告诉系统加载FORTRAN编译器</li>
+<li>$FORTRAN card后面跟着FORTRAN程序</li>
+</ul>
+</li>
+<li>$LOAD card
+<ul>
+<li>让操作系统加载刚刚编译的目标程序</li>
+</ul>
+</li>
+<li>$RUN card
+<ul>
+<li>让操作系统运行程序并使用$RUN card后面跟着的数据</li>
+</ul>
+</li>
+<li>$END card
+<ul>
+<li>标志作业结束</li>
+</ul>
+</li>
+</ul>
+<p>当时主流操作系统：</p>
+<ul>
+<li>FMS (the Fortran Monitor System)</li>
+<li>IBSYS (IBM 7094的操作系统)</li>
+</ul>
+<h2 id="gen-3-19651980-ics-and-multiprogramming"><a class="markdownIt-Anchor" href="#gen-3-19651980-ics-and-multiprogramming"></a> Gen 3 (1965–1980): ICs and Multiprogramming</h2>
+<p>当时有两种完全不同的产品线：</p>
+<ul>
+<li>负责科学计算的计算机，例如IBM 7094 -&gt; word-oriented</li>
+<li>负责磁带整理和打印的计算机，例如IBM 1401 -&gt; character-oriented</li>
+</ul>
+<p>System/360的出现一举合并了两条产品线</p>
+<ul>
+<li>后续系列有370, 4300, 3080, 3090</li>
+<li><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/IBM_Z">zSeries</a>是此系列最新机型</li>
+<li>首个采用<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF">集成电路</a>（ICs / Integrated Circuits）的主流机型，并且价格跟性能都比基于晶体管的计算机好很多</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/OS/360_and_successors">OS/360</a>是System/360系列的操作系统</p>
+<ul>
+<li>数千个程序员写了几百万行汇编</li>
+<li>因为太复杂，总是修了旧的bug又引入了新的bug，最后成了烂摊子</li>
+<li>虽然坑，但是用户总体还是满意的</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%A4%9A%E4%BB%BB%E5%8A%A1%E5%A4%84%E7%90%86">多道程序处理</a>（multiprogramming）</p>
+<ul>
+<li>在一个程序等待I/O的时候，另一个程序可以使用CPU，从而避免资源闲置</li>
+<li>现在叫多任务处理</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%81%87%E8%84%B1%E6%9C%BA">外部设备联机并行操作</a>（spool / Simultaneous Peripheral Operation On Line）</p>
+<ul>
+<li>当一个作业运行完之后，可以直接从磁盘读取新作业并载入空出的内存运行</li>
+<li>IBM 1401失去用武之地</li>
+<li>现代例子：打印机队列</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%88%86%E6%99%82%E7%B3%BB%E7%B5%B1">分时系统</a>（timesharing）</p>
+<ul>
+<li>多个用户可以同时使用同一台计算机</li>
+<li><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%9B%B8%E5%AE%B9%E5%88%86%E6%99%82%E7%B3%BB%E7%B5%B1">兼容分时系统</a>（CTSS / Compatible Time Sharing System）是第一个通用的分时系统，在麻省理工开发</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://web.mit.edu/multics-history/">MULTICS</a> (MULTiplexed Information and Computing Service)</p>
+<ul>
+<li>著名的分时操作系统（time-sharing operating system）</li>
+<li>1964年由贝尔实验室（Bell Labs）、麻省理工学院及美国通用电气公司（General Electric）所共同参与研发</li>
+<li>很多用户直到1990s晚期才关闭MULTICS系统</li>
+<li>在<a target="_blank" rel="noopener" href="https://www.multicians.org/">这里</a>可以找到MULTICS系统的更多信息</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/MULTICS_timeline.png" alt="" /></p>
+<p>小型机（minicomputers）的崛起：</p>
+<ul>
+<li>DEC PDP-1 (1961)
+<ul>
+<li>仅售$120,000，是IBM 7094价格的5%</li>
+<li>在一些非数值计算上，跟IBM 7094的速度差不多</li>
+</ul>
+</li>
+</ul>
+<p>UNIX系统在此阶段的发展</p>
+<ul>
+<li>IEEE制定了标准：<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%8F%AF%E7%A7%BB%E6%A4%8D%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%8E%A5%E5%8F%A3">POSIX / Portable Operating System Interface</a></li>
+<li>System V (AT&amp;T)</li>
+<li>BSD / Berkeley Software Distribution (UC Berkeley)</li>
+<li>MINIX (1987) -&gt; MINIX 3
+<ul>
+<li>是UNIX的仿制品</li>
+<li>主要用于教学</li>
+<li>官网<a target="_blank" rel="noopener" href="http://www.minix3.org/">在此</a>，提供免费下载</li>
+</ul>
+</li>
+<li>Linux (inspired by MINIX)</li>
+</ul>
+<h2 id="gen-4-1980present-personal-computers"><a class="markdownIt-Anchor" href="#gen-4-1980present-personal-computers"></a> Gen 4 (1980–Present): Personal Computers</h2>
+<p>随着大规模集成电路（LSI / Large Scale Integration circuit）的出现，PC时代到来了。PC在当时叫微机（microcomputers，微型计算机）。</p>
+<ul>
+<li>1974年，Intel 8080造出了第一个通用8-bit CPU
+<ul>
+<li>Gary Kildall为这个CPU写了操作系统，叫<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/CP/M">CP/M</a> (Control Program for Microcomputers)</li>
+<li>Intel觉得基于磁盘的微机没前途，所以就让Gary Kildall拿到了版权</li>
+<li>Gary Kildall随后开了个公司，叫Digital Research，主要开发和销售CP/M</li>
+</ul>
+</li>
+<li>1977年，Digital Research重写了CP/M，使其能在各种CPU上面跑，例如Intel 8080，Zilog Z80等等</li>
+<li>1980s，IBM设计了IBM PC，并且需要能在上面运行的软件，接下来轮到比尔盖茨表演空手套白狼~
+<ul>
+<li>IBM找了比尔盖茨询问他的BASIC解释器</li>
+<li>比尔盖茨让IBM找当时如日中天的Digital Research</li>
+<li>Digital Research没理IBM，合作告吹</li>
+<li>于是IBM又找比尔盖茨，这回要操作系统</li>
+<li>盖茨从Seattle Computer Products那里以$75,000买了DOS (Disk Operating System)，然后加上自己的BASIC解释器一起转手给了IBM。不过盖茨没让IBM买断，而是跟IBM PC硬件捆绑销售。</li>
+<li>IBM需要对DOS做一些修改，于是盖茨直接请了写DOS的人（Tim Paterson）来微软公司</li>
+<li>最后这个系统叫做MS-DOS (MicroSoft Disk Operating System)</li>
+</ul>
+</li>
+<li>1983年，IBM PC/AT搭配Intel 80286 CPU作为IBM PC的继承者横空出世
+<ul>
+<li>这时候CP/M已经差不多要凉了</li>
+<li>MS DOS越来越红火，在后来的Intel 80386 &amp; 80486 CPU上都广泛使用</li>
+</ul>
+</li>
+<li>此时操作系统都是命令行，乔布斯从Xerox那里看到了GUI，并意识到了GUI的潜在价值，于是就推出了带GUI的电脑
+<ul>
+<li>Lisa（由于太贵而失败）</li>
+<li>Macintosh（大获成功，因为操作方式对用户友好）</li>
+</ul>
+</li>
+<li>微软看到Macintosh的成功，于是依葫芦画瓢搞了个Windows
+<ul>
+<li>1985-1995年，Windows只是作为MS DOS的图形界面</li>
+<li>1995年，推出了Windows 95，此时MS DOS只负责启动以及运行老的DOS程序</li>
+<li>1998年，推出了改进版，叫Windows 98，不过仍然包含大量16位Intel汇编</li>
+</ul>
+</li>
+<li>Windows NT（Windows New Technology）看起来跟之前没区别，但是底层已经完全重写，是32位的系统
+<ul>
+<li>1999年，Windows NT 5.0改名为Windows 2000，尝试完全代替Windows 98，但是没有成功</li>
+<li>所以微软又推出了Windows 98的改良版，叫Windows Me (Millennium Edition)</li>
+</ul>
+</li>
+<li>2001年，微软推出了Windows 2000的改进版，就是我们熟知的Windows XP
+<ul>
+<li>Windows XP主要分支：
+<ul>
+<li>客户端（client）</li>
+<li>服务器端（server）</li>
+<li>嵌入式系统（embedded）</li>
+</ul>
+</li>
+<li>这些分支导致各种服务包（service packs）出现</li>
+</ul>
+</li>
+<li>2007年，微软推出了Windows Vista
+<ul>
+<li>微软寄予厚望，然而Windows Vista凉透了</li>
+</ul>
+</li>
+<li>2009年，微软推出了Windows 7
+<ul>
+<li>七个月内，Windows 7的份额就超过了Windows Vista</li>
+</ul>
+</li>
+<li>2012年，微软推出了Windows 8
+<ul>
+<li>书上到这里就结束了，但是实际上Windows 8又凉了</li>
+</ul>
+</li>
+<li>2015年，微软推出了Windows 10
+<ul>
+<li>可以从Windows 7免费升级到Windows 10</li>
+</ul>
+</li>
+</ul>
+<p>x86架构主要有两个变种：</p>
+<ul>
+<li>x86-32 (32-bit)</li>
+<li>x86-64 (64-bit)</li>
+</ul>
+<p>UNIX系的GUI</p>
+<ul>
+<li>X Window System (X11)</li>
+<li>完整的GUI是运行在X11之上的，例如Gnome, KDE</li>
+</ul>
+<p>网络操作系统（network operating systems）</p>
+<p>分布式操作系统（distributed operating systems）</p>
+<h2 id="gen-5-1990present-mobile-computers"><a class="markdownIt-Anchor" href="#gen-5-1990present-mobile-computers"></a> Gen 5 (1990–Present): Mobile Computers</h2>
+<ul>
+<li>1946年，贝尔实验室造出了第一个移动电话，只不过重达40kg</li>
+<li>1970s，第一个真正意义上的移动电话被造出来，只有1kg重</li>
+<li>1990s中期，诺基亚造出了N9000，是手机和PDA(Personal Digital Assistant)的结合体</li>
+<li>1997年，爱立信造出了第一个概念智能手机GS88 &quot;Penelope&quot;，不过只有原型机，最后没有公开发售。图片取自<a target="_blank" rel="noopener" href="https://ericssoners.wordpress.com/2016/06/13/gs88/">这篇介绍GS88的文章</a></li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/1998924_20130219075643.jpg" alt="" /></p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/gs88_071.jpg" alt="" /></p>
+<p>手机操作系统有：</p>
+<ul>
+<li>Symbian OS (Nokia, 1998年)
+<ul>
+<li>主要厂商：诺基亚，三星，索尼爱立信，摩托罗拉</li>
+</ul>
+</li>
+<li>Blackberry OS (<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E9%BB%91%E8%8E%93%E5%85%AC%E5%8F%B8">RIM / BlackBerry</a>, 2002年)</li>
+<li>iOS (Apple, 2007年)
+<ul>
+<li>随着第一代iPhone一起发布</li>
+</ul>
+</li>
+<li>Android (Google, 2008年)
+<ul>
+<li>基于Linux，开源</li>
+</ul>
+</li>
+<li>Windows Phone (Microsoft, 2010年)
+<ul>
+<li>已经凉了</li>
+</ul>
+</li>
+</ul>
+<h1 id="computer-hardware-review"><a class="markdownIt-Anchor" href="#computer-hardware-review"></a> Computer Hardware Review</h1>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/OS_4e_fig_1_6.png" alt="" /></p>
+<h2 id="processors"><a class="markdownIt-Anchor" href="#processors"></a> Processors</h2>
+<p>关于计算机的“大脑”CPU：</p>
+<ul>
+<li>CPU的基本周期（basic cycle）：
+<ul>
+<li>从内存取出指令（fetch instruction）</li>
+<li>解码以确定类型和<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E9%81%8B%E7%AE%97%E6%95%B8">操作数</a>（decode type and operands）</li>
+<li>执行指令（execute）</li>
+</ul>
+</li>
+<li>指令集（Instruction set）
+<ul>
+<li>x86</li>
+<li>ARM</li>
+<li>CPU只能执行自己架构的指令</li>
+</ul>
+</li>
+<li>寄存器（registers）
+<ul>
+<li>通用寄存器（general registers）
+<ul>
+<li>储存关键变量（key variables）和临时数据（temporary results）</li>
+<li>因为访问内存获取指令或者数据很花时间，所以通常会有指令从内存加载到寄存器，反之亦然。</li>
+</ul>
+</li>
+<li>特殊寄存器（special registers）
+<ul>
+<li><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%A8%8B%E5%BC%8F%E8%A8%88%E6%95%B8%E5%99%A8">程序计数器</a>（program counter）
+<ul>
+<li>保存了下一条指令的地址</li>
+</ul>
+</li>
+<li><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Stack_register">堆栈指针</a>（stack pointer）
+<ul>
+<li>指向内存中当前栈的顶端</li>
+</ul>
+</li>
+<li><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%A8%8B%E5%BA%8F%E7%8A%B6%E6%80%81%E5%AD%97">程序状态字</a>（PSW / Program Status Word）
+<ul>
+<li>包含了条件码位（condition code bits）</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>流水线（pipeline）技术
+<ul>
+<li>现代CPU一个周期可以执行多条指令</li>
+<li>指令一旦被获取就必须执行完</li>
+</ul>
+</li>
+<li>超标量（superscalar）架构
+<ul>
+<li>多个执行单位
+<ul>
+<li>整数运算（integer arithmetic）</li>
+<li>浮点数运算（floating-point arithmetic）</li>
+<li>布尔运算（boolean operation）</li>
+</ul>
+</li>
+<li>多条指令被同时获取并解码，然后存放到缓冲区（holding buffer）</li>
+<li>一旦执行单位空闲，就会到缓冲区查看是否有能执行的指令</li>
+<li>副作用：程序的指令经常不按顺序执行</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/OS_4e_fig_1_7.png" alt="" /></p>
+<h3 id="multithreaded-and-multicore-chips"><a class="markdownIt-Anchor" href="#multithreaded-and-multicore-chips"></a> Multithreaded and Multicore Chips</h3>
+<p>摩尔定律（Moore’s law）：芯片中晶体管的数量每十八个月翻一番（the number of transistors on a chip doubles every 18 months）</p>
+<p>多线程（multithreading）/ 超线程（hyperthreading）</p>
+<ul>
+<li>SPARC, Power5, Intel Xeon, Intel Core都支持多线程</li>
+<li>允许CPU保持两个线程的状态，并且可以在纳秒级的时间内来回切换</li>
+<li>不是真正的并行处理，一次只有一个进程在跑</li>
+<li>每个线程在操作系统看来就是一个CPU核心，所以双核四线程看起来就是四核</li>
+</ul>
+<p>CPU核心（core）</p>
+<ul>
+<li>每个核心都是完整的处理器</li>
+<li>Intel Xeon Phi和Tilera TilePro等CPU，已经超过60核</li>
+<li>GPU (Graphics Processing Unit)核心更多，有数以千计的微核，擅长大量简单的并行运算</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/OS_4e_fig_1_8.png" alt="" /></p>
+<h2 id="memory"><a class="markdownIt-Anchor" href="#memory"></a> Memory</h2>
+<p>又快又大还便宜的内存是不存在的~</p>
+<p>内存系统采用分层结构：</p>
+<ul>
+<li>CPU内部的寄存器（最快）
+<ul>
+<li>32-bit的CPU上的储存空间是32*32 bits(=0.128KB)</li>
+<li>64-bit的CPU上的储存空间是64*64 bits(=0.512KB)</li>
+</ul>
+</li>
+<li><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/CPU%E7%BC%93%E5%AD%98">高速缓存</a>（cache memory）
+<ul>
+<li>高速缓存行（cache lines）
+<ul>
+<li>通常情况下，大小是64bytes</li>
+<li>line 0 -&gt; addr 0-63, line 1 -&gt; addr 64-127, 以此类推</li>
+<li>高速缓存命中（cache hit）-&gt; 无需访问内存</li>
+</ul>
+</li>
+<li>L1 cache
+<ul>
+<li>通常在CPU内部</li>
+<li>访问L1 cache没有延迟</li>
+<li>通常大小是16KB</li>
+</ul>
+</li>
+<li>L2 cache
+<ul>
+<li>访问L2 cache有1-2个时钟周期的延迟</li>
+<li>大小在MB级别</li>
+</ul>
+</li>
+<li>因为价格比较贵，所以空间也是很小的</li>
+</ul>
+</li>
+<li><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E9%9A%8F%E6%9C%BA%E5%AD%98%E5%8F%96%E5%AD%98%E5%82%A8%E5%99%A8">主存储器 / 主存</a>（Main memory / RAM -&gt; Random Access Memory）
+<ul>
+<li>曾经叫磁芯储存器（core memory），因为1950s-1960s内存是用可磁化的铁磁体（magnetizable ferrite cores）做的</li>
+<li>断电数据就没了</li>
+</ul>
+</li>
+<li>只读储存器（ROM -&gt; Read Only Memory）
+<ul>
+<li>非易失（non-volatile）储存器</li>
+<li>速度快而且便宜，但是一次写死不能改</li>
+</ul>
+</li>
+<li><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E9%9B%BB%E5%AD%90%E6%8A%B9%E9%99%A4%E5%BC%8F%E5%8F%AF%E8%A4%87%E5%AF%AB%E5%94%AF%E8%AE%80%E8%A8%98%E6%86%B6%E9%AB%94">EEPROM</a>（Electrically Erasable PROM）和<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E9%97%AA%E5%AD%98">闪存</a>（flash memory）
+<ul>
+<li>非易失（non-volatile）储存器</li>
+<li>闪存通常作为电子设备的储存介质</li>
+</ul>
+</li>
+<li><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E4%BA%92%E8%A3%9C%E5%BC%8F%E9%87%91%E5%B1%AC%E6%B0%A7%E5%8C%96%E7%89%A9%E5%8D%8A%E5%B0%8E%E9%AB%94">CMOS</a>（Complementary Metal-Oxide-Semiconductor）
+<ul>
+<li>易失（volatile）储存器</li>
+<li>CMOS保存电脑当前时间日期，以及一些配置参数（例如启动顺序）</li>
+<li>CMOS由单独的电池供电</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/OS_4e_fig_1_9.png" alt="" /></p>
+<h2 id="disks"><a class="markdownIt-Anchor" href="#disks"></a> Disks</h2>
+<p>磁盘（magnetic disk / hard disk）很便宜，但是比内存慢多了</p>
+<p>机械硬盘内部长这样：</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/OS_4e_fig_1_10.png" alt="" /></p>
+<p>机械硬盘的特点：</p>
+<ul>
+<li>转速：5400, 7200, 10800 RPM</li>
+<li>磁道（track）：是盘片上的环形区域（annular region）</li>
+<li>柱面（cylinder）：当前磁盘臂位置的所有磁道的集合</li>
+<li>扇区（sector）：从磁道划分而来，通常扇区大小为512bytes</li>
+</ul>
+<p>固态硬盘（SSD -&gt; Solid State Disk）的特点：</p>
+<ul>
+<li>数据储存在闪存</li>
+<li>没有机械结构</li>
+</ul>
+<h2 id="io-devices"><a class="markdownIt-Anchor" href="#io-devices"></a> I/O Devices</h2>
+<p>I/O设备由两部分组成，分别是设备控制器和设备本身</p>
+<p>操作系统通过驱动（device driver）跟设备控制器交互</p>
+<p>I/O的方式有三种：</p>
+<ul>
+<li>忙等待（busy waiting）
+<ul>
+<li>发出system call调用设备，然后循环检查是否完成</li>
+<li>缺点：占据CPU直到I/O完成</li>
+</ul>
+</li>
+<li>中断（interrupt）
+<ul>
+<li>设备驱动器通知设备控制器</li>
+<li>设备控制器启动对应设备</li>
+<li>设备控制器在I/O完成后向中断控制器发信号</li>
+<li>中断控制器接收信号后，告知CPU，并把设备编号放到总线上</li>
+<li>CPU决定处理中断，把程序计数器和PSW压栈，CPU切换到内核模式</li>
+<li>通过<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E6%96%B7%E5%90%91%E9%87%8F">中断向量</a>（interrupt vector）寻找中断处理程序的地址</li>
+<li>开始执行中断处理程序，取走刚刚入栈的程序计数器和PSW，然后查询设备状态</li>
+<li>中断处理完成后，返回到用户程序第一条未执行指令</li>
+</ul>
+</li>
+<li>DMA（Direct Memory Access）
+<ul>
+<li>无需CPU干预</li>
+<li>处理完成后会引发中断</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/OS_4e_fig_1_11.png" alt="" /></p>
+<h2 id="buses"><a class="markdownIt-Anchor" href="#buses"></a> Buses</h2>
+<p><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%80%BB%E7%BA%BF">总线</a>（Bus）是计算机组件交换数据的方式</p>
+<p>大型x86系统结构如下所示：</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/OS_4e_fig_1_12.png" alt="" /></p>
+<p>几种不同的总线（最下面是最新的技术）：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%B7%A5%E4%B8%9A%E6%A0%87%E5%87%86%E7%BB%93%E6%9E%84">ISA</a> (Industry Standard Architecture)</li>
+<li><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%A4%96%E8%AE%BE%E7%BB%84%E4%BB%B6%E4%BA%92%E8%BF%9E%E6%A0%87%E5%87%86">PCI</a> (Peripheral Component Interconnect)</li>
+<li><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/PCI_Express">PCIe</a> (Peripheral Component Interconnect Express)</li>
+</ul>
+<p>几种总线架构</p>
+<ul>
+<li>共享总线架构（shared bus architecture）
+<ul>
+<li>多设备用同一条线传输数据</li>
+<li>例子：ISA, PCI</li>
+</ul>
+</li>
+<li>并行总线架构（shared bus architecture）
+<ul>
+<li>一次可以发送多位数据</li>
+<li>例子：ISA, PCI</li>
+</ul>
+</li>
+<li>串行总线架构（serial bus architecture）
+<ul>
+<li>通过单个数据通路（lane）发送所有数据</li>
+<li>跟并行总线架构相比，无需保证数据同时到达</li>
+<li>例子：PCIe</li>
+</ul>
+</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%9B%B4%E6%8E%A5%E5%AA%92%E9%AB%94%E4%BB%8B%E9%9D%A2">DMI</a> (Direct Media Interface)：连接<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%8D%97%E6%A1%A5">南桥芯片</a>（Southbridge）和<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%8C%97%E6%A1%A5">北桥芯片</a>（Northbridge）</p>
+<p>USB (Universal Serial Bus)</p>
+<ul>
+<li>最初是为了连接慢速I/O设备，例如鼠标键盘</li>
+<li>USB 1.0 -&gt; 12 Mbps</li>
+<li>USB 2.0 -&gt; 480 Mbps</li>
+<li>USB 3.0 -&gt; 5 Gbps</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%B0%8F%E5%9E%8B%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%8E%A5%E5%8F%A3">SCSI</a> (Small Computer System Interface)</p>
+<ul>
+<li>跟周边设备（例如：硬盘、软驱、光驱、打印机、扫描仪等）通信</li>
+<li>通常在服务器和工作站能看到</li>
+<li>传输速率：640 MB/s</li>
+</ul>
+<p>即插即用（plug and play）</p>
+<ul>
+<li>系统自动收集I/O设备信息</li>
+<li>集中赋予中断级别和I/O地址</li>
+</ul>
+<h2 id="booting-the-computer"><a class="markdownIt-Anchor" href="#booting-the-computer"></a> Booting the Computer</h2>
+<p>BIOS (Basic Input Output System)</p>
+<ul>
+<li>在主板（motherboard）上</li>
+<li>包含一些低级I/O软件（例如：读取键盘，写屏幕）</li>
+<li>储存在闪存（flash RAM）中</li>
+<li>操作系统可以更新BIOS</li>
+</ul>
+<p>计算机启动过程：</p>
+<ul>
+<li>BIOS开始运行</li>
+<li>通过扫描各类总线，检测安装的内存数量，以及各类基本设备和外设</li>
+<li>根据CMOS中的设备清单来决定启动的设备（从光驱，硬盘，USB）</li>
+<li>启动设备的第一个扇区被读入内存执行，然后找出活动的（active）分区</li>
+<li>从该分区读取第二个启动装载模块（bootloader）</li>
+<li>这个bootloader从活动分区读取并启动操作系统</li>
+<li>操作系统检查硬件是否都有驱动程序，然后把驱动程序载入内核</li>
+<li>初始化分页表，创建一系列后台进程，启动GUI</li>
+</ul>
+<h1 id="the-operating-system-zoo"><a class="markdownIt-Anchor" href="#the-operating-system-zoo"></a> The Operating System Zoo</h1>
+<h2 id="mainframe-operating-systems"><a class="markdownIt-Anchor" href="#mainframe-operating-systems"></a> Mainframe Operating Systems</h2>
+<p>大型机操作系统主要提供三类服务：</p>
+<ul>
+<li>批处理（batch）
+<ul>
+<li>处理无需人工干预的周期性任务（processes routine jobs without any interactive user present）</li>
+</ul>
+</li>
+<li>事务处理（transaction processing）
+<ul>
+<li>处理大量的小型请求（handle large numbers of small requests）</li>
+</ul>
+</li>
+<li>分时（timesharing）
+<ul>
+<li>允许多个远程用户同时使用（allow multiple remote users to run jobs）</li>
+</ul>
+</li>
+</ul>
+<h2 id="server-operating-systems"><a class="markdownIt-Anchor" href="#server-operating-systems"></a> Server Operating Systems</h2>
+<p>服务器操作系统通常在作为服务器的PC，工作站，以及大型机跑</p>
+<p>典型的服务器操作系统有：Solaris, FreeBSD, Linux, Windows Server 201x</p>
+<h2 id="multiprocessor-operating-systems"><a class="markdownIt-Anchor" href="#multiprocessor-operating-systems"></a> Multiprocessor Operating Systems</h2>
+<p>多处理器操作系统可以整合大量算力，可以细分为：parallel computers, multicomputers, multiprocessors</p>
+<h2 id="personal-computer-operating-systems"><a class="markdownIt-Anchor" href="#personal-computer-operating-systems"></a> Personal Computer Operating Systems</h2>
+<p>常用的个人电脑操作系统：</p>
+<ul>
+<li>Linux</li>
+<li>FreeBSD</li>
+<li>Windows 7/8/10</li>
+<li>OS X</li>
+</ul>
+<h2 id="handheld-computer-operating-systems"><a class="markdownIt-Anchor" href="#handheld-computer-operating-systems"></a> Handheld Computer Operating Systems</h2>
+<p>掌上计算机，又称为PDA (Personal Digital Assistant)，例如：手机，平板</p>
+<p>目前掌上计算机操作系统有：Android, iOS</p>
+<h2 id="embedded-operating-systems"><a class="markdownIt-Anchor" href="#embedded-operating-systems"></a> Embedded Operating Systems</h2>
+<p>嵌入式操作系统一般是在控制设备的计算机允许，通常不允许安装软件</p>
+<p>嵌入式例子：微波炉，汽车，MP3播放器等等</p>
+<p>常见的嵌入式操作系统：</p>
+<ul>
+<li>嵌入式Linux</li>
+<li>QNX</li>
+<li>VxWorks</li>
+</ul>
+<h2 id="sensor-node-operating-systems"><a class="markdownIt-Anchor" href="#sensor-node-operating-systems"></a> Sensor-Node Operating Systems</h2>
+<p>传感器节点操作系统有多种用途，例如保卫国界，降水测量，森林火灾探测等等</p>
+<p>常见的传感器节点操作系统：TinyOS</p>
+<h2 id="real-time-operating-systems"><a class="markdownIt-Anchor" href="#real-time-operating-systems"></a> Real-Time Operating Systems</h2>
+<p>实时操作系统分两类：</p>
+<ul>
+<li>硬实时系统（hard real-time system）
+<ul>
+<li>必须在限定时间内进行操作</li>
+<li>通常用于工控领域，民航领域等等</li>
+</ul>
+</li>
+<li>软实时系统（soft real-time system）
+<ul>
+<li>可以偶尔违反时限，并且不会带来严重后果</li>
+<li>通常用于数字音频，智能手机等等</li>
+</ul>
+</li>
+</ul>
+<p>实时操作系统这个分类，跟嵌入式系统和掌上计算机操作系统有一定的重叠</p>
+<p>常见的实时操作系统：<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/ECOS">eCos</a></p>
+<h2 id="smart-card-operating-systems"><a class="markdownIt-Anchor" href="#smart-card-operating-systems"></a> Smart Card Operating Systems</h2>
+<p>智能卡操作系统跑在信用卡大小的卡片上</p>
+<p>两种主要供电方式：</p>
+<ul>
+<li>直接接触读卡器供电（contacts in the reader）</li>
+<li>接近读卡器，感应供电（inductively powered）</li>
+</ul>
+<p>部分智能卡使用了Java，因此带有Java虚拟机（JVM）</p>
+<h1 id="operating-system-concepts"><a class="markdownIt-Anchor" href="#operating-system-concepts"></a> Operating System Concepts</h1>
+<h2 id="processes"><a class="markdownIt-Anchor" href="#processes"></a> Processes</h2>
+<p>进程（Processes）-&gt; 正在执行的程序</p>
+<p>地址空间（address space）</p>
+<ul>
+<li>进程可以进行读写的地方</li>
+<li>包含可执行程序，程序数据，堆栈（stack）</li>
+</ul>
+<p>进程表（process table）</p>
+<ul>
+<li>储存了所有进程的信息</li>
+<li>通常是数组或者链表结构</li>
+</ul>
+<p>挂机的进程（suspended process）包括：</p>
+<ul>
+<li>地址空间，又叫磁芯映像 / 核心映像（core image）</li>
+<li>对应的进程表项</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E8%BF%9B%E7%A8%8B%E6%A0%91">进程树</a>（process tree）</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%88%B6%E8%BF%9B%E7%A8%8B">父进程</a>（parent process）</li>
+<li><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%AD%90%E8%BF%9B%E7%A8%8B">子进程</a>（child process）</li>
+<li><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E8%A1%8C%E7%A8%8B%E9%96%93%E9%80%9A%E8%A8%8A">进程间通信</a>（interprocess communication）</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/OS_4e_fig_1_13.png" alt="" /></p>
+<p>UID (User IDentification)</p>
+<ul>
+<li>每个用户都有一个UID</li>
+<li>同一用户启动的所有进程都会有相同的UID</li>
+<li>子进程的UID跟父进程一样</li>
+<li>superuser(UNIX) / Administrator(Windows)
+<ul>
+<li>作为系统的超级用户或管理员，拥有很高的权限，可以无视很多规则</li>
+</ul>
+</li>
+</ul>
+<p>GID (Group IDentification)</p>
+<ul>
+<li>用户可以是组员</li>
+<li>每个组都有一个GID</li>
+</ul>
+<h2 id="address-spaces"><a class="markdownIt-Anchor" href="#address-spaces"></a> Address Spaces</h2>
+<p>内存地址是32位或者64位</p>
+<p>如果内存超了，操作系统会调用虚拟内存（virtual memory）</p>
+<h2 id="files"><a class="markdownIt-Anchor" href="#files"></a> Files</h2>
+<p>目录（directory）-&gt; 可以把文件分组存放</p>
+<p>根目录（root directory）-&gt; 目录的顶部</p>
+<p>路径名（path name）</p>
+<ul>
+<li>绝对路径（absolute path）</li>
+<li>相对路径（relative path）</li>
+<li>路径有两种写法：
+<ul>
+<li>/ (slash, UNIX)</li>
+<li>\ (backslash, Windows)</li>
+</ul>
+</li>
+</ul>
+<p>工作目录（working directory）-&gt; 进程工作的目录，可以被改变</p>
+<p>尝试打开文件：</p>
+<ul>
+<li>如果允许访问，会返回文件描述符（file descriptor），是一个小整数</li>
+<li>如果拒绝访问，会返回错误码</li>
+</ul>
+<p>挂载（mount）机制 (UNIX)</p>
+<ul>
+<li>可以把外部的文件数接到根文件系统上（root file system）</li>
+<li>下图是挂载CD-ROM</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/OS_4e_fig_1_15.png" alt="" /></p>
+<p>特殊文件（special file）</p>
+<ul>
+<li>UNIX一切皆文件</li>
+<li>block special files（例如：磁盘）</li>
+<li>character special files（例如：打印机，调制器等）</li>
+<li>特殊文件保存在/dev
+<ul>
+<li>例如：/dev/lp是打印机</li>
+</ul>
+</li>
+</ul>
+<p>管道（pipe）</p>
+<ul>
+<li>用于连接两个进程</li>
+<li>进程A把管道当成普通的输出文件</li>
+<li>进程B把管道当成普通的输入文件</li>
+</ul>
+<h2 id="inputoutput"><a class="markdownIt-Anchor" href="#inputoutput"></a> Input/Output</h2>
+<p>常见I/O设备有：键鼠，显示器，打印机等等</p>
+<h2 id="protection"><a class="markdownIt-Anchor" href="#protection"></a> Protection</h2>
+<p>rwx bits</p>
+<ul>
+<li>r -&gt; read = 4</li>
+<li>w -&gt; write = 2</li>
+<li>x -&gt; execute = 1</li>
+<li>rwxr-x--x = 751 -&gt; owner rwx, other group rx, everyone else x</li>
+</ul>
+<h2 id="the-shell"><a class="markdownIt-Anchor" href="#the-shell"></a> The Shell</h2>
+<p>提示符（prompt）</p>
+<p>Shell有很多种：sh, csh, ksh, bash</p>
+<p>标准输出重定向【&gt;】（stdout redirect）：date &gt; file</p>
+<p>标准输入重定向【&lt;】（stdin redirect）：sor t &lt; file1 &gt; file2</p>
+<p>管道【|】（pipe）：cat file1 file2 file3 | sort &gt; /dev/lp</p>
+<p>不等待执行结束【&amp;】（give prompt immediately）：cat file1 file2 file3 | sort &gt; /dev/lp &amp;</p>
+<h2 id="ontogeny-recapitulates-phylogeny"><a class="markdownIt-Anchor" href="#ontogeny-recapitulates-phylogeny"></a> Ontogeny Recapitulates Phylogeny</h2>
+<p>标题一个词都不认识哎。。。</p>
+<ul>
+<li>Ontogeny -&gt; 个体发生学</li>
+<li>Recapitulates -&gt; 重复（(BIOLOGY) repeat (an evolutionary or other process) during development and growth）</li>
+<li>Phylogeny -&gt; 系统发育学</li>
+<li>标题意思：个体重复系统发育</li>
+<li>人话：新的产品种类总是容易重蹈覆辙</li>
+</ul>
+<p>核心观点：当前过时的东西，过几年因为技术的发展可能又在新的产品种类上复活了</p>
+<ul>
+<li>解释器（interpreter） vs. 直接执行（direct execution）</li>
+<li>汇编 vs. 高级语言</li>
+<li>单道程序处理（monoprogramming） vs. 多道程序处理（multiprogramming）</li>
+</ul>
+<h1 id="system-calls"><a class="markdownIt-Anchor" href="#system-calls"></a> System Calls</h1>
+<p>count = read(fd, buffer, nbytes);</p>
+<ul>
+<li>fd -&gt; 指定文件</li>
+<li>buffer -&gt; 指向缓冲区</li>
+<li>nbytes -&gt; 要读的字节数</li>
+<li>count -&gt; 实际读到的字节数，由系统调用返回。如果出错，count = -1</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/OS_4e_fig_1_17.png" alt="" /></p>
+<p>POSIX大约有100个过程调用（procedure calls），绝大部分POSIX过程都会触发系统调用</p>
+<p>下面是一些主要的POSIX系统调用</p>
+<table>
+<thead>
+<tr>
+<th>Process management</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Call</td>
+<td>Description</td>
+</tr>
+<tr>
+<td>pid = fork()</td>
+<td>Create a child process identical to the parent</td>
+</tr>
+<tr>
+<td>pid = waitpid(pid, &amp;statloc, options)</td>
+<td>Wait for a child to terminate</td>
+</tr>
+<tr>
+<td>s = execve(name, argv, environp)</td>
+<td>Replace a process’ core image</td>
+</tr>
+<tr>
+<td>exit(status)</td>
+<td>Terminate process execution and return status</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>File management</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Call</td>
+<td>Description</td>
+</tr>
+<tr>
+<td>fd = open(file, how, ...)</td>
+<td>Open a file for reading, writing, or both</td>
+</tr>
+<tr>
+<td>s = close(fd)</td>
+<td>Close an open file</td>
+</tr>
+<tr>
+<td>n = read(fd, buffer, nbytes)</td>
+<td>Read data from a file into a buffer</td>
+</tr>
+<tr>
+<td>n = write(fd, buffer, nbytes)</td>
+<td>Write data from a buffer into a file</td>
+</tr>
+<tr>
+<td>position = lseek(fd, offset, whence)</td>
+<td>Move the file pointer</td>
+</tr>
+<tr>
+<td>s = stat(name, &amp;buf)</td>
+<td>Get a file’s status information</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Directory- and file-system management</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Call</td>
+<td>Description</td>
+</tr>
+<tr>
+<td>s = mkdir(name, mode)</td>
+<td>Create a new directory</td>
+</tr>
+<tr>
+<td>s = rmdir(name)</td>
+<td>Remove an empty directory</td>
+</tr>
+<tr>
+<td>s = link(name1, name2)</td>
+<td>Create a new entry, name2, pointing to name1</td>
+</tr>
+<tr>
+<td>s = unlink(name)</td>
+<td>Remove a directory entry</td>
+</tr>
+<tr>
+<td>s = mount(special, name, flag)</td>
+<td>Mount a file system</td>
+</tr>
+<tr>
+<td>s = umount(special)</td>
+<td>Unmount a file system</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Miscellaneous</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Call</td>
+<td>Description</td>
+</tr>
+<tr>
+<td>s = chdir(dirname)</td>
+<td>Change the working directory</td>
+</tr>
+<tr>
+<td>s = chmod(name, mode)</td>
+<td>Change a file’s protection bits</td>
+</tr>
+<tr>
+<td>s = kill(pid, signal)</td>
+<td>Send a signal to a process</td>
+</tr>
+<tr>
+<td>seconds = time(&amp;seconds)</td>
+<td>Get the elapsed time since Jan. 1, 1970</td>
+</tr>
+</tbody>
+</table>
+<h2 id="system-calls-for-process-management"><a class="markdownIt-Anchor" href="#system-calls-for-process-management"></a> System Calls for Process Management</h2>
+<p>Fork</p>
+<ul>
+<li>是在POSIX中创建进程的唯一途径</li>
+<li>子进程在创建的时候跟父进程一模一样</li>
+<li>任何后续变化都不会互相影响</li>
+<li>Fork的返回值，在子进程中是0，在父进程中等于子进程的PID (Process IDentifier)。这也是区分父进程和子进程的方法。</li>
+</ul>
+<p>waitpid</p>
+<ul>
+<li>等待任意一个子进程终止</li>
+<li>可以指定等待特定的子进程，或者是等待老的子进程（参数pid = -1）</li>
+<li>waitpid完成时，statloc会被赋值为子进程的退出状态（exit status）</li>
+</ul>
+<p>execve（exec）</p>
+<ul>
+<li>参数
+<ul>
+<li>name -&gt; the name of the file to be executed</li>
+<li>argv -&gt; a pointer to the argument array</li>
+<li>environp -&gt; a pointer to the environment array</li>
+</ul>
+</li>
+<li>替换进程的核心映像（core image）</li>
+<li>变种（可以忽略或者指定参数）：execl, execv, execle</li>
+</ul>
+<p>exit</p>
+<ul>
+<li>进程终止执行时使用</li>
+<li>exit status范围是0-255（通过waitpid中的statloc返回给父进程）</li>
+</ul>
+<p>下面是一个高度简化的shell，用以说明fork，waitpid和execve的使用</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> TRUE 1</span></span><br><span class="line"><span class="keyword">while</span> (TRUE) &#123;                              <span class="comment">/* repeat forever */</span></span><br><span class="line">    <span class="built_in">type_prompt</span>();                          <span class="comment">/* display prompt on the screen */</span></span><br><span class="line">    <span class="built_in">read_command</span>(command, parameters);      <span class="comment">/* read input from terminal */</span></span><br><span class="line">    <span class="keyword">if</span> (fork() != <span class="number">0</span>) &#123;                      <span class="comment">/* fork off child process */</span></span><br><span class="line">        <span class="comment">/* Parent code. */</span></span><br><span class="line">        <span class="built_in">waitpid</span>(<span class="number">-1</span>, &amp;status, <span class="number">0</span>);            <span class="comment">/* wait for child to exit */</span></span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="comment">/* Child code. */</span></span><br><span class="line">        <span class="built_in">execve</span>(command, parameters, <span class="number">0</span>);     <span class="comment">/* execute command */</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>下面是cp命令的过程展示</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cp</span> file1 file2</span><br></pre></td></tr></table></figure>
+<ul>
+<li>shell会fork出一个子进程</li>
+<li>子进程找到，执行cp并传入参数</li>
+<li>cp程序的入口是main(argc, argv, envp)
+<ul>
+<li>argc(=3) -&gt; 在命令行上，包括程序名字在内的参数数量</li>
+<li>argv -&gt; 指向数组的指针（a pointer to an array）
+<ul>
+<li>argv[0] -&gt; &quot;cp&quot;</li>
+<li>argv[1] -&gt; &quot;file1&quot;</li>
+<li>argv[2] -&gt; &quot;file2&quot;</li>
+</ul>
+</li>
+<li>envp -&gt; 指向环境的指针（a pointer to the environment）
+<ul>
+<li>an array of strings (name = value)</li>
+<li>用来传入各种环境变量（environment variables）
+<ul>
+<li>例如：terminal type, home directory name</li>
+<li>如果什么都不传入，那envp = 0</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>UNIX进程的内存被分为三部分：</p>
+<ul>
+<li>正文段（text segment）</li>
+<li>数据段（data segment）
+<ul>
+<li>向上增长（grows upward）</li>
+</ul>
+</li>
+<li>堆栈段（segment segment）
+<ul>
+<li>向下增长（grows downward）</li>
+</ul>
+</li>
+</ul>
+<p>使用malloc可以动态分配内存</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/OS_4e_fig_1_20.png" alt="" /></p>
+<h2 id="system-calls-for-file-management"><a class="markdownIt-Anchor" href="#system-calls-for-file-management"></a> System Calls for File Management</h2>
+<p>open</p>
+<ul>
+<li>想要读写文件，必须先打开文件</li>
+<li>open参数：
+<ul>
+<li>file -&gt; absolute path / relative path</li>
+<li>how
+<ul>
+<li>O_RDONLY -&gt; read</li>
+<li>O_WRONLY -&gt; write</li>
+<li>O_RDWR -&gt; read and write</li>
+<li>O_CREAT -&gt; create</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>返回的file descriptor可以进行读写操作</li>
+<li>最后需要使用close关闭文件</li>
+</ul>
+<p>read &amp; write</p>
+<ul>
+<li>fd, buffer, nbytes</li>
+<li>返回实际字节数。如果出错，返回-1</li>
+</ul>
+<p>Lseek</p>
+<ul>
+<li>移动文件指针</li>
+<li>lseek参数：
+<ul>
+<li>fd -&gt; file descriptor</li>
+<li>offset -&gt; file position</li>
+<li>whence -&gt; position type
+<ul>
+<li>相对文件开头</li>
+<li>当前位置</li>
+<li>相对文件末尾</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>返回指针移动后，在文件中的绝对位置</li>
+</ul>
+<p>stat</p>
+<ul>
+<li>获取文件相关信息
+<ul>
+<li>文件类型（普通文件，特殊文件，目录等）</li>
+<li>大小</li>
+<li>最后修改时间</li>
+<li>若干其它信息</li>
+</ul>
+</li>
+</ul>
+<h2 id="system-calls-for-directory-management"><a class="markdownIt-Anchor" href="#system-calls-for-directory-management"></a> System Calls for Directory Management</h2>
+<p>mkdir -&gt; 创建空目录</p>
+<p>rmdir -&gt; 删除空目录</p>
+<p>link（链接）</p>
+<ul>
+<li>创建一个同步的链接，用以共享文件</li>
+<li>两个路径都指向同一个文件</li>
+<li>i-nodes表记载了文件的相关信息</li>
+<li>i-number是i-nodes的引用，UNIX通过i-number来标识文件</li>
+<li>link的本质就是，创建新目录，但是使用原有文件的i-number</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/OS_4e_fig_1_21.png" alt="" /></p>
+<p>mount（挂载）</p>
+<ul>
+<li>用于合并两个文件系统</li>
+<li>例子：mount(&quot;/dev/sdb0&quot;, &quot;/mnt&quot;, 0);</li>
+<li>取消挂载使用umount</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/OS_4e_fig_1_22.png" alt="" /></p>
+<h2 id="miscellaneous-system-calls"><a class="markdownIt-Anchor" href="#miscellaneous-system-calls"></a> Miscellaneous System Calls</h2>
+<p>chdir</p>
+<ul>
+<li>改变当前工作目录</li>
+<li>例子：chdir(&quot;/usr/ast/test&quot;);</li>
+</ul>
+<p>chmod</p>
+<ul>
+<li>改变文件权限 / 保护模式</li>
+<li>例子：chmod(&quot;file&quot;, 0644);</li>
+</ul>
+<h2 id="the-windows-win32-api"><a class="markdownIt-Anchor" href="#the-windows-win32-api"></a> The Windows Win32 API</h2>
+<p>Windows和UNIX的编程模式（programming model）不同：</p>
+<ul>
+<li>UNIX是系统调用（system call）</li>
+<li>Windows是事件驱动（event driven）</li>
+</ul>
+<p>Win32 API</p>
+<ul>
+<li>包含数千个调用</li>
+<li>部分会触发系统调用，也有一些是在用户空间执行</li>
+<li>可以管理窗口，图形，文本，字体，滚动条，对话框，菜单等等</li>
+</ul>
+<p>下面是一些UNIX系统调用对应的Win32 API</p>
+<table>
+<thead>
+<tr>
+<th>UNIX</th>
+<th>Win32</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fork</td>
+<td>CreateProcess</td>
+<td>Create a new process</td>
+</tr>
+<tr>
+<td>waitpid</td>
+<td>WaitForSingleObject</td>
+<td>Can wait for a process to exit</td>
+</tr>
+<tr>
+<td>execve</td>
+<td>(none)</td>
+<td>CreateProcess = fork + execve</td>
+</tr>
+<tr>
+<td>exit</td>
+<td>ExitProcess</td>
+<td>Terminate execution</td>
+</tr>
+<tr>
+<td>open</td>
+<td>CreateFile</td>
+<td>Create a file or open an existing file</td>
+</tr>
+<tr>
+<td>close</td>
+<td>CloseHandle</td>
+<td>Close a file</td>
+</tr>
+<tr>
+<td>read</td>
+<td>ReadFile</td>
+<td>Read data from a file</td>
+</tr>
+<tr>
+<td>write</td>
+<td>WriteFile</td>
+<td>Write data to a file</td>
+</tr>
+<tr>
+<td>lseek</td>
+<td>SetFilePointer</td>
+<td>Move the file pointer</td>
+</tr>
+<tr>
+<td>stat</td>
+<td>GetFileAttributesEx</td>
+<td>Get various file attributes</td>
+</tr>
+<tr>
+<td>mkdir</td>
+<td>CreateDirectory</td>
+<td>Create a new directory</td>
+</tr>
+<tr>
+<td>rmdir</td>
+<td>RemoveDirectory</td>
+<td>Remove an empty directory</td>
+</tr>
+<tr>
+<td>link</td>
+<td>(none)</td>
+<td>Win32 does not support links</td>
+</tr>
+<tr>
+<td>unlink</td>
+<td>DeleteFile</td>
+<td>Destroy an existing file</td>
+</tr>
+<tr>
+<td>mount</td>
+<td>(none)</td>
+<td>Win32 does not support mount</td>
+</tr>
+<tr>
+<td>umount</td>
+<td>(none)</td>
+<td>Win32 does not support mount, so no umount</td>
+</tr>
+<tr>
+<td>chdir</td>
+<td>SetCurrentDirectory</td>
+<td>Change the current working directory</td>
+</tr>
+<tr>
+<td>chmod</td>
+<td>(none)</td>
+<td>Win32 does not support security (although NT does)</td>
+</tr>
+<tr>
+<td>kill</td>
+<td>(none)</td>
+<td>Win32 does not support signals</td>
+</tr>
+<tr>
+<td>time</td>
+<td>GetLocalTime</td>
+<td>Get the current time</td>
+</tr>
+</tbody>
+</table>
+<p>CreateProcess -&gt; Windows有进程层次，但并非是关系较强的父子链，创建进程后两者是平等的</p>
+<h1 id="operating-system-structure"><a class="markdownIt-Anchor" href="#operating-system-structure"></a> Operating System Structure</h1>
+<h2 id="monolithic-systems"><a class="markdownIt-Anchor" href="#monolithic-systems"></a> Monolithic Systems</h2>
+<p>单体系统（Monolithic System）</p>
+<ul>
+<li>整个操作系统在内核态以单一程序的方式运行</li>
+<li>可以高效的任意调用procedure</li>
+<li>任意一个procedure出问题，整个系统就会崩溃</li>
+<li>基本结构如下：
+<ul>
+<li>main procedure</li>
+<li>service procedure</li>
+<li>utility procedure</li>
+</ul>
+</li>
+<li>系统支持载入扩展（extension）
+<ul>
+<li>共享库（shared library, UNIX）</li>
+<li>动态链接库（DLL -&gt; Dynamic-Link Library, Windows）</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/OS_4e_fig_1_24.png" alt="" /></p>
+<h2 id="layered-systems"><a class="markdownIt-Anchor" href="#layered-systems"></a> Layered Systems</h2>
+<p>THE系统是首个层次式系统（Layered System）</p>
+<ul>
+<li>1968年，由E. W. Dijkstra在Technische Hogeschool Eindhoven搭建</li>
+<li>是为荷兰的计算机Electrologica X8设计的批处理系统</li>
+<li>上层无需关心底层的实现</li>
+</ul>
+<p>THE系统的层次如下：</p>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5</td>
+<td>The operator</td>
+</tr>
+<tr>
+<td>4</td>
+<td>User programs</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Input/output management</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Operator-process communication</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Memory and drum management</td>
+</tr>
+<tr>
+<td>0</td>
+<td>Processor allocation and multiprogramming</td>
+</tr>
+</tbody>
+</table>
+<h2 id="microkernels"><a class="markdownIt-Anchor" href="#microkernels"></a> Microkernels</h2>
+<p>微内核（Microkernel）</p>
+<ul>
+<li>把操作系统分成若干模块</li>
+<li>只有微内核运行在内核态，其它模块作为用户进程运行</li>
+<li>模块崩溃不会造成整个系统的崩溃</li>
+<li>常见的现代操作系统只有OS X使用微内核（Mach microkernel）</li>
+<li>微内核因为高度可靠，常见于实时、工业、航天、军事等领域</li>
+<li>常见的微内核有：Integrity, K42, L4, PikeOS, QNX, Symbian, MINIX 3</li>
+</ul>
+<p>MINIX 3的微内核由12000行左右的C代码和1400行左右的汇编（用于捕获中断，切换进程等）构成</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/OS_4e_fig_1_26.png" alt="" /></p>
+<p>MINIX处于用户态的层次：</p>
+<ul>
+<li>device drivers
+<ul>
+<li>没有I/O的物理访问权</li>
+<li>使用kernel call来让内核代为完成I/O行为</li>
+</ul>
+</li>
+<li>servers
+<ul>
+<li>能够完成操作系统的多数工作</li>
+<li>再生服务器（reincarnation server）
+<ul>
+<li>负责检查其它servers和drivers是否正常工作</li>
+<li>如果发现错误，会自行修复，无需用户干预</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>user programs
+<ul>
+<li>需要给servers发送短消息请求POSIX系统调用</li>
+</ul>
+</li>
+</ul>
+<h2 id="client-server-model"><a class="markdownIt-Anchor" href="#client-server-model"></a> Client-Server Model</h2>
+<p>客户端（client）构造消息，发给服务端（server），服务端完成工作并发送回应。例如：客户端请求Web页面，服务端返回对应的页面数据。</p>
+<h2 id="virtual-machines"><a class="markdownIt-Anchor" href="#virtual-machines"></a> Virtual Machines</h2>
+<p>虚拟机在本书的第七章<a target="_blank" rel="noopener" href="https://oscarcx123.github.io/tech/virtualization-and-the-cloud.html">Virtualization and the Cloud</a>有做详细介绍</p>
+<p>CMS (Conversational Monitor System) -&gt; a single-user, interactive<br />
+system</p>
+<h3 id="the-java-virtual-machine"><a class="markdownIt-Anchor" href="#the-java-virtual-machine"></a> The Java Virtual Machine</h3>
+<p>JVM (Java Virtual Machine)</p>
+<ul>
+<li>Java编译器为JVM生成代码</li>
+<li>有JVM解释器的地方，就能执行代码</li>
+<li>代码在保护环境下隔离执行，不会造成破坏</li>
+</ul>
+<h2 id="exokernels"><a class="markdownIt-Anchor" href="#exokernels"></a> Exokernels</h2>
+<p><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Exokernel">外核</a>（exokernel）</p>
+<ul>
+<li>负责给虚拟机分配独占的资源（每个虚拟机仅获得一部分资源）</li>
+<li>省去了一层映射</li>
+</ul>
+<h1 id="the-world-according-to-c"><a class="markdownIt-Anchor" href="#the-world-according-to-c"></a> The World According to C</h1>
+<h2 id="the-c-language"><a class="markdownIt-Anchor" href="#the-c-language"></a> The C Language</h2>
+<p>显式指针（explicit pointer）</p>
+<ul>
+<li>指针是指向（包含对象的地址）一个变量或数据结构的变量</li>
+<li>理论上，指针是有类型的</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">char</span> c1, c2, *p;</span><br><span class="line">c1 = <span class="string">&#x27;c&#x27;</span>;</span><br><span class="line">p = &amp;c1;    <span class="comment">/* 把c1的地址赋值给指针变量p */</span></span><br><span class="line">c2 = *p;    <span class="comment">/* 把p指向的变量（c1）的内容赋值给c2 */</span></span><br><span class="line"><span class="comment">/* 此时c2 == &#x27;c&#x27; */</span></span><br></pre></td></tr></table></figure>
+<p>C语言没有内建字符串（string）、线程（thread）、包（package）、类（class）、对象（object）、类型安全（type safety）、垃圾回收（garbage collection）等</p>
+<h2 id="header-files"><a class="markdownIt-Anchor" href="#header-files"></a> Header Files</h2>
+<ul>
+<li>.c -&gt; 代码文件</li>
+<li>.h -&gt; 头文件</li>
+</ul>
+<p>头文件可以声明和定义很多东西，也可以使用一些简单的宏（macros）</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> BUFFER_SIZE 4096</span></span><br><span class="line"><span class="comment">/* 程序中所有的BUFFER_SIZE在编译时都会自动替换为4096 */</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* macros可以带参数 */</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> max(a, b) (a &gt; b ? a : b)</span></span><br><span class="line"><span class="comment">/* i = max(j, k+1)在代码中等价于i = (j &gt; k+1 ? j : k+1) */</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* macros可以带条件 */</span></span><br><span class="line"><span class="meta">#<span class="keyword">ifdef</span> X86</span></span><br><span class="line"><span class="built_in">intel_int_ack</span>();</span><br><span class="line"><span class="meta">#<span class="keyword">endif</span></span></span><br><span class="line"><span class="comment">/* 如果X86有定义，就调用intel_int_ack() */</span></span><br></pre></td></tr></table></figure>
+<h2 id="large-programming-projects"><a class="markdownIt-Anchor" href="#large-programming-projects"></a> Large Programming Projects</h2>
+<p>C程序编译过程：</p>
+<ul>
+<li>C预处理器（C preprocessor）
+<ul>
+<li>处理#include，把内容都加入代码里，然后把结果传给C编译器</li>
+</ul>
+</li>
+<li>通过C编译器生成.o文件（object file）
+<ul>
+<li>object file包含了目标机器的二进制指令</li>
+</ul>
+</li>
+<li>linker把object file组合成一个单一的可执行程序（.out文件）
+<ul>
+<li>任何调用的库（library）在此阶段会被包含进去</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/OS_4e_fig_1_30.png" alt="" /></p>
+<p>make (UNIX)</p>
+<ul>
+<li>可以读入Makefile</li>
+<li>Makefile写明了文件依赖关系</li>
+<li>通过检查object file的变动来决定是否重新编译</li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/OS/" rel="tag"># OS</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/tech/virtualization-and-the-cloud.html" rel="prev" title="Virtualization and the Cloud">
+                  <i class="fa fa-angle-left"></i> Virtualization and the Cloud
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/tech/spine-skeleton-decode.html" rel="next" title="读取Spine骨骼动画">
+                  读取Spine骨骼动画 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 2020 – 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="fa fa-terminal"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">oscarcx123</span>
+        <span class="post-meta-item">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-chart-line"></i>
+          </span>
+          <span title="站点总字数">268k</span>
+        </span>
+        <span class="post-meta-item">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-coffee"></i>
+          </span>
+          <span title="站点阅读时长">14:53</span>
+        </span>
+  </div>
+  <div class="powered-by">
+    <span class="post-meta-item">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v6.3.0 强力驱动
+    </span>
+    <span class="post-meta-item"> 主题 – <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v8.18.1
+    </span>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script size="300" alpha="0.6" zIndex="-1" src="/js/ribbon.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.6.0/pjax.min.js" integrity="sha256-vxLn1tSKWD4dqbMRyv940UYw4sXgMtYcK6reefzZrao=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.0.8/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/pjax.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/katex.min.css" integrity="sha256-3574TpfThVfeAhg+I4+N39EJiLN3QUkuEsMVe8hWAR4=" crossorigin="anonymous">
+  <script class="next-config" data-name="katex" type="application/json">{"copy_tex_js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/contrib/copy-tex.min.js","integrity":"sha256-Us54+rSGDSTvIhKKUs4kygE2ipA0RXpWWh0/zLqw3bs="}}</script>
+  <script src="/js/third-party/math/katex.js"></script>
+
+
+<script type="text/javascript">
+  // 显示“展开”和“折叠”
+  function collapsableTitle(x) {
+    var nav = document.getElementsByClassName("sidebar-nav-toc")[0];
+    if (x.matches) { // If media query matches
+      var content = document.getElementsByClassName("sidebar-panel-container")[0];
+      if (content.style.display = "none") {
+        nav.textContent = "文章目录 [展开]";
+      }
+      else {
+        nav.textContent = "文章目录 [折叠]";
+      }
+    } 
+    else {
+      nav.textContent = "文章目录";
+    }
+  }
+
+  var x = window.matchMedia("(max-width: 991px)"); // media query
+  collapsableTitle(x);
+  x.addListener(collapsableTitle);
+
+  // 控制目录的折叠
+  var tos = document.getElementsByClassName("sidebar-nav")[0];
+  var i;
+
+  tos.addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = document.getElementsByClassName("sidebar-panel-container")[0];
+    var nav = document.getElementsByClassName("sidebar-nav-toc")[0];
+    if (content.style.display === "block" && window.innerWidth < 991) {
+      content.style.display = "none";
+      nav.textContent = "文章目录 [展开]";
+    } else {
+      content.style.display = "block";
+      if (window.innerWidth < 991) {
+        nav.textContent = "文章目录 [折叠]";
+      }
+    }
+  });
+
+  // 因为启用pjax，需要监听complete事件，来实现默认折叠效果
+  document.addEventListener('pjax:complete', function() {
+    if (window.innerWidth < 991) {
+      let content = document.getElementsByClassName("sidebar-panel-container")[0];
+      content.style.display = "none";
+      let nav = document.getElementsByClassName("sidebar-nav-toc")[0];
+      nav.textContent = "文章目录 [展开]";
+      }
+    });
+  </script>
+</body>
+</html>

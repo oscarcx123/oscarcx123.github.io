@@ -1,0 +1,3315 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-64x64-dragon.jpg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-64x64-dragon.jpg">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-64x64-dragon.jpg">
+  <link rel="mask-icon" href="/images/favicon-64x64-dragon.jpg" color="#222">
+  <meta name="google-site-verification" content="-QMh-gRPduq5T_vg3_Pwi3kZsNSiyuEpPBaDIXV8J34">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"oscarcx.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.18.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":true,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+
+
+  <style type="text/css">
+
+div.hcb-content.hcb-block.hcbnote, details.hcb-content.box.hcbnote,div.hcb-content.hcb-block.hcbabstract, details.hcb-content.box.hcbabstract,div.hcb-content.hcb-block.hcbinfo, details.hcb-content.box.hcbinfo,div.hcb-content.hcb-block.hcbtip, details.hcb-content.box.hcbtip,div.hcb-content.hcb-block.hcbsuccess, details.hcb-content.box.hcbsuccess,div.hcb-content.hcb-block.hcbquestion, details.hcb-content.box.hcbquestion,div.hcb-content.hcb-block.hcbwarning, details.hcb-content.box.hcbwarning,div.hcb-content.hcb-block.hcbfailure, details.hcb-content.box.hcbfailure,div.hcb-content.hcb-block.hcbdanger, details.hcb-content.box.hcbdanger,div.hcb-content.hcb-block.hcbbug, details.hcb-content.box.hcbbug,div.hcb-content.hcb-block.hcbexample, details.hcb-content.box.hcbexample,div.hcb-content.hcb-block.hcbquote, details.hcb-content.box.hcbquote {
+  border: .05rem solid #448aff;
+  border-radius: .2rem;
+  font-size: 0.96rem;
+  margin: 1.5625em 0;
+  padding: 0 1.2rem;
+  transition: box-shadow 250ms;
+}
+div.hcb-content.hcb-block.hcbnote, details.hcb-content.box.hcbnote {
+  border-color: #448aff;
+}
+div.hcb-content.hcb-block.hcbabstract, details.hcb-content.box.hcbabstract {
+  border-color: #00b0ff;
+}
+div.hcb-content.hcb-block.hcbinfo, details.hcb-content.box.hcbinfo {
+  border-color: #00b8d4;
+}
+div.hcb-content.hcb-block.hcbtip, details.hcb-content.box.hcbtip {
+  border-color: #00bfa5;
+}
+div.hcb-content.hcb-block.hcbsuccess, details.hcb-content.box.hcbsuccess {
+  border-color: #00c853;
+}
+div.hcb-content.hcb-block.hcbquestion, details.hcb-content.box.hcbquestion {
+  border-color: #64dd17;
+}
+div.hcb-content.hcb-block.hcbwarning, details.hcb-content.box.hcbwarning {
+  border-color: #ff9100;
+}
+div.hcb-content.hcb-block.hcbfailure, details.hcb-content.box.hcbfailure {
+  border-color: #ff5252;
+}
+div.hcb-content.hcb-block.hcbdanger, details.hcb-content.box.hcbdanger {
+  border-color: #ff1744;
+}
+div.hcb-content.hcb-block.hcbbug, details.hcb-content.box.hcbbug {
+  border-color: #f50057;
+}
+div.hcb-content.hcb-block.hcbexample, details.hcb-content.box.hcbexample {
+  border-color: #7c4dff;
+}
+div.hcb-content.hcb-block.hcbquote, details.hcb-content.box.hcbquote {
+  border-color: #9e9e9e;
+}
+div.hcb-content.hcb-block.hcbnote:focus-within, details.hcb-content.box.hcbnote:focus-within {
+  box-shadow: 0 0 0 .2rem #448aff1a;
+}
+div.hcb-content.hcb-block.hcbabstract:focus-within, details.hcb-content.box.hcbabstract:focus-within {
+  box-shadow: 0 0 0 .2rem #00b0ff1a;
+}
+div.hcb-content.hcb-block.hcbinfo:focus-within, details.hcb-content.box.hcbinfo:focus-within {
+  box-shadow: 0 0 0 .2rem #00b8d41a;
+}
+div.hcb-content.hcb-block.hcbtip:focus-within, details.hcb-content.box.hcbtip:focus-within {
+  box-shadow: 0 0 0 .2rem #00bfa51a;
+}
+div.hcb-content.hcb-block.hcbsuccess:focus-within, details.hcb-content.box.hcbsuccess:focus-within {
+  box-shadow: 0 0 0 .2rem #00c8531a;
+}
+div.hcb-content.hcb-block.hcbquestion:focus-within, details.hcb-content.box.hcbquestion:focus-within {
+  box-shadow: 0 0 0 .2rem #64dd171a;
+}
+div.hcb-content.hcb-block.hcbwarning:focus-within, details.hcb-content.box.hcbwarning:focus-within {
+  box-shadow: 0 0 0 .2rem #ff91001a;
+}
+div.hcb-content.hcb-block.hcbfailure:focus-within, details.hcb-content.box.hcbfailure:focus-within {
+  box-shadow: 0 0 0 .2rem #ff52521a;
+}
+div.hcb-content.hcb-block.hcbdanger:focus-within, details.hcb-content.box.hcbdanger:focus-within {
+  box-shadow: 0 0 0 .2rem #ff17441a;
+}
+div.hcb-content.hcb-block.hcbbug:focus-within, details.hcb-content.box.hcbbug:focus-within {
+  box-shadow: 0 0 0 .2rem #f500571a;
+}
+div.hcb-content.hcb-block.hcbexample:focus-within, details.hcb-content.box.hcbexample:focus-within {
+  box-shadow: 0 0 0 .2rem #7c4dff1a;
+}
+div.hcb-content.hcb-block.hcbquote:focus-within, details.hcb-content.box.hcbquote:focus-within {
+  box-shadow: 0 0 0 .2rem #9e9e9e1a;
+}
+div.hcb-content.hcb-block.hcbnote *, details.hcb-content.box.hcbnote *,div.hcb-content.hcb-block.hcbabstract *, details.hcb-content.box.hcbabstract *,div.hcb-content.hcb-block.hcbinfo *, details.hcb-content.box.hcbinfo *,div.hcb-content.hcb-block.hcbtip *, details.hcb-content.box.hcbtip *,div.hcb-content.hcb-block.hcbsuccess *, details.hcb-content.box.hcbsuccess *,div.hcb-content.hcb-block.hcbquestion *, details.hcb-content.box.hcbquestion *,div.hcb-content.hcb-block.hcbwarning *, details.hcb-content.box.hcbwarning *,div.hcb-content.hcb-block.hcbfailure *, details.hcb-content.box.hcbfailure *,div.hcb-content.hcb-block.hcbdanger *, details.hcb-content.box.hcbdanger *,div.hcb-content.hcb-block.hcbbug *, details.hcb-content.box.hcbbug *,div.hcb-content.hcb-block.hcbexample *, details.hcb-content.box.hcbexample *,div.hcb-content.hcb-block.hcbquote *, details.hcb-content.box.hcbquote * {
+  box-sizing: border-box;
+}
+div.hcb-content.hcb-block.hcbnote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbnote > summary,div.hcb-content.hcb-block.hcbabstract > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbabstract > summary,div.hcb-content.hcb-block.hcbinfo > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbinfo > summary,div.hcb-content.hcb-block.hcbtip > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbtip > summary,div.hcb-content.hcb-block.hcbsuccess > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbsuccess > summary,div.hcb-content.hcb-block.hcbquestion > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquestion > summary,div.hcb-content.hcb-block.hcbwarning > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbwarning > summary,div.hcb-content.hcb-block.hcbfailure > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbfailure > summary,div.hcb-content.hcb-block.hcbdanger > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbdanger > summary,div.hcb-content.hcb-block.hcbbug > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbbug > summary,div.hcb-content.hcb-block.hcbexample > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbexample > summary,div.hcb-content.hcb-block.hcbquote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquote > summary {
+  border-top-right-radius: 0.1rem;
+  border-top-left-radius: 0.1rem;
+  border-left-width: 0.2rem;
+  display: block;
+  min-height: 1rem;
+  border: none;
+  font-weight: 700;
+  margin: 0 -1.2rem 1rem;
+  padding: 0.4rem 0.6rem;
+  position: relative;
+  outline: none;
+}
+details.hcb-content.box.hcbnote > summary,details.hcb-content.box.hcbabstract > summary,details.hcb-content.box.hcbinfo > summary,details.hcb-content.box.hcbtip > summary,details.hcb-content.box.hcbsuccess > summary,details.hcb-content.box.hcbquestion > summary,details.hcb-content.box.hcbwarning > summary,details.hcb-content.box.hcbfailure > summary,details.hcb-content.box.hcbdanger > summary,details.hcb-content.box.hcbbug > summary,details.hcb-content.box.hcbexample > summary,details.hcb-content.box.hcbquote > summary {
+  cursor: pointer;
+}
+details.hcb-content.box.hcbnote:not([open]) > summary,details.hcb-content.box.hcbabstract:not([open]) > summary,details.hcb-content.box.hcbinfo:not([open]) > summary,details.hcb-content.box.hcbtip:not([open]) > summary,details.hcb-content.box.hcbsuccess:not([open]) > summary,details.hcb-content.box.hcbquestion:not([open]) > summary,details.hcb-content.box.hcbwarning:not([open]) > summary,details.hcb-content.box.hcbfailure:not([open]) > summary,details.hcb-content.box.hcbdanger:not([open]) > summary,details.hcb-content.box.hcbbug:not([open]) > summary,details.hcb-content.box.hcbexample:not([open]) > summary,details.hcb-content.box.hcbquote:not([open]) > summary {
+  margin-bottom: 0;
+}
+div.hcb-content.hcb-block.hcbnote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbnote > summary {
+  background-color: #448aff1a;
+}
+div.hcb-content.hcb-block.hcbabstract > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbabstract > summary {
+  background-color: #00b0ff1a;
+}
+div.hcb-content.hcb-block.hcbinfo > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbinfo > summary {
+  background-color: #00b8d41a;
+}
+div.hcb-content.hcb-block.hcbtip > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbtip > summary {
+  background-color: #00bfa51a;
+}
+div.hcb-content.hcb-block.hcbsuccess > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbsuccess > summary {
+  background-color: #00c8531a;
+}
+div.hcb-content.hcb-block.hcbquestion > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquestion > summary {
+  background-color: #64dd171a;
+}
+div.hcb-content.hcb-block.hcbwarning > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbwarning > summary {
+  background-color: #ff91001a;
+}
+div.hcb-content.hcb-block.hcbfailure > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbfailure > summary {
+  background-color: #ff52521a;
+}
+div.hcb-content.hcb-block.hcbdanger > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbdanger > summary {
+  background-color: #ff17441a;
+}
+div.hcb-content.hcb-block.hcbbug > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbbug > summary {
+  background-color: #f500571a;
+}
+div.hcb-content.hcb-block.hcbexample > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbexample > summary {
+  background-color: #7c4dff1a;
+}
+div.hcb-content.hcb-block.hcbquote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquote > summary {
+  background-color: #9e9e9e1a;
+}
+div.hcb-content.hcb-block.hcbnote > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbnote > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #448aff;
+}
+div.hcb-content.hcb-block.hcbabstract > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbabstract > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00b0ff;
+}
+div.hcb-content.hcb-block.hcbinfo > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbinfo > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00b8d4;
+}
+div.hcb-content.hcb-block.hcbtip > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbtip > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00bfa5;
+}
+div.hcb-content.hcb-block.hcbsuccess > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbsuccess > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00c853;
+}
+div.hcb-content.hcb-block.hcbquestion > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbquestion > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #64dd17;
+}
+div.hcb-content.hcb-block.hcbwarning > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbwarning > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff9100;
+}
+div.hcb-content.hcb-block.hcbfailure > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbfailure > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff5252;
+}
+div.hcb-content.hcb-block.hcbdanger > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbdanger > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff1744;
+}
+div.hcb-content.hcb-block.hcbbug > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbbug > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #f50057;
+}
+div.hcb-content.hcb-block.hcbexample > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbexample > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #7c4dff;
+}
+div.hcb-content.hcb-block.hcbquote > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbquote > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #9e9e9e;
+}
+details.hcb-content.box.hcbnote > summary > div.hcb-box-open-button,details.hcb-content.box.hcbabstract > summary > div.hcb-box-open-button,details.hcb-content.box.hcbinfo > summary > div.hcb-box-open-button,details.hcb-content.box.hcbtip > summary > div.hcb-box-open-button,details.hcb-content.box.hcbsuccess > summary > div.hcb-box-open-button,details.hcb-content.box.hcbquestion > summary > div.hcb-box-open-button,details.hcb-content.box.hcbwarning > summary > div.hcb-box-open-button,details.hcb-content.box.hcbfailure > summary > div.hcb-box-open-button,details.hcb-content.box.hcbdanger > summary > div.hcb-box-open-button,details.hcb-content.box.hcbbug > summary > div.hcb-box-open-button,details.hcb-content.box.hcbexample > summary > div.hcb-box-open-button,details.hcb-content.box.hcbquote > summary > div.hcb-box-open-button {
+  float: right;
+}
+details.hcb-content.box.hcbnote > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbabstract > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbinfo > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbtip > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbsuccess > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbquestion > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbwarning > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbfailure > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbdanger > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbbug > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbexample > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbquote > summary > div.hcb-box-open-button > i {
+  margin: 0 0.6rem 0 0.6rem;
+  font-size: 0.7rem;
+  transition: transform 250ms
+}
+details.hcb-content.box.hcbnote:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbabstract:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbinfo:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbtip:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbsuccess:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquestion:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbwarning:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbfailure:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbdanger:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbbug:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbexample:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquote:not([open]) > summary > div.hcb-box-open-button i {
+  transform: rotate(270deg);
+}
+details.hcb-content.box.hcbnote[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbabstract[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbinfo[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbtip[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbsuccess[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquestion[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbwarning[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbfailure[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbdanger[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbbug[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbexample[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquote[open] > summary > div.hcb-box-open-button i {
+  transform: rotate(180deg);
+}
+details.hcb-content.box.hcbnote summary div.hcb-box-open-button i {
+  color: #448aff;
+}
+details.hcb-content.box.hcbabstract summary div.hcb-box-open-button i {
+  color: #00b0ff;
+}
+details.hcb-content.box.hcbinfo summary div.hcb-box-open-button i {
+  color: #00b8d4;
+}
+details.hcb-content.box.hcbtip summary div.hcb-box-open-button i {
+  color: #00bfa5;
+}
+details.hcb-content.box.hcbsuccess summary div.hcb-box-open-button i {
+  color: #00c853;
+}
+details.hcb-content.box.hcbquestion summary div.hcb-box-open-button i {
+  color: #64dd17;
+}
+details.hcb-content.box.hcbwarning summary div.hcb-box-open-button i {
+  color: #ff9100;
+}
+details.hcb-content.box.hcbfailure summary div.hcb-box-open-button i {
+  color: #ff5252;
+}
+details.hcb-content.box.hcbdanger summary div.hcb-box-open-button i {
+  color: #ff1744;
+}
+details.hcb-content.box.hcbbug summary div.hcb-box-open-button i {
+  color: #f50057;
+}
+details.hcb-content.box.hcbexample summary div.hcb-box-open-button i {
+  color: #7c4dff;
+}
+details.hcb-content.box.hcbquote summary div.hcb-box-open-button i {
+  color: #9e9e9e;
+}
+div.hcb-content.hcb-cards * {
+  box-sizing: border-box;
+}
+input.hcb-content.hcb-cards-input {
+  display: none;
+}
+div.hcb-content.hcb-cards-labels {
+  position: relative;
+  box-shadow: 0 -0.05rem #00000012 inset;
+  display: flex;
+  margin-bottom: 1.25rem;
+}
+div.hcb-content.hcb-cards-labels:before {
+  background: var(--cards-color);
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: translateX(var(--md-indicator-x));
+  transition: width 225ms, transform 250ms;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  width: var(--md-indicator-width);
+}
+label.hcb-content.hcb-cards-label {
+  border-bottom: 0.1rem solid #0000;
+  border-radius: 0.1rem 0.1rem 0 0;
+  cursor: pointer;
+  color: #0000008a;
+  font-size: 0.92em;
+  font-weight: 700;
+  padding: 0 1.25rem 0.625rem;
+  transition: color 250ms;
+}
+label.hcb-content.hcb-cards-label.active, label.hcb-content.hcb-cards-label:hover {
+  color: var(--cards-color);
+}
+div.hcb-content.hcb-cards-content {
+  display: none;
+}
+div.hcb-content.hcb-cards-content.active {
+  display: block;
+}
+</style>
+    <meta name="description" content="这一年多涌现了很多新面孔，多了很多 pp 图，同时也有不少人退坑。因为前排活跃高手的排位发生了较大的变化，所以我觉得有必要重新爬一次数据。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="osu!mania前1000名数据分析 (2024)">
+<meta property="og:url" content="https://oscarcx.com/tech/osumania-top-player-analysis-2024.html">
+<meta property="og:site_name" content="Cow">
+<meta property="og:description" content="这一年多涌现了很多新面孔，多了很多 pp 图，同时也有不少人退坑。因为前排活跃高手的排位发生了较大的变化，所以我觉得有必要重新爬一次数据。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/osumania_top_player_analysis_2024_1.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/osumania_top_player_analysis_2024_2.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/osumania_top_player_analysis_2024_2b.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/osumania_top_player_analysis_2024_3.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/osumania_top_player_analysis_2024_4.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/osumania_top_player_analysis_2024_5.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/osumania_top_player_analysis_2024_ex3.jpg">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/osumania_top_player_analysis_2024_6.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/osumania_top_player_analysis_2024_ex1.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/osumania_top_player_analysis_2024_7.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/osumania_top_player_analysis_2024_ex2.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/osumania_top_player_analysis_2024_ex3.jpg">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/osumania_top_player_analysis_2024_8.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/osumania_top_player_analysis_2024_ex1.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/osumania_top_player_analysis_2024_9.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/osumania_top_player_analysis_2024_10.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/osumania_top_player_analysis_2024_ex1.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/osumania_top_player_analysis_2024_ex3.jpg">
+<meta property="article:published_time" content="2024-02-05T15:15:00.000Z">
+<meta property="article:modified_time" content="2025-05-18T16:05:39.210Z">
+<meta property="article:author" content="oscarcx123">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://oscarcx.com/hexo_resource/img/osumania_top_player_analysis_2024_1.png">
+
+
+<link rel="canonical" href="https://oscarcx.com/tech/osumania-top-player-analysis-2024.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://oscarcx.com/tech/osumania-top-player-analysis-2024.html","path":"tech/osumania-top-player-analysis-2024.html","title":"osu!mania前1000名数据分析 (2024)"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>osu!mania前1000名数据分析 (2024) | Cow</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<style type="text/css">
+.spoiler {
+  display: inline;
+}
+p.spoiler {
+  display: flex;
+}
+.spoiler a {
+  pointer-events: none;
+}
+.spoiler-blur, .spoiler-blur > * {
+  transition: text-shadow .5s ease;
+}
+.spoiler .spoiler-blur, .spoiler .spoiler-blur > * {
+  color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  text-shadow: 0 0 10px grey;
+  cursor: pointer;
+}
+.spoiler .spoiler-blur:hover, .spoiler .spoiler-blur:hover > * {
+  text-shadow: 0 0 5px grey;
+}
+.spoiler-box, .spoiler-box > * {
+  transition: color .5s ease,
+  background-color .5s ease;
+}
+.spoiler .spoiler-box, .spoiler .spoiler-box > * {
+  color: black;
+  background-color: black;
+  text-shadow: none;
+}</style></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Cow</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%94%B6%E9%9B%86%E6%95%B0%E6%8D%AE"><span class="nav-number">1.</span> <span class="nav-text"> 收集数据</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#0x00-%E5%9B%BD%E5%AE%B6%E5%92%8C%E5%9C%B0%E5%8C%BA"><span class="nav-number">2.</span> <span class="nav-text"> 0x00 - 国家和地区</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#0x01-%E9%94%AE%E6%95%B0%E4%B9%8B%E4%BA%89"><span class="nav-number">3.</span> <span class="nav-text"> 0x01 - 键数之争</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#0x02-%E8%B5%9E%E5%8A%A9%E7%9A%AE%E8%80%81%E6%9D%BF"><span class="nav-number">4.</span> <span class="nav-text"> 0x02 - 赞助皮老板</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#0x03-%E6%94%B9%E5%90%8D%E5%AF%8C%E8%B1%AA"><span class="nav-number">5.</span> <span class="nav-text"> 0x03 - 改名富豪</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#0x04-%E8%82%9D%E5%B8%9D"><span class="nav-number">6.</span> <span class="nav-text"> 0x04 - 肝帝</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%94%AE%E7%9B%98%E6%AF%81%E7%81%AD%E8%80%85"><span class="nav-number">6.1.</span> <span class="nav-text"> 键盘毁灭者</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%97%B6%E9%97%B4%E6%8E%8C%E6%8E%A7%E8%80%85"><span class="nav-number">6.2.</span> <span class="nav-text"> 时间掌控者</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%B7%E5%88%86%E9%AB%98%E6%89%8B"><span class="nav-number">6.3.</span> <span class="nav-text"> 刷分高手</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#0x05-%E5%A4%9A%E9%9D%A2%E6%89%8B"><span class="nav-number">7.</span> <span class="nav-text"> 0x05 - 多面手</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#0x06-%E4%BC%97%E7%9B%AE%E7%9D%BD%E7%9D%BD"><span class="nav-number">8.</span> <span class="nav-text"> 0x06 - 众目睽睽</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#0x07-%E6%9C%89%E6%9C%8B%E8%87%AA%E8%BF%9C%E6%96%B9%E6%9D%A5%E6%9D%A5%E4%B8%8D%E5%8A%A8%E4%BA%86"><span class="nav-number">9.</span> <span class="nav-text"> 0x07 - 有朋自远方来，来不动了</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#0x08-%E8%87%AA%E5%8F%A4%E4%BB%A5%E6%9D%A5"><span class="nav-number">10.</span> <span class="nav-text"> 0x08 - 自古以来</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#0x09-%E8%AD%A6%E6%83%95%E5%88%A4%E6%AF%94"><span class="nav-number">11.</span> <span class="nav-text"> 0x09 - 警惕判比</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#0x10-%E6%88%91%E6%98%AF%E5%A4%A7%E6%BC%8F%E5%8B%BA"><span class="nav-number">12.</span> <span class="nav-text"> 0x10 - 我是大漏勺</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#0x11-%E8%AD%A6%E6%83%95%E8%BF%9E%E6%AF%94"><span class="nav-number">13.</span> <span class="nav-text"> 0x11 - 警惕连比</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#0x12-%E5%90%8E%E8%AE%B0"><span class="nav-number">14.</span> <span class="nav-text"> 0x12 - 后记</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="oscarcx123"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">oscarcx123</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">32</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/oscarcx123" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;oscarcx123" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://oscarcx.com/tech/osumania-top-player-analysis-2024.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="oscarcx123">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Cow">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="osu!mania前1000名数据分析 (2024) | Cow">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          osu!mania前1000名数据分析 (2024)
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2024-02-05 15:15:00" itemprop="dateCreated datePublished" datetime="2024-02-05T15:15:00+00:00">2024-02-05</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/tech/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>4k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>13 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>这一年多涌现了很多新面孔，多了很多 pp 图，同时也有不少人退坑。因为前排活跃高手的排位发生了较大的变化，所以我觉得有必要重新爬一次数据。</p>
+<span id="more"></span>
+<h1 id="收集数据"><a class="markdownIt-Anchor" href="#收集数据"></a> 收集数据</h1>
+<p>ppy 修改了一些东西，所以代码也改动了一点。同时，这次也爬取了很多新的数据，应该可以分析一些更有意思的东西。</p>
+<p>前排提醒：本文仅仅抓取了排行榜前 1000 的玩家，不在排行榜内的退役玩家是抓取不到的。而且本文使用的区分 4k 和 7k 玩家的方法相当粗糙，极有可能不准确。分析结果仅供参考，图一乐就行。</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="keyword">import</span> random</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">import</span> csv</span><br><span class="line"><span class="keyword">import</span> logging</span><br><span class="line"><span class="keyword">import</span> statistics</span><br><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"></span><br><span class="line">logging.basicConfig(</span><br><span class="line">    level = logging.INFO,</span><br><span class="line">    <span class="built_in">format</span> = <span class="string">&#x27;%(asctime)s %(levelname)s %(message)s&#x27;</span>,</span><br><span class="line">    datefmt = <span class="string">&#x27;%Y-%m-%dT%H:%M:%S&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">random_sleep</span>():</span><br><span class="line">    seconds = random.randint(<span class="number">1</span>, <span class="number">3</span>)</span><br><span class="line">    logging.info(<span class="string">f&quot;Sleep for <span class="subst">&#123;seconds&#125;</span>s&quot;</span>)</span><br><span class="line">    time.sleep(seconds)</span><br><span class="line"></span><br><span class="line">mode_name = [<span class="string">&quot;mania&quot;</span>] <span class="comment"># add other modes here if necessary</span></span><br><span class="line">headers = &#123;<span class="string">&#x27;user-agent&#x27;</span>: <span class="string">&#x27;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36&#x27;</span>&#125;</span><br><span class="line">start_page = <span class="number">2</span> <span class="comment"># 1 page = 50 players on leaderboard</span></span><br><span class="line">end_page = <span class="number">20</span></span><br><span class="line"></span><br><span class="line">fieldnames = [<span class="string">&#x27;uid&#x27;</span>, <span class="string">&#x27;rank&#x27;</span>, <span class="string">&#x27;rank_highest&#x27;</span>, <span class="string">&#x27;rank_avg_90d&#x27;</span>, <span class="string">&#x27;username&#x27;</span>, <span class="string">&#x27;country_code&#x27;</span>, <span class="string">&#x27;country_name&#x27;</span>, <span class="string">&#x27;accuracy&#x27;</span>, <span class="string">&#x27;play_count&#x27;</span>, <span class="string">&#x27;main_keymode&#x27;</span>, <span class="string">&#x27;performance&#x27;</span>, <span class="string">&#x27;pp_4k&#x27;</span>, <span class="string">&#x27;pp_7k&#x27;</span>, <span class="string">&#x27;SS_count&#x27;</span>, <span class="string">&#x27;SSH_count&#x27;</span>, <span class="string">&#x27;S_count&#x27;</span>,<span class="string">&#x27;SH_count&#x27;</span>, <span class="string">&#x27;A_count&#x27;</span>, <span class="string">&#x27;count_300&#x27;</span>, <span class="string">&#x27;count_100&#x27;</span>, <span class="string">&#x27;count_50&#x27;</span>,<span class="string">&#x27;count_miss&#x27;</span>,  <span class="string">&#x27;is_supporter&#x27;</span>, <span class="string">&#x27;has_supported&#x27;</span>, <span class="string">&#x27;support_level&#x27;</span>, <span class="string">&#x27;is_active&#x27;</span>, <span class="string">&#x27;last_visit&#x27;</span>, <span class="string">&#x27;name_change_count&#x27;</span>, <span class="string">&#x27;post_count&#x27;</span>, <span class="string">&#x27;comments_count&#x27;</span>, <span class="string">&#x27;kudosu_available&#x27;</span>, <span class="string">&#x27;kudosu_total&#x27;</span>, <span class="string">&#x27;friend_count&#x27;</span>, <span class="string">&#x27;follower_count&#x27;</span>, <span class="string">&#x27;badges_count&#x27;</span>, <span class="string">&#x27;level&#x27;</span>, <span class="string">&#x27;level_progress&#x27;</span>, <span class="string">&#x27;ranked_score&#x27;</span>, <span class="string">&#x27;play_time&#x27;</span>, <span class="string">&#x27;total_score&#x27;</span>, <span class="string">&#x27;total_hits&#x27;</span>, <span class="string">&#x27;maximum_combo&#x27;</span>, <span class="string">&#x27;replays_count&#x27;</span>, <span class="string">&#x27;user_achievements_count&#x27;</span>, <span class="string">&#x27;avatar_url&#x27;</span>, <span class="string">&#x27;cover_url&#x27;</span>, <span class="string">&#x27;title&#x27;</span>, <span class="string">&#x27;join_date&#x27;</span>, <span class="string">&#x27;is_admin&#x27;</span>, <span class="string">&#x27;is_bng&#x27;</span>, <span class="string">&#x27;is_full_bn&#x27;</span>, <span class="string">&#x27;is_gmt&#x27;</span>, <span class="string">&#x27;is_limited_bn&#x27;</span>, <span class="string">&#x27;is_moderator&#x27;</span>, <span class="string">&#x27;is_nat&#x27;</span>, <span class="string">&#x27;is_restricted&#x27;</span>, <span class="string">&#x27;is_silenced&#x27;</span>]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;data.csv&#x27;</span>, <span class="string">&#x27;w&#x27;</span>, newline=<span class="string">&#x27;&#x27;</span>) <span class="keyword">as</span> csvfile:</span><br><span class="line">    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)</span><br><span class="line">    writer.writeheader()</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> mode <span class="keyword">in</span> mode_name:</span><br><span class="line">    <span class="keyword">for</span> pg <span class="keyword">in</span> <span class="built_in">range</span>(start_page, end_page + <span class="number">1</span>):</span><br><span class="line">        logging.info(<span class="string">f&quot;Getting page <span class="subst">&#123;pg&#125;</span> for mode <span class="subst">&#123;mode&#125;</span>&quot;</span>)</span><br><span class="line"></span><br><span class="line">        data_lst = []</span><br><span class="line"></span><br><span class="line">        url = <span class="string">f&quot;https://osu.ppy.sh/rankings/<span class="subst">&#123;mode&#125;</span>/performance&quot;</span></span><br><span class="line">        payload = &#123;<span class="string">&quot;page&quot;</span>: <span class="string">f&quot;<span class="subst">&#123;pg&#125;</span>&quot;</span>&#125;</span><br><span class="line">        r = requests.get(url=url, params=payload, headers=headers)</span><br><span class="line">        <span class="keyword">if</span> r.status_code != <span class="number">200</span>:</span><br><span class="line">            <span class="keyword">raise</span> requests.exceptions.HTTPError(<span class="string">&quot;The response code is not 200. Something&#x27;s wrong!&quot;</span>)</span><br><span class="line">        webdata = r.text</span><br><span class="line">        soup = BeautifulSoup(webdata,<span class="string">&quot;lxml&quot;</span>)</span><br><span class="line">        uid_list = soup.find_all(<span class="string">&quot;a&quot;</span>, class_ = <span class="string">&quot;ranking-page-table__user-link-text js-usercard&quot;</span>)</span><br><span class="line">        stat_list = soup.find_all(<span class="string">&quot;td&quot;</span>, class_ = <span class="string">&quot;ranking-page-table__column&quot;</span>)</span><br><span class="line">        <span class="keyword">for</span> idx <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(uid_list)):</span><br><span class="line">            uid = uid_list[idx][<span class="string">&#x27;data-user-id&#x27;</span>]</span><br><span class="line"></span><br><span class="line">            info_url = <span class="string">f&quot;https://osu.ppy.sh/users/<span class="subst">&#123;uid&#125;</span>/mania&quot;</span></span><br><span class="line">            info_resp = requests.get(url=info_url, headers=headers)</span><br><span class="line">            <span class="keyword">if</span> info_resp.status_code != <span class="number">200</span>:</span><br><span class="line">                <span class="keyword">raise</span> requests.exceptions.HTTPError(<span class="string">&quot;The response code is not 200. Something&#x27;s wrong!&quot;</span>)</span><br><span class="line">            info_text = info_resp.text</span><br><span class="line">            info_soup = BeautifulSoup(info_text,<span class="string">&quot;lxml&quot;</span>)</span><br><span class="line">            info_raw = info_soup.find(<span class="string">&quot;div&quot;</span>, class_ = <span class="string">&quot;js-react--profile-page osu-layout osu-layout--full&quot;</span>)[<span class="string">&#x27;data-initial-data&#x27;</span>]</span><br><span class="line">            info_data = json.loads(info_raw)</span><br><span class="line"></span><br><span class="line">            country_code = info_data[<span class="string">&quot;user&quot;</span>][<span class="string">&quot;country&quot;</span>][<span class="string">&quot;code&quot;</span>]</span><br><span class="line">            country_name = info_data[<span class="string">&quot;user&quot;</span>][<span class="string">&quot;country&quot;</span>][<span class="string">&quot;name&quot;</span>]</span><br><span class="line"></span><br><span class="line">            is_supporter = info_data[<span class="string">&quot;user&quot;</span>][<span class="string">&quot;is_supporter&quot;</span>]</span><br><span class="line">            has_supported = info_data[<span class="string">&quot;user&quot;</span>][<span class="string">&quot;has_supported&quot;</span>]</span><br><span class="line">            support_level = info_data[<span class="string">&quot;user&quot;</span>][<span class="string">&quot;support_level&quot;</span>]</span><br><span class="line">            </span><br><span class="line">            avatar_url = info_data[<span class="string">&quot;user&quot;</span>][<span class="string">&quot;avatar_url&quot;</span>]</span><br><span class="line">            cover_url = info_data[<span class="string">&quot;user&quot;</span>][<span class="string">&quot;cover_url&quot;</span>]</span><br><span class="line"></span><br><span class="line">            is_active = info_data[<span class="string">&quot;user&quot;</span>][<span class="string">&quot;is_active&quot;</span>]</span><br><span class="line">            last_visit = info_data[<span class="string">&quot;user&quot;</span>][<span class="string">&quot;last_visit&quot;</span>]</span><br><span class="line"></span><br><span class="line">            title = info_data[<span class="string">&quot;user&quot;</span>][<span class="string">&quot;title&quot;</span>]</span><br><span class="line"></span><br><span class="line">            join_date = info_data[<span class="string">&quot;user&quot;</span>][<span class="string">&quot;join_date&quot;</span>]</span><br><span class="line"></span><br><span class="line">            is_admin = info_data[<span class="string">&quot;user&quot;</span>][<span class="string">&quot;is_admin&quot;</span>]</span><br><span class="line">            is_bng = info_data[<span class="string">&quot;user&quot;</span>][<span class="string">&quot;is_bng&quot;</span>]</span><br><span class="line">            is_full_bn = info_data[<span class="string">&quot;user&quot;</span>][<span class="string">&quot;is_full_bn&quot;</span>]</span><br><span class="line">            is_gmt = info_data[<span class="string">&quot;user&quot;</span>][<span class="string">&quot;is_gmt&quot;</span>]</span><br><span class="line">            is_limited_bn = info_data[<span class="string">&quot;user&quot;</span>][<span class="string">&quot;is_limited_bn&quot;</span>]</span><br><span class="line">            is_moderator = info_data[<span class="string">&quot;user&quot;</span>][<span class="string">&quot;is_moderator&quot;</span>]</span><br><span class="line">            is_nat = info_data[<span class="string">&quot;user&quot;</span>][<span class="string">&quot;is_nat&quot;</span>]</span><br><span class="line">            is_restricted = info_data[<span class="string">&quot;user&quot;</span>][<span class="string">&quot;is_restricted&quot;</span>]</span><br><span class="line">            is_silenced = info_data[<span class="string">&quot;user&quot;</span>][<span class="string">&quot;is_silenced&quot;</span>]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">            name_change_count = <span class="built_in">len</span>(info_data[<span class="string">&quot;user&quot;</span>][<span class="string">&quot;previous_usernames&quot;</span>])</span><br><span class="line">            post_count = info_data[<span class="string">&quot;user&quot;</span>][<span class="string">&quot;post_count&quot;</span>]</span><br><span class="line">            comments_count = info_data[<span class="string">&quot;user&quot;</span>][<span class="string">&quot;comments_count&quot;</span>]</span><br><span class="line">            kudosu_available = info_data[<span class="string">&quot;user&quot;</span>][<span class="string">&quot;kudosu&quot;</span>][<span class="string">&quot;available&quot;</span>]</span><br><span class="line">            kudosu_total = info_data[<span class="string">&quot;user&quot;</span>][<span class="string">&quot;kudosu&quot;</span>][<span class="string">&quot;total&quot;</span>]</span><br><span class="line">            friend_count = info_data[<span class="string">&quot;user&quot;</span>][<span class="string">&quot;follower_count&quot;</span>]</span><br><span class="line">            follower_count = info_data[<span class="string">&quot;user&quot;</span>][<span class="string">&quot;mapping_follower_count&quot;</span>]</span><br><span class="line">            badges_count = <span class="built_in">len</span>(info_data[<span class="string">&quot;user&quot;</span>][<span class="string">&quot;badges&quot;</span>])</span><br><span class="line"></span><br><span class="line">            <span class="comment"># statistics</span></span><br><span class="line">            rank = info_data[<span class="string">&quot;user&quot;</span>][<span class="string">&quot;statistics&quot;</span>][<span class="string">&quot;global_rank&quot;</span>]</span><br><span class="line">            rank_highest = info_data[<span class="string">&quot;user&quot;</span>][<span class="string">&quot;rank_highest&quot;</span>][<span class="string">&quot;rank&quot;</span>]</span><br><span class="line">            rank_avg_90d = statistics.fmean(info_data[<span class="string">&quot;user&quot;</span>][<span class="string">&quot;rank_history&quot;</span>][<span class="string">&quot;data&quot;</span>])</span><br><span class="line">            username = info_data[<span class="string">&quot;user&quot;</span>][<span class="string">&quot;username&quot;</span>]</span><br><span class="line">            accuracy = info_data[<span class="string">&quot;user&quot;</span>][<span class="string">&quot;statistics&quot;</span>][<span class="string">&quot;hit_accuracy&quot;</span>]</span><br><span class="line">            play_count = info_data[<span class="string">&quot;user&quot;</span>][<span class="string">&quot;statistics&quot;</span>][<span class="string">&quot;play_count&quot;</span>]</span><br><span class="line">            performance = info_data[<span class="string">&quot;user&quot;</span>][<span class="string">&quot;statistics&quot;</span>][<span class="string">&quot;pp&quot;</span>]</span><br><span class="line">            SS_count = info_data[<span class="string">&quot;user&quot;</span>][<span class="string">&quot;statistics&quot;</span>][<span class="string">&quot;grade_counts&quot;</span>][<span class="string">&quot;ss&quot;</span>]</span><br><span class="line">            SSH_count = info_data[<span class="string">&quot;user&quot;</span>][<span class="string">&quot;statistics&quot;</span>][<span class="string">&quot;grade_counts&quot;</span>][<span class="string">&quot;ssh&quot;</span>]</span><br><span class="line">            S_count = info_data[<span class="string">&quot;user&quot;</span>][<span class="string">&quot;statistics&quot;</span>][<span class="string">&quot;grade_counts&quot;</span>][<span class="string">&quot;s&quot;</span>]</span><br><span class="line">            SH_count = info_data[<span class="string">&quot;user&quot;</span>][<span class="string">&quot;statistics&quot;</span>][<span class="string">&quot;grade_counts&quot;</span>][<span class="string">&quot;sh&quot;</span>]</span><br><span class="line">            A_count = info_data[<span class="string">&quot;user&quot;</span>][<span class="string">&quot;statistics&quot;</span>][<span class="string">&quot;grade_counts&quot;</span>][<span class="string">&quot;a&quot;</span>]</span><br><span class="line"></span><br><span class="line">            count_300 = info_data[<span class="string">&quot;user&quot;</span>][<span class="string">&quot;statistics&quot;</span>][<span class="string">&quot;count_300&quot;</span>]</span><br><span class="line">            count_100 = info_data[<span class="string">&quot;user&quot;</span>][<span class="string">&quot;statistics&quot;</span>][<span class="string">&quot;count_100&quot;</span>]</span><br><span class="line">            count_50 = info_data[<span class="string">&quot;user&quot;</span>][<span class="string">&quot;statistics&quot;</span>][<span class="string">&quot;count_50&quot;</span>]</span><br><span class="line">            count_miss = info_data[<span class="string">&quot;user&quot;</span>][<span class="string">&quot;statistics&quot;</span>][<span class="string">&quot;count_miss&quot;</span>]</span><br><span class="line"></span><br><span class="line">            level = info_data[<span class="string">&quot;user&quot;</span>][<span class="string">&quot;statistics&quot;</span>][<span class="string">&quot;level&quot;</span>][<span class="string">&quot;current&quot;</span>]</span><br><span class="line">            level_progress = info_data[<span class="string">&quot;user&quot;</span>][<span class="string">&quot;statistics&quot;</span>][<span class="string">&quot;level&quot;</span>][<span class="string">&quot;progress&quot;</span>]</span><br><span class="line">            ranked_score = info_data[<span class="string">&quot;user&quot;</span>][<span class="string">&quot;statistics&quot;</span>][<span class="string">&quot;ranked_score&quot;</span>]</span><br><span class="line">            play_time = info_data[<span class="string">&quot;user&quot;</span>][<span class="string">&quot;statistics&quot;</span>][<span class="string">&quot;play_time&quot;</span>]</span><br><span class="line">            total_score = info_data[<span class="string">&quot;user&quot;</span>][<span class="string">&quot;statistics&quot;</span>][<span class="string">&quot;total_score&quot;</span>]</span><br><span class="line">            total_hits = info_data[<span class="string">&quot;user&quot;</span>][<span class="string">&quot;statistics&quot;</span>][<span class="string">&quot;total_hits&quot;</span>]</span><br><span class="line">            maximum_combo = info_data[<span class="string">&quot;user&quot;</span>][<span class="string">&quot;statistics&quot;</span>][<span class="string">&quot;maximum_combo&quot;</span>]</span><br><span class="line">            replays_count = info_data[<span class="string">&quot;user&quot;</span>][<span class="string">&quot;statistics&quot;</span>][<span class="string">&quot;replays_watched_by_others&quot;</span>]</span><br><span class="line">            user_achievements_count = <span class="built_in">len</span>(info_data[<span class="string">&quot;user&quot;</span>][<span class="string">&quot;user_achievements&quot;</span>])</span><br><span class="line"></span><br><span class="line">            <span class="comment"># mania only</span></span><br><span class="line">            <span class="keyword">try</span>:</span><br><span class="line">                pp_4k = <span class="built_in">int</span>(info_data[<span class="string">&quot;user&quot;</span>][<span class="string">&quot;statistics&quot;</span>][<span class="string">&quot;variants&quot;</span>][<span class="number">0</span>][<span class="string">&quot;pp&quot;</span>])</span><br><span class="line">                pp_7k = <span class="built_in">int</span>(info_data[<span class="string">&quot;user&quot;</span>][<span class="string">&quot;statistics&quot;</span>][<span class="string">&quot;variants&quot;</span>][<span class="number">1</span>][<span class="string">&quot;pp&quot;</span>])</span><br><span class="line"></span><br><span class="line">                <span class="keyword">if</span> pp_4k &gt; pp_7k:</span><br><span class="line">                    main_keymode = <span class="string">&quot;4k&quot;</span></span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    main_keymode = <span class="string">&quot;7k&quot;</span></span><br><span class="line">            <span class="keyword">except</span>:</span><br><span class="line">                pp_4k = pp_7k = main_keymode = <span class="string">&quot;N/A&quot;</span></span><br><span class="line"></span><br><span class="line">            </span><br><span class="line">            player_pkg = &#123;&#125;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">for</span> item <span class="keyword">in</span> fieldnames:</span><br><span class="line">                player_pkg[item] = <span class="built_in">eval</span>(item)</span><br><span class="line">        </span><br><span class="line">            data_lst.append(player_pkg)</span><br><span class="line"></span><br><span class="line">            logging.info(<span class="string">f&quot;#<span class="subst">&#123;rank&#125;</span> <span class="subst">&#123;username&#125;</span> <span class="subst">&#123;uid&#125;</span> done!&quot;</span>)</span><br><span class="line">            random_sleep()</span><br><span class="line"></span><br><span class="line">        <span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;data.csv&#x27;</span>, <span class="string">&#x27;a&#x27;</span>, encoding=<span class="string">&quot;utf-8&quot;</span>, newline=<span class="string">&#x27;&#x27;</span>) <span class="keyword">as</span> csvfile:</span><br><span class="line">            writer = csv.DictWriter(csvfile, fieldnames=fieldnames)</span><br><span class="line"></span><br><span class="line">            <span class="keyword">for</span> data <span class="keyword">in</span> data_lst:</span><br><span class="line">                writer.writerow(data)</span><br></pre></td></tr></table></figure>
+<p>数据到手了，接下来用 pandas 和 matplotlib 来做一些可视化分析~</p>
+<p>代码基本还是一样的，少数有改动，为了方便其他人复现，依然会全部提供</p>
+<h1 id="0x00-国家和地区"><a class="markdownIt-Anchor" href="#0x00-国家和地区"></a> 0x00 - 国家和地区</h1>
+<p>稍微看看高手们都来自哪里吧~</p>
+<p>先导入一些必要的库并读取数据</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> random</span><br><span class="line"><span class="keyword">import</span> matplotlib</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> matplotlib.colors <span class="keyword">as</span> mcolors</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">from</span> cycler <span class="keyword">import</span> cycler</span><br><span class="line"></span><br><span class="line">df = pd.read_csv(<span class="string">&#x27;data.csv&#x27;</span>)</span><br><span class="line">df</span><br></pre></td></tr></table></figure>
+<p>首先看一下地域构成，这一环节依旧是把少于 20 人的国家地区全部归类到其它（Other）</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">df_draw = df.groupby(<span class="string">&#x27;country_code&#x27;</span>).size().to_frame(name=<span class="string">&#x27;count&#x27;</span>)</span><br><span class="line">df_draw = df_draw.sort_values(<span class="string">&#x27;count&#x27;</span>, ascending=<span class="literal">False</span>).reset_index()</span><br><span class="line">df_draw</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>country_code</th>
+<th>count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>KR</td>
+<td>237</td>
+</tr>
+<tr>
+<td>CN</td>
+<td>116</td>
+</tr>
+<tr>
+<td>US</td>
+<td>87</td>
+</tr>
+<tr>
+<td>JP</td>
+<td>57</td>
+</tr>
+<tr>
+<td>ID</td>
+<td>45</td>
+</tr>
+<tr>
+<td>PH</td>
+<td>44</td>
+</tr>
+<tr>
+<td>PE</td>
+<td>24</td>
+</tr>
+<tr>
+<td>TH</td>
+<td>24</td>
+</tr>
+<tr>
+<td>CA</td>
+<td>23</td>
+</tr>
+<tr>
+<td>CL</td>
+<td>21</td>
+</tr>
+<tr>
+<td>Other</td>
+<td>322</td>
+</tr>
+</tbody>
+</table>
+<p>饼图（pie chart）代码如下所示</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 来给你们诠释下什么叫面向 Stackoverflow 编程</span></span><br><span class="line"><span class="comment"># https://python.tutorialink.com/function-to-move-specific-row-to-top-or-bottom-of-pandas-dataframe/</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">shift_row_to_bottom</span>(<span class="params">df, index_to_shift</span>):</span><br><span class="line">    <span class="string">&quot;&quot;&quot;Shift row, given by index_to_shift, to bottom of df.&quot;&quot;&quot;</span></span><br><span class="line">    idx = df.index.tolist()</span><br><span class="line">    idx.pop(index_to_shift)</span><br><span class="line">    df = df.reindex(idx + [index_to_shift]) </span><br><span class="line">    <span class="keyword">return</span> df</span><br><span class="line"></span><br><span class="line"><span class="comment"># https://stackoverflow.com/questions/34035427/conditional-removal-of-labels-in-pie-chart</span></span><br><span class="line"><span class="comment"># autopct 可以接受字符串或者函数，其实这里可以直接用 lambda</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">my_autopct</span>(<span class="params">pct</span>):</span><br><span class="line">    <span class="keyword">return</span> (<span class="string">&#x27;%1.1f%%&#x27;</span> % pct) <span class="keyword">if</span> pct &gt; <span class="number">4</span> <span class="keyword">else</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># https://stackoverflow.com/questions/69839373/group-small-values-in-a-pie-chart</span></span><br><span class="line"><span class="comment"># 少于20人的国家地区全部归类到其它</span></span><br><span class="line">df_draw.loc[df_draw[<span class="string">&#x27;count&#x27;</span>] &lt; <span class="number">20</span>, <span class="string">&#x27;country_code&#x27;</span>] = <span class="string">&#x27;Other&#x27;</span></span><br><span class="line">df_draw = df_draw.groupby(<span class="string">&#x27;country_code&#x27;</span>)[<span class="string">&#x27;count&#x27;</span>].<span class="built_in">sum</span>().reset_index()</span><br><span class="line">df_draw = df_draw.sort_values(<span class="string">&#x27;count&#x27;</span>, ascending=<span class="literal">False</span>, ignore_index=<span class="literal">True</span>) <span class="comment"># pandas 1.0.0 之后可以 ignore_index，方便不少</span></span><br><span class="line">df_draw = shift_row_to_bottom(df_draw, <span class="number">1</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># https://stackoverflow.com/questions/65347771/how-can-i-create-more-colors-for-my-plot</span></span><br><span class="line"><span class="comment"># 默认调色板（Set1）难看，而且颜色数量少，这里用另一个内置的调色板（Set3）</span></span><br><span class="line"><span class="comment"># 更多调色板可以在这里看效果：https://matplotlib.org/2.0.2/examples/color/colormaps_reference.html</span></span><br><span class="line">cm = plt.get_cmap(<span class="string">&#x27;Set3&#x27;</span>)</span><br><span class="line">matplotlib.rcParams[<span class="string">&quot;axes.prop_cycle&quot;</span>] = cycler(</span><br><span class="line">    color=[cm(v) <span class="keyword">for</span> v <span class="keyword">in</span> np.linspace(<span class="number">0</span>, <span class="number">1</span>, <span class="built_in">len</span>(df_draw))]</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 画图</span></span><br><span class="line">plt.pie(df_draw[<span class="string">&#x27;count&#x27;</span>], labels=df_draw[<span class="string">&#x27;country_code&#x27;</span>], autopct=my_autopct, startangle=<span class="number">140</span>)</span><br><span class="line">plt.title(<span class="string">&quot;osu!mania top #1000 country code (2024)&quot;</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/osumania_top_player_analysis_2024_1.png" alt="" /></p>
+<p>中日韩美加起来仍然占据半壁江山，紧随其后的是印尼，菲律宾，秘鲁，泰国。韩国高手数量缩水严重，Other 类别中的玩家数量显著增加。其它国家排名基本不变，但是阿根廷（AR）和英国（UK）被加拿大（CA）和秘鲁（PE）取而代之。老牌强国马来西亚（MY）也消失了。</p>
+<h1 id="0x01-键数之争"><a class="markdownIt-Anchor" href="#0x01-键数之争"></a> 0x01 - 键数之争</h1>
+<p>2024 年，7k 的 pp 上限仍旧比 4k 要高得多，但是前阵子也 rank 了很多 4k 高星 pp 图，所以这一块想必会发生较大的变化</p>
+<table>
+<thead>
+<tr>
+<th>main_keymode</th>
+<th>count_2024</th>
+<th>count_2022</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>7k</td>
+<td>694</td>
+<td>631</td>
+</tr>
+<tr>
+<td>4k</td>
+<td>306</td>
+<td>369</td>
+</tr>
+</tbody>
+</table>
+<p>可以看到虽然 rank 了那么多 4k pp 图，结果 4k 人更少了（-63）。一哥说主要 7k 一个 pp 图顶几个 4k。</p>
+<p>简单画个环图（donut chart）</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">df_draw = df_draw.groupby(<span class="string">&#x27;main_keymode&#x27;</span>)[<span class="string">&#x27;count&#x27;</span>].<span class="built_in">sum</span>().reset_index()</span><br><span class="line">df_draw = df_draw.sort_values(<span class="string">&#x27;count&#x27;</span>, ascending=<span class="literal">False</span>, ignore_index=<span class="literal">True</span>)</span><br><span class="line"></span><br><span class="line">cm = plt.get_cmap(<span class="string">&#x27;Set3&#x27;</span>)</span><br><span class="line"></span><br><span class="line">matplotlib.rcParams[<span class="string">&quot;axes.prop_cycle&quot;</span>] = cycler(</span><br><span class="line">    color=[cm(v) <span class="keyword">for</span> v <span class="keyword">in</span> np.linspace(<span class="number">0</span>, <span class="number">1</span>, <span class="built_in">len</span>(df_draw))]</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">explode = [<span class="number">0.05</span>, <span class="number">0.05</span>]</span><br><span class="line"></span><br><span class="line">plt.pie(df_draw[<span class="string">&#x27;count&#x27;</span>], labels=df_draw[<span class="string">&#x27;main_keymode&#x27;</span>], autopct=<span class="string">&#x27;%1.1f%%&#x27;</span>, startangle=<span class="number">140</span>, explode=explode, pctdistance=<span class="number">0.85</span>)</span><br><span class="line">plt.title(<span class="string">&quot;osu!mania top #1000 main keymode (2024)&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># draw circle</span></span><br><span class="line">centre_circle = plt.Circle((<span class="number">0</span>, <span class="number">0</span>), <span class="number">0.70</span>, fc=<span class="string">&#x27;white&#x27;</span>)</span><br><span class="line">fig = plt.gcf()</span><br><span class="line">  </span><br><span class="line"><span class="comment"># Adding Circle in Pie chart</span></span><br><span class="line">fig.gca().add_artist(centre_circle)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/osumania_top_player_analysis_2024_2.png" alt="" /></p>
+<p>从我另一个项目 <a target="_blank" rel="noopener" href="https://github.com/oscarcx123/osu-minimum-pp">oscarcx123/osu-minimum-pp</a> 可以看到三位数门槛走势图</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/osumania_top_player_analysis_2024_2b.png" alt="" /></p>
+<p>现在三位数门槛已经来到了 12100pp，纯 4k 确实不太好刷，怪不得接下来又要削 7k 的 pp</p>
+<h1 id="0x02-赞助皮老板"><a class="markdownIt-Anchor" href="#0x02-赞助皮老板"></a> 0x02 - 赞助皮老板</h1>
+<p>让我看看有多少铁公鸡👀</p>
+<p>每个玩家有两个 boolean 值，分别是<code>has_supported</code>和<code>is_supporter</code>，简单<code>groupby</code>一下就能算出“从未”、“曾经”、“现在”三种状态的人数</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">df_draw = df.groupby([<span class="string">&#x27;has_supported&#x27;</span>, <span class="string">&#x27;is_supporter&#x27;</span>]).size().to_frame(name=<span class="string">&#x27;count&#x27;</span>)</span><br><span class="line">status = [<span class="string">&#x27;never&#x27;</span>, <span class="string">&#x27;was_supporter&#x27;</span>, <span class="string">&#x27;is_supporter&#x27;</span>]</span><br><span class="line">df_draw[<span class="string">&#x27;status&#x27;</span>] = status</span><br><span class="line"></span><br><span class="line">cm = plt.get_cmap(<span class="string">&#x27;Set3&#x27;</span>)</span><br><span class="line">matplotlib.rcParams[<span class="string">&quot;axes.prop_cycle&quot;</span>] = cycler(</span><br><span class="line">    color=[cm(v) <span class="keyword">for</span> v <span class="keyword">in</span> np.linspace(<span class="number">0</span>, <span class="number">1</span>, <span class="built_in">len</span>(df_draw))]</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">explode = [<span class="number">0.1</span>, <span class="number">0</span>, <span class="number">0</span>]</span><br><span class="line"></span><br><span class="line">plt.pie(df_draw[<span class="string">&#x27;count&#x27;</span>], labels=df_draw[<span class="string">&#x27;status&#x27;</span>], autopct=<span class="string">&#x27;%1.1f%%&#x27;</span>, startangle=<span class="number">140</span>, explode=explode, pctdistance=<span class="number">0.85</span>)</span><br><span class="line">plt.title(<span class="string">&quot;osu!mania top #1000 supporter (2024)&quot;</span>)</span><br><span class="line"></span><br><span class="line">centre_circle = plt.Circle((<span class="number">0</span>, <span class="number">0</span>), <span class="number">0.70</span>, fc=<span class="string">&#x27;white&#x27;</span>)</span><br><span class="line">fig = plt.gcf()</span><br><span class="line">fig.gca().add_artist(centre_circle)</span><br><span class="line"></span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/osumania_top_player_analysis_2024_3.png" alt="" /></p>
+<p>这么看来，绝大部分高手都买过至少一次 osu!supporter。等等，真的是这样吗？这次也同时抓取了<code>support_level</code>。这个数值范围是 0 - 3，对应的就是个人主页的那个 supporter 爱心，应该是只有氪金过的才会增加。</p>
+<p>根据我的猜测，<code>support_level</code>的对应关系如下所示</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">0 = 没买过</span><br><span class="line">1 = 买了 1 年以内</span><br><span class="line">2 = 买了 1 - 5 年</span><br><span class="line">3 = 买了 5 年以上</span><br></pre></td></tr></table></figure>
+<p>这就跑下代码看看</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">df_draw = df.groupby(<span class="string">&#x27;support_level&#x27;</span>).size().to_frame(name=<span class="string">&#x27;count&#x27;</span>)</span><br><span class="line">df_draw = df_draw.sort_values(<span class="string">&#x27;support_level&#x27;</span>, ascending=<span class="literal">True</span>).reset_index()</span><br><span class="line">df_draw[<span class="string">&#x27;support_level&#x27;</span>] = <span class="string">&#x27;L&#x27;</span> + df_draw[<span class="string">&#x27;support_level&#x27;</span>].astype(<span class="built_in">str</span>)</span><br><span class="line">df_draw</span><br><span class="line"></span><br><span class="line">cm = plt.get_cmap(<span class="string">&#x27;Set3&#x27;</span>)</span><br><span class="line"></span><br><span class="line">matplotlib.rcParams[<span class="string">&quot;axes.prop_cycle&quot;</span>] = cycler(</span><br><span class="line">    color=[cm(v) <span class="keyword">for</span> v <span class="keyword">in</span> np.linspace(<span class="number">0</span>, <span class="number">1</span>, <span class="built_in">len</span>(df_draw))]</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">plt.pie(df_draw[<span class="string">&#x27;count&#x27;</span>], labels=df_draw[<span class="string">&#x27;support_level&#x27;</span>], autopct=<span class="string">&#x27;%1.1f%%&#x27;</span>, startangle=<span class="number">140</span>, pctdistance=<span class="number">0.85</span>)</span><br><span class="line">plt.title(<span class="string">&quot;osu!mania top #1000 support level (2024)&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># draw circle</span></span><br><span class="line">centre_circle = plt.Circle((<span class="number">0</span>, <span class="number">0</span>), <span class="number">0.70</span>, fc=<span class="string">&#x27;white&#x27;</span>)</span><br><span class="line">fig = plt.gcf()</span><br><span class="line">  </span><br><span class="line"><span class="comment"># Adding Circle in Pie chart</span></span><br><span class="line">fig.gca().add_artist(centre_circle)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/osumania_top_player_analysis_2024_4.png" alt="" /></p>
+<p>这么一看，好像很多人的 supporter 都是别人送的？？</p>
+<p>把从未成为 supporter 的人剔除之后再看看</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">df_draw = df[df[<span class="string">&#x27;has_supported&#x27;</span>] == <span class="number">1</span>]</span><br><span class="line">df_draw = df_draw.groupby(<span class="string">&#x27;support_level&#x27;</span>).size().to_frame(name=<span class="string">&#x27;count&#x27;</span>)</span><br><span class="line">df_draw = df_draw.sort_values(<span class="string">&#x27;support_level&#x27;</span>, ascending=<span class="literal">True</span>).reset_index()</span><br><span class="line">df_draw[<span class="string">&#x27;support_level&#x27;</span>] = <span class="string">&#x27;L&#x27;</span> + df_draw[<span class="string">&#x27;support_level&#x27;</span>].astype(<span class="built_in">str</span>)</span><br><span class="line"><span class="built_in">print</span>(df_draw)</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>support_level</th>
+<th>count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>L0</td>
+<td>584</td>
+</tr>
+<tr>
+<td>L1</td>
+<td>119</td>
+</tr>
+<tr>
+<td>L2</td>
+<td>121</td>
+</tr>
+<tr>
+<td>L3</td>
+<td>30</td>
+</tr>
+</tbody>
+</table>
+<p>如果没有理解错误的话，相当多的高手并没有自己买过 supporter，都是通过其它途径获取的。。。</p>
+<p>依照惯例，来看看铁公鸡头目👀</p>
+<p>这个地方代码优化了一下，因为之前使用了两个<code>.loc</code>，实际上只用一个就可以完成筛选</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df.loc[(df[<span class="string">&#x27;has_supported&#x27;</span>] == <span class="literal">False</span>), [<span class="string">&#x27;rank&#x27;</span>, <span class="string">&#x27;username&#x27;</span>, <span class="string">&#x27;country_code&#x27;</span>]]</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>rank</th>
+<th>username</th>
+<th>country_code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>60</td>
+<td>LR2MAG</td>
+<td>KR</td>
+</tr>
+<tr>
+<td>61</td>
+<td>RaffCo</td>
+<td>ID</td>
+</tr>
+<tr>
+<td>72</td>
+<td>karcice</td>
+<td>KR</td>
+</tr>
+<tr>
+<td>98</td>
+<td>Dius</td>
+<td>KR</td>
+</tr>
+<tr>
+<td>114</td>
+<td>7keyEgoist</td>
+<td>JP</td>
+</tr>
+</tbody>
+</table>
+<h1 id="0x03-改名富豪"><a class="markdownIt-Anchor" href="#0x03-改名富豪"></a> 0x03 - 改名富豪</h1>
+<p>osu 跟别的游戏不太一样，没法随意免费改 id，修改次数越多就越贵，价格表如下所示。如果买了 supporter，那么第一次改名是免费的。</p>
+<table>
+<thead>
+<tr>
+<th>Changes</th>
+<th>Price</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>US$4</td>
+</tr>
+<tr>
+<td>2</td>
+<td>US$8</td>
+</tr>
+<tr>
+<td>3</td>
+<td>US$16</td>
+</tr>
+<tr>
+<td>4</td>
+<td>US$32</td>
+</tr>
+<tr>
+<td>5</td>
+<td>US$64</td>
+</tr>
+<tr>
+<td>6+</td>
+<td>US$100</td>
+</tr>
+</tbody>
+</table>
+<p>那么来看看大家都改了几次 id 吧~</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">df_draw = df.groupby(<span class="string">&#x27;name_change_count&#x27;</span>).size().to_frame(name=<span class="string">&#x27;count&#x27;</span>).reset_index()</span><br><span class="line">fig, ax = plt.subplots()</span><br><span class="line">bars = ax.bar(df_draw[<span class="string">&#x27;name_change_count&#x27;</span>], df_draw[<span class="string">&#x27;count&#x27;</span>])</span><br><span class="line"></span><br><span class="line">ax.bar_label(bars)</span><br><span class="line">ax.set_title(<span class="string">&quot;osu!mania top #1000 player name change (2024)&quot;</span>)</span><br><span class="line">ax.set_xlabel(<span class="string">&#x27;# Name Change&#x27;</span>)</span><br><span class="line">ax.set_ylabel(<span class="string">&#x27;Player Count&#x27;</span>)</span><br><span class="line"></span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/osumania_top_player_analysis_2024_5.png" alt="" /></p>
+<p>好像并没有太大的变化~</p>
+<table>
+<thead>
+<tr>
+<th>name_chg_times</th>
+<th>2022</th>
+<th>2024</th>
+<th>chg</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>419</td>
+<td>400</td>
+<td>-19</td>
+</tr>
+<tr>
+<td>1</td>
+<td>390</td>
+<td>405</td>
+<td>15</td>
+</tr>
+<tr>
+<td>2</td>
+<td>136</td>
+<td>126</td>
+<td>-10</td>
+</tr>
+<tr>
+<td>3</td>
+<td>42</td>
+<td>46</td>
+<td>4</td>
+</tr>
+<tr>
+<td>4</td>
+<td>12</td>
+<td>20</td>
+<td>8</td>
+</tr>
+<tr>
+<td>5</td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>6</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>看看改名狂魔都有谁👀</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df.loc[(df[<span class="string">&#x27;name_change_count&#x27;</span>] == <span class="number">5</span>) | (df[<span class="string">&#x27;name_change_count&#x27;</span>] == <span class="number">6</span>), [<span class="string">&#x27;rank&#x27;</span>, <span class="string">&#x27;username&#x27;</span>, <span class="string">&#x27;country_code&#x27;</span>, <span class="string">&#x27;name_change_count&#x27;</span>]]</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>rank</th>
+<th>username</th>
+<th>country_code</th>
+<th>name_change_count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>18</td>
+<td>ZoyFangirl</td>
+<td>KR</td>
+<td>5</td>
+</tr>
+<tr>
+<td>533</td>
+<td>Lovelyn</td>
+<td>FI</td>
+<td>6</td>
+</tr>
+<tr>
+<td>972</td>
+<td>[KC]CruB</td>
+<td>US</td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+<p>这下 ppy 躺着数钱了，看看高手们给他贡献了多少钱</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">df_draw = df.groupby(<span class="string">&#x27;name_change_count&#x27;</span>).size().to_frame(name=<span class="string">&#x27;count&#x27;</span>).reset_index()</span><br><span class="line">df_draw[<span class="string">&#x27;cost&#x27;</span>] = [<span class="number">0</span>, <span class="number">4</span>, <span class="number">12</span>, <span class="number">28</span>, <span class="number">60</span>, <span class="number">124</span>, <span class="number">224</span>]</span><br><span class="line">df_draw[<span class="string">&#x27;ppy_laugh&#x27;</span>] = df_draw[<span class="string">&#x27;cost&#x27;</span>] * df_draw[<span class="string">&#x27;count&#x27;</span>]</span><br><span class="line">df_draw[<span class="string">&#x27;ppy_laugh&#x27;</span>].<span class="built_in">sum</span>() <span class="comment"># -&gt; 6092</span></span><br></pre></td></tr></table></figure>
+<h1 id="0x04-肝帝"><a class="markdownIt-Anchor" href="#0x04-肝帝"></a> 0x04 - 肝帝</h1>
+<h2 id="键盘毁灭者"><a class="markdownIt-Anchor" href="#键盘毁灭者"></a> 键盘毁灭者</h2>
+<p>osu 个人主页有个总命中次数（Total Hits），也就是键盘敲击次数</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">df_draw = df.sort_values(<span class="string">&#x27;total_hits&#x27;</span>, ascending=<span class="literal">False</span>, ignore_index=<span class="literal">True</span>)</span><br><span class="line">df_draw.loc[:, [<span class="string">&#x27;rank&#x27;</span>, <span class="string">&#x27;username&#x27;</span>, <span class="string">&#x27;country_code&#x27;</span>, <span class="string">&#x27;main_keymode&#x27;</span>, <span class="string">&#x27;total_hits&#x27;</span>]].head(<span class="number">10</span>)</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>rank</th>
+<th>username</th>
+<th>country_code</th>
+<th>main_keymode</th>
+<th>total_hits</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>7</td>
+<td>bojii</td>
+<td>PH</td>
+<td>7k</td>
+<td>140716567</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Stellium</td>
+<td>KR</td>
+<td>7k</td>
+<td>122258223</td>
+</tr>
+<tr>
+<td>809</td>
+<td>Min-</td>
+<td>KR</td>
+<td>7k</td>
+<td>120880661</td>
+</tr>
+<tr>
+<td>346</td>
+<td>JDS20</td>
+<td>CO</td>
+<td>7k</td>
+<td>119917450</td>
+</tr>
+<tr>
+<td>334</td>
+<td>masaya</td>
+<td>NO</td>
+<td>7k</td>
+<td>118370621</td>
+</tr>
+<tr>
+<td>322</td>
+<td>X_Devil</td>
+<td>RU</td>
+<td>7k</td>
+<td>111932394</td>
+</tr>
+<tr>
+<td>203</td>
+<td>palmEuEi</td>
+<td>TH</td>
+<td>7k</td>
+<td>111731128</td>
+</tr>
+<tr>
+<td>23</td>
+<td>Arona</td>
+<td>PH</td>
+<td>7k</td>
+<td>110712990</td>
+</tr>
+<tr>
+<td>61</td>
+<td>[ M Y S T I C ]</td>
+<td>KR</td>
+<td>7k</td>
+<td>109373225</td>
+</tr>
+<tr>
+<td>141</td>
+<td>Mafuyu87Fanboy</td>
+<td>CN</td>
+<td>7k</td>
+<td>102640755</td>
+</tr>
+</tbody>
+</table>
+<p>2022 年没有国人上榜，今年咱们的肝帝雪糕终于挤进全球前 10 了🎉</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/osumania_top_player_analysis_2024_ex3.jpg" alt="" /></p>
+<p>画个箱线图（boxplot）看看分布</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># https://stackoverflow.com/a/41997865</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">box_plot</span>(<span class="params">data, edge_color, fill_color</span>):</span><br><span class="line">    bp = ax.boxplot(data, patch_artist=<span class="literal">True</span>, vert=<span class="literal">False</span>, widths=<span class="number">0.4</span>)</span><br><span class="line">    <span class="keyword">for</span> element <span class="keyword">in</span> [<span class="string">&#x27;boxes&#x27;</span>, <span class="string">&#x27;whiskers&#x27;</span>, <span class="string">&#x27;fliers&#x27;</span>, <span class="string">&#x27;means&#x27;</span>, <span class="string">&#x27;medians&#x27;</span>, <span class="string">&#x27;caps&#x27;</span>]:</span><br><span class="line">        plt.setp(bp[element], color=edge_color)</span><br><span class="line">    <span class="keyword">for</span> patch <span class="keyword">in</span> bp[<span class="string">&#x27;boxes&#x27;</span>]:</span><br><span class="line">        patch.<span class="built_in">set</span>(facecolor=fill_color)       </span><br><span class="line">        </span><br><span class="line">    <span class="keyword">return</span> bp</span><br><span class="line"></span><br><span class="line"><span class="comment"># https://stackoverflow.com/a/41717533</span></span><br><span class="line">plt.rcParams[<span class="string">&quot;figure.figsize&quot;</span>] = (<span class="number">6</span>,<span class="number">2</span>)</span><br><span class="line"><span class="comment"># plt.rcParams[&quot;figure.figsize&quot;] = plt.rcParamsDefault[&quot;figure.figsize&quot;] # reset back to default</span></span><br><span class="line"></span><br><span class="line">df_draw = df.sort_values(<span class="string">&#x27;total_hits&#x27;</span>, ascending=<span class="literal">False</span>, ignore_index=<span class="literal">True</span>)</span><br><span class="line">fig, ax = plt.subplots()</span><br><span class="line">box_plot(df_draw[<span class="string">&#x27;total_hits&#x27;</span>], <span class="string">&#x27;blue&#x27;</span>, <span class="string">&#x27;cyan&#x27;</span>)</span><br><span class="line">plt.tick_params(left = <span class="literal">False</span>, labelleft = <span class="literal">False</span>) <span class="comment"># remove y-axis tick and label</span></span><br><span class="line"><span class="comment"># ax.grid(True) # this will show both x and y grids</span></span><br><span class="line">plt.gca().xaxis.grid(<span class="literal">True</span>) <span class="comment"># show x-axis grid</span></span><br><span class="line">ax.set_title(<span class="string">&quot;osu!mania top #1000 total hits&quot;</span>)</span><br><span class="line">ax.set_xlabel(<span class="string">&#x27;Total Hits (millions)&#x27;</span>)</span><br><span class="line">plt.ticklabel_format(style=<span class="string">&#x27;sci&#x27;</span>, axis=<span class="string">&#x27;x&#x27;</span>, scilimits=(<span class="number">6</span>,<span class="number">6</span>)) <span class="comment"># 1e6 instead of the default 1e8</span></span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/osumania_top_player_analysis_2024_6.png" alt="" /></p>
+<p>跟预期一样，极少数 outlier。那么再看看中位数。</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df_draw[<span class="string">&#x27;total_hits&#x27;</span>].median() <span class="comment"># -&gt; 33234205.5</span></span><br></pre></td></tr></table></figure>
+<p>2022 年的中位数只有 2600 万，今年来到了 3300 万</p>
+<p>接下来看看国内的击打次数前十（变动数据为手动输入）</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">df_draw = df.sort_values(<span class="string">&#x27;total_hits&#x27;</span>, ascending=<span class="literal">False</span>, ignore_index=<span class="literal">True</span>)</span><br><span class="line">df_draw.loc[(df_draw[<span class="string">&#x27;country_code&#x27;</span>].isin([<span class="string">&#x27;CN&#x27;</span>, <span class="string">&#x27;MO&#x27;</span>, <span class="string">&#x27;HK&#x27;</span>])), [<span class="string">&#x27;rank&#x27;</span>, <span class="string">&#x27;username&#x27;</span>, <span class="string">&#x27;main_keymode&#x27;</span>, <span class="string">&#x27;total_hits&#x27;</span>]].head(<span class="number">10</span>)</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>rank</th>
+<th>username</th>
+<th>main_keymode</th>
+<th>total_hits</th>
+<th>chg</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>141</td>
+<td>Mafuyu87Fanboy</td>
+<td>7k</td>
+<td>102640755</td>
+<td>24963372</td>
+</tr>
+<tr>
+<td>376</td>
+<td>Carpihat</td>
+<td>7k</td>
+<td>89420880</td>
+<td>26150589</td>
+</tr>
+<tr>
+<td>119</td>
+<td>ExNeko</td>
+<td>7k</td>
+<td>78289749</td>
+<td>17419308</td>
+</tr>
+<tr>
+<td>63</td>
+<td>Stink God</td>
+<td>7k</td>
+<td>76219518</td>
+<td>7320228</td>
+</tr>
+<tr>
+<td>221</td>
+<td>Mito Van</td>
+<td>7k</td>
+<td>68875972</td>
+<td>17053893</td>
+</tr>
+<tr>
+<td>324</td>
+<td>[GB]King Fish</td>
+<td>7k</td>
+<td>68470057</td>
+<td>16767038</td>
+</tr>
+<tr>
+<td>196</td>
+<td>Chenut BS</td>
+<td>7k</td>
+<td>65536382</td>
+<td>13833363</td>
+</tr>
+<tr>
+<td>347</td>
+<td>idqoos123</td>
+<td>7k</td>
+<td>63099663</td>
+<td>新上榜</td>
+</tr>
+<tr>
+<td>45</td>
+<td>HxcQ777</td>
+<td>7k</td>
+<td>61966696</td>
+<td>新上榜</td>
+</tr>
+<tr>
+<td>38</td>
+<td>[Crz]Reimu</td>
+<td>7k</td>
+<td>58388849</td>
+<td>11944925</td>
+</tr>
+</tbody>
+</table>
+<p>可以看到榜上已经没有 4k 玩家了，全是 7k 大神</p>
+<h2 id="时间掌控者"><a class="markdownIt-Anchor" href="#时间掌控者"></a> 时间掌控者</h2>
+<p>除了键盘敲击次数，还有另一个指标，就是总游戏时长（Total Play Time），似乎是只计算打图的时间</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">df_draw = df.sort_values(<span class="string">&#x27;play_time&#x27;</span>, ascending=<span class="literal">False</span>, ignore_index=<span class="literal">True</span>)</span><br><span class="line">df_draw = df_draw.loc[:, [<span class="string">&#x27;rank&#x27;</span>, <span class="string">&#x27;username&#x27;</span>, <span class="string">&#x27;country_code&#x27;</span>, <span class="string">&#x27;main_keymode&#x27;</span>, <span class="string">&#x27;play_time&#x27;</span>]].head(<span class="number">10</span>)</span><br><span class="line">df_draw[<span class="string">&#x27;play_time&#x27;</span>] = df_draw[<span class="string">&#x27;play_time&#x27;</span>].apply(<span class="keyword">lambda</span> x: <span class="built_in">str</span>(<span class="built_in">round</span>(x / <span class="number">3600</span> / <span class="number">24</span>, <span class="number">2</span>)) + <span class="string">&#x27; days&#x27;</span>)</span><br><span class="line">df_draw</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>rank</th>
+<th>username</th>
+<th>country_code</th>
+<th>main_keymode</th>
+<th>play_time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>203</td>
+<td>palmEuEi</td>
+<td>TH</td>
+<td>7k</td>
+<td>97.75 days</td>
+</tr>
+<tr>
+<td>141</td>
+<td>Mafuyu87Fanboy</td>
+<td>CN</td>
+<td>7k</td>
+<td>96.2 days</td>
+</tr>
+<tr>
+<td>7</td>
+<td>bojii</td>
+<td>PH</td>
+<td>7k</td>
+<td>91.79 days</td>
+</tr>
+<tr>
+<td>334</td>
+<td>masaya</td>
+<td>NO</td>
+<td>7k</td>
+<td>88.69 days</td>
+</tr>
+<tr>
+<td>606</td>
+<td>-Willow-</td>
+<td>AU</td>
+<td>7k</td>
+<td>85.59 days</td>
+</tr>
+<tr>
+<td>346</td>
+<td>JDS20</td>
+<td>CO</td>
+<td>7k</td>
+<td>84.67 days</td>
+</tr>
+<tr>
+<td>322</td>
+<td>X_Devil</td>
+<td>RU</td>
+<td>7k</td>
+<td>83.89 days</td>
+</tr>
+<tr>
+<td>272</td>
+<td>hisaella</td>
+<td>EE</td>
+<td>7k</td>
+<td>78.75 days</td>
+</tr>
+<tr>
+<td>893</td>
+<td>Axfaerie</td>
+<td>PH</td>
+<td>4k</td>
+<td>77.39 days</td>
+</tr>
+<tr>
+<td>444</td>
+<td>-Lalito898</td>
+<td>PE</td>
+<td>4k</td>
+<td>74.55 days</td>
+</tr>
+</tbody>
+</table>
+<p>雪糕在 2022 年就是第二，现在还是第二，哈哈</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/osumania_top_player_analysis_2024_ex1.png" alt="" /></p>
+<p>画图代码和上面的几乎一样，就是要记得先预处理下<code>play_time</code>，因为爬到的数据都是秒，转换成天数会更直观。</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># https://stackoverflow.com/a/41997865</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">box_plot</span>(<span class="params">data, edge_color, fill_color</span>):</span><br><span class="line">    bp = ax.boxplot(data, patch_artist=<span class="literal">True</span>, vert=<span class="literal">False</span>, widths=<span class="number">0.4</span>)</span><br><span class="line">    <span class="keyword">for</span> element <span class="keyword">in</span> [<span class="string">&#x27;boxes&#x27;</span>, <span class="string">&#x27;whiskers&#x27;</span>, <span class="string">&#x27;fliers&#x27;</span>, <span class="string">&#x27;means&#x27;</span>, <span class="string">&#x27;medians&#x27;</span>, <span class="string">&#x27;caps&#x27;</span>]:</span><br><span class="line">        plt.setp(bp[element], color=edge_color)</span><br><span class="line">    <span class="keyword">for</span> patch <span class="keyword">in</span> bp[<span class="string">&#x27;boxes&#x27;</span>]:</span><br><span class="line">        patch.<span class="built_in">set</span>(facecolor=fill_color)       </span><br><span class="line">        </span><br><span class="line">    <span class="keyword">return</span> bp</span><br><span class="line"></span><br><span class="line"><span class="comment"># https://stackoverflow.com/a/41717533</span></span><br><span class="line">plt.rcParams[<span class="string">&quot;figure.figsize&quot;</span>] = (<span class="number">6</span>,<span class="number">2</span>)</span><br><span class="line"><span class="comment"># plt.rcParams[&quot;figure.figsize&quot;] = plt.rcParamsDefault[&quot;figure.figsize&quot;] # reset back to default</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">df_draw = df.sort_values(<span class="string">&#x27;play_time&#x27;</span>, ascending=<span class="literal">False</span>, ignore_index=<span class="literal">True</span>)</span><br><span class="line">df_draw[<span class="string">&#x27;play_time&#x27;</span>] = df_draw[<span class="string">&#x27;play_time&#x27;</span>].apply(<span class="keyword">lambda</span> x: <span class="built_in">round</span>(x / <span class="number">3600</span> / <span class="number">24</span>, <span class="number">2</span>))</span><br><span class="line">fig, ax = plt.subplots()</span><br><span class="line">box_plot(df_draw[<span class="string">&#x27;play_time&#x27;</span>], <span class="string">&#x27;blue&#x27;</span>, <span class="string">&#x27;cyan&#x27;</span>)</span><br><span class="line">plt.tick_params(left = <span class="literal">False</span>, labelleft = <span class="literal">False</span>) <span class="comment"># remove y-axis tick and label</span></span><br><span class="line"><span class="comment"># ax.grid(True) # this will show both x and y grids</span></span><br><span class="line">plt.gca().xaxis.grid(<span class="literal">True</span>) <span class="comment"># show x-axis grid</span></span><br><span class="line">ax.set_title(<span class="string">&quot;osu!mania top #1000 total hits (2024)&quot;</span>)</span><br><span class="line">ax.set_xlabel(<span class="string">&#x27;Total Hits (millions)&#x27;</span>)</span><br><span class="line">plt.ticklabel_format(axis=<span class="string">&#x27;x&#x27;</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/osumania_top_player_analysis_2024_7.png" alt="" /></p>
+<p>中位数 25.15 天，和 2022 年相比增加了 5 天</p>
+<p>接下来看看国榜👀</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">df_draw = df.sort_values(<span class="string">&#x27;play_time&#x27;</span>, ascending=<span class="literal">False</span>, ignore_index=<span class="literal">True</span>)</span><br><span class="line">df_draw[<span class="string">&#x27;play_time&#x27;</span>] = df_draw[<span class="string">&#x27;play_time&#x27;</span>].apply(<span class="keyword">lambda</span> x: <span class="built_in">round</span>(x / <span class="number">3600</span> / <span class="number">24</span>, <span class="number">2</span>))</span><br><span class="line">df_draw.loc[(df_draw[<span class="string">&#x27;country_code&#x27;</span>].isin([<span class="string">&#x27;CN&#x27;</span>, <span class="string">&#x27;MO&#x27;</span>, <span class="string">&#x27;HK&#x27;</span>])), [<span class="string">&#x27;rank&#x27;</span>, <span class="string">&#x27;username&#x27;</span>, <span class="string">&#x27;main_keymode&#x27;</span>, <span class="string">&#x27;play_time&#x27;</span>]].head(<span class="number">10</span>)</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Username</th>
+<th>Main Keymode</th>
+<th>Play Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>141</td>
+<td>Mafuyu87Fanboy</td>
+<td>7k</td>
+<td>96.2</td>
+</tr>
+<tr>
+<td>376</td>
+<td>Carpihat</td>
+<td>7k</td>
+<td>72.05</td>
+</tr>
+<tr>
+<td>119</td>
+<td>ExNeko</td>
+<td>7k</td>
+<td>60.5</td>
+</tr>
+<tr>
+<td>221</td>
+<td>Mito Van</td>
+<td>7k</td>
+<td>57.66</td>
+</tr>
+<tr>
+<td>63</td>
+<td>Stink God</td>
+<td>7k</td>
+<td>56.9</td>
+</tr>
+<tr>
+<td>324</td>
+<td>[GB]King Fish</td>
+<td>7k</td>
+<td>46.66</td>
+</tr>
+<tr>
+<td>345</td>
+<td>fishbone2445</td>
+<td>7k</td>
+<td>45.94</td>
+</tr>
+<tr>
+<td>896</td>
+<td>Ranm</td>
+<td>4k</td>
+<td>45.9</td>
+</tr>
+<tr>
+<td>224</td>
+<td>hisa_knowledge</td>
+<td>7k</td>
+<td>45.62</td>
+</tr>
+<tr>
+<td>763</td>
+<td>Myukee</td>
+<td>7k</td>
+<td>42.22</td>
+</tr>
+</tbody>
+</table>
+<p>两个 boxplot 的 lower fence 都接近 0（和 2022 年的数据一样），估计是从其它游戏过来的大佬，当然也可能是挂哥，让我看看是谁</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">df_draw = df.sort_values(<span class="string">&#x27;total_hits&#x27;</span>, ascending=<span class="literal">True</span>, ignore_index=<span class="literal">True</span>)</span><br><span class="line">df_draw = df_draw.loc[:, [<span class="string">&#x27;rank&#x27;</span>, <span class="string">&#x27;username&#x27;</span>, <span class="string">&#x27;country_code&#x27;</span>, <span class="string">&#x27;main_keymode&#x27;</span>, <span class="string">&#x27;play_count&#x27;</span>, <span class="string">&#x27;total_hits&#x27;</span>, <span class="string">&#x27;play_time&#x27;</span>]].head(<span class="number">10</span>)</span><br><span class="line">df_draw[<span class="string">&#x27;play_time&#x27;</span>] = df_draw[<span class="string">&#x27;play_time&#x27;</span>].apply(<span class="keyword">lambda</span> x: <span class="built_in">str</span>(<span class="built_in">round</span>(x / <span class="number">3600</span> / <span class="number">24</span>, <span class="number">2</span>)) + <span class="string">&#x27; days&#x27;</span>)</span><br><span class="line">df_draw</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>rank</th>
+<th>username</th>
+<th>country_code</th>
+<th>main_keymode</th>
+<th>play_count</th>
+<th>total_hits</th>
+<th>play_time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>567</td>
+<td>My Angel Rei</td>
+<td>SG</td>
+<td>7k</td>
+<td>226</td>
+<td>563303</td>
+<td>0.37 days</td>
+</tr>
+<tr>
+<td>950</td>
+<td>Twilightprncss</td>
+<td>EE</td>
+<td>7k</td>
+<td>321</td>
+<td>1016530</td>
+<td>0.69 days</td>
+</tr>
+<tr>
+<td>935</td>
+<td>Sujin97</td>
+<td>KR</td>
+<td>7k</td>
+<td>475</td>
+<td>1044196</td>
+<td>0.64 days</td>
+</tr>
+<tr>
+<td>259</td>
+<td>efewfa</td>
+<td>KR</td>
+<td>7k</td>
+<td>351</td>
+<td>1427974</td>
+<td>0.8 days</td>
+</tr>
+<tr>
+<td>364</td>
+<td>InsCharteux</td>
+<td>ID</td>
+<td>7k</td>
+<td>976</td>
+<td>1521600</td>
+<td>1.11 days</td>
+</tr>
+<tr>
+<td>437</td>
+<td>141truth</td>
+<td>US</td>
+<td>7k</td>
+<td>596</td>
+<td>1556900</td>
+<td>0.83 days</td>
+</tr>
+<tr>
+<td>457</td>
+<td>UngDiKing</td>
+<td>KR</td>
+<td>7k</td>
+<td>766</td>
+<td>1740292</td>
+<td>0.98 days</td>
+</tr>
+<tr>
+<td>348</td>
+<td>-K i r e i-</td>
+<td>JP</td>
+<td>7k</td>
+<td>1150</td>
+<td>1873711</td>
+<td>1.36 days</td>
+</tr>
+<tr>
+<td>500</td>
+<td>LoveHanu</td>
+<td>KR</td>
+<td>7k</td>
+<td>711</td>
+<td>1906283</td>
+<td>1.16 days</td>
+</tr>
+<tr>
+<td>138</td>
+<td>Li Ji Xian</td>
+<td>KR</td>
+<td>7k</td>
+<td>1049</td>
+<td>2017684</td>
+<td>1.13 days</td>
+</tr>
+</tbody>
+</table>
+<h2 id="刷分高手"><a class="markdownIt-Anchor" href="#刷分高手"></a> 刷分高手</h2>
+<p>除了这几个指标，还可以看 osu 等级和 total_score</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">score(n) = 5,000 / 3 * (4n^3 - 3n^2 - n) + 1.25 * 1.8^(n - 60) if n &lt;= 100</span><br><span class="line">score(n) = 26,931,190,827 + 99,999,999,999 * (n - 100)         if n &gt; 100</span><br></pre></td></tr></table></figure>
+<p>根据官网 wiki，这俩实际上是同一个东西，而且可以看到，后期的等级非常难升，100 级之后每一级都要 1000 亿的分数。为了方便后续处理，直接看 total_score 了</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">df[<span class="string">&#x27;level_real&#x27;</span>] = <span class="built_in">round</span>(df[<span class="string">&#x27;level&#x27;</span>] + df[<span class="string">&#x27;level_progress&#x27;</span>] / <span class="number">100</span>, <span class="number">2</span>)</span><br><span class="line">df[<span class="string">&#x27;total_score_m&#x27;</span>] = df[<span class="string">&#x27;total_score&#x27;</span>].astype(<span class="built_in">str</span>).<span class="built_in">str</span>[:-<span class="number">6</span>] + <span class="string">&quot;M&quot;</span></span><br><span class="line">df_draw = df.sort_values(<span class="string">&#x27;total_score&#x27;</span>, ascending=<span class="literal">False</span>, ignore_index=<span class="literal">True</span>)</span><br><span class="line">df_draw.loc[:, [<span class="string">&#x27;rank&#x27;</span>, <span class="string">&#x27;username&#x27;</span>, <span class="string">&#x27;country_code&#x27;</span>, <span class="string">&#x27;main_keymode&#x27;</span>, <span class="string">&#x27;total_score&#x27;</span>, <span class="string">&#x27;level_real&#x27;</span>]].head(<span class="number">10</span>)</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Username</th>
+<th>Country Code</th>
+<th>Main Keymode</th>
+<th>Total Score (M)</th>
+<th>Real Level</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>661</td>
+<td>Anemia</td>
+<td>US</td>
+<td>7k</td>
+<td>52084M</td>
+<td>100.25</td>
+</tr>
+<tr>
+<td>141</td>
+<td>Mafuyu87Fanboy</td>
+<td>CN</td>
+<td>7k</td>
+<td>46424M</td>
+<td>100.19</td>
+</tr>
+<tr>
+<td>159</td>
+<td>lxLucasxl</td>
+<td>AR</td>
+<td>7k</td>
+<td>45382M</td>
+<td>100.18</td>
+</tr>
+<tr>
+<td>203</td>
+<td>palmEuEi</td>
+<td>TH</td>
+<td>7k</td>
+<td>43432M</td>
+<td>100.16</td>
+</tr>
+<tr>
+<td>606</td>
+<td>-Willow-</td>
+<td>AU</td>
+<td>7k</td>
+<td>41302M</td>
+<td>100.14</td>
+</tr>
+<tr>
+<td>7</td>
+<td>bojii</td>
+<td>PH</td>
+<td>7k</td>
+<td>41281M</td>
+<td>100.14</td>
+</tr>
+<tr>
+<td>334</td>
+<td>masaya</td>
+<td>NO</td>
+<td>7k</td>
+<td>39518M</td>
+<td>100.12</td>
+</tr>
+<tr>
+<td>322</td>
+<td>X_Devil</td>
+<td>RU</td>
+<td>7k</td>
+<td>39480M</td>
+<td>100.12</td>
+</tr>
+<tr>
+<td>660</td>
+<td>araragigun</td>
+<td>KR</td>
+<td>7k</td>
+<td>38072M</td>
+<td>100.11</td>
+</tr>
+<tr>
+<td>588</td>
+<td>109</td>
+<td>JP</td>
+<td>7k</td>
+<td>37345M</td>
+<td>100.10</td>
+</tr>
+</tbody>
+</table>
+<p>依旧是我们的万年老二雪糕，今年再加把劲，把他们都踹下来！</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/osumania_top_player_analysis_2024_ex2.png" alt="" /></p>
+<p>中位数是 10723M，也就是 107 亿的总分，还好我 138 亿😋</p>
+<p>下面看一下国榜👀</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">df_draw = df.sort_values(<span class="string">&#x27;total_score&#x27;</span>, ascending=<span class="literal">False</span>, ignore_index=<span class="literal">True</span>)</span><br><span class="line">df_draw.loc[(df_draw[<span class="string">&#x27;country_code&#x27;</span>] == <span class="string">&#x27;CN&#x27;</span>) | (df_draw[<span class="string">&#x27;country_code&#x27;</span>] == <span class="string">&#x27;MO&#x27;</span>) | (df_draw[<span class="string">&#x27;country_code&#x27;</span>] == <span class="string">&#x27;HK&#x27;</span>), [<span class="string">&#x27;rank&#x27;</span>, <span class="string">&#x27;username&#x27;</span>, <span class="string">&#x27;country_code&#x27;</span>, <span class="string">&#x27;main_keymode&#x27;</span>, <span class="string">&#x27;total_score_m&#x27;</span>, <span class="string">&#x27;level_real&#x27;</span>]].head(<span class="number">10</span>)</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Username</th>
+<th>Main Keymode</th>
+<th>Total Score (M)</th>
+<th>Real Level</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>141</td>
+<td>Mafuyu87Fanboy</td>
+<td>7k</td>
+<td>46424M</td>
+<td>100.19</td>
+</tr>
+<tr>
+<td>376</td>
+<td>Carpihat</td>
+<td>7k</td>
+<td>30691M</td>
+<td>100.03</td>
+</tr>
+<tr>
+<td>63</td>
+<td>Stink God</td>
+<td>7k</td>
+<td>29267M</td>
+<td>100.02</td>
+</tr>
+<tr>
+<td>119</td>
+<td>ExNeko</td>
+<td>7k</td>
+<td>27984M</td>
+<td>100.01</td>
+</tr>
+<tr>
+<td>347</td>
+<td>idqoos123</td>
+<td>7k</td>
+<td>21411M</td>
+<td>99.40</td>
+</tr>
+<tr>
+<td>221</td>
+<td>Mito Van</td>
+<td>7k</td>
+<td>21034M</td>
+<td>99.36</td>
+</tr>
+<tr>
+<td>345</td>
+<td>fishbone2445</td>
+<td>7k</td>
+<td>20412M</td>
+<td>99.29</td>
+</tr>
+<tr>
+<td>896</td>
+<td>Ranm</td>
+<td>4k</td>
+<td>19645M</td>
+<td>99.21</td>
+</tr>
+<tr>
+<td>339</td>
+<td>Quotient</td>
+<td>4k</td>
+<td>18804M</td>
+<td>99.11</td>
+</tr>
+<tr>
+<td>196</td>
+<td>Chenut BS</td>
+<td>7k</td>
+<td>17828M</td>
+<td>99.01</td>
+</tr>
+</tbody>
+</table>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/osumania_top_player_analysis_2024_ex3.jpg" alt="" /></p>
+<p>说起来，99 级和 100 级之间也相差了 100 亿分数。。。</p>
+<h1 id="0x05-多面手"><a class="markdownIt-Anchor" href="#0x05-多面手"></a> 0x05 - 多面手</h1>
+<p>有一部分玩家是 4k 和 7k 都会玩的，那么我们来看看谁是 4k 最强的 7k 玩家</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">df_draw = df.copy()</span><br><span class="line">df_draw = df_draw.loc[df_draw[<span class="string">&#x27;main_keymode&#x27;</span>] == <span class="string">&#x27;7k&#x27;</span>]</span><br><span class="line">df_draw = df_draw.sort_values(<span class="string">&#x27;pp_4k&#x27;</span>, ascending=<span class="literal">False</span>, ignore_index=<span class="literal">True</span>)</span><br><span class="line">df_draw.loc[:, [<span class="string">&#x27;rank&#x27;</span>, <span class="string">&#x27;username&#x27;</span>, <span class="string">&#x27;country_code&#x27;</span>, <span class="string">&#x27;pp_4k&#x27;</span>, <span class="string">&#x27;pp_7k&#x27;</span>]].head(<span class="number">10</span>)</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>rank</th>
+<th>username</th>
+<th>country_code</th>
+<th>pp_4k</th>
+<th>pp_7k</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>7</td>
+<td>bojii</td>
+<td>PH</td>
+<td>17349</td>
+<td>25173</td>
+</tr>
+<tr>
+<td>55</td>
+<td>yeonho7028</td>
+<td>KR</td>
+<td>15593</td>
+<td>20232</td>
+</tr>
+<tr>
+<td>28</td>
+<td>SillyFangirl</td>
+<td>BR</td>
+<td>15525</td>
+<td>22046</td>
+</tr>
+<tr>
+<td>79</td>
+<td>instal</td>
+<td>TH</td>
+<td>15207</td>
+<td>19439</td>
+</tr>
+<tr>
+<td>211</td>
+<td>gaesol</td>
+<td>KR</td>
+<td>14989</td>
+<td>15247</td>
+</tr>
+<tr>
+<td>89</td>
+<td>grillroasted</td>
+<td>CZ</td>
+<td>14814</td>
+<td>18700</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Stellium</td>
+<td>KR</td>
+<td>14602</td>
+<td>24963</td>
+</tr>
+<tr>
+<td>182</td>
+<td>[LS]bambi fnf</td>
+<td>CL</td>
+<td>14538</td>
+<td>15420</td>
+</tr>
+<tr>
+<td>49</td>
+<td>NkeyZoyDkqehKal</td>
+<td>KR</td>
+<td>14372</td>
+<td>20881</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Kalkai</td>
+<td>KR</td>
+<td>14239</td>
+<td>25761</td>
+</tr>
+</tbody>
+</table>
+<p>7k 最强的 4k 玩家（代码一样就不贴了）</p>
+<table>
+<thead>
+<tr>
+<th>rank</th>
+<th>username</th>
+<th>country_code</th>
+<th>pp_4k</th>
+<th>pp_7k</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>183</td>
+<td>Orost</td>
+<td>BR</td>
+<td>15227</td>
+<td>14694</td>
+</tr>
+<tr>
+<td>254</td>
+<td>xxxxxx2800</td>
+<td>MY</td>
+<td>14395</td>
+<td>14358</td>
+</tr>
+<tr>
+<td>267</td>
+<td>jhleetgirl</td>
+<td>JP</td>
+<td>14517</td>
+<td>14094</td>
+</tr>
+<tr>
+<td>236</td>
+<td>Poca</td>
+<td>KR</td>
+<td>15080</td>
+<td>13708</td>
+</tr>
+<tr>
+<td>219</td>
+<td>imyeeyee</td>
+<td>KR</td>
+<td>15571</td>
+<td>13513</td>
+</tr>
+<tr>
+<td>489</td>
+<td>Minwoo3098</td>
+<td>US</td>
+<td>12707</td>
+<td>11970</td>
+</tr>
+<tr>
+<td>509</td>
+<td>EstaticStatisIO</td>
+<td>ID</td>
+<td>12653</td>
+<td>11907</td>
+</tr>
+<tr>
+<td>541</td>
+<td>Focoo</td>
+<td>AR</td>
+<td>12516</td>
+<td>11616</td>
+</tr>
+<tr>
+<td>498</td>
+<td>pboo2424</td>
+<td>TH</td>
+<td>13028</td>
+<td>11567</td>
+</tr>
+<tr>
+<td>550</td>
+<td>Rei_Insana300</td>
+<td>EC</td>
+<td>12421</td>
+<td>11474</td>
+</tr>
+</tbody>
+</table>
+<h1 id="0x06-众目睽睽"><a class="markdownIt-Anchor" href="#0x06-众目睽睽"></a> 0x06 - 众目睽睽</h1>
+<p>终于到了雪糕最爱的环节，回放次数大比拼！</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">df_draw = df.sort_values(<span class="string">&#x27;replays_count&#x27;</span>, ascending=<span class="literal">False</span>, ignore_index=<span class="literal">True</span>)</span><br><span class="line">df_draw.loc[:, [<span class="string">&#x27;rank&#x27;</span>, <span class="string">&#x27;username&#x27;</span>, <span class="string">&#x27;country_code&#x27;</span>, <span class="string">&#x27;main_keymode&#x27;</span>, <span class="string">&#x27;replays_count&#x27;</span>]].head(<span class="number">10</span>)</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>rank</th>
+<th>username</th>
+<th>country_code</th>
+<th>main_keymode</th>
+<th>replays_count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>99</td>
+<td>OutLast</td>
+<td>KR</td>
+<td>7k</td>
+<td>382049</td>
+</tr>
+<tr>
+<td>246</td>
+<td>Majesty</td>
+<td>KR</td>
+<td>7k</td>
+<td>293656</td>
+</tr>
+<tr>
+<td>88</td>
+<td>myucchii</td>
+<td>CL</td>
+<td>4k</td>
+<td>291103</td>
+</tr>
+<tr>
+<td>7</td>
+<td>bojii</td>
+<td>PH</td>
+<td>7k</td>
+<td>288776</td>
+</tr>
+<tr>
+<td>299</td>
+<td>gosy777</td>
+<td>KR</td>
+<td>7k</td>
+<td>201678</td>
+</tr>
+<tr>
+<td>753</td>
+<td>Lothus</td>
+<td>BR</td>
+<td>7k</td>
+<td>185352</td>
+</tr>
+<tr>
+<td>151</td>
+<td>Estonians</td>
+<td>KR</td>
+<td>7k</td>
+<td>158569</td>
+</tr>
+<tr>
+<td>28</td>
+<td>SillyFangirl</td>
+<td>BR</td>
+<td>7k</td>
+<td>135702</td>
+</tr>
+<tr>
+<td>19</td>
+<td>ideu-</td>
+<td>KR</td>
+<td>7k</td>
+<td>131539</td>
+</tr>
+<tr>
+<td>458</td>
+<td>Cobo-</td>
+<td>KR</td>
+<td>7k</td>
+<td>109118</td>
+</tr>
+</tbody>
+</table>
+<p>很多古神（inteliser，0133等）因为退坑的缘故，所以没法展示出来，比较遗憾。即便如此，榜上大佬们的含金量还是很高的。</p>
+<p>画个箱线图看看分布（这里用ln处理了下，要不然这图全都挤到左边，完全没法看）</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">df_draw = df.sort_values(<span class="string">&#x27;replays_count&#x27;</span>, ascending=<span class="literal">False</span>, ignore_index=<span class="literal">True</span>)</span><br><span class="line">df_draw[<span class="string">&#x27;replays_count&#x27;</span>] = df_draw[<span class="string">&#x27;replays_count&#x27;</span>].apply(<span class="keyword">lambda</span> x: np.log(x))</span><br><span class="line">fig, ax = plt.subplots()</span><br><span class="line">box_plot(df_draw[<span class="string">&#x27;replays_count&#x27;</span>], <span class="string">&#x27;blue&#x27;</span>, <span class="string">&#x27;cyan&#x27;</span>)</span><br><span class="line">plt.tick_params(left = <span class="literal">False</span>, labelleft = <span class="literal">False</span>) <span class="comment"># remove y-axis tick and label</span></span><br><span class="line">plt.gca().xaxis.grid(<span class="literal">True</span>) <span class="comment"># show x-axis grid</span></span><br><span class="line">ax.set_title(<span class="string">&quot;osu!mania top #1000 replay count (2024)&quot;</span>)</span><br><span class="line">ax.set_xlabel(<span class="string">&#x27;Replay Count (e^x)&#x27;</span>)</span><br><span class="line">plt.show()</span><br><span class="line">df_draw[<span class="string">&#x27;replays_count&#x27;</span>].median() <span class="comment"># -&gt; 4.7999057951649995，e^x = 121.5</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/osumania_top_player_analysis_2024_8.png" alt="" /></p>
+<p>中位数是 121.5，唉，我的回放数过了这么久一点都没涨，还是只有 14😭</p>
+<p>看看国榜有没有雪糕👀</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">df_draw = df.sort_values(<span class="string">&#x27;replays_count&#x27;</span>, ascending=<span class="literal">False</span>, ignore_index=<span class="literal">True</span>)</span><br><span class="line">df_draw.loc[(df_draw[<span class="string">&#x27;country_code&#x27;</span>].isin([<span class="string">&#x27;CN&#x27;</span>, <span class="string">&#x27;MO&#x27;</span>, <span class="string">&#x27;HK&#x27;</span>])), [<span class="string">&#x27;rank&#x27;</span>, <span class="string">&#x27;username&#x27;</span>, <span class="string">&#x27;main_keymode&#x27;</span>, <span class="string">&#x27;replays_count&#x27;</span>]].head(<span class="number">10</span>)</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Username</th>
+<th>Main Keymode</th>
+<th>Replays Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>486</td>
+<td>DawnX</td>
+<td>4k</td>
+<td>46686</td>
+</tr>
+<tr>
+<td>63</td>
+<td>Stink God</td>
+<td>7k</td>
+<td>43308</td>
+</tr>
+<tr>
+<td>66</td>
+<td>LiangIaiajan</td>
+<td>7k</td>
+<td>14711</td>
+</tr>
+<tr>
+<td>34</td>
+<td>[Crz]Satori</td>
+<td>7k</td>
+<td>6785</td>
+</tr>
+<tr>
+<td>172</td>
+<td>Krn_</td>
+<td>7k</td>
+<td>5283</td>
+</tr>
+<tr>
+<td>339</td>
+<td>Quotient</td>
+<td>4k</td>
+<td>4670</td>
+</tr>
+<tr>
+<td>12</td>
+<td>tyrcs</td>
+<td>7k</td>
+<td>4621</td>
+</tr>
+<tr>
+<td>43</td>
+<td>VanWilder</td>
+<td>7k</td>
+<td>3593</td>
+</tr>
+<tr>
+<td>369</td>
+<td>[Crz]Nickname</td>
+<td>4k</td>
+<td>3447</td>
+</tr>
+<tr>
+<td>43</td>
+<td>QingJiDing</td>
+<td>7k</td>
+<td>3145</td>
+</tr>
+</tbody>
+</table>
+<p>哈哈，没有，雪糕才 2000 多回放，上不了榜🤡</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/osumania_top_player_analysis_2024_ex1.png" alt="" /></p>
+<h1 id="0x07-有朋自远方来来不动了"><a class="markdownIt-Anchor" href="#0x07-有朋自远方来来不动了"></a> 0x07 - 有朋自远方来，来不动了</h1>
+<p>osu的好友是单向关注的（绿色），如果互关了（mutual）就会变成粉色。这里统计的是个人主页显示的好友数量，也就是有多少人关注了你。</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">df_draw = df.sort_values(<span class="string">&#x27;friend_count&#x27;</span>, ascending=<span class="literal">False</span>, ignore_index=<span class="literal">True</span>)</span><br><span class="line">df_draw.loc[:, [<span class="string">&#x27;rank&#x27;</span>, <span class="string">&#x27;username&#x27;</span>, <span class="string">&#x27;country_code&#x27;</span>, <span class="string">&#x27;main_keymode&#x27;</span>, <span class="string">&#x27;friend_count&#x27;</span>]].head(<span class="number">10</span>)</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>rank</th>
+<th>username</th>
+<th>country_code</th>
+<th>main_keymode</th>
+<th>friend_count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>28</td>
+<td>SillyFangirl</td>
+<td>BR</td>
+<td>7k</td>
+<td>9589</td>
+</tr>
+<tr>
+<td>88</td>
+<td>myucchii</td>
+<td>CL</td>
+<td>4k</td>
+<td>5145</td>
+</tr>
+<tr>
+<td>7</td>
+<td>bojii</td>
+<td>PH</td>
+<td>7k</td>
+<td>4703</td>
+</tr>
+<tr>
+<td>758</td>
+<td>Andere</td>
+<td>CL</td>
+<td>7k</td>
+<td>4012</td>
+</tr>
+<tr>
+<td>1</td>
+<td>dressurf</td>
+<td>KR</td>
+<td>7k</td>
+<td>3166</td>
+</tr>
+<tr>
+<td>479</td>
+<td>Eliminate</td>
+<td>GB</td>
+<td>4k</td>
+<td>2565</td>
+</tr>
+<tr>
+<td>41</td>
+<td>Motion</td>
+<td>KR</td>
+<td>7k</td>
+<td>2505</td>
+</tr>
+<tr>
+<td>317</td>
+<td>arcwinolivirus</td>
+<td>PH</td>
+<td>7k</td>
+<td>2351</td>
+</tr>
+<tr>
+<td>395</td>
+<td>jkzu123</td>
+<td>DE</td>
+<td>4k</td>
+<td>2262</td>
+</tr>
+<tr>
+<td>474</td>
+<td>CrewK</td>
+<td>JP</td>
+<td>4k</td>
+<td>2076</td>
+</tr>
+</tbody>
+</table>
+<p>画个箱线图看看（这里同样对数据进行了处理，否则图像会全部集中到左边）</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">df_draw = df.sort_values(<span class="string">&#x27;friend_count&#x27;</span>, ascending=<span class="literal">False</span>, ignore_index=<span class="literal">True</span>)</span><br><span class="line">df_draw[<span class="string">&#x27;friend_count&#x27;</span>] = df_draw[<span class="string">&#x27;friend_count&#x27;</span>].apply(<span class="keyword">lambda</span> x: np.log(x))</span><br><span class="line">fig, ax = plt.subplots()</span><br><span class="line">box_plot(df_draw[<span class="string">&#x27;friend_count&#x27;</span>], <span class="string">&#x27;blue&#x27;</span>, <span class="string">&#x27;cyan&#x27;</span>)</span><br><span class="line">plt.tick_params(left = <span class="literal">False</span>, labelleft = <span class="literal">False</span>) <span class="comment"># remove y-axis tick and label</span></span><br><span class="line">plt.gca().xaxis.grid(<span class="literal">True</span>) <span class="comment"># show x-axis grid</span></span><br><span class="line">ax.set_title(<span class="string">&quot;osu!mania top #1000 friend count (2024)&quot;</span>)</span><br><span class="line">ax.set_xlabel(<span class="string">&#x27;Friend Count (e^x)&#x27;</span>)</span><br><span class="line">plt.show()</span><br><span class="line">df_draw[<span class="string">&#x27;friend_count&#x27;</span>].median() <span class="comment"># -&gt; 4.770684624465665，e^x = 118</span></span><br></pre></td></tr></table></figure>
+<p>好友中位数 118，看来我拖后腿了</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/osumania_top_player_analysis_2024_9.png" alt="" /></p>
+<p>瞅瞅国榜👀</p>
+<table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Username</th>
+<th>Main Keymode</th>
+<th>Friend Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>12</td>
+<td>tyrcs</td>
+<td>7k</td>
+<td>878</td>
+</tr>
+<tr>
+<td>119</td>
+<td>ExNeko</td>
+<td>7k</td>
+<td>834</td>
+</tr>
+<tr>
+<td>369</td>
+<td>[Crz]Nickname</td>
+<td>4k</td>
+<td>700</td>
+</tr>
+<tr>
+<td>486</td>
+<td>DawnX</td>
+<td>4k</td>
+<td>631</td>
+</tr>
+<tr>
+<td>135</td>
+<td>AWMRone</td>
+<td>7k</td>
+<td>630</td>
+</tr>
+<tr>
+<td>66</td>
+<td>LiangIaiajan</td>
+<td>7k</td>
+<td>573</td>
+</tr>
+<tr>
+<td>579</td>
+<td>lovely_hyahya</td>
+<td>7k</td>
+<td>572</td>
+</tr>
+<tr>
+<td>470</td>
+<td>[Crz]Rachel</td>
+<td>7k</td>
+<td>505</td>
+</tr>
+<tr>
+<td>923</td>
+<td>[Crz]Alleyne</td>
+<td>4k</td>
+<td>488</td>
+</tr>
+<tr>
+<td>376</td>
+<td>Carpihat</td>
+<td>7k</td>
+<td>487</td>
+</tr>
+</tbody>
+</table>
+<p>没想到电子宠物大坏猫居然是交际花</p>
+<h1 id="0x08-自古以来"><a class="markdownIt-Anchor" href="#0x08-自古以来"></a> 0x08 - 自古以来</h1>
+<p>稍微看看现役的大佬们都是什么时候注册账号入坑的👀</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">df_draw = df.groupby(<span class="string">&#x27;join_year&#x27;</span>).size().to_frame(name=<span class="string">&#x27;count&#x27;</span>).reset_index()</span><br><span class="line">df_draw = df_draw.sort_values(<span class="string">&#x27;join_year&#x27;</span>, ascending=<span class="literal">True</span>)</span><br><span class="line">df_draw[<span class="string">&#x27;join_year&#x27;</span>] = df_draw[<span class="string">&#x27;join_year&#x27;</span>].astype(<span class="built_in">str</span>).<span class="built_in">str</span>[<span class="number">2</span>:]</span><br><span class="line"></span><br><span class="line">fig, ax = plt.subplots()</span><br><span class="line">bars = ax.bar(df_draw[<span class="string">&#x27;join_year&#x27;</span>], df_draw[<span class="string">&#x27;count&#x27;</span>])</span><br><span class="line"></span><br><span class="line">ax.bar_label(bars)</span><br><span class="line">ax.set_title(<span class="string">&quot;osu!mania top #1000 player join year (2024)&quot;</span>)</span><br><span class="line">ax.set_xlabel(<span class="string">&#x27;Year&#x27;</span>)</span><br><span class="line">ax.set_ylabel(<span class="string">&#x27;Player Count&#x27;</span>)</span><br><span class="line"></span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/osumania_top_player_analysis_2024_10.png" alt="" /></p>
+<p>有点好奇那 4 个 09 年注册，一直活跃到现在的大神是谁</p>
+<table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Username</th>
+<th>Country Code</th>
+<th>Main Keymode</th>
+<th>Performance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>19</td>
+<td>ideu-</td>
+<td>KR</td>
+<td>7k</td>
+<td>23290.3</td>
+</tr>
+<tr>
+<td>43</td>
+<td>VanWilder</td>
+<td>CN</td>
+<td>7k</td>
+<td>21367.5</td>
+</tr>
+<tr>
+<td>396</td>
+<td>turtlewing</td>
+<td>KR</td>
+<td>7k</td>
+<td>14670.3</td>
+</tr>
+<tr>
+<td>451</td>
+<td>inuyashasama</td>
+<td>KR</td>
+<td>7k</td>
+<td>14359.6</td>
+</tr>
+</tbody>
+</table>
+<p>翻身！！！说起来翻身今年就要 35 岁了，依然在代表中国参加 MWC 7K 2024，宝刀未老！</p>
+<h1 id="0x09-警惕判比"><a class="markdownIt-Anchor" href="#0x09-警惕判比"></a> 0x09 - 警惕判比</h1>
+<p>说到判比，就想到 SS 的数量。因为这里只爬取了现役前 1000 名玩家的数据，所以藏比就抓不出来了。</p>
+<p>雪糕天天在群里刷儿歌打判定，看看全球榜有没有雪糕👀</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">df[<span class="string">&#x27;SS_total&#x27;</span>] = df[<span class="string">&#x27;SS_count&#x27;</span>] + df[<span class="string">&#x27;SSH_count&#x27;</span>]</span><br><span class="line">df_draw = df.sort_values(<span class="string">&#x27;SS_total&#x27;</span>, ascending=<span class="literal">False</span>, ignore_index=<span class="literal">True</span>)</span><br><span class="line">df_draw.loc[:, [<span class="string">&#x27;rank&#x27;</span>, <span class="string">&#x27;username&#x27;</span>, <span class="string">&#x27;country_code&#x27;</span>, <span class="string">&#x27;main_keymode&#x27;</span>, <span class="string">&#x27;SS_total&#x27;</span>]].head(<span class="number">10</span>)</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>rank</th>
+<th>username</th>
+<th>country_code</th>
+<th>main_keymode</th>
+<th>SS_total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>99</td>
+<td>OutLast</td>
+<td>KR</td>
+<td>7k</td>
+<td>6923</td>
+</tr>
+<tr>
+<td>104</td>
+<td>lnote_</td>
+<td>KR</td>
+<td>7k</td>
+<td>6746</td>
+</tr>
+<tr>
+<td>159</td>
+<td>lxLucasxl</td>
+<td>AR</td>
+<td>7k</td>
+<td>5899</td>
+</tr>
+<tr>
+<td>606</td>
+<td>-Willow-</td>
+<td>AU</td>
+<td>7k</td>
+<td>4968</td>
+</tr>
+<tr>
+<td>661</td>
+<td>Anemia</td>
+<td>US</td>
+<td>7k</td>
+<td>4490</td>
+</tr>
+<tr>
+<td>320</td>
+<td>robby250</td>
+<td>RO</td>
+<td>7k</td>
+<td>4109</td>
+</tr>
+<tr>
+<td>7</td>
+<td>bojii</td>
+<td>PH</td>
+<td>7k</td>
+<td>3714</td>
+</tr>
+<tr>
+<td>593</td>
+<td>Miku Meru</td>
+<td>BR</td>
+<td>4k</td>
+<td>2857</td>
+</tr>
+<tr>
+<td>798</td>
+<td>Exlude</td>
+<td>EE</td>
+<td>7k</td>
+<td>2798</td>
+</tr>
+<tr>
+<td>299</td>
+<td>gosy777</td>
+<td>KR</td>
+<td>7k</td>
+<td>2789</td>
+</tr>
+</tbody>
+</table>
+<p>哈哈，怎么回事呢，那个男人微笑去哪里了呢🤡</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/osumania_top_player_analysis_2024_ex1.png" alt="" /></p>
+<p>不会在国榜吧？</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">df_draw = df.sort_values(<span class="string">&#x27;SS_total&#x27;</span>, ascending=<span class="literal">False</span>, ignore_index=<span class="literal">True</span>)</span><br><span class="line">df_draw.loc[(df_draw[<span class="string">&#x27;country_code&#x27;</span>].isin([<span class="string">&#x27;CN&#x27;</span>, <span class="string">&#x27;MO&#x27;</span>, <span class="string">&#x27;HK&#x27;</span>])), [<span class="string">&#x27;rank&#x27;</span>, <span class="string">&#x27;username&#x27;</span>, <span class="string">&#x27;main_keymode&#x27;</span>, <span class="string">&#x27;SS_total&#x27;</span>]].head(<span class="number">10</span>)</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Username</th>
+<th>Main Keymode</th>
+<th>SS Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>141</td>
+<td>Mafuyu87Fanboy</td>
+<td>7k</td>
+<td>2699</td>
+</tr>
+<tr>
+<td>63</td>
+<td>Stink God</td>
+<td>7k</td>
+<td>2203</td>
+</tr>
+<tr>
+<td>781</td>
+<td>Mihyo_San</td>
+<td>7k</td>
+<td>1798</td>
+</tr>
+<tr>
+<td>369</td>
+<td>[Crz]Nickname</td>
+<td>4k</td>
+<td>922</td>
+</tr>
+<tr>
+<td>339</td>
+<td>Quotient</td>
+<td>4k</td>
+<td>916</td>
+</tr>
+<tr>
+<td>119</td>
+<td>ExNeko</td>
+<td>7k</td>
+<td>859</td>
+</tr>
+<tr>
+<td>763</td>
+<td>Myukee</td>
+<td>7k</td>
+<td>757</td>
+</tr>
+<tr>
+<td>896</td>
+<td>Ranm</td>
+<td>4k</td>
+<td>714</td>
+</tr>
+<tr>
+<td>376</td>
+<td>Carpihat</td>
+<td>7k</td>
+<td>625</td>
+</tr>
+<tr>
+<td>535</td>
+<td>lucky icons</td>
+<td>7k</td>
+<td>545</td>
+</tr>
+</tbody>
+</table>
+<p>还真在国榜，领先臭神将近 500 个 SS 😨</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/osumania_top_player_analysis_2024_ex3.jpg" alt="" /></p>
+<p>那么 acc 最高的判比们又有哪些呢？</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">df_draw = df.sort_values(<span class="string">&#x27;accuracy&#x27;</span>, ascending=<span class="literal">False</span>, ignore_index=<span class="literal">True</span>)</span><br><span class="line">df_draw.loc[:, [<span class="string">&#x27;rank&#x27;</span>, <span class="string">&#x27;username&#x27;</span>, <span class="string">&#x27;country_code&#x27;</span>, <span class="string">&#x27;main_keymode&#x27;</span>, <span class="string">&#x27;accuracy&#x27;</span>]].head(<span class="number">10</span>)</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Username</th>
+<th>Country Code</th>
+<th>Main Keymode</th>
+<th>Accuracy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>641</td>
+<td>[LS]Tenshi</td>
+<td>PH</td>
+<td>7k</td>
+<td>99.6653</td>
+</tr>
+<tr>
+<td>976</td>
+<td>diviza</td>
+<td>PE</td>
+<td>7k</td>
+<td>99.4974</td>
+</tr>
+<tr>
+<td>765</td>
+<td>Luna I guess</td>
+<td>US</td>
+<td>4k</td>
+<td>99.1412</td>
+</tr>
+<tr>
+<td>434</td>
+<td>lyvet</td>
+<td>PH</td>
+<td>4k</td>
+<td>99.0993</td>
+</tr>
+<tr>
+<td>935</td>
+<td>Sujin97</td>
+<td>KR</td>
+<td>7k</td>
+<td>99.0888</td>
+</tr>
+<tr>
+<td>737</td>
+<td>Hualow</td>
+<td>ID</td>
+<td>4k</td>
+<td>98.9990</td>
+</tr>
+<tr>
+<td>554</td>
+<td>[GB]SuddenDeath</td>
+<td>KR</td>
+<td>4k</td>
+<td>98.9655</td>
+</tr>
+<tr>
+<td>389</td>
+<td>[Albert]</td>
+<td>ID</td>
+<td>4k</td>
+<td>98.8328</td>
+</tr>
+<tr>
+<td>625</td>
+<td>Fieri</td>
+<td>ID</td>
+<td>4k</td>
+<td>98.8294</td>
+</tr>
+<tr>
+<td>407</td>
+<td>Hello_Son</td>
+<td>US</td>
+<td>4k</td>
+<td>98.8161</td>
+</tr>
+</tbody>
+</table>
+<p>接下来按照惯例，来看看国产大判比</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">df_draw = df.sort_values(<span class="string">&#x27;accuracy&#x27;</span>, ascending=<span class="literal">False</span>, ignore_index=<span class="literal">True</span>)</span><br><span class="line">df_draw.loc[(df_draw[<span class="string">&#x27;country_code&#x27;</span>].isin([<span class="string">&#x27;CN&#x27;</span>, <span class="string">&#x27;MO&#x27;</span>, <span class="string">&#x27;HK&#x27;</span>])), [<span class="string">&#x27;rank&#x27;</span>, <span class="string">&#x27;username&#x27;</span>, <span class="string">&#x27;main_keymode&#x27;</span>, <span class="string">&#x27;accuracy&#x27;</span>]].head(<span class="number">10</span>)</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>rank</th>
+<th>username</th>
+<th>main_keymode</th>
+<th>accuracy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>339</td>
+<td>Quotient</td>
+<td>4k</td>
+<td>98.8076</td>
+</tr>
+<tr>
+<td>414</td>
+<td>[GB]nyasun</td>
+<td>4k</td>
+<td>98.7232</td>
+</tr>
+<tr>
+<td>708</td>
+<td>racksack</td>
+<td>4k</td>
+<td>98.5903</td>
+</tr>
+<tr>
+<td>611</td>
+<td>[Paw]Just_MLN</td>
+<td>4k</td>
+<td>98.5578</td>
+</tr>
+<tr>
+<td>592</td>
+<td>[GB]ParasolTree</td>
+<td>4k</td>
+<td>98.5175</td>
+</tr>
+<tr>
+<td>877</td>
+<td>StarTemplar</td>
+<td>4k</td>
+<td>98.4896</td>
+</tr>
+<tr>
+<td>913</td>
+<td>Squis1037</td>
+<td>4k</td>
+<td>98.4798</td>
+</tr>
+<tr>
+<td>718</td>
+<td>ATP Koshepen</td>
+<td>4k</td>
+<td>98.3490</td>
+</tr>
+<tr>
+<td>815</td>
+<td>[Crz]Caicium</td>
+<td>4k</td>
+<td>98.3145</td>
+</tr>
+<tr>
+<td>424</td>
+<td>neeko the rock</td>
+<td>4k</td>
+<td>98.2423</td>
+</tr>
+</tbody>
+</table>
+<p>最后看看需要警惕哪些 7k 国产大判比</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">df_draw = df.sort_values(<span class="string">&#x27;accuracy&#x27;</span>, ascending=<span class="literal">False</span>, ignore_index=<span class="literal">True</span>)</span><br><span class="line">df_draw.loc[(df_draw[<span class="string">&#x27;main_keymode&#x27;</span>] == <span class="string">&#x27;7k&#x27;</span>) &amp; (df_draw[<span class="string">&#x27;pp_4k&#x27;</span>] &lt; <span class="number">9000</span>) &amp; (df_draw[<span class="string">&#x27;country_code&#x27;</span>].isin([<span class="string">&#x27;CN&#x27;</span>, <span class="string">&#x27;MO&#x27;</span>, <span class="string">&#x27;HK&#x27;</span>])), [<span class="string">&#x27;rank&#x27;</span>, <span class="string">&#x27;username&#x27;</span>, <span class="string">&#x27;accuracy&#x27;</span>]].head(<span class="number">20</span>)</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Username</th>
+<th>Accuracy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>34</td>
+<td>[Crz]Satori</td>
+<td>98.0678</td>
+</tr>
+<tr>
+<td>43</td>
+<td>QingJiDing</td>
+<td>97.8572</td>
+</tr>
+<tr>
+<td>43</td>
+<td>VanWilder</td>
+<td>97.8104</td>
+</tr>
+<tr>
+<td>172</td>
+<td>Krn_</td>
+<td>97.7941</td>
+</tr>
+<tr>
+<td>202</td>
+<td>U1d</td>
+<td>97.7313</td>
+</tr>
+<tr>
+<td>141</td>
+<td>Mafuyu87Fanboy</td>
+<td>97.6430</td>
+</tr>
+<tr>
+<td>750</td>
+<td>tangjinxi</td>
+<td>97.6200</td>
+</tr>
+<tr>
+<td>153</td>
+<td>- Minato Aqua -</td>
+<td>97.6176</td>
+</tr>
+<tr>
+<td>22</td>
+<td>af-</td>
+<td>97.6103</td>
+</tr>
+<tr>
+<td>66</td>
+<td>LiangIaiajan</td>
+<td>97.5192</td>
+</tr>
+<tr>
+<td>119</td>
+<td>ExNeko</td>
+<td>97.4939</td>
+</tr>
+<tr>
+<td>196</td>
+<td>Chenut BS</td>
+<td>97.3203</td>
+</tr>
+<tr>
+<td>260</td>
+<td>10086kfry</td>
+<td>97.3195</td>
+</tr>
+<tr>
+<td>763</td>
+<td>Myukee</td>
+<td>97.3040</td>
+</tr>
+<tr>
+<td>781</td>
+<td>Mihyo_San</td>
+<td>97.2728</td>
+</tr>
+<tr>
+<td>853</td>
+<td>jhlee0I33</td>
+<td>97.2546</td>
+</tr>
+<tr>
+<td>347</td>
+<td>idqoos123</td>
+<td>97.2320</td>
+</tr>
+<tr>
+<td>201</td>
+<td>Mi-a</td>
+<td>97.2275</td>
+</tr>
+<tr>
+<td>171</td>
+<td>Longe</td>
+<td>97.2046</td>
+</tr>
+<tr>
+<td>180</td>
+<td>RiskyMonster272</td>
+<td>97.1972</td>
+</tr>
+</tbody>
+</table>
+<h1 id="0x10-我是大漏勺"><a class="markdownIt-Anchor" href="#0x10-我是大漏勺"></a> 0x10 - 我是大漏勺</h1>
+<p>这次发现 ppy 还提供了<code>count_miss</code>，应该是mania生涯的 miss 数，让我看看谁是大漏勺</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">df_draw = df.sort_values(<span class="string">&#x27;count_miss&#x27;</span>, ascending=<span class="literal">False</span>, ignore_index=<span class="literal">True</span>)</span><br><span class="line">df_draw.loc[:, [<span class="string">&#x27;rank&#x27;</span>, <span class="string">&#x27;username&#x27;</span>, <span class="string">&#x27;country_code&#x27;</span>, <span class="string">&#x27;main_keymode&#x27;</span>, <span class="string">&#x27;count_miss&#x27;</span>]].head(<span class="number">10</span>)</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>rank</th>
+<th>username</th>
+<th>country_code</th>
+<th>main_keymode</th>
+<th>count_miss</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>325</td>
+<td>AdamYuan</td>
+<td>CN</td>
+<td>7k</td>
+<td>2749684</td>
+</tr>
+<tr>
+<td>346</td>
+<td>JDS20</td>
+<td>CO</td>
+<td>7k</td>
+<td>2524503</td>
+</tr>
+<tr>
+<td>809</td>
+<td>Min-</td>
+<td>KR</td>
+<td>7k</td>
+<td>2449145</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Stellium</td>
+<td>KR</td>
+<td>7k</td>
+<td>2400575</td>
+</tr>
+<tr>
+<td>756</td>
+<td>StevenS</td>
+<td>EC</td>
+<td>7k</td>
+<td>2341577</td>
+</tr>
+<tr>
+<td>301</td>
+<td>do you fart</td>
+<td>NZ</td>
+<td>7k</td>
+<td>2256312</td>
+</tr>
+<tr>
+<td>376</td>
+<td>Carpihat</td>
+<td>CN</td>
+<td>7k</td>
+<td>2253024</td>
+</tr>
+<tr>
+<td>23</td>
+<td>Arona</td>
+<td>PH</td>
+<td>7k</td>
+<td>2237571</td>
+</tr>
+<tr>
+<td>344</td>
+<td>Stoom</td>
+<td>DK</td>
+<td>7k</td>
+<td>2102566</td>
+</tr>
+<tr>
+<td>133</td>
+<td>invadey</td>
+<td>US</td>
+<td>4k</td>
+<td>2012134</td>
+</tr>
+</tbody>
+</table>
+<p>但是这个排行算法有个问题，因为 miss 数量跟总击打数（total_hits）是正相关的，所以可能计算 miss 的比例会更合适</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">df[<span class="string">&#x27;miss_ratio&#x27;</span>] = <span class="built_in">round</span>(df[<span class="string">&#x27;count_miss&#x27;</span>] / df[<span class="string">&#x27;total_hits&#x27;</span>], <span class="number">4</span>)</span><br><span class="line">df_draw = df.sort_values(<span class="string">&#x27;miss_ratio&#x27;</span>, ascending=<span class="literal">False</span>, ignore_index=<span class="literal">True</span>)</span><br><span class="line">df_draw.loc[:, [<span class="string">&#x27;rank&#x27;</span>, <span class="string">&#x27;username&#x27;</span>, <span class="string">&#x27;country_code&#x27;</span>, <span class="string">&#x27;main_keymode&#x27;</span>, <span class="string">&#x27;miss_ratio&#x27;</span>]].head(<span class="number">10</span>)</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>rank</th>
+<th>username</th>
+<th>country_code</th>
+<th>main_keymode</th>
+<th>miss_ratio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>325</td>
+<td>AdamYuan</td>
+<td>CN</td>
+<td>7k</td>
+<td>0.0824</td>
+</tr>
+<tr>
+<td>357</td>
+<td>Cattlea</td>
+<td>JP</td>
+<td>7k</td>
+<td>0.0545</td>
+</tr>
+<tr>
+<td>231</td>
+<td>SoftC418</td>
+<td>CN</td>
+<td>7k</td>
+<td>0.0369</td>
+</tr>
+<tr>
+<td>866</td>
+<td>THIS A PERSON</td>
+<td>US</td>
+<td>7k</td>
+<td>0.0364</td>
+</tr>
+<tr>
+<td>301</td>
+<td>do you fart</td>
+<td>NZ</td>
+<td>7k</td>
+<td>0.0364</td>
+</tr>
+<tr>
+<td>524</td>
+<td>imstupidfor7k</td>
+<td>SG</td>
+<td>7k</td>
+<td>0.0344</td>
+</tr>
+<tr>
+<td>258</td>
+<td>Shepped</td>
+<td>CL</td>
+<td>7k</td>
+<td>0.0343</td>
+</tr>
+<tr>
+<td>917</td>
+<td>WoodKliz</td>
+<td>PA</td>
+<td>7k</td>
+<td>0.0337</td>
+</tr>
+<tr>
+<td>495</td>
+<td>aceqwer370</td>
+<td>KR</td>
+<td>7k</td>
+<td>0.0333</td>
+</tr>
+<tr>
+<td>636</td>
+<td>DannyXLee</td>
+<td>CN</td>
+<td>7k</td>
+<td>0.0324</td>
+</tr>
+</tbody>
+</table>
+<p>呃呃，咱们中国的 AdamYuan 一骑绝尘，化身金牌大漏勺，遥遥领先其它玩家</p>
+<p>接下来按照惯例，来看看国产大漏勺</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">df_draw = df.sort_values(<span class="string">&#x27;count_miss&#x27;</span>, ascending=<span class="literal">False</span>, ignore_index=<span class="literal">True</span>)</span><br><span class="line">df_draw.loc[(df_draw[<span class="string">&#x27;country_code&#x27;</span>].isin([<span class="string">&#x27;CN&#x27;</span>, <span class="string">&#x27;MO&#x27;</span>, <span class="string">&#x27;HK&#x27;</span>])), [<span class="string">&#x27;rank&#x27;</span>, <span class="string">&#x27;username&#x27;</span>, <span class="string">&#x27;main_keymode&#x27;</span>, <span class="string">&#x27;count_miss&#x27;</span>]].head(<span class="number">10</span>)</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>rank</th>
+<th>username</th>
+<th>main_keymode</th>
+<th>count_miss</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>325</td>
+<td>AdamYuan</td>
+<td>7k</td>
+<td>2749684</td>
+</tr>
+<tr>
+<td>376</td>
+<td>Carpihat</td>
+<td>7k</td>
+<td>2253024</td>
+</tr>
+<tr>
+<td>24</td>
+<td>SoftC418</td>
+<td>7k</td>
+<td>1680528</td>
+</tr>
+<tr>
+<td>58</td>
+<td>Mafuyu87Fanboy</td>
+<td>7k</td>
+<td>1357278</td>
+</tr>
+<tr>
+<td>62</td>
+<td>Mito Van</td>
+<td>7k</td>
+<td>1310800</td>
+</tr>
+<tr>
+<td>79</td>
+<td>[GB]King Fish</td>
+<td>7k</td>
+<td>1242739</td>
+</tr>
+<tr>
+<td>92</td>
+<td>Yozomi</td>
+<td>7k</td>
+<td>1213444</td>
+</tr>
+<tr>
+<td>113</td>
+<td>shiyu1213</td>
+<td>7k</td>
+<td>1128582</td>
+</tr>
+<tr>
+<td>118</td>
+<td>[GB]Burger King</td>
+<td>7k</td>
+<td>1093815</td>
+</tr>
+<tr>
+<td>133</td>
+<td>kanasshi</td>
+<td>7k</td>
+<td>1060956</td>
+</tr>
+</tbody>
+</table>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">df_draw = df.sort_values(<span class="string">&#x27;miss_ratio&#x27;</span>, ascending=<span class="literal">False</span>, ignore_index=<span class="literal">True</span>)</span><br><span class="line">df_draw.loc[(df_draw[<span class="string">&#x27;country_code&#x27;</span>].isin([<span class="string">&#x27;CN&#x27;</span>, <span class="string">&#x27;MO&#x27;</span>, <span class="string">&#x27;HK&#x27;</span>])), [<span class="string">&#x27;rank&#x27;</span>, <span class="string">&#x27;username&#x27;</span>, <span class="string">&#x27;main_keymode&#x27;</span>, <span class="string">&#x27;miss_ratio&#x27;</span>]].head(<span class="number">10</span>)</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>rank</th>
+<th>username</th>
+<th>main_keymode</th>
+<th>miss_ratio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>325</td>
+<td>AdamYuan</td>
+<td>7k</td>
+<td>0.0824</td>
+</tr>
+<tr>
+<td>231</td>
+<td>SoftC418</td>
+<td>7k</td>
+<td>0.0369</td>
+</tr>
+<tr>
+<td>636</td>
+<td>DannyXLee</td>
+<td>7k</td>
+<td>0.0324</td>
+</tr>
+<tr>
+<td>934</td>
+<td>kanasshi</td>
+<td>7k</td>
+<td>0.0316</td>
+</tr>
+<tr>
+<td>746</td>
+<td>Tat3</td>
+<td>7k</td>
+<td>0.0315</td>
+</tr>
+<tr>
+<td>624</td>
+<td>[Crz]Zetsfy</td>
+<td>7k</td>
+<td>0.0285</td>
+</tr>
+<tr>
+<td>547</td>
+<td>shiyu1213</td>
+<td>7k</td>
+<td>0.0277</td>
+</tr>
+<tr>
+<td>585</td>
+<td>ToukiM</td>
+<td>7k</td>
+<td>0.0273</td>
+</tr>
+<tr>
+<td>626</td>
+<td>Croatian songs</td>
+<td>4k</td>
+<td>0.0269</td>
+</tr>
+<tr>
+<td>814</td>
+<td>_Reimu</td>
+<td>7k</td>
+<td>0.0266</td>
+</tr>
+</tbody>
+</table>
+<h1 id="0x11-警惕连比"><a class="markdownIt-Anchor" href="#0x11-警惕连比"></a> 0x11 - 警惕连比</h1>
+<p>说完漏勺，自然也不能不说一下连比。MCNC 7K 2024 Semifinals，张帆对 af 的那局，翻身愣是把好几个吊图给连上了。只要我不掉，对面自己会掉🥵</p>
+<p>不过需要注意的是，当前版本仍然是 ScoreV1，面条特别多的图（尤其较低的ln 段位或者放手）能够刷出极高的连击数</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">df_draw = df.sort_values(<span class="string">&#x27;maximum_combo&#x27;</span>, ascending=<span class="literal">False</span>, ignore_index=<span class="literal">True</span>)</span><br><span class="line">df_draw.loc[:, [<span class="string">&#x27;rank&#x27;</span>, <span class="string">&#x27;username&#x27;</span>, <span class="string">&#x27;country_code&#x27;</span>, <span class="string">&#x27;main_keymode&#x27;</span>, <span class="string">&#x27;maximum_combo&#x27;</span>]].head(<span class="number">10</span>)</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>rank</th>
+<th>username</th>
+<th>country_code</th>
+<th>main_keymode</th>
+<th>maximum_combo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>893</td>
+<td>Axfaerie</td>
+<td>PH</td>
+<td>4k</td>
+<td>55637</td>
+</tr>
+<tr>
+<td>425</td>
+<td>Plana_</td>
+<td>PH</td>
+<td>4k</td>
+<td>55554</td>
+</tr>
+<tr>
+<td>858</td>
+<td>BossPlays</td>
+<td>AR</td>
+<td>4k</td>
+<td>55538</td>
+</tr>
+<tr>
+<td>538</td>
+<td>ERA Dev</td>
+<td>US</td>
+<td>4k</td>
+<td>55509</td>
+</tr>
+<tr>
+<td>208</td>
+<td>Plutes</td>
+<td>MX</td>
+<td>7k</td>
+<td>55506</td>
+</tr>
+<tr>
+<td>846</td>
+<td>Loslic</td>
+<td>KR</td>
+<td>4k</td>
+<td>55502</td>
+</tr>
+<tr>
+<td>856</td>
+<td>nayeonie bunny</td>
+<td>BR</td>
+<td>4k</td>
+<td>55501</td>
+</tr>
+<tr>
+<td>39</td>
+<td>lupesco</td>
+<td>MX</td>
+<td>7k</td>
+<td>55495</td>
+</tr>
+<tr>
+<td>375</td>
+<td>SnowScent</td>
+<td>KR</td>
+<td>7k</td>
+<td>55486</td>
+</tr>
+<tr>
+<td>88</td>
+<td>myucchii</td>
+<td>CL</td>
+<td>4k</td>
+<td>55457</td>
+</tr>
+</tbody>
+</table>
+<p>50000 combo，基本可以确定是这张图：<a target="_blank" rel="noopener" href="https://osu.ppy.sh/beatmapsets/682489#mania/1443309">Between the Buried and Me - The Parallax II: Future Sequence</a>。这张 loved 图长达 1 小时 12 分钟，只能说都是狠人。。。</p>
+<p>接下来看看需要警惕哪些国产连比</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">df_draw = df.sort_values(<span class="string">&#x27;maximum_combo&#x27;</span>, ascending=<span class="literal">False</span>, ignore_index=<span class="literal">True</span>)</span><br><span class="line">df_draw.loc[(df_draw[<span class="string">&#x27;country_code&#x27;</span>].isin([<span class="string">&#x27;CN&#x27;</span>, <span class="string">&#x27;MO&#x27;</span>, <span class="string">&#x27;HK&#x27;</span>])), [<span class="string">&#x27;rank&#x27;</span>, <span class="string">&#x27;username&#x27;</span>, <span class="string">&#x27;main_keymode&#x27;</span>, <span class="string">&#x27;maximum_combo&#x27;</span>]].head(<span class="number">10</span>)</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Username</th>
+<th>Main Keymode</th>
+<th>Maximum Combo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>369</td>
+<td>[Crz]Nickname</td>
+<td>4k</td>
+<td>36319</td>
+</tr>
+<tr>
+<td>376</td>
+<td>Carpihat</td>
+<td>7k</td>
+<td>30957</td>
+</tr>
+<tr>
+<td>93</td>
+<td>[Paw]FIood</td>
+<td>7k</td>
+<td>27078</td>
+</tr>
+<tr>
+<td>592</td>
+<td>[GB]ParasolTree</td>
+<td>4k</td>
+<td>23349</td>
+</tr>
+<tr>
+<td>224</td>
+<td>hisa_knowledge</td>
+<td>7k</td>
+<td>22391</td>
+</tr>
+<tr>
+<td>66</td>
+<td>LiangIaiajan</td>
+<td>7k</td>
+<td>20552</td>
+</tr>
+<tr>
+<td>339</td>
+<td>Quotient</td>
+<td>4k</td>
+<td>19014</td>
+</tr>
+<tr>
+<td>611</td>
+<td>[Paw]Just_MLN</td>
+<td>4k</td>
+<td>18452</td>
+</tr>
+<tr>
+<td>909</td>
+<td>[Crz]Xinyi2016</td>
+<td>4k</td>
+<td>17801</td>
+</tr>
+<tr>
+<td>424</td>
+<td>neeko the rock</td>
+<td>4k</td>
+<td>17635</td>
+</tr>
+</tbody>
+</table>
+<p>众所周知 7k 更容易漏勺，所以看看需要警惕哪些国产 7k 大连比</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 这里特判喇叭（SilentParleHorn）是连比因为他真的是连比</span></span><br><span class="line">df_draw = df.sort_values(<span class="string">&#x27;maximum_combo&#x27;</span>, ascending=<span class="literal">False</span>, ignore_index=<span class="literal">True</span>)</span><br><span class="line">df_draw.loc[(df_draw[<span class="string">&#x27;main_keymode&#x27;</span>] == <span class="string">&#x27;7k&#x27;</span>) &amp; (df_draw[<span class="string">&#x27;pp_4k&#x27;</span>] &lt; <span class="number">9000</span>) &amp; (df_draw[<span class="string">&#x27;country_code&#x27;</span>].isin([<span class="string">&#x27;CN&#x27;</span>, <span class="string">&#x27;MO&#x27;</span>, <span class="string">&#x27;HK&#x27;</span>])) | (df_draw[<span class="string">&#x27;username&#x27;</span>] == <span class="string">&#x27;SilentParleHorn&#x27;</span>), [<span class="string">&#x27;rank&#x27;</span>, <span class="string">&#x27;username&#x27;</span>, <span class="string">&#x27;maximum_combo&#x27;</span>]].head(<span class="number">30</span>)</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>rank</th>
+<th>username</th>
+<th>maximum_combo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>66</td>
+<td>LiangIaiajan</td>
+<td>20552</td>
+</tr>
+<tr>
+<td>345</td>
+<td>fishbone2445</td>
+<td>16334</td>
+</tr>
+<tr>
+<td>34</td>
+<td>[Crz]Satori</td>
+<td>16308</td>
+</tr>
+<tr>
+<td>141</td>
+<td>Mafuyu87Fanboy</td>
+<td>15990</td>
+</tr>
+<tr>
+<td>171</td>
+<td>Longe</td>
+<td>14455</td>
+</tr>
+<tr>
+<td>196</td>
+<td>Chenut BS</td>
+<td>14249</td>
+</tr>
+<tr>
+<td>172</td>
+<td>Krn_</td>
+<td>13754</td>
+</tr>
+<tr>
+<td>201</td>
+<td>SilentParleHorn</td>
+<td>13640</td>
+</tr>
+<tr>
+<td>744</td>
+<td>O2jam Ultima</td>
+<td>13556</td>
+</tr>
+<tr>
+<td>347</td>
+<td>idqoos123</td>
+<td>13290</td>
+</tr>
+<tr>
+<td>43</td>
+<td>VanWilder</td>
+<td>12920</td>
+</tr>
+<tr>
+<td>221</td>
+<td>Mito Van</td>
+<td>12773</td>
+</tr>
+<tr>
+<td>153</td>
+<td>- Minato Aqua -</td>
+<td>11891</td>
+</tr>
+<tr>
+<td>481</td>
+<td>quailty</td>
+<td>10991</td>
+</tr>
+<tr>
+<td>135</td>
+<td>_Yiiiii</td>
+<td>10742</td>
+</tr>
+<tr>
+<td>275</td>
+<td>pipisugar</td>
+<td>9915</td>
+</tr>
+<tr>
+<td>490</td>
+<td>ICDYO</td>
+<td>9650</td>
+</tr>
+<tr>
+<td>763</td>
+<td>Myukee</td>
+<td>9195</td>
+</tr>
+<tr>
+<td>142</td>
+<td>Watch01</td>
+<td>9103</td>
+</tr>
+<tr>
+<td>717</td>
+<td>Yozomi</td>
+<td>8636</td>
+</tr>
+<tr>
+<td>22</td>
+<td>af-</td>
+<td>8566</td>
+</tr>
+<tr>
+<td>63</td>
+<td>Stink God</td>
+<td>8414</td>
+</tr>
+<tr>
+<td>119</td>
+<td>ExNeko</td>
+<td>8369</td>
+</tr>
+<tr>
+<td>260</td>
+<td>10086kfry</td>
+<td>8081</td>
+</tr>
+<tr>
+<td>989</td>
+<td>jackyuanchen</td>
+<td>8066</td>
+</tr>
+<tr>
+<td>202</td>
+<td>U1d</td>
+<td>7979</td>
+</tr>
+<tr>
+<td>43</td>
+<td>QingJiDing</td>
+<td>7859</td>
+</tr>
+<tr>
+<td>274</td>
+<td>KafuuChino</td>
+<td>7735</td>
+</tr>
+<tr>
+<td>470</td>
+<td>[Crz]Rachel</td>
+<td>7723</td>
+</tr>
+<tr>
+<td>198</td>
+<td>[GB]hej_067</td>
+<td>7635</td>
+</tr>
+</tbody>
+</table>
+<p>为什么连比名单这么长呢？因为打比赛要警惕连比！！</p>
+<h1 id="0x12-后记"><a class="markdownIt-Anchor" href="#0x12-后记"></a> 0x12 - 后记</h1>
+<p>其实也没啥好写的了，如果有人需要数据集可以问我要。分析仅供参考，如有疑问，那就有疑问吧，本来也就随手写着玩。</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/japanese/jp-grammar.html" rel="prev" title="标准日语语法笔记">
+                  <i class="fa fa-angle-left"></i> 标准日语语法笔记
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/econ/intl-finance.html" rel="next" title="Int'l Finance 笔记">
+                  Int'l Finance 笔记 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 2020 – 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="fa fa-terminal"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">oscarcx123</span>
+        <span class="post-meta-item">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-chart-line"></i>
+          </span>
+          <span title="站点总字数">268k</span>
+        </span>
+        <span class="post-meta-item">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-coffee"></i>
+          </span>
+          <span title="站点阅读时长">14:53</span>
+        </span>
+  </div>
+  <div class="powered-by">
+    <span class="post-meta-item">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v6.3.0 强力驱动
+    </span>
+    <span class="post-meta-item"> 主题 – <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v8.18.1
+    </span>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script size="300" alpha="0.6" zIndex="-1" src="/js/ribbon.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.6.0/pjax.min.js" integrity="sha256-vxLn1tSKWD4dqbMRyv940UYw4sXgMtYcK6reefzZrao=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.0.8/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/pjax.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/katex.min.css" integrity="sha256-3574TpfThVfeAhg+I4+N39EJiLN3QUkuEsMVe8hWAR4=" crossorigin="anonymous">
+  <script class="next-config" data-name="katex" type="application/json">{"copy_tex_js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/contrib/copy-tex.min.js","integrity":"sha256-Us54+rSGDSTvIhKKUs4kygE2ipA0RXpWWh0/zLqw3bs="}}</script>
+  <script src="/js/third-party/math/katex.js"></script>
+
+
+<script type="text/javascript">
+  // 显示“展开”和“折叠”
+  function collapsableTitle(x) {
+    var nav = document.getElementsByClassName("sidebar-nav-toc")[0];
+    if (x.matches) { // If media query matches
+      var content = document.getElementsByClassName("sidebar-panel-container")[0];
+      if (content.style.display = "none") {
+        nav.textContent = "文章目录 [展开]";
+      }
+      else {
+        nav.textContent = "文章目录 [折叠]";
+      }
+    } 
+    else {
+      nav.textContent = "文章目录";
+    }
+  }
+
+  var x = window.matchMedia("(max-width: 991px)"); // media query
+  collapsableTitle(x);
+  x.addListener(collapsableTitle);
+
+  // 控制目录的折叠
+  var tos = document.getElementsByClassName("sidebar-nav")[0];
+  var i;
+
+  tos.addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = document.getElementsByClassName("sidebar-panel-container")[0];
+    var nav = document.getElementsByClassName("sidebar-nav-toc")[0];
+    if (content.style.display === "block" && window.innerWidth < 991) {
+      content.style.display = "none";
+      nav.textContent = "文章目录 [展开]";
+    } else {
+      content.style.display = "block";
+      if (window.innerWidth < 991) {
+        nav.textContent = "文章目录 [折叠]";
+      }
+    }
+  });
+
+  // 因为启用pjax，需要监听complete事件，来实现默认折叠效果
+  document.addEventListener('pjax:complete', function() {
+    if (window.innerWidth < 991) {
+      let content = document.getElementsByClassName("sidebar-panel-container")[0];
+      content.style.display = "none";
+      let nav = document.getElementsByClassName("sidebar-nav-toc")[0];
+      nav.textContent = "文章目录 [展开]";
+      }
+    });
+  </script>
+</body>
+</html>

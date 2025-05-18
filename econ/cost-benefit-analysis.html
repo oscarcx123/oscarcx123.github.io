@@ -1,0 +1,2393 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-64x64-dragon.jpg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-64x64-dragon.jpg">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-64x64-dragon.jpg">
+  <link rel="mask-icon" href="/images/favicon-64x64-dragon.jpg" color="#222">
+  <meta name="google-site-verification" content="-QMh-gRPduq5T_vg3_Pwi3kZsNSiyuEpPBaDIXV8J34">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"oscarcx.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.18.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":true,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+
+
+  <style type="text/css">
+
+div.hcb-content.hcb-block.hcbnote, details.hcb-content.box.hcbnote,div.hcb-content.hcb-block.hcbabstract, details.hcb-content.box.hcbabstract,div.hcb-content.hcb-block.hcbinfo, details.hcb-content.box.hcbinfo,div.hcb-content.hcb-block.hcbtip, details.hcb-content.box.hcbtip,div.hcb-content.hcb-block.hcbsuccess, details.hcb-content.box.hcbsuccess,div.hcb-content.hcb-block.hcbquestion, details.hcb-content.box.hcbquestion,div.hcb-content.hcb-block.hcbwarning, details.hcb-content.box.hcbwarning,div.hcb-content.hcb-block.hcbfailure, details.hcb-content.box.hcbfailure,div.hcb-content.hcb-block.hcbdanger, details.hcb-content.box.hcbdanger,div.hcb-content.hcb-block.hcbbug, details.hcb-content.box.hcbbug,div.hcb-content.hcb-block.hcbexample, details.hcb-content.box.hcbexample,div.hcb-content.hcb-block.hcbquote, details.hcb-content.box.hcbquote {
+  border: .05rem solid #448aff;
+  border-radius: .2rem;
+  font-size: 0.96rem;
+  margin: 1.5625em 0;
+  padding: 0 1.2rem;
+  transition: box-shadow 250ms;
+}
+div.hcb-content.hcb-block.hcbnote, details.hcb-content.box.hcbnote {
+  border-color: #448aff;
+}
+div.hcb-content.hcb-block.hcbabstract, details.hcb-content.box.hcbabstract {
+  border-color: #00b0ff;
+}
+div.hcb-content.hcb-block.hcbinfo, details.hcb-content.box.hcbinfo {
+  border-color: #00b8d4;
+}
+div.hcb-content.hcb-block.hcbtip, details.hcb-content.box.hcbtip {
+  border-color: #00bfa5;
+}
+div.hcb-content.hcb-block.hcbsuccess, details.hcb-content.box.hcbsuccess {
+  border-color: #00c853;
+}
+div.hcb-content.hcb-block.hcbquestion, details.hcb-content.box.hcbquestion {
+  border-color: #64dd17;
+}
+div.hcb-content.hcb-block.hcbwarning, details.hcb-content.box.hcbwarning {
+  border-color: #ff9100;
+}
+div.hcb-content.hcb-block.hcbfailure, details.hcb-content.box.hcbfailure {
+  border-color: #ff5252;
+}
+div.hcb-content.hcb-block.hcbdanger, details.hcb-content.box.hcbdanger {
+  border-color: #ff1744;
+}
+div.hcb-content.hcb-block.hcbbug, details.hcb-content.box.hcbbug {
+  border-color: #f50057;
+}
+div.hcb-content.hcb-block.hcbexample, details.hcb-content.box.hcbexample {
+  border-color: #7c4dff;
+}
+div.hcb-content.hcb-block.hcbquote, details.hcb-content.box.hcbquote {
+  border-color: #9e9e9e;
+}
+div.hcb-content.hcb-block.hcbnote:focus-within, details.hcb-content.box.hcbnote:focus-within {
+  box-shadow: 0 0 0 .2rem #448aff1a;
+}
+div.hcb-content.hcb-block.hcbabstract:focus-within, details.hcb-content.box.hcbabstract:focus-within {
+  box-shadow: 0 0 0 .2rem #00b0ff1a;
+}
+div.hcb-content.hcb-block.hcbinfo:focus-within, details.hcb-content.box.hcbinfo:focus-within {
+  box-shadow: 0 0 0 .2rem #00b8d41a;
+}
+div.hcb-content.hcb-block.hcbtip:focus-within, details.hcb-content.box.hcbtip:focus-within {
+  box-shadow: 0 0 0 .2rem #00bfa51a;
+}
+div.hcb-content.hcb-block.hcbsuccess:focus-within, details.hcb-content.box.hcbsuccess:focus-within {
+  box-shadow: 0 0 0 .2rem #00c8531a;
+}
+div.hcb-content.hcb-block.hcbquestion:focus-within, details.hcb-content.box.hcbquestion:focus-within {
+  box-shadow: 0 0 0 .2rem #64dd171a;
+}
+div.hcb-content.hcb-block.hcbwarning:focus-within, details.hcb-content.box.hcbwarning:focus-within {
+  box-shadow: 0 0 0 .2rem #ff91001a;
+}
+div.hcb-content.hcb-block.hcbfailure:focus-within, details.hcb-content.box.hcbfailure:focus-within {
+  box-shadow: 0 0 0 .2rem #ff52521a;
+}
+div.hcb-content.hcb-block.hcbdanger:focus-within, details.hcb-content.box.hcbdanger:focus-within {
+  box-shadow: 0 0 0 .2rem #ff17441a;
+}
+div.hcb-content.hcb-block.hcbbug:focus-within, details.hcb-content.box.hcbbug:focus-within {
+  box-shadow: 0 0 0 .2rem #f500571a;
+}
+div.hcb-content.hcb-block.hcbexample:focus-within, details.hcb-content.box.hcbexample:focus-within {
+  box-shadow: 0 0 0 .2rem #7c4dff1a;
+}
+div.hcb-content.hcb-block.hcbquote:focus-within, details.hcb-content.box.hcbquote:focus-within {
+  box-shadow: 0 0 0 .2rem #9e9e9e1a;
+}
+div.hcb-content.hcb-block.hcbnote *, details.hcb-content.box.hcbnote *,div.hcb-content.hcb-block.hcbabstract *, details.hcb-content.box.hcbabstract *,div.hcb-content.hcb-block.hcbinfo *, details.hcb-content.box.hcbinfo *,div.hcb-content.hcb-block.hcbtip *, details.hcb-content.box.hcbtip *,div.hcb-content.hcb-block.hcbsuccess *, details.hcb-content.box.hcbsuccess *,div.hcb-content.hcb-block.hcbquestion *, details.hcb-content.box.hcbquestion *,div.hcb-content.hcb-block.hcbwarning *, details.hcb-content.box.hcbwarning *,div.hcb-content.hcb-block.hcbfailure *, details.hcb-content.box.hcbfailure *,div.hcb-content.hcb-block.hcbdanger *, details.hcb-content.box.hcbdanger *,div.hcb-content.hcb-block.hcbbug *, details.hcb-content.box.hcbbug *,div.hcb-content.hcb-block.hcbexample *, details.hcb-content.box.hcbexample *,div.hcb-content.hcb-block.hcbquote *, details.hcb-content.box.hcbquote * {
+  box-sizing: border-box;
+}
+div.hcb-content.hcb-block.hcbnote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbnote > summary,div.hcb-content.hcb-block.hcbabstract > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbabstract > summary,div.hcb-content.hcb-block.hcbinfo > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbinfo > summary,div.hcb-content.hcb-block.hcbtip > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbtip > summary,div.hcb-content.hcb-block.hcbsuccess > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbsuccess > summary,div.hcb-content.hcb-block.hcbquestion > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquestion > summary,div.hcb-content.hcb-block.hcbwarning > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbwarning > summary,div.hcb-content.hcb-block.hcbfailure > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbfailure > summary,div.hcb-content.hcb-block.hcbdanger > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbdanger > summary,div.hcb-content.hcb-block.hcbbug > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbbug > summary,div.hcb-content.hcb-block.hcbexample > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbexample > summary,div.hcb-content.hcb-block.hcbquote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquote > summary {
+  border-top-right-radius: 0.1rem;
+  border-top-left-radius: 0.1rem;
+  border-left-width: 0.2rem;
+  display: block;
+  min-height: 1rem;
+  border: none;
+  font-weight: 700;
+  margin: 0 -1.2rem 1rem;
+  padding: 0.4rem 0.6rem;
+  position: relative;
+  outline: none;
+}
+details.hcb-content.box.hcbnote > summary,details.hcb-content.box.hcbabstract > summary,details.hcb-content.box.hcbinfo > summary,details.hcb-content.box.hcbtip > summary,details.hcb-content.box.hcbsuccess > summary,details.hcb-content.box.hcbquestion > summary,details.hcb-content.box.hcbwarning > summary,details.hcb-content.box.hcbfailure > summary,details.hcb-content.box.hcbdanger > summary,details.hcb-content.box.hcbbug > summary,details.hcb-content.box.hcbexample > summary,details.hcb-content.box.hcbquote > summary {
+  cursor: pointer;
+}
+details.hcb-content.box.hcbnote:not([open]) > summary,details.hcb-content.box.hcbabstract:not([open]) > summary,details.hcb-content.box.hcbinfo:not([open]) > summary,details.hcb-content.box.hcbtip:not([open]) > summary,details.hcb-content.box.hcbsuccess:not([open]) > summary,details.hcb-content.box.hcbquestion:not([open]) > summary,details.hcb-content.box.hcbwarning:not([open]) > summary,details.hcb-content.box.hcbfailure:not([open]) > summary,details.hcb-content.box.hcbdanger:not([open]) > summary,details.hcb-content.box.hcbbug:not([open]) > summary,details.hcb-content.box.hcbexample:not([open]) > summary,details.hcb-content.box.hcbquote:not([open]) > summary {
+  margin-bottom: 0;
+}
+div.hcb-content.hcb-block.hcbnote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbnote > summary {
+  background-color: #448aff1a;
+}
+div.hcb-content.hcb-block.hcbabstract > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbabstract > summary {
+  background-color: #00b0ff1a;
+}
+div.hcb-content.hcb-block.hcbinfo > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbinfo > summary {
+  background-color: #00b8d41a;
+}
+div.hcb-content.hcb-block.hcbtip > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbtip > summary {
+  background-color: #00bfa51a;
+}
+div.hcb-content.hcb-block.hcbsuccess > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbsuccess > summary {
+  background-color: #00c8531a;
+}
+div.hcb-content.hcb-block.hcbquestion > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquestion > summary {
+  background-color: #64dd171a;
+}
+div.hcb-content.hcb-block.hcbwarning > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbwarning > summary {
+  background-color: #ff91001a;
+}
+div.hcb-content.hcb-block.hcbfailure > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbfailure > summary {
+  background-color: #ff52521a;
+}
+div.hcb-content.hcb-block.hcbdanger > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbdanger > summary {
+  background-color: #ff17441a;
+}
+div.hcb-content.hcb-block.hcbbug > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbbug > summary {
+  background-color: #f500571a;
+}
+div.hcb-content.hcb-block.hcbexample > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbexample > summary {
+  background-color: #7c4dff1a;
+}
+div.hcb-content.hcb-block.hcbquote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquote > summary {
+  background-color: #9e9e9e1a;
+}
+div.hcb-content.hcb-block.hcbnote > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbnote > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #448aff;
+}
+div.hcb-content.hcb-block.hcbabstract > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbabstract > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00b0ff;
+}
+div.hcb-content.hcb-block.hcbinfo > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbinfo > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00b8d4;
+}
+div.hcb-content.hcb-block.hcbtip > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbtip > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00bfa5;
+}
+div.hcb-content.hcb-block.hcbsuccess > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbsuccess > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00c853;
+}
+div.hcb-content.hcb-block.hcbquestion > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbquestion > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #64dd17;
+}
+div.hcb-content.hcb-block.hcbwarning > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbwarning > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff9100;
+}
+div.hcb-content.hcb-block.hcbfailure > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbfailure > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff5252;
+}
+div.hcb-content.hcb-block.hcbdanger > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbdanger > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff1744;
+}
+div.hcb-content.hcb-block.hcbbug > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbbug > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #f50057;
+}
+div.hcb-content.hcb-block.hcbexample > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbexample > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #7c4dff;
+}
+div.hcb-content.hcb-block.hcbquote > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbquote > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #9e9e9e;
+}
+details.hcb-content.box.hcbnote > summary > div.hcb-box-open-button,details.hcb-content.box.hcbabstract > summary > div.hcb-box-open-button,details.hcb-content.box.hcbinfo > summary > div.hcb-box-open-button,details.hcb-content.box.hcbtip > summary > div.hcb-box-open-button,details.hcb-content.box.hcbsuccess > summary > div.hcb-box-open-button,details.hcb-content.box.hcbquestion > summary > div.hcb-box-open-button,details.hcb-content.box.hcbwarning > summary > div.hcb-box-open-button,details.hcb-content.box.hcbfailure > summary > div.hcb-box-open-button,details.hcb-content.box.hcbdanger > summary > div.hcb-box-open-button,details.hcb-content.box.hcbbug > summary > div.hcb-box-open-button,details.hcb-content.box.hcbexample > summary > div.hcb-box-open-button,details.hcb-content.box.hcbquote > summary > div.hcb-box-open-button {
+  float: right;
+}
+details.hcb-content.box.hcbnote > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbabstract > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbinfo > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbtip > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbsuccess > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbquestion > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbwarning > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbfailure > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbdanger > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbbug > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbexample > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbquote > summary > div.hcb-box-open-button > i {
+  margin: 0 0.6rem 0 0.6rem;
+  font-size: 0.7rem;
+  transition: transform 250ms
+}
+details.hcb-content.box.hcbnote:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbabstract:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbinfo:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbtip:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbsuccess:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquestion:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbwarning:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbfailure:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbdanger:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbbug:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbexample:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquote:not([open]) > summary > div.hcb-box-open-button i {
+  transform: rotate(270deg);
+}
+details.hcb-content.box.hcbnote[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbabstract[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbinfo[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbtip[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbsuccess[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquestion[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbwarning[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbfailure[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbdanger[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbbug[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbexample[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquote[open] > summary > div.hcb-box-open-button i {
+  transform: rotate(180deg);
+}
+details.hcb-content.box.hcbnote summary div.hcb-box-open-button i {
+  color: #448aff;
+}
+details.hcb-content.box.hcbabstract summary div.hcb-box-open-button i {
+  color: #00b0ff;
+}
+details.hcb-content.box.hcbinfo summary div.hcb-box-open-button i {
+  color: #00b8d4;
+}
+details.hcb-content.box.hcbtip summary div.hcb-box-open-button i {
+  color: #00bfa5;
+}
+details.hcb-content.box.hcbsuccess summary div.hcb-box-open-button i {
+  color: #00c853;
+}
+details.hcb-content.box.hcbquestion summary div.hcb-box-open-button i {
+  color: #64dd17;
+}
+details.hcb-content.box.hcbwarning summary div.hcb-box-open-button i {
+  color: #ff9100;
+}
+details.hcb-content.box.hcbfailure summary div.hcb-box-open-button i {
+  color: #ff5252;
+}
+details.hcb-content.box.hcbdanger summary div.hcb-box-open-button i {
+  color: #ff1744;
+}
+details.hcb-content.box.hcbbug summary div.hcb-box-open-button i {
+  color: #f50057;
+}
+details.hcb-content.box.hcbexample summary div.hcb-box-open-button i {
+  color: #7c4dff;
+}
+details.hcb-content.box.hcbquote summary div.hcb-box-open-button i {
+  color: #9e9e9e;
+}
+div.hcb-content.hcb-cards * {
+  box-sizing: border-box;
+}
+input.hcb-content.hcb-cards-input {
+  display: none;
+}
+div.hcb-content.hcb-cards-labels {
+  position: relative;
+  box-shadow: 0 -0.05rem #00000012 inset;
+  display: flex;
+  margin-bottom: 1.25rem;
+}
+div.hcb-content.hcb-cards-labels:before {
+  background: var(--cards-color);
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: translateX(var(--md-indicator-x));
+  transition: width 225ms, transform 250ms;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  width: var(--md-indicator-width);
+}
+label.hcb-content.hcb-cards-label {
+  border-bottom: 0.1rem solid #0000;
+  border-radius: 0.1rem 0.1rem 0 0;
+  cursor: pointer;
+  color: #0000008a;
+  font-size: 0.92em;
+  font-weight: 700;
+  padding: 0 1.25rem 0.625rem;
+  transition: color 250ms;
+}
+label.hcb-content.hcb-cards-label.active, label.hcb-content.hcb-cards-label:hover {
+  color: var(--cards-color);
+}
+div.hcb-content.hcb-cards-content {
+  display: none;
+}
+div.hcb-content.hcb-cards-content.active {
+  display: block;
+}
+</style>
+    <meta name="description" content="本文是成本效益分析的笔记，教材是 Suzanne Bonner 的「Social Cost Benefit Analysis and Economic Evaluation」">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cost Benefit Analysis 笔记">
+<meta property="og:url" content="https://oscarcx.com/econ/cost-benefit-analysis.html">
+<meta property="og:site_name" content="Cow">
+<meta property="og:description" content="本文是成本效益分析的笔记，教材是 Suzanne Bonner 的「Social Cost Benefit Analysis and Economic Evaluation」">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l4_1.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l5_1.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l5_2.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l5_3.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l5_4.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l5_5.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l5_6.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l5_7.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l5_8.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l5_9.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l5_10.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l5_11.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l7_1.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l7_2.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l7_3.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l7_4.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l7_5.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l7_6.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l7_7.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l7_8.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l10_1.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l10_2.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l10_3.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l10_4.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l10_5.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l11_1.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l11_2.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l11_3.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l11_4.png">
+<meta property="article:published_time" content="2024-02-21T15:00:00.000Z">
+<meta property="article:modified_time" content="2025-05-18T16:05:39.204Z">
+<meta property="article:author" content="oscarcx123">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l4_1.png">
+
+
+<link rel="canonical" href="https://oscarcx.com/econ/cost-benefit-analysis.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://oscarcx.com/econ/cost-benefit-analysis.html","path":"econ/cost-benefit-analysis.html","title":"Cost Benefit Analysis 笔记"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Cost Benefit Analysis 笔记 | Cow</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<style type="text/css">
+.spoiler {
+  display: inline;
+}
+p.spoiler {
+  display: flex;
+}
+.spoiler a {
+  pointer-events: none;
+}
+.spoiler-blur, .spoiler-blur > * {
+  transition: text-shadow .5s ease;
+}
+.spoiler .spoiler-blur, .spoiler .spoiler-blur > * {
+  color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  text-shadow: 0 0 10px grey;
+  cursor: pointer;
+}
+.spoiler .spoiler-blur:hover, .spoiler .spoiler-blur:hover > * {
+  text-shadow: 0 0 5px grey;
+}
+.spoiler-box, .spoiler-box > * {
+  transition: color .5s ease,
+  background-color .5s ease;
+}
+.spoiler .spoiler-box, .spoiler .spoiler-box > * {
+  color: black;
+  background-color: black;
+  text-shadow: none;
+}</style></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Cow</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#l1-intro-to-social-cba"><span class="nav-number">1.</span> <span class="nav-text"> L1 - Intro to Social CBA</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#l2-discounting-and-decision-rules"><span class="nav-number">2.</span> <span class="nav-text"> L2 - Discounting and Decision Rules</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#discounting-single-period"><span class="nav-number">2.1.</span> <span class="nav-text"> Discounting Single Period</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#discounting-multiple-periods"><span class="nav-number">2.2.</span> <span class="nav-text"> Discounting Multiple Periods</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#l3-discounting-continued"><span class="nav-number">3.</span> <span class="nav-text"> L3 - Discounting Continued</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#comparing-non-mutually-exclusive-projects"><span class="nav-number">3.1.</span> <span class="nav-text"> Comparing Non Mutually Exclusive Projects</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#comparing-projects-with-different-time-frames"><span class="nav-number">3.2.</span> <span class="nav-text"> Comparing Projects with Different Time Frames</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#equivalent-annual-net-benefit-method-eanb"><span class="nav-number">3.2.1.</span> <span class="nav-text"> Equivalent annual net benefit method (EANB)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#example-eanb-using-annuity-factors"><span class="nav-number">3.2.2.</span> <span class="nav-text"> Example EANB using Annuity Factors</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#roll-over-method"><span class="nav-number">3.3.</span> <span class="nav-text"> Roll-Over Method</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#terminal-horizon-values"><span class="nav-number">3.4.</span> <span class="nav-text"> Terminal (Horizon) Values</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#dealing-with-inflation"><span class="nav-number">3.5.</span> <span class="nav-text"> Dealing with Inflation</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#l4-standing-and-perspectives"><span class="nav-number">4.</span> <span class="nav-text"> L4 - Standing and Perspectives</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#four-perspectives"><span class="nav-number">4.1.</span> <span class="nav-text"> Four Perspectives</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#market-perspective-market-cba"><span class="nav-number">4.2.</span> <span class="nav-text"> Market Perspective (Market CBA)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#investor-perspective-private-cba"><span class="nav-number">4.3.</span> <span class="nav-text"> Investor Perspective (Private CBA)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#gearing-example"><span class="nav-number">4.4.</span> <span class="nav-text"> Gearing Example</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#gearing-example-2"><span class="nav-number">4.5.</span> <span class="nav-text"> Gearing Example 2</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#l5-predicting-and-monetising"><span class="nav-number">5.</span> <span class="nav-text"> L5 - Predicting and Monetising</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#kaldor-hicks-criterion"><span class="nav-number">5.1.</span> <span class="nav-text"> Kaldor-Hicks Criterion</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#evaluating-direct-market-impacts"><span class="nav-number">5.2.</span> <span class="nav-text"> Evaluating Direct Market Impacts</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#measuring-benefits-wtp"><span class="nav-number">5.3.</span> <span class="nav-text"> Measuring Benefits - WTP</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#measuring-costs-oc"><span class="nav-number">5.4.</span> <span class="nav-text"> Measuring Costs - OC</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#market-equilibrium-and-social-surplus"><span class="nav-number">5.5.</span> <span class="nav-text"> Market Equilibrium and Social Surplus</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#elasticity"><span class="nav-number">5.6.</span> <span class="nav-text"> Elasticity</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#government-surplus-intervening-in-markets"><span class="nav-number">5.7.</span> <span class="nav-text"> Government Surplus – Intervening in Markets</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#government-affecting-supply-in-an-output-market-wtp"><span class="nav-number">5.8.</span> <span class="nav-text"> Government Affecting Supply in an Output Market (WTP)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#gov-providing-the-good-or-service-to-the-market"><span class="nav-number">5.8.1.</span> <span class="nav-text"> Gov Providing the Good or Service to the Market</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#gov-reducing-the-cost-of-production"><span class="nav-number">5.8.2.</span> <span class="nav-text"> Gov Reducing the Cost of Production</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#government-controlling-the-price-of-a-good"><span class="nav-number">5.8.3.</span> <span class="nav-text"> Government Controlling the Price of a Good</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#government-purchasing-from-input-markets-oc"><span class="nav-number">5.9.</span> <span class="nav-text"> Government Purchasing from Input Markets (OC)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#change-in-total-social-surplus"><span class="nav-number">5.10.</span> <span class="nav-text"> Change in Total Social Surplus</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#l6-predicting-and-monetising-cont"><span class="nav-number">6.</span> <span class="nav-text"> L6 - Predicting and Monetising (cont.)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#predicting-vs-monetising"><span class="nav-number">6.1.</span> <span class="nav-text"> Predicting vs. Monetising</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#sources-of-errors-in-predicting-impacts"><span class="nav-number">6.2.</span> <span class="nav-text"> Sources of Errors in Predicting Impacts</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#benefit-value-transfers"><span class="nav-number">6.3.</span> <span class="nav-text"> Benefit Value Transfers</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#methods-to-predict-impacts"><span class="nav-number">6.4.</span> <span class="nav-text"> Methods to Predict Impacts</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#monetising"><span class="nav-number">6.5.</span> <span class="nav-text"> Monetising</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#problems-of-quantification"><span class="nav-number">6.6.</span> <span class="nav-text"> Problems of Quantification</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#l7-implementing-social-cba"><span class="nav-number">7.</span> <span class="nav-text"> L7 - Implementing Social CBA</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#material-inputs-outputs-with-indirect-tax"><span class="nav-number">7.1.</span> <span class="nav-text"> Material Inputs &#x2F; Outputs with Indirect Tax</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#material-inputs-outputs-with-subsidy"><span class="nav-number">7.2.</span> <span class="nav-text"> Material Inputs &#x2F; Outputs with Subsidy</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#calculating-taxes-and-subsidies"><span class="nav-number">7.3.</span> <span class="nav-text"> Calculating Taxes and Subsidies</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#monopoly-output"><span class="nav-number">7.4.</span> <span class="nav-text"> Monopoly Output</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#externalities"><span class="nav-number">7.5.</span> <span class="nav-text"> Externalities</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#asymmetric-information"><span class="nav-number">7.6.</span> <span class="nav-text"> Asymmetric Information</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#labour-input-with-minimum-wage"><span class="nav-number">7.7.</span> <span class="nav-text"> Labour Input with Minimum Wage</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#corrective-taxes-vs-distortionary-taxes"><span class="nav-number">7.8.</span> <span class="nav-text"> Corrective Taxes Vs Distortionary Taxes</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#corrective-tax"><span class="nav-number">7.9.</span> <span class="nav-text"> Corrective Tax</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#corrective-subsidy"><span class="nav-number">7.10.</span> <span class="nav-text"> Corrective Subsidy</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#l8-disaggregated-social-cba"><span class="nav-number">8.</span> <span class="nav-text"> L8 - Disaggregated Social CBA</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#disaggregating-benefits"><span class="nav-number">8.1.</span> <span class="nav-text"> Disaggregating Benefits</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#l9-ethical-and-social-issues-in-cba"><span class="nav-number">9.</span> <span class="nav-text"> L9 - Ethical and Social Issues in CBA</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#utilitarianism"><span class="nav-number">9.1.</span> <span class="nav-text"> Utilitarianism</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#deontological-ethics"><span class="nav-number">9.2.</span> <span class="nav-text"> Deontological Ethics</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#virtue-ethics"><span class="nav-number">9.3.</span> <span class="nav-text"> Virtue Ethics</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#comparison-of-ethical-theories"><span class="nav-number">9.4.</span> <span class="nav-text"> Comparison of Ethical Theories</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#l10-dealing-with-uncertainty-and-sensitivity-analysis"><span class="nav-number">10.</span> <span class="nav-text"> L10 - Dealing with Uncertainty and Sensitivity Analysis</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#uncertainty-and-risk"><span class="nav-number">10.1.</span> <span class="nav-text"> Uncertainty and Risk</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#expected-value"><span class="nav-number">10.2.</span> <span class="nav-text"> Expected Value</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#two-projects-with-different-degrees-of-risk"><span class="nav-number">10.3.</span> <span class="nav-text"> Two projects with Different Degrees of Risk</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#utility-and-risk-aversion"><span class="nav-number">10.4.</span> <span class="nav-text"> Utility and Risk Aversion</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#example"><span class="nav-number">10.4.1.</span> <span class="nav-text"> Example</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#theory-of-risk-aversion"><span class="nav-number">10.5.</span> <span class="nav-text"> Theory of Risk Aversion</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#sensitivity-analysis"><span class="nav-number">10.6.</span> <span class="nav-text"> Sensitivity Analysis</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#l11-non-market-valuation-methods"><span class="nav-number">11.</span> <span class="nav-text"> L11 - Non-Market Valuation Methods</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#total-economic-value"><span class="nav-number">11.1.</span> <span class="nav-text"> Total Economic Value</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#role-of-non-market-valuation"><span class="nav-number">11.2.</span> <span class="nav-text"> Role of Non-Market Valuation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#non-market-goods-and-services"><span class="nav-number">11.3.</span> <span class="nav-text"> Non-Market Goods and Services</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#non-market-valuation-methods"><span class="nav-number">11.4.</span> <span class="nav-text"> Non-Market Valuation Methods</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#benefit-value-transfers-2"><span class="nav-number">11.5.</span> <span class="nav-text"> Benefit Value Transfers</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#alternative-pricing-approaches"><span class="nav-number">11.6.</span> <span class="nav-text"> Alternative Pricing Approaches</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#indirect-market-methods"><span class="nav-number">11.6.1.</span> <span class="nav-text"> Indirect Market Methods</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#trade-off-method"><span class="nav-number">11.6.2.</span> <span class="nav-text"> Trade-Off Method</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#avoided-costs"><span class="nav-number">11.6.3.</span> <span class="nav-text"> Avoided Costs</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#revealed-preference-methods"><span class="nav-number">11.7.</span> <span class="nav-text"> Revealed Preference Methods</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#hedonic-pricing-method"><span class="nav-number">11.7.1.</span> <span class="nav-text"> Hedonic Pricing Method</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#travel-cost-method-tcm"><span class="nav-number">11.7.2.</span> <span class="nav-text"> Travel Cost Method (TCM)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#stated-preference-methods"><span class="nav-number">11.8.</span> <span class="nav-text"> Stated Preference Methods</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#contingent-valuation"><span class="nav-number">11.8.1.</span> <span class="nav-text"> Contingent Valuation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#discrete-choice-modelling"><span class="nav-number">11.8.2.</span> <span class="nav-text"> Discrete Choice Modelling</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#epilogue"><span class="nav-number">12.</span> <span class="nav-text"> Epilogue</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="oscarcx123"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">oscarcx123</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">32</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/oscarcx123" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;oscarcx123" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://oscarcx.com/econ/cost-benefit-analysis.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="oscarcx123">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Cow">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Cost Benefit Analysis 笔记 | Cow">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Cost Benefit Analysis 笔记
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2024-02-21 15:00:00" itemprop="dateCreated datePublished" datetime="2024-02-21T15:00:00+00:00">2024-02-21</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/econ/" itemprop="url" rel="index"><span itemprop="name">经济</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>8.3k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>28 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>本文是成本效益分析的笔记，教材是 Suzanne Bonner 的「Social Cost Benefit Analysis and Economic Evaluation」</p>
+<span id="more"></span>
+<h1 id="l1-intro-to-social-cba"><a class="markdownIt-Anchor" href="#l1-intro-to-social-cba"></a> L1 - Intro to Social CBA</h1>
+<p>Cost-Benefit Analysis (CBA) is: A process of identifying, measuring and comparing the social benefits and social costs of an investment project, program or policy intervention, from a public interest perspective.</p>
+<p><strong>Major Steps in a CBA</strong></p>
+<ul>
+<li>Specify the set of options</li>
+<li>Decide whose benefits and costs count</li>
+<li>Identify the impacts and select measurement indicators</li>
+<li>Predict the impacts over the life of the proposed regulation</li>
+<li>Monetise (attach dollar values to) impacts</li>
+<li>Discount future costs and benefits to obtain present values</li>
+<li>Compute the net present value of each option</li>
+<li>Perform sensitivity analysis</li>
+<li>Reach a conclusion</li>
+</ul>
+<p>Economic evaluations focus on <strong>societal perspective</strong></p>
+<p>A private or public sector project has implications for:</p>
+<ul>
+<li>Employment</li>
+<li>Government expenditure – provision of services</li>
+<li>The Economy</li>
+<li>The Environment</li>
+<li>Government revenue – taxes, charges</li>
+</ul>
+<p>Types of Market Failure</p>
+<ul>
+<li>Externalities</li>
+<li>Public goods</li>
+<li>Incomplete information</li>
+<li>Uncompetitive market structures</li>
+</ul>
+<p>Net Social Benefit (NSB) = Total Social Benefit - Total Social Cost</p>
+<ul>
+<li>NSB &gt; 0 improves welfare</li>
+<li>Larger NSB = more efficient resource allocation</li>
+<li>a potential Pareto improvement</li>
+</ul>
+<p>Types of CBA Analyses</p>
+<ul>
+<li>CBA is used for both prospective (appraisal) and retrospective (evaluation)</li>
+<li>Ex ante (or prospective) CBA
+<ul>
+<li>conducted prior to the decision to implement a new policy</li>
+<li>Ex ante analysis is most useful</li>
+</ul>
+</li>
+<li>Ex post (or retrospective) CBA
+<ul>
+<li>conducted at the end of the intervention and all of the</li>
+<li>effects have been realized</li>
+</ul>
+</li>
+<li>In medias res CBA
+<ul>
+<li>conducted during the intervention - after the decision to proceed, but before all impacts have occurred</li>
+<li>is continuation of this policy a good idea?</li>
+</ul>
+</li>
+<li>Comparative CBA
+<ul>
+<li>compares the ex ante analysis to an in medias res or ex post analysis of the same project (very few of these comparisons have been conducted)</li>
+</ul>
+</li>
+</ul>
+<p>Not all costs and benefits can be easily quantified in monetary terms</p>
+<h1 id="l2-discounting-and-decision-rules"><a class="markdownIt-Anchor" href="#l2-discounting-and-decision-rules"></a> L2 - Discounting and Decision Rules</h1>
+<p>shadow price: when market prices are adjusted to reflect true values</p>
+<p>The discount rate is <strong>NOT</strong> the inflation rate</p>
+<ul>
+<li>Discounting is based on the concept of <strong>time preference</strong></li>
+<li>Inflation refers to changes in prices over time</li>
+</ul>
+<h2 id="discounting-single-period"><a class="markdownIt-Anchor" href="#discounting-single-period"></a> Discounting Single Period</h2>
+<p>Future Value Analysis</p>
+<ul>
+<li>𝐹𝑉 = 𝑋(1 + 𝑖)</li>
+</ul>
+<p>Present Value Analysis</p>
+<ul>
+<li>PV = Y / (1 + i)</li>
+<li>Perpetuity PV = Y/i</li>
+</ul>
+<p>Net Present Value Analysis</p>
+<ul>
+<li>all the benefits (B) minus all costs (C) of a project (including the initial investment)</li>
+<li>NPV = PV(B) - PV(C)</li>
+</ul>
+<h2 id="discounting-multiple-periods"><a class="markdownIt-Anchor" href="#discounting-multiple-periods"></a> Discounting Multiple Periods</h2>
+<p>Projects Over Multiple Years</p>
+<ul>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mi>V</mi><mo>=</mo><mi>P</mi><mi>V</mi><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>i</mi><msup><mo stretchy="false">)</mo><mi>t</mi></msup></mrow><annotation encoding="application/x-tex">FV=PV(1+i)^{t}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="mopen">(</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.043556em;vertical-align:-0.25em;"></span><span class="mord mathnormal">i</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7935559999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">t</span></span></span></span></span></span></span></span></span></span></span></span></li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mi>V</mi><mo>=</mo><mfrac><mrow><mi>F</mi><mi>V</mi></mrow><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>i</mi><msup><mo stretchy="false">)</mo><mi>t</mi></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">PV=\frac{FV}{(1+i)^{t}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.392331em;vertical-align:-0.52em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.872331em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mopen mtight">(</span><span class="mord mtight">1</span><span class="mbin mtight">+</span><span class="mord mathnormal mtight">i</span><span class="mclose mtight"><span class="mclose mtight">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7253428571428571em;"><span style="top:-2.786em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">t</span></span></span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.13889em;">F</span><span class="mord mathnormal mtight" style="margin-right:0.22222em;">V</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.52em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></li>
+<li>Discount Factor (or PV factor) = <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>i</mi><msup><mo stretchy="false">)</mo><mi>t</mi></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">\frac{1}{(1+i)^{t}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.365108em;vertical-align:-0.52em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.845108em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mopen mtight">(</span><span class="mord mtight">1</span><span class="mbin mtight">+</span><span class="mord mathnormal mtight">i</span><span class="mclose mtight"><span class="mclose mtight">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7253428571428571em;"><span style="top:-2.786em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">t</span></span></span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.52em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></li>
+</ul>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mi>P</mi><mi>V</mi><mo>=</mo><msubsup><mo>∑</mo><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></msubsup><mfrac><mrow><mi>N</mi><mi>B</mi></mrow><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>i</mi><msup><mo stretchy="false">)</mo><mi>t</mi></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">NPV=\sum_{t=0}^{n}{\frac{NB}{(1+i)^{t}}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.392331em;vertical-align:-0.52em;"></span><span class="mop"><span class="mop op-symbol small-op" style="position:relative;top:-0.0000050000000000050004em;">∑</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.804292em;"><span style="top:-2.40029em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">t</span><span class="mrel mtight">=</span><span class="mord mtight">0</span></span></span></span><span style="top:-3.2029em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.29971000000000003em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.872331em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mopen mtight">(</span><span class="mord mtight">1</span><span class="mbin mtight">+</span><span class="mord mathnormal mtight">i</span><span class="mclose mtight"><span class="mclose mtight">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7253428571428571em;"><span style="top:-2.786em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">t</span></span></span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.10903em;">N</span><span class="mord mathnormal mtight" style="margin-right:0.05017em;">B</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.52em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
+<ul>
+<li>where NB (Net Benefit) = B - C</li>
+</ul>
+<p>Decision Rule</p>
+<ul>
+<li>NPV &gt; 0: Undertake (Accept)</li>
+<li>NPV &lt; 0: Reject</li>
+</ul>
+<p>Internal Rate of Return (IRR): The discount rate at which the NPV = 0</p>
+<ul>
+<li>Can have multiple solutions for IRR</li>
+</ul>
+<p>The IRR Decision Rule I</p>
+<ul>
+<li>IRR &gt; r: Accept</li>
+<li>IRR &lt; r: Reject</li>
+</ul>
+<p>Hurdle Rate</p>
+<ul>
+<li>the lowest rate of return a project or investment must achieve before a manager or investor deems it acceptable</li>
+<li>often used in the private sector / private perspective CBA</li>
+</ul>
+<p>Crossover Rate: the rate of return (or WACC) at which the NPV of two projects are equal</p>
+<p>Benefit-Cost Ratio (BCR): BCR = PV(B) / PV(C)</p>
+<ul>
+<li>Accept if BCR &gt;= 1</li>
+</ul>
+<h1 id="l3-discounting-continued"><a class="markdownIt-Anchor" href="#l3-discounting-continued"></a> L3 - Discounting Continued</h1>
+<p>Beginning of Year Discounting: <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mi>V</mi><mo>=</mo><mfrac><mrow><mi>F</mi><mi>V</mi></mrow><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>i</mi><msup><mo stretchy="false">)</mo><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">PV=\frac{FV}{(1+i)^{t-1}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.392331em;vertical-align:-0.52em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.872331em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mopen mtight">(</span><span class="mord mtight">1</span><span class="mbin mtight">+</span><span class="mord mathnormal mtight">i</span><span class="mclose mtight"><span class="mclose mtight">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7463142857142857em;"><span style="top:-2.786em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">t</span><span class="mbin mtight">−</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.13889em;">F</span><span class="mord mathnormal mtight" style="margin-right:0.22222em;">V</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.52em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></p>
+<p>Mid-Year Discounting: <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mi>V</mi><mo>=</mo><mfrac><mrow><mi>F</mi><mi>V</mi></mrow><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>i</mi><msup><mo stretchy="false">)</mo><mrow><mi>t</mi><mo>−</mo><mn>0.5</mn></mrow></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">PV=\frac{FV}{(1+i)^{t-0.5}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.392331em;vertical-align:-0.52em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.872331em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mopen mtight">(</span><span class="mord mtight">1</span><span class="mbin mtight">+</span><span class="mord mathnormal mtight">i</span><span class="mclose mtight"><span class="mclose mtight">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7463142857142857em;"><span style="top:-2.786em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">t</span><span class="mbin mtight">−</span><span class="mord mtight">0</span><span class="mord mtight">.</span><span class="mord mtight">5</span></span></span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.13889em;">F</span><span class="mord mathnormal mtight" style="margin-right:0.22222em;">V</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.52em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></p>
+<p>The End of Year Discounting result is more conservative.</p>
+<h2 id="comparing-non-mutually-exclusive-projects"><a class="markdownIt-Anchor" href="#comparing-non-mutually-exclusive-projects"></a> Comparing Non Mutually Exclusive Projects</h2>
+<table>
+<thead>
+<tr>
+<th>Project</th>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+<th>D</th>
+<th>E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PV Capital Cost</td>
+<td>400</td>
+<td>500</td>
+<td>300</td>
+<td>150</td>
+<td>100</td>
+</tr>
+<tr>
+<td>PV Ongoing Cost</td>
+<td>50</td>
+<td>25</td>
+<td>30</td>
+<td>10</td>
+<td>10</td>
+</tr>
+<tr>
+<td>PV Benefits</td>
+<td>1000</td>
+<td>1200</td>
+<td>200</td>
+<td>300</td>
+<td>125</td>
+</tr>
+<tr>
+<td>Net Benefits (NPV)</td>
+<td>550</td>
+<td>675</td>
+<td>-130</td>
+<td>140</td>
+<td>15</td>
+</tr>
+<tr>
+<td>NB/PV(CapCost)</td>
+<td>1.38</td>
+<td>1.35</td>
+<td>-0.43</td>
+<td>0.93</td>
+<td>0.15</td>
+</tr>
+<tr>
+<td>Rank</td>
+<td>1</td>
+<td>2</td>
+<td>5</td>
+<td>3</td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+<p>Rank using ratio of net benefit to capital cost</p>
+<p>Different budgets:</p>
+<ul>
+<li>$900 - A + B</li>
+<li>$1000 - A + B + E</li>
+<li>$500 - B (&gt; A + E)</li>
+</ul>
+<h2 id="comparing-projects-with-different-time-frames"><a class="markdownIt-Anchor" href="#comparing-projects-with-different-time-frames"></a> Comparing Projects with Different Time Frames</h2>
+<h3 id="equivalent-annual-net-benefit-method-eanb"><a class="markdownIt-Anchor" href="#equivalent-annual-net-benefit-method-eanb"></a> Equivalent annual net benefit method (EANB)</h3>
+<p><strong>Equivalent annual net benefit (EANB)</strong> identifies a yearly annuity received for the life of a project.</p>
+<ul>
+<li>It is possible to convert any given amount or, any cash flow into an annuity</li>
+</ul>
+<p>EANB = NPV / Annuity Factor (AF)</p>
+<p><strong>Annuity Factor</strong>: the sum of the discount factors over the life of the project where the stream of net benefits follows a fixed annuity format</p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mi>F</mi><mo>=</mo><mfrac><mn>1</mn><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>d</mi><mi>r</mi><msup><mo stretchy="false">)</mo><mi>t</mi></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">DF = \frac{1}{(1+dr)^t}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.365108em;vertical-align:-0.52em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.845108em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mopen mtight">(</span><span class="mord mtight">1</span><span class="mbin mtight">+</span><span class="mord mathnormal mtight">d</span><span class="mord mathnormal mtight" style="margin-right:0.02778em;">r</span><span class="mclose mtight"><span class="mclose mtight">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7253428571428571em;"><span style="top:-2.786em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mathnormal mtight">t</span></span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.52em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></p>
+<table>
+<thead>
+<tr>
+<th>Year</th>
+<th>Net Benefit</th>
+<th>DF</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>-800</td>
+<td></td>
+</tr>
+<tr>
+<td>1</td>
+<td>400</td>
+<td>0.9434</td>
+</tr>
+<tr>
+<td>2</td>
+<td>400</td>
+<td>0.89</td>
+</tr>
+<tr>
+<td>3</td>
+<td>400</td>
+<td>0.8396</td>
+</tr>
+</tbody>
+</table>
+<p>Therefore, AF = 2.6730</p>
+<p>Since this is a geometric series, we can also calculate with the following formula</p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mi>F</mi><mo>=</mo><mfrac><mrow><mn>1</mn><mo>−</mo><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>d</mi><mi>r</mi><msup><mo stretchy="false">)</mo><mo>−</mo></msup><mi>t</mi></mrow><mrow><mi>d</mi><mi>r</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">AF = \frac{1-(1+dr)^-t}{dr}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.423365em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.078365em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">d</span><span class="mord mathnormal mtight" style="margin-right:0.02778em;">r</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.485em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span><span class="mbin mtight">−</span><span class="mopen mtight">(</span><span class="mord mtight">1</span><span class="mbin mtight">+</span><span class="mord mathnormal mtight">d</span><span class="mord mathnormal mtight" style="margin-right:0.02778em;">r</span><span class="mclose mtight"><span class="mclose mtight">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8476642857142858em;"><span style="top:-2.931em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mbin mtight">−</span></span></span></span></span></span></span></span><span class="mord mathnormal mtight">t</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></p>
+<p>NPV = $269.20</p>
+<p>EANB = 296.20 / 2.6730 = 100.71 per year</p>
+<p>If annuity in perpetuity: AF = 1 / dr</p>
+<p>Pros of EANB</p>
+<ul>
+<li>it annualizes the NPV allowing for a per year net social benefit comparison between projects on a per year common metric</li>
+<li>results in a consistent decision when comparing projects with unequal lives</li>
+</ul>
+<p>Limitation</p>
+<ul>
+<li>project comparison is the selection of the discount rate</li>
+</ul>
+<h3 id="example-eanb-using-annuity-factors"><a class="markdownIt-Anchor" href="#example-eanb-using-annuity-factors"></a> Example EANB using Annuity Factors</h3>
+<p>Project A is a solar farm. It has NPV of $20 and a life of 25 years</p>
+<p>Project B is a hydroelectric plant has a NPV $30 million and continues in perpetuity</p>
+<p>The annuity factor, at 4 percent is:</p>
+<ul>
+<li>15.62 for 25 year project</li>
+<li>25 for perpetuity</li>
+</ul>
+<p>EANB A = 20/15.62 = 1.28 million</p>
+<p>EANB B =30/25 = 1.20 million</p>
+<p>If the projects are mutually exclusive, project A should be selected as it has a higher EANB</p>
+<h2 id="roll-over-method"><a class="markdownIt-Anchor" href="#roll-over-method"></a> Roll-Over Method</h2>
+<p>Project X – has a life of six years, an initial cost of $60,000 and a yearly net benefit stream of $15,000</p>
+<p>Project Y – has a life of three years, an initial cost of $40,000 and a yearly net benefit stream of $20,000</p>
+<p>Assuming dr = 6%</p>
+<table>
+<thead>
+<tr>
+<th>Year</th>
+<th>Project X</th>
+<th>Project Y</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>($60,000)</td>
+<td>($40,000)</td>
+</tr>
+<tr>
+<td>1</td>
+<td>$15,000</td>
+<td>$20,000</td>
+</tr>
+<tr>
+<td>2</td>
+<td>$15,000</td>
+<td>$20,000</td>
+</tr>
+<tr>
+<td>3</td>
+<td>$15,000</td>
+<td>$20,000</td>
+</tr>
+<tr>
+<td>4</td>
+<td>$15,000</td>
+<td>($20,000)</td>
+</tr>
+<tr>
+<td>5</td>
+<td>$15,000</td>
+<td>$20,000</td>
+</tr>
+<tr>
+<td>6</td>
+<td>$15,000</td>
+<td>$20,000</td>
+</tr>
+</tbody>
+</table>
+<p>Note: Project Y Year 4 = -$40000 + $20000</p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mi>P</mi><msub><mi>V</mi><mrow><mi>r</mi><mi>o</mi><mi>l</mi><mi>l</mi><mi>o</mi><mi>v</mi><mi>e</mi><mi>r</mi></mrow></msub><mo>=</mo><mi>N</mi><mi>P</mi><msub><mi>V</mi><mn>1</mn></msub><mo>+</mo><mo>∑</mo><mfrac><mrow><mi>N</mi><mi>P</mi><msub><mi>V</mi><mn>1</mn></msub></mrow><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>d</mi><mi>r</mi><msup><mo stretchy="false">)</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo>−</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">NPV_{roll over}=NPV_1+\sum\frac{NPV_1}{(1+dr)^{(t-n)}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:-0.22222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.02778em;">r</span><span class="mord mathnormal mtight">o</span><span class="mord mathnormal mtight" style="margin-right:0.01968em;">l</span><span class="mord mathnormal mtight" style="margin-right:0.01968em;">l</span><span class="mord mathnormal mtight">o</span><span class="mord mathnormal mtight" style="margin-right:0.03588em;">v</span><span class="mord mathnormal mtight">e</span><span class="mord mathnormal mtight" style="margin-right:0.02778em;">r</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.22222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.4488559999999997em;vertical-align:-0.560425em;"></span><span class="mop op-symbol small-op" style="position:relative;top:-0.0000050000000000050004em;">∑</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8884309999999999em;"><span style="top:-2.614575em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mopen mtight">(</span><span class="mord mtight">1</span><span class="mbin mtight">+</span><span class="mord mathnormal mtight">d</span><span class="mord mathnormal mtight" style="margin-right:0.02778em;">r</span><span class="mclose mtight"><span class="mclose mtight">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8220357142857143em;"><span style="top:-2.8220357142857138em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5357142857142856em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mopen mtight">(</span><span class="mord mathnormal mtight">t</span><span class="mbin mtight">−</span><span class="mord mathnormal mtight">n</span><span class="mclose mtight">)</span></span></span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.4101em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.10903em;">N</span><span class="mord mathnormal mtight" style="margin-right:0.13889em;">P</span><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.22222em;">V</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31731428571428577em;"><span style="top:-2.357em;margin-left:-0.22222em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.560425em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></p>
+<ul>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mi>P</mi><msub><mi>V</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">NPV_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.22222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> = initial NPV of the project for the normal life span</li>
+<li>dr = discount rate</li>
+<li>t = total number of periods required for the roll-over</li>
+<li>n = initial project duration</li>
+</ul>
+<p>NPV_X = $13,759.86</p>
+<p>NPV_Y = $13,460.24 + $13,460.24/(1.06)^3 = $24,761.72</p>
+<h2 id="terminal-horizon-values"><a class="markdownIt-Anchor" href="#terminal-horizon-values"></a> Terminal (Horizon) Values</h2>
+<p>The costs or benefits associated with a project <strong>may continue years into the<br />
+future beyond the project scope</strong></p>
+<p>Horizon Values</p>
+<ul>
+<li>considers cost / benefit far future seperately
+<ul>
+<li>in some cases the scrap value is used as the horizon value</li>
+</ul>
+</li>
+<li>long &quot;near future&quot; discounting period
+<ul>
+<li>= assuming a zero horizon value</li>
+</ul>
+</li>
+</ul>
+<p>If horizon value is perpetuity: PV = FV / dr</p>
+<h2 id="dealing-with-inflation"><a class="markdownIt-Anchor" href="#dealing-with-inflation"></a> Dealing with Inflation</h2>
+<p>nominal dollars - nominal discount rate</p>
+<p>real dollars - real discount rate</p>
+<p>Real interest rate: r = (i - m) / (1 + m)</p>
+<ul>
+<li>r = the real interest rate</li>
+<li>i = nominal interest rate</li>
+<li>m = inflation rate</li>
+</ul>
+<p>Example: If the nominal interest rate is 5% and the inflation rate is 2% then the real interest rate is?</p>
+<p>r = (0.05 - 0.02) / (1 + 0.02) = 2.94%</p>
+<h1 id="l4-standing-and-perspectives"><a class="markdownIt-Anchor" href="#l4-standing-and-perspectives"></a> L4 - Standing and Perspectives</h1>
+<h2 id="four-perspectives"><a class="markdownIt-Anchor" href="#four-perspectives"></a> Four Perspectives</h2>
+<p>Market Perspective (cash flow for the overall project)</p>
+<ul>
+<li>at market prices</li>
+<li>irrespective of who the gainers or losers are</li>
+<li>ignores market failures and market distortions</li>
+</ul>
+<p>Private firm / Investor Perspective</p>
+<ul>
+<li>Firms are profit maximisers</li>
+<li>Interested in their own profitability</li>
+<li>Costs are outflows of cash to a business at market prices.</li>
+<li>Benefits are inflows at market prices.</li>
+<li>Uses market perspective and accounts for loans, interest paid, depreciation and taxes.</li>
+</ul>
+<p>Social Perspective</p>
+<ul>
+<li>All impacts from a policy, program, or project must be accounted for in the analysis</li>
+<li>Shadow prices are used to reflect the true value of goods and services</li>
+</ul>
+<p>Distributional / Disaggregated Social Perceptive</p>
+<ul>
+<li>Distribution of the benefits/costs
+<ul>
+<li>disaggregating the results to the various stakeholders with standing.</li>
+</ul>
+</li>
+<li><strong>Kaldor-Hick Criterion</strong>: a policy is more efficient as long as there is a net gain to society as this enables compensation between winners and losers of a project, resulting in a net gain to society</li>
+</ul>
+<h2 id="market-perspective-market-cba"><a class="markdownIt-Anchor" href="#market-perspective-market-cba"></a> Market Perspective (Market CBA)</h2>
+<p>The market perspective will account for <strong>tangible</strong> market transactions</p>
+<ul>
+<li><strong>initial investment costs</strong> to implement or start a project including working capital,</li>
+<li><strong>salvage / horizon</strong> values and</li>
+<li>ongoing <strong>benefits</strong> and <strong>costs</strong> that accrue over the life of the project</li>
+<li>All financial inflows and outflows</li>
+<li><strong>All measured using market prices</strong></li>
+</ul>
+<p>Deriving Market Perspective</p>
+<ul>
+<li><strong>Inflation</strong>
+<ul>
+<li>Use constant prices with a real discount rate (otherwise, nominal prices with nominal interest rate).</li>
+<li>If the prices you are using do not contain inflation then you cannot use a market based discount rate.</li>
+</ul>
+</li>
+<li><strong>Incremental rather than total cash flow?</strong>
+<ul>
+<li>Consider when to use ‘with project’ less ‘without project’ cash flow.</li>
+</ul>
+</li>
+<li><strong>Depreciation</strong> excluded from market perspective cost to avoid double counting (discussed last week).</li>
+<li><strong>Horizon Value</strong>, ‘Scrap Value’ or ‘Salvage’ added to cash flow in last year</li>
+<li><strong>Working capital</strong> appear under investment costs at beginning and end of project
+<ul>
+<li>Only account for <strong>changes</strong> in working capital</li>
+<li>Must be reversed out at the end of the project</li>
+</ul>
+</li>
+<li><strong>Interest</strong> on debt <strong>excluded</strong> from market perspective to avoid double counting</li>
+<li><strong>Sunk Costs</strong> are ignored
+<ul>
+<li>already incurred</li>
+<li>cannot change past decisions</li>
+<li>no opportunity costs involved</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l4_1.png" alt="" /></p>
+<h2 id="investor-perspective-private-cba"><a class="markdownIt-Anchor" href="#investor-perspective-private-cba"></a> Investor Perspective (Private CBA)</h2>
+<p>Deriving Investor Perspective</p>
+<ul>
+<li>The investor or private perspective refers to cash flow to the individual investor engaged in project
+<ul>
+<li>at market prices</li>
+<li>after allowing for loan service costs</li>
+<li>after payment of profits taxes</li>
+</ul>
+</li>
+<li>Costs are outflows of cash to a business at market prices.</li>
+<li>Benefits are inflows at market prices.</li>
+<li>Uses market perspective and accounts for loans, interest paid, depreciation and taxes.</li>
+<li>We <strong>subtract</strong> from the Market Perspective:
+<ul>
+<li>Debt/financing inflows and outflows to creditors.</li>
+<li>Taxes paid to government</li>
+</ul>
+</li>
+<li>The remaining net benefit is the return to the investor from the <strong>investor’s own funds</strong> or <strong>‘equity’</strong>
+<ul>
+<li>Market cash flow minus debt cash flow = cash flow on equity (before tax)</li>
+<li>Cash flow on equity is the residual: what is left over after servicing debt</li>
+</ul>
+</li>
+<li>The two items that are not part of the project’s market cash flow that enter into the calculation</li>
+<li><strong>taxable profits</strong> are:
+<ul>
+<li><strong>depreciation</strong></li>
+<li><strong>interest on debt</strong></li>
+<li>Note: should be added to the <strong>operating costs</strong></li>
+</ul>
+</li>
+</ul>
+<p>After Tax Cash Flow</p>
+<ul>
+<li>Profit before tax = Revenue – Operating Costs – Depreciation – Interest Paid</li>
+<li>Equity after tax = Net Private Benefit – Taxes Liable</li>
+</ul>
+<p>Note: Ensure to subtract any loan repayments from the net private benefit (market benefit – loan repayments)</p>
+<h2 id="gearing-example"><a class="markdownIt-Anchor" href="#gearing-example"></a> Gearing Example</h2>
+<p><strong>Gearing</strong>: the relationship / ratio of a company's debt-to-equity (D/E) ratio</p>
+<table>
+<thead>
+<tr>
+<th>Year</th>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Net Benefit (Market)</td>
+<td>-5,000</td>
+<td>1,150</td>
+<td>1,150</td>
+<td>1,150</td>
+<td>1,150</td>
+<td>1,650</td>
+</tr>
+<tr>
+<td>Loan (Principal + Interest)</td>
+<td>-2,500</td>
+<td>554</td>
+<td>554</td>
+<td>554</td>
+<td>554</td>
+<td>554</td>
+</tr>
+<tr>
+<td>Net Private Benefit (Equity)</td>
+<td>-2,500</td>
+<td>596</td>
+<td>596</td>
+<td>596</td>
+<td>596</td>
+<td>1,096</td>
+</tr>
+</tbody>
+</table>
+<p>Notice that:</p>
+<ul>
+<li>Market Net Benefit = Debt Finance + private Equity</li>
+<li>IRR Market ≠ IRR Debt + IRR Equity</li>
+</ul>
+<p>In this example:</p>
+<ul>
+<li>IRR Market = 7.51%</li>
+<li>IRR Debt = 3.50%</li>
+<li>IRR on Market = proportion of debt × IRR Debt + proportion of equity × IRR Equity</li>
+<li>7.51% = 0.5 × 3.5% + 0.5 × IRR Equity</li>
+<li>IRR Equity = 5.76%</li>
+</ul>
+<h2 id="gearing-example-2"><a class="markdownIt-Anchor" href="#gearing-example-2"></a> Gearing Example 2</h2>
+<p>Assume the debt-to-equity ratio is $60:$40. If the Market IRR = 10%, and cost of debt = 5%. What is the IRR on equity (approx.)?</p>
+<p>IRR on Market CBA = 0.6(IRR on debt) + 0.4(IRR on equity)</p>
+<p>10% = 0.6(5%) + 0.4x</p>
+<p>IRR on equity = x = 7/0.4 = 17.5% (approx.)</p>
+<h1 id="l5-predicting-and-monetising"><a class="markdownIt-Anchor" href="#l5-predicting-and-monetising"></a> L5 - Predicting and Monetising</h1>
+<p>CBA allows you to select policies which achieve <strong>allocative (Pareto) efficiency</strong> from a set of potential projects</p>
+<ul>
+<li>Allocative efficiency is where social surplus is maximised</li>
+<li>no one can be made better off without making someone else worse off</li>
+</ul>
+<h2 id="kaldor-hicks-criterion"><a class="markdownIt-Anchor" href="#kaldor-hicks-criterion"></a> Kaldor-Hicks Criterion</h2>
+<p>Mutually exclusive projects – select largest NSB as it provides the largest gain to society</p>
+<p>Potential Pareto Improvement is NSB &gt; 0 – winners compensate losers</p>
+<p>Kaldor-Hicks compensation: those who are made better off by a policy or project could <strong>in theory</strong> compensate those who are made worse off if NSB&gt;0</p>
+<ul>
+<li>produces a pareto improvement</li>
+<li>If compensation occurs, leads to actual Pareto improvement</li>
+<li>Actual compensation does not actually have to occur</li>
+</ul>
+<p>Limitations</p>
+<ul>
+<li>Compensation does not actually occur</li>
+<li>Does not consider relative wealth position</li>
+<li>Must be able to approximate WTP/WTA
+<ul>
+<li>Willingness to Pay / Willingness to Accept</li>
+</ul>
+</li>
+</ul>
+<h2 id="evaluating-direct-market-impacts"><a class="markdownIt-Anchor" href="#evaluating-direct-market-impacts"></a> Evaluating Direct Market Impacts</h2>
+<p>In a perfectly competitive market, the allocation is Pareto optimal</p>
+<ul>
+<li>MSB = MSC</li>
+<li>in efficient markets</li>
+</ul>
+<p>Impacts on social surplus - evaluate the effects in markets<br />
+associated with a policy or project</p>
+<p>Changes in social surplus:</p>
+<ul>
+<li>Basis for measuring costs and benefits</li>
+<li>Opportunity cost to value inputs that polices have diverted from other uses.</li>
+<li>Willingness to Pay to value outputs</li>
+</ul>
+<p>Outputs = Benefits, Inputs = Costs</p>
+<ul>
+<li>depending on the policy there will be effects on the input and output markets</li>
+</ul>
+<p><strong>Shadow prices</strong> are required when there are <strong>market distortions</strong> or market failure</p>
+<ul>
+<li>Represent the true value of the good or service</li>
+</ul>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi><mi>S</mi><mi>S</mi><mo>=</mo><mi>δ</mi><mi>S</mi><msub><mi>S</mi><mrow><mi>o</mi><mi>u</mi><mi>t</mi><mi>p</mi><mi>u</mi><mi>t</mi></mrow></msub><mo>+</mo><mi>δ</mi><mi>S</mi><msub><mi>S</mi><mrow><mi>i</mi><mi>n</mi><mi>p</mi><mi>u</mi><mi>t</mi></mrow></msub></mrow><annotation encoding="application/x-tex">\delta SS=\delta SS_{output}+\delta SS_{input}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.03785em;">δ</span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.980548em;vertical-align:-0.286108em;"></span><span class="mord mathnormal" style="margin-right:0.03785em;">δ</span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.28055599999999997em;"><span style="top:-2.5500000000000003em;margin-left:-0.05764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">o</span><span class="mord mathnormal mtight">u</span><span class="mord mathnormal mtight">t</span><span class="mord mathnormal mtight">p</span><span class="mord mathnormal mtight">u</span><span class="mord mathnormal mtight">t</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.980548em;vertical-align:-0.286108em;"></span><span class="mord mathnormal" style="margin-right:0.03785em;">δ</span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:-0.05764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mord mathnormal mtight">n</span><span class="mord mathnormal mtight">p</span><span class="mord mathnormal mtight">u</span><span class="mord mathnormal mtight">t</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span></p>
+<ul>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi><mi>S</mi><msub><mi>S</mi><mrow><mi>o</mi><mi>u</mi><mi>t</mi><mi>p</mi><mi>u</mi><mi>t</mi></mrow></msub></mrow><annotation encoding="application/x-tex">\delta SS_{output}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.980548em;vertical-align:-0.286108em;"></span><span class="mord mathnormal" style="margin-right:0.03785em;">δ</span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.28055599999999997em;"><span style="top:-2.5500000000000003em;margin-left:-0.05764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">o</span><span class="mord mathnormal mtight">u</span><span class="mord mathnormal mtight">t</span><span class="mord mathnormal mtight">p</span><span class="mord mathnormal mtight">u</span><span class="mord mathnormal mtight">t</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span> = change in social surplus in the <strong>output</strong> market</li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi><mi>S</mi><msub><mi>S</mi><mrow><mi>i</mi><mi>n</mi><mi>p</mi><mi>u</mi><mi>t</mi></mrow></msub></mrow><annotation encoding="application/x-tex">\delta SS_{input}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.980548em;vertical-align:-0.286108em;"></span><span class="mord mathnormal" style="margin-right:0.03785em;">δ</span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:-0.05764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mord mathnormal mtight">n</span><span class="mord mathnormal mtight">p</span><span class="mord mathnormal mtight">u</span><span class="mord mathnormal mtight">t</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span> = change in social surplus in the <strong>input</strong> market</li>
+<li><strong>Benefits</strong> are measured from <strong>output</strong> markets</li>
+<li><strong>Costs</strong> are measured from <strong>input</strong> markets</li>
+</ul>
+<h2 id="measuring-benefits-wtp"><a class="markdownIt-Anchor" href="#measuring-benefits-wtp"></a> Measuring Benefits - WTP</h2>
+<p>Benefits are measured by willingness-to-pay (WTP) in the<br />
+output market</p>
+<ul>
+<li>WTP = D = MB</li>
+<li>P decrease -&gt; CS increase</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l5_1.png" alt="" /></p>
+<h2 id="measuring-costs-oc"><a class="markdownIt-Anchor" href="#measuring-costs-oc"></a> Measuring Costs - OC</h2>
+<p>costs are measured by opportunity costs</p>
+<ul>
+<li>These are the costs of implementing a policy or project</li>
+<li>Cost of Production = Opportunity Cost
+<ul>
+<li>Resources that could have been used to produce other goods and services</li>
+</ul>
+</li>
+<li>Economic Rent = Producer Surplus
+<ul>
+<li>Producer surplus is the gain to suppliers of a good or service in the form of economic rent</li>
+</ul>
+</li>
+<li>OC = S = MC</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l5_2.png" alt="" /></p>
+<h2 id="market-equilibrium-and-social-surplus"><a class="markdownIt-Anchor" href="#market-equilibrium-and-social-surplus"></a> Market Equilibrium and Social Surplus</h2>
+<p>Perfectly competitive markets are also Kaldor-Hicks efficient (ΔSS = ΔCS + ΔPS)</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l5_3.png" alt="" /></p>
+<h2 id="elasticity"><a class="markdownIt-Anchor" href="#elasticity"></a> Elasticity</h2>
+<p>Relative elasticities will influence the results of a intervention in a market</p>
+<p>Elasticity changes as we move along a single curve</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l5_4.png" alt="" /></p>
+<h2 id="government-surplus-intervening-in-markets"><a class="markdownIt-Anchor" href="#government-surplus-intervening-in-markets"></a> Government Surplus – Intervening in Markets</h2>
+<p>ΔSS = ΔCS + ΔPS + ΔGS</p>
+<ul>
+<li>ΔCS = change in consumer surplus</li>
+<li>ΔPS = change in producer surplus</li>
+<li>ΔGS = change in government surplus</li>
+<li>If the ΔSS &gt; 0, the project should be undertaken</li>
+</ul>
+<p>For output markets we consider the following:</p>
+<ul>
+<li>Government providing the good or service to the market</li>
+<li>Government reducing the cost of production</li>
+<li>Government controlling the price of a good</li>
+</ul>
+<p>For input market, the government purchases the input which affects the demand</p>
+<h2 id="government-affecting-supply-in-an-output-market-wtp"><a class="markdownIt-Anchor" href="#government-affecting-supply-in-an-output-market-wtp"></a> Government Affecting Supply in an Output Market (WTP)</h2>
+<h3 id="gov-providing-the-good-or-service-to-the-market"><a class="markdownIt-Anchor" href="#gov-providing-the-good-or-service-to-the-market"></a> Gov Providing the Good or Service to the Market</h3>
+<p>Perfectly Elastic Demand</p>
+<ul>
+<li>Government supplies q’</li>
+<li>Consumer surplus is unchanged (zero)</li>
+<li>Producer surplus is unchanged</li>
+<li>Government surplus is equal to q’ × P<sub>1</sub></li>
+<li>Market price is unchanged</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l5_5.png" alt="" /></p>
+<p>General Case</p>
+<ul>
+<li>Government supplies q’</li>
+<li>Consumer surplus increases</li>
+<li>Producer surplus decreases (crowded out)</li>
+<li>Government surplus is equal to q’ × P<sub>2</sub></li>
+<li>Market price falls</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l5_6.png" alt="" /></p>
+<p>Perfectly Inelastic Supply</p>
+<ul>
+<li>Government supplies q’</li>
+<li>Consumer surplus increases</li>
+<li>Producer surplus decreases</li>
+<li>Government surplus is equal to q’ × P<sub>2</sub></li>
+<li>Market price falls</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l5_7.png" alt="" /></p>
+<h3 id="gov-reducing-the-cost-of-production"><a class="markdownIt-Anchor" href="#gov-reducing-the-cost-of-production"></a> Gov Reducing the Cost of Production</h3>
+<p>General Case</p>
+<ul>
+<li>Government reduces marginal cost</li>
+<li>Consumer surplus increases</li>
+<li>Producer surplus increases (due to lower MC)</li>
+<li>Government surplus is unchanged (no cost to government)</li>
+<li>Market price falls</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l5_8.png" alt="" /></p>
+<h3 id="government-controlling-the-price-of-a-good"><a class="markdownIt-Anchor" href="#government-controlling-the-price-of-a-good"></a> Government Controlling the Price of a Good</h3>
+<p>Examples include:</p>
+<ul>
+<li>Price Ceilings (maximum price of bread)</li>
+<li>Price Floors (minimum wages)</li>
+</ul>
+<p>These interventions are complex and can create market failures</p>
+<h2 id="government-purchasing-from-input-markets-oc"><a class="markdownIt-Anchor" href="#government-purchasing-from-input-markets-oc"></a> Government Purchasing from Input Markets (OC)</h2>
+<p>Horizontal Supply</p>
+<ul>
+<li>Government demands q′ units</li>
+<li>Government expenditure increases by q′ × P<sub>1</sub></li>
+<li>No change in consumer surplus</li>
+<li>No change in producer surplus (zero)</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l5_9.png" alt="" /></p>
+<p>Vertical Supply</p>
+<ul>
+<li>Government demands q′ units</li>
+<li>Price increases from P<sub>1</sub> to P<sub>2</sub></li>
+<li>No change in consumer surplus</li>
+<li>Producer surplus increases</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l5_10.png" alt="" /></p>
+<p>General Case</p>
+<ul>
+<li>Government demands q′ units</li>
+<li>Consumers of the input lose B + D</li>
+<li>Producers gain B + D + G</li>
+<li>Government expenditure D + E + F + G + H + I</li>
+<li><strong>Net social cost</strong> is D + E + F + I + H
+<ul>
+<li>This is the opportunity cost!</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l5_11.png" alt="" /></p>
+<p>If the cost to the government is close to the opportunity cost, we can use the government expenditure to value the impact in the input market</p>
+<p>If the cost is not close to the government expenditure, you can create a “<strong>Shadow Price</strong>” which is the average of the new price and the old price.</p>
+<h2 id="change-in-total-social-surplus"><a class="markdownIt-Anchor" href="#change-in-total-social-surplus"></a> Change in Total Social Surplus</h2>
+<p>To evaluate the effects of a policy or project on the markets involve, we can look at the change in total social surplus</p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>S</mi><mi>S</mi><mo>=</mo><munder><munder><mrow><mi mathvariant="normal">Δ</mi><mi>S</mi><msub><mi>S</mi><mrow><mi>o</mi><mi>u</mi><mi>t</mi><mi>p</mi><mi>u</mi><mi>t</mi></mrow></msub></mrow><mo stretchy="true">⏟</mo></munder><mrow><mi mathvariant="normal">Δ</mi><mi>C</mi><mi>S</mi><mo>+</mo><mi mathvariant="normal">Δ</mi><mi>P</mi><mi>S</mi><mo>+</mo><mi mathvariant="normal">Δ</mi><mi>G</mi><mi>S</mi></mrow></munder><mo>+</mo><munder><munder><mrow><mi mathvariant="normal">Δ</mi><mi>S</mi><msub><mi>S</mi><mrow><mi>i</mi><mi>n</mi><mi>p</mi><mi>u</mi><mi>t</mi></mrow></msub></mrow><mo stretchy="true">⏟</mo></munder><mrow><mi mathvariant="normal">Δ</mi><mi>C</mi><mi>S</mi><mo>+</mo><mi mathvariant="normal">Δ</mi><mi>P</mi><mi>S</mi><mo>+</mo><mi mathvariant="normal">Δ</mi><mi>G</mi><mi>S</mi></mrow></munder></mrow><annotation encoding="application/x-tex">\Delta SS = \underbrace{\Delta SS_{output}}_{\Delta CS+\Delta PS+\Delta GS} + \underbrace{\Delta SS_{input}}_{\Delta CS+\Delta PS+\Delta GS}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord">Δ</span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.3541em;vertical-align:-1.67077em;"></span><span class="mord munder"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.6833299999999998em;"><span style="top:-1.3875609999999998em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">Δ</span><span class="mord mathnormal mtight" style="margin-right:0.07153em;">C</span><span class="mord mathnormal mtight" style="margin-right:0.05764em;">S</span><span class="mbin mtight">+</span><span class="mord mtight">Δ</span><span class="mord mathnormal mtight" style="margin-right:0.13889em;">P</span><span class="mord mathnormal mtight" style="margin-right:0.05764em;">S</span><span class="mbin mtight">+</span><span class="mord mtight">Δ</span><span class="mord mathnormal mtight">G</span><span class="mord mathnormal mtight" style="margin-right:0.05764em;">S</span></span></span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord munder"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.68333em;"><span class="svg-align" style="top:-2.065892em;"><span class="pstrut" style="height:3em;"></span><span class="stretchy" style="height:0.548em;min-width:1.6em;"><span class="brace-left" style="height:0.548em;"><svg width='400em' height='0.548em' viewBox='0 0 400000 548' preserveAspectRatio='xMinYMin slice'><path d='M0 6l6-6h17c12.688 0 19.313.3 20 1 4 4 7.313 8.3 10 13
+ 35.313 51.3 80.813 93.8 136.5 127.5 55.688 33.7 117.188 55.8 184.5 66.5.688
+ 0 2 .3 4 1 18.688 2.7 76 4.3 172 5h399450v120H429l-6-1c-124.688-8-235-61.7
+-331-161C60.687 138.7 32.312 99.3 7 54L0 41V6z'/></svg></span><span class="brace-center" style="height:0.548em;"><svg width='400em' height='0.548em' viewBox='0 0 400000 548' preserveAspectRatio='xMidYMin slice'><path d='M199572 214
+c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
+ 53.3-86.7 123.7-153 211-199 66.7-36 137.3-56.3 212-62h199568v120H200432c-178.3
+ 11.7-311.7 78.3-403 201-6 8-9.7 12-11 12-.7.7-6.7 1-18 1s-17.3-.3-18-1c-1.3 0
+-5-4-11-12-44.7-59.3-101.3-106.3-170-141s-145.3-54.3-229-60H0V214z'/></svg></span><span class="brace-right" style="height:0.548em;"><svg width='400em' height='0.548em' viewBox='0 0 400000 548' preserveAspectRatio='xMaxYMin slice'><path d='M399994 0l6 6v35l-6 11c-56 104-135.3 181.3-238 232-57.3
+ 28.7-117 45-179 50H-300V214h399897c43.3-7 81-15 113-26 100.7-33 179.7-91 237
+-174 2.7-5 6-9 10-13 .7-1 7.3-1 20-1h17z'/></svg></span></span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">Δ</span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.28055599999999997em;"><span style="top:-2.5500000000000003em;margin-left:-0.05764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">o</span><span class="mord mathnormal mtight">u</span><span class="mord mathnormal mtight">t</span><span class="mord mathnormal mtight">p</span><span class="mord mathnormal mtight">u</span><span class="mord mathnormal mtight">t</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.934108em;"><span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.67077em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:2.3541em;vertical-align:-1.67077em;"></span><span class="mord munder"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.6833299999999998em;"><span style="top:-1.3875609999999998em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">Δ</span><span class="mord mathnormal mtight" style="margin-right:0.07153em;">C</span><span class="mord mathnormal mtight" style="margin-right:0.05764em;">S</span><span class="mbin mtight">+</span><span class="mord mtight">Δ</span><span class="mord mathnormal mtight" style="margin-right:0.13889em;">P</span><span class="mord mathnormal mtight" style="margin-right:0.05764em;">S</span><span class="mbin mtight">+</span><span class="mord mtight">Δ</span><span class="mord mathnormal mtight">G</span><span class="mord mathnormal mtight" style="margin-right:0.05764em;">S</span></span></span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord munder"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.68333em;"><span class="svg-align" style="top:-2.065892em;"><span class="pstrut" style="height:3em;"></span><span class="stretchy" style="height:0.548em;min-width:1.6em;"><span class="brace-left" style="height:0.548em;"><svg width='400em' height='0.548em' viewBox='0 0 400000 548' preserveAspectRatio='xMinYMin slice'><path d='M0 6l6-6h17c12.688 0 19.313.3 20 1 4 4 7.313 8.3 10 13
+ 35.313 51.3 80.813 93.8 136.5 127.5 55.688 33.7 117.188 55.8 184.5 66.5.688
+ 0 2 .3 4 1 18.688 2.7 76 4.3 172 5h399450v120H429l-6-1c-124.688-8-235-61.7
+-331-161C60.687 138.7 32.312 99.3 7 54L0 41V6z'/></svg></span><span class="brace-center" style="height:0.548em;"><svg width='400em' height='0.548em' viewBox='0 0 400000 548' preserveAspectRatio='xMidYMin slice'><path d='M199572 214
+c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
+ 53.3-86.7 123.7-153 211-199 66.7-36 137.3-56.3 212-62h199568v120H200432c-178.3
+ 11.7-311.7 78.3-403 201-6 8-9.7 12-11 12-.7.7-6.7 1-18 1s-17.3-.3-18-1c-1.3 0
+-5-4-11-12-44.7-59.3-101.3-106.3-170-141s-145.3-54.3-229-60H0V214z'/></svg></span><span class="brace-right" style="height:0.548em;"><svg width='400em' height='0.548em' viewBox='0 0 400000 548' preserveAspectRatio='xMaxYMin slice'><path d='M399994 0l6 6v35l-6 11c-56 104-135.3 181.3-238 232-57.3
+ 28.7-117 45-179 50H-300V214h399897c43.3-7 81-15 113-26 100.7-33 179.7-91 237
+-174 2.7-5 6-9 10-13 .7-1 7.3-1 20-1h17z'/></svg></span></span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">Δ</span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:-0.05764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mord mathnormal mtight">n</span><span class="mord mathnormal mtight">p</span><span class="mord mathnormal mtight">u</span><span class="mord mathnormal mtight">t</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.934108em;"><span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.67077em;"><span></span></span></span></span></span></span></span></span></p>
+<p>Overall we have seen that the change in total social surplus will determine if a policy is welfare improving</p>
+<h1 id="l6-predicting-and-monetising-cont"><a class="markdownIt-Anchor" href="#l6-predicting-and-monetising-cont"></a> L6 - Predicting and Monetising (cont.)</h1>
+<h2 id="predicting-vs-monetising"><a class="markdownIt-Anchor" href="#predicting-vs-monetising"></a> Predicting vs. Monetising</h2>
+<p>One of the most crucial aspects of a CBA involves the assessing, <strong>predicting</strong> and <strong>monetising</strong> of impacts for consideration in a policy, program or project</p>
+<ul>
+<li><strong>Prediction</strong> concerns <strong>identifying</strong> the impacts that will occur in the future</li>
+<li><strong>Monetising</strong> is <strong>quantifying</strong> the predictions in a common currency metric</li>
+</ul>
+<h2 id="sources-of-errors-in-predicting-impacts"><a class="markdownIt-Anchor" href="#sources-of-errors-in-predicting-impacts"></a> Sources of Errors in Predicting Impacts</h2>
+<p>Three major sources of <strong>error</strong> must be confronted:</p>
+<p><strong>Omission errors</strong>, the exclusion of impacts with substantial costs and benefits, prevent CBAs from being comprehensive</p>
+<ul>
+<li>How large would the monetized value of excluded impact have to be to <strong>change the sign</strong> of NB?</li>
+</ul>
+<p><strong>Forecasting errors</strong> arise simply because we cannot predict the future with certainty</p>
+<ul>
+<li>Psychological biases: <strong>overly optimistic</strong>
+<ul>
+<li>e.g. Brisbane airport link</li>
+</ul>
+</li>
+<li>Forecasts of infrastructure projects for <strong>resources</strong> may be too low</li>
+<li>Forecasts of regulatory impacts may fail to anticipate <strong>offsetting behaviours</strong>
+<ul>
+<li>e.g. Alcopop tax designed to reduce teenage binge drinking</li>
+<li>e.g. War on Bikies</li>
+</ul>
+</li>
+</ul>
+<p><strong>Valuation errors</strong> occur because we often do not have confident estimates of appropriate shadow prices for converting each predicted impact into an <strong>opportunity cost or a willingness to pay</strong></p>
+<ul>
+<li>e.g. value of lost habitat, national pride, safety</li>
+</ul>
+<p>CBA analysts should <strong>anticipate the errors</strong> inherent in their efforts and consciously assess them to the greatest extent possible</p>
+<p>CBA must be effectively and independently <strong>’de-biased’</strong> before serving as a basis for decision making.</p>
+<h2 id="benefit-value-transfers"><a class="markdownIt-Anchor" href="#benefit-value-transfers"></a> Benefit Value Transfers</h2>
+<p>Step 1 – identify whether existing studies or values can be used as part of the transfer method</p>
+<p>Step 2 – decide whether the existing values from the study are appropriate for use in the CBA under consideration</p>
+<p>Step 3 – evaluate the quality of the research being used as part of the transfer</p>
+<p>Step 4 – make any appropriate adjustments to reflect the true value of the impact under consideration in the CBA</p>
+<h2 id="methods-to-predict-impacts"><a class="markdownIt-Anchor" href="#methods-to-predict-impacts"></a> Methods to Predict Impacts</h2>
+<p><strong>(1) Simplify by Predicting Incremental Impacts Relative to the Status Quo</strong></p>
+<ul>
+<li>Impacts are predicted relative to the <strong>status quo</strong>.</li>
+<li>Analysts need not assess impacts that will be the same under an alternative policy as the status quo.</li>
+<li>Suppose alternative criminal justice policy uses the same real resources as the status quo policy: incremental resources would be zero. For example - Speed limits, drinking age</li>
+</ul>
+<p><strong>(2) Predict Using Data from an On-Going Policies or Projects</strong></p>
+<ul>
+<li>Sometimes the relevant policy questions are whether a policy in place should be <strong>continued, terminated, or replicated</strong>.</li>
+<li>Inferences about impacts of the <strong>on-going policy</strong> can sometimes serve as the basis for predicting impacts to inform answers to the policy questions.</li>
+<li>When data on a policy is available, we “look back (make inferences) to look forward (make predictions).”</li>
+<li>The best basis for prediction usually comes from inferences drawn from an <strong>experimental design</strong> with random assignment of subjects into treatment and control groups.
+<ul>
+<li>e.g. training programs</li>
+</ul>
+</li>
+<li>More often, inferences must be made in the absence of a true control group through a <strong>quasi-experimental design</strong>.</li>
+<li>These designs address the fundamental question about the <strong>observed</strong> impacts of a policy:
+<ul>
+<li>what would have happened in the absence of the policy?</li>
+</ul>
+</li>
+<li>Sometimes the only available comparison may be statistics on the general population or findings from research done for other purposes.
+<ul>
+<li>Consider intervention program aimed at supporting patients with schizophrenia in community – no explicit control or comparison group.</li>
+<li>The suicide risk or hospital utilization rates for schizophrenics may be drawn from the medical literature and compared to those observed for the policy being assessed.</li>
+</ul>
+</li>
+</ul>
+<p><strong>(3) Predict on the Basis of a Similar Policy or a Series of Similar Policies</strong></p>
+<ul>
+<li><strong>Benefit transfer method</strong>.</li>
+<li>An evaluation of a <strong>policy similar to the one being analyzed</strong> may be available.</li>
+<li>Its value as a basis for prediction depends on <strong>how closely it matches the policy being considered</strong> and how well the evaluation was executed.
+<ul>
+<li>Quality of source, assumptions, time frame, setting</li>
+</ul>
+</li>
+</ul>
+<p>(3) Questions to ask:</p>
+<ul>
+<li>Does the policy have the same underlying model?
+<ul>
+<li>Usually, only comparisons of policies with the same underlying model will be appropriate.</li>
+</ul>
+</li>
+<li>How closely do the details of the policies conform?
+<ul>
+<li>Even if the underlying models are the same, the details of the policy may differ in terms of types and intensity of intervention.</li>
+</ul>
+</li>
+<li>What is the quality of the evaluation of the similar policy?
+<ul>
+<li>Is it based on an experiment? If not, does the quasi-experimental design provide a good basis for inference?</li>
+</ul>
+</li>
+</ul>
+<p>(3) Limitations of single study evaluations</p>
+<ul>
+<li>Even when its evaluation design is sound, basing prediction on a <strong>single study risks</strong> predictions of effects that are too extreme for several reasons.</li>
+<li>Because of the <strong>bias of academic journals</strong> to publish studies with statistically significant results, there may be other studies that did not find statistically significant effects. Consequently, the one published study may show an unrepresentative effect.</li>
+<li>People tend to bring <strong>cognitive biases</strong> to their decision making, including forecasting, that tend to lead to overoptimistic predictions. This <strong>optimism bias</strong> should be guarded against by analysts when they are predicting the consequences of policies they favor.
+<ul>
+<li>e.g. Brisbane airport link tunnel</li>
+<li>Some analysts routinely discount the size of effects from studies in which the evaluator was closely associated with the design or implementation of the program.</li>
+</ul>
+</li>
+</ul>
+<p><strong>(4) Predictions Based on Meta-Analyses of Similar Policies</strong></p>
+<ul>
+<li>A <strong>meta-analysis</strong> is a study that uses a series of previous studies – highlighting the differences and similarities.</li>
+<li><strong>Meta-analysis</strong>, seeks to use the information in the studies to find an effect size and its variation. Another <strong>Benefit transfer method</strong>.</li>
+<li>Drawing information from <strong>multiple evaluations</strong> reduces the chances that the overall result will suffer from the limitations of any one of the evaluations.</li>
+<li>When multiple evaluations are relevant to predicting impacts in the CBA it is worth considering investing resources into a meta-analysis due to the <strong>wealth of information</strong>.</li>
+<li>Often meta analysis is done on price elasticities before their use in a CBA.<br />
+For example, meta-analyses are available for the price elasticity of fuel, residential water use, electricity, and cigarettes.</li>
+<li>A policy may effectively <strong>change the price of a good</strong>.</li>
+<li>Absent relevant evaluations of the policy itself, it may be possible to <strong>predict impacts using elasticities</strong>.</li>
+<li>A price elasticity of demand for the good could then be used to predict a change in the quantity of the good consumed.
+<ul>
+<li>Elasticities have been used a lot in <strong>environmental and social interventions</strong> such as air pollution, noise pollution, environmental conservation, drug interventions etc.</li>
+<li><strong>Helps estimate the WTP</strong> for the policy or program of interest without starting from scratch</li>
+</ul>
+</li>
+</ul>
+<p>(4) Meta-analyses have the following elements:</p>
+<ul>
+<li>Deep is identification of relevant past research
+<ul>
+<li>Social scientists often limit their reviews to published evaluations</li>
+<li>Cost-benefit analysts often expand their coverage to unpublished studies to find more evaluations relevant to newer policies or to counter publication bias</li>
+<li>i.e., limiting publication to studies with statistically significant results</li>
+</ul>
+</li>
+<li>Standardisation of the effect size to a common metric such as dollars, percentages, standard deviations to enable comparisons
+<ul>
+<li>Application of a standardized measure of <strong>size effect</strong> to facilitated comparisons across studies.</li>
+<li>e.g., a meta-analysis of educational interventions might convert the gains in different achievement tests to changes in standard deviations.</li>
+</ul>
+</li>
+</ul>
+<p><strong>(5) Consult Experts</strong></p>
+<ul>
+<li>Sometimes it is just <strong>not possible</strong> to find any quantitative evidence to help predict an impact.</li>
+<li>As a prediction must be made—excluding the impact is equivalent to predicting it is zero with certainty—one must turn to logic and theory to identify its <strong>plausible range</strong>.</li>
+<li>It may be able to obtain advice to help you make <strong>guesstimates from experts</strong> who have developed tacit knowledge from their experience.</li>
+<li>Remember there are <strong>issues of bias with this method</strong> (under or over estimating is likely)</li>
+<li>Experts may have <strong>rules-of-thumb</strong> that help them make reasonable predictions about impacts.</li>
+<li>There may be value in <strong>consulting multiple experts</strong> in a systematic way.</li>
+<li>The best-know approach for doing this is the Delphi Method. It requires participation by a number of experts.
+<ul>
+<li>Derive mean/median score</li>
+</ul>
+</li>
+</ul>
+<h2 id="monetising"><a class="markdownIt-Anchor" href="#monetising"></a> Monetising</h2>
+<ul>
+<li>After predicting the impacts, we then need to monetize the impacts.</li>
+<li>Monetising is <strong>quantifying</strong> the predictions in a common currency metric.
+<ul>
+<li>This allows for <strong>direct comparison</strong> of the costs and benefits associated with a project.</li>
+<li>The majority of costs and benefits encountered in a project will <strong>conform</strong> to quantification</li>
+</ul>
+</li>
+<li>At this stage we apply the fundamental principles of willingness-to-pay and opportunity cost we have learned so far in the course.</li>
+<li>Monetising when Impacts Change Quantities Consumed in Markets
+<ul>
+<li>Estimated demand and supply schedules to facilitate application of methods</li>
+<li>For distorted or missing markets, analysts must find appropriate <strong>shadow prices</strong></li>
+</ul>
+</li>
+</ul>
+<h2 id="problems-of-quantification"><a class="markdownIt-Anchor" href="#problems-of-quantification"></a> Problems of Quantification</h2>
+<p>For a given project it is likely to be difficult to quantify all aspects of that project.<br />
+A number of key challenges often exist in attempting to obtain and apply values to certain<br />
+costs and benefits associated with a project.</p>
+<p>Possible cause of quantification problems:</p>
+<ul>
+<li><strong>absence</strong> of a working market</li>
+<li><strong>market failures</strong></li>
+<li><strong>distortions</strong> due to government interventions</li>
+</ul>
+<p><strong>(1) Absence of markets for a cost or benefit</strong></p>
+<ul>
+<li>For example, consider a road improvement project which is estimated to result in a <strong>reduction in fatalities</strong> on a section of road which averages 10 deaths per year.</li>
+<li>Problem:
+<ul>
+<li>how to apply a monetary value to the lives saved from the road improvement.</li>
+<li>What value would you apply to a life?</li>
+<li>Hint: use Benefit Value Transfers</li>
+</ul>
+</li>
+</ul>
+<p><strong>(2) No appropriate market value exists due to market failure or distortions</strong></p>
+<ul>
+<li>Consider the value of an acre of park land</li>
+<li>It has a market value, equal to the current market valuation for an acre of land in a particular geographical location.</li>
+<li>However, this <strong>market value does not reflect</strong> that this may be the only park within a 10 mile radius, and that the park may be a habitat to rare wildlife.</li>
+<li>The market value therefore represents an inappropriate valuation of the parkland.</li>
+</ul>
+<h1 id="l7-implementing-social-cba"><a class="markdownIt-Anchor" href="#l7-implementing-social-cba"></a> L7 - Implementing Social CBA</h1>
+<p><strong>Shadow Pricing Decisions</strong></p>
+<ul>
+<li>In <strong>competitive market</strong> equilibrium there is <strong>only one price</strong> as determined by the intersection of supply and demand curves</li>
+<li>When markets are <strong>distorted</strong> there are <strong>two prices</strong>: one reflecting demand conditions (Pb) and one reflecting supply conditions (Ps)</li>
+<li><strong>Shadow Pricing</strong> - adjusting observed market prices to reflect marginal benefit or cost to economy in CBA evaluations</li>
+<li>Shadow Pricing in Social CBA - The CBA analyst has to <strong>decide</strong> whether Pb or Ps is the <strong>appropriate price</strong> to value output or input in the CBA.</li>
+</ul>
+<p><strong>Types of Distorted Markets</strong></p>
+<ul>
+<li>Monopoly</li>
+<li>Distortive Taxes</li>
+<li>Distortive Subsidies</li>
+<li>Information Asymmetries</li>
+<li>Public Goods</li>
+<li>Externalities</li>
+<li>Corrective Taxes and Subsidies</li>
+<li>Monopsony</li>
+<li>Labour Markets with Minimum Wages</li>
+</ul>
+<p><strong>General Rules</strong></p>
+<ul>
+<li>Output markets:
+<ul>
+<li>If the intervention causes the availability of the output to increase – use WTP</li>
+<li>If the intervention decreases the availability of the output for use by others to (diverting use) – use OC</li>
+</ul>
+</li>
+<li>Input Markets:
+<ul>
+<li>If the intervention causes the availability of the input to increases – OC</li>
+<li>If the intervention decreases availability of the input for use by others (diverting use) - WTP</li>
+</ul>
+</li>
+</ul>
+<h2 id="material-inputs-outputs-with-indirect-tax"><a class="markdownIt-Anchor" href="#material-inputs-outputs-with-indirect-tax"></a> Material Inputs / Outputs with Indirect Tax</h2>
+<p>In a perfectly competitive market, we would face supply curve S and demand curve D</p>
+<ul>
+<li>Equilibrium Price and Quantity would be P<sub>1</sub> and Q<sub>1</sub> respectively</li>
+<li>Implementing an ad valorem (proportional tax) decreases the supply to S<sub>tax</sub></li>
+<li>Per unit tax amount is P<sub>b</sub> - P<sub>s</sub></li>
+<li>The area of A + B is the revenue for the tax</li>
+<li>C + D is the deadweight loss caused by the tax (hence distortionary)</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l7_1.png" alt="" /></p>
+<p>Input Market:</p>
+<ul>
+<li>If the number of additional units sourced increases use Ps (the OC)</li>
+<li>If input diverted from use by other users, use Pb (the WTP)</li>
+</ul>
+<p>Output Market:</p>
+<ul>
+<li>If output satisfying additional demand, use Pb (the WTP)</li>
+<li>If output replaces other suppliers use Ps (the OC)</li>
+</ul>
+<h2 id="material-inputs-outputs-with-subsidy"><a class="markdownIt-Anchor" href="#material-inputs-outputs-with-subsidy"></a> Material Inputs / Outputs with Subsidy</h2>
+<p>The aim of a subsidy is to lower the market price</p>
+<ul>
+<li>Supply curve S represents the marginal cost of producing the good or service</li>
+<li>The supply to customers is S<sub>subsidy</sub> which captures the cost of production minus the subsidy paid by the government</li>
+<li>The area of A + B + C + D + E + F + G + H is the expenditure by the government</li>
+<li>E + F is social deadweight loss (market distortion)</li>
+<li>Choice of P<sub>b</sub> or P<sub>s</sub> relies on whether it is an input or output market</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l7_2.png" alt="" /></p>
+<p>Input Market:</p>
+<ul>
+<li>If the production of the market increases to meet the additional demand, use P<sub>s</sub> (the OC)</li>
+<li>If the availability of the input is diverted from other users, use P<sub>b</sub> (the WTP)</li>
+</ul>
+<p>Output Market:</p>
+<ul>
+<li>If output increases such that it satisfies additional demand, use P<sub>b</sub> (the WTP)</li>
+<li>If output replacing other suppliers, use P<sub>s</sub> (the OC)</li>
+</ul>
+<h2 id="calculating-taxes-and-subsidies"><a class="markdownIt-Anchor" href="#calculating-taxes-and-subsidies"></a> Calculating Taxes and Subsidies</h2>
+<p>Taxes and subsidies drive a wedge between the price the buyer pays, P<sub>b</sub>, and the price the seller receives, P<sub>s</sub>:</p>
+<ul>
+<li>For an ad valorem tax: P<sub>b</sub> = P<sub>s</sub>(1+t), i.e. P<sub>b</sub> &gt; P<sub>s</sub></li>
+<li>For a specific tax: P<sub>b</sub> = P<sub>s</sub> + t, i.e. P<sub>b</sub> &gt; P<sub>s</sub></li>
+<li>For an ad valorem subsidy: P<sub>b</sub> = P<sub>s</sub>(1-s), i.e. P<sub>b</sub> = P<sub>s</sub> - P<sub>s.s</sub>, i.e. P<sub>b</sub> &lt; P<sub>s</sub></li>
+<li>For a specific subsidy: P<sub>b</sub> = P<sub>s</sub> - s, i.e. P<sub>b</sub> &lt; P<sub>s</sub></li>
+</ul>
+<h2 id="monopoly-output"><a class="markdownIt-Anchor" href="#monopoly-output"></a> Monopoly Output</h2>
+<ul>
+<li>If the government is purchasing the good from the monopoly output market use P<sub>m</sub></li>
+<li>If the government intervention increases the production of the monopoly output use P<sub>1</sub></li>
+<li>In between P<sub>m</sub> and P<sub>1</sub> when production is increased but not by the full amount</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l7_3.png" alt="" /></p>
+<h2 id="externalities"><a class="markdownIt-Anchor" href="#externalities"></a> Externalities</h2>
+<p>The shadow price that should be used is the one that captures the true value of the good or service.</p>
+<ul>
+<li>Negative Externality: In this instance it would be the point where MSC = MB (shown in graph)</li>
+<li>Positive Externality: In this instance it would be the point where MC = MSB</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l7_4.png" alt="" /></p>
+<h2 id="asymmetric-information"><a class="markdownIt-Anchor" href="#asymmetric-information"></a> Asymmetric Information</h2>
+<p>Market prices value for outputs (or inputs) inaccurately in a cost-benefit analysis.</p>
+<p>The type of asymmetric information will determine the shadow price used.</p>
+<ul>
+<li>Search and experience goods can be resolved at P<sub>1</sub></li>
+<li>Credence goods are complicated</li>
+<li>Search costs can be calculated</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l7_5.png" alt="" /></p>
+<h2 id="labour-input-with-minimum-wage"><a class="markdownIt-Anchor" href="#labour-input-with-minimum-wage"></a> Labour Input with Minimum Wage</h2>
+<p>A minimum wage (eg. an award wage) creates a market distortion which results in excess supply of labour (unemployment)</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l7_6.png" alt="" /></p>
+<p>The market equilibrium is determined by the quantity of labour demanded at the minimum wage. At this equilibrium quantity there are, in effect, two prices of labour:</p>
+<ul>
+<li>the price indicated by the demand curve (P<sub>M</sub> the minimum wage)</li>
+<li>the price indicated by the supply curve (P<sub>OC</sub> the reservation wage - the wage required to induce an extra unit of supply)</li>
+</ul>
+<p>Due to the higher wage Pm</p>
+<ul>
+<li>only Q<sub>d</sub> is demanded</li>
+<li>Q<sub>s</sub> is supplied by workers</li>
+</ul>
+<p>The difference between Q<sub>2</sub> and Q<sub>3</sub> is unemployment (involuntary)</p>
+<p>If a firm higher workers at Pm it affects their value of marginal product of labour (VMP)</p>
+<p>What wage do we use in the social CBA?</p>
+<ul>
+<li>Opportunity Costs! (the value of the labour in the next alternative use)</li>
+<li>shadow price = P<sub>OC</sub> (If the workers are hired from the pooled of unemployed people)</li>
+<li>shadow price = P<sub>M</sub> (If the labour was employed elsewhere)</li>
+</ul>
+<p>If the labour is receiving unemployment benefits, the shadow price should capture</p>
+<ul>
+<li>P<sub>OC</sub>: the opportunity cost to the economy</li>
+<li>The subsidy received to the worker (in the form of the benefit)</li>
+</ul>
+<h2 id="corrective-taxes-vs-distortionary-taxes"><a class="markdownIt-Anchor" href="#corrective-taxes-vs-distortionary-taxes"></a> Corrective Taxes Vs Distortionary Taxes</h2>
+<p>Taxes and subsidies change economic behaviour:</p>
+<ul>
+<li>A tax (subsidy) on a commodity reduces (increases) quantity traded in the market place.</li>
+<li>The effect of a tax or subsidy is usually seen as distorting economic behaviour
+<ul>
+<li>i.e., moving the economy further away from the point at which MSB = MSC.</li>
+</ul>
+</li>
+<li>However, some taxes are <strong>corrective</strong> (Pigovian taxes)</li>
+</ul>
+<p>Taxes are designed to <strong>counter the negative effects</strong> on the efficiency of resource allocation resulting from missing or incomplete markets</p>
+<ul>
+<li>e.g., taxes on alcohol and tobacco are intended to <strong>discourage</strong> over-consumption from a social point of view.</li>
+<li>Other examples:
+<ul>
+<li>petrol excise</li>
+<li>carbon tax</li>
+<li>subsidies on flu vaccinations</li>
+</ul>
+</li>
+</ul>
+<p>When a project <strong>output increases in availability</strong>, or when a project <strong>input is diverted from current uses</strong>, the appropriate price is a point on a <strong>demand curve</strong>.</p>
+<p>When a project <strong>output diverts the consumption of the output by others</strong>, or when a project <strong>input increases the availability</strong>, the appropriate price is a point on a <strong>supply curve</strong>.</p>
+<p>We usually consider taxes and subsidies to be <strong>distortionary</strong> unless we have specific information to the contrary.</p>
+<h2 id="corrective-tax"><a class="markdownIt-Anchor" href="#corrective-tax"></a> Corrective Tax</h2>
+<p>If the <strong>corrective tax is set at the efficient level</strong> it is equal to the marginal external cost. The following shadow price rules apply:</p>
+<ul>
+<li>In input markets a corrective tax should use P<sub>b</sub> (e.g. petrol)</li>
+<li>In output markets a corrective tax should be P<sub>s</sub> (e.g. tobacco)</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l7_7.png" alt="" /></p>
+<h2 id="corrective-subsidy"><a class="markdownIt-Anchor" href="#corrective-subsidy"></a> Corrective Subsidy</h2>
+<p>If the corrective subsidy is set at the efficient level it is equal to the marginal external benefit. The following shadow price rules apply:</p>
+<ul>
+<li>In input markets a corrective subsidy should use P<sub>s</sub></li>
+<li>In output markets a corrective subsidy should be P<sub>b</sub></li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l7_8.png" alt="" /></p>
+<h1 id="l8-disaggregated-social-cba"><a class="markdownIt-Anchor" href="#l8-disaggregated-social-cba"></a> L8 - Disaggregated Social CBA</h1>
+<p>Why Disaggregated Social CBA?</p>
+<ul>
+<li>A Market evaluation will only capture benefits and costs which are fully measured by market prices</li>
+<li>It <strong>fails to capture various public interest</strong> aspects of a project
+<ul>
+<li>employment benefits</li>
+<li>indirect tax revenue changes</li>
+<li>pollution costs</li>
+</ul>
+</li>
+<li>An social perspective does not provide the information on <strong>who the benefits accrue to</strong></li>
+</ul>
+<h2 id="disaggregating-benefits"><a class="markdownIt-Anchor" href="#disaggregating-benefits"></a> Disaggregating Benefits</h2>
+<p>How do we identify the various categories of disaggregated net benefits?</p>
+<ul>
+<li>Follow the financial flows
+<ul>
+<li>division of project profits between group members</li>
+<li>identify direct and indirect tax flows</li>
+<li>e.g. business income tax, sales tax, tariffs</li>
+</ul>
+</li>
+<li>Learn from the shadow-prices
+<ul>
+<li>where there is a shadow-price the Market analysis has failed to pick up an social net benefit that must be assigned to various groups</li>
+</ul>
+</li>
+</ul>
+<h1 id="l9-ethical-and-social-issues-in-cba"><a class="markdownIt-Anchor" href="#l9-ethical-and-social-issues-in-cba"></a> L9 - Ethical and Social Issues in CBA</h1>
+<p>Social issues are distinct from economic issues</p>
+<ul>
+<li>environmental issues (e.g. degradation)</li>
+<li>distribution of wealth and income</li>
+<li>poverty and inequality</li>
+<li>crime and corruption</li>
+<li>gambling</li>
+<li>homelessness</li>
+</ul>
+<p>Ethics vs. Morals</p>
+<ul>
+<li>Ethics: What should I do?</li>
+<li>Morals: How things should work</li>
+</ul>
+<h2 id="utilitarianism"><a class="markdownIt-Anchor" href="#utilitarianism"></a> Utilitarianism</h2>
+<p><strong>Utilitarianism</strong> (功利主义 / 效益主义): determines right from wrong by focusing on outcomes</p>
+<ul>
+<li>It is a form of onsequentialism (结果主义 / 效果论)</li>
+<li>Efficiency is a normative criterion derived from utilitarianism</li>
+</ul>
+<p><strong>Utilitarian assumption</strong>： the sum of the individual utilities should be maximized, and it is possible to trade utility gains and utility losses</p>
+<ul>
+<li>Kaldor-Hicks places economic welfare and total economic utility above other moral considerations</li>
+</ul>
+<h2 id="deontological-ethics"><a class="markdownIt-Anchor" href="#deontological-ethics"></a> Deontological Ethics</h2>
+<p><strong>Deontological Ethics</strong> (义务伦理学): whether that action itself is right or wrong under a series of rules, rather than based on the consequences of the action</p>
+<ul>
+<li>Duty or obligation-based choices</li>
+<li>The consequences of the action are irrelevant</li>
+</ul>
+<h2 id="virtue-ethics"><a class="markdownIt-Anchor" href="#virtue-ethics"></a> Virtue Ethics</h2>
+<p><strong>Virtue Ethics</strong> (美德伦理学): focuses on the development of a virtuous character.</p>
+<ul>
+<li>Virtues are characteristics, motivation, attitudes or dispositions that are considered favourable.</li>
+<li>What makes a good person, rather than what makes a good action/decision</li>
+</ul>
+<h2 id="comparison-of-ethical-theories"><a class="markdownIt-Anchor" href="#comparison-of-ethical-theories"></a> Comparison of Ethical Theories</h2>
+<p><strong>Utilitarian Ethics</strong></p>
+<ul>
+<li><strong>Definition:</strong> The greatest good for the greatest number of people</li>
+<li><strong>Application:</strong> Making a decision based on what will benefit the majority to maximize the benefits to society</li>
+<li><strong>Strengths:</strong>
+<ul>
+<li>Simple basis for formulating and testing policies</li>
+<li>Flexible and result oriented</li>
+<li>Objective in resolving self conflict</li>
+</ul>
+</li>
+<li><strong>Weaknesses:</strong>
+<ul>
+<li>It is not always possible to predict the outcome of a decision and the consequences may extend beyond the time frame.</li>
+<li>Utility measures are hard to effectively determine</li>
+<li>Harming a minority and benefiting a majority does not build fundamentally sound relationships.</li>
+<li>Should morality be tied to happiness?</li>
+</ul>
+</li>
+</ul>
+<p><strong>Deontological Ethics</strong></p>
+<ul>
+<li><strong>Definition:</strong> The action itself is right or wrong under a series of rules or duties. The consequences of the action do not matter.</li>
+<li><strong>Application:</strong> Identifying one's duty and acting accordingly.</li>
+<li><strong>Strengths:</strong>
+<ul>
+<li>Set of clear rules in the decision-making process based on moral laws or duties</li>
+<li>Based on reason and not subjectivity</li>
+<li>Emphasizes the importance of every individual</li>
+</ul>
+</li>
+<li><strong>Weaknesses:</strong>
+<ul>
+<li>Duties must be agreed upon. There may be disagreement about the principle involved in the decision.</li>
+<li>The possibility of making a &quot;right&quot; choice that has bad outcomes.</li>
+<li>Possibility of a conflict in duties.</li>
+<li>Duties can change over time.</li>
+<li>Moral laws can differ across societies</li>
+<li>Underestimates the role of utility in decision-making</li>
+</ul>
+</li>
+</ul>
+<p><strong>Virtue Ethics</strong></p>
+<ul>
+<li><strong>Definition:</strong> Focuses on the cultivation of virtues and the moral character of people.</li>
+<li><strong>Application:</strong> Deciding based on characteristics that make a virtuous person.</li>
+<li><strong>Strengths:</strong>
+<ul>
+<li>Not bound by rules</li>
+<li>Personal &quot;Should I do this&quot; approach</li>
+<li>Emphasis on moral development</li>
+</ul>
+</li>
+<li><strong>Weaknesses:</strong>
+<ul>
+<li>Misses the importance of obligations.</li>
+<li>Potential for conflicts of virtues.</li>
+<li>Does not provide a direction for the problem at or decision being evaluated</li>
+<li>There is no general agreement regarding what good virtues are</li>
+<li>Can be often considered &quot;situational ethics&quot;</li>
+</ul>
+</li>
+</ul>
+<p><strong>Example: Giving money to a poor person on the streets</strong></p>
+<ul>
+<li>Utilitarian: might NOT be moral if the money is subsequently used on drugs.</li>
+<li>Deontological: giving money to the poor is a charitable act and all charitable acts are moral regardless of the subsequent use of that money.</li>
+<li>Virtue Ethics: under the virtues of generosity, empathy, or selflessness, giving money to the poor is inherently good.</li>
+</ul>
+<h1 id="l10-dealing-with-uncertainty-and-sensitivity-analysis"><a class="markdownIt-Anchor" href="#l10-dealing-with-uncertainty-and-sensitivity-analysis"></a> L10 - Dealing with Uncertainty and Sensitivity Analysis</h1>
+<h2 id="uncertainty-and-risk"><a class="markdownIt-Anchor" href="#uncertainty-and-risk"></a> Uncertainty and Risk</h2>
+<p>Risk can be <strong>subjective</strong> or <strong>objective</strong></p>
+<ul>
+<li>In some situations degree of risk can be <strong>objectively</strong> determined
+<ul>
+<li>calculated from data</li>
+</ul>
+</li>
+<li>Estimating probability of an event usually involves <strong>subjectivity</strong>
+<ul>
+<li>can introduce bias</li>
+</ul>
+</li>
+</ul>
+<p><strong>Point Estimate</strong>: a single value which is a “best guess” or “best estimate” of the value</p>
+<ul>
+<li>Inputs into the CBA have been considered certain</li>
+<li>If the point estimates are not an appropriate starting point, then the CBA is redundant</li>
+</ul>
+<p>When evaluating risk and uncertainty in CBA it is important to consider:</p>
+<ul>
+<li>what the <strong>degree of uncertainty</strong> is</li>
+<li>whether the uncertainty constitutes a <strong>significant risk</strong></li>
+<li>whether the risk is <strong>acceptable</strong></li>
+</ul>
+<h2 id="expected-value"><a class="markdownIt-Anchor" href="#expected-value"></a> Expected Value</h2>
+<p>Expected Value (in CBA): The weighted average of the Net Social Benefits resulting from all possible contingencies</p>
+<p>Investment in offshore drilling exploration where two contingencies are possible:</p>
+<ul>
+<li>Success: stock price increases from $30 to $40/share</li>
+<li>Failure: stock price falls from $30 to $20/share</li>
+<li>Objective Probability: Success (25%), Failure (75%)</li>
+<li>If the current stock price is $30 should we consider further exploration?</li>
+</ul>
+<p>Answer:</p>
+<ul>
+<li>Expected Value of Success: ($40 - $30) * 0.25 = $2.50</li>
+<li>Expected Value of Failure: ($20 - $30) * 0.75 = -$7.50</li>
+<li>Overall Expected Value: $2.50 + (-$7.50) = -$5.00</li>
+<li>Therefore no further exploration</li>
+</ul>
+<h2 id="two-projects-with-different-degrees-of-risk"><a class="markdownIt-Anchor" href="#two-projects-with-different-degrees-of-risk"></a> Two projects with Different Degrees of Risk</h2>
+<p>Choice depends on decision-maker’s <strong>attitude towards risk</strong></p>
+<ul>
+<li>B has higher expected NPV, but is riskier than A</li>
+<li>Final choice depends on how much the decision-maker is risk averse or is a risk taker</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l10_1.png" alt="" /></p>
+<h2 id="utility-and-risk-aversion"><a class="markdownIt-Anchor" href="#utility-and-risk-aversion"></a> Utility and Risk Aversion</h2>
+<p><strong>Risk Neutral</strong>: indifferent between certain payoffs/outcomes E[U(100)] = U(100)</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l10_2.png" alt="" /></p>
+<p><strong>Risk Averse</strong>: prefers the certain amount which is less than the uncertain amount E[U(W1)] &lt; U(100)</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l10_3.png" alt="" /></p>
+<p><strong>Risk Seeking</strong>: prefers the certain amount which is less than the uncertain amount E[U(W1)] &gt; U(100)</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l10_4.png" alt="" /></p>
+<p>Utility Curve</p>
+<ul>
+<li>Shape of indifference map shows how the decision-maker perceives risk</li>
+<li>Slope shows amount by which E(W) needs</li>
+<li>to increase to offset any given increase in risk</li>
+<li>The larger this amount is, the more risk</li>
+<li>averse the individual is at the given level of wealth</li>
+<li>The more risk averse the flatter the curve</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l10_5.png" alt="" /></p>
+<h3 id="example"><a class="markdownIt-Anchor" href="#example"></a> Example</h3>
+<p><strong>NB Project A:</strong> 50% = $2; 50% = $8</p>
+<p><strong>NB Project B:</strong> 75% = $4; 25% = $12</p>
+<p><strong>Expected NB:</strong></p>
+<ul>
+<li>A = (0.5 x 2) + (0.5 x 8) = $5</li>
+<li>B = (0.75 x 4) + (0.25 x 12) = $6</li>
+</ul>
+<p><strong>Variance:</strong></p>
+<ul>
+<li>A = (2 - 5)<sup>2</sup> x 0.5 + (8 - 5)<sup>2</sup> x 0.5 = $9</li>
+<li>B = (4 - 6)<sup>2</sup> x 0.75 + (12 - 6)<sup>2</sup> x 0.25 = $12</li>
+</ul>
+<p>Which do you prefer, A or B?</p>
+<p>B has higher expected NB but more variance (riskier), Standard Deviation (s) = √s<sup>2</sup></p>
+<ul>
+<li>A = √9 = 3</li>
+<li>B = √12 = 3.46</li>
+</ul>
+<h2 id="theory-of-risk-aversion"><a class="markdownIt-Anchor" href="#theory-of-risk-aversion"></a> Theory of Risk Aversion</h2>
+<p>In practice, <strong>treating expected vales as risk neutral</strong> is reasonable when pooling across a collection of policies or programs</p>
+<p>Assume you have 50% chance of owning $36 or 50% chance of $100</p>
+<ul>
+<li>U = W<sup>0.5</sup></li>
+<li>E = (0.5x36) + (0.5x100) = $68</li>
+<li>Risky option or $68 with certainty?</li>
+<li>Expected U(W) = 0.5(10) + 0.5(6) = 8</li>
+<li>What certain W has U=8? W = U<sup>2</sup> = 8<sup>2</sup> = 64 (&lt; 68)</li>
+<li>Certain $68 worth more than 50:50 chance of $36 or $100</li>
+</ul>
+<h2 id="sensitivity-analysis"><a class="markdownIt-Anchor" href="#sensitivity-analysis"></a> Sensitivity Analysis</h2>
+<p>Sensitivity analysis: How different values of an independent variable affect a particular dependent variable under a given set of assumptions</p>
+<p>Purpose: show how sensitive predicted net benefits are to changes in assumptions</p>
+<p>Use IRR:If <strong>IRR &gt; social discount rate</strong>, then this provides economic<br />
+justification for the project to go ahead.</p>
+<p>Other Factors to Consider in a Sensitivity Analysis</p>
+<ul>
+<li>Values given to time</li>
+<li>Wage rates used</li>
+<li>The value of life, or risks associated with certain occupations</li>
+<li>The multiplier effect applied to the economic impact of an investment or scheme</li>
+<li>Environmental impacts</li>
+<li>Horizon Values / Salvage Values</li>
+</ul>
+<p>Types of Sensitivity Analysis</p>
+<ul>
+<li>Partial sensitivity analysis:
+<ul>
+<li>How do net benefits change as one assumption varies (holding other assumptions constant)</li>
+<li>It should be used for the most important or uncertain assumptions</li>
+</ul>
+</li>
+<li>Best-worst case analysis
+<ul>
+<li>Can be used to find worst and best case scenarios (subset of assumptions)</li>
+<li>20% is not a bad rule of thumb</li>
+<li>Does not tell the likelihood of this happening</li>
+</ul>
+</li>
+<li>Simulation such as Monte Carlo
+<ul>
+<li>Creates a distribution of net benefits from drawing key assumptions from a probability distribution, with variance and mean drawn from information on the risk of the project</li>
+</ul>
+</li>
+</ul>
+<p><strong>Partial Sensitivity Analysis Demonstration</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th><strong>Units Sold</strong></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>$1,020.08</td>
+<td>90</td>
+<td>100</td>
+<td>110</td>
+</tr>
+<tr>
+<td><strong>VC / Unit</strong></td>
+<td>1.5</td>
+<td>$652.08</td>
+<td>$1,236.56</td>
+<td>$1,821.04</td>
+</tr>
+<tr>
+<td></td>
+<td>2</td>
+<td>$457.25</td>
+<td>$1,020.08</td>
+<td>$1,582.91</td>
+</tr>
+<tr>
+<td></td>
+<td>2.5</td>
+<td>$262.42</td>
+<td>$803.61</td>
+<td>$1,344.79</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Threshold Analysis</strong> is closely related to sensitivity analysis</p>
+<ul>
+<li>Once the key variables for sensitivity testing have been identified, work out what value each would need to take for the NPV to be 0 (or, BCR=1)</li>
+<li>In Excel go to the “DATA” section and use the “Goal Seek” function under the “What If” key</li>
+</ul>
+<h1 id="l11-non-market-valuation-methods"><a class="markdownIt-Anchor" href="#l11-non-market-valuation-methods"></a> L11 - Non-Market Valuation Methods</h1>
+<h2 id="total-economic-value"><a class="markdownIt-Anchor" href="#total-economic-value"></a> Total Economic Value</h2>
+<p><strong>Total Economic Value (TEV) = Use Value + Non Use Value + Option Value</strong></p>
+<p>Note: Value and price are two different concepts</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l11_1.png" alt="" /></p>
+<h2 id="role-of-non-market-valuation"><a class="markdownIt-Anchor" href="#role-of-non-market-valuation"></a> Role of Non-Market Valuation</h2>
+<p><strong>Non-marketed goods and services</strong> are just as relevant to economic welfare as marketed goods and services.</p>
+<p>Since changes in the quantities of non-marketed goods and services <strong>affect the level of economic welfare</strong>, they need to be valued in social and disaggregated CBA (but do not enter into Market or Private CBA).</p>
+<p>The <strong>benefit value</strong> of things like:</p>
+<ul>
+<li>Nature</li>
+<li>Life</li>
+<li>Recreation</li>
+<li>Water quality</li>
+<li>Climate abatement</li>
+<li>Prevented diseases</li>
+</ul>
+<p>The <strong>cost value</strong> of things like:</p>
+<ul>
+<li>Air pollution</li>
+<li>Noise</li>
+<li>Fishing</li>
+</ul>
+<h2 id="non-market-goods-and-services"><a class="markdownIt-Anchor" href="#non-market-goods-and-services"></a> Non-Market Goods and Services</h2>
+<p>Shadow prices are particularly useful to address aspects of market failure in a cost benefit analysis</p>
+<ul>
+<li>estimate the shadow prices differently when there is <strong>no direct market</strong></li>
+<li>Public goods (focus)</li>
+<li>Externalities</li>
+<li>Common goods (focus)</li>
+</ul>
+<p>There are four types of goods in economics (based on excludability and<br />
+rivalrousness in consumption)</p>
+<ul>
+<li><strong>Private goods</strong>: excludable and rival
+<ul>
+<li>food, clothing, cars</li>
+</ul>
+</li>
+<li><strong>Common goods</strong>: non-excludable and rival
+<ul>
+<li>fish stocks in international waters</li>
+</ul>
+</li>
+<li><strong>Mixed goods (Club Goods)</strong>: excludable but non-rival
+<ul>
+<li>swimming pools, cable TV, toll roads</li>
+</ul>
+</li>
+<li><strong>Public goods</strong>: non-excludable and non-rival
+<ul>
+<li>include public parks and the air we breathe</li>
+<li>street lighting, air, national defense</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><strong>Excludable</strong></th>
+<th><strong>Non-Excludable</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Rivalrous</strong></td>
+<td>Private Goods</td>
+<td>Common Goods</td>
+</tr>
+<tr>
+<td><strong>Non-Rivalrous</strong></td>
+<td>Club Goods</td>
+<td>Public Goods</td>
+</tr>
+</tbody>
+</table>
+<p>Any given commodity lies between <strong>a pure private good and a pure public good</strong></p>
+<h2 id="non-market-valuation-methods"><a class="markdownIt-Anchor" href="#non-market-valuation-methods"></a> Non-Market Valuation Methods</h2>
+<p>There are many ways to approach non market valuation:</p>
+<ul>
+<li>Benefit Value Transfers</li>
+<li>Alternative Pricing Approaches</li>
+<li>Revealed Preferences Methods</li>
+<li>Stated Preference Methods</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l11_2.png" alt="" /></p>
+<h2 id="benefit-value-transfers-2"><a class="markdownIt-Anchor" href="#benefit-value-transfers-2"></a> Benefit Value Transfers</h2>
+<p>Benefit Value Transfers</p>
+<ul>
+<li>Plug in values</li>
+<li>&quot;Borrow&quot; an approximate value (or a range of values) from other studies in similar situations</li>
+<li>Calculate prices such as
+<ul>
+<li>the social cost of carbon</li>
+<li>climate laws</li>
+</ul>
+</li>
+<li>Utilise non-market valuation methods to calculate the impact or value to be used in the analysis</li>
+</ul>
+<h2 id="alternative-pricing-approaches"><a class="markdownIt-Anchor" href="#alternative-pricing-approaches"></a> Alternative Pricing Approaches</h2>
+<h3 id="indirect-market-methods"><a class="markdownIt-Anchor" href="#indirect-market-methods"></a> Indirect Market Methods</h3>
+<p>The <strong>indirect (analogous) market method</strong> uses data on similar goods in the private market to estimate the implicit &quot;price&quot; or the demand curve for publicly provided goods.</p>
+<p>The <strong>market price of a comparable good</strong> in the <strong>private sector</strong> provides a good estimate of the value of a publicly provided good if it equalsthe average amount that users of the publicly provided good would be willing to pay (WTP).</p>
+<p>Where the <strong>government provides a good or service at a lower than market price</strong>, the price paid by occupants would generally <strong>underestimate the benefit</strong> of this service because users would be WTP at least this amount (some might pay more)</p>
+<ul>
+<li>Public housing: rent = $200pm</li>
+<li>Private housing: rent = $500pm</li>
+<li>WTP between $200 &amp; $500pm</li>
+</ul>
+<p>We can <strong>use private-sector data to help map out the demand curve for a publicly-provided good</strong> if the goods and their markets are similar</p>
+<p>Using expenditures alone <strong>underestimates total benefits</strong> because it ignores consumer surplus</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l11_3.png" alt="" /></p>
+<h3 id="trade-off-method"><a class="markdownIt-Anchor" href="#trade-off-method"></a> Trade-Off Method</h3>
+<p>Use the <strong>opportunity cost</strong> as a measure of its value</p>
+<ul>
+<li><strong>Time saved</strong> could be valued using the after-tax wage rate</li>
+<li>The wage rate is the marginal value of time</li>
+<li>The obvious analogous market for time saved is the <strong>labour market</strong></li>
+</ul>
+<p><strong>Time Saved</strong></p>
+<ul>
+<li><strong>Wages ignore benefits</strong></li>
+<li>Should take account of <strong>taxes</strong>
+<ul>
+<li>for people who are not working, use the after-tax wage rate (plus benefits)</li>
+</ul>
+</li>
+<li><strong>Ignores multitasking</strong>
+<ul>
+<li>People could be working while traveling or waiting</li>
+<li>Time saved would be worth less than the wage rate (plus benefits)</li>
+</ul>
+</li>
+<li>People <strong>value different</strong> types of time differently</li>
+<li>The wage rate may not be appropriate due to rigidities in the market or <strong>market failures</strong>
+<ul>
+<li>e.g., people may not be able to easily adjust the number of hours they work</li>
+</ul>
+</li>
+<li>Firms may not pay employees their <strong>marginal social product</strong></li>
+</ul>
+<p><strong>Using the wage rate is only a first approximation!</strong></p>
+<p><strong>Value of Statistical Life (VSL)</strong>: an estimate of the amount of money the public wants to spend to reduce the loss of one life.</p>
+<p><strong>Forgone earnings method VSL</strong></p>
+<ul>
+<li>It suggests the value of a life saved equals the person’s discounted future earnings
+<ul>
+<li>e.g., used in compensation cases</li>
+</ul>
+</li>
+<li>It generates higher values for young, high-income males than old, low-income females</li>
+<li>For retired people, the resultant value of life may be negative
+<ul>
+<li>e.g., medical intervention</li>
+</ul>
+</li>
+</ul>
+<h3 id="avoided-costs"><a class="markdownIt-Anchor" href="#avoided-costs"></a> Avoided Costs</h3>
+<p>Price on a non-market impact through the process of paying to avoid or mitigate the impact</p>
+<ul>
+<li>climate abatement costs</li>
+<li>double glazing to reduce noise pollution</li>
+</ul>
+<p>Criticised for using price to proxy for economic surpluses</p>
+<ul>
+<li>underestimating the true value of the non-market good or service</li>
+</ul>
+<h2 id="revealed-preference-methods"><a class="markdownIt-Anchor" href="#revealed-preference-methods"></a> Revealed Preference Methods</h2>
+<h3 id="hedonic-pricing-method"><a class="markdownIt-Anchor" href="#hedonic-pricing-method"></a> Hedonic Pricing Method</h3>
+<p><strong>Hedonic Pricing</strong>: Assumes that the value of non-market goods and services is reflected in the price paid for goods and services (housing and land) or income received (wages), which are associated with the non-market goods and services of interest</p>
+<ul>
+<li>you would estimate a function with price as the dependent variable P = f (...)</li>
+<li>This method offers a way to <strong>overcome problems from omitted variables and self-selection bias</strong></li>
+</ul>
+<p>To estimate the value of a scenic view</p>
+<ul>
+<li>Estimates the effect of a marginally better scenic view on the value (price) of houses</li>
+<li>Estimates the WTP for scenic views after controlling for “tastes”
+<ul>
+<li>which are proxied by income and other socioeconomic factors</li>
+</ul>
+</li>
+</ul>
+<p>Two key advantages:</p>
+<ul>
+<li>The underlying application is conceptually intuitive and utilizes prices that can be observed on a market</li>
+<li>The results are based on revealed preferences which represent individual’s actual behaviours
+<ul>
+<li>overcome problems related to omitted variable bias and self-selection bias</li>
+</ul>
+</li>
+</ul>
+<p>Six problems:</p>
+<ul>
+<li>People must know and <strong>understand the implications</strong> of the attribute that is being valued
+<ul>
+<li>level of pollution</li>
+</ul>
+</li>
+<li>Variables should be measured <strong>without error</strong>
+<ul>
+<li>house value</li>
+</ul>
+</li>
+<li>The <strong>functional forms</strong> should be correct</li>
+<li>The market should have <strong>enough alternatives</strong> so that people can locate at their optimum point on the curve</li>
+<li>There may be <strong>multicollinearity</strong> problems</li>
+<li>Markets are <strong>assumed to adjust immediately</strong> to changes in the attributes of interest and to all other factors</li>
+</ul>
+<h3 id="travel-cost-method-tcm"><a class="markdownIt-Anchor" href="#travel-cost-method-tcm"></a> Travel Cost Method (TCM)</h3>
+<p><strong>Travel-Cost</strong>: These methods focus on expenses incurred in travelling to make use of a particular good or service</p>
+<ul>
+<li>Primarily measure the value of <strong>recreation</strong></li>
+<li>full price paid to visit a recreational site &gt; admission fee
+<ul>
+<li>opportunity cost of time spent traveling</li>
+<li>costs of traveling</li>
+<li>cost of accommodations</li>
+<li>parking fees</li>
+</ul>
+</li>
+<li>Total cost is used as an explanatory variable in place of the admission price</li>
+<li>Total cost faced by each person varies</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/cost_benefit_analysis_l11_4.png" alt="" /></p>
+<h2 id="stated-preference-methods"><a class="markdownIt-Anchor" href="#stated-preference-methods"></a> Stated Preference Methods</h2>
+<p>Both <strong>Contingent Valuation (CV)</strong> and <strong>Discrete Choice Modelling (DCM)</strong> have issues with bias which is why revealed preferences are preferred over stated preference methods where possible</p>
+<h3 id="contingent-valuation"><a class="markdownIt-Anchor" href="#contingent-valuation"></a> Contingent Valuation</h3>
+<p><strong>Contingent Valuation</strong> is a method of estimating the value that a person places on a good.</p>
+<ul>
+<li>ask willingness to pay (WTP) to obtain a specified good</li>
+<li>ask willingness to accept (WTA) to give up a good</li>
+<li>rather than inferring them from observed behaviours in regular market places</li>
+</ul>
+<p>Contingent Valuation (CV) surveys: asking a sample of people questions about their valuations</p>
+<h3 id="discrete-choice-modelling"><a class="markdownIt-Anchor" href="#discrete-choice-modelling"></a> Discrete Choice Modelling</h3>
+<p><strong>Discrete Choice Modelling</strong> estimates implicit prices for the attributes of a non-market outcome</p>
+<ul>
+<li>asking people to choose between options that are described by different levels of attributes and any costs they would have to pay</li>
+</ul>
+<h1 id="epilogue"><a class="markdownIt-Anchor" href="#epilogue"></a> Epilogue</h1>
+<p>这个课讲了很多东西，但似乎又没学到什么。。。</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/econ/intl-finance.html" rel="prev" title="Int'l Finance 笔记">
+                  <i class="fa fa-angle-left"></i> Int'l Finance 笔记
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/japanese/jp-galgame-setup.html" rel="next" title="如何优雅地啃日语生肉（Galgame）">
+                  如何优雅地啃日语生肉（Galgame） <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 2020 – 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="fa fa-terminal"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">oscarcx123</span>
+        <span class="post-meta-item">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-chart-line"></i>
+          </span>
+          <span title="站点总字数">268k</span>
+        </span>
+        <span class="post-meta-item">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-coffee"></i>
+          </span>
+          <span title="站点阅读时长">14:53</span>
+        </span>
+  </div>
+  <div class="powered-by">
+    <span class="post-meta-item">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v6.3.0 强力驱动
+    </span>
+    <span class="post-meta-item"> 主题 – <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v8.18.1
+    </span>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script size="300" alpha="0.6" zIndex="-1" src="/js/ribbon.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.6.0/pjax.min.js" integrity="sha256-vxLn1tSKWD4dqbMRyv940UYw4sXgMtYcK6reefzZrao=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.0.8/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/pjax.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/katex.min.css" integrity="sha256-3574TpfThVfeAhg+I4+N39EJiLN3QUkuEsMVe8hWAR4=" crossorigin="anonymous">
+  <script class="next-config" data-name="katex" type="application/json">{"copy_tex_js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/contrib/copy-tex.min.js","integrity":"sha256-Us54+rSGDSTvIhKKUs4kygE2ipA0RXpWWh0/zLqw3bs="}}</script>
+  <script src="/js/third-party/math/katex.js"></script>
+
+
+<script type="text/javascript">
+  // 显示“展开”和“折叠”
+  function collapsableTitle(x) {
+    var nav = document.getElementsByClassName("sidebar-nav-toc")[0];
+    if (x.matches) { // If media query matches
+      var content = document.getElementsByClassName("sidebar-panel-container")[0];
+      if (content.style.display = "none") {
+        nav.textContent = "文章目录 [展开]";
+      }
+      else {
+        nav.textContent = "文章目录 [折叠]";
+      }
+    } 
+    else {
+      nav.textContent = "文章目录";
+    }
+  }
+
+  var x = window.matchMedia("(max-width: 991px)"); // media query
+  collapsableTitle(x);
+  x.addListener(collapsableTitle);
+
+  // 控制目录的折叠
+  var tos = document.getElementsByClassName("sidebar-nav")[0];
+  var i;
+
+  tos.addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = document.getElementsByClassName("sidebar-panel-container")[0];
+    var nav = document.getElementsByClassName("sidebar-nav-toc")[0];
+    if (content.style.display === "block" && window.innerWidth < 991) {
+      content.style.display = "none";
+      nav.textContent = "文章目录 [展开]";
+    } else {
+      content.style.display = "block";
+      if (window.innerWidth < 991) {
+        nav.textContent = "文章目录 [折叠]";
+      }
+    }
+  });
+
+  // 因为启用pjax，需要监听complete事件，来实现默认折叠效果
+  document.addEventListener('pjax:complete', function() {
+    if (window.innerWidth < 991) {
+      let content = document.getElementsByClassName("sidebar-panel-container")[0];
+      content.style.display = "none";
+      let nav = document.getElementsByClassName("sidebar-nav-toc")[0];
+      nav.textContent = "文章目录 [展开]";
+      }
+    });
+  </script>
+</body>
+</html>

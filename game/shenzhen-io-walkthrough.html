@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-64x64-dragon.jpg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-64x64-dragon.jpg">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-64x64-dragon.jpg">
+  <link rel="mask-icon" href="/images/favicon-64x64-dragon.jpg" color="#222">
+  <meta name="google-site-verification" content="-QMh-gRPduq5T_vg3_Pwi3kZsNSiyuEpPBaDIXV8J34">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"oscarcx.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.18.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":true,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+
+
+  <style type="text/css">
+
+div.hcb-content.hcb-block.hcbnote, details.hcb-content.box.hcbnote,div.hcb-content.hcb-block.hcbabstract, details.hcb-content.box.hcbabstract,div.hcb-content.hcb-block.hcbinfo, details.hcb-content.box.hcbinfo,div.hcb-content.hcb-block.hcbtip, details.hcb-content.box.hcbtip,div.hcb-content.hcb-block.hcbsuccess, details.hcb-content.box.hcbsuccess,div.hcb-content.hcb-block.hcbquestion, details.hcb-content.box.hcbquestion,div.hcb-content.hcb-block.hcbwarning, details.hcb-content.box.hcbwarning,div.hcb-content.hcb-block.hcbfailure, details.hcb-content.box.hcbfailure,div.hcb-content.hcb-block.hcbdanger, details.hcb-content.box.hcbdanger,div.hcb-content.hcb-block.hcbbug, details.hcb-content.box.hcbbug,div.hcb-content.hcb-block.hcbexample, details.hcb-content.box.hcbexample,div.hcb-content.hcb-block.hcbquote, details.hcb-content.box.hcbquote {
+  border: .05rem solid #448aff;
+  border-radius: .2rem;
+  font-size: 0.96rem;
+  margin: 1.5625em 0;
+  padding: 0 1.2rem;
+  transition: box-shadow 250ms;
+}
+div.hcb-content.hcb-block.hcbnote, details.hcb-content.box.hcbnote {
+  border-color: #448aff;
+}
+div.hcb-content.hcb-block.hcbabstract, details.hcb-content.box.hcbabstract {
+  border-color: #00b0ff;
+}
+div.hcb-content.hcb-block.hcbinfo, details.hcb-content.box.hcbinfo {
+  border-color: #00b8d4;
+}
+div.hcb-content.hcb-block.hcbtip, details.hcb-content.box.hcbtip {
+  border-color: #00bfa5;
+}
+div.hcb-content.hcb-block.hcbsuccess, details.hcb-content.box.hcbsuccess {
+  border-color: #00c853;
+}
+div.hcb-content.hcb-block.hcbquestion, details.hcb-content.box.hcbquestion {
+  border-color: #64dd17;
+}
+div.hcb-content.hcb-block.hcbwarning, details.hcb-content.box.hcbwarning {
+  border-color: #ff9100;
+}
+div.hcb-content.hcb-block.hcbfailure, details.hcb-content.box.hcbfailure {
+  border-color: #ff5252;
+}
+div.hcb-content.hcb-block.hcbdanger, details.hcb-content.box.hcbdanger {
+  border-color: #ff1744;
+}
+div.hcb-content.hcb-block.hcbbug, details.hcb-content.box.hcbbug {
+  border-color: #f50057;
+}
+div.hcb-content.hcb-block.hcbexample, details.hcb-content.box.hcbexample {
+  border-color: #7c4dff;
+}
+div.hcb-content.hcb-block.hcbquote, details.hcb-content.box.hcbquote {
+  border-color: #9e9e9e;
+}
+div.hcb-content.hcb-block.hcbnote:focus-within, details.hcb-content.box.hcbnote:focus-within {
+  box-shadow: 0 0 0 .2rem #448aff1a;
+}
+div.hcb-content.hcb-block.hcbabstract:focus-within, details.hcb-content.box.hcbabstract:focus-within {
+  box-shadow: 0 0 0 .2rem #00b0ff1a;
+}
+div.hcb-content.hcb-block.hcbinfo:focus-within, details.hcb-content.box.hcbinfo:focus-within {
+  box-shadow: 0 0 0 .2rem #00b8d41a;
+}
+div.hcb-content.hcb-block.hcbtip:focus-within, details.hcb-content.box.hcbtip:focus-within {
+  box-shadow: 0 0 0 .2rem #00bfa51a;
+}
+div.hcb-content.hcb-block.hcbsuccess:focus-within, details.hcb-content.box.hcbsuccess:focus-within {
+  box-shadow: 0 0 0 .2rem #00c8531a;
+}
+div.hcb-content.hcb-block.hcbquestion:focus-within, details.hcb-content.box.hcbquestion:focus-within {
+  box-shadow: 0 0 0 .2rem #64dd171a;
+}
+div.hcb-content.hcb-block.hcbwarning:focus-within, details.hcb-content.box.hcbwarning:focus-within {
+  box-shadow: 0 0 0 .2rem #ff91001a;
+}
+div.hcb-content.hcb-block.hcbfailure:focus-within, details.hcb-content.box.hcbfailure:focus-within {
+  box-shadow: 0 0 0 .2rem #ff52521a;
+}
+div.hcb-content.hcb-block.hcbdanger:focus-within, details.hcb-content.box.hcbdanger:focus-within {
+  box-shadow: 0 0 0 .2rem #ff17441a;
+}
+div.hcb-content.hcb-block.hcbbug:focus-within, details.hcb-content.box.hcbbug:focus-within {
+  box-shadow: 0 0 0 .2rem #f500571a;
+}
+div.hcb-content.hcb-block.hcbexample:focus-within, details.hcb-content.box.hcbexample:focus-within {
+  box-shadow: 0 0 0 .2rem #7c4dff1a;
+}
+div.hcb-content.hcb-block.hcbquote:focus-within, details.hcb-content.box.hcbquote:focus-within {
+  box-shadow: 0 0 0 .2rem #9e9e9e1a;
+}
+div.hcb-content.hcb-block.hcbnote *, details.hcb-content.box.hcbnote *,div.hcb-content.hcb-block.hcbabstract *, details.hcb-content.box.hcbabstract *,div.hcb-content.hcb-block.hcbinfo *, details.hcb-content.box.hcbinfo *,div.hcb-content.hcb-block.hcbtip *, details.hcb-content.box.hcbtip *,div.hcb-content.hcb-block.hcbsuccess *, details.hcb-content.box.hcbsuccess *,div.hcb-content.hcb-block.hcbquestion *, details.hcb-content.box.hcbquestion *,div.hcb-content.hcb-block.hcbwarning *, details.hcb-content.box.hcbwarning *,div.hcb-content.hcb-block.hcbfailure *, details.hcb-content.box.hcbfailure *,div.hcb-content.hcb-block.hcbdanger *, details.hcb-content.box.hcbdanger *,div.hcb-content.hcb-block.hcbbug *, details.hcb-content.box.hcbbug *,div.hcb-content.hcb-block.hcbexample *, details.hcb-content.box.hcbexample *,div.hcb-content.hcb-block.hcbquote *, details.hcb-content.box.hcbquote * {
+  box-sizing: border-box;
+}
+div.hcb-content.hcb-block.hcbnote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbnote > summary,div.hcb-content.hcb-block.hcbabstract > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbabstract > summary,div.hcb-content.hcb-block.hcbinfo > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbinfo > summary,div.hcb-content.hcb-block.hcbtip > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbtip > summary,div.hcb-content.hcb-block.hcbsuccess > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbsuccess > summary,div.hcb-content.hcb-block.hcbquestion > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquestion > summary,div.hcb-content.hcb-block.hcbwarning > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbwarning > summary,div.hcb-content.hcb-block.hcbfailure > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbfailure > summary,div.hcb-content.hcb-block.hcbdanger > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbdanger > summary,div.hcb-content.hcb-block.hcbbug > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbbug > summary,div.hcb-content.hcb-block.hcbexample > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbexample > summary,div.hcb-content.hcb-block.hcbquote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquote > summary {
+  border-top-right-radius: 0.1rem;
+  border-top-left-radius: 0.1rem;
+  border-left-width: 0.2rem;
+  display: block;
+  min-height: 1rem;
+  border: none;
+  font-weight: 700;
+  margin: 0 -1.2rem 1rem;
+  padding: 0.4rem 0.6rem;
+  position: relative;
+  outline: none;
+}
+details.hcb-content.box.hcbnote > summary,details.hcb-content.box.hcbabstract > summary,details.hcb-content.box.hcbinfo > summary,details.hcb-content.box.hcbtip > summary,details.hcb-content.box.hcbsuccess > summary,details.hcb-content.box.hcbquestion > summary,details.hcb-content.box.hcbwarning > summary,details.hcb-content.box.hcbfailure > summary,details.hcb-content.box.hcbdanger > summary,details.hcb-content.box.hcbbug > summary,details.hcb-content.box.hcbexample > summary,details.hcb-content.box.hcbquote > summary {
+  cursor: pointer;
+}
+details.hcb-content.box.hcbnote:not([open]) > summary,details.hcb-content.box.hcbabstract:not([open]) > summary,details.hcb-content.box.hcbinfo:not([open]) > summary,details.hcb-content.box.hcbtip:not([open]) > summary,details.hcb-content.box.hcbsuccess:not([open]) > summary,details.hcb-content.box.hcbquestion:not([open]) > summary,details.hcb-content.box.hcbwarning:not([open]) > summary,details.hcb-content.box.hcbfailure:not([open]) > summary,details.hcb-content.box.hcbdanger:not([open]) > summary,details.hcb-content.box.hcbbug:not([open]) > summary,details.hcb-content.box.hcbexample:not([open]) > summary,details.hcb-content.box.hcbquote:not([open]) > summary {
+  margin-bottom: 0;
+}
+div.hcb-content.hcb-block.hcbnote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbnote > summary {
+  background-color: #448aff1a;
+}
+div.hcb-content.hcb-block.hcbabstract > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbabstract > summary {
+  background-color: #00b0ff1a;
+}
+div.hcb-content.hcb-block.hcbinfo > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbinfo > summary {
+  background-color: #00b8d41a;
+}
+div.hcb-content.hcb-block.hcbtip > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbtip > summary {
+  background-color: #00bfa51a;
+}
+div.hcb-content.hcb-block.hcbsuccess > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbsuccess > summary {
+  background-color: #00c8531a;
+}
+div.hcb-content.hcb-block.hcbquestion > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquestion > summary {
+  background-color: #64dd171a;
+}
+div.hcb-content.hcb-block.hcbwarning > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbwarning > summary {
+  background-color: #ff91001a;
+}
+div.hcb-content.hcb-block.hcbfailure > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbfailure > summary {
+  background-color: #ff52521a;
+}
+div.hcb-content.hcb-block.hcbdanger > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbdanger > summary {
+  background-color: #ff17441a;
+}
+div.hcb-content.hcb-block.hcbbug > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbbug > summary {
+  background-color: #f500571a;
+}
+div.hcb-content.hcb-block.hcbexample > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbexample > summary {
+  background-color: #7c4dff1a;
+}
+div.hcb-content.hcb-block.hcbquote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquote > summary {
+  background-color: #9e9e9e1a;
+}
+div.hcb-content.hcb-block.hcbnote > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbnote > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #448aff;
+}
+div.hcb-content.hcb-block.hcbabstract > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbabstract > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00b0ff;
+}
+div.hcb-content.hcb-block.hcbinfo > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbinfo > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00b8d4;
+}
+div.hcb-content.hcb-block.hcbtip > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbtip > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00bfa5;
+}
+div.hcb-content.hcb-block.hcbsuccess > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbsuccess > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00c853;
+}
+div.hcb-content.hcb-block.hcbquestion > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbquestion > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #64dd17;
+}
+div.hcb-content.hcb-block.hcbwarning > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbwarning > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff9100;
+}
+div.hcb-content.hcb-block.hcbfailure > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbfailure > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff5252;
+}
+div.hcb-content.hcb-block.hcbdanger > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbdanger > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff1744;
+}
+div.hcb-content.hcb-block.hcbbug > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbbug > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #f50057;
+}
+div.hcb-content.hcb-block.hcbexample > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbexample > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #7c4dff;
+}
+div.hcb-content.hcb-block.hcbquote > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbquote > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #9e9e9e;
+}
+details.hcb-content.box.hcbnote > summary > div.hcb-box-open-button,details.hcb-content.box.hcbabstract > summary > div.hcb-box-open-button,details.hcb-content.box.hcbinfo > summary > div.hcb-box-open-button,details.hcb-content.box.hcbtip > summary > div.hcb-box-open-button,details.hcb-content.box.hcbsuccess > summary > div.hcb-box-open-button,details.hcb-content.box.hcbquestion > summary > div.hcb-box-open-button,details.hcb-content.box.hcbwarning > summary > div.hcb-box-open-button,details.hcb-content.box.hcbfailure > summary > div.hcb-box-open-button,details.hcb-content.box.hcbdanger > summary > div.hcb-box-open-button,details.hcb-content.box.hcbbug > summary > div.hcb-box-open-button,details.hcb-content.box.hcbexample > summary > div.hcb-box-open-button,details.hcb-content.box.hcbquote > summary > div.hcb-box-open-button {
+  float: right;
+}
+details.hcb-content.box.hcbnote > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbabstract > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbinfo > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbtip > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbsuccess > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbquestion > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbwarning > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbfailure > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbdanger > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbbug > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbexample > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbquote > summary > div.hcb-box-open-button > i {
+  margin: 0 0.6rem 0 0.6rem;
+  font-size: 0.7rem;
+  transition: transform 250ms
+}
+details.hcb-content.box.hcbnote:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbabstract:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbinfo:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbtip:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbsuccess:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquestion:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbwarning:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbfailure:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbdanger:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbbug:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbexample:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquote:not([open]) > summary > div.hcb-box-open-button i {
+  transform: rotate(270deg);
+}
+details.hcb-content.box.hcbnote[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbabstract[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbinfo[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbtip[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbsuccess[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquestion[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbwarning[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbfailure[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbdanger[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbbug[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbexample[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquote[open] > summary > div.hcb-box-open-button i {
+  transform: rotate(180deg);
+}
+details.hcb-content.box.hcbnote summary div.hcb-box-open-button i {
+  color: #448aff;
+}
+details.hcb-content.box.hcbabstract summary div.hcb-box-open-button i {
+  color: #00b0ff;
+}
+details.hcb-content.box.hcbinfo summary div.hcb-box-open-button i {
+  color: #00b8d4;
+}
+details.hcb-content.box.hcbtip summary div.hcb-box-open-button i {
+  color: #00bfa5;
+}
+details.hcb-content.box.hcbsuccess summary div.hcb-box-open-button i {
+  color: #00c853;
+}
+details.hcb-content.box.hcbquestion summary div.hcb-box-open-button i {
+  color: #64dd17;
+}
+details.hcb-content.box.hcbwarning summary div.hcb-box-open-button i {
+  color: #ff9100;
+}
+details.hcb-content.box.hcbfailure summary div.hcb-box-open-button i {
+  color: #ff5252;
+}
+details.hcb-content.box.hcbdanger summary div.hcb-box-open-button i {
+  color: #ff1744;
+}
+details.hcb-content.box.hcbbug summary div.hcb-box-open-button i {
+  color: #f50057;
+}
+details.hcb-content.box.hcbexample summary div.hcb-box-open-button i {
+  color: #7c4dff;
+}
+details.hcb-content.box.hcbquote summary div.hcb-box-open-button i {
+  color: #9e9e9e;
+}
+div.hcb-content.hcb-cards * {
+  box-sizing: border-box;
+}
+input.hcb-content.hcb-cards-input {
+  display: none;
+}
+div.hcb-content.hcb-cards-labels {
+  position: relative;
+  box-shadow: 0 -0.05rem #00000012 inset;
+  display: flex;
+  margin-bottom: 1.25rem;
+}
+div.hcb-content.hcb-cards-labels:before {
+  background: var(--cards-color);
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: translateX(var(--md-indicator-x));
+  transition: width 225ms, transform 250ms;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  width: var(--md-indicator-width);
+}
+label.hcb-content.hcb-cards-label {
+  border-bottom: 0.1rem solid #0000;
+  border-radius: 0.1rem 0.1rem 0 0;
+  cursor: pointer;
+  color: #0000008a;
+  font-size: 0.92em;
+  font-weight: 700;
+  padding: 0 1.25rem 0.625rem;
+  transition: color 250ms;
+}
+label.hcb-content.hcb-cards-label.active, label.hcb-content.hcb-cards-label:hover {
+  color: var(--cards-color);
+}
+div.hcb-content.hcb-cards-content {
+  display: none;
+}
+div.hcb-content.hcb-cards-content.active {
+  display: block;
+}
+</style>
+    <meta name="description" content="《Shenzhen I&#x2F;O》是一个汇编模拟器，跟《人力资源机器》是同一个类型。只不过《Shenzhen I&#x2F;O》非常硬核，如果你没有编程基础，建议不要买，如果一定要买，那大概率会变成一个纸牌游戏。 前两天被steam推荐到这个游戏，原价48块，但是刚刚好在特价促销，打骨折只要16块，我就剁手了。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Shenzhen I&#x2F;O 过关流程">
+<meta property="og:url" content="https://oscarcx.com/game/shenzhen-io-walkthrough.html">
+<meta property="og:site_name" content="Cow">
+<meta property="og:description" content="《Shenzhen I&#x2F;O》是一个汇编模拟器，跟《人力资源机器》是同一个类型。只不过《Shenzhen I&#x2F;O》非常硬核，如果你没有编程基础，建议不要买，如果一定要买，那大概率会变成一个纸牌游戏。 前两天被steam推荐到这个游戏，原价48块，但是刚刚好在特价促销，打骨折只要16块，我就剁手了。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/shenzhenio_lv01.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/shenzhenio_lv02.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/shenzhenio_lv03.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/shenzhenio_lv04.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/shenzhenio_lv05.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/shenzhenio_lv06.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/shenzhenio_lv07.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/shenzhenio_lv08.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/shenzhenio_lv09.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/shenzhenio_lv10.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/shenzhenio_lv11.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/shenzhenio_lv11b.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/shenzhenio_lv12des.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/shenzhenio_lv12des2.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/shenzhenio_lv12.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/shenzhenio_lv12b.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/shenzhenio_lv12c.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/shenzhenio_lv13.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/shenzhenio_lv14.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/shenzhenio_lv15.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/shenzhenio_lv16a.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/shenzhenio_lv16b.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/shenzhenio_lv16res.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/shenzhenio_lv17.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/shenzhenio_lv18.png">
+<meta property="article:published_time" content="2021-01-26T02:05:20.000Z">
+<meta property="article:modified_time" content="2025-05-18T16:05:39.211Z">
+<meta property="article:author" content="oscarcx123">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://oscarcx.com/hexo_resource/img/shenzhenio_lv01.png">
+
+
+<link rel="canonical" href="https://oscarcx.com/game/shenzhen-io-walkthrough.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://oscarcx.com/game/shenzhen-io-walkthrough.html","path":"game/shenzhen-io-walkthrough.html","title":"Shenzhen I/O 过关流程"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Shenzhen I/O 过关流程 | Cow</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<style type="text/css">
+.spoiler {
+  display: inline;
+}
+p.spoiler {
+  display: flex;
+}
+.spoiler a {
+  pointer-events: none;
+}
+.spoiler-blur, .spoiler-blur > * {
+  transition: text-shadow .5s ease;
+}
+.spoiler .spoiler-blur, .spoiler .spoiler-blur > * {
+  color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  text-shadow: 0 0 10px grey;
+  cursor: pointer;
+}
+.spoiler .spoiler-blur:hover, .spoiler .spoiler-blur:hover > * {
+  text-shadow: 0 0 5px grey;
+}
+.spoiler-box, .spoiler-box > * {
+  transition: color .5s ease,
+  background-color .5s ease;
+}
+.spoiler .spoiler-box, .spoiler .spoiler-box > * {
+  color: black;
+  background-color: black;
+  text-shadow: none;
+}</style></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Cow</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#lv01-%E6%A8%A1%E6%8B%9F%E5%AE%89%E5%85%A8%E6%91%84%E5%83%8F%E5%A4%B4"><span class="nav-number">1.</span> <span class="nav-text"> Lv.01 - 模拟安全摄像头</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#lv02-%E6%8E%A7%E5%88%B6%E4%BF%A1%E5%8F%B7%E6%94%BE%E5%A4%A7%E5%99%A8"><span class="nav-number">2.</span> <span class="nav-text"> Lv.02 - 控制信号放大器</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#lv03-%E8%AF%8A%E6%96%AD%E8%84%89%E5%86%B2%E7%94%9F%E6%88%90%E5%99%A8"><span class="nav-number">3.</span> <span class="nav-text"> Lv.03 - 诊断脉冲生成器</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#lv04-%E5%8A%A8%E7%94%BB-esports-%E6%A0%87%E5%BF%97"><span class="nav-number">4.</span> <span class="nav-text"> Lv.04 - 动画 ESPORTS 标志</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#lv05-%E9%A5%AE%E9%85%92%E6%B8%B8%E6%88%8F%E7%A7%AF%E5%88%86%E5%99%A8"><span class="nav-number">5.</span> <span class="nav-text"> Lv.05 - 饮酒游戏积分器</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#lv06-%E8%B0%83%E8%B0%90%E6%9C%80%E4%BC%98%E5%8C%96%E5%BC%95%E6%93%8E"><span class="nav-number">6.</span> <span class="nav-text"> Lv.06 - 调谐最优化引擎</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#lv07-%E8%A2%AB%E5%8A%A8%E7%BA%A2%E5%A4%96%E6%84%9F%E5%BA%94%E5%99%A8"><span class="nav-number">7.</span> <span class="nav-text"> Lv.07 - 被动红外感应器</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#lv08-%E4%BB%BF%E7%9C%9F%E8%9C%82%E9%9F%B3%E5%99%A8"><span class="nav-number">8.</span> <span class="nav-text"> Lv.08 - 仿真蜂音器</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#lv09-%E6%97%A0%E7%BA%BF%E6%B8%B8%E6%88%8F%E6%8E%A7%E5%88%B6%E5%99%A8"><span class="nav-number">9.</span> <span class="nav-text"> Lv.09 - 无线游戏控制器</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#lv10-%E6%BF%80%E5%85%89%E6%9D%9F%E6%B8%B8%E6%88%8F%E8%AE%BE%E5%A4%87"><span class="nav-number">10.</span> <span class="nav-text"> Lv.10 - 激光束游戏设备</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#lv11-%E5%8F%98%E8%89%B2%E7%94%B5%E5%AD%90%E7%83%9F%E7%AC%94"><span class="nav-number">11.</span> <span class="nav-text"> Lv.11 - 变色电子烟笔</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#lv12-%E4%B8%8D%E6%98%8E%E4%BC%98%E5%8C%96%E8%AE%BE%E5%A4%87"><span class="nav-number">12.</span> <span class="nav-text"> Lv.12 - 不明优化设备</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%A7%98%E5%AF%86%E6%8C%87%E4%BB%A4"><span class="nav-number">13.</span> <span class="nav-text"> 秘密指令！</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#lv13-%E5%8F%A4%E9%92%B1%E5%B8%81%E4%BB%98%E6%AC%BE%E7%BB%88%E7%AB%AF"><span class="nav-number">14.</span> <span class="nav-text"> Lv.13 - 古钱币付款终端</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#lv14-%E4%B8%AA%E4%BA%BA%E4%B8%89%E6%98%8E%E6%B2%BB%E5%88%B6%E4%BD%9C%E6%9C%BA"><span class="nav-number">15.</span> <span class="nav-text"> Lv.14 - 个人三明治制作机</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#lv15-%E5%8D%A1%E5%AE%BE%E6%9E%AA%E7%9E%84%E5%87%86%E7%85%A7%E6%98%8E%E5%99%A8"><span class="nav-number">16.</span> <span class="nav-text"> Lv.15 - 卡宾枪瞄准照明器</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#lv16-%E5%B9%BD%E7%81%B5%E5%A8%83%E5%A8%83"><span class="nav-number">17.</span> <span class="nav-text"> Lv.16 - 幽灵娃娃</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#lv17-%E5%85%B1%E7%94%9F%E7%8E%AF%E5%A2%83%E7%BB%B4%E6%8A%A4%E6%9C%BA%E5%99%A8%E4%BA%BA"><span class="nav-number">18.</span> <span class="nav-text"> Lv.17 - 共生环境维护机器人</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#lv18-%E8%BF%9C%E7%A8%8B%E9%80%80%E5%87%BA%E5%BC%80%E5%85%B3"><span class="nav-number">19.</span> <span class="nav-text"> Lv.18 - 远程退出开关</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#lvxx-%E6%9C%AA%E5%AE%8C%E5%BE%85%E7%BB%AD"><span class="nav-number">20.</span> <span class="nav-text"> Lv.XX - 未完待续。。。</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="oscarcx123"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">oscarcx123</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">32</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/oscarcx123" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;oscarcx123" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://oscarcx.com/game/shenzhen-io-walkthrough.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="oscarcx123">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Cow">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Shenzhen I/O 过关流程 | Cow">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Shenzhen I/O 过关流程
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-01-26 02:05:20" itemprop="dateCreated datePublished" datetime="2021-01-26T02:05:20+00:00">2021-01-26</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/tech/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/game/" itemprop="url" rel="index"><span itemprop="name">游戏</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>4.1k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>14 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>《Shenzhen I/O》是一个汇编模拟器，跟《人力资源机器》是同一个类型。只不过《Shenzhen I/O》非常硬核，如果你没有编程基础，建议不要买，如果一定要买，那大概率会变成一个纸牌游戏。</p>
+<p>前两天被steam推荐到这个游戏，原价48块，但是刚刚好在特价促销，打骨折只要16块，我就剁手了。</p>
+<span id="more"></span>
+<p>游戏一上来就直接丢给你一本40多页的说明书，比较类似于芯片的datasheet，而且还推荐打印出来翻阅。感觉在这里就会劝退很多咸鱼了啊~</p>
+<p>这篇文章就是记录我的解题过程了，大概率不是最优解，但是平均水平应该还是有的吧。偶尔有些不太好说明的地方，我会直接写伪代码。</p>
+<h1 id="lv01-模拟安全摄像头"><a class="markdownIt-Anchor" href="#lv01-模拟安全摄像头"></a> Lv.01 - 模拟安全摄像头</h1>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">* *活动状态*和*网络*是连接 LED 灯的简单输出。</span><br><span class="line">* 按照验证面板中的提示控制*活动状态*和*网络状态*输出，使其显示一组重复的固定信号。</span><br></pre></td></tr></table></figure>
+<p>这个感觉没啥好说的，观察给定的信号输出图，就能写出来。。</p>
+<p>这里大概解释一下slp指令。我的理解就是类似于“结束回合”。控制器在一个时间周期内应该是可以执行无限量的指令，所以一般来说都至少需要一个<code>slp 1</code>来进入下一个时间周期。当然在这一关，由于电平信号较长时间不变，所以可以直接slp跳过多个时间周期。</p>
+<ul>
+<li>成本：6</li>
+<li>用电量：60</li>
+<li>代码行数：12</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/shenzhenio_lv01.png" alt="" /></p>
+<h1 id="lv02-控制信号放大器"><a class="markdownIt-Anchor" href="#lv02-控制信号放大器"></a> Lv.02 - 控制信号放大器</h1>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">* *控制输入*是连接工厂设备的简单输入。</span><br><span class="line">* *控制输出*是连接工厂设备的简单输出。</span><br><span class="line">* 将*控制输入*的信号值乘以 2 后，复制到*控制输出*。</span><br></pre></td></tr></table></figure>
+<p>这关要求做一个信号放大器，基本上就是检查有没有看过手册了，因为这里需要用到acc（通用累加器）</p>
+<p>一开始想复杂了，以为要手动输入信号，后来发现是自动输入的，那就简单了。。</p>
+<ul>
+<li>成本：3</li>
+<li>用电量：300</li>
+<li>代码行数：5</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/shenzhenio_lv02.png" alt="" /></p>
+<h1 id="lv03-诊断脉冲生成器"><a class="markdownIt-Anchor" href="#lv03-诊断脉冲生成器"></a> Lv.03 - 诊断脉冲生成器</h1>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">* *按钮*是连接按钮的简单输入。</span><br><span class="line">* *脉冲*是连接电子设备的简单输出。</span><br><span class="line">* 请按照验证面板中的指示，在按下*按钮*时生成脉冲，松开*按钮*时停止脉冲。</span><br></pre></td></tr></table></figure>
+<p>这关要求生成脉冲信号，要用到条件分支了。当然，游戏里是一个大大简化模型，跟直接写if else差不多了。</p>
+<p>伪代码差不多是这样。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (p0 == <span class="number">100</span>) &#123;</span><br><span class="line">    <span class="keyword">if</span> (acc == <span class="number">0</span>) acc = <span class="number">100</span>;</span><br><span class="line">    <span class="keyword">else</span> acc = <span class="number">0</span>;</span><br><span class="line">    p1 = acc;</span><br><span class="line">    <span class="title function_">sleep</span>(<span class="number">1</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>成本：3</li>
+<li>用电量：281</li>
+<li>代码行数：6</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/shenzhenio_lv03.png" alt="" /></p>
+<h1 id="lv04-动画-esports-标志"><a class="markdownIt-Anchor" href="#lv04-动画-esports-标志"></a> Lv.04 - 动画 ESPORTS 标志</h1>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">* *点击0*和*点击1*是连接显示组件的简单输出，分别与点击鼠标的两幅动画对应。</span><br><span class="line">* *喝0*、*喝1*和*喝2*都是连接显示组件的简单输出，分别与三幅喝饮料动画对应。</span><br><span class="line">* 按照验证面板中的提示控制显示组件，使其显示一组重复的固定信号。</span><br></pre></td></tr></table></figure>
+<p>这关要求控制一个应援灯牌的闪烁，开始有点意思了。总体来说不难。最右边那个控制器不知道有没有办法优化进9行代码，如果可以那就只需要MC4000了。</p>
+<ul>
+<li>成本：11</li>
+<li>用电量：341</li>
+<li>代码行数：23</li>
+</ul>
+<p>左边的控制器用了条件，我稍微写点伪代码好了。核心思想就是把acc当成flag用。顺便说一下，这个if else是支持多行的。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (acc == <span class="number">0</span>) &#123;</span><br><span class="line">    p0 = <span class="number">100</span>;</span><br><span class="line">    p1 = <span class="number">0</span>;</span><br><span class="line">    acc = <span class="number">100</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span> &#123;</span><br><span class="line">    p0 = <span class="number">0</span>;</span><br><span class="line">    p1 = <span class="number">100</span>;</span><br><span class="line">    acc = <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="title function_">sleep</span>(<span class="number">1</span>);</span><br></pre></td></tr></table></figure>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/shenzhenio_lv04.png" alt="" /></p>
+<h1 id="lv05-饮酒游戏积分器"><a class="markdownIt-Anchor" href="#lv05-饮酒游戏积分器"></a> Lv.05 - 饮酒游戏积分器</h1>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">* *得分*和*犯规*是连接按钮的简单输入。</span><br><span class="line">* *显示*是连接 XBus 显示器的输出，与 LCD 屏上的数字相对应。</span><br><span class="line">* 计数器必须可以从 0 开始计数，并时刻保证*显示*值与当前值一致。</span><br><span class="line">* 每当按下*得分*按钮，应加 1 分。</span><br><span class="line">* 每当按下*犯规*按钮应减 2 分，但分数不可低于 0。</span><br></pre></td></tr></table></figure>
+<p>这关开始要用到XBus来发送数据了，但是却出乎意料的简单。。。</p>
+<p>顺带说一句，acc是可以为负数的，所以可以先进行加减操作，再检查是否小于0。</p>
+<ul>
+<li>成本：3</li>
+<li>用电量：323</li>
+<li>代码行数：8</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/shenzhenio_lv05.png" alt="" /></p>
+<h1 id="lv06-调谐最优化引擎"><a class="markdownIt-Anchor" href="#lv06-调谐最优化引擎"></a> Lv.06 - 调谐最优化引擎</h1>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">* *音频输入*是连接音频源的简单输入。</span><br><span class="line">* *音频输出*是连接音频接收器的简单输出。</span><br><span class="line">* *最优化*是连接开关的简单输入。</span><br><span class="line">* 应将*音频输入*信号复制到*音频输出*，并在*最优化*开关开启时应用调谐最优化算法。</span><br><span class="line">* 在手册“补充信息”部分有一张“调谐最优化算法”广告，找到并阅读该部分内容。</span><br></pre></td></tr></table></figure>
+<p>这关要求处理音频，并且在开关开启的时候进行音质优化。说明书给了下面这个公式：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">AUDIO_OUT = (AUDIO_IN - 50) x 4 + 50</span><br></pre></td></tr></table></figure>
+<p>这里需要做到“开关”的效果，但是无论MC4000还是MC6000都只有两个I/O引脚，所以这里直接用XBus引脚控制状态即可。需要注意的是，XBus要求读写同步，所以需要用slx指令等待接收XBus数据包。</p>
+<p>开始我用了三个控制器，后来发现原来两个就足够了。而且这个公式也是一个优化点，可以用数学方法化简，变成下面这样，从而节省一行代码。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">AUDIO_OUT = 4 x AUDIO_IN - 150</span><br></pre></td></tr></table></figure>
+<ul>
+<li>成本：6</li>
+<li>用电量：550</li>
+<li>代码行数：11</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/shenzhenio_lv06.png" alt="" /></p>
+<h1 id="lv07-被动红外感应器"><a class="markdownIt-Anchor" href="#lv07-被动红外感应器"></a> Lv.07 - 被动红外感应器</h1>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">* *时间*是连接 DT2415 时钟的简单输入，能提供当前时间。</span><br><span class="line">* *传感器*是连接红外线传感器的简单输入。</span><br><span class="line">* *报警器*是连接无声报警器的简单输出。</span><br><span class="line">* 如果当前*时间*与报警时间“on time”相同，设备应_报警_。</span><br><span class="line">* 如果当前*时间*与停止报警时间“off time”相同，设备应_停止报警_。</span><br><span class="line">* 如果设备_报警_，且*传感器*读数值等于或大于 20，则启动*报警器*输出。</span><br><span class="line">* 设备使用者可通过转盘设置报警和停止报警的时间；该值数值范围与 DT2415 时钟相匹配，可以从 XBus 输入读取。</span><br></pre></td></tr></table></figure>
+<p>这关要制作一个红外报警器，个人感觉挺难的，因为新增了不少模块，得一个个去摸索作用。中文版也有点小问题，关卡描述里的“报警器”，和电路板上的“闹钟”应该是同一个东西，我切英文版看了，都是alarm。。。因此这个电路板上的“闹钟”大概就是翻译错误了。</p>
+<p>首先是DT2415累加式时钟，输出值范围是0-95，累积到最大值后，下一次就回到0。输出引脚在右下，输出简单I/O信号。</p>
+<p>然后是时间点输入模块，这俩都输出XBus数据包。</p>
+<p>那么要求我直接用伪代码描述一下。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// 注意：“flag_激活报警器”的初始值是0</span><br><span class="line">if (DT2415输出 == 开启时间) flag_激活报警器 = 1;</span><br><span class="line">if (DT2415输出 == 关闭时间) flag_激活报警器 = 0;</span><br><span class="line">if (传感器数值 &gt;= 20 &amp;&amp; flag_激活报警器 == 1) 报警;</span><br></pre></td></tr></table></figure>
+<p>注意：这里有个坑，MCxxxx系列的控制器，是没有<code>&gt;=</code>的。这里只能用<code>&gt;</code>（tgt），那么相应的临界值就变成了19，而不是题目描述给的20。</p>
+<ul>
+<li>成本：8</li>
+<li>用电量：503</li>
+<li>代码行数：11</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/shenzhenio_lv07.png" alt="" /></p>
+<h1 id="lv08-仿真蜂音器"><a class="markdownIt-Anchor" href="#lv08-仿真蜂音器"></a> Lv.08 - 仿真蜂音器</h1>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">* *无线rx*是连接无线接收器的非阻塞式 XBus 输入。</span><br><span class="line">* *蜂音器*是连接电子机械蜂音器的简单输出。</span><br><span class="line">* 从*无线装置*收到数据包时，读取该数据包，并执行下表中的相应指令：</span><br><span class="line"></span><br><span class="line">| 0  | 关闭电源  | 关闭蜂音器</span><br><span class="line">-------------------------------------------------------------</span><br><span class="line">| 1  | 开启电源   | 开启蜂音器</span><br></pre></td></tr></table></figure>
+<p>这个题要写出来不难，但是我这肯定不是最优解。总感觉可以只用一个MC6000，但是却想不到如何保存多个状态。由于XBus在一个时间内只能读一次，但是有-999（什么都不做），0（关闭），1（开启）三个状态，所以肯定需要一个临时的变量来保存获取的值。然后又需要一个变量表示开关。最后还需要一个变量来控制蜂鸣器的状态。</p>
+<blockquote>
+<p>TODO：看看之后能不能想出更好的解法</p>
+</blockquote>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/shenzhenio_lv08.png" alt="" /></p>
+<h1 id="lv09-无线游戏控制器"><a class="markdownIt-Anchor" href="#lv09-无线游戏控制器"></a> Lv.09 - 无线游戏控制器</h1>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">* *x*和*y*是连接游戏杆的简单输入。</span><br><span class="line">* *a*和*b*是连接按钮的简单输入。</span><br><span class="line">* *无线rx*是连接无线接收器的非阻塞式 XBus 输入。</span><br><span class="line">* *无线tx*是连接无线发送器的 XBus 输出。</span><br><span class="line">* 当通过无线装置收到数据包时，返回以下由 3 个值组成的数据包。注意确保发送的是最新输入数据：</span><br><span class="line"></span><br><span class="line">|     |     | 0, if *a* = 0 and *b* = 0</span><br><span class="line">| *x* | *y* | 1, if *a* = 100 and *b* = 0</span><br><span class="line">|     |     | 2, if *a* = 0 and *b* = 100</span><br><span class="line">|     |     | 3, if *a* = 100 and *b* = 100</span><br></pre></td></tr></table></figure>
+<p>这关难度不小，光是理级题目要求就要费点功夫，我在这里简要概括下。</p>
+<p>我们需要获取x，y，a，b，tx，最后输出到rx。其中tx是传输开始的信号，值为-1时传输，-999则不传输。x和y是直接使用原始值，a和b经过处理之后生成一个值（这里我们称之为acc），然后我们需要把x，y，acc按照顺序依次输出到rx。</p>
+<p>其它地方都不难，重点是这个c的计算过程。题目给出下面的规则：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (a == <span class="number">0</span>) &#123;</span><br><span class="line">    <span class="keyword">if</span> (b == <span class="number">0</span>) acc = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">else</span> acc = <span class="number">2</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (b == <span class="number">0</span>) acc = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">else</span> acc = <span class="number">3</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>乍一看，这是要搞嵌套循环啊，但是MC系列的汇编语法不允许这样嵌套。与其说是嵌套（nesting），实际上是链式（chaining）。我们来看下面的例子。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">  teq a 0</span><br><span class="line">+ teq b 0</span><br><span class="line">+ mov 0 acc</span><br><span class="line">- mov 2 acc</span><br><span class="line"></span><br><span class="line">运行结果：</span><br><span class="line">a = 0, b = 0, acc = 0</span><br><span class="line">a = 0, b = 1, acc = 2</span><br><span class="line">a = 1, b = 0, acc = 2</span><br><span class="line">a = 1, b = 1, acc = 2</span><br></pre></td></tr></table></figure>
+<p>发现问题了吧，这种写法，用伪代码写出来就是下面这样。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (a == <span class="number">0</span> &amp;&amp; b == <span class="number">0</span>) acc = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">else</span> acc = <span class="number">2</span>;</span><br></pre></td></tr></table></figure>
+<p>这种问题可以通过jmp来解决，但是强如MC6000也只能写14行汇编，所以这里我们转向数学方法。仔细观察，会发现下面的关系。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">a == 1 -&gt; acc += 1</span><br><span class="line">b == 1 -&gt; acc += 2</span><br></pre></td></tr></table></figure>
+<p>所以这么写就可以了</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">  teq a 1</span><br><span class="line">+ add 1</span><br><span class="line">  teq b 1</span><br><span class="line">+ add 2</span><br></pre></td></tr></table></figure>
+<ul>
+<li>成本：13</li>
+<li>用电量：375</li>
+<li>代码行数：21</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/shenzhenio_lv09.png" alt="" /></p>
+<h1 id="lv10-激光束游戏设备"><a class="markdownIt-Anchor" href="#lv10-激光束游戏设备"></a> Lv.10 - 激光束游戏设备</h1>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">* *击中*是一个简单输入，连接着背心上的激光探测器列阵。</span><br><span class="line">* *复活*是一个简单输入，连接着背心上的快速连接装置。</span><br><span class="line">* *活着*是一个简单输出，连接着背心上的 LED 灯列阵。</span><br><span class="line">* *扣扳机*和*填弹*是简单输入，连接着仿真枪的开关。</span><br><span class="line">* *射击*是简单输出，连接着仿真枪的激光和效果模块。</span><br><span class="line">* 当玩家被*击中*时，他们的背心应被设置为不再*活着*。</span><br><span class="line">* 当玩家*复活*时，他们的背心应被设置为*活着*。</span><br><span class="line">* 当玩家给枪*填弹*时，无论是否*活着*，都应将弹药数设为填弹初始值。</span><br><span class="line">* 如果玩家*活着*时做了*扣扳机*动作，并且还有弹药剩余，则应设置手枪*开火*、弹药数减少 1。</span><br><span class="line">* 为让玩家能“按照实际情况使用”不同型号的仿真枪，使用者可以通过转盘设置填弹初始值。转盘数值可从 XBus 输入读取。</span><br></pre></td></tr></table></figure>
+<p>这关要求特别多，略显麻烦。不过我看我的三项排名都比较靠前，估计是最优解了。</p>
+<p>由于简单I/O接口特别多，这关很明显需要用到DX300。这个模块不仅便宜（只要1块），而且还带有3个简单I/O引脚。不过DX300需要配合MC系列的控制器一起使用，因为DX300本身无法进行编程，只能用作数据接口。</p>
+<p>这里简单说下DX300的用法。可以用任意XBus接口输入一个二进制的三位数来控制3个简单I/O引脚，也可以读取当前状态下的简单I/O引脚情况（获取二进制的三位数）。其中p0是个位，p1是十位，p2是百位。（例子：XBus=101 -&gt; p0=1, p1=0, p2=1）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">// 处理“击中”，“复活”，“活着”</span><br><span class="line">  teq x1 1      // 判断玩家是否被击中</span><br><span class="line">+ mov 0 dat     // 关闭“活着”标记</span><br><span class="line">  teq x1 10     // 判断玩家是否按下复活按钮</span><br><span class="line">+ mov 100 dat   // 开启“活着”标记</span><br><span class="line">  mov dat p0    // 把“活着”标记输出到p0引脚</span><br><span class="line">// 处理激光枪</span><br><span class="line">  teq x0 100    // &amp;&amp;判断：玩家是否扣下扳机</span><br><span class="line">+ tgt acc 0     // &amp;&amp;判断：玩家是否还有子弹</span><br><span class="line">+ teq dat 100   // &amp;&amp;判断：玩家是否存活</span><br><span class="line">+ mov 100 p1    // （All True）把“射击”信号输出到p1引脚</span><br><span class="line">+ sub 1         // （All True）子弹数量-1</span><br><span class="line">- mov 0 p1      // （Any False）不输出到p1引脚</span><br><span class="line">  teq x0 10     // 判断是否装弹</span><br><span class="line">+ mov x2 acc    // 填充子弹</span><br><span class="line">  slp 1</span><br></pre></td></tr></table></figure>
+<ul>
+<li>成本：7</li>
+<li>用电量：483</li>
+<li>代码行数：14</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/shenzhenio_lv10.png" alt="" /></p>
+<h1 id="lv11-变色电子烟笔"><a class="markdownIt-Anchor" href="#lv11-变色电子烟笔"></a> Lv.11 - 变色电子烟笔</h1>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">* *无线rx* 是连接无线接收器的非阻塞式 XBus 输入。</span><br><span class="line">* *红色*、*绿色*和*蓝色*是连接超高亮度 RGB（三色）LED 灯的简单输出，顺序依次是从上到下。</span><br><span class="line">* 从*无线装置*收到数据包时，按照以下规定生成 LED 脉冲：</span><br><span class="line"></span><br><span class="line">| 红色亮度 | 绿色亮度 | 蓝色亮度 | 脉冲时长</span><br><span class="line"></span><br><span class="line">* 如果正在生成脉冲时收到数据包，则终止脉冲。</span><br></pre></td></tr></table></figure>
+<p>这题需要控制一个RGB灯，给出答案不难，但是想要一次就写出最优解还是没那么容易的。</p>
+<p>一开始我给出的解是这样的：</p>
+<ul>
+<li>成本：13</li>
+<li>用电量：828</li>
+<li>代码行数：20</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/shenzhenio_lv11.png" alt="" /></p>
+<p>这种方实比较模块化，思路也很清晰，但是可以看出有很多引脚并没有用上，尤其是相对珍贵的p引脚。所以，可以考虑直接从主控用p引脚连接RGB灯，就像下面这样。</p>
+<ul>
+<li>成本：8</li>
+<li>用电量：588</li>
+<li>代码行数：15</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/shenzhenio_lv11b.png" alt="" /></p>
+<p>从电量使用的分布来看，似乎还有更省电的答案，但是不清楚是否要用到其它模块，或者是牺牲成本和代码行数。不管了，就先这样吧。</p>
+<h1 id="lv12-不明优化设备"><a class="markdownIt-Anchor" href="#lv12-不明优化设备"></a> Lv.12 - 不明优化设备</h1>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">* *x*和*y*是连接未知设备的简单输入，该设备可能是某种未知传感器。</span><br><span class="line">* *电源*是连接未知设备的简单输入，该设备可能是某种型号的电机或大功率开关。</span><br><span class="line">* 将（*x*, *y*）坐标与相应*电源*对应起来，使其值符合 Poseidon-779 几何规格书的规定。在手册里的“补充信息”部分可以找到该规格书。</span><br></pre></td></tr></table></figure>
+<p>这关好难啊，思路不对的话，死磕是解不出来的。</p>
+<p>首先我们需要研究下说明书里头的这个图。</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/shenzhenio_lv12des.png" alt="" /></p>
+<p>稍微用伪代码写一下，大概就是下面这样的：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (x &lt; <span class="number">20</span>) power = <span class="number">30</span>;</span><br><span class="line"><span class="keyword">if</span> (x &gt;= <span class="number">20</span> &amp;&amp; x &lt; <span class="number">60</span>) &#123;</span><br><span class="line">    <span class="keyword">if</span> (x &gt;= <span class="number">40</span> &amp;&amp; y &gt;= <span class="number">40</span> &amp;&amp; y &lt; <span class="number">80</span>) power = <span class="number">50</span>;</span><br><span class="line">    <span class="keyword">else</span> power = <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">if</span> (x &gt;= <span class="number">60</span>) &#123;</span><br><span class="line">    <span class="keyword">if</span> (x &lt; <span class="number">80</span> &amp;&amp; y &gt;= <span class="number">40</span> &amp;&amp; y &lt; <span class="number">80</span>) power = <span class="number">80</span>;</span><br><span class="line">    <span class="keyword">else</span> power = <span class="number">30</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>要是平时，我就直接用上面的代码了，反正现在电脑性能高得很，优化什么的当然是不存在的。但是现在只能用汇编，而且一个控制器最多写14行汇编代码。所以，上面那段伪代码是没有办法实现的。</p>
+<p>那么，有没有简化的方法呢？我后来就尝试将整个地图切割成下面这样的15份。</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/shenzhenio_lv12des2.png" alt="" /></p>
+<p>赋予地图一个坐标系之后，看起来比较可行，因为绝大部分区域都是0和30，这些可以批量去判断。关于两个特殊的格子（50和80），可以单独拿出来判断。最后一共用了五个控制器，然后还差一行写不下，太尴尬了。。。而且塞满了整个电路板，说明答案肯定不对了。</p>
+<p>后来实在没办法了，上网翻到一个<a target="_blank" rel="noopener" href="https://www.gog.com/forum/shenzhen_io/disassemble_poseidon779">讨论贴</a>，看了眼提示，然后恍然大悟。这里其实还是用数学方法来简化，很关键的一点就是：</p>
+<blockquote>
+<p>The value inside the inner square is the outer value + 50</p>
+</blockquote>
+<p>所以我当时咋就没看出来呢。。。有了这个信息，那就简单很多了。首先通过x的区间，决定是0或30。然后再通过x和y共同决定是否+50（也就是0或50），最后把两个数值加一起就行了。</p>
+<ul>
+<li>成本：10</li>
+<li>用电量：1037</li>
+<li>代码行数：19</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/shenzhenio_lv12.png" alt="" /></p>
+<p>感谢评论区Wof3YldPjOvDh9xe提出了另外两种更好的方案，在此一并列出。</p>
+<blockquote>
+<p>另外，优化后的设计，比博主目前的版本稍好些，希望博主能更新文章，方便大家😋</p>
+</blockquote>
+<ul>
+<li>成本：8</li>
+<li>用电量：740</li>
+<li>代码行数：16</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/shenzhenio_lv12b.png" alt="" /></p>
+<blockquote>
+<p>一个QQ群友，告诉我一个更牛逼的，人外有人，天外有天呀🤡</p>
+</blockquote>
+<ul>
+<li>成本：6</li>
+<li>用电量：715</li>
+<li>代码行数：14</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/shenzhenio_lv12c.png" alt="" /></p>
+<h1 id="秘密指令"><a class="markdownIt-Anchor" href="#秘密指令"></a> 秘密指令！</h1>
+<p>这个不是关卡，但是这段剧情提到了两个可能有用的新指令，而且不在说明书上。</p>
+<p><code>gen P R/I R/I</code></p>
+<p>说明：它能方便地在所有简单 I/O 引脚上生成脉冲！该信号会在开（100）和关（0）之间跳转，你想要持续多少时间单位都行，取决于最后两个操作数的数值。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">用法：gen P X Y</span><br><span class="line"></span><br><span class="line">相当于：</span><br><span class="line">mov 100 P</span><br><span class="line">slp X</span><br><span class="line">mov 0 P</span><br><span class="line">slp Y</span><br></pre></td></tr></table></figure>
+<p><code>@ 条件语句</code></p>
+<p>说明：在指令前加 @ 符号能让该指令只执行一次</p>
+<h1 id="lv13-古钱币付款终端"><a class="markdownIt-Anchor" href="#lv13-古钱币付款终端"></a> Lv.13 - 古钱币付款终端</h1>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">* *投入口1*、*投入口5*和*投入口12*是连接到一台机器上的简单输入，该装置能检测并接收 1 銖、5 銖和 12 銖钱币。</span><br><span class="line">* *铃*是连接螺线管的简单输出，该装置被触发会导致响铃。</span><br><span class="line">* *找零口1*和*找零口5*是连接到一台机器上的简单输出，该装置能吐出 1 銖和 5 銖钱币从而为玩家找零。</span><br><span class="line">* 投入足够数量的钱币后，付款台会响*铃*，并按照验证面板中的指示找零。</span><br><span class="line">* 使用者可通过转盘设置商品费用，转盘数值可从 XBus 输入读取。</span><br></pre></td></tr></table></figure>
+<p>这关出乎意料的简单，一次就写出答案了。这里用了两块控制器，一块收钱响铃，另一块找钱。</p>
+<p>不过在写的时候有个坑。控制器只支持下面这些指令。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">teq a b -&gt; if (a == b) exec +; else exec -;</span><br><span class="line">tgt a b -&gt; if (a &gt; b) exec +; else exec -;</span><br><span class="line">tlt a b -&gt; if (a &lt; b) exec +; else exec -;</span><br><span class="line">// 最后这个只有在两者不相等才执行</span><br><span class="line">tcp a b -&gt; if (a &gt; b) exec +; else if (a &lt; b) exec -;</span><br></pre></td></tr></table></figure>
+<p>那么要实现<code>&gt;=</code>的效果怎么办呢？其实很简单，走false分支就可以了，像下面这样。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">  tlt acc x0</span><br><span class="line">- mov 100 p1</span><br><span class="line"></span><br><span class="line">// 用js写就是if (!(a &lt; b))，等价于if (a &gt;= b)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>成本：11</li>
+<li>用电量：389</li>
+<li>代码行数：25</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/shenzhenio_lv13.png" alt="" /></p>
+<h1 id="lv14-个人三明治制作机"><a class="markdownIt-Anchor" href="#lv14-个人三明治制作机"></a> Lv.14 - 个人三明治制作机</h1>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">* *小键盘*是连接小键盘的 XBus 输入。</span><br><span class="line">* *面包*、*肉*、*奶酪*和*芥末*是连接到一台机器上的简单输出，该装置能吐出以上原料。</span><br><span class="line">* *旗*是一个简单输出，它连接着一台小电机，可以在三明治做好后升起或放下一面美国国旗。</span><br><span class="line">* 当*小键盘*输入一组值，读取该值并按照以下表格和验证面板的提示做一只三明治。</span><br><span class="line"></span><br><span class="line">|  1  | 三明治时间！ | 做一只加*肉*、*奶酪*和*芥末*的三明治。</span><br><span class="line">-------------------------------------------------------------</span><br><span class="line">|  2  | 不要奶酪     | 做一只三明治，但不要加*奶酪*</span><br><span class="line">-------------------------------------------------------------</span><br><span class="line">|  3  | 多加芥末     | 给三明治多加一份*芥末*</span><br></pre></td></tr></table></figure>
+<p>这关写出来不难，但是要把所有代码塞进一个控制器，还是有点难度的。</p>
+<p>首先，很容易想到，用一个DX300控制肉、奶酪、芥末，然后用MC6000的两个p引脚控制面包和旗子，基本上写出下面的代码不难。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">  slx x1</span><br><span class="line">  mov x1 acc</span><br><span class="line">  gen p1 1 0</span><br><span class="line">  mov 100 x3</span><br><span class="line">  slp 1</span><br><span class="line">  teq acc 2</span><br><span class="line">- mov 010 x3</span><br><span class="line">- slp 1</span><br><span class="line">  mov 001 x3</span><br><span class="line">  teq acc 3</span><br><span class="line">+ slp 2</span><br><span class="line">- slp 1</span><br><span class="line">  mov 000 x3</span><br><span class="line">  gen p1 1 0</span><br><span class="line">  gen p0 3 1</span><br></pre></td></tr></table></figure>
+<p>但是问题来了，这里一共有15行，超出了1行，所以得想办法变成14行。接下来要说的，会推翻前面对“条件语句”的认知。</p>
+<p>根据说明书上提供的条件表格，“+”和“-”指令在不同的条件下会“允许执行”或者“禁止执行”。也就是说，“+”和“-”指令不需要紧跟着条件语句，而是应当看作“是否被激活”的一个状态。</p>
+<p>关于<code>tcp</code>指令，说明书是这么写的：</p>
+<table>
+<thead>
+<tr>
+<th>条件</th>
+<th>对‘+’ 指令的作用</th>
+<th>对‘-’ 指令的作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A 大于 B</td>
+<td>允许执行</td>
+<td>禁止执行（屏蔽）</td>
+</tr>
+<tr>
+<td>A 等于 B</td>
+<td>禁止执行（屏蔽）</td>
+<td>禁止执行（屏蔽）</td>
+</tr>
+<tr>
+<td>A 小于 B</td>
+<td>禁止执行（屏蔽）</td>
+<td>允许执行</td>
+</tr>
+</tbody>
+</table>
+<p>因此这里可以直接用tcp来标记状态（是否允许执行特定的代码），从而省去把状态保存到acc这一步。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">  slx x1</span><br><span class="line">  tcp x1 2      // 1执行-，2不执行+-，3执行+</span><br><span class="line">  gen p1 1 0    // 面包：123</span><br><span class="line">  mov 100 x3    // 肉：123</span><br><span class="line">  slp 1</span><br><span class="line">  mov 010 x3    // 奶酪：13（注意：2也会执行这句，但是会跳过下面的slp，然后被芥末直接覆盖）</span><br><span class="line">+ slp 1</span><br><span class="line">- slp 1</span><br><span class="line">  mov 001 x3    // 芥末1：123</span><br><span class="line">  slp 1</span><br><span class="line">+ slp 1         // 芥末2：3（直接延长一个时间周期即可）</span><br><span class="line">  mov 000 x3    // 关闭芥末</span><br><span class="line">  gen p1 1 0    // 面包：123</span><br><span class="line">  gen p0 3 1    // 旗子：123</span><br></pre></td></tr></table></figure>
+<p>这个应该是最优解了，而且使用一个控制器的，肯定也只有这个唯一解。这一关看成绩分布的时候，发现很多人都用了两个控制器，好像还有用三个的。。。</p>
+<ul>
+<li>成本：6</li>
+<li>用电量：84</li>
+<li>代码行数：14</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/shenzhenio_lv14.png" alt="" /></p>
+<h1 id="lv15-卡宾枪瞄准照明器"><a class="markdownIt-Anchor" href="#lv15-卡宾枪瞄准照明器"></a> Lv.15 - 卡宾枪瞄准照明器</h1>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">* *雷达输出*是连接微型雷达单元的简单输出，该设备在发射雷达“ping”时会发送信号。</span><br><span class="line">* *雷达输入*是连接微型雷达单元的简单输入，该设备在收到雷达“ping”时会发送信号。</span><br><span class="line">* *激光*是连接可变强度红外线瞄准激光器的简单输出。</span><br><span class="line">* *泛光20*和*泛光60*是连接 20°和 60° 光束红外线泛光照明器的简单输出。</span><br><span class="line">* 测量*雷达输出*脉冲起点和随后的*雷达输入*脉冲起点，以确定“雷达范围”。</span><br><span class="line">* 按照手册“补充信息”部分的卡宾枪瞄准照明器照射范围表规定，控制*激光*、*泛光20*和*泛光60*的信号。</span><br></pre></td></tr></table></figure>
+<p>这关只要善用<code>jmp</code>，写出来还是挺容易的。收到“雷达输出”的时候开始用acc计时，收到“雷达输入”的时候停止计时（并且别忘了acc + 1）。然后就判断acc的范围，一个控制器写不下就通过xBus接口转发。</p>
+<p>我这个不是最优解，也懒得优化了，差不多就行。</p>
+<ul>
+<li>成本：11</li>
+<li>用电量：262</li>
+<li>代码行数：26</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/shenzhenio_lv15.png" alt="" /></p>
+<h1 id="lv16-幽灵娃娃"><a class="markdownIt-Anchor" href="#lv16-幽灵娃娃"></a> Lv.16 - 幽灵娃娃</h1>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">* *随机*是连接随机数发生器的简单输入。</span><br><span class="line">* *扬声器*是连接微型自放大扬声器的简单输出。</span><br><span class="line">* 当随机生成值 1 时，播放“邪恶地笑”音效。</span><br><span class="line">* 当随机生成值 2 时，播放“令人毛骨悚然的尖叫”音效。</span><br><span class="line">* 在手册“补充信息”部分有 Carl 找到的这两种音效的音频数据。</span><br></pre></td></tr></table></figure>
+<p>这关如果用<code>teq</code>的话，又写不下，所以还是要利用强大的<code>tcp</code>。而且如果写不下的话，也会大大增加布线难度。这里就给出我两个解，可以体会下差距有多大。</p>
+<p>首先是使用<code>teq</code>的版本，一共使用了三个控制器，而且布局比较乱。这里倒是用到了两个小技巧。</p>
+<p>第一，线路可以从芯片下方穿过。这里就是从随机数生成器那里开始，穿过200P-14（只读储存器），最后到达左下角MC6000控制器的p0引脚。</p>
+<p>第二，可以把多个线路联通，从而实现一对多的关系。这里就是两个MC6000控制器的x3引脚，同时连接到了右边MC4000控制器的x0引脚。</p>
+<ul>
+<li>成本：17</li>
+<li>用电量：490</li>
+<li>代码行数：20</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/shenzhenio_lv16a.png" alt="" /></p>
+<p>接下来是<code>tcp</code>的版本。由于代码恰好能塞进一个MC6000控制器，所以面板非常简洁，而且控制器的六个引脚全部用上。</p>
+<ul>
+<li>成本：9</li>
+<li>用电量：238</li>
+<li>代码行数：14</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/shenzhenio_lv16b.png" alt="" /></p>
+<p>最后上一张资源消耗对比图。</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/shenzhenio_lv16res.png" alt="" /></p>
+<p>现在用高级语言写代码可以随心所欲，还得感谢硬件的发展啊。要是回到过去，那可得绞尽脑汁去进行优化的。</p>
+<h1 id="lv17-共生环境维护机器人"><a class="markdownIt-Anchor" href="#lv17-共生环境维护机器人"></a> Lv.17 - 共生环境维护机器人</h1>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">* *无线rx*是连接无线接收器的非阻塞式 XBus 输入。</span><br><span class="line">* *电机*是连接双向电机的简单输入。</span><br><span class="line">* *清洁工具*和*加液工具*是连接位置工具的简单输出。</span><br><span class="line">* 共生环境维护机器人开始工作时位于站点 0。</span><br><span class="line">* 让*电机*输入生成从 100 波动到 50 的脉冲能将电机移动到下一站。</span><br><span class="line">* 让*电机*输入生成从 0 波动到 50 的脉冲能将电机移动到前一站。</span><br><span class="line">* 从*无线装置*收到数据包时，移动到目标站点，并按照规定时长激活工具。</span><br><span class="line"></span><br><span class="line">|    目标   |     *清洁工具*     |     *加液工具*</span><br><span class="line">|      站点     |   激活时间    |   激活时间</span><br></pre></td></tr></table></figure>
+<p>这关的难点在于，如何利用gen输出0和100之外的数值。开始想了半天，后来才发现，只要在slp之前覆盖简单输出的值，就可以偷梁换柱了。具体实现就是下面这样。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">  tcp dat acc</span><br><span class="line">+ gen p1 1 0</span><br><span class="line">+ add 1</span><br><span class="line">- gen p1 0 1</span><br><span class="line">- sub 1</span><br><span class="line">  mov 50 p1 // 这里偷梁换柱，把最后结果改成50</span><br></pre></td></tr></table></figure>
+<p>至于分区处理，还是比较好想到的。电机单独控制，然后清洁工具和加液工具一起控制。两个控制器之间使用slx来通信，机制比较类似于callback。电机当前的位置用acc记录，目标位置从x0获取之后存放在dat，因为只有acc可以进行加减操作，dat只能存放数据。</p>
+<ul>
+<li>成本：10</li>
+<li>用电量：217</li>
+<li>代码行数：23</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/shenzhenio_lv17.png" alt="" /></p>
+<h1 id="lv18-远程退出开关"><a class="markdownIt-Anchor" href="#lv18-远程退出开关"></a> Lv.18 - 远程退出开关</h1>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">* *无线rx*是连接无线接收器的非阻塞式 XBus 输入。</span><br><span class="line">* *电源0*、*电源1*和*电源2*是连接大功率开关的简单输出，该装置控制着工业设备。</span><br><span class="line">* 从*无线装置*收到数据包时，读取该数据包，并执行下表中的相应指令：</span><br><span class="line"></span><br><span class="line">| -1 | 保持现状 | 无操作</span><br><span class="line">-------------------------------------------------------------</span><br><span class="line">| 0  | 关闭电源  | 读取另一个值并关闭输出</span><br><span class="line">-------------------------------------------------------------</span><br><span class="line">| 1  | 开启电源   | 读取另一个值并开启输出</span><br><span class="line"></span><br><span class="line">* 持续 5 个时间单位未收到数据包时，关闭所有*电源*输出。</span><br></pre></td></tr></table></figure>
+<p>这关需要提供三个p引脚输出，很明显要用到DX300。DX300接收的是一个三位数，这里就要利用dst指令来给指定数位赋值。然而dst指令是只能作用于acc的，这关还额外要求我们设计一个倒计时功能。注意dat是无法进行运算操作的，只是一个储存器，因此很明显我们需要两个acc。</p>
+<p>这里我采用的方案是，用一个MC4000当倒计时器，MC6000当作主控。答案似乎不是最优解，耗电量超过了平均值，但是懒得优化了。</p>
+<ul>
+<li>成本：9</li>
+<li>用电量：798</li>
+<li>代码行数：20</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/shenzhenio_lv18.png" alt="" /></p>
+<h1 id="lvxx-未完待续"><a class="markdownIt-Anchor" href="#lvxx-未完待续"></a> Lv.XX - 未完待续。。。</h1>
+<p>Lv.19有点难，所以本文好像要烂尾了</p>
+<p>最后更新：2021/2/28</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/tech/adobe-premiere-tutorial.html" rel="prev" title="Adobe Premiere 入门教学">
+                  <i class="fa fa-angle-left"></i> Adobe Premiere 入门教学
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/tech/raspberrypi-nas.html" rel="next" title="从零开始在树莓派上搭建NAS">
+                  从零开始在树莓派上搭建NAS <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 2020 – 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="fa fa-terminal"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">oscarcx123</span>
+        <span class="post-meta-item">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-chart-line"></i>
+          </span>
+          <span title="站点总字数">268k</span>
+        </span>
+        <span class="post-meta-item">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-coffee"></i>
+          </span>
+          <span title="站点阅读时长">14:53</span>
+        </span>
+  </div>
+  <div class="powered-by">
+    <span class="post-meta-item">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v6.3.0 强力驱动
+    </span>
+    <span class="post-meta-item"> 主题 – <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v8.18.1
+    </span>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script size="300" alpha="0.6" zIndex="-1" src="/js/ribbon.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.6.0/pjax.min.js" integrity="sha256-vxLn1tSKWD4dqbMRyv940UYw4sXgMtYcK6reefzZrao=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.0.8/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/pjax.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/katex.min.css" integrity="sha256-3574TpfThVfeAhg+I4+N39EJiLN3QUkuEsMVe8hWAR4=" crossorigin="anonymous">
+  <script class="next-config" data-name="katex" type="application/json">{"copy_tex_js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/contrib/copy-tex.min.js","integrity":"sha256-Us54+rSGDSTvIhKKUs4kygE2ipA0RXpWWh0/zLqw3bs="}}</script>
+  <script src="/js/third-party/math/katex.js"></script>
+
+
+<script type="text/javascript">
+  // 显示“展开”和“折叠”
+  function collapsableTitle(x) {
+    var nav = document.getElementsByClassName("sidebar-nav-toc")[0];
+    if (x.matches) { // If media query matches
+      var content = document.getElementsByClassName("sidebar-panel-container")[0];
+      if (content.style.display = "none") {
+        nav.textContent = "文章目录 [展开]";
+      }
+      else {
+        nav.textContent = "文章目录 [折叠]";
+      }
+    } 
+    else {
+      nav.textContent = "文章目录";
+    }
+  }
+
+  var x = window.matchMedia("(max-width: 991px)"); // media query
+  collapsableTitle(x);
+  x.addListener(collapsableTitle);
+
+  // 控制目录的折叠
+  var tos = document.getElementsByClassName("sidebar-nav")[0];
+  var i;
+
+  tos.addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = document.getElementsByClassName("sidebar-panel-container")[0];
+    var nav = document.getElementsByClassName("sidebar-nav-toc")[0];
+    if (content.style.display === "block" && window.innerWidth < 991) {
+      content.style.display = "none";
+      nav.textContent = "文章目录 [展开]";
+    } else {
+      content.style.display = "block";
+      if (window.innerWidth < 991) {
+        nav.textContent = "文章目录 [折叠]";
+      }
+    }
+  });
+
+  // 因为启用pjax，需要监听complete事件，来实现默认折叠效果
+  document.addEventListener('pjax:complete', function() {
+    if (window.innerWidth < 991) {
+      let content = document.getElementsByClassName("sidebar-panel-container")[0];
+      content.style.display = "none";
+      let nav = document.getElementsByClassName("sidebar-nav-toc")[0];
+      nav.textContent = "文章目录 [展开]";
+      }
+    });
+  </script>
+</body>
+</html>

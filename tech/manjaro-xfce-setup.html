@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-64x64-dragon.jpg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-64x64-dragon.jpg">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-64x64-dragon.jpg">
+  <link rel="mask-icon" href="/images/favicon-64x64-dragon.jpg" color="#222">
+  <meta name="google-site-verification" content="-QMh-gRPduq5T_vg3_Pwi3kZsNSiyuEpPBaDIXV8J34">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"oscarcx.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.18.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":true,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+
+
+  <style type="text/css">
+
+div.hcb-content.hcb-block.hcbnote, details.hcb-content.box.hcbnote,div.hcb-content.hcb-block.hcbabstract, details.hcb-content.box.hcbabstract,div.hcb-content.hcb-block.hcbinfo, details.hcb-content.box.hcbinfo,div.hcb-content.hcb-block.hcbtip, details.hcb-content.box.hcbtip,div.hcb-content.hcb-block.hcbsuccess, details.hcb-content.box.hcbsuccess,div.hcb-content.hcb-block.hcbquestion, details.hcb-content.box.hcbquestion,div.hcb-content.hcb-block.hcbwarning, details.hcb-content.box.hcbwarning,div.hcb-content.hcb-block.hcbfailure, details.hcb-content.box.hcbfailure,div.hcb-content.hcb-block.hcbdanger, details.hcb-content.box.hcbdanger,div.hcb-content.hcb-block.hcbbug, details.hcb-content.box.hcbbug,div.hcb-content.hcb-block.hcbexample, details.hcb-content.box.hcbexample,div.hcb-content.hcb-block.hcbquote, details.hcb-content.box.hcbquote {
+  border: .05rem solid #448aff;
+  border-radius: .2rem;
+  font-size: 0.96rem;
+  margin: 1.5625em 0;
+  padding: 0 1.2rem;
+  transition: box-shadow 250ms;
+}
+div.hcb-content.hcb-block.hcbnote, details.hcb-content.box.hcbnote {
+  border-color: #448aff;
+}
+div.hcb-content.hcb-block.hcbabstract, details.hcb-content.box.hcbabstract {
+  border-color: #00b0ff;
+}
+div.hcb-content.hcb-block.hcbinfo, details.hcb-content.box.hcbinfo {
+  border-color: #00b8d4;
+}
+div.hcb-content.hcb-block.hcbtip, details.hcb-content.box.hcbtip {
+  border-color: #00bfa5;
+}
+div.hcb-content.hcb-block.hcbsuccess, details.hcb-content.box.hcbsuccess {
+  border-color: #00c853;
+}
+div.hcb-content.hcb-block.hcbquestion, details.hcb-content.box.hcbquestion {
+  border-color: #64dd17;
+}
+div.hcb-content.hcb-block.hcbwarning, details.hcb-content.box.hcbwarning {
+  border-color: #ff9100;
+}
+div.hcb-content.hcb-block.hcbfailure, details.hcb-content.box.hcbfailure {
+  border-color: #ff5252;
+}
+div.hcb-content.hcb-block.hcbdanger, details.hcb-content.box.hcbdanger {
+  border-color: #ff1744;
+}
+div.hcb-content.hcb-block.hcbbug, details.hcb-content.box.hcbbug {
+  border-color: #f50057;
+}
+div.hcb-content.hcb-block.hcbexample, details.hcb-content.box.hcbexample {
+  border-color: #7c4dff;
+}
+div.hcb-content.hcb-block.hcbquote, details.hcb-content.box.hcbquote {
+  border-color: #9e9e9e;
+}
+div.hcb-content.hcb-block.hcbnote:focus-within, details.hcb-content.box.hcbnote:focus-within {
+  box-shadow: 0 0 0 .2rem #448aff1a;
+}
+div.hcb-content.hcb-block.hcbabstract:focus-within, details.hcb-content.box.hcbabstract:focus-within {
+  box-shadow: 0 0 0 .2rem #00b0ff1a;
+}
+div.hcb-content.hcb-block.hcbinfo:focus-within, details.hcb-content.box.hcbinfo:focus-within {
+  box-shadow: 0 0 0 .2rem #00b8d41a;
+}
+div.hcb-content.hcb-block.hcbtip:focus-within, details.hcb-content.box.hcbtip:focus-within {
+  box-shadow: 0 0 0 .2rem #00bfa51a;
+}
+div.hcb-content.hcb-block.hcbsuccess:focus-within, details.hcb-content.box.hcbsuccess:focus-within {
+  box-shadow: 0 0 0 .2rem #00c8531a;
+}
+div.hcb-content.hcb-block.hcbquestion:focus-within, details.hcb-content.box.hcbquestion:focus-within {
+  box-shadow: 0 0 0 .2rem #64dd171a;
+}
+div.hcb-content.hcb-block.hcbwarning:focus-within, details.hcb-content.box.hcbwarning:focus-within {
+  box-shadow: 0 0 0 .2rem #ff91001a;
+}
+div.hcb-content.hcb-block.hcbfailure:focus-within, details.hcb-content.box.hcbfailure:focus-within {
+  box-shadow: 0 0 0 .2rem #ff52521a;
+}
+div.hcb-content.hcb-block.hcbdanger:focus-within, details.hcb-content.box.hcbdanger:focus-within {
+  box-shadow: 0 0 0 .2rem #ff17441a;
+}
+div.hcb-content.hcb-block.hcbbug:focus-within, details.hcb-content.box.hcbbug:focus-within {
+  box-shadow: 0 0 0 .2rem #f500571a;
+}
+div.hcb-content.hcb-block.hcbexample:focus-within, details.hcb-content.box.hcbexample:focus-within {
+  box-shadow: 0 0 0 .2rem #7c4dff1a;
+}
+div.hcb-content.hcb-block.hcbquote:focus-within, details.hcb-content.box.hcbquote:focus-within {
+  box-shadow: 0 0 0 .2rem #9e9e9e1a;
+}
+div.hcb-content.hcb-block.hcbnote *, details.hcb-content.box.hcbnote *,div.hcb-content.hcb-block.hcbabstract *, details.hcb-content.box.hcbabstract *,div.hcb-content.hcb-block.hcbinfo *, details.hcb-content.box.hcbinfo *,div.hcb-content.hcb-block.hcbtip *, details.hcb-content.box.hcbtip *,div.hcb-content.hcb-block.hcbsuccess *, details.hcb-content.box.hcbsuccess *,div.hcb-content.hcb-block.hcbquestion *, details.hcb-content.box.hcbquestion *,div.hcb-content.hcb-block.hcbwarning *, details.hcb-content.box.hcbwarning *,div.hcb-content.hcb-block.hcbfailure *, details.hcb-content.box.hcbfailure *,div.hcb-content.hcb-block.hcbdanger *, details.hcb-content.box.hcbdanger *,div.hcb-content.hcb-block.hcbbug *, details.hcb-content.box.hcbbug *,div.hcb-content.hcb-block.hcbexample *, details.hcb-content.box.hcbexample *,div.hcb-content.hcb-block.hcbquote *, details.hcb-content.box.hcbquote * {
+  box-sizing: border-box;
+}
+div.hcb-content.hcb-block.hcbnote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbnote > summary,div.hcb-content.hcb-block.hcbabstract > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbabstract > summary,div.hcb-content.hcb-block.hcbinfo > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbinfo > summary,div.hcb-content.hcb-block.hcbtip > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbtip > summary,div.hcb-content.hcb-block.hcbsuccess > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbsuccess > summary,div.hcb-content.hcb-block.hcbquestion > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquestion > summary,div.hcb-content.hcb-block.hcbwarning > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbwarning > summary,div.hcb-content.hcb-block.hcbfailure > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbfailure > summary,div.hcb-content.hcb-block.hcbdanger > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbdanger > summary,div.hcb-content.hcb-block.hcbbug > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbbug > summary,div.hcb-content.hcb-block.hcbexample > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbexample > summary,div.hcb-content.hcb-block.hcbquote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquote > summary {
+  border-top-right-radius: 0.1rem;
+  border-top-left-radius: 0.1rem;
+  border-left-width: 0.2rem;
+  display: block;
+  min-height: 1rem;
+  border: none;
+  font-weight: 700;
+  margin: 0 -1.2rem 1rem;
+  padding: 0.4rem 0.6rem;
+  position: relative;
+  outline: none;
+}
+details.hcb-content.box.hcbnote > summary,details.hcb-content.box.hcbabstract > summary,details.hcb-content.box.hcbinfo > summary,details.hcb-content.box.hcbtip > summary,details.hcb-content.box.hcbsuccess > summary,details.hcb-content.box.hcbquestion > summary,details.hcb-content.box.hcbwarning > summary,details.hcb-content.box.hcbfailure > summary,details.hcb-content.box.hcbdanger > summary,details.hcb-content.box.hcbbug > summary,details.hcb-content.box.hcbexample > summary,details.hcb-content.box.hcbquote > summary {
+  cursor: pointer;
+}
+details.hcb-content.box.hcbnote:not([open]) > summary,details.hcb-content.box.hcbabstract:not([open]) > summary,details.hcb-content.box.hcbinfo:not([open]) > summary,details.hcb-content.box.hcbtip:not([open]) > summary,details.hcb-content.box.hcbsuccess:not([open]) > summary,details.hcb-content.box.hcbquestion:not([open]) > summary,details.hcb-content.box.hcbwarning:not([open]) > summary,details.hcb-content.box.hcbfailure:not([open]) > summary,details.hcb-content.box.hcbdanger:not([open]) > summary,details.hcb-content.box.hcbbug:not([open]) > summary,details.hcb-content.box.hcbexample:not([open]) > summary,details.hcb-content.box.hcbquote:not([open]) > summary {
+  margin-bottom: 0;
+}
+div.hcb-content.hcb-block.hcbnote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbnote > summary {
+  background-color: #448aff1a;
+}
+div.hcb-content.hcb-block.hcbabstract > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbabstract > summary {
+  background-color: #00b0ff1a;
+}
+div.hcb-content.hcb-block.hcbinfo > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbinfo > summary {
+  background-color: #00b8d41a;
+}
+div.hcb-content.hcb-block.hcbtip > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbtip > summary {
+  background-color: #00bfa51a;
+}
+div.hcb-content.hcb-block.hcbsuccess > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbsuccess > summary {
+  background-color: #00c8531a;
+}
+div.hcb-content.hcb-block.hcbquestion > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquestion > summary {
+  background-color: #64dd171a;
+}
+div.hcb-content.hcb-block.hcbwarning > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbwarning > summary {
+  background-color: #ff91001a;
+}
+div.hcb-content.hcb-block.hcbfailure > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbfailure > summary {
+  background-color: #ff52521a;
+}
+div.hcb-content.hcb-block.hcbdanger > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbdanger > summary {
+  background-color: #ff17441a;
+}
+div.hcb-content.hcb-block.hcbbug > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbbug > summary {
+  background-color: #f500571a;
+}
+div.hcb-content.hcb-block.hcbexample > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbexample > summary {
+  background-color: #7c4dff1a;
+}
+div.hcb-content.hcb-block.hcbquote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquote > summary {
+  background-color: #9e9e9e1a;
+}
+div.hcb-content.hcb-block.hcbnote > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbnote > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #448aff;
+}
+div.hcb-content.hcb-block.hcbabstract > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbabstract > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00b0ff;
+}
+div.hcb-content.hcb-block.hcbinfo > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbinfo > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00b8d4;
+}
+div.hcb-content.hcb-block.hcbtip > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbtip > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00bfa5;
+}
+div.hcb-content.hcb-block.hcbsuccess > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbsuccess > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00c853;
+}
+div.hcb-content.hcb-block.hcbquestion > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbquestion > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #64dd17;
+}
+div.hcb-content.hcb-block.hcbwarning > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbwarning > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff9100;
+}
+div.hcb-content.hcb-block.hcbfailure > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbfailure > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff5252;
+}
+div.hcb-content.hcb-block.hcbdanger > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbdanger > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff1744;
+}
+div.hcb-content.hcb-block.hcbbug > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbbug > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #f50057;
+}
+div.hcb-content.hcb-block.hcbexample > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbexample > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #7c4dff;
+}
+div.hcb-content.hcb-block.hcbquote > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbquote > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #9e9e9e;
+}
+details.hcb-content.box.hcbnote > summary > div.hcb-box-open-button,details.hcb-content.box.hcbabstract > summary > div.hcb-box-open-button,details.hcb-content.box.hcbinfo > summary > div.hcb-box-open-button,details.hcb-content.box.hcbtip > summary > div.hcb-box-open-button,details.hcb-content.box.hcbsuccess > summary > div.hcb-box-open-button,details.hcb-content.box.hcbquestion > summary > div.hcb-box-open-button,details.hcb-content.box.hcbwarning > summary > div.hcb-box-open-button,details.hcb-content.box.hcbfailure > summary > div.hcb-box-open-button,details.hcb-content.box.hcbdanger > summary > div.hcb-box-open-button,details.hcb-content.box.hcbbug > summary > div.hcb-box-open-button,details.hcb-content.box.hcbexample > summary > div.hcb-box-open-button,details.hcb-content.box.hcbquote > summary > div.hcb-box-open-button {
+  float: right;
+}
+details.hcb-content.box.hcbnote > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbabstract > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbinfo > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbtip > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbsuccess > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbquestion > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbwarning > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbfailure > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbdanger > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbbug > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbexample > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbquote > summary > div.hcb-box-open-button > i {
+  margin: 0 0.6rem 0 0.6rem;
+  font-size: 0.7rem;
+  transition: transform 250ms
+}
+details.hcb-content.box.hcbnote:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbabstract:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbinfo:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbtip:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbsuccess:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquestion:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbwarning:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbfailure:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbdanger:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbbug:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbexample:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquote:not([open]) > summary > div.hcb-box-open-button i {
+  transform: rotate(270deg);
+}
+details.hcb-content.box.hcbnote[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbabstract[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbinfo[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbtip[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbsuccess[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquestion[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbwarning[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbfailure[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbdanger[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbbug[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbexample[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquote[open] > summary > div.hcb-box-open-button i {
+  transform: rotate(180deg);
+}
+details.hcb-content.box.hcbnote summary div.hcb-box-open-button i {
+  color: #448aff;
+}
+details.hcb-content.box.hcbabstract summary div.hcb-box-open-button i {
+  color: #00b0ff;
+}
+details.hcb-content.box.hcbinfo summary div.hcb-box-open-button i {
+  color: #00b8d4;
+}
+details.hcb-content.box.hcbtip summary div.hcb-box-open-button i {
+  color: #00bfa5;
+}
+details.hcb-content.box.hcbsuccess summary div.hcb-box-open-button i {
+  color: #00c853;
+}
+details.hcb-content.box.hcbquestion summary div.hcb-box-open-button i {
+  color: #64dd17;
+}
+details.hcb-content.box.hcbwarning summary div.hcb-box-open-button i {
+  color: #ff9100;
+}
+details.hcb-content.box.hcbfailure summary div.hcb-box-open-button i {
+  color: #ff5252;
+}
+details.hcb-content.box.hcbdanger summary div.hcb-box-open-button i {
+  color: #ff1744;
+}
+details.hcb-content.box.hcbbug summary div.hcb-box-open-button i {
+  color: #f50057;
+}
+details.hcb-content.box.hcbexample summary div.hcb-box-open-button i {
+  color: #7c4dff;
+}
+details.hcb-content.box.hcbquote summary div.hcb-box-open-button i {
+  color: #9e9e9e;
+}
+div.hcb-content.hcb-cards * {
+  box-sizing: border-box;
+}
+input.hcb-content.hcb-cards-input {
+  display: none;
+}
+div.hcb-content.hcb-cards-labels {
+  position: relative;
+  box-shadow: 0 -0.05rem #00000012 inset;
+  display: flex;
+  margin-bottom: 1.25rem;
+}
+div.hcb-content.hcb-cards-labels:before {
+  background: var(--cards-color);
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: translateX(var(--md-indicator-x));
+  transition: width 225ms, transform 250ms;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  width: var(--md-indicator-width);
+}
+label.hcb-content.hcb-cards-label {
+  border-bottom: 0.1rem solid #0000;
+  border-radius: 0.1rem 0.1rem 0 0;
+  cursor: pointer;
+  color: #0000008a;
+  font-size: 0.92em;
+  font-weight: 700;
+  padding: 0 1.25rem 0.625rem;
+  transition: color 250ms;
+}
+label.hcb-content.hcb-cards-label.active, label.hcb-content.hcb-cards-label:hover {
+  color: var(--cards-color);
+}
+div.hcb-content.hcb-cards-content {
+  display: none;
+}
+div.hcb-content.hcb-cards-content.active {
+  display: block;
+}
+</style>
+    <meta name="description" content="这两天终于下定决心再次转投Manjaro，顺手记录下安装踩坑调教全过程。【本文已经过时，谨慎参考！！】 最后更新时间：2021-09-21">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Manjaro XFCE 安装和调教">
+<meta property="og:url" content="https://oscarcx.com/tech/manjaro-xfce-setup.html">
+<meta property="og:site_name" content="Cow">
+<meta property="og:description" content="这两天终于下定决心再次转投Manjaro，顺手记录下安装踩坑调教全过程。【本文已经过时，谨慎参考！！】 最后更新时间：2021-09-21">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-08-09T01:47:55.000Z">
+<meta property="article:modified_time" content="2025-05-18T16:05:39.209Z">
+<meta property="article:author" content="oscarcx123">
+<meta property="article:tag" content="Linux">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://oscarcx.com/tech/manjaro-xfce-setup.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://oscarcx.com/tech/manjaro-xfce-setup.html","path":"tech/manjaro-xfce-setup.html","title":"Manjaro XFCE 安装和调教"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Manjaro XFCE 安装和调教 | Cow</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<style type="text/css">
+.spoiler {
+  display: inline;
+}
+p.spoiler {
+  display: flex;
+}
+.spoiler a {
+  pointer-events: none;
+}
+.spoiler-blur, .spoiler-blur > * {
+  transition: text-shadow .5s ease;
+}
+.spoiler .spoiler-blur, .spoiler .spoiler-blur > * {
+  color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  text-shadow: 0 0 10px grey;
+  cursor: pointer;
+}
+.spoiler .spoiler-blur:hover, .spoiler .spoiler-blur:hover > * {
+  text-shadow: 0 0 5px grey;
+}
+.spoiler-box, .spoiler-box > * {
+  transition: color .5s ease,
+  background-color .5s ease;
+}
+.spoiler .spoiler-box, .spoiler .spoiler-box > * {
+  color: black;
+  background-color: black;
+  text-shadow: none;
+}</style></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Cow</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9D%91%E7%88%B9%E7%9A%84win10"><span class="nav-number">1.</span> <span class="nav-text"> 坑爹的Win10</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#manjaro%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85"><span class="nav-number">2.</span> <span class="nav-text"> Manjaro下载安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#sudo%E5%85%8D%E5%AF%86%E7%A0%81"><span class="nav-number">3.</span> <span class="nav-text"> sudo免密码</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%99%E8%87%AA%E5%B7%B1%E5%85%8D%E5%AF%86%E7%A0%81"><span class="nav-number">3.1.</span> <span class="nav-text"> 给自己免密码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%99wheel%E7%BB%84%E5%85%8D%E5%AF%86%E7%A0%81"><span class="nav-number">3.2.</span> <span class="nav-text"> 给wheel组免密码</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%9B%B4%E6%96%B0%E8%BD%AF%E4%BB%B6%E5%8C%85"><span class="nav-number">4.</span> <span class="nav-text"> 更新软件包</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AE%89%E8%A3%85%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7"><span class="nav-number">5.</span> <span class="nav-text"> 安装常用工具</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AD%97%E4%BD%93%E9%85%8D%E7%BD%AE"><span class="nav-number">6.</span> <span class="nav-text"> 字体配置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BF%AE%E6%AD%A3%E7%BB%88%E7%AB%AF%E5%AD%97%E4%BD%93%E9%97%B4%E8%B7%9D"><span class="nav-number">6.1.</span> <span class="nav-text"> 修正终端字体间距</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8B%E5%8F%AF%E7%94%A8%E5%AD%97%E4%BD%93"><span class="nav-number">6.2.</span> <span class="nav-text"> 查看可用字体</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%A8%E5%B1%80emoji%E6%94%AF%E6%8C%81"><span class="nav-number">6.3.</span> <span class="nav-text"> 全局emoji支持</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85windows%E5%AD%97%E4%BD%93"><span class="nav-number">6.4.</span> <span class="nav-text"> 安装Windows字体</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AE%89%E8%A3%85%E8%BE%93%E5%85%A5%E6%B3%95fcitx5"><span class="nav-number">7.</span> <span class="nav-text"> 安装输入法（fcitx5）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8"><span class="nav-number">7.1.</span> <span class="nav-text"> 设置开机启动</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F"><span class="nav-number">7.2.</span> <span class="nav-text"> 修改环境变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E4%B8%BB%E9%A2%98"><span class="nav-number">7.3.</span> <span class="nav-text"> 修改主题</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AE%89%E8%A3%85%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6"><span class="nav-number">8.</span> <span class="nav-text"> 安装常用软件</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#linux%E5%8E%9F%E7%94%9F%E8%BD%AF%E4%BB%B6"><span class="nav-number">8.1.</span> <span class="nav-text"> Linux原生软件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B1%89%E5%8C%96%E5%8C%85"><span class="nav-number">8.2.</span> <span class="nav-text"> 汉化包</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%96%91%E9%9A%BE%E6%9D%82%E7%97%87"><span class="nav-number">8.3.</span> <span class="nav-text"> 疑难杂症</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#wps%E5%AE%89%E8%A3%85%E6%8A%A5%E9%94%99"><span class="nav-number">8.3.1.</span> <span class="nav-text"> WPS安装报错</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#wps%E7%95%8C%E9%9D%A2%E5%AD%97%E4%BD%93%E5%A4%AA%E4%B8%91"><span class="nav-number">8.3.2.</span> <span class="nav-text"> WPS界面字体太丑</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#firefox%E5%AD%97%E4%BD%93%E5%A4%AA%E4%B8%91"><span class="nav-number">8.3.3.</span> <span class="nav-text"> Firefox字体太丑</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#chrome%E5%9C%A8%E6%AF%8F%E6%AC%A1%E5%BC%80%E6%9C%BA%E5%90%8E%E9%A6%96%E6%AC%A1%E5%90%AF%E5%8A%A8%E8%A6%81%E6%B1%82keyring%E5%AF%86%E7%A0%81"><span class="nav-number">8.3.4.</span> <span class="nav-text"> Chrome在每次开机后首次启动要求keyring密码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B5%8F%E8%A7%88%E5%99%A8%E9%BB%98%E8%AE%A4%E7%BC%A9%E6%94%BE%E5%80%BC"><span class="nav-number">8.3.5.</span> <span class="nav-text"> 浏览器默认缩放值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#chrome%E7%94%A8%E8%A7%A6%E6%91%B8%E6%9D%BF%E6%BB%91%E5%8A%A8%E6%B2%A1%E6%9C%89%E6%83%AF%E6%80%A7"><span class="nav-number">8.3.6.</span> <span class="nav-text"> Chrome用触摸板滑动没有惯性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#discord%E5%BC%BA%E5%88%B6%E8%A6%81%E6%B1%82%E6%9B%B4%E6%96%B0"><span class="nav-number">8.3.7.</span> <span class="nav-text"> Discord强制要求更新</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#vlc%E7%9C%8Bnas%E4%B8%8A%E7%9A%84%E8%A7%86%E9%A2%91%E7%BB%8F%E5%B8%B8%E6%96%AD%E6%B5%81"><span class="nav-number">8.3.8.</span> <span class="nav-text"> VLC看NAS上的视频经常断流</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#qq-wechat"><span class="nav-number">9.</span> <span class="nav-text"> QQ &amp; Wechat</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#virtualbox"><span class="nav-number">9.1.</span> <span class="nav-text"> Virtualbox</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#linuxqq"><span class="nav-number">9.2.</span> <span class="nav-text"> LinuxQQ</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#deepin-wine"><span class="nav-number">9.3.</span> <span class="nav-text"> deepin-wine</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#deepin-wine%E7%96%91%E9%9A%BE%E6%9D%82%E7%97%87"><span class="nav-number">9.4.</span> <span class="nav-text"> deepin-wine疑难杂症</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%97%E4%BD%93%E5%A4%AA%E5%B0%8F"><span class="nav-number">9.4.1.</span> <span class="nav-text"> 字体太小</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%AA%E4%BA%BA%E6%96%87%E4%BB%B6%E5%A4%B9%E8%A2%AB%E5%8D%A0%E7%94%A8"><span class="nav-number">9.4.2.</span> <span class="nav-text"> 个人文件夹被占用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A1%A8%E6%83%85%E4%BA%BA%E5%8F%B3%E9%94%AE%E6%97%A0%E6%95%88"><span class="nav-number">9.4.3.</span> <span class="nav-text"> 表情&#x2F;@人&#x2F;右键无效</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E7%BC%96%E7%A8%8B%E7%8E%AF%E5%A2%83"><span class="nav-number">10.</span> <span class="nav-text"> 配置编程环境</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#vscode"><span class="nav-number">10.1.</span> <span class="nav-text"> VSCode</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#monodevelop"><span class="nav-number">10.2.</span> <span class="nav-text"> MonoDevelop</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#mariadb"><span class="nav-number">10.3.</span> <span class="nav-text"> MariaDB</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#docker"><span class="nav-number">10.4.</span> <span class="nav-text"> Docker</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#linux%E6%B8%B8%E6%88%8F"><span class="nav-number">11.</span> <span class="nav-text"> Linux游戏</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%83%E6%81%8B%E4%B8%87%E8%8A%B1steam%E7%89%88"><span class="nav-number">11.1.</span> <span class="nav-text"> 千恋万花（steam版）</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%A3%B0%E5%8D%A1%E9%A9%B1%E5%8A%A8"><span class="nav-number">12.</span> <span class="nav-text"> 声卡驱动</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%89%93%E5%8D%B0%E6%9C%BA"><span class="nav-number">13.</span> <span class="nav-text"> 打印机</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%A7%A6%E6%91%B8%E6%9D%BF"><span class="nav-number">14.</span> <span class="nav-text"> 触摸板</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%8C%E6%8C%87%E6%BB%91%E5%8A%A8%E5%92%8C%E8%BD%BB%E6%8C%89"><span class="nav-number">14.1.</span> <span class="nav-text"> 双指滑动和轻按</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9B%B4%E5%A4%9A%E6%89%8B%E5%8A%BF"><span class="nav-number">14.2.</span> <span class="nav-text"> 更多手势</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E6%97%B6%E9%92%9F"><span class="nav-number">15.</span> <span class="nav-text"> 设置时钟</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%AA%E6%80%A7%E5%8C%96%E6%97%B6%E9%97%B4%E6%97%A5%E6%9C%9F%E6%98%BE%E7%A4%BA"><span class="nav-number">15.1.</span> <span class="nav-text"> 个性化时间日期显示</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BF%AE%E6%AD%A3%E6%97%B6%E5%8C%BA%E9%97%AE%E9%A2%98"><span class="nav-number">15.2.</span> <span class="nav-text"> 修正时区问题</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%89%98%E7%9B%98%E6%98%BE%E7%A4%BA%E7%94%B5%E9%87%8F"><span class="nav-number">16.</span> <span class="nav-text"> 托盘显示电量</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8F%8C%E6%98%BE%E7%A4%BA%E5%99%A8hdmi"><span class="nav-number">17.</span> <span class="nav-text"> 双显示器（HDMI）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%A8gui%E8%AE%BE%E7%BD%AE"><span class="nav-number">17.1.</span> <span class="nav-text"> 用GUI设置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E6%98%BE%E7%A4%BA%E8%BE%93%E5%87%BA"><span class="nav-number">17.1.1.</span> <span class="nav-text"> 设置显示输出</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E5%A3%B0%E9%9F%B3%E8%BE%93%E5%87%BA"><span class="nav-number">17.1.2.</span> <span class="nav-text"> 设置声音输出</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E8%AE%BE%E7%BD%AE"><span class="nav-number">17.2.</span> <span class="nav-text"> 用命令行设置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E6%98%BE%E7%A4%BA%E8%BE%93%E5%87%BA-2"><span class="nav-number">17.2.1.</span> <span class="nav-text"> 设置显示输出</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E5%A3%B0%E9%9F%B3%E8%BE%93%E5%87%BA-2"><span class="nav-number">17.2.2.</span> <span class="nav-text"> 设置声音输出</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%AE%E5%BA%A6%E7%B2%BE%E5%87%86%E8%B0%83%E8%8A%82"><span class="nav-number">18.</span> <span class="nav-text"> 亮度精准调节</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89grub"><span class="nav-number">19.</span> <span class="nav-text"> 自定义grub</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6template"><span class="nav-number">20.</span> <span class="nav-text"> 新建文件Template</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%A1%8C%E9%9D%A2%E6%8C%82%E4%BB%B6conky"><span class="nav-number">21.</span> <span class="nav-text"> 桌面挂件（conky）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85"><span class="nav-number">21.1.</span> <span class="nav-text"> 安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE"><span class="nav-number">21.2.</span> <span class="nav-text"> 配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BF%9D%E6%8C%81%E5%9C%A8%E6%A1%8C%E9%9D%A2%E4%B8%8A"><span class="nav-number">21.2.1.</span> <span class="nav-text"> 保持在桌面上</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AA%97%E5%8F%A3%E4%BD%8D%E7%BD%AE"><span class="nav-number">21.2.2.</span> <span class="nav-text"> 窗口位置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%97%E4%BD%93"><span class="nav-number">21.2.3.</span> <span class="nav-text"> 字体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%80%8F%E6%98%8E%E8%83%8C%E6%99%AF"><span class="nav-number">21.2.4.</span> <span class="nav-text"> 透明背景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%98%BE%E7%A4%BA%E5%86%85%E5%AE%B9"><span class="nav-number">21.2.5.</span> <span class="nav-text"> 显示内容</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%98%BE%E7%A4%BAgcalcli"><span class="nav-number">21.3.</span> <span class="nav-text"> 显示gcalcli</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E9%A2%9C%E8%89%B2"><span class="nav-number">21.3.1.</span> <span class="nav-text"> 修改颜色</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BD%AC%E4%B9%89%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="nav-number">21.3.2.</span> <span class="nav-text"> 转义字符串</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%98%BE%E7%A4%BA%E5%A4%A9%E6%B0%94"><span class="nav-number">21.4.</span> <span class="nav-text"> 显示天气</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#openweathermap"><span class="nav-number">21.4.1.</span> <span class="nav-text"> OpenWeatherMap</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#wttrin"><span class="nav-number">21.4.2.</span> <span class="nav-text"> wttr.in</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#accuweather-rss"><span class="nav-number">21.4.3.</span> <span class="nav-text"> AccuWeather (RSS)</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#win10%E6%9B%B4%E6%96%B0%E5%90%8E%E4%BF%AE%E5%A4%8Dgrub"><span class="nav-number">22.</span> <span class="nav-text"> Win10更新后修复grub</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B0%8F%E7%BB%93"><span class="nav-number">23.</span> <span class="nav-text"> 小结</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#kde%E7%9A%84%E4%B8%80%E4%BA%9B%E4%B8%9C%E8%A5%BF"><span class="nav-number">24.</span> <span class="nav-text"> KDE的一些东西</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#u%E7%9B%98%E6%8C%82%E8%BD%BD%E4%B8%8D%E4%B8%8A"><span class="nav-number">24.1.</span> <span class="nav-text"> U盘挂载不上</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9F%B3%E9%87%8F%E6%8E%A7%E5%88%B6f2f3-sticky"><span class="nav-number">24.2.</span> <span class="nav-text"> 音量控制F2&#x2F;F3 Sticky</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%89%E7%BA%BF%E8%80%B3%E6%9C%BA%E6%9C%89%E5%BA%95%E5%99%AA"><span class="nav-number">24.3.</span> <span class="nav-text"> 有线耳机有底噪</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#thinkbook-s13-%E7%94%B5%E6%B1%A0%E5%85%BB%E6%8A%A4%E6%A8%A1%E5%BC%8F"><span class="nav-number">24.4.</span> <span class="nav-text"> Thinkbook s13 电池养护模式</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="oscarcx123"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">oscarcx123</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">32</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/oscarcx123" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;oscarcx123" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://oscarcx.com/tech/manjaro-xfce-setup.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="oscarcx123">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Cow">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Manjaro XFCE 安装和调教 | Cow">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Manjaro XFCE 安装和调教
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2020-08-09 01:47:55" itemprop="dateCreated datePublished" datetime="2020-08-09T01:47:55+00:00">2020-08-09</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/tech/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>8.7k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>29 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>这两天终于下定决心再次转投Manjaro，顺手记录下安装踩坑调教全过程。【本文已经过时，谨慎参考！！】</p>
+<p>最后更新时间：2021-09-21</p>
+<span id="more"></span>
+<h1 id="坑爹的win10"><a class="markdownIt-Anchor" href="#坑爹的win10"></a> 坑爹的Win10</h1>
+<p>首先当然还是要吐槽下win10啦，各位不想看的可以直接跳到下一部分～</p>
+<p>最开始是笔记本长时间无操作会锁屏，重新解锁之后，WIFI就会莫名其妙的丢失连接。当时感觉问题也不大，也就是手动点两下重新连接WIFI的事，所以也没想着换系统。</p>
+<p>前一阵子搭建了NAS，然后发现其它设备都可以匿名访问，唯独Win10要求输入帐号密码。输入就输入吧，然后又发现每次启动之后都会提示“无法重新连接所有网络驱动器”，然后又得重新输入帐号密码。网上搜了一圈，发现在v2ex已经有<a target="_blank" rel="noopener" href="https://www.v2ex.com/t/214955">讨论帖</a>。仔细一看，居然是2015年就已经出现的bug，硬生生拖了5年，终于在win10（ver 2004）修复了。</p>
+<p>既然修复了，那就去更新系统呗。Windows Update吭哧吭哧忙活半天，也没有给我更新到ver 2004，只是升级到了ver 1909。一进系统我就发现File Explorer不对劲，上面的地址栏都可以跑马了，感情这是越更新越丑啊。刚刚好那天下午需要打印一点文件，然后就发现这次更新直接把Print Spooler服务给搞瘫痪了。只要我一试图打印，Print Spooler服务就会自动关闭。最后弄的没办法了，开了个虚拟机来完成打印的。</p>
+<p>打印完我就在想，win10是越来越不靠谱了啊，看来是时候再次投奔Linux系统了。</p>
+<p>我用Linux断断续续也有两三年了，不过那会儿一直都是双系统。最开始用的是Ubuntu 16.04，后来又尝试过Raspbian (Buster)和Manjaro。要说印象最好的应该就是Manjaro了，没有繁琐的配置，但是作为滚动发行版又可以用到最新的软件，还是挺香的。</p>
+<p>所以就这么拍板决定用Manjaro了～</p>
+<h1 id="manjaro下载安装"><a class="markdownIt-Anchor" href="#manjaro下载安装"></a> Manjaro下载安装</h1>
+<p>Manjaro有好几个自带不同<a target="_blank" rel="noopener" href="https://wiki.archlinux.org/index.php/Desktop_environment">DE</a>的版本，都可以在<a target="_blank" rel="noopener" href="https://manjaro.org/download/">下载页面</a>找到。我个人偏向xfce，因为相对比较轻量，而且之前用的树梅派也是xfce。据说kde也很不错，兼顾了特效、功能、轻量，用的人也挺多，有兴趣的可以试试，我是不想折腾了。</p>
+<p>下载<code>.iso</code>文件还是相当容易的，如果直接下载比较慢的话，可以通过种子来下载。</p>
+<p>当然，下载完镜像之后还需要制作启动盘，一般都用<a target="_blank" rel="noopener" href="https://rufus.ie/">Rufus</a>，准备个U盘就行了。</p>
+<p>但是我手头没U盘，咋办？这里我用的是<code>DriveDroid</code>这个app来把拥有root权限的安卓手机变成启动盘。只需要把Manjaro镜像文件拷进去，然后挂载，就可以当启动盘用了，还是相当方便的。</p>
+<p>安装基本上就是一路确定，如果用不到休眠（hibernate），那么swap分区可以不给。办公套件建议先选择不装，毕竟LibreOffice使用体验确实不咋地，打开中文文档的时候感觉卡顿特别严重。安装完成之后可以去下载WPS，体验吊打各种开源Office软件。</p>
+<h1 id="sudo免密码"><a class="markdownIt-Anchor" href="#sudo免密码"></a> sudo免密码</h1>
+<p>每次<code>sudo</code>都要输入密码挺烦的，不过sudo免密码（NOPASSWD）会极大的降低安全性，这个各位自己衡量。</p>
+<p>输入下面命令来打开sudoers，这里编辑器指定为nano，因为简单好用。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo EDITOR=nano visudo</span><br></pre></td></tr></table></figure>
+<p>接下来有两种处理方式，可以根据自己喜好选择。</p>
+<h2 id="给自己免密码"><a class="markdownIt-Anchor" href="#给自己免密码"></a> 给自己免密码</h2>
+<p>这个方案就特别简单粗暴，不过仅对自己有效，如果是多用户的话就得写很多行。</p>
+<p>在sudoers文件的最后，加上下面这句，这里需要把<code>&lt;YOUR_USERNAME&gt;</code>替换成自己的用户名。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;YOUR_USERNAME&gt; ALL=(ALL) NOPASSWD: ALL</span><br></pre></td></tr></table></figure>
+<h2 id="给wheel组免密码"><a class="markdownIt-Anchor" href="#给wheel组免密码"></a> 给wheel组免密码</h2>
+<p>这个方案比较一劳永逸，修改一次之后就不需要再动sudoers文件了。</p>
+<p>首先需要把自己加入wheel组，不过这一步Manjaro已经代劳了，可以通过下面任意一条命令确认是否如此。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 查看wheel用户组的成员</span></span><br><span class="line"><span class="built_in">cat</span> /etc/group | grep wheel</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看自己在哪些用户组</span></span><br><span class="line"><span class="built_in">groups</span> $(<span class="built_in">whoami</span>)</span><br></pre></td></tr></table></figure>
+<p>然后把下面这行取消注释，这样以后还有其他用户要免密码的话，可以直接把用户添加到wheel用户组就可以了。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">%wheel ALL=(ALL) NOPASSWD: ALL</span><br></pre></td></tr></table></figure>
+<h1 id="更新软件包"><a class="markdownIt-Anchor" href="#更新软件包"></a> 更新软件包</h1>
+<p>基本上装完系统第一件事就是先更新各类软件包，这个指令要跑好一会儿。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -Syu --noconfirm</span><br></pre></td></tr></table></figure>
+<h1 id="安装常用工具"><a class="markdownIt-Anchor" href="#安装常用工具"></a> 安装常用工具</h1>
+<p>我一般会安装这些工具：</p>
+<ul>
+<li>neofetch：展示系统信息</li>
+<li>tldr：精简版man page，懒人专属</li>
+<li>you-get：下载视频必备工具，直接贴视频网站的链接就行</li>
+<li>aria2：多线程下载工具</li>
+<li>yay：（必备）AUR的包管理器</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S --noconfirm neofetch tldr you-get aria2 yay</span><br></pre></td></tr></table></figure>
+<p>pacman不会用的话，直接输入<code>tldr pacman</code>就可以看到最常见的用法了，压根不用看又臭又长的man page。</p>
+<p>悄悄说一声，如果一个命令不知道是干啥的，可以使用<code>whatis</code>命令查询，返回的结果是man page的NAME部分。</p>
+<p>还有一个没用的小工具：</p>
+<ul>
+<li>lolcat：把输出变成彩虹色</li>
+</ul>
+<h1 id="字体配置"><a class="markdownIt-Anchor" href="#字体配置"></a> 字体配置</h1>
+<h2 id="修正终端字体间距"><a class="markdownIt-Anchor" href="#修正终端字体间距"></a> 修正终端字体间距</h2>
+<p>这个问题好像是只有用中文系统才会看到，英文系统是正常的。反正换个字体就好了，比如安装文泉驿字体。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S --noconfirm wqy-microhei</span><br></pre></td></tr></table></figure>
+<h2 id="查看可用字体"><a class="markdownIt-Anchor" href="#查看可用字体"></a> 查看可用字体</h2>
+<p>已安装的字体可以通过<code>fc-list</code>配合<code>grep</code>来查找。如果你确定安装了某个字体但是没找到，可以用<code>fc-cache -f -v</code>刷新字体缓存。下面给出搜索<code>文泉驿</code>字体的例子</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ fc-list | grep -i Micro</span><br><span class="line">/usr/share/fonts/wenquanyi/wqy-microhei/wqy-microhei.ttc: WenQuanYi Micro Hei,文泉驛微米黑,文泉驿微米黑:style=Regular</span><br><span class="line">/usr/share/fonts/wenquanyi/wqy-microhei/wqy-microhei.ttc: WenQuanYi Micro Hei Mono,文泉驛等寬微米黑,文泉驿等宽微米黑:style=Regular</span><br></pre></td></tr></table></figure>
+<p><code>fc-list :lang=zh</code>可以列出全部中文字体。</p>
+<h2 id="全局emoji支持"><a class="markdownIt-Anchor" href="#全局emoji支持"></a> 全局emoji支持</h2>
+<p>fcitx5是支持emoji的输入的，但是试图在Chrome地址栏输入emoji会显示为黑框，所以需要配置全局emoji的支持。</p>
+<p>先安装noto-fonts-emoji，命令如下</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S --noconfirm noto-fonts-emoji</span><br></pre></td></tr></table></figure>
+<p>创建<code>/etc/fonts/local.conf</code>并写入如下内容</p>
+<p>注意：对于sans-serif，这里首选的是Noto Sans CJK SC而不是参考文章中所给出的Noto Sans。老外不用中文，所以配置不能直接照抄，否则可能会出现莫名其妙的问题。例如在用Mono来运行C# WinForm程序的时候，SystemFonts.DefaultFont.Name就会是Noto Sans而不是Noto Sans CJK SC，从而导致汉字全都显示成方框。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=&quot;1.0&quot;?&gt;</span><br><span class="line">&lt;!DOCTYPE fontconfig SYSTEM &quot;fonts.dtd&quot;&gt;</span><br><span class="line">&lt;fontconfig&gt;</span><br><span class="line"></span><br><span class="line"> &lt;alias&gt;</span><br><span class="line">   &lt;family&gt;sans-serif&lt;/family&gt;</span><br><span class="line">   &lt;prefer&gt;</span><br><span class="line">     &lt;family&gt;Noto Sans CJK SC&lt;/family&gt;</span><br><span class="line">     &lt;family&gt;Noto Color Emoji&lt;/family&gt;</span><br><span class="line">     &lt;family&gt;Noto Emoji&lt;/family&gt;</span><br><span class="line">     &lt;family&gt;DejaVu Sans&lt;/family&gt;</span><br><span class="line">   &lt;/prefer&gt; </span><br><span class="line"> &lt;/alias&gt;</span><br><span class="line"></span><br><span class="line"> &lt;alias&gt;</span><br><span class="line">   &lt;family&gt;serif&lt;/family&gt;</span><br><span class="line">   &lt;prefer&gt;</span><br><span class="line">     &lt;family&gt;Noto Serif&lt;/family&gt;</span><br><span class="line">     &lt;family&gt;Noto Color Emoji&lt;/family&gt;</span><br><span class="line">     &lt;family&gt;Noto Emoji&lt;/family&gt;</span><br><span class="line">     &lt;family&gt;DejaVu Serif&lt;/family&gt;</span><br><span class="line">   &lt;/prefer&gt;</span><br><span class="line"> &lt;/alias&gt;</span><br><span class="line"></span><br><span class="line"> &lt;alias&gt;</span><br><span class="line">  &lt;family&gt;monospace&lt;/family&gt;</span><br><span class="line">  &lt;prefer&gt;</span><br><span class="line">    &lt;family&gt;Noto Mono&lt;/family&gt;</span><br><span class="line">    &lt;family&gt;Noto Color Emoji&lt;/family&gt;</span><br><span class="line">    &lt;family&gt;Noto Emoji&lt;/family&gt;</span><br><span class="line">   &lt;/prefer&gt;</span><br><span class="line"> &lt;/alias&gt;</span><br><span class="line"></span><br><span class="line">&lt;/fontconfig&gt;</span><br></pre></td></tr></table></figure>
+<p>然后在Settings &gt; Appearance &gt; Fonts 把字体设置为Noto Sans CJK SC Regular就可以了。</p>
+<p>参考文章：<a target="_blank" rel="noopener" href="https://forum.manjaro.org/t/tutorial-how-to-enable-system-wide-color-emoji-support/35188">Tutorial: How to enable system-wide color emoji support</a></p>
+<h2 id="安装windows字体"><a class="markdownIt-Anchor" href="#安装windows字体"></a> 安装Windows字体</h2>
+<p>Linux上面当然没有Windows字体（例如Times New Roman），所以在打开一些<code>docx</code>文档的时候，排版会出问题。使用下面命令可以安装Microsoft核心字体包，不过字体很少，可能不管用。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yay -S --noconfirm ttf-ms-fonts</span><br></pre></td></tr></table></figure>
+<p>当然还有其它带版权的Windows字体，可以通过<a target="_blank" rel="noopener" href="https://wiki.archlinux.org/index.php/Microsoft_fonts">Microsoft fonts - ArchWiki</a>了解更多。这里推荐<a target="_blank" rel="noopener" href="https://aur.archlinux.org/packages/ttf-ms-win10/">ttf-ms-win10</a>这个包，涵盖了一百多种字体。由于带版权，所以ttf文件需要自行从Windows系统里头提取出来，具体操作流程可以阅读对应<a target="_blank" rel="noopener" href="https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=ttf-ms-win10">PKGBUILD</a>顶部的注释部分。在执行makepkg的时候，可能会出现校验错误，因此建议带上--skipchecksums参数。如果选择安装ttf-ms-win10，那就不用安装ttf-ms-fonts，因为这两个包冲突。</p>
+<h1 id="安装输入法fcitx5"><a class="markdownIt-Anchor" href="#安装输入法fcitx5"></a> 安装输入法（fcitx5）</h1>
+<p>这里直接推荐新版的<a target="_blank" rel="noopener" href="https://wiki.archlinux.org/index.php/Fcitx5_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)">fcitx5</a>，原来的fcitx就不要再用了。</p>
+<p>首先安装fcitx5全家桶（fcitx5，fcitx5-qt，fcitx5-gtk，fcitx5-configtool）。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S --noconfirm fcitx5-im</span><br></pre></td></tr></table></figure>
+<p>然后安装中文输入法和zhwiki词库。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S --noconfirm fcitx5-chinese-addons</span><br><span class="line">yay -S --noconfirm fcitx5-pinyin-zhwiki</span><br></pre></td></tr></table></figure>
+<p>现在fcitx5-configtool已经普及，可以直接通过图形界面来修改配置，因此不再推荐手写配置文件。直接右键点击fcitx5托盘图标，然后点配置，就可以添加输入法了。注意拼音输入法添加的是“pinyin”而不是“键盘 - 汉语”。</p>
+<p>激活输入法就是<code>Ctrl</code> + <code>Space</code>，输入法切换就是熟悉的<code>Ctrl</code> + <code>Shift</code>，在中文输入法下可以用<code>Left Shift</code>临时切到英文。</p>
+<p>如果还要安装日语输入法，输入下面命令安装fcitx5-mozc（Google日语输入法开源版），然后在fcitx5配置界面添加即可。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S --noconfirm fcitx5-mozc</span><br></pre></td></tr></table></figure>
+<h2 id="设置开机启动"><a class="markdownIt-Anchor" href="#设置开机启动"></a> 设置开机启动</h2>
+<p>Settings &gt; Session and Startup &gt; Application Autostart，点击add就可以填写内容添加了。下面是我填写的内容，仅供参考。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Name: fcitx5</span><br><span class="line">Description: 拼音输入法</span><br><span class="line">Command: nohup fcitx5 &gt; /dev/null 2&gt;&amp;1 &amp;</span><br><span class="line">Trigger: on login</span><br></pre></td></tr></table></figure>
+<p>注：KDE不需要设置这个</p>
+<h2 id="修改环境变量"><a class="markdownIt-Anchor" href="#修改环境变量"></a> 修改环境变量</h2>
+<p>在<code>~/.xprofile</code>添加如下内容</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">export GTK_IM_MODULE=fcitx</span><br><span class="line">export QT_IM_MODULE=fcitx</span><br><span class="line">export XMODIFIERS=&quot;@im=fcitx&quot;</span><br></pre></td></tr></table></figure>
+<h2 id="修改主题"><a class="markdownIt-Anchor" href="#修改主题"></a> 修改主题</h2>
+<p>看了一圈，一堆教程都推荐<a target="_blank" rel="noopener" href="https://github.com/hosxy/Fcitx5-Material-Color">Fcitx5-Material-Color</a>，看图例感觉还不错，于是依葫芦画瓢装个试试。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S --noconfirm fcitx5-material-color</span><br></pre></td></tr></table></figure>
+<p>主题在 附加组件 &gt; 经典用户界面 开启。</p>
+<h1 id="安装常用软件"><a class="markdownIt-Anchor" href="#安装常用软件"></a> 安装常用软件</h1>
+<h2 id="linux原生软件"><a class="markdownIt-Anchor" href="#linux原生软件"></a> Linux原生软件</h2>
+<p>我一般会安装这些软件：</p>
+<ul>
+<li>Google Chrome：谷歌浏览器的同步还是很方便的</li>
+<li>Filezilla：开源的文件传输软件</li>
+<li>WPS Office：比开源的LibreOffice好用多了
+<ul>
+<li>wps-office-mui-zh-cn：WPS中文语言包</li>
+<li>wps-office-fonts：方正字体</li>
+<li>ttf-wps-fonts：数学公式字体</li>
+</ul>
+</li>
+<li>Telegram：里头很多Manjaro大佬</li>
+<li>Discord：聊游戏专用</li>
+<li>Virtualbox：开源的虚拟机
+<ul>
+<li>virtualbox-ext-oracle：一些闭源插件（USB3.0支持等）</li>
+</ul>
+</li>
+<li>SMPlayer：个人感觉比VLC好用</li>
+<li>Anki：背单词挺不错</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">yay -S --noconfirm google-chrome</span><br><span class="line">sudo pacman -S --noconfirm filezilla</span><br><span class="line">yay -S --noconfirm wps-office wps-office-mui-zh-cn wps-office-fonts ttf-wps-fonts</span><br><span class="line">sudo pacman -S --noconfirm telegram-desktop</span><br><span class="line">sudo pacman -S --noconfirm discord</span><br><span class="line">linux_kernel_ver=$(mhwd-kernel -li | grep -oP &#x27;linux\d+&#x27; | head -n 1)</span><br><span class="line">sudo pacman -S --noconfirm virtualbox $linux_kernel_ver-virtualbox-host-modules</span><br><span class="line">sudo gpasswd -a $USER vboxusers</span><br><span class="line">yay -S --noconfirm virtualbox-ext-oracle</span><br><span class="line">sudo pacman -S --noconfirm smplayer</span><br><span class="line">yay -S --noconfirm anki-official-binary-bundle</span><br></pre></td></tr></table></figure>
+<h2 id="汉化包"><a class="markdownIt-Anchor" href="#汉化包"></a> 汉化包</h2>
+<p>这些汉化包其实装不装都行的，感觉平时也很少用这几个软件。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S --noconfirm firefox-i18n-zh-cn</span><br><span class="line">sudo pacman -S --noconfirm thunderbird-i18n-zh-cn</span><br><span class="line">sudo pacman -S --noconfirm gimp-help-zh_cn</span><br></pre></td></tr></table></figure>
+<h2 id="疑难杂症"><a class="markdownIt-Anchor" href="#疑难杂症"></a> 疑难杂症</h2>
+<h3 id="wps安装报错"><a class="markdownIt-Anchor" href="#wps安装报错"></a> WPS安装报错</h3>
+<p>如果出现 Cannot find the strip binary required for object file stripping，代表少了<code>binutils</code>这个包，所以执行下面命令即可。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S --noconfirm base-devel</span><br></pre></td></tr></table></figure>
+<h3 id="wps界面字体太丑"><a class="markdownIt-Anchor" href="#wps界面字体太丑"></a> WPS界面字体太丑</h3>
+<p>可以在右上角的皮肤中心设置字体，我用的 WenQuanYi Micro Hei + 125% 缩放</p>
+<h3 id="firefox字体太丑"><a class="markdownIt-Anchor" href="#firefox字体太丑"></a> Firefox字体太丑</h3>
+<p>火狐默认的字体实在太丑，这里可以在 Fonts and Colors 进行设置。Latin 和 Simplified Chinese 都要改。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Serif: WenQuanYi Micro Hei</span><br><span class="line">Sans-Serif: WenQuanYi Micro Hei</span><br><span class="line">Monospace: WenQuanYi Micro Hei Mono</span><br></pre></td></tr></table></figure>
+<h3 id="chrome在每次开机后首次启动要求keyring密码"><a class="markdownIt-Anchor" href="#chrome在每次开机后首次启动要求keyring密码"></a> Chrome在每次开机后首次启动要求keyring密码</h3>
+<p>这个问题貌似只有xfce下才会出现，一个简单的处理方法就是设置为空密码，不过安全性可能会下降。鱼和熊掌不可兼得，这个自行取舍。</p>
+<p>使用如下命令备份keyrings后删除，如果只存放了Chrome的keyring就不需要备份，直接删除就行</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cp -r ~/.local/share/keyrings ~/keyrings-backup</span><br><span class="line">rm ~/.local/share/keyrings/*</span><br></pre></td></tr></table></figure>
+<p>然后重启系统，再次打开Chrome，就会重新要求设定keyring密码。这里直接敲回车（空密码），会提示“By choosing to use a blank password, your stored passwords will not be safely encrypted. They will be accessible by anyone with access to your files.”，这里直接点continue即可。</p>
+<p>参考文章：<a target="_blank" rel="noopener" href="https://unix.stackexchange.com/questions/324843/chrome-harasses-me-for-a-keychain-password-at-startup">Chrome harasses me for a keychain password at startup</a></p>
+<h3 id="浏览器默认缩放值"><a class="markdownIt-Anchor" href="#浏览器默认缩放值"></a> 浏览器默认缩放值</h3>
+<p>使用高分屏的话，浏览器的字会很小。平时Win10有全局150%的缩放，但是Manjaro就需要自己动手设置。</p>
+<p>个人感觉缩放设置在125%会比较舒服。</p>
+<p>Chrome：Settings &gt; Page zoom</p>
+<p>Firefox：Preferences &gt; Zoom &gt; Default zoom</p>
+<h3 id="chrome用触摸板滑动没有惯性"><a class="markdownIt-Anchor" href="#chrome用触摸板滑动没有惯性"></a> Chrome用触摸板滑动没有惯性</h3>
+<p>这个功能叫smooth scrolling（用inertial或kinetic也能搜到这类问题），Chrome好像不支持libinput，所以目前无解。</p>
+<p>Bug tracker：<a target="_blank" rel="noopener" href="https://bugs.chromium.org/p/chromium/issues/detail?id=763791">763791 - Please support libinput kinetic scrolling. - chromium</a></p>
+<h3 id="discord强制要求更新"><a class="markdownIt-Anchor" href="#discord强制要求更新"></a> Discord强制要求更新</h3>
+<p>虽然discord在linux下表现很棒，但是强制更新这个确实有点恶心。有时候Manjaro的仓库里头还没有更新discord版本，但是discord客户端不更新就不让用了。好在客户端本身并不是真的不让登录，只是简单的检测了下版本号，所以应该知道怎么解决了吧。</p>
+<p>首先找到discord的路径，如下所示</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ ls -al `which discord`</span><br><span class="line">lrwxrwxrwx 1 root root 20 Apr 21 09:58 /usr/bin/discord -&gt; /opt/discord/Discord</span><br></pre></td></tr></table></figure>
+<p>然后在discord文件夹找到<code>./resources/build_info.json</code>，修改里头的版本号即可。</p>
+<p>参考文章：<a target="_blank" rel="noopener" href="https://support.discord.com/hc/en-us/community/posts/360057789311-Discord-won-t-open-on-Linux-when-an-update-is-available">Discord won't open on Linux when an update is available</a></p>
+<h3 id="vlc看nas上的视频经常断流"><a class="markdownIt-Anchor" href="#vlc看nas上的视频经常断流"></a> VLC看NAS上的视频经常断流</h3>
+<p>这个问题很神奇，不管是Windows还是Linux，只要用VLC播放就会间歇性断流，在 Preference &gt; Input / Codecs &gt; Advanced 修改File caching和Network caching也不管用。</p>
+<p>所以我直接换成了SMPlayer，然后就再也没出现过断流的问题。</p>
+<h1 id="qq-wechat"><a class="markdownIt-Anchor" href="#qq-wechat"></a> QQ &amp; Wechat</h1>
+<p>QQ和微信这两个一直都不太好搞，值得单独拿出来说说。目前看来基本有三套可行方案。</p>
+<h2 id="virtualbox"><a class="markdownIt-Anchor" href="#virtualbox"></a> Virtualbox</h2>
+<p>最容易的就是直接在Virtualbox里头跑完整的系统，然后使用seamless mode（Right Ctrl + L），不过视觉效果看起来不太好，QQ周围会有一圈Windows的背景。</p>
+<p>当然，在虚拟机下运行的效果肯定是最好的，也不会出什么奇怪的毛病，就是占用资源会比较多。QQ截图功能只能在虚拟机内使用，并且使用的也是虚拟机内的输入法。</p>
+<h2 id="linuxqq"><a class="markdownIt-Anchor" href="#linuxqq"></a> LinuxQQ</h2>
+<p>官方也有发布Linux版QQ，不过UI十分简陋，功能也不全，简直是梦回十年前。最麻烦的问题，还是不能用帐号密码登录，必须要用手机扫码，不知道用意何在。</p>
+<p>目前最新版是2020/4/9发布的<code>2.0.0 Beta2</code>，已经年久失修，不建议使用。</p>
+<h2 id="deepin-wine"><a class="markdownIt-Anchor" href="#deepin-wine"></a> deepin-wine</h2>
+<p>这里重点说下<code>deepin-wine</code>方案。虽然各种小毛病挺多的，不过总体表现不错。AUR上面有大佬打包好的，基本上是开箱即用。而且更香的是，<code>deepin-wine</code>方案的QQ截图是可以作用于全局的，只要QQ拥有焦点，就可以使用截图热键（Ctrl + Alt + A）。</p>
+<p>这里以TIM QQ为例，使用下面命令安装</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yay -S --noconfirm deepin-wine-tim</span><br></pre></td></tr></table></figure>
+<p>安装之后，输入法应该是直接可以用的。如果不行，那就在<code>/opt/deepinwine/apps/Deepin-TIM/run.sh</code>文件头部的<code>WINE_CMD=&quot;wine&quot;</code>下面添加如下代码。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">export GTK_IM_MODULE=fcitx</span><br><span class="line">export QT_IM_MODULE=fcitx</span><br><span class="line">export XMODIFIERS=&quot;@im=fcitx&quot;</span><br></pre></td></tr></table></figure>
+<h2 id="deepin-wine疑难杂症"><a class="markdownIt-Anchor" href="#deepin-wine疑难杂症"></a> deepin-wine疑难杂症</h2>
+<h3 id="字体太小"><a class="markdownIt-Anchor" href="#字体太小"></a> 字体太小</h3>
+<p>先退出QQ/微信，然后在终端运行下面代码</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 原版wine运行这个</span><br><span class="line">env WINEPREFIX=&quot;$HOME/.deepinwine/Deepin-TIM&quot; winecfg</span><br><span class="line"></span><br><span class="line"># deepin-wine运行这个</span><br><span class="line">env WINEPREFIX=&quot;$HOME/.deepinwine/Deepin-TIM&quot; deepin-wine winecfg</span><br></pre></td></tr></table></figure>
+<p>在弹出来的wine设置面板中找到显示 &gt; 屏幕分辨率，修改dpi即可（建议120dpi）。</p>
+<h3 id="个人文件夹被占用"><a class="markdownIt-Anchor" href="#个人文件夹被占用"></a> 个人文件夹被占用</h3>
+<p>这个是因为QQ进程有残留，在启动之前杀掉就可以了。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">kill</span> $(ps aux | grep <span class="string">&#x27;[T]IM.exe&#x27;</span> | awk <span class="string">&#x27;&#123;print $2&#125;&#x27;</span>)</span><br></pre></td></tr></table></figure>
+<p>这里我是直接修改了桌面的launcher，使用文本编辑器打开launcher，将Exec那行替换成下面这个即可</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Exec=sh -c &quot;kill $(ps aux | grep &#x27;[T]IM.exe&#x27; | awk &#x27;&#123;print $2&#125;&#x27;); &#x27;/opt/deepinwine/apps/Deepin-TIM/run.sh&#x27; -u %u&quot;</span><br></pre></td></tr></table></figure>
+<h3 id="表情人右键无效"><a class="markdownIt-Anchor" href="#表情人右键无效"></a> 表情/@人/右键无效</h3>
+<p>QQ自带的表情（不是emoji）发不出去，然后右键菜单（例如回复指定消息，撤回）无法使用，群里也没法在输入框中@其他人。</p>
+<p>解决不能发表情/@其他人：设置（Settings） &gt; 窗口管理器（Window Manager） &gt; 焦点（Focus） &gt; 取消勾选自动聚焦新创建的窗口（Automatically give focus to newly created windows）。</p>
+<p>解决不能右键使用：设置（Settings） &gt; 窗口管理器微调（Window Manager Tweaks） &gt; 焦点（Focus） &gt; 取消勾选遵照标准的ICCCM焦点提示（Honor standard ICCCM focus hint）。</p>
+<p>然后就会发现新建终端之后没法直接输入，需要点击窗口获取焦点才行。根据issue下方的讨论跟帖，只要重新勾选自动聚焦新创建的窗口就行了，而且QQ表情不会受影响。我试了下，果然如此，也不知道是什么原理，反正问题解决了就行。</p>
+<p>参考文章：<a target="_blank" rel="noopener" href="https://github.com/askme765cs/Wine-QQ-TIM/issues/87">关于xfce环境下qq不能发表情和右键使用的解决办法 #87</a></p>
+<h1 id="配置编程环境"><a class="markdownIt-Anchor" href="#配置编程环境"></a> 配置编程环境</h1>
+<p>基本上我会安装这些东西：</p>
+<ul>
+<li>R（R，R Studio）</li>
+<li>Java（jre-openjdk，maven）</li>
+<li>JS（nodejs，npm）</li>
+<li>GitHub Desktop（鼠标点点点就可以commit和push）</li>
+<li>Unity3d</li>
+<li>Android Studio</li>
+<li>VSCode</li>
+<li>SQL（mariadb，mysql-workbench）</li>
+<li>Docker</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">yay -S --noconfirm r rstudio-desktop-bin</span><br><span class="line">sudo pacman -S --noconfirm jre-openjdk maven</span><br><span class="line">sudo pacman -S --noconfirm nodejs npm</span><br><span class="line">yay -S --noconfirm github-desktop-bin</span><br><span class="line">unity_version=&quot;2019.4.7f1&quot;</span><br><span class="line">yay -S --noconfirm unityhub</span><br><span class="line">unityhub --headless install --version $unity_version</span><br><span class="line">yay -S --noconfirm android-studio</span><br><span class="line">sudo pacman -S --noconfirm code</span><br><span class="line">sudo pacman -S --noconfirm mariadb mysql-workbench</span><br><span class="line">sudo pacman -S --noconfirm docker</span><br></pre></td></tr></table></figure>
+<h2 id="vscode"><a class="markdownIt-Anchor" href="#vscode"></a> VSCode</h2>
+<p>其中VSCode还是需要更进一步的配置。</p>
+<p>VSCode的配置文件在~/.config/Code - OSS/User/settings.json，这里给出我的配置</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;files.autoSave&quot;: &quot;afterDelay&quot;,</span><br><span class="line">    &quot;editor.fontSize&quot;: 16,</span><br><span class="line">    &quot;editor.wordWrap&quot;: &quot;on&quot;,</span><br><span class="line">    &quot;window.zoomLevel&quot;: 0.5,</span><br><span class="line">    &quot;editor.fontFamily&quot;: &quot;WenQuanYi Micro Hei Mono, &#x27;Droid Sans Mono&#x27;, &#x27;monospace&#x27;, monospace, &#x27;Droid Sans Fallback&#x27;&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>当然插件是必不可少的，这里直接通过命令行安装，省事儿。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">code --install-extension ms-ceintl.vscode-language-pack-zh-hans</span><br><span class="line">code --install-extension ms-python.python</span><br><span class="line">code --install-extension ms-dotnettools.csharp</span><br><span class="line">code --install-extension unity.unity-debug </span><br><span class="line">code --install-extension kleber-swf.unity-code-snippets</span><br><span class="line">code --install-extension ms-vscode.cpptools</span><br><span class="line">code --install-extension ikuyadeu.r</span><br><span class="line">code --install-extension vscjava.vscode-java-pack</span><br></pre></td></tr></table></figure>
+<h2 id="monodevelop"><a class="markdownIt-Anchor" href="#monodevelop"></a> MonoDevelop</h2>
+<p>如果需要编译运行C# (.Net)程序，那建议直接安装全家桶：</p>
+<ul>
+<li>mono</li>
+<li>monodevelop-bin</li>
+<li>mono-msbuild</li>
+<li>mono-msbuild-sdkresolver</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S --noconfirm mono</span><br><span class="line">yay -S --noconfirm monodevelop-bin</span><br><span class="line">yay -S --noconfirm mono-msbuild</span><br><span class="line">yay -S --noconfirm mono-msbuild-sdkresolver</span><br></pre></td></tr></table></figure>
+<h2 id="mariadb"><a class="markdownIt-Anchor" href="#mariadb"></a> MariaDB</h2>
+<p>数据库装完之后，如果直接运行会报下面这个错，特别坑。</p>
+<blockquote>
+<p>ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/run/mysqld/mysqld.sock' (2)</p>
+</blockquote>
+<p>由于Arch系不会自动安装，所以要手动执行下面这句。。。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo mariadb-install-db --user=mysql --basedir=/usr --datadir=/var/lib/mysql</span><br></pre></td></tr></table></figure>
+<p>接下来就可以启动mariadb服务了。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl start mariadb</span><br></pre></td></tr></table></figure>
+<p>然后这里启动安全配置助手，通过交互式环境来设置安全选项，下面的选项仅供参考。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ sudo mysql_secure_installation</span><br><span class="line">Enter current password for root (enter for none): </span><br><span class="line">Switch to unix_socket authentication [Y/n] n</span><br><span class="line">Change the root password? [Y/n] n</span><br><span class="line">Remove anonymous users? [Y/n] y</span><br><span class="line">Disallow root login remotely? [Y/n] n</span><br><span class="line">Remove test database and access to it? [Y/n] y</span><br><span class="line">Reload privilege tables now? [Y/n] y</span><br></pre></td></tr></table></figure>
+<p>最后用下面命令就能进去了，sudo情况下貌似敲什么密码都能进去，因为本身已经是root用户。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo mysql -u root -p</span><br></pre></td></tr></table></figure>
+<p>进去之后，如果想不带sudo使用mariadb，或者想用GUI来操作数据库，那还需要执行额外几个步骤，否则会出现Access Denied。</p>
+<p>首先执行下面语句查看authentication_string，可以发现root对应的是invalid，说明此时是无法直接用账户密码登录的。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">MariaDB [(none)]&gt; SELECT user,authentication_string,plugin,host FROM mysql.user;</span><br><span class="line">+-------------+-----------------------+-----------------------+-----------+</span><br><span class="line">| User        | authentication_string | plugin                | Host      |</span><br><span class="line">+-------------+-----------------------+-----------------------+-----------+</span><br><span class="line">| mariadb.sys |                       | mysql_native_password | localhost |</span><br><span class="line">| root        | invalid               | mysql_native_password | localhost |</span><br><span class="line">| mysql       | invalid               | mysql_native_password | localhost |</span><br><span class="line">+-------------+-----------------------+-----------------------+-----------+</span><br><span class="line">3 rows in set (0.007 sec)</span><br></pre></td></tr></table></figure>
+<p>这个时候就需要使用下面语句设置密码，这里把密码设置成password。完成之后再查看authentication_string，就不是invalid了。顺带吐槽下，这一步mariadb的语句居然跟mysql不一样。。。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">MariaDB [(none)]&gt; SET PASSWORD FOR &#x27;root&#x27;@&#x27;localhost&#x27; = PASSWORD(&#x27;password&#x27;);</span><br><span class="line">Query OK, 0 rows affected (0.007 sec)</span><br><span class="line"></span><br><span class="line">MariaDB [(none)]&gt; SELECT user,authentication_string,plugin,host FROM mysql.user;</span><br><span class="line">+-------------+-------------------------------------------+-----------------------+-----------+</span><br><span class="line">| User        | authentication_string                     | plugin                | Host      |</span><br><span class="line">+-------------+-------------------------------------------+-----------------------+-----------+</span><br><span class="line">| mariadb.sys |                                           | mysql_native_password | localhost |</span><br><span class="line">| root        | *2470C0C06DEE42FD1618BB99005ADCA2EC9D1E19 | mysql_native_password | localhost |</span><br><span class="line">| mysql       | invalid                                   | mysql_native_password | localhost |</span><br><span class="line">+-------------+-------------------------------------------+-----------------------+-----------+</span><br><span class="line">3 rows in set (0.002 sec)</span><br></pre></td></tr></table></figure>
+<p>到这里就大功告成了，可以使用MySQL Workbench连接，也可以不带sudo直接进入mariadb了。</p>
+<p>参考文章：<a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/17975120/access-denied-for-user-rootlocalhost-using-password-yes-no-privileges">mysql - Access Denied for User 'root'@'localhost' (using password: YES) - No Privileges? - Stack Overflow</a></p>
+<h2 id="docker"><a class="markdownIt-Anchor" href="#docker"></a> Docker</h2>
+<p>首先启动docker服务并设置为开机启动</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl start docker.service</span><br><span class="line">sudo systemctl enable docker.service</span><br></pre></td></tr></table></figure>
+<p>然后把当前用户加入docker组（以后不需要sudo来跑docker），改完之后记得重启电脑</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo usermod -aG docker $USER</span><br></pre></td></tr></table></figure>
+<h1 id="linux游戏"><a class="markdownIt-Anchor" href="#linux游戏"></a> Linux游戏</h1>
+<p>在Linux上玩游戏也不是不行，只是有时候没法开箱即用，要稍微折腾一下。</p>
+<p>如果是从 steam 下载的话，还是能找到很多原生linux游戏的。不过绝大部分游戏都还是只支持Windows，所以就要用steam提供的proton（wine改版）来跑。</p>
+<p>游戏运行的情况可以在<a target="_blank" rel="noopener" href="https://www.protondb.com/">ProtonDB</a>查看。</p>
+<p>下面就列举我亲自试过并且跑通的游戏~</p>
+<h2 id="千恋万花steam版"><a class="markdownIt-Anchor" href="#千恋万花steam版"></a> 千恋万花（steam版）</h2>
+<p>TLDR：proton 4.11 + WINED3D + wmp9</p>
+<p>使用 proton 4.11，启动选项如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">PROTON_USE_WINED3D=1 %command% </span><br></pre></td></tr></table></figure>
+<p>初次启动，steam会安装一些额外的内容。游戏成功跑起来之后就可以关掉，然后执行下面的命令安装Windows Media Player 9（用于播放OP / ED）。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">protontricks 1144400 -q wmp9</span><br></pre></td></tr></table></figure>
+<p>正常情况下不会报错的，脚本可以一路跑完。如果安装时报错，或者游戏内播放视频时报错崩溃，那大概是你中途切换过 proton 的版本。这时候不慌，直接用GUI删掉 wineprefix（放心，并不会删掉游戏本体），重新“初次”运行游戏，然后再安装 wmp9。</p>
+<p>首先是打开GUI～</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">protontricks --gui</span><br></pre></td></tr></table></figure>
+<p>然后选择 Select the default wineprefix，最后选择 Delete ALL DATA AND APPLICATION INSIDE THIS WINEPREFIX。到这里就成功删除 wineprefix 了。</p>
+<p>如果一路顺利，那么应该就能完美运行了，steam云存档也没问题～</p>
+<p>最后稍微提一下，关于 Proton-GE-6.16，我也测试了。首先 Proton-GE 跟 protontricks 不兼容，不过可以自己动手写一个 Protonfixes 的 Python 脚本。其次，哪怕我装上了 wmp9 或者 wmp11，也一样无法播放视频。</p>
+<p>参考：<a target="_blank" rel="noopener" href="https://www.protondb.com/app/1144400">Senren＊Banka | ProtonDB</a></p>
+<h1 id="声卡驱动"><a class="markdownIt-Anchor" href="#声卡驱动"></a> 声卡驱动</h1>
+<p>一般来说，声卡驱动都是开箱即用的。但是我运气不是那么好，亦或是我这个笔记本（Acer sf315-52）比较坑，反正就是没声音。具体表现是检测不到声卡，然后右下角声音设置显示的“dummy output”。当然，在开始动手之前，首先得确认声卡在Windows下没有问题～</p>
+<p>一般可以执行下面这些命令来收集信息，然后就可以用一些关键字（比如声卡型号，设备名称，驱动名称等）搜索了。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ aplay -l</span><br><span class="line">aplay: device_list:274: no soundcards found...</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ inxi -F</span><br><span class="line">Audio:     Device-1: Intel Sunrise Point-LP HD Audio driver: snd_soc_skl</span><br></pre></td></tr></table></figure>
+<p>这里我搜的“intel corporation sunrise point-lp hd audio no sound”，翻了几条就找到解决方案了。</p>
+<p>根据<a target="_blank" rel="noopener" href="https://bbs.archlinux.org/viewtopic.php?id=265211">[SOLVED] Sunrise Point-LP HD audio quit working after update</a>这个帖子，我也依葫芦画瓢跑了下面这些命令，结果跟楼主的结果一模一样。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">$ sudo dmesg|grep -i sof                    </span><br><span class="line">[    0.513765] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti &lt;giometti@linux.it&gt;</span><br><span class="line">[    0.812095] PCI-DMA: Using software bounce buffering for IO (SWIOTLB)</span><br><span class="line">[    0.812097] software IO TLB: mapped [mem 0x000000001bbb3000-0x000000001fbb3000] (64MB)</span><br><span class="line"></span><br><span class="line">$ sudo dmesg|grep snd_hda</span><br><span class="line">[   16.559996] snd_hda_intel 0000:00:1f.3: DSP detected with PCI class/subclass/prog-if info 0x040100</span><br><span class="line">[   16.560005] snd_hda_intel 0000:00:1f.3: Digital mics found on Skylake+ platform, using SST driver</span><br><span class="line"></span><br><span class="line">$ sudo dmesg|grep -i audio</span><br><span class="line">[    0.157392] ACPI: Added _OSI(Linux-Lenovo-NV-HDMI-Audio)</span><br><span class="line">[   17.123384] snd_soc_skl 0000:00:1f.3: bound 0000:00:02.0 (ops i915_audio_component_bind_ops [i915])</span><br><span class="line">[   17.557164] HDMI HDA Codec ehdaudio0D2: Max dais supported: 3</span><br></pre></td></tr></table></figure>
+<p>于是乎直接抄答案就完事了～</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 在 /etc/modprobe.d/inteldsp.conf 加入下面这行 </span><br><span class="line">options snd-intel-dspcfg dsp_driver=1</span><br></pre></td></tr></table></figure>
+<h1 id="打印机"><a class="markdownIt-Anchor" href="#打印机"></a> 打印机</h1>
+<p>Manjaro自带<a target="_blank" rel="noopener" href="https://wiki.archlinux.org/index.php/CUPS_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)">CUPS</a>（Common Unix Printing System），可以直接通过Web UI来进行管理，不过这里用命令行就更快更方便。</p>
+<p>下面以我的打印机Brother HL-L2320D为例，各位自行替换成自己的型号。</p>
+<p>首先需要准备ppd文件（打印机描述文件）。Manjaro自带了很多来自Foomatic和Gutenprint的ppd文件，所以执行下面命令先看看有没有。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lpinfo -m | grep &quot;HL-L2320D&quot;</span><br></pre></td></tr></table></figure>
+<p>如果有那就万事大吉，没有也没关系，这时候去AUR看看有没有别人构建好的ppd文件。我运气还不错，已经有现成的可以下载。如果AUR也没有，那么就要自行提取ppd文件了，兄弟打印机的提取方法可以看<a target="_blank" rel="noopener" href="https://wiki.archlinux.org/index.php/Packaging_Brother_printer_drivers">Packaging Brother printer drivers - Arch Wiki</a>。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yay -S --noconfirm brother-hll2320d</span><br></pre></td></tr></table></figure>
+<p>搞定ppd文件之后，再执行刚才的<code>lpinfo</code>命令就能看到ppd文件的路径了。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ lpinfo -m | grep &quot;HL-L2320D&quot;</span><br><span class="line">lsb/usr/cupsfilters/brother-HLL2320D-cups-en.ppd Brother HL-L2320D for CUPS</span><br></pre></td></tr></table></figure>
+<p>接下来只需要指定打印机名称，地址和ppd路径，就搞定了，比如输入像下面这样的命令</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">printername=&quot;HL-L2320D&quot;</span><br><span class="line">printer_url=&quot;socket://192.168.1.1:9100&quot;</span><br><span class="line">ppd_dir=&quot;lsb/usr/cupsfilters/brother-HLL2320D-cups-en.ppd&quot;</span><br><span class="line">lpadmin -p $printername -E -v $printer_url -m $ppd_dir</span><br></pre></td></tr></table></figure>
+<p>到这里打印机就已经搞定了，不过如果要进一步设置打印选项，可以使用<code>lpoptions -l</code>查看可设置项目。下面给出一例，实际可设置项目很多，这里篇幅所限只节选部分输出。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ lpoptions -l</span><br><span class="line">Duplex/Duplex: DuplexTumble DuplexNoTumble *None</span><br></pre></td></tr></table></figure>
+<p>上面这个是双面打印的相关设置，默认是关闭的，这里要用下面命令打开</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lpadmin -p HL-L2320D -o Duplex=DuplexNoTumble</span><br></pre></td></tr></table></figure>
+<p>这个地方有个大坑，正确方法当然是用<code>lpadmin</code>，错误方法是使用<code>lpoptions</code>。因为是要在GUI环境下打印，所以只有通过<code>lpadmin</code>修改，其它程序才能看到。<code>lpoptions</code>也可以跟同样的参数修改，不过只能被<code>lp</code>和<code>lpr</code>这类基于命令行的打印程序看到。</p>
+<p>大坑参考的是<a target="_blank" rel="noopener" href="https://unix.stackexchange.com/questions/339205/setting-cups-defaults-with-lpoptions-vs-web-interface">Setting CUPS defaults with lpoptions vs web interface<br />
+</a></p>
+<p>CUPS的命令行管理文档可以看<a target="_blank" rel="noopener" href="https://www.cups.org/doc/admin.html">Command-Line Printer Administration</a></p>
+<h1 id="触摸板"><a class="markdownIt-Anchor" href="#触摸板"></a> 触摸板</h1>
+<p>跟Windows一模一样的应该只有“双指点击”（等同于右键单击）</p>
+<h2 id="双指滑动和轻按"><a class="markdownIt-Anchor" href="#双指滑动和轻按"></a> 双指滑动和轻按</h2>
+<p>Manjaro双指滑动的方向跟Windows是相反的，而且触摸板轻按无效。好在这些配置可以随意改。</p>
+<p>在 Settings &gt; Mouse and Touchpad 可以找到键鼠相关设置，然后在Device下拉菜单那里选中自己的触摸板。在Buttons and Feedback栏目勾选Reverse scroll direction，然后在Touchpad栏目勾选Tap touchpad to click，就搞定了。</p>
+<h2 id="更多手势"><a class="markdownIt-Anchor" href="#更多手势"></a> 更多手势</h2>
+<p>如果需要更多手势，需要执行下面命令安装相关软件</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S --noconfirm libinput-gestures</span><br><span class="line">sudo pacman -S --noconfirm gestures</span><br><span class="line">sudo pacman -S --noconfirm xdotool</span><br></pre></td></tr></table></figure>
+<p>接下来依次执行下面命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 把自己（当前用户）加入input组</span></span><br><span class="line"><span class="built_in">sudo</span> gpasswd -a <span class="variable">$USER</span> input</span><br><span class="line"><span class="comment"># 添加开机启动</span></span><br><span class="line">libinput-gestures-setup autostart</span><br><span class="line"><span class="comment"># 启动libinput-gestures</span></span><br><span class="line">libinput-gestures-setup start</span><br></pre></td></tr></table></figure>
+<p>然后就打开gestures添加手势就行了。如果要抄配置，那就在~/.config/中找到libinput-gestures.conf，然后在文件末尾写入。下面给出我的配置。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 浏览器前进</span></span><br><span class="line">gesture swipe left 3	xdotool key alt+Right</span><br><span class="line"><span class="comment"># 浏览器后退</span></span><br><span class="line">gesture swipe right 3	xdotool key alt+Left</span><br><span class="line"><span class="comment"># 显示桌面</span></span><br><span class="line">gesture swipe down 3	sh -c <span class="string">&#x27;win_name=$(xdotool getwindowfocus getwindowname); if [[ $win_name != &#x27;</span>Desktop<span class="string">&#x27; ]] &amp;&amp; [[ $win_name != *&#x27;</span>conky<span class="string">&#x27;* ]]; then xdotool key ctrl+alt+d; fi&#x27;</span></span><br><span class="line"><span class="comment"># 查看所有打开的窗口</span></span><br><span class="line">gesture swipe up 3	sh -c <span class="string">&#x27;win_name=$(xdotool getwindowfocus getwindowname); if [[ $win_name == &#x27;</span>Desktop<span class="string">&#x27; ]] || [[ $win_name == *&#x27;</span>conky<span class="string">&#x27;* ]]; then xdotool key ctrl+alt+d; fi&#x27;</span></span><br></pre></td></tr></table></figure>
+<h1 id="设置时钟"><a class="markdownIt-Anchor" href="#设置时钟"></a> 设置时钟</h1>
+<h2 id="个性化时间日期显示"><a class="markdownIt-Anchor" href="#个性化时间日期显示"></a> 个性化时间日期显示</h2>
+<p>打开Clock的设置，居然不能直接从GUI设置24小时制，这怎么能忍？好在可以自定义格式，左下角有个<a target="_blank" rel="noopener" href="https://docs.xfce.org/xfce/xfce4-panel/4.14/clock">Help</a>，可以看到时间日期格式清单。</p>
+<p>这里我使用的是<code>%F %R</code>，等价于<code>%Y-%m-%d %H:%M</code>。</p>
+<h2 id="修正时区问题"><a class="markdownIt-Anchor" href="#修正时区问题"></a> 修正时区问题</h2>
+<p>这个问题我记得是Linux和Windows看待电脑硬件时间的方式不太一样。如果时区正确设置但是时间仍然不对，运行下面命令就好了</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo timedatectl set-ntp 1</span><br></pre></td></tr></table></figure>
+<h1 id="托盘显示电量"><a class="markdownIt-Anchor" href="#托盘显示电量"></a> 托盘显示电量</h1>
+<p>右下角只有电池图标，点进去才能看到剩余电量，就感觉这个图标特别鸡肋，希望能够在外面就显示剩余电量百分比。</p>
+<p>进入Settings &gt; Panel &gt; Items，添加Power Manager Plugin或者Battery Monitor，这个就看自己喜好了。</p>
+<p>Power Manager Plugin属于xfce4-power-manager，设置项特别少，只有百分比和剩余时间两个选项，而且还有个傻大粗的鸡肋电池图标。不过点击电池图标会有更多功能，比如显示外设电量，调节亮度，进入Power Manager设置面板。</p>
+<p>Battery Monitor属于xfce4-battery-plugin，设置项丰富，可以在托盘展示各种类型的信息，不过也就只能展示，想要修改配置还是得靠xfce4-power-manager。</p>
+<h1 id="双显示器hdmi"><a class="markdownIt-Anchor" href="#双显示器hdmi"></a> 双显示器（HDMI）</h1>
+<h2 id="用gui设置"><a class="markdownIt-Anchor" href="#用gui设置"></a> 用GUI设置</h2>
+<p>正常情况下，GUI点几下还是非常方便的，没有特殊需求的话，建议用GUI操作。</p>
+<h3 id="设置显示输出"><a class="markdownIt-Anchor" href="#设置显示输出"></a> 设置显示输出</h3>
+<p>显示设置项在Settings &gt; Display，系统默认是mirror displays，取消勾选，然后点Apply，就搞定了。</p>
+<h3 id="设置声音输出"><a class="markdownIt-Anchor" href="#设置声音输出"></a> 设置声音输出</h3>
+<p>声音输出跟Windows不一样，是要分开设置的。点右下角托盘的喇叭 &gt; Audio mixer，或者终端直接输入<code>pavucontrol</code>（GTK）/ <code>pavucontrol-qt</code>（Qt）。</p>
+<p>在弹出的窗口，找到Configuration，会看到Built-in Audio Profile的下拉菜单，选择Digital Stereo (HDMI) Output即可。如果要切换回来就选Analog Stereo Output。如果没找到想要的输出设备，可以用<code>aplay -l</code>查看所有声卡和音频设备（List all soundcards and digital audio devices）。</p>
+<h2 id="用命令行设置"><a class="markdownIt-Anchor" href="#用命令行设置"></a> 用命令行设置</h2>
+<p>当然，如果不想每次外接显示器都这么点几下，或者想写进自动化脚本，可以直接用万能的命令行。</p>
+<h3 id="设置显示输出-2"><a class="markdownIt-Anchor" href="#设置显示输出-2"></a> 设置显示输出</h3>
+<p>这里用<code>xrandr</code>进行设置。</p>
+<p>首先，使用<code>-q</code>或者<code>--query</code>查看当前能用的显示器，这里节选部分输出展示。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ xrandr -q</span><br><span class="line">Screen 0: minimum 8 x 8, current 3840 x 1080, maximum 32767 x 32767</span><br><span class="line">eDP1 connected primary 1920x1080+0+0 (normal left inverted right x axis y axis) 340mm x 190mm</span><br><span class="line">   1920x1080     60.03*+  59.93    </span><br><span class="line">HDMI1 connected 1920x1080+1920+0 (normal left inverted right x axis y axis) 890mm x 500mm</span><br><span class="line">   1920x1080     60.00*+  59.94    30.00    24.00    29.97    23.98  </span><br></pre></td></tr></table></figure>
+<p>可以看到笔记本自带的<code>eDP1</code>和外接的<code>HDMI1</code>，这里可以用下面命令，把<code>HDMI1</code>拼接到<code>eDP1</code>的右边。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># --auto 以系统偏好的分辨率（最大分辨率）</span></span><br><span class="line"><span class="comment"># 如无特殊需求，直接 --auto 即可</span></span><br><span class="line">xrandr --output HDMI1 --auto --right-of eDP1</span><br><span class="line"></span><br><span class="line"><span class="comment"># --mode 可以制定可用的分辨率（xrandr -q 可以查看）</span></span><br><span class="line">xrandr --output HDMI1 --mode 1280x720 --right-of eDP1</span><br></pre></td></tr></table></figure>
+<p>参考文章：<a target="_blank" rel="noopener" href="https://wiki.archlinux.org/index.php/Xrandr_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)">Xrandr (简体中文) - ArchWiki</a></p>
+<h3 id="设置声音输出-2"><a class="markdownIt-Anchor" href="#设置声音输出-2"></a> 设置声音输出</h3>
+<p>这里用<code>pactl</code>（选项少）和<code>pacmd</code>（选项多，有交互式环境）进行设置，因为自带的<code>pavucontrol</code>只提供GUI设置，对应的命令行也是用来打开GUI的。</p>
+<p>首先使用<code>pacmd</code>的<code>list-cards</code>查看声卡信息（或者直接输入<code>pacmd</code>进入交互式环境）。这里由于输出了近百行的内容，因此删去大量无关紧要的信息。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">$ pacmd list-cards</span><br><span class="line">1 card(s) available.</span><br><span class="line">	name: &lt;alsa_card.pci-0000_00_1f.3&gt;</span><br><span class="line">	profiles:</span><br><span class="line">		input:analog-stereo: Analog Stereo Input (priority 65, available: unknown)</span><br><span class="line">		output:analog-stereo: Analog Stereo Output (priority 6500, available: unknown)</span><br><span class="line">		output:analog-stereo+input:analog-stereo: Analog Stereo Duplex (priority 6565, available: unknown)</span><br><span class="line">		output:hdmi-stereo: Digital Stereo (HDMI) Output (priority 5900, available: unknown)</span><br><span class="line">		output:hdmi-stereo+input:analog-stereo: Digital Stereo (HDMI) Output + Analog Stereo Input (priority 5965, available: unknown)</span><br><span class="line">		off: Off (priority 0, available: unknown)</span><br><span class="line">	active profile: &lt;output:hdmi-stereo+input:analog-stereo&gt;</span><br></pre></td></tr></table></figure>
+<p>这里<code>name</code>就是声卡名字，<code>profiles</code>是输入输出的方案。</p>
+<p>然后可以用<code>pactl</code>或者<code>pacmd</code>来设置，一般来说只会在下面两个方案之间切，注意命令里头的<code>声卡名字</code>需要自行替换。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 命令格式（pacmd）：pacmd set-card-profile &lt;NAME&gt; &lt;PROFILE&gt;</span></span><br><span class="line"><span class="comment"># 命令格式（pactl）：pactl set-card-profile &lt;NAME&gt; &lt;PROFILE&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 没有外接显示器 / 外接不带音响的显示器</span></span><br><span class="line"><span class="comment"># Analog Stereo Duplex -&gt; output:analog-stereo+input:analog-stereo</span></span><br><span class="line">pacmd set-card-profile alsa_card.pci-0000_00_1f.3 output:analog-stereo+input:analog-stereo</span><br><span class="line"></span><br><span class="line"><span class="comment"># 外接带音响的显示器（例如电视）</span></span><br><span class="line"><span class="comment"># Digital Stereo (HDMI) Output + Analog Stereo Input -&gt; output:hdmi-stereo+input:analog-stereo</span></span><br><span class="line">pacmd set-card-profile alsa_card.pci-0000_00_1f.3 output:hdmi-stereo+input:analog-stereo</span><br></pre></td></tr></table></figure>
+<p>参考资料：<a target="_blank" rel="noopener" href="https://wiki.archlinux.org/index.php/PulseAudio/Examples">PulseAudio/Examples - ArchWiki</a></p>
+<h1 id="亮度精准调节"><a class="markdownIt-Anchor" href="#亮度精准调节"></a> 亮度精准调节</h1>
+<p>自带的xfce4-power-manager虽然可以接管笔记本上的亮度按键，但是每按一次的变化量是10，实在是太大了。更过分的是，Power Manager居然还不让配置step参数，导致如果想继续使用Power Manager，就只能自行修改源码重新编译。</p>
+<p>编译是不可能编译的，搞不好又出什么诡异的问题！</p>
+<p>所以首先就要关闭Power Manager对亮度按键的接管（Handle display brightness keys），然后使用命令行工具<code>xorg-xbacklight</code>来调节亮度。亮度的范围是0-100，直接输入<code>xbacklight</code>就可以看到当前亮度。需要调节亮度，可以在<code>xbacklight</code>后面带上变化量。</p>
+<p>当然不可能每次都敲命令调节亮度，所以要在 Settings &gt; Keyboard &gt; Application Shortcuts 设置快捷键。</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Shortcut</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>xbacklight +2</td>
+<td>Monitor brightness up</td>
+</tr>
+<tr>
+<td>xbacklight -2</td>
+<td>Monitor brightness down</td>
+</tr>
+</tbody>
+</table>
+<p>不过这么搞，就不能在调节之后马上看到亮度条了，因为亮度条是xfce4-power-manager的一部分。反正我觉得不亏，毕竟现在可以通过快捷键把亮度降得很低了。</p>
+<h1 id="自定义grub"><a class="markdownIt-Anchor" href="#自定义grub"></a> 自定义grub</h1>
+<p>自带的grub有点丑，而且分辨率还比较低，可以在<code>/etc/default/grub</code>修改，或者直接用带有GUI界面的<code>grub-customizer</code>，可以通过pacman或者yay安装。</p>
+<p>其实还能直接安装配置好的主题，可以在<a target="_blank" rel="noopener" href="https://www.gnome-look.org/browse/cat/109/ord/rating/">Grub Themes</a>下载。</p>
+<h1 id="新建文件template"><a class="markdownIt-Anchor" href="#新建文件template"></a> 新建文件Template</h1>
+<p>在Windows系统上，右键点击空白处就可以新建各类文件，相比之下Manjaro默认只能新建Empty File，所以可以添加一些常用的template。</p>
+<p>正常情况下template文件都存在<code>～/Templates</code>，可以通过<code>cat ~/.config/user-dirs.dirs</code>确认。如果不是，那可以用下面命令修改。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xdg-user-dirs-update --set TEMPLATES ~/Templates</span><br></pre></td></tr></table></figure>
+<p>只需要把一个空的对应格式的文件（注意不是新建Empty File然后改后缀名）放进<code>～/Templates</code>，template的文件名将会是右键菜单显示的名字，最后log out再log in就能生效了。</p>
+<p>xfce Thunar官方的文档可以看<a target="_blank" rel="noopener" href="https://docs.xfce.org/xfce/thunar/working-with-files-and-folders">Working with Files and Folders</a></p>
+<p>参考文章：<a target="_blank" rel="noopener" href="https://forum.xfce.org/viewtopic.php?id=11873">Thunar Create Document &gt; / General discussion / Xfce Forums</a></p>
+<h1 id="桌面挂件conky"><a class="markdownIt-Anchor" href="#桌面挂件conky"></a> 桌面挂件（conky）</h1>
+<p>conky是一个能在桌面展示信息的开源项目，类似Android上的widget。</p>
+<p>除了下面我试过的这些用法，还可以看看<a target="_blank" rel="noopener" href="https://wiki.archlinux.org/index.php/Conky/Tips_and_tricks">Conky/Tips and tricks - ArchWiki</a>。</p>
+<h2 id="安装"><a class="markdownIt-Anchor" href="#安装"></a> 安装</h2>
+<p>用下面命令安装，conky-manager是带GUI的配置工具，装不装都行，好像也用不上。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S --noconfirm conky conky-manager</span><br></pre></td></tr></table></figure>
+<p>然后顺手在Settings &gt; Session and Startup &gt; Application Autostart设置下开机启动。这里使用<code>sleep 5</code>是要确保conky在网络连接后启动，否则有些需要网络的命令（例如gcalcli）可能获取不到信息。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Name: conky</span><br><span class="line">Description: light-weight system monitor</span><br><span class="line">Command: sh -c &quot;sleep 5 &amp;&amp; nohup conky &gt; /dev/null 2&gt;&amp;1 &amp;&quot;</span><br><span class="line">Trigger: on login</span><br></pre></td></tr></table></figure>
+<p>或者也可以把下面内容写到<code>～/.conky</code>下面的<code>conky-startup.sh</code>，然后开机启动那里的<code>Command</code>修改为用<code>sh</code>执行这个脚本。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sleep 5</span><br><span class="line">nohup conky &gt; /dev/null 2&gt;&amp;1 &amp;</span><br><span class="line">exit 0</span><br></pre></td></tr></table></figure>
+<h2 id="配置"><a class="markdownIt-Anchor" href="#配置"></a> 配置</h2>
+<p><code>conky --print-config</code>可以输出默认配置，所以使用下面命令生成配置文件</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p ~/.config/conky &amp;&amp; conky --print-config &gt; ~/.config/conky/conky.conf</span><br></pre></td></tr></table></figure>
+<p>所有的配置项可以看<a target="_blank" rel="noopener" href="http://conky.sourceforge.net/config_settings.html">Configuration Settings</a>，文档本身清晰明了，我就提几个重点配置项。</p>
+<h3 id="保持在桌面上"><a class="markdownIt-Anchor" href="#保持在桌面上"></a> 保持在桌面上</h3>
+<p>先说最重要的，在默认配置下，如果点击桌面空白处，conky窗口就没了。。。</p>
+<p>网上答案五花八门，实际上把<code>own_window_hints</code>改成<code>'below'</code>就解决了。</p>
+<p>参考内容：<a target="_blank" rel="noopener" href="https://github.com/brndnmtthws/conky/issues/205">Conky disappears when I click on the desktop #205</a></p>
+<h3 id="窗口位置"><a class="markdownIt-Anchor" href="#窗口位置"></a> 窗口位置</h3>
+<p><code>alignment</code>、<code>gap_x</code>、<code>gap_y</code>一起决定了conky在桌面上的位置。</p>
+<h3 id="字体"><a class="markdownIt-Anchor" href="#字体"></a> 字体</h3>
+<p>用不用等宽字体（Mono）看需求，等宽字体没那么好看，但是可以对齐。如果要指定style，可以在字体名后面加上<code>:style=xxx</code>。下面给出我的配置。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">conky.config = &#123;</span><br><span class="line">    font = &#x27;WenQuanYi Micro Hei Mono:size=12&#x27;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="透明背景"><a class="markdownIt-Anchor" href="#透明背景"></a> 透明背景</h3>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">conky.config = &#123;</span><br><span class="line">    own_window_transparent = true,</span><br><span class="line">    own_window_argb_visual = true,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="显示内容"><a class="markdownIt-Anchor" href="#显示内容"></a> 显示内容</h3>
+<p>依葫芦画瓢去修改配置文件的<code>conky.text</code>部分即可。conky的wiki也收集了一些<a target="_blank" rel="noopener" href="https://github.com/brndnmtthws/conky/wiki/Configs">很漂亮的配置方案</a>。</p>
+<p>内置变量可以看<a target="_blank" rel="noopener" href="http://conky.sourceforge.net/variables.html">Conky Objects</a></p>
+<h2 id="显示gcalcli"><a class="markdownIt-Anchor" href="#显示gcalcli"></a> 显示gcalcli</h2>
+<p><code>gcalcli</code>是Google Calendar的开源第三方命令行工具，使用下面命令安装</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yay -S --noconfirm gcalcli</span><br></pre></td></tr></table></figure>
+<p><code>gcalcli</code>需要<code>client_id</code>和<code>client_secret</code>才能工作，本来<code>gcalcli</code>可以自动引导获取的，但是这个操作貌似被Google禁止了，所以需要手动获取。在<a target="_blank" rel="noopener" href="https://developers.google.com/calendar/quickstart/python">Google Calendar API Quickstart</a>点击“Enable the Google Calendar API”来快速获取。拿到之后运行下面命令就可以绑定了。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gcalcli --client_id=YOUR_ID --client_secret=YOUR_SECRET agenda</span><br></pre></td></tr></table></figure>
+<p>最后把下面这行放进conky配置文件的<code>conky.text</code>就大功告成了。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$&#123;execpi 300 gcalcli --conky agenda&#125;</span><br></pre></td></tr></table></figure>
+<p>参考内容：<a target="_blank" rel="noopener" href="https://github.com/insanum/gcalcli/issues/497">Sign in with Google temporarily disabled for this app #497</a></p>
+<h3 id="修改颜色"><a class="markdownIt-Anchor" href="#修改颜色"></a> 修改颜色</h3>
+<p>很奇怪，以前文档应该是有写这些，但是现在没找到。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">--[no]color: Enable/Disable all color output</span><br><span class="line">    (default: &#x27;true&#x27;)</span><br><span class="line">--color-border: Color of line borders</span><br><span class="line">    (default: &#x27;white&#x27;)</span><br><span class="line">--color-date: Color for the date</span><br><span class="line">    (default: &#x27;yellow&#x27;)</span><br><span class="line">--color-freebusy: Color for free/busy calendars</span><br><span class="line">    (default: &#x27;default&#x27;)</span><br><span class="line">--color-now-marker: Color for the now marker</span><br><span class="line">    (default: &#x27;brightred&#x27;)</span><br><span class="line">--color-owner: Color for owned calendars</span><br><span class="line">    (default: &#x27;cyan&#x27;)</span><br><span class="line">--color-reader: Color for read-only calendars</span><br><span class="line">    (default: &#x27;magenta&#x27;)</span><br><span class="line">--color-writer: Color for writable calendars</span><br><span class="line">    (default: &#x27;green&#x27;)</span><br></pre></td></tr></table></figure>
+<p>例如下面就是把日期从默认的黄色改成绿色</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gcalcli --conky agenda --color-date green</span><br></pre></td></tr></table></figure>
+<p>参考文章：<a target="_blank" rel="noopener" href="https://forums.bunsenlabs.org/viewtopic.php?id=1717">[SOLVED] Some help with Conky (related to gcalcli)</a></p>
+<h3 id="转义字符串"><a class="markdownIt-Anchor" href="#转义字符串"></a> 转义字符串</h3>
+<p>如果输出的内容含有特殊字符，比如<code>#</code>，那么就会被conky错误识别，导致无法显示或者显示不全。这个问题在谷歌日历的待办事项中应该比较常见，比如<code>Quiz #1</code>。这里针对gcalcli给出patch方法，其它开源程序的改法可以触类旁通。</p>
+<p>首先执行下面命令找到gcalcli安装位置，返回的路径有好几个，找到类似下面带有site-packages的路径，一般来说python包都在里头。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">python -m site</span><br><span class="line">&gt; /usr/lib/python3.8/site-packages</span><br></pre></td></tr></table></figure>
+<p><a target="_blank" rel="noopener" href="http://xn--gcalcligcal-618qu5fpyr4wsczhws6brol.py">在gcalcli文件夹中找到gcal.py</a>，做出下面修改。</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 修改前</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">_valid_title</span>(<span class="params">self, event</span>):</span><br><span class="line">    <span class="keyword">if</span> <span class="string">&#x27;summary&#x27;</span> <span class="keyword">in</span> event <span class="keyword">and</span> event[<span class="string">&#x27;summary&#x27;</span>].strip():</span><br><span class="line">        <span class="keyword">return</span> event[<span class="string">&#x27;summary&#x27;</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 修改后</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">_valid_title</span>(<span class="params">self, event</span>):</span><br><span class="line">    <span class="keyword">if</span> <span class="string">&#x27;summary&#x27;</span> <span class="keyword">in</span> event <span class="keyword">and</span> event[<span class="string">&#x27;summary&#x27;</span>].strip():</span><br><span class="line">        summary = event[<span class="string">&#x27;summary&#x27;</span>].replace(<span class="string">&#x27;#&#x27;</span>, <span class="string">&#x27;\#&#x27;</span>)</span><br><span class="line">        <span class="keyword">return</span> summary</span><br></pre></td></tr></table></figure>
+<h2 id="显示天气"><a class="markdownIt-Anchor" href="#显示天气"></a> 显示天气</h2>
+<h3 id="openweathermap"><a class="markdownIt-Anchor" href="#openweathermap"></a> OpenWeatherMap</h3>
+<p>网站上给出了很清晰的<a target="_blank" rel="noopener" href="https://openweathermap.org/guide">注册教程</a>，跟着走就能拿到API key了。</p>
+<p>建议使用<a target="_blank" rel="noopener" href="https://openweathermap.org/api/one-call-api">One Call API</a>，一次请求就能获取这些信息：</p>
+<ul>
+<li>当前天气</li>
+<li>1小时内的每分钟预测</li>
+<li>48小时内的每小时预测</li>
+<li>7天内的每天预测</li>
+<li>过去5天的天气信息</li>
+</ul>
+<p>要注意的是，白嫖帐号每天只能调用1000次One Call API，只要刷新频率不是太高的话，应该是完全够用的。</p>
+<p>这里给出自用代码，需要自行提供经纬度和API key。</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">from</span> datetime <span class="keyword">import</span> datetime</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">to_utc_format</span>(<span class="params">unix_timestamp</span>):</span><br><span class="line">    <span class="keyword">return</span> datetime.utcfromtimestamp(unix_timestamp).strftime(<span class="string">&#x27;%Y-%m-%d %H:%M:%S&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">to_24h_format</span>(<span class="params">unix_timestamp</span>):</span><br><span class="line">    <span class="keyword">return</span> datetime.utcfromtimestamp(unix_timestamp).strftime(<span class="string">&#x27;%H:%M&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">to_mmdd_format</span>(<span class="params">unix_timestamp</span>):</span><br><span class="line">    <span class="keyword">return</span> datetime.utcfromtimestamp(unix_timestamp).strftime(<span class="string">&#x27;%m/%d&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 配置项</span></span><br><span class="line"><span class="comment"># 经度（东西地理位置）</span></span><br><span class="line">longitude = &lt;YOUR_LONGITUDE&gt;</span><br><span class="line"><span class="comment"># 纬度（南北地理位置）</span></span><br><span class="line">latitude = &lt;YOUR_LATITUDE&gt;</span><br><span class="line"><span class="comment"># 计量单位（°C -&gt; metric，°F -&gt; imperial，K -&gt; 留空）</span></span><br><span class="line">units = <span class="string">&quot;metric&quot;</span></span><br><span class="line"><span class="comment"># API key</span></span><br><span class="line">appid = &lt;YOUR_API_KEY&gt;</span><br><span class="line"><span class="comment"># 展示未来X小时的天气</span></span><br><span class="line">hourly_forecast_cnt = <span class="number">3</span></span><br><span class="line"><span class="comment"># 展示未来X天的天气</span></span><br><span class="line">daily_forecast_cnt = <span class="number">3</span></span><br><span class="line"><span class="comment"># 当前天气颜色</span></span><br><span class="line">curr_color = <span class="string">&quot;red&quot;</span></span><br><span class="line"><span class="comment"># 未来X小时的天气颜色</span></span><br><span class="line">hourly_color = <span class="string">&quot;red&quot;</span></span><br><span class="line"><span class="comment"># 未来X天的天气颜色</span></span><br><span class="line">daily_color = <span class="string">&quot;red&quot;</span></span><br><span class="line"></span><br><span class="line">url = <span class="string">f&quot;http://api.openweathermap.org/data/2.5/onecall?lat=<span class="subst">&#123;latitude&#125;</span>&amp;lon=<span class="subst">&#123;longitude&#125;</span>&amp;units=<span class="subst">&#123;units&#125;</span>&amp;appid=<span class="subst">&#123;appid&#125;</span>&quot;</span></span><br><span class="line">res = requests.get(url)</span><br><span class="line">weather_info = res.json()</span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string"># 本段代码用于测试API</span></span><br><span class="line"><span class="string">with open(&quot;weather.json&quot;) as f:</span></span><br><span class="line"><span class="string">    weather_info = json.load(f)</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 输出结果顶部空一行（个人喜好）</span></span><br><span class="line">output = <span class="string">&quot;\n&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 当前天气</span></span><br><span class="line"><span class="comment"># [&quot;weather&quot;]是list，可能会同时存在多种天气，这里只取第一个天气，如果要读取全部可以自行套个for循环。</span></span><br><span class="line">timezone_offset = <span class="built_in">int</span>(weather_info[<span class="string">&quot;timezone_offset&quot;</span>])</span><br><span class="line">curr_time = to_24h_format(<span class="built_in">int</span>(weather_info[<span class="string">&quot;current&quot;</span>][<span class="string">&quot;dt&quot;</span>]) + timezone_offset)</span><br><span class="line">curr_temp = <span class="built_in">round</span>(weather_info[<span class="string">&quot;current&quot;</span>][<span class="string">&quot;temp&quot;</span>])</span><br><span class="line">curr_weather = weather_info[<span class="string">&quot;current&quot;</span>][<span class="string">&quot;weather&quot;</span>][<span class="number">0</span>][<span class="string">&quot;main&quot;</span>]</span><br><span class="line">curr_description = weather_info[<span class="string">&quot;current&quot;</span>][<span class="string">&quot;weather&quot;</span>][<span class="number">0</span>][<span class="string">&quot;description&quot;</span>]</span><br><span class="line">output += <span class="string">f&quot;$&#123;&#123;color <span class="subst">&#123;curr_color&#125;</span>&#125;&#125;&quot;</span></span><br><span class="line">output += <span class="string">f&quot;【<span class="subst">&#123;curr_time&#125;</span>】<span class="subst">&#123;curr_temp&#125;</span>°C, <span class="subst">&#123;curr_weather&#125;</span> (<span class="subst">&#123;curr_description&#125;</span>)\n&quot;</span></span><br><span class="line">output += <span class="string">&quot;$&#123;color&#125;&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取未来X小时的预测</span></span><br><span class="line"><span class="keyword">for</span> idx <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, hourly_forecast_cnt + <span class="number">1</span>):</span><br><span class="line">    ftr_time = to_24h_format(<span class="built_in">int</span>(weather_info[<span class="string">&quot;hourly&quot;</span>][idx][<span class="string">&quot;dt&quot;</span>]) + timezone_offset)</span><br><span class="line">    ftr_temp = <span class="built_in">round</span>(weather_info[<span class="string">&quot;hourly&quot;</span>][idx][<span class="string">&quot;temp&quot;</span>])</span><br><span class="line">    ftr_weather = weather_info[<span class="string">&quot;hourly&quot;</span>][idx][<span class="string">&quot;weather&quot;</span>][<span class="number">0</span>][<span class="string">&quot;main&quot;</span>]</span><br><span class="line">    ftr_rain_perc = weather_info[<span class="string">&quot;hourly&quot;</span>][idx][<span class="string">&quot;pop&quot;</span>]</span><br><span class="line">    output += <span class="string">f&quot;$&#123;&#123;color <span class="subst">&#123;hourly_color&#125;</span>&#125;&#125;&quot;</span></span><br><span class="line">    output += <span class="string">f&quot;【<span class="subst">&#123;ftr_time&#125;</span>】<span class="subst">&#123;ftr_temp&#125;</span>°C, <span class="subst">&#123;ftr_weather&#125;</span>, <span class="subst">&#123;<span class="built_in">round</span>(ftr_rain_perc * <span class="number">100</span>)&#125;</span>% Rain\n&quot;</span></span><br><span class="line">    output += <span class="string">&quot;$&#123;color&#125;&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 未来X天预测</span></span><br><span class="line"><span class="keyword">for</span> idx <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, daily_forecast_cnt + <span class="number">1</span>):</span><br><span class="line">    ftr_time = to_mmdd_format(<span class="built_in">int</span>(weather_info[<span class="string">&quot;daily&quot;</span>][idx][<span class="string">&quot;dt&quot;</span>]) + timezone_offset)</span><br><span class="line">    ftr_temp_min = <span class="built_in">round</span>(weather_info[<span class="string">&quot;daily&quot;</span>][idx][<span class="string">&quot;temp&quot;</span>][<span class="string">&quot;min&quot;</span>])</span><br><span class="line">    ftr_temp_max = <span class="built_in">round</span>(weather_info[<span class="string">&quot;daily&quot;</span>][idx][<span class="string">&quot;temp&quot;</span>][<span class="string">&quot;max&quot;</span>])</span><br><span class="line">    ftr_weather = weather_info[<span class="string">&quot;daily&quot;</span>][idx][<span class="string">&quot;weather&quot;</span>][<span class="number">0</span>][<span class="string">&quot;main&quot;</span>]</span><br><span class="line">    ftr_rain_perc = weather_info[<span class="string">&quot;daily&quot;</span>][idx][<span class="string">&quot;pop&quot;</span>]</span><br><span class="line">    output += <span class="string">f&quot;$&#123;&#123;color <span class="subst">&#123;daily_color&#125;</span>&#125;&#125;&quot;</span></span><br><span class="line">    output += <span class="string">f&quot;【<span class="subst">&#123;ftr_time&#125;</span>】<span class="subst">&#123;ftr_temp_min&#125;</span>-<span class="subst">&#123;ftr_temp_max&#125;</span>°C, <span class="subst">&#123;ftr_weather&#125;</span>, <span class="subst">&#123;<span class="built_in">round</span>(ftr_rain_perc * <span class="number">100</span>)&#125;</span>% Rain\n&quot;</span></span><br><span class="line">    output += <span class="string">&quot;$&#123;color&#125;&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(output)</span><br></pre></td></tr></table></figure>
+<p>最后在<code>conky.conf</code>里头添加下面这行就可以了，路径自行替换。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$&#123;execpi 300 python &lt;PATH_TO_weather.py&gt;&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="wttrin"><a class="markdownIt-Anchor" href="#wttrin"></a> <a target="_blank" rel="noopener" href="http://wttr.in">wttr.in</a></h3>
+<p>如果只需要当前天气，那就直接从<code>wttr.in</code>抓就可以了，网上随便找了个，试了能用。如果要在conky里头展示颜色，那需要把终端颜色代码动态替换成conky的颜色代码。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -s wttr.in | sed -n &#x27;3,7&#123;s/\d27\[[0-9;]*m//g;s/^..//;s/ *$//;p&#125;&#x27;</span><br></pre></td></tr></table></figure>
+<p>参考文章：<a target="_blank" rel="noopener" href="https://github.com/chubin/wttr.in/issues/118">How to add wttr.in to .conkyrc so that conky can show the weather #118</a></p>
+<h3 id="accuweather-rss"><a class="markdownIt-Anchor" href="#accuweather-rss"></a> AccuWeather (RSS)</h3>
+<p>AccuWeather的API要氪金，但是其实他们还有个RSS可以白嫖（仅限个人使用）。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">http://rss.accuweather.com/rss/liveweather_rss.asp?metric=xxx&amp;locCode=xxx</span><br><span class="line">metric: 0 -&gt; °F, 1 -&gt; °C</span><br><span class="line">locCode: 美国用户可以直接写邮编，其它地方就要用国家缩写+城市，例如“DE|FRANKFURT”</span><br><span class="line">例子：http://rss.accuweather.com/rss/liveweather_rss.asp?metric=1&amp;locCode=NL|AMSTERDAM</span><br></pre></td></tr></table></figure>
+<p>返回内容是XML，筛选下信息就能拿到天气了。</p>
+<p>参考内容：<a target="_blank" rel="noopener" href="https://bbs.archlinux.org/viewtopic.php?id=37381">Conky - Really Simple Weather Script</a></p>
+<h1 id="win10更新后修复grub"><a class="markdownIt-Anchor" href="#win10更新后修复grub"></a> Win10更新后修复grub</h1>
+<p>辣鸡Windows10，大版本更新之后就会搞坏grub，或者倒不如说他们只照顾了他们预想的东西。</p>
+<p>反正Win10更新完之后大概率会看到下面这样的黑框，这个时候别慌，其实很容易就可以修好的。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">error: no such partition.</span><br><span class="line">Entering rescue mode...</span><br><span class="line">grub rescue&gt;</span><br></pre></td></tr></table></figure>
+<p>首先<code>ls</code>看看分区，然后找出带有<code>/boot</code>的。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">grub rescue&gt; ls</span><br><span class="line">(hd0) (hd0, gpt6) (hd0, gpt5) (hd0, gpt4) (hd0, gpt3) (hd0, gpt2) (hd0, gpt1)</span><br><span class="line">grub rescue&gt; ls (hd0, gpt6)/</span><br><span class="line">./ ../ lost+found/ boot/ dev/ proc/ run/ sys/ （后面省略）</span><br></pre></td></tr></table></figure>
+<p>这里已经发现带有<code>/boot</code>的是<code>(hd0, gpt6)</code>，这时候使用<code>set</code>看看grub所在的分区。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">grub rescue&gt; set</span><br><span class="line">cmdpath=(hd0, gpt2)/EFI/MANJARO</span><br><span class="line">prefix=(hd0, gpt5)/boot/grub</span><br></pre></td></tr></table></figure>
+<p>很明显，Win10更新之后做了点手脚，<code>/boot</code>已经不在<code>(hd0, gpt5)</code>，而是在<code>(hd0, gpt6)</code>，当然grub也就进不去。所以这里需要使用<code>set</code>重新给<code>prefix</code>赋值。最后使用insmod加载normal模块就可以进入grub了。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">grub rescue&gt; set prefix=(hd0, gpt6)/boot/grub</span><br><span class="line">grub rescue&gt; insmod normal</span><br><span class="line">grub rescue&gt; normal</span><br></pre></td></tr></table></figure>
+<p>当然，进了grub不代表能进入系统，还需要选中Manjaro启动项，然后按<code>e</code>修改menuentry。上面提到了分区的变化，所以这里就按照上面的结果，把所有<code>gpt5</code>换成<code>gpt6</code>，最后<code>ctrl+x</code>就可以启动系统了。</p>
+<p>到这还没完，如果不想每次启动都这么修改，那就需要更新grub。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo update-grub</span><br></pre></td></tr></table></figure>
+<h1 id="小结"><a class="markdownIt-Anchor" href="#小结"></a> 小结</h1>
+<p>目前要调教的地方基本上就这么多，后续有发现新的内容会继续更新。</p>
+<p>感谢Telegram Manjaro Linux CN群的@AsamiSaori（浅见 沙织）协助改进sudo和fcitx5部分内容～</p>
+<h1 id="kde的一些东西"><a class="markdownIt-Anchor" href="#kde的一些东西"></a> KDE的一些东西</h1>
+<h2 id="u盘挂载不上"><a class="markdownIt-Anchor" href="#u盘挂载不上"></a> U盘挂载不上</h2>
+<p>Dolphin挂载u盘有问题的话，运行这个</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ntfsfix -d /dev/sda1</span><br></pre></td></tr></table></figure>
+<p>原因是<a target="_blank" rel="noopener" href="https://wiki.archlinux.org/title/NTFS#Unable_to_mount_with_ntfs3_with_partition_marked_dirty">分区被标记为dirty</a>，所以运行上面指令之后即可挂载</p>
+<p>出处：<a target="_blank" rel="noopener" href="https://bbs.archlinux.org/viewtopic.php?id=271650">Mounting ntfs partition by ntfs3 failed</a></p>
+<h2 id="音量控制f2f3-sticky"><a class="markdownIt-Anchor" href="#音量控制f2f3-sticky"></a> 音量控制F2/F3 Sticky</h2>
+<p>好像联想的本子才有这毛病，诡异。。。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo touch /lib/udev/hwdb.d/70-keyboard.hwdb</span><br><span class="line">sudo gedit /lib/udev/hwdb.d/70-keyboard.hwdb</span><br></pre></td></tr></table></figure>
+<p>然后把下面内容复制进去（按原帖解释，evdev:atkbd:dmi:*会应用到所有键盘）。如果音量控制不是F2/F3，可以用<code>sudo evtest</code>查看 keycode</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">evdev:atkbd:dmi:*</span><br><span class="line"> KEYBOARD_KEY_ae=!volumedown</span><br><span class="line"> KEYBOARD_KEY_b0=!volumeup</span><br></pre></td></tr></table></figure>
+<p>保存之后运行下面命令</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo systemd-hwdb update</span><br><span class="line">sudo udevadm trigger --verbose --sysname-match=&quot;event*&quot;</span><br><span class="line">udevadm info /sys/class/input/event2</span><br></pre></td></tr></table></figure>
+<p>输出里头有下面两行就是生效了</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">E: KEYBOARD_KEY_ae=!volumedown</span><br><span class="line">E: KEYBOARD_KEY_b0=!volumeup</span><br></pre></td></tr></table></figure>
+<p>Source:</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://forum.manjaro.org/t/sticky-volume-keys/109886/7">Sticky volume keys</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/miXwui/framework-laptop-fn-keys-fix/">miXwui/framework-laptop-fn-keys-fix/</a></li>
+</ul>
+<h2 id="有线耳机有底噪"><a class="markdownIt-Anchor" href="#有线耳机有底噪"></a> 有线耳机有底噪</h2>
+<p>这个也是莫名其妙的。。。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S alsa-tools</span><br></pre></td></tr></table></figure>
+<p>然后</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo touch /usr/local/fix-headphone.sh</span><br><span class="line">chown +x /usr/local/fix-headphone.sh</span><br><span class="line">sudo nano /usr/local/fix-headphone.sh</span><br></pre></td></tr></table></figure>
+<p>在文本框输入下面内容（5秒 sleep 之后就能生效，太早执行就无效，有点神奇）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#!/usr/bin/env bash</span><br><span class="line">sleep 5s</span><br><span class="line">sudo hda-verb /dev/snd/hwC0D0 0x1d SET_PIN_WIDGET_CONTROL 0x0</span><br></pre></td></tr></table></figure>
+<p>接下来创建开机自启动项目</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nano /etc/systemd/system/fix-headphone.service</span><br></pre></td></tr></table></figure>
+<p>在弹出的文本框输入下面内容</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">[Unit]</span><br><span class="line">Description=Fix headphone noise</span><br><span class="line">#After=network.target</span><br><span class="line"></span><br><span class="line">[Service]</span><br><span class="line">Type=oneshot</span><br><span class="line">ExecStart=/usr/local/fix-headphone.sh</span><br><span class="line">RemainAfterExit=true</span><br><span class="line">StandardOutput=journal</span><br><span class="line"></span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br></pre></td></tr></table></figure>
+<p>最后执行这个</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl enable --now fix-headphone.service</span><br></pre></td></tr></table></figure>
+<p>Source:</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://bbs.archlinux.org/viewtopic.php?id=242567">lenovo x1 carbon 6th - static noise through headphone</a></li>
+<li><a target="_blank" rel="noopener" href="https://forum.manjaro.org/t/need-to-run-command-at-startup/108611/2">Need to run command at startup</a></li>
+</ul>
+<h2 id="thinkbook-s13-电池养护模式"><a class="markdownIt-Anchor" href="#thinkbook-s13-电池养护模式"></a> Thinkbook s13 电池养护模式</h2>
+<p>可以通过下面命令查看，1 是开启，0 是关闭。开启之后充到60%就会切换到电源供电。修改的话直接用文本编辑器就行了。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cat /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode</span><br><span class="line">echo 1 | sudo tee /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode</span><br><span class="line">echo 0 | sudo tee /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode</span><br></pre></td></tr></table></figure>
+<p>Source: <a target="_blank" rel="noopener" href="https://askubuntu.com/questions/1367327/lenovo-battery-conservation-mode-fail">Lenovo Battery Conservation mode fail</a></p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Linux/" rel="tag"># Linux</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/tech/extract-encrypted-pdf.html" rel="prev" title="记一次China-DRM加密的PDF破解">
+                  <i class="fa fa-angle-left"></i> 记一次China-DRM加密的PDF破解
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/tech/hexo-and-travis-ci.html" rel="next" title="用Travis-CI构建Hexo博客">
+                  用Travis-CI构建Hexo博客 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 2020 – 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="fa fa-terminal"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">oscarcx123</span>
+        <span class="post-meta-item">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-chart-line"></i>
+          </span>
+          <span title="站点总字数">268k</span>
+        </span>
+        <span class="post-meta-item">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-coffee"></i>
+          </span>
+          <span title="站点阅读时长">14:53</span>
+        </span>
+  </div>
+  <div class="powered-by">
+    <span class="post-meta-item">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v6.3.0 强力驱动
+    </span>
+    <span class="post-meta-item"> 主题 – <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v8.18.1
+    </span>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script size="300" alpha="0.6" zIndex="-1" src="/js/ribbon.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.6.0/pjax.min.js" integrity="sha256-vxLn1tSKWD4dqbMRyv940UYw4sXgMtYcK6reefzZrao=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.0.8/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/pjax.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/katex.min.css" integrity="sha256-3574TpfThVfeAhg+I4+N39EJiLN3QUkuEsMVe8hWAR4=" crossorigin="anonymous">
+  <script class="next-config" data-name="katex" type="application/json">{"copy_tex_js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/contrib/copy-tex.min.js","integrity":"sha256-Us54+rSGDSTvIhKKUs4kygE2ipA0RXpWWh0/zLqw3bs="}}</script>
+  <script src="/js/third-party/math/katex.js"></script>
+
+
+<script type="text/javascript">
+  // 显示“展开”和“折叠”
+  function collapsableTitle(x) {
+    var nav = document.getElementsByClassName("sidebar-nav-toc")[0];
+    if (x.matches) { // If media query matches
+      var content = document.getElementsByClassName("sidebar-panel-container")[0];
+      if (content.style.display = "none") {
+        nav.textContent = "文章目录 [展开]";
+      }
+      else {
+        nav.textContent = "文章目录 [折叠]";
+      }
+    } 
+    else {
+      nav.textContent = "文章目录";
+    }
+  }
+
+  var x = window.matchMedia("(max-width: 991px)"); // media query
+  collapsableTitle(x);
+  x.addListener(collapsableTitle);
+
+  // 控制目录的折叠
+  var tos = document.getElementsByClassName("sidebar-nav")[0];
+  var i;
+
+  tos.addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = document.getElementsByClassName("sidebar-panel-container")[0];
+    var nav = document.getElementsByClassName("sidebar-nav-toc")[0];
+    if (content.style.display === "block" && window.innerWidth < 991) {
+      content.style.display = "none";
+      nav.textContent = "文章目录 [展开]";
+    } else {
+      content.style.display = "block";
+      if (window.innerWidth < 991) {
+        nav.textContent = "文章目录 [折叠]";
+      }
+    }
+  });
+
+  // 因为启用pjax，需要监听complete事件，来实现默认折叠效果
+  document.addEventListener('pjax:complete', function() {
+    if (window.innerWidth < 991) {
+      let content = document.getElementsByClassName("sidebar-panel-container")[0];
+      content.style.display = "none";
+      let nav = document.getElementsByClassName("sidebar-nav-toc")[0];
+      nav.textContent = "文章目录 [展开]";
+      }
+    });
+  </script>
+</body>
+</html>

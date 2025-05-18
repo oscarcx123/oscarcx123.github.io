@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-64x64-dragon.jpg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-64x64-dragon.jpg">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-64x64-dragon.jpg">
+  <link rel="mask-icon" href="/images/favicon-64x64-dragon.jpg" color="#222">
+  <meta name="google-site-verification" content="-QMh-gRPduq5T_vg3_Pwi3kZsNSiyuEpPBaDIXV8J34">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"oscarcx.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.18.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":true,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+
+
+  <style type="text/css">
+
+div.hcb-content.hcb-block.hcbnote, details.hcb-content.box.hcbnote,div.hcb-content.hcb-block.hcbabstract, details.hcb-content.box.hcbabstract,div.hcb-content.hcb-block.hcbinfo, details.hcb-content.box.hcbinfo,div.hcb-content.hcb-block.hcbtip, details.hcb-content.box.hcbtip,div.hcb-content.hcb-block.hcbsuccess, details.hcb-content.box.hcbsuccess,div.hcb-content.hcb-block.hcbquestion, details.hcb-content.box.hcbquestion,div.hcb-content.hcb-block.hcbwarning, details.hcb-content.box.hcbwarning,div.hcb-content.hcb-block.hcbfailure, details.hcb-content.box.hcbfailure,div.hcb-content.hcb-block.hcbdanger, details.hcb-content.box.hcbdanger,div.hcb-content.hcb-block.hcbbug, details.hcb-content.box.hcbbug,div.hcb-content.hcb-block.hcbexample, details.hcb-content.box.hcbexample,div.hcb-content.hcb-block.hcbquote, details.hcb-content.box.hcbquote {
+  border: .05rem solid #448aff;
+  border-radius: .2rem;
+  font-size: 0.96rem;
+  margin: 1.5625em 0;
+  padding: 0 1.2rem;
+  transition: box-shadow 250ms;
+}
+div.hcb-content.hcb-block.hcbnote, details.hcb-content.box.hcbnote {
+  border-color: #448aff;
+}
+div.hcb-content.hcb-block.hcbabstract, details.hcb-content.box.hcbabstract {
+  border-color: #00b0ff;
+}
+div.hcb-content.hcb-block.hcbinfo, details.hcb-content.box.hcbinfo {
+  border-color: #00b8d4;
+}
+div.hcb-content.hcb-block.hcbtip, details.hcb-content.box.hcbtip {
+  border-color: #00bfa5;
+}
+div.hcb-content.hcb-block.hcbsuccess, details.hcb-content.box.hcbsuccess {
+  border-color: #00c853;
+}
+div.hcb-content.hcb-block.hcbquestion, details.hcb-content.box.hcbquestion {
+  border-color: #64dd17;
+}
+div.hcb-content.hcb-block.hcbwarning, details.hcb-content.box.hcbwarning {
+  border-color: #ff9100;
+}
+div.hcb-content.hcb-block.hcbfailure, details.hcb-content.box.hcbfailure {
+  border-color: #ff5252;
+}
+div.hcb-content.hcb-block.hcbdanger, details.hcb-content.box.hcbdanger {
+  border-color: #ff1744;
+}
+div.hcb-content.hcb-block.hcbbug, details.hcb-content.box.hcbbug {
+  border-color: #f50057;
+}
+div.hcb-content.hcb-block.hcbexample, details.hcb-content.box.hcbexample {
+  border-color: #7c4dff;
+}
+div.hcb-content.hcb-block.hcbquote, details.hcb-content.box.hcbquote {
+  border-color: #9e9e9e;
+}
+div.hcb-content.hcb-block.hcbnote:focus-within, details.hcb-content.box.hcbnote:focus-within {
+  box-shadow: 0 0 0 .2rem #448aff1a;
+}
+div.hcb-content.hcb-block.hcbabstract:focus-within, details.hcb-content.box.hcbabstract:focus-within {
+  box-shadow: 0 0 0 .2rem #00b0ff1a;
+}
+div.hcb-content.hcb-block.hcbinfo:focus-within, details.hcb-content.box.hcbinfo:focus-within {
+  box-shadow: 0 0 0 .2rem #00b8d41a;
+}
+div.hcb-content.hcb-block.hcbtip:focus-within, details.hcb-content.box.hcbtip:focus-within {
+  box-shadow: 0 0 0 .2rem #00bfa51a;
+}
+div.hcb-content.hcb-block.hcbsuccess:focus-within, details.hcb-content.box.hcbsuccess:focus-within {
+  box-shadow: 0 0 0 .2rem #00c8531a;
+}
+div.hcb-content.hcb-block.hcbquestion:focus-within, details.hcb-content.box.hcbquestion:focus-within {
+  box-shadow: 0 0 0 .2rem #64dd171a;
+}
+div.hcb-content.hcb-block.hcbwarning:focus-within, details.hcb-content.box.hcbwarning:focus-within {
+  box-shadow: 0 0 0 .2rem #ff91001a;
+}
+div.hcb-content.hcb-block.hcbfailure:focus-within, details.hcb-content.box.hcbfailure:focus-within {
+  box-shadow: 0 0 0 .2rem #ff52521a;
+}
+div.hcb-content.hcb-block.hcbdanger:focus-within, details.hcb-content.box.hcbdanger:focus-within {
+  box-shadow: 0 0 0 .2rem #ff17441a;
+}
+div.hcb-content.hcb-block.hcbbug:focus-within, details.hcb-content.box.hcbbug:focus-within {
+  box-shadow: 0 0 0 .2rem #f500571a;
+}
+div.hcb-content.hcb-block.hcbexample:focus-within, details.hcb-content.box.hcbexample:focus-within {
+  box-shadow: 0 0 0 .2rem #7c4dff1a;
+}
+div.hcb-content.hcb-block.hcbquote:focus-within, details.hcb-content.box.hcbquote:focus-within {
+  box-shadow: 0 0 0 .2rem #9e9e9e1a;
+}
+div.hcb-content.hcb-block.hcbnote *, details.hcb-content.box.hcbnote *,div.hcb-content.hcb-block.hcbabstract *, details.hcb-content.box.hcbabstract *,div.hcb-content.hcb-block.hcbinfo *, details.hcb-content.box.hcbinfo *,div.hcb-content.hcb-block.hcbtip *, details.hcb-content.box.hcbtip *,div.hcb-content.hcb-block.hcbsuccess *, details.hcb-content.box.hcbsuccess *,div.hcb-content.hcb-block.hcbquestion *, details.hcb-content.box.hcbquestion *,div.hcb-content.hcb-block.hcbwarning *, details.hcb-content.box.hcbwarning *,div.hcb-content.hcb-block.hcbfailure *, details.hcb-content.box.hcbfailure *,div.hcb-content.hcb-block.hcbdanger *, details.hcb-content.box.hcbdanger *,div.hcb-content.hcb-block.hcbbug *, details.hcb-content.box.hcbbug *,div.hcb-content.hcb-block.hcbexample *, details.hcb-content.box.hcbexample *,div.hcb-content.hcb-block.hcbquote *, details.hcb-content.box.hcbquote * {
+  box-sizing: border-box;
+}
+div.hcb-content.hcb-block.hcbnote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbnote > summary,div.hcb-content.hcb-block.hcbabstract > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbabstract > summary,div.hcb-content.hcb-block.hcbinfo > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbinfo > summary,div.hcb-content.hcb-block.hcbtip > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbtip > summary,div.hcb-content.hcb-block.hcbsuccess > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbsuccess > summary,div.hcb-content.hcb-block.hcbquestion > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquestion > summary,div.hcb-content.hcb-block.hcbwarning > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbwarning > summary,div.hcb-content.hcb-block.hcbfailure > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbfailure > summary,div.hcb-content.hcb-block.hcbdanger > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbdanger > summary,div.hcb-content.hcb-block.hcbbug > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbbug > summary,div.hcb-content.hcb-block.hcbexample > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbexample > summary,div.hcb-content.hcb-block.hcbquote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquote > summary {
+  border-top-right-radius: 0.1rem;
+  border-top-left-radius: 0.1rem;
+  border-left-width: 0.2rem;
+  display: block;
+  min-height: 1rem;
+  border: none;
+  font-weight: 700;
+  margin: 0 -1.2rem 1rem;
+  padding: 0.4rem 0.6rem;
+  position: relative;
+  outline: none;
+}
+details.hcb-content.box.hcbnote > summary,details.hcb-content.box.hcbabstract > summary,details.hcb-content.box.hcbinfo > summary,details.hcb-content.box.hcbtip > summary,details.hcb-content.box.hcbsuccess > summary,details.hcb-content.box.hcbquestion > summary,details.hcb-content.box.hcbwarning > summary,details.hcb-content.box.hcbfailure > summary,details.hcb-content.box.hcbdanger > summary,details.hcb-content.box.hcbbug > summary,details.hcb-content.box.hcbexample > summary,details.hcb-content.box.hcbquote > summary {
+  cursor: pointer;
+}
+details.hcb-content.box.hcbnote:not([open]) > summary,details.hcb-content.box.hcbabstract:not([open]) > summary,details.hcb-content.box.hcbinfo:not([open]) > summary,details.hcb-content.box.hcbtip:not([open]) > summary,details.hcb-content.box.hcbsuccess:not([open]) > summary,details.hcb-content.box.hcbquestion:not([open]) > summary,details.hcb-content.box.hcbwarning:not([open]) > summary,details.hcb-content.box.hcbfailure:not([open]) > summary,details.hcb-content.box.hcbdanger:not([open]) > summary,details.hcb-content.box.hcbbug:not([open]) > summary,details.hcb-content.box.hcbexample:not([open]) > summary,details.hcb-content.box.hcbquote:not([open]) > summary {
+  margin-bottom: 0;
+}
+div.hcb-content.hcb-block.hcbnote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbnote > summary {
+  background-color: #448aff1a;
+}
+div.hcb-content.hcb-block.hcbabstract > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbabstract > summary {
+  background-color: #00b0ff1a;
+}
+div.hcb-content.hcb-block.hcbinfo > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbinfo > summary {
+  background-color: #00b8d41a;
+}
+div.hcb-content.hcb-block.hcbtip > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbtip > summary {
+  background-color: #00bfa51a;
+}
+div.hcb-content.hcb-block.hcbsuccess > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbsuccess > summary {
+  background-color: #00c8531a;
+}
+div.hcb-content.hcb-block.hcbquestion > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquestion > summary {
+  background-color: #64dd171a;
+}
+div.hcb-content.hcb-block.hcbwarning > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbwarning > summary {
+  background-color: #ff91001a;
+}
+div.hcb-content.hcb-block.hcbfailure > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbfailure > summary {
+  background-color: #ff52521a;
+}
+div.hcb-content.hcb-block.hcbdanger > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbdanger > summary {
+  background-color: #ff17441a;
+}
+div.hcb-content.hcb-block.hcbbug > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbbug > summary {
+  background-color: #f500571a;
+}
+div.hcb-content.hcb-block.hcbexample > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbexample > summary {
+  background-color: #7c4dff1a;
+}
+div.hcb-content.hcb-block.hcbquote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquote > summary {
+  background-color: #9e9e9e1a;
+}
+div.hcb-content.hcb-block.hcbnote > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbnote > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #448aff;
+}
+div.hcb-content.hcb-block.hcbabstract > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbabstract > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00b0ff;
+}
+div.hcb-content.hcb-block.hcbinfo > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbinfo > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00b8d4;
+}
+div.hcb-content.hcb-block.hcbtip > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbtip > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00bfa5;
+}
+div.hcb-content.hcb-block.hcbsuccess > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbsuccess > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00c853;
+}
+div.hcb-content.hcb-block.hcbquestion > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbquestion > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #64dd17;
+}
+div.hcb-content.hcb-block.hcbwarning > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbwarning > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff9100;
+}
+div.hcb-content.hcb-block.hcbfailure > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbfailure > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff5252;
+}
+div.hcb-content.hcb-block.hcbdanger > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbdanger > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff1744;
+}
+div.hcb-content.hcb-block.hcbbug > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbbug > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #f50057;
+}
+div.hcb-content.hcb-block.hcbexample > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbexample > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #7c4dff;
+}
+div.hcb-content.hcb-block.hcbquote > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbquote > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #9e9e9e;
+}
+details.hcb-content.box.hcbnote > summary > div.hcb-box-open-button,details.hcb-content.box.hcbabstract > summary > div.hcb-box-open-button,details.hcb-content.box.hcbinfo > summary > div.hcb-box-open-button,details.hcb-content.box.hcbtip > summary > div.hcb-box-open-button,details.hcb-content.box.hcbsuccess > summary > div.hcb-box-open-button,details.hcb-content.box.hcbquestion > summary > div.hcb-box-open-button,details.hcb-content.box.hcbwarning > summary > div.hcb-box-open-button,details.hcb-content.box.hcbfailure > summary > div.hcb-box-open-button,details.hcb-content.box.hcbdanger > summary > div.hcb-box-open-button,details.hcb-content.box.hcbbug > summary > div.hcb-box-open-button,details.hcb-content.box.hcbexample > summary > div.hcb-box-open-button,details.hcb-content.box.hcbquote > summary > div.hcb-box-open-button {
+  float: right;
+}
+details.hcb-content.box.hcbnote > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbabstract > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbinfo > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbtip > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbsuccess > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbquestion > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbwarning > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbfailure > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbdanger > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbbug > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbexample > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbquote > summary > div.hcb-box-open-button > i {
+  margin: 0 0.6rem 0 0.6rem;
+  font-size: 0.7rem;
+  transition: transform 250ms
+}
+details.hcb-content.box.hcbnote:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbabstract:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbinfo:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbtip:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbsuccess:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquestion:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbwarning:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbfailure:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbdanger:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbbug:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbexample:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquote:not([open]) > summary > div.hcb-box-open-button i {
+  transform: rotate(270deg);
+}
+details.hcb-content.box.hcbnote[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbabstract[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbinfo[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbtip[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbsuccess[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquestion[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbwarning[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbfailure[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbdanger[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbbug[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbexample[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquote[open] > summary > div.hcb-box-open-button i {
+  transform: rotate(180deg);
+}
+details.hcb-content.box.hcbnote summary div.hcb-box-open-button i {
+  color: #448aff;
+}
+details.hcb-content.box.hcbabstract summary div.hcb-box-open-button i {
+  color: #00b0ff;
+}
+details.hcb-content.box.hcbinfo summary div.hcb-box-open-button i {
+  color: #00b8d4;
+}
+details.hcb-content.box.hcbtip summary div.hcb-box-open-button i {
+  color: #00bfa5;
+}
+details.hcb-content.box.hcbsuccess summary div.hcb-box-open-button i {
+  color: #00c853;
+}
+details.hcb-content.box.hcbquestion summary div.hcb-box-open-button i {
+  color: #64dd17;
+}
+details.hcb-content.box.hcbwarning summary div.hcb-box-open-button i {
+  color: #ff9100;
+}
+details.hcb-content.box.hcbfailure summary div.hcb-box-open-button i {
+  color: #ff5252;
+}
+details.hcb-content.box.hcbdanger summary div.hcb-box-open-button i {
+  color: #ff1744;
+}
+details.hcb-content.box.hcbbug summary div.hcb-box-open-button i {
+  color: #f50057;
+}
+details.hcb-content.box.hcbexample summary div.hcb-box-open-button i {
+  color: #7c4dff;
+}
+details.hcb-content.box.hcbquote summary div.hcb-box-open-button i {
+  color: #9e9e9e;
+}
+div.hcb-content.hcb-cards * {
+  box-sizing: border-box;
+}
+input.hcb-content.hcb-cards-input {
+  display: none;
+}
+div.hcb-content.hcb-cards-labels {
+  position: relative;
+  box-shadow: 0 -0.05rem #00000012 inset;
+  display: flex;
+  margin-bottom: 1.25rem;
+}
+div.hcb-content.hcb-cards-labels:before {
+  background: var(--cards-color);
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: translateX(var(--md-indicator-x));
+  transition: width 225ms, transform 250ms;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  width: var(--md-indicator-width);
+}
+label.hcb-content.hcb-cards-label {
+  border-bottom: 0.1rem solid #0000;
+  border-radius: 0.1rem 0.1rem 0 0;
+  cursor: pointer;
+  color: #0000008a;
+  font-size: 0.92em;
+  font-weight: 700;
+  padding: 0 1.25rem 0.625rem;
+  transition: color 250ms;
+}
+label.hcb-content.hcb-cards-label.active, label.hcb-content.hcb-cards-label:hover {
+  color: var(--cards-color);
+}
+div.hcb-content.hcb-cards-content {
+  display: none;
+}
+div.hcb-content.hcb-cards-content.active {
+  display: block;
+}
+</style>
+    <meta name="description" content="最近AI技术发展得如火如荼，刚好我对图片生成挺感兴趣，就决定玩一下 Stable Diffusion，顺便记录一下过程。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Stable Diffusion 部署运行笔记">
+<meta property="og:url" content="https://oscarcx.com/tech/stable-diffusion.html">
+<meta property="og:site_name" content="Cow">
+<meta property="og:description" content="最近AI技术发展得如火如荼，刚好我对图片生成挺感兴趣，就决定玩一下 Stable Diffusion，顺便记录一下过程。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/stable_diffusion_1.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/stable_diffusion_2.jpg">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/stable_diffusion_3.jpg">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/stable_diffusion_4.jpg">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/stable_diffusion_5.jpg">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/stable_diffusion_6.jpg">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/stable_diffusion_7.jpg">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/stable_diffusion_8.jpg">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/stable_diffusion_9.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/stable_diffusion_10.jpg">
+<meta property="article:published_time" content="2023-05-14T18:07:00.000Z">
+<meta property="article:modified_time" content="2025-05-18T16:05:39.211Z">
+<meta property="article:author" content="oscarcx123">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://oscarcx.com/hexo_resource/img/stable_diffusion_1.png">
+
+
+<link rel="canonical" href="https://oscarcx.com/tech/stable-diffusion.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://oscarcx.com/tech/stable-diffusion.html","path":"tech/stable-diffusion.html","title":"Stable Diffusion 部署运行笔记"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Stable Diffusion 部署运行笔记 | Cow</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<style type="text/css">
+.spoiler {
+  display: inline;
+}
+p.spoiler {
+  display: flex;
+}
+.spoiler a {
+  pointer-events: none;
+}
+.spoiler-blur, .spoiler-blur > * {
+  transition: text-shadow .5s ease;
+}
+.spoiler .spoiler-blur, .spoiler .spoiler-blur > * {
+  color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  text-shadow: 0 0 10px grey;
+  cursor: pointer;
+}
+.spoiler .spoiler-blur:hover, .spoiler .spoiler-blur:hover > * {
+  text-shadow: 0 0 5px grey;
+}
+.spoiler-box, .spoiler-box > * {
+  transition: color .5s ease,
+  background-color .5s ease;
+}
+.spoiler .spoiler-box, .spoiler .spoiler-box > * {
+  color: black;
+  background-color: black;
+  text-shadow: none;
+}</style></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Cow</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#0x01-%E5%87%86%E5%A4%87%E5%B7%A5%E5%85%B7"><span class="nav-number">1.</span> <span class="nav-text"> 0x01 - 准备工具</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#0x02-sd%E9%83%A8%E7%BD%B2"><span class="nav-number">2.</span> <span class="nav-text"> 0x02 - SD部署</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#0x03-txt2img%E5%85%A5%E9%97%A8"><span class="nav-number">3.</span> <span class="nav-text"> 0x03 - txt2img入门</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#stable-diffusion-checkpoint"><span class="nav-number">3.1.</span> <span class="nav-text"> Stable Diffusion checkpoint</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#prompt"><span class="nav-number">3.2.</span> <span class="nav-text"> Prompt</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#negative-prompt"><span class="nav-number">3.3.</span> <span class="nav-text"> Negative Prompt</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#style"><span class="nav-number">3.4.</span> <span class="nav-text"> Style</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#sampling-method"><span class="nav-number">3.5.</span> <span class="nav-text"> Sampling method</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#sampling-steps"><span class="nav-number">3.6.</span> <span class="nav-text"> Sampling steps</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#width-height"><span class="nav-number">3.7.</span> <span class="nav-text"> Width &amp; Height</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#cfg-scale"><span class="nav-number">3.8.</span> <span class="nav-text"> CFG Scale</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#batch-count-size"><span class="nav-number">3.9.</span> <span class="nav-text"> Batch Count &amp; Size</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#seed"><span class="nav-number">3.10.</span> <span class="nav-text"> Seed</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#script"><span class="nav-number">3.11.</span> <span class="nav-text"> Script</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#generate"><span class="nav-number">3.12.</span> <span class="nav-text"> Generate</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#0x04-txt2img%E8%BF%9B%E9%98%B6"><span class="nav-number">4.</span> <span class="nav-text"> 0x04 - txt2img进阶</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#hiresfix"><span class="nav-number">4.1.</span> <span class="nav-text"> Hires.fix</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#0x0-%E6%9C%AA%E5%AE%8C%E5%BE%85%E7%BB%AD"><span class="nav-number">5.</span> <span class="nav-text"> 0x0? - 未完待续</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="oscarcx123"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">oscarcx123</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">32</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/oscarcx123" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;oscarcx123" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://oscarcx.com/tech/stable-diffusion.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="oscarcx123">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Cow">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Stable Diffusion 部署运行笔记 | Cow">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Stable Diffusion 部署运行笔记
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2023-05-14 18:07:00" itemprop="dateCreated datePublished" datetime="2023-05-14T18:07:00+00:00">2023-05-14</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/tech/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>2.5k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>8 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>最近AI技术发展得如火如荼，刚好我对图片生成挺感兴趣，就决定玩一下 Stable Diffusion，顺便记录一下过程。</p>
+<span id="more"></span>
+<p>至于为什么不用网上提供的图片生成服务呢？首先，这些服务基本都是付费的，而且每个月还有配额以防滥用。其次，网上的版本通常都有各种限制，想必不少人都见识过ChatGPT的经典名言：“As a large language model trained by OpenAI”。。。五花八门的限制和道德准则总让人觉得差点意思，所以说本地部署一个实例才是硬道理。</p>
+<h1 id="0x01-准备工具"><a class="markdownIt-Anchor" href="#0x01-准备工具"></a> 0x01 - 准备工具</h1>
+<p>Linux下部署</p>
+<ul>
+<li>安装 WSL2（<code>wsl --install</code>）
+<ul>
+<li>如果不想用默认的 Ubuntu 可以看<a target="_blank" rel="noopener" href="https://learn.microsoft.com/en-us/windows/wsl/install">Install Linux on Windows with WSL</a></li>
+</ul>
+</li>
+<li>拥有一张 Nvidia 显卡并且安装了驱动
+<ul>
+<li>我用的是 RTX 3060 Laptop GPU（6GB VRAM）</li>
+<li>根据<a target="_blank" rel="noopener" href="https://docs.nvidia.com/cuda/wsl-user-guide/index.html#getting-started-with-cuda-on-wsl">CUDA on WSL User Guide</a>，R495 及之后的驱动版本将支持 WSL2 的 CUDA，无需另外安装驱动</li>
+</ul>
+</li>
+<li>Anaconda（可有可无，我没装）</li>
+</ul>
+<p>注：Windows部署也很容易，只不过使用WSL2也很方便，而且哪天不想玩了可以直接删除，不会影响到Windows。</p>
+<h1 id="0x02-sd部署"><a class="markdownIt-Anchor" href="#0x02-sd部署"></a> 0x02 - SD部署</h1>
+<p>现在比较流行的是<a target="_blank" rel="noopener" href="https://github.com/AUTOMATIC1111/stable-diffusion-webui">AUTOMATIC1111/stable-diffusion-webui</a>这个懒人包，只需要跑一键脚本就可以完成安装。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装依赖</span></span><br><span class="line"><span class="built_in">sudo</span> apt install wget git python3 python3-venv</span><br><span class="line"><span class="comment"># 运行一键脚本（会在当前目录下创建一个叫stable-diffusion-webui的文件夹）</span></span><br><span class="line">bash &lt;(wget -qO- https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui/master/webui.sh)</span><br><span class="line"><span class="comment"># 需要进入这个文件夹（从外面运行会给你重新安装一次）</span></span><br><span class="line"><span class="built_in">cd</span> stable-diffusion-webui</span><br><span class="line"><span class="comment"># 运行 webui.sh（每次启动都是运行这个脚本）</span></span><br><span class="line">bash webui.sh</span><br><span class="line"><span class="comment"># 如果运行出现 Cannot locate TCMalloc (improves CPU memory usage) 就执行下面这行</span></span><br><span class="line"><span class="built_in">sudo</span> apt install --no-install-recommends google-perftools</span><br></pre></td></tr></table></figure>
+<p>如果网速比较慢的话，一键脚本应该是要跑很久的，因为要安装依赖，以及下载 Stable Diffusion 默认的模型。</p>
+<p>如果运行时出现 No module 'xformers'. Proceeding without it，可以直接无视。根据<a target="_blank" rel="noopener" href="https://www.reddit.com/r/StableDiffusion/comments/110gizt/how_to_fix_the_error_no_module_xformers/">论坛帖子</a>，最新版本在使用 Torch2，性能更高，因此N卡不再需要使用 xformers。</p>
+<h1 id="0x03-txt2img入门"><a class="markdownIt-Anchor" href="#0x03-txt2img入门"></a> 0x03 - txt2img入门</h1>
+<p>关于 Stable Diffusion 的原理，有一篇相当不错的入门文章<a target="_blank" rel="noopener" href="https://stable-diffusion-art.com/how-stable-diffusion-work/">How does Stable Diffusion work?</a>，感兴趣可以看看。</p>
+<p>模型可以在<a target="_blank" rel="noopener" href="https://civitai.com/">Civitai</a>下载，初次体验建议挑选一些下载次数多的<code>Checkpoint</code>，比如<a target="_blank" rel="noopener" href="https://civitai.com/models/25494/brabeautiful-realistic-asians-v5">BRA(Beautiful Realistic Asians) V5</a>。<code>LoRA</code>是辅助类的模型，比如生成更好看的面部。<code>Textual Inversion</code>也是辅助的，比如生成黑丝。这两种模型不是必须，可以先不下载。</p>
+<p>Stable Diffusion WebUI 的主要目录结构如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">├── embeddings（存放Textual Inversion）</span><br><span class="line">├── models</span><br><span class="line">│   ├── Lora（存放 LoRA 模型）</span><br><span class="line">│   ├── Stable-diffusion（存放 Checkpoint 模型）</span><br><span class="line">├── outputs（生成的所有图片都会默认存到这里）</span><br><span class="line">├── webui-user.sh（一些参数设置，一般不用动）</span><br><span class="line">└── webui.sh（启动脚本）</span><br></pre></td></tr></table></figure>
+<p>启动之后，在浏览器中访问<a target="_blank" rel="noopener" href="http://127.0.0.1:7860">http://127.0.0.1:7860</a>即可。</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/stable_diffusion_1.png" alt="" /></p>
+<p>我们主要使用<code>txt2img</code>面板，通过一些提示词（prompt）来生成图片。当然，我知道没图你们是不会看的，所以先展示一下2023年5月的ai功力。这里使用的模型是<a target="_blank" rel="noopener" href="https://civitai.com/models/6424/chilloutmix">ChilloutMix</a>。虽然模型本身具有NSFW生成能力，但是生成SFW图片也是完全没有问题的。</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/stable_diffusion_2.jpg" alt="" /></p>
+<p>好了，接下来稍微介绍一下各种参数，其实大部分在<a target="_blank" rel="noopener" href="https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features">官方文档</a>都有写，所以我只记录重点。</p>
+<h2 id="stable-diffusion-checkpoint"><a class="markdownIt-Anchor" href="#stable-diffusion-checkpoint"></a> Stable Diffusion checkpoint</h2>
+<p>这个就是最重要的<code>Checkpoint</code>模型了。不得不说自带的<code>v1-5-pruned-emaonly</code>没什么用，强烈建议在<a target="_blank" rel="noopener" href="https://civitai.com/">Civitai</a>找一些更符合自己口味的模型。<code>Checkpoint</code>模型不需要修改文件名，直接放进对应文件夹，然后点击右边的刷新图标，就能在下拉列表看到了。切换模型需要加载，等待时间大概十几秒，稍微耐心一点。</p>
+<h2 id="prompt"><a class="markdownIt-Anchor" href="#prompt"></a> Prompt</h2>
+<p>这个可是重中之重，如果没有好的prompt，哪怕模型再好也生成不出好看的图片。prompt我也不太会写，基本都是抄大佬的。</p>
+<p>一般有两种地方可以找到prompt：</p>
+<ul>
+<li>各种整理好的文档（例如：<a target="_blank" rel="noopener" href="https://docs.google.com/document/d/1xFGVMr_ELDDW9WkKw27wjsWqSDNYlLWtsY93Ost-0QE/edit">CIVITAI法典</a>）</li>
+<li>Civitai 的模型页面会展示一些高赞图片，部分作者有提供prompt</li>
+</ul>
+<p>一个比较好的prompt看起来是这样的（修改自<a target="_blank" rel="noopener" href="https://civitai.com/images/295538">su943515688309的作品</a>，去除了NSFW词条）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(RAW photo, best quality), (realistic, photo-realistic:1.3), best quality, masterpiece, an extremely delicate and beautiful, extremely detailed, CG, unity, 2k wallpaper, Amazing, finely detail, masterpiece, light smile, best quality, extremely detailed CG unity 8k wallpaper, huge filesize, ultra-detailed, highres, extremely detailed, 1girl, maid, (swimming pool:1.2), kawaii bikini, (spread legs), hair ornament, looking at looking at viewer, small breasts, &lt;lora:japaneseDollLikeness_v10:0.2&gt;, &lt;lora:koreanDollLikeness_v15:0.2&gt;, &lt;lora:cuteGirlMix4_v10:0.4&gt;, &lt;lora:chilloutmixss30_v30:0.2&gt;</span><br></pre></td></tr></table></figure>
+<p>先来说说<code>()</code>和<code>[]</code>的用法：</p>
+<ul>
+<li>(word) - 加权（1.1）</li>
+<li>((word)) - 加权（1.1*1.1=1.21）</li>
+<li>[word] - 降权（1/1.1=0.909）</li>
+<li>(word:1.5) - 加权（1.5）</li>
+<li>(word:0.25) - 加权（0.25），实际上等同于降权4倍</li>
+<li><code>()</code>和<code>[]</code>都可以用<code>\</code>来 escape</li>
+</ul>
+<p>注：<code>&#123;&#125;</code>是 NovelAI 的用法，等价于加权（1.05）</p>
+<p><code>&lt;&gt;</code>表明使用的<code>LoRA</code>模型：</p>
+<ul>
+<li>格式为<code>&lt;lora:filename:multiplier&gt;</code>
+<ul>
+<li>例如<code>&lt;lora:cuteGirlMix4_v10:0.4&gt;</code></li>
+</ul>
+</li>
+<li><code>multiplier</code>代表效力强度，范围是0 - 1
+<ul>
+<li>默认是1（最大效力）</li>
+<li>0等同于关闭</li>
+</ul>
+</li>
+<li><code>filename</code>必须跟文件名一模一样（不带后缀名）
+<ul>
+<li>例如调用<code>cuteGirlMix4_v10</code>，那么<code>Lora</code>文件夹必须要有<code>cuteGirlMix4_v10.safetensors</code>，否则调用无效</li>
+</ul>
+</li>
+</ul>
+<p>这里没有用到<code>Textual Inversion</code>，不过使用方法也很简单，直接写文件名就行，例如<code>pureerosface_v1</code>。这个当然也是可以加权的，例如<code>(pureerosface_v1:0.8)</code>。</p>
+<p><code>Hypernetworks</code>我没用过，模型很少而且没什么人下载，这里不做介绍。</p>
+<h2 id="negative-prompt"><a class="markdownIt-Anchor" href="#negative-prompt"></a> Negative Prompt</h2>
+<p>Negative Prompt 是你的魔法护盾，用来消除不想出现的东西。这个感觉都大同小异，一般直接复制粘贴即可。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bra, covered nipples, underwear, EasyNegative, paintings, sketches, (worst quality:2), (low quality:2), (normal quality:2), lowres, normal quality, ((monochrome)), ((grayscale)), skin spots, acnes, skin blemishes, age spot, glans, extra fingers, fewer fingers, ((watermark:2)), (white letters:1), (multi nipples), lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low qualitynormal quality, jpeg artifacts, signature, watermark, username, bad feet, &#123;Multiple people&#125;, lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worstquality, low quality, normal quality, jpegartifacts, signature, watermark, blurry, bad feet, cropped, poorly drawn hands, poorly drawn face, mutation, deformed, worst quality, low quality, normal quality, jpeg artifacts, signature, extra fingers, fewer digits, extra limbs, extra arms, extra legs, malformed limbs, fused fingers, too many fingers, long neck, cross-eyed, mutated hands, polar lowres, bad body, bad proportions, gross proportions, text, error, missing fingers, missing arms, extra arms, missing legs, wrong feet bottom render, extra digit, abdominal stretch, glans, pants, briefs, knickers, kecks, thong, &#123;&#123;fused fingers&#125;&#125;, &#123;&#123;bad body&#125;&#125;, ((long hair))</span><br></pre></td></tr></table></figure>
+<p>这里的<code>EasyNegative</code>是<code>Textual Inversion</code>，抄大佬prompt却无法复刻结果的时候，要留意这种地方。如果你没有这个模型，生成结果肯定不一样的。而且最玄学的是，在没有模型的情况下，<code>EasyNegative</code>这个词条保留与否，又会得到不同的结果。</p>
+<h2 id="style"><a class="markdownIt-Anchor" href="#style"></a> Style</h2>
+<p>可以把上面的 Prompt 和 Negative Prompt 保存成一个 preset，这样以后调用这种风格就可以直接选择，然后可以额外输入你想使用的prompt。</p>
+<h2 id="sampling-method"><a class="markdownIt-Anchor" href="#sampling-method"></a> Sampling method</h2>
+<p>采样方法我看很多大佬用的都是<code>DPM++ SDE Karras</code>，我试了下效果确实不错。不同采样方法的对比图可以在<a target="_blank" rel="noopener" href="https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features#sampling-method-selection">官方文档</a>查看，每个采样方法的具体原理可以看<a target="_blank" rel="noopener" href="https://stable-diffusion-art.com/samplers/">Stable Diffusion Samplers: A Comprehensive Guide</a>，这里简单摘抄一部分。</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Ordinary_differential_equation">ODE solvers</a>（常微分方程）
+<ul>
+<li><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Euler_method">Euler</a>，<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Heun%27s_method">Heun</a>，<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Linear_multistep_method">LMS</a></li>
+</ul>
+</li>
+<li>Ancestral samplers
+<ul>
+<li>所有带<code>a</code>的（Euler a，DPM2 a，DPM++ 2S a，DPM2 a Karras，DPM++ 2S a Karras）</li>
+<li>在每个采样步骤中向图像添加噪声</li>
+<li><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Stochastic">stochastic</a>（生成的图片不收敛）</li>
+</ul>
+</li>
+<li><a target="_blank" rel="noopener" href="https://arxiv.org/abs/2206.00364">Karras noise schedule</a>
+<ul>
+<li>所有带<code>Karras</code>的</li>
+<li>可以改进图片质量</li>
+</ul>
+</li>
+<li>DPM and DPM++ (2022)
+<ul>
+<li><a target="_blank" rel="noopener" href="https://arxiv.org/abs/2206.00927">DPM</a> (Diffusion probabilistic model solver)</li>
+<li><a target="_blank" rel="noopener" href="https://arxiv.org/abs/2211.01095">DPM++</a> 是 DPM 的改进版</li>
+<li>DPM2 是 second-order 版本，牺牲速度，提高了精度</li>
+</ul>
+</li>
+<li>UniPC (2023)
+<ul>
+<li><a target="_blank" rel="noopener" href="https://arxiv.org/abs/2302.04867">UniPC</a> (Unified Predictor-Corrector)</li>
+<li>在低步数（5-10）有更好的表现</li>
+</ul>
+</li>
+<li>Outdated
+<ul>
+<li><a target="_blank" rel="noopener" href="https://arxiv.org/abs/2010.02502">DDIM</a> (Denoising Diffusion Implicit Model)</li>
+<li><a target="_blank" rel="noopener" href="https://arxiv.org/abs/2202.09778">PLMS</a> (Pseudo Linear Multi-Step method)</li>
+</ul>
+</li>
+</ul>
+<p>至于哪个表现更好，就见仁见智了。</p>
+<p>下面是<code>steps=20</code>时，所有模型的表现：</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/stable_diffusion_3.jpg" alt="" /></p>
+<p>下面是<code>steps=50</code>时，所有模型的表现：</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/stable_diffusion_4.jpg" alt="" /></p>
+<p>所以，大体上可以用这两个sampler：</p>
+<ul>
+<li>收敛：DPM++ 2M Karras</li>
+<li>发散：DPM++ SDE Karras</li>
+</ul>
+<h2 id="sampling-steps"><a class="markdownIt-Anchor" href="#sampling-steps"></a> Sampling steps</h2>
+<p>我这里跑了1 - 90的效果图，可以发现采样步数设置在20 - 25就可以了，再多也不会有大的改进。</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/stable_diffusion_5.jpg" alt="" /></p>
+<h2 id="width-height"><a class="markdownIt-Anchor" href="#width-height"></a> Width &amp; Height</h2>
+<p>默认是512x512，不过如果想生成一些竖屏图片，可以修改成512x768。图片尺寸太大的话，对应的生成时间也会长很多。但是注意，小尺寸和大尺寸生成出来的图片内容是完全不一样的！</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/stable_diffusion_6.jpg" alt="" /></p>
+<p>可以看到，768x768生成的结果跟512x512的生成结果完全没关系，如果单纯想要放大图片，需要用其它特别的手段，例如<code>Hires.fix</code>。</p>
+<h2 id="cfg-scale"><a class="markdownIt-Anchor" href="#cfg-scale"></a> CFG Scale</h2>
+<p>CFG Scale 代表输出跟输入的相似程度，这个是Classifier-free guidance。如果 CFG Scale 比较大，则将更符合 prompt，但可能会变形。如果 CFG Scale 比较小，则有可能偏离 prompt，但输出质量会更好。</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/stable_diffusion_7.jpg" alt="" /></p>
+<p>可以看到从<code>CFG=12</code>开始，画面逐渐变得支离破碎。总而言之，CFG Scale 就是以 prompt 准确度换生成质量，一般设置在7 - 11即可。</p>
+<h2 id="batch-count-size"><a class="markdownIt-Anchor" href="#batch-count-size"></a> Batch Count &amp; Size</h2>
+<p>Batch Count：生成多少批次的图片</p>
+<ul>
+<li>可以修改<code>ui-config.json</code>来解锁更高的上限（&quot;txt2img/Batch count/maximum&quot;: 100）</li>
+</ul>
+<p>Batch Size：每一个批次有多少图片</p>
+<ul>
+<li>太多的话会爆显存，量力而行</li>
+</ul>
+<p>下面是同样生成4张图片的时间对比：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># Source: https://www.reddit.com/r/StableDiffusion/comments/wzsp8w/whats_the_actual_difference_between_batch_count/</span><br><span class="line">4 b.count x 1 b.size = 38s on a 4090</span><br><span class="line">1 b.count x 4 b.size = 22s on a 4090</span><br></pre></td></tr></table></figure>
+<h2 id="seed"><a class="markdownIt-Anchor" href="#seed"></a> Seed</h2>
+<p>种子默认是-1（随机），如果想复刻大佬的结果，必须要提供一模一样的数值。</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/stable_diffusion_8.jpg" alt="" /></p>
+<p>可以看到不同种子生成出的结果差了十万八千里。</p>
+<h2 id="script"><a class="markdownIt-Anchor" href="#script"></a> Script</h2>
+<p>脚本，这篇文章中的对比图都是用<code>X/Y/Z Plot</code>生成的，可以对比不同参数的效果，一目了然。</p>
+<h2 id="generate"><a class="markdownIt-Anchor" href="#generate"></a> Generate</h2>
+<p>这个就不用多说了，就是生成。</p>
+<p>这里附带其它的参数，有兴趣的读者可以尝试复刻一下。需要注意的是，虽然prompt提到了<code>EasyNegative</code>，但是我没有下载这个模型。如果你下载了，生成结果会不一样。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Steps: 20, Sampler: DPM++ SDE Karras, CFG scale: 8, Seed: 2668558297, Size: 512x768, Model hash: fc2511737a, Model: chilloutmix_NiPrunedFp32Fix</span><br></pre></td></tr></table></figure>
+<p>注：如果关闭了网页，再次打开时，所有参数都会恢复到默认值。<code>Generate</code>按钮旁边有一个<code>↙️</code>按钮，点击即可读取上一次的参数。</p>
+<h1 id="0x04-txt2img进阶"><a class="markdownIt-Anchor" href="#0x04-txt2img进阶"></a> 0x04 - txt2img进阶</h1>
+<h2 id="hiresfix"><a class="markdownIt-Anchor" href="#hiresfix"></a> Hires.fix</h2>
+<p>虽然生成的图片挺不错，但是512x768实在不够看，稍微放大看看就能发现细节比较糊，这时候就需要使用<code>Hires.fix</code>来放大图片了。</p>
+<p>勾选<code>Hires.fix</code>之后会出现下面这些参数</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/stable_diffusion_9.png" alt="" /></p>
+<p>Upscaler基本上只能选择<code>Latent</code>，因为其它会爆显存。。。</p>
+<p>Upscale by 就是放大的倍数，这个很吃显存，我一般设置成2，更高的数值会爆显存。其实个人感觉1024x1536也已经很够用了，当然如果看到喜欢的，又有高端显卡，那肯定分辨率越高越好啦。</p>
+<p>Denoising Strength 是一个很有意思的参数，范围在0 - 1之间，太低画面会糊，太高画面会变。所以这个只能自己慢慢调试了，感觉一般设置成0.4 - 0.5会比较好。我用<code>X/Y/Z Plot</code>制作了一个对比图，倍数2x，跑了半个小时。。。</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/stable_diffusion_10.jpg" alt="" /></p>
+<p>原图接近20MB，虽然这里展示的是压缩再压缩的版本，但还是能发现0.4是最后一个忠实于原作的图。从0.5开始就篡改原图了，数值越高就越离谱，0.7甚至多了两只手。从0.7往后的背景天马行空，完全没法看。</p>
+<p>注：放大倍数也会影响生成的内容，比如1.25x和2x的成品就完全不一样。</p>
+<h1 id="0x0-未完待续"><a class="markdownIt-Anchor" href="#0x0-未完待续"></a> 0x0? - 未完待续</h1>
+<p>写了这么多，却只是 Stable Diffusion 的冰山一角，还有很多功能我也没玩，等摸索之后再更新。</p>
+<p>部分对比图还没制作，准备摸鱼的时候跑一跑</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/tech/osumania-top-player-analysis-2022.html" rel="prev" title="osu!mania前1000名数据分析 (2022)">
+                  <i class="fa fa-angle-left"></i> osu!mania前1000名数据分析 (2022)
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/tech/matplotlib-econ-chart.html" rel="next" title="Matplotlib绘制经济学图表">
+                  Matplotlib绘制经济学图表 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 2020 – 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="fa fa-terminal"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">oscarcx123</span>
+        <span class="post-meta-item">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-chart-line"></i>
+          </span>
+          <span title="站点总字数">268k</span>
+        </span>
+        <span class="post-meta-item">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-coffee"></i>
+          </span>
+          <span title="站点阅读时长">14:53</span>
+        </span>
+  </div>
+  <div class="powered-by">
+    <span class="post-meta-item">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v6.3.0 强力驱动
+    </span>
+    <span class="post-meta-item"> 主题 – <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v8.18.1
+    </span>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script size="300" alpha="0.6" zIndex="-1" src="/js/ribbon.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.6.0/pjax.min.js" integrity="sha256-vxLn1tSKWD4dqbMRyv940UYw4sXgMtYcK6reefzZrao=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.0.8/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/pjax.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/katex.min.css" integrity="sha256-3574TpfThVfeAhg+I4+N39EJiLN3QUkuEsMVe8hWAR4=" crossorigin="anonymous">
+  <script class="next-config" data-name="katex" type="application/json">{"copy_tex_js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/contrib/copy-tex.min.js","integrity":"sha256-Us54+rSGDSTvIhKKUs4kygE2ipA0RXpWWh0/zLqw3bs="}}</script>
+  <script src="/js/third-party/math/katex.js"></script>
+
+
+<script type="text/javascript">
+  // 显示“展开”和“折叠”
+  function collapsableTitle(x) {
+    var nav = document.getElementsByClassName("sidebar-nav-toc")[0];
+    if (x.matches) { // If media query matches
+      var content = document.getElementsByClassName("sidebar-panel-container")[0];
+      if (content.style.display = "none") {
+        nav.textContent = "文章目录 [展开]";
+      }
+      else {
+        nav.textContent = "文章目录 [折叠]";
+      }
+    } 
+    else {
+      nav.textContent = "文章目录";
+    }
+  }
+
+  var x = window.matchMedia("(max-width: 991px)"); // media query
+  collapsableTitle(x);
+  x.addListener(collapsableTitle);
+
+  // 控制目录的折叠
+  var tos = document.getElementsByClassName("sidebar-nav")[0];
+  var i;
+
+  tos.addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = document.getElementsByClassName("sidebar-panel-container")[0];
+    var nav = document.getElementsByClassName("sidebar-nav-toc")[0];
+    if (content.style.display === "block" && window.innerWidth < 991) {
+      content.style.display = "none";
+      nav.textContent = "文章目录 [展开]";
+    } else {
+      content.style.display = "block";
+      if (window.innerWidth < 991) {
+        nav.textContent = "文章目录 [折叠]";
+      }
+    }
+  });
+
+  // 因为启用pjax，需要监听complete事件，来实现默认折叠效果
+  document.addEventListener('pjax:complete', function() {
+    if (window.innerWidth < 991) {
+      let content = document.getElementsByClassName("sidebar-panel-container")[0];
+      content.style.display = "none";
+      let nav = document.getElementsByClassName("sidebar-nav-toc")[0];
+      nav.textContent = "文章目录 [展开]";
+      }
+    });
+  </script>
+</body>
+</html>

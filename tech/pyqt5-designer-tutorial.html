@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-64x64-dragon.jpg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-64x64-dragon.jpg">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-64x64-dragon.jpg">
+  <link rel="mask-icon" href="/images/favicon-64x64-dragon.jpg" color="#222">
+  <meta name="google-site-verification" content="-QMh-gRPduq5T_vg3_Pwi3kZsNSiyuEpPBaDIXV8J34">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"oscarcx.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.18.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":true,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+
+
+  <style type="text/css">
+
+div.hcb-content.hcb-block.hcbnote, details.hcb-content.box.hcbnote,div.hcb-content.hcb-block.hcbabstract, details.hcb-content.box.hcbabstract,div.hcb-content.hcb-block.hcbinfo, details.hcb-content.box.hcbinfo,div.hcb-content.hcb-block.hcbtip, details.hcb-content.box.hcbtip,div.hcb-content.hcb-block.hcbsuccess, details.hcb-content.box.hcbsuccess,div.hcb-content.hcb-block.hcbquestion, details.hcb-content.box.hcbquestion,div.hcb-content.hcb-block.hcbwarning, details.hcb-content.box.hcbwarning,div.hcb-content.hcb-block.hcbfailure, details.hcb-content.box.hcbfailure,div.hcb-content.hcb-block.hcbdanger, details.hcb-content.box.hcbdanger,div.hcb-content.hcb-block.hcbbug, details.hcb-content.box.hcbbug,div.hcb-content.hcb-block.hcbexample, details.hcb-content.box.hcbexample,div.hcb-content.hcb-block.hcbquote, details.hcb-content.box.hcbquote {
+  border: .05rem solid #448aff;
+  border-radius: .2rem;
+  font-size: 0.96rem;
+  margin: 1.5625em 0;
+  padding: 0 1.2rem;
+  transition: box-shadow 250ms;
+}
+div.hcb-content.hcb-block.hcbnote, details.hcb-content.box.hcbnote {
+  border-color: #448aff;
+}
+div.hcb-content.hcb-block.hcbabstract, details.hcb-content.box.hcbabstract {
+  border-color: #00b0ff;
+}
+div.hcb-content.hcb-block.hcbinfo, details.hcb-content.box.hcbinfo {
+  border-color: #00b8d4;
+}
+div.hcb-content.hcb-block.hcbtip, details.hcb-content.box.hcbtip {
+  border-color: #00bfa5;
+}
+div.hcb-content.hcb-block.hcbsuccess, details.hcb-content.box.hcbsuccess {
+  border-color: #00c853;
+}
+div.hcb-content.hcb-block.hcbquestion, details.hcb-content.box.hcbquestion {
+  border-color: #64dd17;
+}
+div.hcb-content.hcb-block.hcbwarning, details.hcb-content.box.hcbwarning {
+  border-color: #ff9100;
+}
+div.hcb-content.hcb-block.hcbfailure, details.hcb-content.box.hcbfailure {
+  border-color: #ff5252;
+}
+div.hcb-content.hcb-block.hcbdanger, details.hcb-content.box.hcbdanger {
+  border-color: #ff1744;
+}
+div.hcb-content.hcb-block.hcbbug, details.hcb-content.box.hcbbug {
+  border-color: #f50057;
+}
+div.hcb-content.hcb-block.hcbexample, details.hcb-content.box.hcbexample {
+  border-color: #7c4dff;
+}
+div.hcb-content.hcb-block.hcbquote, details.hcb-content.box.hcbquote {
+  border-color: #9e9e9e;
+}
+div.hcb-content.hcb-block.hcbnote:focus-within, details.hcb-content.box.hcbnote:focus-within {
+  box-shadow: 0 0 0 .2rem #448aff1a;
+}
+div.hcb-content.hcb-block.hcbabstract:focus-within, details.hcb-content.box.hcbabstract:focus-within {
+  box-shadow: 0 0 0 .2rem #00b0ff1a;
+}
+div.hcb-content.hcb-block.hcbinfo:focus-within, details.hcb-content.box.hcbinfo:focus-within {
+  box-shadow: 0 0 0 .2rem #00b8d41a;
+}
+div.hcb-content.hcb-block.hcbtip:focus-within, details.hcb-content.box.hcbtip:focus-within {
+  box-shadow: 0 0 0 .2rem #00bfa51a;
+}
+div.hcb-content.hcb-block.hcbsuccess:focus-within, details.hcb-content.box.hcbsuccess:focus-within {
+  box-shadow: 0 0 0 .2rem #00c8531a;
+}
+div.hcb-content.hcb-block.hcbquestion:focus-within, details.hcb-content.box.hcbquestion:focus-within {
+  box-shadow: 0 0 0 .2rem #64dd171a;
+}
+div.hcb-content.hcb-block.hcbwarning:focus-within, details.hcb-content.box.hcbwarning:focus-within {
+  box-shadow: 0 0 0 .2rem #ff91001a;
+}
+div.hcb-content.hcb-block.hcbfailure:focus-within, details.hcb-content.box.hcbfailure:focus-within {
+  box-shadow: 0 0 0 .2rem #ff52521a;
+}
+div.hcb-content.hcb-block.hcbdanger:focus-within, details.hcb-content.box.hcbdanger:focus-within {
+  box-shadow: 0 0 0 .2rem #ff17441a;
+}
+div.hcb-content.hcb-block.hcbbug:focus-within, details.hcb-content.box.hcbbug:focus-within {
+  box-shadow: 0 0 0 .2rem #f500571a;
+}
+div.hcb-content.hcb-block.hcbexample:focus-within, details.hcb-content.box.hcbexample:focus-within {
+  box-shadow: 0 0 0 .2rem #7c4dff1a;
+}
+div.hcb-content.hcb-block.hcbquote:focus-within, details.hcb-content.box.hcbquote:focus-within {
+  box-shadow: 0 0 0 .2rem #9e9e9e1a;
+}
+div.hcb-content.hcb-block.hcbnote *, details.hcb-content.box.hcbnote *,div.hcb-content.hcb-block.hcbabstract *, details.hcb-content.box.hcbabstract *,div.hcb-content.hcb-block.hcbinfo *, details.hcb-content.box.hcbinfo *,div.hcb-content.hcb-block.hcbtip *, details.hcb-content.box.hcbtip *,div.hcb-content.hcb-block.hcbsuccess *, details.hcb-content.box.hcbsuccess *,div.hcb-content.hcb-block.hcbquestion *, details.hcb-content.box.hcbquestion *,div.hcb-content.hcb-block.hcbwarning *, details.hcb-content.box.hcbwarning *,div.hcb-content.hcb-block.hcbfailure *, details.hcb-content.box.hcbfailure *,div.hcb-content.hcb-block.hcbdanger *, details.hcb-content.box.hcbdanger *,div.hcb-content.hcb-block.hcbbug *, details.hcb-content.box.hcbbug *,div.hcb-content.hcb-block.hcbexample *, details.hcb-content.box.hcbexample *,div.hcb-content.hcb-block.hcbquote *, details.hcb-content.box.hcbquote * {
+  box-sizing: border-box;
+}
+div.hcb-content.hcb-block.hcbnote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbnote > summary,div.hcb-content.hcb-block.hcbabstract > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbabstract > summary,div.hcb-content.hcb-block.hcbinfo > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbinfo > summary,div.hcb-content.hcb-block.hcbtip > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbtip > summary,div.hcb-content.hcb-block.hcbsuccess > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbsuccess > summary,div.hcb-content.hcb-block.hcbquestion > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquestion > summary,div.hcb-content.hcb-block.hcbwarning > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbwarning > summary,div.hcb-content.hcb-block.hcbfailure > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbfailure > summary,div.hcb-content.hcb-block.hcbdanger > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbdanger > summary,div.hcb-content.hcb-block.hcbbug > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbbug > summary,div.hcb-content.hcb-block.hcbexample > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbexample > summary,div.hcb-content.hcb-block.hcbquote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquote > summary {
+  border-top-right-radius: 0.1rem;
+  border-top-left-radius: 0.1rem;
+  border-left-width: 0.2rem;
+  display: block;
+  min-height: 1rem;
+  border: none;
+  font-weight: 700;
+  margin: 0 -1.2rem 1rem;
+  padding: 0.4rem 0.6rem;
+  position: relative;
+  outline: none;
+}
+details.hcb-content.box.hcbnote > summary,details.hcb-content.box.hcbabstract > summary,details.hcb-content.box.hcbinfo > summary,details.hcb-content.box.hcbtip > summary,details.hcb-content.box.hcbsuccess > summary,details.hcb-content.box.hcbquestion > summary,details.hcb-content.box.hcbwarning > summary,details.hcb-content.box.hcbfailure > summary,details.hcb-content.box.hcbdanger > summary,details.hcb-content.box.hcbbug > summary,details.hcb-content.box.hcbexample > summary,details.hcb-content.box.hcbquote > summary {
+  cursor: pointer;
+}
+details.hcb-content.box.hcbnote:not([open]) > summary,details.hcb-content.box.hcbabstract:not([open]) > summary,details.hcb-content.box.hcbinfo:not([open]) > summary,details.hcb-content.box.hcbtip:not([open]) > summary,details.hcb-content.box.hcbsuccess:not([open]) > summary,details.hcb-content.box.hcbquestion:not([open]) > summary,details.hcb-content.box.hcbwarning:not([open]) > summary,details.hcb-content.box.hcbfailure:not([open]) > summary,details.hcb-content.box.hcbdanger:not([open]) > summary,details.hcb-content.box.hcbbug:not([open]) > summary,details.hcb-content.box.hcbexample:not([open]) > summary,details.hcb-content.box.hcbquote:not([open]) > summary {
+  margin-bottom: 0;
+}
+div.hcb-content.hcb-block.hcbnote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbnote > summary {
+  background-color: #448aff1a;
+}
+div.hcb-content.hcb-block.hcbabstract > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbabstract > summary {
+  background-color: #00b0ff1a;
+}
+div.hcb-content.hcb-block.hcbinfo > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbinfo > summary {
+  background-color: #00b8d41a;
+}
+div.hcb-content.hcb-block.hcbtip > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbtip > summary {
+  background-color: #00bfa51a;
+}
+div.hcb-content.hcb-block.hcbsuccess > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbsuccess > summary {
+  background-color: #00c8531a;
+}
+div.hcb-content.hcb-block.hcbquestion > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquestion > summary {
+  background-color: #64dd171a;
+}
+div.hcb-content.hcb-block.hcbwarning > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbwarning > summary {
+  background-color: #ff91001a;
+}
+div.hcb-content.hcb-block.hcbfailure > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbfailure > summary {
+  background-color: #ff52521a;
+}
+div.hcb-content.hcb-block.hcbdanger > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbdanger > summary {
+  background-color: #ff17441a;
+}
+div.hcb-content.hcb-block.hcbbug > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbbug > summary {
+  background-color: #f500571a;
+}
+div.hcb-content.hcb-block.hcbexample > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbexample > summary {
+  background-color: #7c4dff1a;
+}
+div.hcb-content.hcb-block.hcbquote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquote > summary {
+  background-color: #9e9e9e1a;
+}
+div.hcb-content.hcb-block.hcbnote > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbnote > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #448aff;
+}
+div.hcb-content.hcb-block.hcbabstract > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbabstract > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00b0ff;
+}
+div.hcb-content.hcb-block.hcbinfo > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbinfo > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00b8d4;
+}
+div.hcb-content.hcb-block.hcbtip > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbtip > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00bfa5;
+}
+div.hcb-content.hcb-block.hcbsuccess > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbsuccess > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00c853;
+}
+div.hcb-content.hcb-block.hcbquestion > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbquestion > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #64dd17;
+}
+div.hcb-content.hcb-block.hcbwarning > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbwarning > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff9100;
+}
+div.hcb-content.hcb-block.hcbfailure > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbfailure > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff5252;
+}
+div.hcb-content.hcb-block.hcbdanger > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbdanger > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff1744;
+}
+div.hcb-content.hcb-block.hcbbug > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbbug > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #f50057;
+}
+div.hcb-content.hcb-block.hcbexample > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbexample > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #7c4dff;
+}
+div.hcb-content.hcb-block.hcbquote > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbquote > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #9e9e9e;
+}
+details.hcb-content.box.hcbnote > summary > div.hcb-box-open-button,details.hcb-content.box.hcbabstract > summary > div.hcb-box-open-button,details.hcb-content.box.hcbinfo > summary > div.hcb-box-open-button,details.hcb-content.box.hcbtip > summary > div.hcb-box-open-button,details.hcb-content.box.hcbsuccess > summary > div.hcb-box-open-button,details.hcb-content.box.hcbquestion > summary > div.hcb-box-open-button,details.hcb-content.box.hcbwarning > summary > div.hcb-box-open-button,details.hcb-content.box.hcbfailure > summary > div.hcb-box-open-button,details.hcb-content.box.hcbdanger > summary > div.hcb-box-open-button,details.hcb-content.box.hcbbug > summary > div.hcb-box-open-button,details.hcb-content.box.hcbexample > summary > div.hcb-box-open-button,details.hcb-content.box.hcbquote > summary > div.hcb-box-open-button {
+  float: right;
+}
+details.hcb-content.box.hcbnote > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbabstract > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbinfo > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbtip > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbsuccess > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbquestion > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbwarning > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbfailure > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbdanger > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbbug > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbexample > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbquote > summary > div.hcb-box-open-button > i {
+  margin: 0 0.6rem 0 0.6rem;
+  font-size: 0.7rem;
+  transition: transform 250ms
+}
+details.hcb-content.box.hcbnote:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbabstract:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbinfo:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbtip:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbsuccess:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquestion:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbwarning:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbfailure:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbdanger:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbbug:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbexample:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquote:not([open]) > summary > div.hcb-box-open-button i {
+  transform: rotate(270deg);
+}
+details.hcb-content.box.hcbnote[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbabstract[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbinfo[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbtip[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbsuccess[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquestion[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbwarning[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbfailure[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbdanger[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbbug[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbexample[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquote[open] > summary > div.hcb-box-open-button i {
+  transform: rotate(180deg);
+}
+details.hcb-content.box.hcbnote summary div.hcb-box-open-button i {
+  color: #448aff;
+}
+details.hcb-content.box.hcbabstract summary div.hcb-box-open-button i {
+  color: #00b0ff;
+}
+details.hcb-content.box.hcbinfo summary div.hcb-box-open-button i {
+  color: #00b8d4;
+}
+details.hcb-content.box.hcbtip summary div.hcb-box-open-button i {
+  color: #00bfa5;
+}
+details.hcb-content.box.hcbsuccess summary div.hcb-box-open-button i {
+  color: #00c853;
+}
+details.hcb-content.box.hcbquestion summary div.hcb-box-open-button i {
+  color: #64dd17;
+}
+details.hcb-content.box.hcbwarning summary div.hcb-box-open-button i {
+  color: #ff9100;
+}
+details.hcb-content.box.hcbfailure summary div.hcb-box-open-button i {
+  color: #ff5252;
+}
+details.hcb-content.box.hcbdanger summary div.hcb-box-open-button i {
+  color: #ff1744;
+}
+details.hcb-content.box.hcbbug summary div.hcb-box-open-button i {
+  color: #f50057;
+}
+details.hcb-content.box.hcbexample summary div.hcb-box-open-button i {
+  color: #7c4dff;
+}
+details.hcb-content.box.hcbquote summary div.hcb-box-open-button i {
+  color: #9e9e9e;
+}
+div.hcb-content.hcb-cards * {
+  box-sizing: border-box;
+}
+input.hcb-content.hcb-cards-input {
+  display: none;
+}
+div.hcb-content.hcb-cards-labels {
+  position: relative;
+  box-shadow: 0 -0.05rem #00000012 inset;
+  display: flex;
+  margin-bottom: 1.25rem;
+}
+div.hcb-content.hcb-cards-labels:before {
+  background: var(--cards-color);
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: translateX(var(--md-indicator-x));
+  transition: width 225ms, transform 250ms;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  width: var(--md-indicator-width);
+}
+label.hcb-content.hcb-cards-label {
+  border-bottom: 0.1rem solid #0000;
+  border-radius: 0.1rem 0.1rem 0 0;
+  cursor: pointer;
+  color: #0000008a;
+  font-size: 0.92em;
+  font-weight: 700;
+  padding: 0 1.25rem 0.625rem;
+  transition: color 250ms;
+}
+label.hcb-content.hcb-cards-label.active, label.hcb-content.hcb-cards-label:hover {
+  color: var(--cards-color);
+}
+div.hcb-content.hcb-cards-content {
+  display: none;
+}
+div.hcb-content.hcb-cards-content.active {
+  display: block;
+}
+</style>
+    <meta name="description" content="在网上看了不少关于PyQt5的中文教程，但是无外乎是过时了，讲解不清晰易懂，或者资料不完整。Youtube上面倒是有不少视频，但是不少Youtuber居然还在手写ui而不是利用方便快捷的Qt Designer。仅有的几个视频虽然利用了Qt Designer来设计UI，但是他们并没有将UI跟逻辑分离，这种行为并不是我期望的。 为此，我花费了不少时间在网上寻找各种资料。于是乎，我最终还是下定决心把自己">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PyQt5（designer）入门教程">
+<meta property="og:url" content="https://oscarcx.com/tech/pyqt5-designer-tutorial.html">
+<meta property="og:site_name" content="Cow">
+<meta property="og:description" content="在网上看了不少关于PyQt5的中文教程，但是无外乎是过时了，讲解不清晰易懂，或者资料不完整。Youtube上面倒是有不少视频，但是不少Youtuber居然还在手写ui而不是利用方便快捷的Qt Designer。仅有的几个视频虽然利用了Qt Designer来设计UI，但是他们并没有将UI跟逻辑分离，这种行为并不是我期望的。 为此，我花费了不少时间在网上寻找各种资料。于是乎，我最终还是下定决心把自己">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/pyqt5_0x01_designer_install_success.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/pyqt5_0x02_new_form.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/pyqt5_0x02_designer_ui.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/pyqt5_0x03_designer_create_label.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/pyqt5_0x03_designer_change_label_text.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/pyqt5_0x03_designer_create_pushbutton.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/pyqt5_0x03_designer_create_menu.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/pyqt5_0x03_designer_preview.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/pyqt5_0x03_designer_code_helloworld.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/pyqt5_0x03_designer_run_helloworld.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/pyqt5_0x03_designer_layout_helloworld.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/pyqt5_0x04_designer_pushbutton_id.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/pyqt5_0x05_conversion_ui.png">
+<meta property="article:published_time" content="2019-04-05T21:52:00.000Z">
+<meta property="article:modified_time" content="2025-05-18T16:05:39.210Z">
+<meta property="article:author" content="oscarcx123">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="PyQt5">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://oscarcx.com/hexo_resource/img/pyqt5_0x01_designer_install_success.png">
+
+
+<link rel="canonical" href="https://oscarcx.com/tech/pyqt5-designer-tutorial.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://oscarcx.com/tech/pyqt5-designer-tutorial.html","path":"tech/pyqt5-designer-tutorial.html","title":"PyQt5（designer）入门教程"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>PyQt5（designer）入门教程 | Cow</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<style type="text/css">
+.spoiler {
+  display: inline;
+}
+p.spoiler {
+  display: flex;
+}
+.spoiler a {
+  pointer-events: none;
+}
+.spoiler-blur, .spoiler-blur > * {
+  transition: text-shadow .5s ease;
+}
+.spoiler .spoiler-blur, .spoiler .spoiler-blur > * {
+  color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  text-shadow: 0 0 10px grey;
+  cursor: pointer;
+}
+.spoiler .spoiler-blur:hover, .spoiler .spoiler-blur:hover > * {
+  text-shadow: 0 0 5px grey;
+}
+.spoiler-box, .spoiler-box > * {
+  transition: color .5s ease,
+  background-color .5s ease;
+}
+.spoiler .spoiler-box, .spoiler .spoiler-box > * {
+  color: black;
+  background-color: black;
+  text-shadow: none;
+}</style></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Cow</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#0x00-%E5%AE%89%E8%A3%85%E7%8E%AF%E5%A2%83%E6%B8%85%E5%8D%95"><span class="nav-number">1.</span> <span class="nav-text"> 0x00 安装环境清单</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0x01-%E5%AE%89%E8%A3%85pyqt5"><span class="nav-number">2.</span> <span class="nav-text"> 0x01 安装PyQt5</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0x02-%E5%88%9D%E8%AF%86qt-designer"><span class="nav-number">3.</span> <span class="nav-text"> 0x02 初识Qt Designer</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0x03-helloworld"><span class="nav-number">4.</span> <span class="nav-text"> 0x03 HelloWorld!</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0x04-interaction"><span class="nav-number">5.</span> <span class="nav-text"> 0x04 Interaction</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0x05-conversion"><span class="nav-number">6.</span> <span class="nav-text"> 0x05 Conversion</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0x06-threading"><span class="nav-number">7.</span> <span class="nav-text"> 0x06 threading</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0x0-%E5%B0%8F%E7%BB%93"><span class="nav-number">8.</span> <span class="nav-text"> 0x0? 小结</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="oscarcx123"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">oscarcx123</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">32</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/oscarcx123" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;oscarcx123" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://oscarcx.com/tech/pyqt5-designer-tutorial.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="oscarcx123">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Cow">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="PyQt5（designer）入门教程 | Cow">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          PyQt5（designer）入门教程
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-04-05 21:52:00" itemprop="dateCreated datePublished" datetime="2019-04-05T21:52:00+00:00">2019-04-05</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/tech/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>3.4k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>11 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>在网上看了不少关于PyQt5的中文教程，但是无外乎是过时了，讲解不清晰易懂，或者资料不完整。Youtube上面倒是有不少视频，但是不少Youtuber居然还在手写ui而不是利用方便快捷的Qt Designer。仅有的几个视频虽然利用了Qt Designer来设计UI，但是他们并没有将UI跟逻辑分离，这种行为并不是我期望的。</p>
+<p>为此，我花费了不少时间在网上寻找各种资料。于是乎，我最终还是下定决心把自己的学习过程给记录下来。记录下来是给我自己复习跟参考的，如果有人能够从中受益，那也挺好，不用浪费时间去到处找答案。</p>
+<p>注：本文在2019/4/5于<a target="_blank" rel="noopener" href="https://github.com/oscarcx123/tree">个人轨迹树</a>首发，然后在2019/5/19发布到<a target="_blank" rel="noopener" href="https://blog.csdn.net/AzureMouse/article/details/90338961">CSDN</a>，截至2021年7月，在CSDN累计阅读数超过15万，获得众多读者一致好评。不知道为什么那么多人看，可能是因为我不卖关子吧，不需要关注这个关注那个号的。</p>
+<span id="more"></span>
+<h2 id="0x00-安装环境清单"><a class="markdownIt-Anchor" href="#0x00-安装环境清单"></a> 0x00 安装环境清单</h2>
+<p>我使用的环境如下：</p>
+<ul>
+<li>Windows 10 (Build 17763)</li>
+<li>Python 3.7.2</li>
+<li>VSCode 1.33.0</li>
+<li>PyQt5</li>
+<li>Qt Designer</li>
+</ul>
+<p>如果你使用的是OSX或者Linux，请自行替换教程中的一些操作。</p>
+<p>本文并不讨论Python和VSCode的安装，如果没有VSCode，你可以用各种同类IDE替代或者安装它。</p>
+<p>本文不讨论多Python共存，毕竟Python2.7在2020年就要退役了，而且我本人也没这需求。</p>
+<h2 id="0x01-安装pyqt5"><a class="markdownIt-Anchor" href="#0x01-安装pyqt5"></a> 0x01 安装PyQt5</h2>
+<p>下面直接使用pip来安装PyQt5，此处可能是pip/pip3，或者两者皆可，后面不再重复</p>
+<p>直接pip安装PyQt5</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install PyQt5</span><br></pre></td></tr></table></figure>
+<p>由于Qt Designer已经在Python3.5版本从PyQt5转移到了tools，因此我们还需要安装pyqt5-tools</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install pyqt5-tools</span><br></pre></td></tr></table></figure>
+<p>到这一步，PyQt5就安装完成了，你可以通过下面若干可选的操作来检查是否已经安装成功：</p>
+<ul>
+<li>Win+S呼出Cornata主面板（搜索框），输入designer，如果看到跟下图类似的结果说明PyQt Designer已经被安装</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/pyqt5_0x01_designer_install_success.png" alt="designer_install" /></p>
+<ul>
+<li>在cmd中输入pyuic5，如果返回“Error: one input ui-file must be specified”说明安装成功。</li>
+</ul>
+<h2 id="0x02-初识qt-designer"><a class="markdownIt-Anchor" href="#0x02-初识qt-designer"></a> 0x02 初识Qt Designer</h2>
+<p>注：Qt Designer的界面是全英文的，幸运的是有汉化方法，不过因为我本人用不上，所以如果有这方面需求可以自行搜索。</p>
+<p>我比较习惯用Win+S呼出Cornata主面板（搜索框）来启动各种应用，那么这里就是在搜索框中输入designer并敲回车，就能够启动Qt Designer了。</p>
+<p>初次启动会弹出这个“New Form”窗口，一般来说选择“Main Window”然后点击“Create”就可以了。下方有个“Show this Dialogue on Startup”的checkbox，如果不想每次启动都看到这个“New Form”窗口，可以取消勾选。</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/pyqt5_0x02_new_form.png" alt="new_form" /></p>
+<p>创建“Main Window”之后，我们会看到如下画面</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/pyqt5_0x02_designer_ui.png" alt="designer_ui" /></p>
+<p>下面就来简单介绍下整个画面的构成：</p>
+<ul>
+<li>
+<p>左侧的“Widget Box”就是各种可以自由拖动的组件</p>
+</li>
+<li>
+<p>中间的“MainWindow - untitled”窗体就是画布</p>
+</li>
+<li>
+<p>右上方的&quot;Object Inspector&quot;可以查看当前ui的结构</p>
+</li>
+<li>
+<p>右侧中部的&quot;Property Editor&quot;可以设置当前选中组件的属性</p>
+</li>
+<li>
+<p>右下方的&quot;Resource Browser&quot;可以添加各种素材，比如图片，背景等等，目前可以不管</p>
+</li>
+</ul>
+<p>大致了解了每个板块之后，就可以正式开始编写第一个UI了</p>
+<h2 id="0x03-helloworld"><a class="markdownIt-Anchor" href="#0x03-helloworld"></a> 0x03 HelloWorld!</h2>
+<p>注：从这里开始，相关代码可以在<a target="_blank" rel="noopener" href="https://github.com/oscarcx123/tree/assets/code/pyqt5">/assets/code/pyqt5</a>中找到</p>
+<p>通常来说，编写GUI有两种方法：第一种就是直接使用方便快捷的Qt Designer，第二种就是写代码。在有Qt Designer的情况下，是完全不推荐费时费力去手写GUI代码的。Qt Designer可以所见即所得，并且可以方便的修改并做出各种调整。</p>
+<p>按照惯例，我们先来实现一个能够显示HelloWorld的窗口。</p>
+<p>1）添加文本</p>
+<p>在左侧的“Widget Box”栏目中找到“Display Widgets”分类，将“Label”拖拽到屏幕中间的“MainWindow”画布上，你就获得了一个仅用于显示文字的文本框，如下图所示。</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/pyqt5_0x03_designer_create_label.png" alt="designer_create_label" /></p>
+<p>2）编辑文本</p>
+<p>双击上图中的“TextLabel”，就可以对文本进行编辑，这里我们将其改成“HelloWorld!”，如下图所示。如果文字没有完全展示出来，可以自行拖拽空间改变尺寸。</p>
+<p><strong>特别提醒，编辑完文本之后记得敲击回车令其生效！</strong></p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/pyqt5_0x03_designer_change_label_text.png" alt="designer_change_label_text" /></p>
+<p>3）添加按钮</p>
+<p>使用同样的方法添加一个按钮（PushButton）并将其显示的文本改成“HelloWorld!”，如下图所示。</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/pyqt5_0x03_designer_create_pushbutton.png" alt="designer_create_pushbutton" /></p>
+<p>4）修改窗口标题</p>
+<p>下面修改窗口标题。选中右上方的&quot;Object Inspector&quot;中的“MainWindow”，然后在右侧中部的&quot;Property Editor&quot;中找到“windowTitle”这个属性，在Value这一栏进行修改，修改完记得敲击回车。</p>
+<p>5）编辑菜单栏</p>
+<p>注意到画布的左上方有个“Type Here”，双击它即可开始编辑菜单栏。菜单栏支持创建多级菜单以及分割线（separator）。我随意创建了一些菜单项目，如下图所示。</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/pyqt5_0x03_designer_create_menu.png" alt="designer_create_menu" /></p>
+<p>6）预览</p>
+<p>使用快捷键Ctrl+R预览当前编写的GUI（或者从菜单栏的Form &gt; Preview / Preview in进入）</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/pyqt5_0x03_designer_preview.png" alt="designer_preview" /></p>
+<p>7）保存</p>
+<p>如果觉得完成了，那就可以保存成*.ui的文件，这里我们保存为HelloWorld.ui。为了方便演示，我将文件保存到D盘。</p>
+<p>8）生成Python代码</p>
+<p>使用cmd将目录切到D盘并执行下面的命令。请自行将下面命令中的name替换成文件名，比如本例中的“HelloWorld.ui”</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pyuic5 -o name.py name.ui</span><br></pre></td></tr></table></figure>
+<p>生成的代码应该类似下图所示</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/pyqt5_0x03_designer_code_helloworld.png" alt="designer_code_helloworld" /></p>
+<p>9）运行Python代码</p>
+<p>此时尝试运行刚刚生成的“<a target="_blank" rel="noopener" href="http://HelloWorld.py">HelloWorld.py</a>”是没用的，因为生成的文件并没有程序入口。因此我们在同一个目录下另外创建一个程序叫做“<a target="_blank" rel="noopener" href="http://main.py">main.py</a>”，并输入如下内容。在本例中，gui_file_name就是HelloWorld，请自行替换。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="keyword">from</span> PyQt5.QtWidgets <span class="keyword">import</span> QApplication, QMainWindow</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> gui_file_name</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    app = QApplication(sys.argv)</span><br><span class="line">    MainWindow = QMainWindow()</span><br><span class="line">    ui = gui_file_name.Ui_MainWindow()</span><br><span class="line">    ui.setupUi(MainWindow)</span><br><span class="line">    MainWindow.show()</span><br><span class="line">    sys.exit(app.exec_())</span><br></pre></td></tr></table></figure>
+<p>然后运行“<a target="_blank" rel="noopener" href="http://main.py">main.py</a>”，你就能看到刚刚编写的GUI了！</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/pyqt5_0x03_designer_run_helloworld.png" alt="designer_run_helloworld" /></p>
+<p>10）组件自适应</p>
+<p>如果你刚刚尝试去缩放窗口，会发现组件并不会自适应缩放，因此我们需要回到Qt Designer中进行一些额外的设置。</p>
+<p>点击画布空白处，然后在上方工具栏找到grid layout或者form layout，在本例中我们使用grid layout。两种layout的图标如下图所示。</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/pyqt5_0x03_designer_layout_helloworld.png" alt="designer_layout_helloworld" /></p>
+<p>顺带一提，上图中layout的左边有三条横线以及三条竖线的图标，这两个是用于对齐组件，非常实用。</p>
+<p>设置grid layout后，我们使用Ctrl+R预览，这次组件可以自适应了！因为我们已经将UI（<a target="_blank" rel="noopener" href="http://HelloWorld.py/HelloWorld.ui%EF%BC%89%E8%B7%9F%E9%80%BB%E8%BE%91%EF%BC%88main.py%EF%BC%89%E5%88%86%E7%A6%BB%EF%BC%8C%E5%9B%A0%E6%AD%A4%E7%9B%B4%E6%8E%A5%E9%87%8D%E5%A4%8D%E6%AD%A5%E9%AA%A47-8%E5%8D%B3%E5%8F%AF%E5%AE%8C%E6%88%90UI%E7%9A%84%E6%9B%B4%E6%96%B0%EF%BC%8C%E6%97%A0%E9%9C%80%E6%94%B9%E5%8A%A8%E9%80%BB%E8%BE%91%EF%BC%88main.py%EF%BC%89%E9%83%A8%E5%88%86%E3%80%82">HelloWorld.py/HelloWorld.ui）跟逻辑（main.py）分离，因此直接重复步骤7-8即可完成UI的更新，无需改动逻辑（main.py）部分。</a></p>
+<h2 id="0x04-interaction"><a class="markdownIt-Anchor" href="#0x04-interaction"></a> 0x04 Interaction</h2>
+<p>刚刚写的HelloWorld中，我们设置的按钮（PushButton）是没有实际作用的，因为我们并没有告诉这个按钮应该做什么。实际上，要让这个按钮做点什么只需要增加一行代码就可以了。</p>
+<p>1）获取按钮id</p>
+<p>打开HelloWorld.ui，在designer中选中对应的按钮，从“Property Editor”中可以得知这个按钮的“objectName”叫做“pushButton”，如下图所示。</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/pyqt5_0x04_designer_pushbutton_id.png" alt="designer_pushbutton_id" /></p>
+<p>2）设置触发</p>
+<p>Qt中有“信号和槽(signal and slot)”这个概念，不过目前无需深究，也无需在Designer中去设置对应按钮的“信号和槽”，直接在“<a target="_blank" rel="noopener" href="http://main.py">main.py</a>”中“MainWindow.show()”的后面加入下面这样的一行代码</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ui.pushButton.clicked.connect(click_success)</span><br></pre></td></tr></table></figure>
+<p>下面简单解释下这行代码</p>
+<ul>
+<li>pushButton就是刚刚获取的按钮id</li>
+<li>clicked就是信号，因为是点击，所以我们这里用clicked</li>
+<li>click_success就是对应要调用的槽，注意这里函数并不写成click_success()</li>
+</ul>
+<p>3）设置函数</p>
+<p>既然刚刚设置了按钮的触发并绑定了一个函数click_success，我们就要在“<a target="_blank" rel="noopener" href="http://main.py">main.py</a>”中实现它。示例如下</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">click_success</span>():</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;啊哈哈哈我终于成功了！&quot;</span>)</span><br></pre></td></tr></table></figure>
+<p>4）运行！</p>
+<p>UI跟逻辑分离的好处就在这里，我们这次不用去管“<a target="_blank" rel="noopener" href="http://HelloWorld.py">HelloWorld.py</a>”了，直接运行修改完的“<a target="_blank" rel="noopener" href="http://main.py">main.py</a>”。点击按钮，这次你会发现在控制台中有了我们预设的输出。</p>
+<h2 id="0x05-conversion"><a class="markdownIt-Anchor" href="#0x05-conversion"></a> 0x05 Conversion</h2>
+<p>这次我们来进行实战演练，编写一个带GUI的汇率转换器。</p>
+<p>1）设计UI</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/pyqt5_0x05_conversion_ui.png" alt="conversion_ui" /></p>
+<p>通过上面的讲解，你应该能够毫无压力的设计上面这样的UI并获得对应的代码。如果不行，那么不建议继续往下阅读，应当回头复习。</p>
+<p>2）传参</p>
+<p>现在我们有了GUI的代码以及上一节中使用的“<a target="_blank" rel="noopener" href="http://main.py">main.py</a>”，我们可以开始编写这个汇率转换器的逻辑部分。</p>
+<p>在上一节，我们介绍了如何让按钮响应点击操作，但是并没有接受任何参数，而且只是在控制台输出。但是，上一节中说明了并不能通过正常的方式进行传参。因此，对于传参，有两种解决方案，一种是使用lambda，还有一种是使用functool.partial。在接下来的环节中我们会使用partial。</p>
+<p>partial的用法如下所示：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">partial(function, arg1, arg2, ......)</span><br></pre></td></tr></table></figure>
+<p>既然使用partial传参，那么我们就要在程序（<a target="_blank" rel="noopener" href="http://main.py">main.py</a>）的头部加上下面这行。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> functools <span class="keyword">import</span> partial</span><br></pre></td></tr></table></figure>
+<p>然后我们把上一节中的按钮触发那行代码修改成下面这样。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ui.pushButton.clicked.connect(partial(convert, ui))</span><br></pre></td></tr></table></figure>
+<p>3）编写convert函数</p>
+<p>首先，我们要获取用户输入的数字。为了使得教程简洁易懂，我们这次只讲解单向的汇率转换。既然是单项的转换，那么我们只需要获取左侧的文本框id。在本例中，左侧的文本框id为lineEdit。如果你对此感到一头雾水，请停下并回头复习。</p>
+<p>获取文本使用的是text()方法，因此读取用户输入的代码如下</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">input</span> = ui.lineEdit.text()</span><br></pre></td></tr></table></figure>
+<p>接着我们进行汇率转换，注意这里要进行类型转换</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">result = <span class="built_in">float</span>(<span class="built_in">input</span>) * <span class="number">6.7</span></span><br></pre></td></tr></table></figure>
+<p>最后我们让右边的文本框显示结果</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ui.lineEdit_2.setText(<span class="built_in">str</span>(result))</span><br></pre></td></tr></table></figure>
+<p>下面是convert函数的代码</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">convert</span>(<span class="params">ui</span>):</span><br><span class="line">    <span class="built_in">input</span> = ui.lineEdit.text()</span><br><span class="line">    result = <span class="built_in">float</span>(<span class="built_in">input</span>) * <span class="number">6.7</span></span><br><span class="line">    ui.lineEdit_2.setText(<span class="built_in">str</span>(result))</span><br></pre></td></tr></table></figure>
+<p>一个简单的汇率转换器就这样诞生了！</p>
+<p>那么，如何知道一个组件都有什么方法呢？直接去<a target="_blank" rel="noopener" href="https://doc.qt.io/archives/qt-4.8/qtgui-module.html">Qt官方文档</a>查看就可以了。本节使用到的lineEdit的相关方法在<a target="_blank" rel="noopener" href="https://doc.qt.io/archives/qt-4.8/qtextedit.html">这里</a></p>
+<h2 id="0x06-threading"><a class="markdownIt-Anchor" href="#0x06-threading"></a> 0x06 threading</h2>
+<p>1）前言</p>
+<p>这几天在用PyQt5写东西的时候遇到这样一个问题，网上资料也特别少，我感觉值得拿出来说一说。</p>
+<p>我的程序中使用了threading模块，GUI作为主线程去启动负责逻辑处理的子线程。其中，我设计的GUI里头有一个日志框，用来代替终端显示各种日志输出。既然子线程是负责逻辑处理，那么想当然的就会直接在子线程操作GUI的显示。</p>
+<p>都说了想当然，那当然不行咯，在子线程对GUI操作的时候，终端会出现下面这个错误，但是程序又不会马上闪退。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">QObject::connect: Cannot queue arguments of <span class="built_in">type</span> <span class="string">&#x27;QTextCursor&#x27;</span></span><br><span class="line">(Make sure <span class="string">&#x27;QTextCursor&#x27;</span> <span class="keyword">is</span> registered using qRegisterMetaType().)</span><br></pre></td></tr></table></figure>
+<p>更让人摸不着头脑的是，过一阵子闪退的时候，会出现下面这句话：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">段错误，核心已转储</span><br></pre></td></tr></table></figure>
+<p>这啥玩意儿？能说人话么？一番搜索之后，发现这个原来英语叫做“Segmentation fault (core dumped)”。</p>
+<p>&quot;Segmentation fault&quot;用人话来说大概就是“你尝试访问你无法访问的内存”。</p>
+<p>然后我把上面的报错信息搜索了下，发现之前有人在StackOverflow问过，但是答案牛头不对马嘴，不过倒是在评论区发现了大佬的留言。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">It is likely that the asker was not actually directly using QTextCursor, but rather using GUI code from a thread that was not the GUI thread. Attempting this seems to result in this error arising from Qt-internal code, e.g. for QTextEdit.append()</span><br></pre></td></tr></table></figure>
+<p>简而言之，就是说虽然报错显示QTextCursor，但是实际上是在其它线程通过Qt内部的方法间接调用了这个东西。</p>
+<p>热心大佬还留了个<a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/2104779/qobject-qplaintextedit-multithreading-issues">链接</a>，我跟过去看了，收获不少。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">It appears you&#x27;re trying to access QtGui classes from a thread other than the main thread. Like in some other GUI toolkits (e.g. Java Swing), that&#x27;s not allowed.</span><br><span class="line"></span><br><span class="line">Although QObject is reentrant, the GUI classes, notably QWidget and all its subclasses, are not reentrant. They can only be used from the main thread.</span><br></pre></td></tr></table></figure>
+<p>这个终于说到点子上了，一句话总结就是子线程不能调用主线程的QtGui类。</p>
+<p>所以大佬给出的方案如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">A solution is to use signals and slots for communication between the main thread (where the GUI objects live) and your secondary thread(s). Basically, you emit signals in one thread that get delivered to the QObjects via the other thread.</span><br></pre></td></tr></table></figure>
+<p>大概翻译下，就是说可以通过信号和槽来完成子线程跟GUI所在的主线程的通信，就是通过在子线程释放信号，传递到主线程的槽来完成。</p>
+<p>可惜的是，大佬并没有给出示例代码，那接下来就是动手实践了。</p>
+<p>2）实践</p>
+<p>首先我们在子线程的代码中创建一个对象，并且继承QObject（因为需要释放信号）。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">UpdateLog</span>(<span class="title class_ inherited__">QObject</span>):</span><br><span class="line">    update_signal = pyqtSignal()</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self</span>):</span><br><span class="line">        QObject.__init__(<span class="variable language_">self</span>)</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">update</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="variable language_">self</span>.update_signal.emit()</span><br></pre></td></tr></table></figure>
+<p><code>update_signal = pyqtSignal()</code>就是使用Signal类来创建一个自定义的信号。</p>
+<p><code>self.update_signal.emit()</code>就是当条件满足的时候，子线程可以调用UpdateLog类的update方法，就会发出信号。</p>
+<p>做完这些之后，主线程中别忘了连击信号和槽，比如<code>self.afk.utils.logger.update_signal.connect(self.write_log)</code>。然后现在再尝试运行程序，就没有任何问题了。</p>
+<p>不仅如此，其实其它需要共享的信息，也可以通过自定义信号和槽来传递。</p>
+<p>那么，现在就可以愉快的在PyQt程序中使用threading模块了。</p>
+<h2 id="0x0-小结"><a class="markdownIt-Anchor" href="#0x0-小结"></a> 0x0? 小结</h2>
+<p>本文只是抛砖引玉，上面这些只是PyQt5的入门内容。不过学会了简单的交互方法，其它的也差不多能依葫芦画瓢做出来。</p>
+<p>本文中设计的程序在/assets/code/pyqt5中。</p>
+<p>那么，就先写到这里了！</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Python/" rel="tag"># Python</a>
+              <a href="/tags/PyQt5/" rel="tag"># PyQt5</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+            </div>
+            <div class="post-nav-item">
+                <a href="/tech/reverse-engineering.html" rel="next" title="逆向工程学习记录">
+                  逆向工程学习记录 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 2020 – 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="fa fa-terminal"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">oscarcx123</span>
+        <span class="post-meta-item">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-chart-line"></i>
+          </span>
+          <span title="站点总字数">268k</span>
+        </span>
+        <span class="post-meta-item">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-coffee"></i>
+          </span>
+          <span title="站点阅读时长">14:53</span>
+        </span>
+  </div>
+  <div class="powered-by">
+    <span class="post-meta-item">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v6.3.0 强力驱动
+    </span>
+    <span class="post-meta-item"> 主题 – <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v8.18.1
+    </span>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script size="300" alpha="0.6" zIndex="-1" src="/js/ribbon.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.6.0/pjax.min.js" integrity="sha256-vxLn1tSKWD4dqbMRyv940UYw4sXgMtYcK6reefzZrao=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.0.8/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/pjax.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/katex.min.css" integrity="sha256-3574TpfThVfeAhg+I4+N39EJiLN3QUkuEsMVe8hWAR4=" crossorigin="anonymous">
+  <script class="next-config" data-name="katex" type="application/json">{"copy_tex_js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/contrib/copy-tex.min.js","integrity":"sha256-Us54+rSGDSTvIhKKUs4kygE2ipA0RXpWWh0/zLqw3bs="}}</script>
+  <script src="/js/third-party/math/katex.js"></script>
+
+
+<script type="text/javascript">
+  // 显示“展开”和“折叠”
+  function collapsableTitle(x) {
+    var nav = document.getElementsByClassName("sidebar-nav-toc")[0];
+    if (x.matches) { // If media query matches
+      var content = document.getElementsByClassName("sidebar-panel-container")[0];
+      if (content.style.display = "none") {
+        nav.textContent = "文章目录 [展开]";
+      }
+      else {
+        nav.textContent = "文章目录 [折叠]";
+      }
+    } 
+    else {
+      nav.textContent = "文章目录";
+    }
+  }
+
+  var x = window.matchMedia("(max-width: 991px)"); // media query
+  collapsableTitle(x);
+  x.addListener(collapsableTitle);
+
+  // 控制目录的折叠
+  var tos = document.getElementsByClassName("sidebar-nav")[0];
+  var i;
+
+  tos.addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = document.getElementsByClassName("sidebar-panel-container")[0];
+    var nav = document.getElementsByClassName("sidebar-nav-toc")[0];
+    if (content.style.display === "block" && window.innerWidth < 991) {
+      content.style.display = "none";
+      nav.textContent = "文章目录 [展开]";
+    } else {
+      content.style.display = "block";
+      if (window.innerWidth < 991) {
+        nav.textContent = "文章目录 [折叠]";
+      }
+    }
+  });
+
+  // 因为启用pjax，需要监听complete事件，来实现默认折叠效果
+  document.addEventListener('pjax:complete', function() {
+    if (window.innerWidth < 991) {
+      let content = document.getElementsByClassName("sidebar-panel-container")[0];
+      content.style.display = "none";
+      let nav = document.getElementsByClassName("sidebar-nav-toc")[0];
+      nav.textContent = "文章目录 [展开]";
+      }
+    });
+  </script>
+</body>
+</html>

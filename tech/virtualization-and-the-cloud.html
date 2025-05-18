@@ -1,0 +1,1467 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-64x64-dragon.jpg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-64x64-dragon.jpg">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-64x64-dragon.jpg">
+  <link rel="mask-icon" href="/images/favicon-64x64-dragon.jpg" color="#222">
+  <meta name="google-site-verification" content="-QMh-gRPduq5T_vg3_Pwi3kZsNSiyuEpPBaDIXV8J34">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"oscarcx.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.18.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":true,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+
+
+  <style type="text/css">
+
+div.hcb-content.hcb-block.hcbnote, details.hcb-content.box.hcbnote,div.hcb-content.hcb-block.hcbabstract, details.hcb-content.box.hcbabstract,div.hcb-content.hcb-block.hcbinfo, details.hcb-content.box.hcbinfo,div.hcb-content.hcb-block.hcbtip, details.hcb-content.box.hcbtip,div.hcb-content.hcb-block.hcbsuccess, details.hcb-content.box.hcbsuccess,div.hcb-content.hcb-block.hcbquestion, details.hcb-content.box.hcbquestion,div.hcb-content.hcb-block.hcbwarning, details.hcb-content.box.hcbwarning,div.hcb-content.hcb-block.hcbfailure, details.hcb-content.box.hcbfailure,div.hcb-content.hcb-block.hcbdanger, details.hcb-content.box.hcbdanger,div.hcb-content.hcb-block.hcbbug, details.hcb-content.box.hcbbug,div.hcb-content.hcb-block.hcbexample, details.hcb-content.box.hcbexample,div.hcb-content.hcb-block.hcbquote, details.hcb-content.box.hcbquote {
+  border: .05rem solid #448aff;
+  border-radius: .2rem;
+  font-size: 0.96rem;
+  margin: 1.5625em 0;
+  padding: 0 1.2rem;
+  transition: box-shadow 250ms;
+}
+div.hcb-content.hcb-block.hcbnote, details.hcb-content.box.hcbnote {
+  border-color: #448aff;
+}
+div.hcb-content.hcb-block.hcbabstract, details.hcb-content.box.hcbabstract {
+  border-color: #00b0ff;
+}
+div.hcb-content.hcb-block.hcbinfo, details.hcb-content.box.hcbinfo {
+  border-color: #00b8d4;
+}
+div.hcb-content.hcb-block.hcbtip, details.hcb-content.box.hcbtip {
+  border-color: #00bfa5;
+}
+div.hcb-content.hcb-block.hcbsuccess, details.hcb-content.box.hcbsuccess {
+  border-color: #00c853;
+}
+div.hcb-content.hcb-block.hcbquestion, details.hcb-content.box.hcbquestion {
+  border-color: #64dd17;
+}
+div.hcb-content.hcb-block.hcbwarning, details.hcb-content.box.hcbwarning {
+  border-color: #ff9100;
+}
+div.hcb-content.hcb-block.hcbfailure, details.hcb-content.box.hcbfailure {
+  border-color: #ff5252;
+}
+div.hcb-content.hcb-block.hcbdanger, details.hcb-content.box.hcbdanger {
+  border-color: #ff1744;
+}
+div.hcb-content.hcb-block.hcbbug, details.hcb-content.box.hcbbug {
+  border-color: #f50057;
+}
+div.hcb-content.hcb-block.hcbexample, details.hcb-content.box.hcbexample {
+  border-color: #7c4dff;
+}
+div.hcb-content.hcb-block.hcbquote, details.hcb-content.box.hcbquote {
+  border-color: #9e9e9e;
+}
+div.hcb-content.hcb-block.hcbnote:focus-within, details.hcb-content.box.hcbnote:focus-within {
+  box-shadow: 0 0 0 .2rem #448aff1a;
+}
+div.hcb-content.hcb-block.hcbabstract:focus-within, details.hcb-content.box.hcbabstract:focus-within {
+  box-shadow: 0 0 0 .2rem #00b0ff1a;
+}
+div.hcb-content.hcb-block.hcbinfo:focus-within, details.hcb-content.box.hcbinfo:focus-within {
+  box-shadow: 0 0 0 .2rem #00b8d41a;
+}
+div.hcb-content.hcb-block.hcbtip:focus-within, details.hcb-content.box.hcbtip:focus-within {
+  box-shadow: 0 0 0 .2rem #00bfa51a;
+}
+div.hcb-content.hcb-block.hcbsuccess:focus-within, details.hcb-content.box.hcbsuccess:focus-within {
+  box-shadow: 0 0 0 .2rem #00c8531a;
+}
+div.hcb-content.hcb-block.hcbquestion:focus-within, details.hcb-content.box.hcbquestion:focus-within {
+  box-shadow: 0 0 0 .2rem #64dd171a;
+}
+div.hcb-content.hcb-block.hcbwarning:focus-within, details.hcb-content.box.hcbwarning:focus-within {
+  box-shadow: 0 0 0 .2rem #ff91001a;
+}
+div.hcb-content.hcb-block.hcbfailure:focus-within, details.hcb-content.box.hcbfailure:focus-within {
+  box-shadow: 0 0 0 .2rem #ff52521a;
+}
+div.hcb-content.hcb-block.hcbdanger:focus-within, details.hcb-content.box.hcbdanger:focus-within {
+  box-shadow: 0 0 0 .2rem #ff17441a;
+}
+div.hcb-content.hcb-block.hcbbug:focus-within, details.hcb-content.box.hcbbug:focus-within {
+  box-shadow: 0 0 0 .2rem #f500571a;
+}
+div.hcb-content.hcb-block.hcbexample:focus-within, details.hcb-content.box.hcbexample:focus-within {
+  box-shadow: 0 0 0 .2rem #7c4dff1a;
+}
+div.hcb-content.hcb-block.hcbquote:focus-within, details.hcb-content.box.hcbquote:focus-within {
+  box-shadow: 0 0 0 .2rem #9e9e9e1a;
+}
+div.hcb-content.hcb-block.hcbnote *, details.hcb-content.box.hcbnote *,div.hcb-content.hcb-block.hcbabstract *, details.hcb-content.box.hcbabstract *,div.hcb-content.hcb-block.hcbinfo *, details.hcb-content.box.hcbinfo *,div.hcb-content.hcb-block.hcbtip *, details.hcb-content.box.hcbtip *,div.hcb-content.hcb-block.hcbsuccess *, details.hcb-content.box.hcbsuccess *,div.hcb-content.hcb-block.hcbquestion *, details.hcb-content.box.hcbquestion *,div.hcb-content.hcb-block.hcbwarning *, details.hcb-content.box.hcbwarning *,div.hcb-content.hcb-block.hcbfailure *, details.hcb-content.box.hcbfailure *,div.hcb-content.hcb-block.hcbdanger *, details.hcb-content.box.hcbdanger *,div.hcb-content.hcb-block.hcbbug *, details.hcb-content.box.hcbbug *,div.hcb-content.hcb-block.hcbexample *, details.hcb-content.box.hcbexample *,div.hcb-content.hcb-block.hcbquote *, details.hcb-content.box.hcbquote * {
+  box-sizing: border-box;
+}
+div.hcb-content.hcb-block.hcbnote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbnote > summary,div.hcb-content.hcb-block.hcbabstract > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbabstract > summary,div.hcb-content.hcb-block.hcbinfo > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbinfo > summary,div.hcb-content.hcb-block.hcbtip > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbtip > summary,div.hcb-content.hcb-block.hcbsuccess > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbsuccess > summary,div.hcb-content.hcb-block.hcbquestion > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquestion > summary,div.hcb-content.hcb-block.hcbwarning > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbwarning > summary,div.hcb-content.hcb-block.hcbfailure > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbfailure > summary,div.hcb-content.hcb-block.hcbdanger > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbdanger > summary,div.hcb-content.hcb-block.hcbbug > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbbug > summary,div.hcb-content.hcb-block.hcbexample > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbexample > summary,div.hcb-content.hcb-block.hcbquote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquote > summary {
+  border-top-right-radius: 0.1rem;
+  border-top-left-radius: 0.1rem;
+  border-left-width: 0.2rem;
+  display: block;
+  min-height: 1rem;
+  border: none;
+  font-weight: 700;
+  margin: 0 -1.2rem 1rem;
+  padding: 0.4rem 0.6rem;
+  position: relative;
+  outline: none;
+}
+details.hcb-content.box.hcbnote > summary,details.hcb-content.box.hcbabstract > summary,details.hcb-content.box.hcbinfo > summary,details.hcb-content.box.hcbtip > summary,details.hcb-content.box.hcbsuccess > summary,details.hcb-content.box.hcbquestion > summary,details.hcb-content.box.hcbwarning > summary,details.hcb-content.box.hcbfailure > summary,details.hcb-content.box.hcbdanger > summary,details.hcb-content.box.hcbbug > summary,details.hcb-content.box.hcbexample > summary,details.hcb-content.box.hcbquote > summary {
+  cursor: pointer;
+}
+details.hcb-content.box.hcbnote:not([open]) > summary,details.hcb-content.box.hcbabstract:not([open]) > summary,details.hcb-content.box.hcbinfo:not([open]) > summary,details.hcb-content.box.hcbtip:not([open]) > summary,details.hcb-content.box.hcbsuccess:not([open]) > summary,details.hcb-content.box.hcbquestion:not([open]) > summary,details.hcb-content.box.hcbwarning:not([open]) > summary,details.hcb-content.box.hcbfailure:not([open]) > summary,details.hcb-content.box.hcbdanger:not([open]) > summary,details.hcb-content.box.hcbbug:not([open]) > summary,details.hcb-content.box.hcbexample:not([open]) > summary,details.hcb-content.box.hcbquote:not([open]) > summary {
+  margin-bottom: 0;
+}
+div.hcb-content.hcb-block.hcbnote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbnote > summary {
+  background-color: #448aff1a;
+}
+div.hcb-content.hcb-block.hcbabstract > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbabstract > summary {
+  background-color: #00b0ff1a;
+}
+div.hcb-content.hcb-block.hcbinfo > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbinfo > summary {
+  background-color: #00b8d41a;
+}
+div.hcb-content.hcb-block.hcbtip > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbtip > summary {
+  background-color: #00bfa51a;
+}
+div.hcb-content.hcb-block.hcbsuccess > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbsuccess > summary {
+  background-color: #00c8531a;
+}
+div.hcb-content.hcb-block.hcbquestion > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquestion > summary {
+  background-color: #64dd171a;
+}
+div.hcb-content.hcb-block.hcbwarning > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbwarning > summary {
+  background-color: #ff91001a;
+}
+div.hcb-content.hcb-block.hcbfailure > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbfailure > summary {
+  background-color: #ff52521a;
+}
+div.hcb-content.hcb-block.hcbdanger > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbdanger > summary {
+  background-color: #ff17441a;
+}
+div.hcb-content.hcb-block.hcbbug > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbbug > summary {
+  background-color: #f500571a;
+}
+div.hcb-content.hcb-block.hcbexample > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbexample > summary {
+  background-color: #7c4dff1a;
+}
+div.hcb-content.hcb-block.hcbquote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquote > summary {
+  background-color: #9e9e9e1a;
+}
+div.hcb-content.hcb-block.hcbnote > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbnote > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #448aff;
+}
+div.hcb-content.hcb-block.hcbabstract > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbabstract > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00b0ff;
+}
+div.hcb-content.hcb-block.hcbinfo > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbinfo > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00b8d4;
+}
+div.hcb-content.hcb-block.hcbtip > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbtip > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00bfa5;
+}
+div.hcb-content.hcb-block.hcbsuccess > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbsuccess > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00c853;
+}
+div.hcb-content.hcb-block.hcbquestion > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbquestion > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #64dd17;
+}
+div.hcb-content.hcb-block.hcbwarning > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbwarning > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff9100;
+}
+div.hcb-content.hcb-block.hcbfailure > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbfailure > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff5252;
+}
+div.hcb-content.hcb-block.hcbdanger > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbdanger > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff1744;
+}
+div.hcb-content.hcb-block.hcbbug > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbbug > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #f50057;
+}
+div.hcb-content.hcb-block.hcbexample > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbexample > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #7c4dff;
+}
+div.hcb-content.hcb-block.hcbquote > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbquote > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #9e9e9e;
+}
+details.hcb-content.box.hcbnote > summary > div.hcb-box-open-button,details.hcb-content.box.hcbabstract > summary > div.hcb-box-open-button,details.hcb-content.box.hcbinfo > summary > div.hcb-box-open-button,details.hcb-content.box.hcbtip > summary > div.hcb-box-open-button,details.hcb-content.box.hcbsuccess > summary > div.hcb-box-open-button,details.hcb-content.box.hcbquestion > summary > div.hcb-box-open-button,details.hcb-content.box.hcbwarning > summary > div.hcb-box-open-button,details.hcb-content.box.hcbfailure > summary > div.hcb-box-open-button,details.hcb-content.box.hcbdanger > summary > div.hcb-box-open-button,details.hcb-content.box.hcbbug > summary > div.hcb-box-open-button,details.hcb-content.box.hcbexample > summary > div.hcb-box-open-button,details.hcb-content.box.hcbquote > summary > div.hcb-box-open-button {
+  float: right;
+}
+details.hcb-content.box.hcbnote > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbabstract > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbinfo > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbtip > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbsuccess > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbquestion > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbwarning > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbfailure > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbdanger > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbbug > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbexample > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbquote > summary > div.hcb-box-open-button > i {
+  margin: 0 0.6rem 0 0.6rem;
+  font-size: 0.7rem;
+  transition: transform 250ms
+}
+details.hcb-content.box.hcbnote:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbabstract:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbinfo:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbtip:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbsuccess:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquestion:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbwarning:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbfailure:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbdanger:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbbug:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbexample:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquote:not([open]) > summary > div.hcb-box-open-button i {
+  transform: rotate(270deg);
+}
+details.hcb-content.box.hcbnote[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbabstract[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbinfo[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbtip[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbsuccess[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquestion[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbwarning[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbfailure[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbdanger[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbbug[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbexample[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquote[open] > summary > div.hcb-box-open-button i {
+  transform: rotate(180deg);
+}
+details.hcb-content.box.hcbnote summary div.hcb-box-open-button i {
+  color: #448aff;
+}
+details.hcb-content.box.hcbabstract summary div.hcb-box-open-button i {
+  color: #00b0ff;
+}
+details.hcb-content.box.hcbinfo summary div.hcb-box-open-button i {
+  color: #00b8d4;
+}
+details.hcb-content.box.hcbtip summary div.hcb-box-open-button i {
+  color: #00bfa5;
+}
+details.hcb-content.box.hcbsuccess summary div.hcb-box-open-button i {
+  color: #00c853;
+}
+details.hcb-content.box.hcbquestion summary div.hcb-box-open-button i {
+  color: #64dd17;
+}
+details.hcb-content.box.hcbwarning summary div.hcb-box-open-button i {
+  color: #ff9100;
+}
+details.hcb-content.box.hcbfailure summary div.hcb-box-open-button i {
+  color: #ff5252;
+}
+details.hcb-content.box.hcbdanger summary div.hcb-box-open-button i {
+  color: #ff1744;
+}
+details.hcb-content.box.hcbbug summary div.hcb-box-open-button i {
+  color: #f50057;
+}
+details.hcb-content.box.hcbexample summary div.hcb-box-open-button i {
+  color: #7c4dff;
+}
+details.hcb-content.box.hcbquote summary div.hcb-box-open-button i {
+  color: #9e9e9e;
+}
+div.hcb-content.hcb-cards * {
+  box-sizing: border-box;
+}
+input.hcb-content.hcb-cards-input {
+  display: none;
+}
+div.hcb-content.hcb-cards-labels {
+  position: relative;
+  box-shadow: 0 -0.05rem #00000012 inset;
+  display: flex;
+  margin-bottom: 1.25rem;
+}
+div.hcb-content.hcb-cards-labels:before {
+  background: var(--cards-color);
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: translateX(var(--md-indicator-x));
+  transition: width 225ms, transform 250ms;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  width: var(--md-indicator-width);
+}
+label.hcb-content.hcb-cards-label {
+  border-bottom: 0.1rem solid #0000;
+  border-radius: 0.1rem 0.1rem 0 0;
+  cursor: pointer;
+  color: #0000008a;
+  font-size: 0.92em;
+  font-weight: 700;
+  padding: 0 1.25rem 0.625rem;
+  transition: color 250ms;
+}
+label.hcb-content.hcb-cards-label.active, label.hcb-content.hcb-cards-label:hover {
+  color: var(--cards-color);
+}
+div.hcb-content.hcb-cards-content {
+  display: none;
+}
+div.hcb-content.hcb-cards-content.active {
+  display: block;
+}
+</style>
+    <meta name="description" content="《现代操作系统》第七章自学笔记">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Virtualization and the Cloud">
+<meta property="og:url" content="https://oscarcx.com/tech/virtualization-and-the-cloud.html">
+<meta property="og:site_name" content="Cow">
+<meta property="og:description" content="《现代操作系统》第七章自学笔记">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/hypervisor%20type.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/virtual%20kernel%20mode.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/Priv_rings.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/hypervisor%20and%20protection%20rings.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/OS_4e_fig_1_26.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/OS_4e_fig_7_5.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/OS_4e_fig_7_6.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/VirtualMem01.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/OS_4e_fig_7_7.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/MMU_and_IOMMU.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/VM%20and%20docker%20comparison.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/iaas-paas-saas-comparison.jpg">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/OS_4e_fig_7_8.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/OS_4e_fig_7_10.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/OS_4e_fig_7_11.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/OS_4e_fig_7_12.png">
+<meta property="article:published_time" content="2020-03-01T17:09:25.000Z">
+<meta property="article:modified_time" content="2025-05-18T16:05:39.211Z">
+<meta property="article:author" content="oscarcx123">
+<meta property="article:tag" content="OS">
+<meta property="article:tag" content="Virtualization">
+<meta property="article:tag" content="VMWare">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://oscarcx.com/hexo_resource/img/hypervisor%20type.png">
+
+
+<link rel="canonical" href="https://oscarcx.com/tech/virtualization-and-the-cloud.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://oscarcx.com/tech/virtualization-and-the-cloud.html","path":"tech/virtualization-and-the-cloud.html","title":"Virtualization and the Cloud"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Virtualization and the Cloud | Cow</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<style type="text/css">
+.spoiler {
+  display: inline;
+}
+p.spoiler {
+  display: flex;
+}
+.spoiler a {
+  pointer-events: none;
+}
+.spoiler-blur, .spoiler-blur > * {
+  transition: text-shadow .5s ease;
+}
+.spoiler .spoiler-blur, .spoiler .spoiler-blur > * {
+  color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  text-shadow: 0 0 10px grey;
+  cursor: pointer;
+}
+.spoiler .spoiler-blur:hover, .spoiler .spoiler-blur:hover > * {
+  text-shadow: 0 0 5px grey;
+}
+.spoiler-box, .spoiler-box > * {
+  transition: color .5s ease,
+  background-color .5s ease;
+}
+.spoiler .spoiler-box, .spoiler .spoiler-box > * {
+  color: black;
+  background-color: black;
+  text-shadow: none;
+}</style></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Cow</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#introduction"><span class="nav-number">1.</span> <span class="nav-text"> Introduction</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#history"><span class="nav-number">2.</span> <span class="nav-text"> History</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#ibm"><span class="nav-number">2.1.</span> <span class="nav-text"> IBM</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#vmware"><span class="nav-number">2.2.</span> <span class="nav-text"> VMWare</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B6%E5%AE%83%E4%BA%A7%E5%93%81"><span class="nav-number">2.3.</span> <span class="nav-text"> 其它产品</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#requirements-for-virtualization"><span class="nav-number">3.</span> <span class="nav-text"> Requirements for virtualization</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#type-1-and-type-2-hypervisors"><span class="nav-number">4.</span> <span class="nav-text"> Type 1 and type 2 hypervisors</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#techniques-for-efficient-virtualization"><span class="nav-number">5.</span> <span class="nav-text"> Techniques for Efficient Virtualization</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#type-1-hypervisor"><span class="nav-number">5.1.</span> <span class="nav-text"> Type 1 hypervisor</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#virtualizing-the-unvirtualizable"><span class="nav-number">5.2.</span> <span class="nav-text"> Virtualizing the Unvirtualizable</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#the-cost-of-virtualization"><span class="nav-number">5.3.</span> <span class="nav-text"> The Cost of Virtualization</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#are-hypervisors-microkernels-done-right"><span class="nav-number">6.</span> <span class="nav-text"> Are Hypervisors Microkernels Done Right?</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#memory-virtualization"><span class="nav-number">7.</span> <span class="nav-text"> Memory Virtualization</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#hardware-support-for-nested-page-tables"><span class="nav-number">7.1.</span> <span class="nav-text"> Hardware Support for Nested Page Tables</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#reclaiming-memory"><span class="nav-number">7.2.</span> <span class="nav-text"> Reclaiming Memory</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#io-virtualization"><span class="nav-number">8.</span> <span class="nav-text"> I&#x2F;O Virtualization</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#io-mmus"><span class="nav-number">8.1.</span> <span class="nav-text"> I&#x2F;O MMUs</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#device-domains"><span class="nav-number">8.2.</span> <span class="nav-text"> Device Domains</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#single-root-io-virtualization"><span class="nav-number">8.3.</span> <span class="nav-text"> Single Root I&#x2F;O Virtualization</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#virtual-appliances"><span class="nav-number">9.</span> <span class="nav-text"> Virtual Appliances</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#virtual-machines-on-multicore-cpus"><span class="nav-number">10.</span> <span class="nav-text"> Virtual Machines on Multicore CPUs</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#licensing-issues"><span class="nav-number">11.</span> <span class="nav-text"> Licensing Issues</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#clouds"><span class="nav-number">12.</span> <span class="nav-text"> Clouds</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#clouds-as-a-service"><span class="nav-number">12.1.</span> <span class="nav-text"> Clouds as A Service</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#virtual-machine-migration"><span class="nav-number">12.2.</span> <span class="nav-text"> Virtual Machine Migration</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#checkpointing"><span class="nav-number">12.3.</span> <span class="nav-text"> Checkpointing</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#case-study-vmware"><span class="nav-number">13.</span> <span class="nav-text"> Case Study: VMware</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#the-early-history-of-vmware"><span class="nav-number">13.1.</span> <span class="nav-text"> The Early History of VMware</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#vmware-workstation"><span class="nav-number">13.2.</span> <span class="nav-text"> VMware Workstation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#challenges-in-bringing-virtualization-to-the-x86"><span class="nav-number">13.3.</span> <span class="nav-text"> Challenges in Bringing Virtualization to the x86</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#vmware-workstation-solution-overview"><span class="nav-number">13.4.</span> <span class="nav-text"> VMware Workstation: Solution Overview</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#virtualizing-the-x86-architecture"><span class="nav-number">13.4.1.</span> <span class="nav-text"> Virtualizing the x86 Architecture</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#a-guest-operating-system-centric-strategy"><span class="nav-number">13.4.2.</span> <span class="nav-text"> A Guest Operating System Centric Strategy</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#the-virtual-hardware-platform"><span class="nav-number">13.4.3.</span> <span class="nav-text"> The Virtual Hardware Platform</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#the-role-of-the-host-operating-system"><span class="nav-number">13.4.4.</span> <span class="nav-text"> The Role of the Host Operating System</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#the-evolution-of-vmware-workstation"><span class="nav-number">13.5.</span> <span class="nav-text"> The Evolution of VMware Workstation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#esx-server-vmwares-type-1-hypervisor"><span class="nav-number">13.6.</span> <span class="nav-text"> ESX Server: VMware&#39;s Type-1 Hypervisor</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="oscarcx123"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">oscarcx123</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">32</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/oscarcx123" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;oscarcx123" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://oscarcx.com/tech/virtualization-and-the-cloud.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="oscarcx123">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Cow">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Virtualization and the Cloud | Cow">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Virtualization and the Cloud
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2020-03-01 17:09:25" itemprop="dateCreated datePublished" datetime="2020-03-01T17:09:25+00:00">2020-03-01</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/tech/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>6.2k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>21 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>《现代操作系统》第七章自学笔记</p>
+<span id="more"></span>
+<h1 id="introduction"><a class="markdownIt-Anchor" href="#introduction"></a> Introduction</h1>
+<p><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Hypervisor">虚拟机监视器</a>（VMM -&gt; Virtual Machine Monitor / hypervisor）在同一物理硬件上虚拟出多个机器</p>
+<p><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E8%99%9B%E6%93%AC%E5%8C%96">虚拟化</a>（Virtualization）可以让一台计算机同时跑几个虚拟机，并且操作系统可以互不相同</p>
+<p>虚拟机好处：</p>
+<ul>
+<li>省钱</li>
+<li>设置检查点（checkpoint，俗称快照）和迁移都更容易</li>
+<li>运行老旧的应用</li>
+<li>软件开发的多环境测试（多系统共存比虚拟机麻烦多了）
+<ul>
+<li>原书中说法不准确（原文：First of all, standard PCs support only four primary disk partitions, no matter how big the disk is.）</li>
+<li><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E4%B8%BB%E5%BC%95%E5%AF%BC%E8%AE%B0%E5%BD%95">MBR</a>（Master Boot Recorder）最多支持四个主分区</li>
+<li><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/GUID%E7%A3%81%E7%A2%9F%E5%88%86%E5%89%B2%E8%A1%A8">GPT</a>（GUID Partition Table）的主分区几乎没有上限，是目前主流的分区表</li>
+</ul>
+</li>
+</ul>
+<p>云（cloud）的中心思想，就是把自身的计算或储存需求外包给专业的公司</p>
+<h1 id="history"><a class="markdownIt-Anchor" href="#history"></a> History</h1>
+<h2 id="ibm"><a class="markdownIt-Anchor" href="#ibm"></a> IBM</h2>
+<p><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/SIMMON">SIMMON</a>（1960s）</p>
+<p><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/IBM_CP-40">CP-40</a>（1960s） -&gt; <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/CP-67">CP-67</a> -&gt; <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/CP/CMS">CP/CMS</a>（for IBM System/360 Model 67） -&gt; <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/VM_(operating_system)">VM/370</a>（for <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/IBM_System/370">System/370</a> in 1972, later replaced by <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/IBM_System/390">System/390</a> in 1990s）</p>
+<p>IBM很早就支持虚拟化，但是虚拟化一直到1999年才受到大量关注</p>
+<h2 id="vmware"><a class="markdownIt-Anchor" href="#vmware"></a> VMWare</h2>
+<p>1999年，<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/VMware">VMWare</a>提出了第一个x86的虚拟化解决方案</p>
+<h2 id="其它产品"><a class="markdownIt-Anchor" href="#其它产品"></a> 其它产品</h2>
+<p><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Xen">Xen</a>, <a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%9F%BA%E4%BA%8E%E5%86%85%E6%A0%B8%E7%9A%84%E8%99%9A%E6%8B%9F%E6%9C%BA">KVM</a>, <a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/VirtualBox">VirtualBox</a>, <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Hyper-V">Hyper-V</a>, <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Parallels_Desktop_for_Mac">Parallels</a></p>
+<h1 id="requirements-for-virtualization"><a class="markdownIt-Anchor" href="#requirements-for-virtualization"></a> Requirements for virtualization</h1>
+<p>hypervisor的几个要点：</p>
+<ul>
+<li>安全性（Safety）: 完全掌控虚拟化的资源
+<ul>
+<li>使用解释器（interpreter），例如Bochs</li>
+</ul>
+</li>
+<li>保真性（Fidelity）: 虚拟机中的表现应该与实机的表现一致
+<ul>
+<li><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%B3%A2%E4%BD%A9%E5%85%8B%E4%B8%8E%E6%88%88%E5%BE%B7%E5%A0%A1%E8%99%9A%E6%8B%9F%E5%8C%96%E9%9C%80%E6%B1%82">Popek and Goldberg virtualization requirements</a></li>
+<li>敏感指令（sensitive instructions）
+<ul>
+<li>控制敏感指令：试图改变系统资源配置的指令</li>
+<li>行为敏感指令：其行为或结果取决于资源配置状态（如重定位寄存器的内容或处理器所处模式）的指令</li>
+<li>例如：I/O, change the <a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E5%8D%95%E5%85%83">MMU</a> / memory management unit settings</li>
+</ul>
+</li>
+<li>特权指令（privileged instructions）
+<ul>
+<li>当处理器处于用户态时<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Trap_(computing)">自陷</a>，处于内核态时不自陷的指令</li>
+</ul>
+</li>
+<li>用人话来说：if you try to do something in user mode that you should not be doing in user mode, the hardware should trap
+<ul>
+<li>IBM/370符合此特性，但是Intel 386不符合</li>
+<li>2005年，Intel和AMD在CPU中引入了虚拟化
+<ul>
+<li>Intel -&gt; VT (Virtualization Technology)</li>
+<li>AMD -&gt; SVM (Secure Virtual Machine)</li>
+</ul>
+</li>
+<li><a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/20388156/what-is-meant-by-trap-and-emulate-virtualization">陷入并模拟</a>（trap-and-emulate）的虚拟机方法成为可能</li>
+<li>2005年以前的x86虚拟化（例如VMWare的解决方案），是通过对Guest OS中的代码进行实时的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E4%BA%8C%E8%BF%9B%E5%88%B6%E7%BF%BB%E8%AF%91">二进制翻译</a>（binary translation）来规避一些特权指令的</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>高效性（Efficiency）: 大部分虚拟机中的代码不应该被hypervisor干涉</li>
+</ul>
+<p>虚拟化的不同形态：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Paravirtualization">半虚拟化</a>（paravirtualization）
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.cnblogs.com/echo1937/p/7227385.html">虚拟化调用</a>（hypercalls） -&gt; 向Guest OS提供了一套“系统调用”</li>
+<li>实际上可以看作对Guest OS提供了一套API (Application Programming Interface)</li>
+<li>让Guest OS知道自己在虚拟机上跑（非ring0状态），一些特权指令就会修改成跟VMM约定好的其它方式，因此Guest OS需要针对hypervisor做出一定的更改</li>
+<li>没有捕获异常、翻译、模拟，性能损耗很低</li>
+</ul>
+</li>
+<li><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%85%A8%E8%99%9A%E6%8B%9F%E5%8C%96">全虚拟化</a>（full virtualization）
+<ul>
+<li>任何可以运行在裸机上的软件（通常是操作系统）都可以未经修改地运行在虚拟机中</li>
+</ul>
+</li>
+</ul>
+<p>虚拟化的不同思路：</p>
+<ul>
+<li>full system virtualization</li>
+<li>process-level virtualization
+<ul>
+<li><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Wine">WINE</a>
+<ul>
+<li>在各种类Unix系统系统运行Windows程序，例如Linux，BSD，和OS X</li>
+</ul>
+</li>
+<li><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/QEMU">QEMU</a>
+<ul>
+<li>为一种架构编译的程序在另外一种架构上面运行</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="type-1-and-type-2-hypervisors"><a class="markdownIt-Anchor" href="#type-1-and-type-2-hypervisors"></a> Type 1 and type 2 hypervisors</h1>
+<p>Guest OS -&gt; 在hypervisor上运行的系统</p>
+<p>Host OS -&gt; 直接在硬件上运行的系统</p>
+<ul>
+<li>Type 1 Hypervisors
+<ul>
+<li>跟操作系统相似（the only program running in the most privileged mode）</li>
+</ul>
+</li>
+<li>Type 2 Hypervisors（hosted hypervisors）
+<ul>
+<li>跟普通程序相似（靠Host OS调度资源）</li>
+<li>VMware Workstations -&gt; 第一个x86的type 2 hypervisor</li>
+<li>初次启动的表现就跟一台全新的电脑一样，会去寻找装有OS的DVD / USB / CD-ROM（当然都可以是虚拟设备）</li>
+<li>操作系统会被安装到<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Virtual_disk_and_virtual_drive">虚拟磁盘</a>（virtual disk），本质上只是Host OS上的一个文件</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/hypervisor%20type.png" alt="Type 1 &amp; Type 2 Hypervisors" /></p>
+<p>下面总结一下各种虚拟化方案对应的例子</p>
+<table>
+<thead>
+<tr>
+<th>Virtualizaton method</th>
+<th>Type 1 hypervisor</th>
+<th>Type 2 hypervisor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Virtualization without HW support</td>
+<td>ESX Server 1.0</td>
+<td>VMware Workstation 1</td>
+</tr>
+<tr>
+<td>Paravirtualization</td>
+<td>Xen 1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>Virtualization with HW support</td>
+<td>vSphere, Xen, Hyper-V</td>
+<td>VMware Fusion, KVM*, Parallels</td>
+</tr>
+<tr>
+<td>Process virtualization</td>
+<td></td>
+<td>Wine</td>
+</tr>
+</tbody>
+</table>
+<p>注：KVM的分类有争议</p>
+<blockquote>
+<p>KVM is not a clear case as it could be categorized as either one. The KVM kernel module turns Linux kernel into a type 1 bare-metal hypervisor, while the overall system could be categorized to type 2 because the host OS is still fully functional and the other VM's are standard Linux processes from its perspective.</p>
+</blockquote>
+<p>Source: <a target="_blank" rel="noopener" href="https://serverfault.com/questions/855094/is-kvm-a-type-1-or-type-2-hypervisor">Is KVM a type 1 or type 2 hypervisor?</a></p>
+<h1 id="techniques-for-efficient-virtualization"><a class="markdownIt-Anchor" href="#techniques-for-efficient-virtualization"></a> Techniques for Efficient Virtualization</h1>
+<h2 id="type-1-hypervisor"><a class="markdownIt-Anchor" href="#type-1-hypervisor"></a> Type 1 hypervisor</h2>
+<p>Virtual kernel mode</p>
+<ul>
+<li>虚拟机以用户模式（user mode）运行，因此不允许执行敏感指令</li>
+<li>虚拟机内的操作系统以为自己运行在内核模式（kernel mode）</li>
+<li>虚拟机内的用户进程认为自己运行在用户模式（然而确实就是用户模式）</li>
+<li>当Guest OS尝试执行敏感指令：
+<ul>
+<li>不带VT的CPU
+<ul>
+<li>执行失败，系统崩溃</li>
+</ul>
+</li>
+<li>带VT的CPU
+<ul>
+<li>trap to the hypervisor</li>
+<li>hypervisor会检查指令发出者是Guest OS还是普通用户进程</li>
+<li>如果由Guest OS发出，那么会模拟真实硬件的反馈</li>
+<li>如果由普通用户进程发出，那么会安排执行的指示</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/virtual%20kernel%20mode.png" alt="" /></p>
+<h2 id="virtualizing-the-unvirtualizable"><a class="markdownIt-Anchor" href="#virtualizing-the-unvirtualizable"></a> Virtualizing the Unvirtualizable</h2>
+<p>在VT出现之前，VMware通过利用binary translation和<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%88%86%E7%BA%A7%E4%BF%9D%E6%8A%A4%E5%9F%9F">protection rings</a>来实现x86的hypervisor</p>
+<p>x86支持4级的保护环（protection rings）</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/Priv_rings.png" alt="" /></p>
+<ul>
+<li>Ring 3权力最小
+<ul>
+<li>用户进程通常在此执行</li>
+<li>不能执行特权指令（privileged instructions）</li>
+</ul>
+</li>
+<li>Ring 0权力最大
+<ul>
+<li>内核通常在此运行</li>
+<li>可以执行任何指令</li>
+</ul>
+</li>
+<li>Ring 1 &amp; 2不被当今的OS使用
+<ul>
+<li>hypervisors可以自由使用它们</li>
+<li>例如：把Guest OS放到Ring 1</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/hypervisor%20and%20protection%20rings.png" alt="" /></p>
+<p>关于Guest OS内核的敏感指令：</p>
+<ul>
+<li>hypervisor会通过重写代码确保他们不再存在</li>
+<li>一次重写一个<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Basic_block">基本块</a>（basic block）
+<ul>
+<li>只有一个<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%85%A5%E5%8F%A3%E7%82%B9">入口点</a>（entry point）, 一个出口点</li>
+<li>没有jump，call，trap，return，或者其它改变控制流的指令</li>
+</ul>
+</li>
+<li>执行基本块之前，hypervisor会检查里面是否有敏感指令
+<ul>
+<li>如果有就转交给hypervisor处理</li>
+</ul>
+</li>
+<li>翻译过的基本块（translated blocks）会被缓存，而且大部分代码都不含敏感指令，因此并不会造成很大的开销</li>
+<li>binary translator可以忽略全部用户进程，因为他们本来就运行在非特权模式下</li>
+</ul>
+<p>在实际应用中，运行在Ring 1的操作系统代码会被全部翻译，因为binary translation的性能比trap好多了</p>
+<p>虽然type 1跟type 2 hypervisor的差别很大，但是使用的技巧都是一样的。例如<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/VMware_ESXi">VMware ESX Server</a>（type 1）跟<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/VMware_Workstation">VMware Workstation</a>（type 2）所使用的binary translation是一样的。</p>
+<p>现在大多数type 2 hypervisors都有一个在Ring 0中运行的内核模块，该模块允许它们使用特权指令来操纵硬件。</p>
+<p>总结：hypervisor之所以能工作，是因为敏感指令都被替换掉，真正的硬件并不会执行这些敏感指令，hypervisor会拦截并模拟那些指令。</p>
+<h2 id="the-cost-of-virtualization"><a class="markdownIt-Anchor" href="#the-cost-of-virtualization"></a> The Cost of Virtualization</h2>
+<p>trap-and-emulate (with VT) vs. binary translation</p>
+<ul>
+<li>trap-and-emulate &lt;- 硬件方法
+<ul>
+<li>会生成大量的trap</li>
+<li>trap的代价很大（they ruin CPU caches, TLBs, and branch prediction tables internal to the CPU）</li>
+</ul>
+</li>
+<li>binary translation &lt;- 软件方法
+<ul>
+<li>敏感指令全部被calls to hypervisor procedures替换</li>
+<li>不会造成CPU的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E4%B8%8A%E4%B8%8B%E6%96%87%E4%BA%A4%E6%8F%9B">环境切换</a>（context switch）</li>
+</ul>
+</li>
+<li>因此，在一些情况下，软件方法的性能会比硬件方法的性能好</li>
+</ul>
+<p>IF (<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Interrupt_flag">Interrupt Flag</a>)（中断标志）</p>
+<ul>
+<li>If flag = 1, maskable hardware interrupts（可屏蔽硬件中断）will be handled</li>
+<li>If cleared (flag = 0), such interrupts will be ignored</li>
+<li>例如Guest OS使用了CLI instruction (clear interrupts)来禁用<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E6%96%B7">硬件中断</a>（hardware interrupt）：
+<ul>
+<li>在一些架构上，这个指令的执行速度很慢</li>
+<li>hypervisor会真的对Guest OS禁用，但是却不影响宿主机器</li>
+<li>CLI会直接被替换成类似VirtualCPU.IF = 0的flag，从而减少执行开销</li>
+</ul>
+</li>
+</ul>
+<h1 id="are-hypervisors-microkernels-done-right"><a class="markdownIt-Anchor" href="#are-hypervisors-microkernels-done-right"></a> Are Hypervisors Microkernels Done Right?</h1>
+<p>当我们移除了所有的敏感指令，通过hypercall来调用一些系统服务（例如：I/O），这时hypervisor实质上就已经变成了一个<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%BE%AE%E5%85%A7%E6%A0%B8">微内核</a>（microkernel）</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/OS_4e_fig_1_26.png" alt="" /></p>
+<p>全虚拟化跟半虚拟化的区别：</p>
+<ul>
+<li>全虚拟化运行未修改的OS，遇到敏感指令会trap，hypervisor对指令进行模拟，然后返回结果</li>
+<li>半虚拟化运行修改过的OS，没有敏感指令。但是如果需要进行I/O操作或者修改关键内部寄存器（critical internal registers），例如指向<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%88%86%E9%A0%81%E8%A1%A8">分页表</a>（page table）的寄存器，那么就会直接使用hypervisor call来完成，跟System call比较类似</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/OS_4e_fig_7_5.png" alt="" /></p>
+<p>VMI (Virtual Machine Interface)</p>
+<ul>
+<li>跟硬件或者hypervisor进行交互的low-level layer</li>
+<li>是通用的，不跟任何特定的硬件平台或者hypervisor绑定的中间层</li>
+<li>解决了以下几个问题：
+<ul>
+<li>修改过的Guest OS（把敏感指令替换成了hypercall）无法直接在硬件上工作，因为硬件并不知道如何处理hypercall</li>
+<li>市面上有很多hypervisor，例如VMware，Xen，Hyper-V等等，它们都有不完全一样的hypervisor API</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/OS_4e_fig_7_6.png" alt="" /></p>
+<p>Paravirt-Ops (pv-ops)</p>
+<ul>
+<li>一个跟VMI类似的实现</li>
+<li>从Linux内核2.6.23开始就支持</li>
+<li>由一众Linux开发供应商搞的，其中包括IBM，VMware，Xen，Red Hat</li>
+</ul>
+<h1 id="memory-virtualization"><a class="markdownIt-Anchor" href="#memory-virtualization"></a> Memory Virtualization</h1>
+<p><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E8%99%9A%E6%8B%9F%E5%86%85%E5%AD%98">虚拟内存</a>简介</p>
+<ul>
+<li>现在的操作系统基本都支持</li>
+<li>基本上是把虚拟地址空间中的页映射到物理内存的页</li>
+<li>虚拟内存不仅用在虚拟化上，它能提高物理内存的使用效率</li>
+<li>它使得应用程序认为它拥有连续可用的内存，而实际上，它通常是被分隔成多个物理内存碎片，还有部分暂时存储在外部磁盘存储器上，在需要时进行数据交换</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/VirtualMem01.png" alt="" /></p>
+<p>虚拟化的内存管理比较复杂，用以下场景为例：</p>
+<ul>
+<li>Guest OS 1要把7，4，3虚拟页映射到10，11，12物理页</li>
+<li>此时hypervisor可以直接把10，11，12物理页分配给Guest OS 1</li>
+<li>Guest OS 2要把4，5，6虚拟页映射到10，11，12物理页</li>
+<li>此时hypervisor无法再执行对应任务，因为10，11，12物理页已经被Guest OS 1占用</li>
+<li>所以hypervisor会寻找一些空闲的页，例如20，21，22物理页，然后映射给Guest OS 2，所以实际关系如下：
+<ul>
+<li>Guest OS 2的4，5，6虚拟页（guest virtual addresses）</li>
+<li>Guest OS 2认为的10，11，12物理页（guest physical addresses）</li>
+<li>实际的20，21，22物理页（host physical addresses / machine physical addresses）</li>
+</ul>
+</li>
+<li>为了达成上面所述功能，hypervisor会为每个虚拟机创建<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Shadow_table">shadow page table</a>，从而把虚拟机中的虚拟页映射到实际物理页</li>
+<li>如果Guest OS修改了分页表，hypervisor也必须要更改对应的shadow page table</li>
+<li>但是Guest OS可以直接通过写内存来更改分页表，而且不需要执行敏感指令，因此hypervisor并不会知道此事</li>
+</ul>
+<p>hypervisor有两种方法得知Guest OS是否修改分页表：</p>
+<ul>
+<li>方法一：hypervisor去关注追踪Guest OS分页表
+<ul>
+<li>hypervisor可以在Guest OS第一次尝试加载指向top-level分页表的硬件寄存器的时候获取信息，因为这个是敏感操作</li>
+<li>然后hypervisor会把分页表设为只读，如果Guest OS尝试修改分页表，会出现<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Page_fault">分页错误</a>（page fault）</li>
+<li>此时hypervisor会接管并分析Guest OS想干什么，然后就可以对应的去更新shadow page table</li>
+</ul>
+</li>
+<li>方法二：Guest OS尝试访问新映射的分页表时出错，被hypervisor捕获
+<ul>
+<li>hypervisor允许Guest OS任意添加新的映射关系，并且hypervisor压根不会知道增加了没</li>
+<li>当Guest OS尝试访问新映射的分页表时会出错，此时控制权移交给hypervisor</li>
+<li>hypervisor会检查是否有新的映射关系需要添加到shadow page table，如果有那就添加并重新执行刚刚出错的指令</li>
+<li>如果Guest OS尝试删除分页表的映射关系，hypervisor会直接截获<a target="_blank" rel="noopener" href="https://docs.microsoft.com/en-us/cpp/intrinsics/invlpg">INVLPG</a>（Invalidate TLB Entries）指令，然后更新shadow page table</li>
+</ul>
+</li>
+</ul>
+<p>分页错误可以分成两类：</p>
+<ul>
+<li>guest-induced page faults -&gt; 正常状况下由Guest OS上的程序造成的分页错误</li>
+<li>hypervisor-induced page faults -&gt; 用来保证Guest OS的分页表和shadow page table保持同步</li>
+</ul>
+<p>VM exit（hypervisor重获控制权）</p>
+<ul>
+<li>记录VM exit的原因，这样hypervisor在接管后知道要做什么</li>
+<li>记录Guest OS造成VM exit的指令</li>
+<li>环境切换（context switch）</li>
+<li>加载hypervisor的processor state</li>
+<li>hypervisor开始处理问题（例如分页错误）</li>
+<li>处理完问题之后，还要把上述过程反过来执行一次</li>
+<li>所以大家都尽量减少VM exit，因为处理开销太大了</li>
+</ul>
+<p>如果用半虚拟化，就不用那么大费周章了，因为Guest OS会告诉hypervisor分页表的变化</p>
+<h2 id="hardware-support-for-nested-page-tables"><a class="markdownIt-Anchor" href="#hardware-support-for-nested-page-tables"></a> Hardware Support for Nested Page Tables</h2>
+<p>硬件级别的支持：</p>
+<ul>
+<li>Nested Page Tables (AMD)</li>
+<li>EPT / Extended Page Tables (Intel)</li>
+</ul>
+<p>在带有EPT特性的CPU上：</p>
+<ul>
+<li>guest virtual address -&gt; guest physical address（跟非虚拟化的表现一样）</li>
+<li>guest physical address -&gt; host physical address（通过Extended Page Tables直接查找，无需软件干涉）</li>
+<li>能够显著减少VM exit的次数</li>
+<li>memory reference的数量随着层次的深度呈二次方增长</li>
+<li>切换虚拟机时，就像切换进程时改变映射一样</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/OS_4e_fig_7_7.png" alt="" /></p>
+<h2 id="reclaiming-memory"><a class="markdownIt-Anchor" href="#reclaiming-memory"></a> Reclaiming Memory</h2>
+<p><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Memory_overcommitment">Memory overcommitment</a></p>
+<ul>
+<li>全部虚拟机占用的内存看起来可以比实际的物理内存多</li>
+<li>例如：在一台32GB内存的机器上开三个虚拟机，看起来各有16GB内存。</li>
+<li>这些虚拟机可能不会把各自的内存占满</li>
+<li>虚拟机也可能进行了deduplication。常见的例子是三个虚拟机之间共享Linux内核</li>
+</ul>
+<p>那么hypervisor如何分配虚拟机占用的内存资源呢？</p>
+<ul>
+<li>直接加多一层分页（简单粗暴，但是效率不高）</li>
+<li><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Memory_ballooning">Memory ballooning</a>
+<ul>
+<li>在每个虚拟机中都会有一个balloon模块（作为pseudo device driver）跟hypervisor沟通</li>
+<li>balloon模块可以根据hypervisor的指示去故意占用（充气）或者释放内存（放气）</li>
+<li>当balloon模块故意占用内存，Guest OS就会释放掉它认为最没价值的页面</li>
+<li>综上所述，hypervisor通过欺骗Guest OS来让Guest OS自行决定释放的内存</li>
+</ul>
+</li>
+</ul>
+<h1 id="io-virtualization"><a class="markdownIt-Anchor" href="#io-virtualization"></a> I/O Virtualization</h1>
+<p>hypervisor充当物理设备（硬盘，打印机等）和Guest OS之间的传话筒</p>
+<p>hypervisor会创建虚拟硬盘文件来解决Guest OS的读写问题</p>
+<p>hypervisor还可以进行I/O指令的转换，例如让Guest OS以为使用的是<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E9%AB%98%E6%8A%80%E8%A1%93%E9%85%8D%E7%BD%AE">IDE</a>(Integrated Drive Electronics)硬盘，并从IDE指令转换成新的硬盘指令，从而让旧软件可以在新硬件上面跑，这也是为什么当时IBM的VM/370那么受欢迎。</p>
+<p><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Virtual_security_switch">virtual switch</a> -&gt; software Ethernet switch with embedded security controls</p>
+<h2 id="io-mmus"><a class="markdownIt-Anchor" href="#io-mmus"></a> I/O MMUs</h2>
+<p><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%9B%B4%E6%8E%A5%E8%A8%98%E6%86%B6%E9%AB%94%E5%AD%98%E5%8F%96">直接内存访问</a>（DMA / Direct memory access）</p>
+<p><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E5%8D%95%E5%85%83">输入输出内存管理单元</a>（I/O MMU / Input–output memory management unit）</p>
+<ul>
+<li>对I/O进行虚拟化，跟虚拟化内存一样</li>
+<li>设备穿透（Device pass through）
+<ul>
+<li>物理设备可以直接分配给虚拟机</li>
+</ul>
+</li>
+<li>设备隔离（Device isolation）
+<ul>
+<li>确保分配给虚拟机的设备可以直接访问该虚拟机，并且不会损害其它Guest OS的完整性</li>
+</ul>
+</li>
+<li>中断重映射（interrupt remapping）
+<ul>
+<li>确保设备产生的中断能够抵达对应的虚拟机</li>
+</ul>
+</li>
+<li>允许32位的设备访问4GB以上的内存</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/MMU_and_IOMMU.png" alt="" /></p>
+<h2 id="device-domains"><a class="markdownIt-Anchor" href="#device-domains"></a> Device Domains</h2>
+<p>有一个专门的虚拟机运行常规的OS，然后将其它虚拟机的I/O calls反射到这台虚拟机</p>
+<ul>
+<li>提供给hypervisor的指令直接就是Guest OS的想法（例如：从disk 1读取block 1403，而不是一连串寄存器相关命令）</li>
+<li>半虚拟化比较常用这个方法，例如Xen（专用虚拟机叫domain 0）</li>
+</ul>
+<p>在I/O虚拟化方面，type 2 hypervisor比type 1 hypervisor更有优势：</p>
+<ul>
+<li>type 2 hypervisor的Host OS本身就带有一大堆设备驱动</li>
+<li>type 1 hyeprvisor要么自带设备驱动，要么从domain 0里头调用驱动</li>
+</ul>
+<h2 id="single-root-io-virtualization"><a class="markdownIt-Anchor" href="#single-root-io-virtualization"></a> Single Root I/O Virtualization</h2>
+<p>直接给虚拟机分配设备，拓展性会很差，因为有多少虚拟机就需要多少设备</p>
+<p><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Single-root_input/output_virtualization">Single root I/O virtualization</a> (SR-IOV)</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/PCI_Express">PCIe / PCI Express</a>设备支持的技术</li>
+<li>让每个虚拟机都认为该设备是自己独占</li>
+<li>支持SR-IOV的设备，给每个使用这个设备的虚拟机都提供独立的内存空间、中断、DMA stream</li>
+<li>SR-IOV设备看起来就像多个不同的设备，而且每个都能被对应的虚拟机配置</li>
+<li>SR-IOV设备提供两种访问方式：
+<ul>
+<li>PF (Physical Functions)
+<ul>
+<li>full PCIe functions</li>
+<li>设备可以随意被系统管理员配置</li>
+<li>Guest OS无法访问PF</li>
+</ul>
+</li>
+<li>VF (Virtual Functions)
+<ul>
+<li>lightweight PCIe functions</li>
+<li>只提供有限的配置</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>例如：Intel I350 series网卡就分别有八个发送和八个接收队列</li>
+</ul>
+<h1 id="virtual-appliances"><a class="markdownIt-Anchor" href="#virtual-appliances"></a> Virtual Appliances</h1>
+<p><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Virtual_appliance">Virtual appliance</a></p>
+<ul>
+<li>是预先配置好的虚拟机镜像，开箱即用</li>
+<li>解决了软件发行的环境依赖问题</li>
+<li>例如：Amazon's EC2 cloud就提供很多打包好的虚拟机镜像给用户使用（这就是SaaS模式）</li>
+<li>跟docker比较类似，但是docker容器不是虚拟机</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/VM%20and%20docker%20comparison.png" alt="" /></p>
+<h1 id="virtual-machines-on-multicore-cpus"><a class="markdownIt-Anchor" href="#virtual-machines-on-multicore-cpus"></a> Virtual Machines on Multicore CPUs</h1>
+<p>CPU可以在分配的时候拆分给多个虚拟机，例如一个四核CPU可以拆给32个虚拟机，此时可以看作32-node multicomputer</p>
+<p>Deduplication</p>
+<ul>
+<li>主要技术有这几种：
+<ul>
+<li>Disco &lt;- parent page sharing（需要修改Guest OS）</li>
+<li>VMware &lt;- content-based page sharing（无需对OS进行任何修改）</li>
+</ul>
+</li>
+<li>基本过程如下：
+<ul>
+<li>扫描虚拟机的memory page并计算hash</li>
+<li>如果一致，再检查他们是否真的完全一样</li>
+<li>确认一样，就创建一个page来储存实际内容，然后对应的生成指向这个page的引用（reference）</li>
+<li>如果有Guest OS修改了共享的page，那就使用写入时复制（copy on write / COW）技巧修改，从而复制一份专用副本（private copy）</li>
+</ul>
+</li>
+</ul>
+<h1 id="licensing-issues"><a class="markdownIt-Anchor" href="#licensing-issues"></a> Licensing Issues</h1>
+<p>有些软件的许可证是按照CPU数量来发放的，因此有的发行商会明确禁止软件在虚拟机上运行</p>
+<h1 id="clouds"><a class="markdownIt-Anchor" href="#clouds"></a> Clouds</h1>
+<p><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/zh-cn/%E9%9B%B2%E7%AB%AF%E9%81%8B%E7%AE%97">Cloud Computing</a>的五大特征：</p>
+<ul>
+<li>On-demand self-service（随需应变自助服务）
+<ul>
+<li>Users should be able to provision resources automatically, without requiring human interaction.</li>
+</ul>
+</li>
+<li>Broad network access（随时随地用任何网络设备访问）
+<ul>
+<li>All these resources should be available over the network via standard mechanisms so that heterogeneous devices can make use of them</li>
+</ul>
+</li>
+<li>Resource pooling（多人共享资源池）
+<ul>
+<li>The computing resource owned by the provider should be pooled to serve multiple users and with the ability to assign and reassign resources dynamically. The users generally do not even know the exact location of &quot;their&quot; resources or even which country they are located in</li>
+</ul>
+</li>
+<li>Rapid elasticity（快速重新部署灵活度）
+<ul>
+<li>It should be possible to acquire and release resources elastically, perhaps even automatically, to scale immediately with the users' demands</li>
+</ul>
+</li>
+<li>Measured service（可被监控与量测的服务）
+<ul>
+<li>The cloud provider meters the resources used in a way that matches the type of service agreed upon</li>
+</ul>
+</li>
+</ul>
+<h2 id="clouds-as-a-service"><a class="markdownIt-Anchor" href="#clouds-as-a-service"></a> Clouds as A Service</h2>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/zh-cn/%E5%9F%BA%E7%A4%8E%E8%A8%AD%E6%96%BD%E5%8D%B3%E6%9C%8D%E5%8B%99">IAAS</a> (Infrastructure As A Service)
+<ul>
+<li>提供处理、储存、网络以及各种基础运算资源</li>
+<li>例如：Amazon Web Services (AWS), Microsoft Azure, Digital Ocean, Google Compute Engine (GCE)</li>
+</ul>
+</li>
+<li><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%B9%B3%E5%8F%B0%E5%8D%B3%E6%9C%8D%E5%8A%A1">PAAS</a> (Platform As A Service)
+<ul>
+<li>提供运算平台与解决方案服务</li>
+<li>提供的环境包括操作系统，Web服务器，数据库等等</li>
+<li>例如：Google App Engine, AWS Elastic Beanstalk, Heroku, OpenShift</li>
+</ul>
+</li>
+<li><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E8%BD%AF%E4%BB%B6%E5%8D%B3%E6%9C%8D%E5%8A%A1">SAAS</a> (Software As A Service)
+<ul>
+<li>通过网络使用软件</li>
+<li>例如：Microsoft Office 365, Google Apps, Salesforce</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/iaas-paas-saas-comparison.jpg" alt="" /></p>
+<h2 id="virtual-machine-migration"><a class="markdownIt-Anchor" href="#virtual-machine-migration"></a> Virtual Machine Migration</h2>
+<p><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Live_migration">Live migration</a></p>
+<ul>
+<li>pre-copy memory migration -&gt; copy memory pages while the machine is still serving requests</li>
+<li>seamless live migration -&gt;  downtime is not noticeable</li>
+</ul>
+<h2 id="checkpointing"><a class="markdownIt-Anchor" href="#checkpointing"></a> Checkpointing</h2>
+<p>利用copy on write (COW)技巧，我们可以得到虚拟机的快照</p>
+<h1 id="case-study-vmware"><a class="markdownIt-Anchor" href="#case-study-vmware"></a> Case Study: VMware</h1>
+<h2 id="the-early-history-of-vmware"><a class="markdownIt-Anchor" href="#the-early-history-of-vmware"></a> The Early History of VMware</h2>
+<ul>
+<li>1997年，VMware未来的几个创始人在斯坦福造出了prototype hypervisor，叫Disco</li>
+<li>1998年，VMware公司成立，目标是对x86架构进行虚拟化</li>
+<li>1999年，VMware推出了32-bit x86虚拟化的解决方案
+<ul>
+<li>VMware Workstation for Linux（type 2 hypervisor）</li>
+<li>VMware Workstation for Windows（type 2 hypervisor）</li>
+</ul>
+</li>
+<li>2001年，VMWare推出了第二个产品ESX Server（type 1 hypervisor）
+<ul>
+<li>ESX Server使用了VMware Workstation的虚拟化引擎</li>
+<li>能够直接在硬件上运行</li>
+<li>是第一个引入ballooning的产品</li>
+</ul>
+</li>
+<li>2002年，VMware推出了Virtual Center（现在叫vSphere）
+<ul>
+<li>Virtual Center是管理ESX Server的解决方案</li>
+<li>管理员可以直接控制上千个虚拟机</li>
+<li>VMotion能够提供live migration</li>
+</ul>
+</li>
+</ul>
+<h2 id="vmware-workstation"><a class="markdownIt-Anchor" href="#vmware-workstation"></a> VMware Workstation</h2>
+<p>VMware Workstation是第一个32-bit x86的虚拟化产品</p>
+<p>x86产业可以拆解成四个板块：</p>
+<ul>
+<li>CPU：Intel &amp; AMD</li>
+<li>操作系统：Microsoft Windows &amp; Open source Linux</li>
+<li>设备制造商：例如I/O设备</li>
+<li>系统集成商：电脑组装厂，例如Dell, HP等</li>
+</ul>
+<h2 id="challenges-in-bringing-virtualization-to-the-x86"><a class="markdownIt-Anchor" href="#challenges-in-bringing-virtualization-to-the-x86"></a> Challenges in Bringing Virtualization to the x86</h2>
+<p>x86虚拟化的核心特点有：</p>
+<ul>
+<li>Compatibility（兼容性）
+<ul>
+<li>users could run whichever OS without restrictions</li>
+</ul>
+</li>
+<li>Performance（性能）
+<ul>
+<li>run relevant workloads at near native speeds</li>
+<li>in worst case to run at the speed of then-current processors</li>
+</ul>
+</li>
+<li>Isolation（隔离）
+<ul>
+<li>complete control of recourses</li>
+</ul>
+</li>
+</ul>
+<p>x86虚拟化的四大难关：</p>
+<ul>
+<li>The x86 architecture was not virtualizable（x86在当时被认为无法虚拟化）</li>
+<li>The x86 architecture was of daunting complexity（x86架构复杂度很高）</li>
+<li>x86 machines had diverse peripherals（各种外设跟硬件五花八门）</li>
+<li>Need for a simple user experience（用户体验需要做到开箱即用）</li>
+</ul>
+<h2 id="vmware-workstation-solution-overview"><a class="markdownIt-Anchor" href="#vmware-workstation-solution-overview"></a> VMware Workstation: Solution Overview</h2>
+<h3 id="virtualizing-the-x86-architecture"><a class="markdownIt-Anchor" href="#virtualizing-the-x86-architecture"></a> Virtualizing the x86 Architecture</h3>
+<p>半虚拟化可以通过修改Guest OS来完美绕开所有坑，但是Windows系统不开源，没法改</p>
+<p>全部采用动态二进制翻译（dynamic binary translation）也不靠谱，因为效率还是比较低低</p>
+<p>解决方案： trap-and-emulate + dynamic binary translation</p>
+<ul>
+<li>trap-and-emulate（直接执行）在运行用户级别的程序时是完全没问题的，因为敏感指令本身就无法执行（例如POPF）</li>
+<li>dynamic binary translation作为fallback的解决方案，一旦有无法直接执行的就切换</li>
+<li>使用哪个方法由decision algorithm决定</li>
+<li>以下场景必须使用dynamic binary translation：
+<ul>
+<li>虚拟机当前运行在内核模式（x86架构中的ring 0）</li>
+<li>虚拟机可以禁用中断以及发出I/O指令（when the I/O privilege level is set to the ring level）</li>
+<li>虚拟机当前运行在<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/zh-cn/%E7%9C%9F%E5%AF%A6%E6%A8%A1%E5%BC%8F">实模式</a> (a legacy 16-bit execution mode used by the BIOS among other things)</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/OS_4e_fig_7_8.png" alt="" /></p>
+<p>software fault isolation(SFI) -&gt; ensure the integrity of the virtualization sandbox</p>
+<p>VMware VMM使用的是基于硬件的沙盒方案：</p>
+<ul>
+<li>VMM保留最上面的4MB内存</li>
+<li>剩下的内存（4GB - 4MB）给虚拟机</li>
+<li>任何虚拟机指令都无法访问保留的内存</li>
+</ul>
+<h3 id="a-guest-operating-system-centric-strategy"><a class="markdownIt-Anchor" href="#a-guest-operating-system-centric-strategy"></a> A Guest Operating System Centric Strategy</h3>
+<p>由于x86架构过于复杂，初期的VMware Workstation只支持少数Guest OS：</p>
+<ul>
+<li>Linux</li>
+<li>Windows 3.1</li>
+<li>Windows 95/98</li>
+<li>Windows NT</li>
+</ul>
+<p>随着VMware Workstation不断完善，后期无需特别适配即可支持一些系统，例如<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/MINIX_3">MINIX 3</a></p>
+<p>现在的主流Guest OS都不使用ring 1和ring 2，因此如果Guest OS尝试使用这两个ring，虚拟机会直接退出</p>
+<ul>
+<li>OS/2会使用ring 2，所以不被支持</li>
+<li>VMware VMM的二进制翻译器就运行在ring 1</li>
+</ul>
+<h3 id="the-virtual-hardware-platform"><a class="markdownIt-Anchor" href="#the-virtual-hardware-platform"></a> The Virtual Hardware Platform</h3>
+<p>虽然CPU种类有限，但是外设有一大堆，所以VMware不会去一一对应的适配全部外设，而是用一些通用的规范去匹配</p>
+<p>虚拟化平台包括以下两个部分：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8">多路复用</a>（Multiplexing）
+<ul>
+<li>硬件可以直接被虚拟机使用</li>
+<li>硬件被多个虚拟机共享</li>
+<li>例如：每个虚拟机都以为自己有个独占的CPU和物理地址从0开始的内存</li>
+</ul>
+</li>
+<li>模拟（Emulation）
+<ul>
+<li>前端 -&gt; 虚拟机可见</li>
+<li>后端 -&gt; 跟Host OS交互</li>
+<li>例如：储存设备
+<ul>
+<li>前端：IDE controller &amp; Buslogic Controller</li>
+<li>后端：virtual disk (file in Host OS)</li>
+</ul>
+</li>
+<li>hardware-independent encapsulation（硬件无关的封装）</li>
+</ul>
+</li>
+</ul>
+<h3 id="the-role-of-the-host-operating-system"><a class="markdownIt-Anchor" href="#the-role-of-the-host-operating-system"></a> The Role of the Host Operating System</h3>
+<p>VMware Workstation作为type 2 hypervisor的两大优点：</p>
+<ul>
+<li>只要Host OS有合适的驱动，虚拟机就能在上面跑</li>
+<li>易用性强，就跟安装普通的软件一样</li>
+</ul>
+<p>VMware Hosted Architecture</p>
+<ul>
+<li>解决hypervisor在用户模式权限不足的问题</li>
+<li>VMX(Virtual Machine Extension)
+<ul>
+<li>用户认为的VMware程序</li>
+<li>负责UI，启动虚拟机，模拟设备（front-end），向Host OS发起system calls等等</li>
+<li>一般每个虚拟机都有一个VMX</li>
+</ul>
+</li>
+<li>VMX driver
+<ul>
+<li>运行在内核模式</li>
+<li>通过暂时挂起整个Host OS来让VMM运行</li>
+<li>一个Host OS内只有一个VMX driver</li>
+</ul>
+</li>
+<li>VMM(Virtual Machine Manager)
+<ul>
+<li>负责多路复用CPU和内存：
+<ul>
+<li>exception handlers</li>
+<li>trap-andemulate handlers</li>
+<li>the binary translator</li>
+<li>the shadow paging module</li>
+</ul>
+</li>
+<li>每个虚拟机都有一个VMM实例，通常在虚拟机启动的时候被创建</li>
+</ul>
+</li>
+</ul>
+<p>所以，VMware Workstation看起来是在Host OS上运行（VMX确实是），实际上VMM是能够完全控制硬件的</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/OS_4e_fig_7_10.png" alt="" /></p>
+<p>World switch</p>
+<ul>
+<li>changes the entire address space, all exception handlers, privileged registers, etc.</li>
+<li>takes only 45 x86 machine-language instructions to<br />
+execute</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/OS_4e_fig_7_11.png" alt="" /></p>
+<h2 id="the-evolution-of-vmware-workstation"><a class="markdownIt-Anchor" href="#the-evolution-of-vmware-workstation"></a> The Evolution of VMware Workstation</h2>
+<p>采用VMware Hosted Architecture的产品有：</p>
+<ul>
+<li>VMware Workstation</li>
+<li>VMware Player</li>
+<li>VMware Fusion（OSX作为Host OS）</li>
+</ul>
+<h2 id="esx-server-vmwares-type-1-hypervisor"><a class="markdownIt-Anchor" href="#esx-server-vmwares-type-1-hypervisor"></a> ESX Server: VMware's Type-1 Hypervisor</h2>
+<p>2001年，VMWare推出了ESX Server（type 1 hypervisor）</p>
+<ul>
+<li>VMware ESX Server和VMware Workstation的VMM在源码层面上几乎一样</li>
+<li>ESX hypervisor类似半个Host OS，因为它只需要能跑VMM实例就行了</li>
+<li>ESX Server包含若干子系统（subsystem），例如CPU调度器（CPU scheduler），内存管理器（memory manager），I/O子系统</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/OS_4e_fig_7_12.png" alt="" /></p>
+<p>ESX Server的优点：</p>
+<ul>
+<li>性能（performance）</li>
+<li>可伸缩性（scalability）</li>
+<li>可管理性（manageability）</li>
+</ul>
+<p>现在ESX Server已经变成了ESXi，成为了vSphere套件的重要组成部分</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/OS/" rel="tag"># OS</a>
+              <a href="/tags/Virtualization/" rel="tag"># Virtualization</a>
+              <a href="/tags/VMWare/" rel="tag"># VMWare</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/announcement/hello-world-hexo.html" rel="prev" title="Hello World (Hexo)">
+                  <i class="fa fa-angle-left"></i> Hello World (Hexo)
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/tech/modern-operating-systems-intro.html" rel="next" title="Modern Operating Systems Intro">
+                  Modern Operating Systems Intro <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 2020 – 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="fa fa-terminal"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">oscarcx123</span>
+        <span class="post-meta-item">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-chart-line"></i>
+          </span>
+          <span title="站点总字数">268k</span>
+        </span>
+        <span class="post-meta-item">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-coffee"></i>
+          </span>
+          <span title="站点阅读时长">14:53</span>
+        </span>
+  </div>
+  <div class="powered-by">
+    <span class="post-meta-item">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v6.3.0 强力驱动
+    </span>
+    <span class="post-meta-item"> 主题 – <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v8.18.1
+    </span>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script size="300" alpha="0.6" zIndex="-1" src="/js/ribbon.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.6.0/pjax.min.js" integrity="sha256-vxLn1tSKWD4dqbMRyv940UYw4sXgMtYcK6reefzZrao=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.0.8/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/pjax.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/katex.min.css" integrity="sha256-3574TpfThVfeAhg+I4+N39EJiLN3QUkuEsMVe8hWAR4=" crossorigin="anonymous">
+  <script class="next-config" data-name="katex" type="application/json">{"copy_tex_js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/contrib/copy-tex.min.js","integrity":"sha256-Us54+rSGDSTvIhKKUs4kygE2ipA0RXpWWh0/zLqw3bs="}}</script>
+  <script src="/js/third-party/math/katex.js"></script>
+
+
+<script type="text/javascript">
+  // 显示“展开”和“折叠”
+  function collapsableTitle(x) {
+    var nav = document.getElementsByClassName("sidebar-nav-toc")[0];
+    if (x.matches) { // If media query matches
+      var content = document.getElementsByClassName("sidebar-panel-container")[0];
+      if (content.style.display = "none") {
+        nav.textContent = "文章目录 [展开]";
+      }
+      else {
+        nav.textContent = "文章目录 [折叠]";
+      }
+    } 
+    else {
+      nav.textContent = "文章目录";
+    }
+  }
+
+  var x = window.matchMedia("(max-width: 991px)"); // media query
+  collapsableTitle(x);
+  x.addListener(collapsableTitle);
+
+  // 控制目录的折叠
+  var tos = document.getElementsByClassName("sidebar-nav")[0];
+  var i;
+
+  tos.addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = document.getElementsByClassName("sidebar-panel-container")[0];
+    var nav = document.getElementsByClassName("sidebar-nav-toc")[0];
+    if (content.style.display === "block" && window.innerWidth < 991) {
+      content.style.display = "none";
+      nav.textContent = "文章目录 [展开]";
+    } else {
+      content.style.display = "block";
+      if (window.innerWidth < 991) {
+        nav.textContent = "文章目录 [折叠]";
+      }
+    }
+  });
+
+  // 因为启用pjax，需要监听complete事件，来实现默认折叠效果
+  document.addEventListener('pjax:complete', function() {
+    if (window.innerWidth < 991) {
+      let content = document.getElementsByClassName("sidebar-panel-container")[0];
+      content.style.display = "none";
+      let nav = document.getElementsByClassName("sidebar-nav-toc")[0];
+      nav.textContent = "文章目录 [展开]";
+      }
+    });
+  </script>
+</body>
+</html>

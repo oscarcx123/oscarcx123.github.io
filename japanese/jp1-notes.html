@@ -1,0 +1,6875 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-64x64-dragon.jpg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-64x64-dragon.jpg">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-64x64-dragon.jpg">
+  <link rel="mask-icon" href="/images/favicon-64x64-dragon.jpg" color="#222">
+  <meta name="google-site-verification" content="-QMh-gRPduq5T_vg3_Pwi3kZsNSiyuEpPBaDIXV8J34">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"oscarcx.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.18.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":true,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+
+
+  <style type="text/css">
+
+div.hcb-content.hcb-block.hcbnote, details.hcb-content.box.hcbnote,div.hcb-content.hcb-block.hcbabstract, details.hcb-content.box.hcbabstract,div.hcb-content.hcb-block.hcbinfo, details.hcb-content.box.hcbinfo,div.hcb-content.hcb-block.hcbtip, details.hcb-content.box.hcbtip,div.hcb-content.hcb-block.hcbsuccess, details.hcb-content.box.hcbsuccess,div.hcb-content.hcb-block.hcbquestion, details.hcb-content.box.hcbquestion,div.hcb-content.hcb-block.hcbwarning, details.hcb-content.box.hcbwarning,div.hcb-content.hcb-block.hcbfailure, details.hcb-content.box.hcbfailure,div.hcb-content.hcb-block.hcbdanger, details.hcb-content.box.hcbdanger,div.hcb-content.hcb-block.hcbbug, details.hcb-content.box.hcbbug,div.hcb-content.hcb-block.hcbexample, details.hcb-content.box.hcbexample,div.hcb-content.hcb-block.hcbquote, details.hcb-content.box.hcbquote {
+  border: .05rem solid #448aff;
+  border-radius: .2rem;
+  font-size: 0.96rem;
+  margin: 1.5625em 0;
+  padding: 0 1.2rem;
+  transition: box-shadow 250ms;
+}
+div.hcb-content.hcb-block.hcbnote, details.hcb-content.box.hcbnote {
+  border-color: #448aff;
+}
+div.hcb-content.hcb-block.hcbabstract, details.hcb-content.box.hcbabstract {
+  border-color: #00b0ff;
+}
+div.hcb-content.hcb-block.hcbinfo, details.hcb-content.box.hcbinfo {
+  border-color: #00b8d4;
+}
+div.hcb-content.hcb-block.hcbtip, details.hcb-content.box.hcbtip {
+  border-color: #00bfa5;
+}
+div.hcb-content.hcb-block.hcbsuccess, details.hcb-content.box.hcbsuccess {
+  border-color: #00c853;
+}
+div.hcb-content.hcb-block.hcbquestion, details.hcb-content.box.hcbquestion {
+  border-color: #64dd17;
+}
+div.hcb-content.hcb-block.hcbwarning, details.hcb-content.box.hcbwarning {
+  border-color: #ff9100;
+}
+div.hcb-content.hcb-block.hcbfailure, details.hcb-content.box.hcbfailure {
+  border-color: #ff5252;
+}
+div.hcb-content.hcb-block.hcbdanger, details.hcb-content.box.hcbdanger {
+  border-color: #ff1744;
+}
+div.hcb-content.hcb-block.hcbbug, details.hcb-content.box.hcbbug {
+  border-color: #f50057;
+}
+div.hcb-content.hcb-block.hcbexample, details.hcb-content.box.hcbexample {
+  border-color: #7c4dff;
+}
+div.hcb-content.hcb-block.hcbquote, details.hcb-content.box.hcbquote {
+  border-color: #9e9e9e;
+}
+div.hcb-content.hcb-block.hcbnote:focus-within, details.hcb-content.box.hcbnote:focus-within {
+  box-shadow: 0 0 0 .2rem #448aff1a;
+}
+div.hcb-content.hcb-block.hcbabstract:focus-within, details.hcb-content.box.hcbabstract:focus-within {
+  box-shadow: 0 0 0 .2rem #00b0ff1a;
+}
+div.hcb-content.hcb-block.hcbinfo:focus-within, details.hcb-content.box.hcbinfo:focus-within {
+  box-shadow: 0 0 0 .2rem #00b8d41a;
+}
+div.hcb-content.hcb-block.hcbtip:focus-within, details.hcb-content.box.hcbtip:focus-within {
+  box-shadow: 0 0 0 .2rem #00bfa51a;
+}
+div.hcb-content.hcb-block.hcbsuccess:focus-within, details.hcb-content.box.hcbsuccess:focus-within {
+  box-shadow: 0 0 0 .2rem #00c8531a;
+}
+div.hcb-content.hcb-block.hcbquestion:focus-within, details.hcb-content.box.hcbquestion:focus-within {
+  box-shadow: 0 0 0 .2rem #64dd171a;
+}
+div.hcb-content.hcb-block.hcbwarning:focus-within, details.hcb-content.box.hcbwarning:focus-within {
+  box-shadow: 0 0 0 .2rem #ff91001a;
+}
+div.hcb-content.hcb-block.hcbfailure:focus-within, details.hcb-content.box.hcbfailure:focus-within {
+  box-shadow: 0 0 0 .2rem #ff52521a;
+}
+div.hcb-content.hcb-block.hcbdanger:focus-within, details.hcb-content.box.hcbdanger:focus-within {
+  box-shadow: 0 0 0 .2rem #ff17441a;
+}
+div.hcb-content.hcb-block.hcbbug:focus-within, details.hcb-content.box.hcbbug:focus-within {
+  box-shadow: 0 0 0 .2rem #f500571a;
+}
+div.hcb-content.hcb-block.hcbexample:focus-within, details.hcb-content.box.hcbexample:focus-within {
+  box-shadow: 0 0 0 .2rem #7c4dff1a;
+}
+div.hcb-content.hcb-block.hcbquote:focus-within, details.hcb-content.box.hcbquote:focus-within {
+  box-shadow: 0 0 0 .2rem #9e9e9e1a;
+}
+div.hcb-content.hcb-block.hcbnote *, details.hcb-content.box.hcbnote *,div.hcb-content.hcb-block.hcbabstract *, details.hcb-content.box.hcbabstract *,div.hcb-content.hcb-block.hcbinfo *, details.hcb-content.box.hcbinfo *,div.hcb-content.hcb-block.hcbtip *, details.hcb-content.box.hcbtip *,div.hcb-content.hcb-block.hcbsuccess *, details.hcb-content.box.hcbsuccess *,div.hcb-content.hcb-block.hcbquestion *, details.hcb-content.box.hcbquestion *,div.hcb-content.hcb-block.hcbwarning *, details.hcb-content.box.hcbwarning *,div.hcb-content.hcb-block.hcbfailure *, details.hcb-content.box.hcbfailure *,div.hcb-content.hcb-block.hcbdanger *, details.hcb-content.box.hcbdanger *,div.hcb-content.hcb-block.hcbbug *, details.hcb-content.box.hcbbug *,div.hcb-content.hcb-block.hcbexample *, details.hcb-content.box.hcbexample *,div.hcb-content.hcb-block.hcbquote *, details.hcb-content.box.hcbquote * {
+  box-sizing: border-box;
+}
+div.hcb-content.hcb-block.hcbnote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbnote > summary,div.hcb-content.hcb-block.hcbabstract > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbabstract > summary,div.hcb-content.hcb-block.hcbinfo > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbinfo > summary,div.hcb-content.hcb-block.hcbtip > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbtip > summary,div.hcb-content.hcb-block.hcbsuccess > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbsuccess > summary,div.hcb-content.hcb-block.hcbquestion > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquestion > summary,div.hcb-content.hcb-block.hcbwarning > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbwarning > summary,div.hcb-content.hcb-block.hcbfailure > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbfailure > summary,div.hcb-content.hcb-block.hcbdanger > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbdanger > summary,div.hcb-content.hcb-block.hcbbug > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbbug > summary,div.hcb-content.hcb-block.hcbexample > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbexample > summary,div.hcb-content.hcb-block.hcbquote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquote > summary {
+  border-top-right-radius: 0.1rem;
+  border-top-left-radius: 0.1rem;
+  border-left-width: 0.2rem;
+  display: block;
+  min-height: 1rem;
+  border: none;
+  font-weight: 700;
+  margin: 0 -1.2rem 1rem;
+  padding: 0.4rem 0.6rem;
+  position: relative;
+  outline: none;
+}
+details.hcb-content.box.hcbnote > summary,details.hcb-content.box.hcbabstract > summary,details.hcb-content.box.hcbinfo > summary,details.hcb-content.box.hcbtip > summary,details.hcb-content.box.hcbsuccess > summary,details.hcb-content.box.hcbquestion > summary,details.hcb-content.box.hcbwarning > summary,details.hcb-content.box.hcbfailure > summary,details.hcb-content.box.hcbdanger > summary,details.hcb-content.box.hcbbug > summary,details.hcb-content.box.hcbexample > summary,details.hcb-content.box.hcbquote > summary {
+  cursor: pointer;
+}
+details.hcb-content.box.hcbnote:not([open]) > summary,details.hcb-content.box.hcbabstract:not([open]) > summary,details.hcb-content.box.hcbinfo:not([open]) > summary,details.hcb-content.box.hcbtip:not([open]) > summary,details.hcb-content.box.hcbsuccess:not([open]) > summary,details.hcb-content.box.hcbquestion:not([open]) > summary,details.hcb-content.box.hcbwarning:not([open]) > summary,details.hcb-content.box.hcbfailure:not([open]) > summary,details.hcb-content.box.hcbdanger:not([open]) > summary,details.hcb-content.box.hcbbug:not([open]) > summary,details.hcb-content.box.hcbexample:not([open]) > summary,details.hcb-content.box.hcbquote:not([open]) > summary {
+  margin-bottom: 0;
+}
+div.hcb-content.hcb-block.hcbnote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbnote > summary {
+  background-color: #448aff1a;
+}
+div.hcb-content.hcb-block.hcbabstract > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbabstract > summary {
+  background-color: #00b0ff1a;
+}
+div.hcb-content.hcb-block.hcbinfo > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbinfo > summary {
+  background-color: #00b8d41a;
+}
+div.hcb-content.hcb-block.hcbtip > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbtip > summary {
+  background-color: #00bfa51a;
+}
+div.hcb-content.hcb-block.hcbsuccess > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbsuccess > summary {
+  background-color: #00c8531a;
+}
+div.hcb-content.hcb-block.hcbquestion > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquestion > summary {
+  background-color: #64dd171a;
+}
+div.hcb-content.hcb-block.hcbwarning > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbwarning > summary {
+  background-color: #ff91001a;
+}
+div.hcb-content.hcb-block.hcbfailure > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbfailure > summary {
+  background-color: #ff52521a;
+}
+div.hcb-content.hcb-block.hcbdanger > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbdanger > summary {
+  background-color: #ff17441a;
+}
+div.hcb-content.hcb-block.hcbbug > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbbug > summary {
+  background-color: #f500571a;
+}
+div.hcb-content.hcb-block.hcbexample > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbexample > summary {
+  background-color: #7c4dff1a;
+}
+div.hcb-content.hcb-block.hcbquote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquote > summary {
+  background-color: #9e9e9e1a;
+}
+div.hcb-content.hcb-block.hcbnote > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbnote > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #448aff;
+}
+div.hcb-content.hcb-block.hcbabstract > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbabstract > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00b0ff;
+}
+div.hcb-content.hcb-block.hcbinfo > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbinfo > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00b8d4;
+}
+div.hcb-content.hcb-block.hcbtip > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbtip > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00bfa5;
+}
+div.hcb-content.hcb-block.hcbsuccess > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbsuccess > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00c853;
+}
+div.hcb-content.hcb-block.hcbquestion > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbquestion > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #64dd17;
+}
+div.hcb-content.hcb-block.hcbwarning > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbwarning > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff9100;
+}
+div.hcb-content.hcb-block.hcbfailure > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbfailure > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff5252;
+}
+div.hcb-content.hcb-block.hcbdanger > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbdanger > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff1744;
+}
+div.hcb-content.hcb-block.hcbbug > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbbug > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #f50057;
+}
+div.hcb-content.hcb-block.hcbexample > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbexample > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #7c4dff;
+}
+div.hcb-content.hcb-block.hcbquote > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbquote > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #9e9e9e;
+}
+details.hcb-content.box.hcbnote > summary > div.hcb-box-open-button,details.hcb-content.box.hcbabstract > summary > div.hcb-box-open-button,details.hcb-content.box.hcbinfo > summary > div.hcb-box-open-button,details.hcb-content.box.hcbtip > summary > div.hcb-box-open-button,details.hcb-content.box.hcbsuccess > summary > div.hcb-box-open-button,details.hcb-content.box.hcbquestion > summary > div.hcb-box-open-button,details.hcb-content.box.hcbwarning > summary > div.hcb-box-open-button,details.hcb-content.box.hcbfailure > summary > div.hcb-box-open-button,details.hcb-content.box.hcbdanger > summary > div.hcb-box-open-button,details.hcb-content.box.hcbbug > summary > div.hcb-box-open-button,details.hcb-content.box.hcbexample > summary > div.hcb-box-open-button,details.hcb-content.box.hcbquote > summary > div.hcb-box-open-button {
+  float: right;
+}
+details.hcb-content.box.hcbnote > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbabstract > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbinfo > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbtip > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbsuccess > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbquestion > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbwarning > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbfailure > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbdanger > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbbug > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbexample > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbquote > summary > div.hcb-box-open-button > i {
+  margin: 0 0.6rem 0 0.6rem;
+  font-size: 0.7rem;
+  transition: transform 250ms
+}
+details.hcb-content.box.hcbnote:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbabstract:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbinfo:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbtip:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbsuccess:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquestion:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbwarning:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbfailure:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbdanger:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbbug:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbexample:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquote:not([open]) > summary > div.hcb-box-open-button i {
+  transform: rotate(270deg);
+}
+details.hcb-content.box.hcbnote[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbabstract[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbinfo[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbtip[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbsuccess[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquestion[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbwarning[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbfailure[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbdanger[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbbug[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbexample[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquote[open] > summary > div.hcb-box-open-button i {
+  transform: rotate(180deg);
+}
+details.hcb-content.box.hcbnote summary div.hcb-box-open-button i {
+  color: #448aff;
+}
+details.hcb-content.box.hcbabstract summary div.hcb-box-open-button i {
+  color: #00b0ff;
+}
+details.hcb-content.box.hcbinfo summary div.hcb-box-open-button i {
+  color: #00b8d4;
+}
+details.hcb-content.box.hcbtip summary div.hcb-box-open-button i {
+  color: #00bfa5;
+}
+details.hcb-content.box.hcbsuccess summary div.hcb-box-open-button i {
+  color: #00c853;
+}
+details.hcb-content.box.hcbquestion summary div.hcb-box-open-button i {
+  color: #64dd17;
+}
+details.hcb-content.box.hcbwarning summary div.hcb-box-open-button i {
+  color: #ff9100;
+}
+details.hcb-content.box.hcbfailure summary div.hcb-box-open-button i {
+  color: #ff5252;
+}
+details.hcb-content.box.hcbdanger summary div.hcb-box-open-button i {
+  color: #ff1744;
+}
+details.hcb-content.box.hcbbug summary div.hcb-box-open-button i {
+  color: #f50057;
+}
+details.hcb-content.box.hcbexample summary div.hcb-box-open-button i {
+  color: #7c4dff;
+}
+details.hcb-content.box.hcbquote summary div.hcb-box-open-button i {
+  color: #9e9e9e;
+}
+div.hcb-content.hcb-cards * {
+  box-sizing: border-box;
+}
+input.hcb-content.hcb-cards-input {
+  display: none;
+}
+div.hcb-content.hcb-cards-labels {
+  position: relative;
+  box-shadow: 0 -0.05rem #00000012 inset;
+  display: flex;
+  margin-bottom: 1.25rem;
+}
+div.hcb-content.hcb-cards-labels:before {
+  background: var(--cards-color);
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: translateX(var(--md-indicator-x));
+  transition: width 225ms, transform 250ms;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  width: var(--md-indicator-width);
+}
+label.hcb-content.hcb-cards-label {
+  border-bottom: 0.1rem solid #0000;
+  border-radius: 0.1rem 0.1rem 0 0;
+  cursor: pointer;
+  color: #0000008a;
+  font-size: 0.92em;
+  font-weight: 700;
+  padding: 0 1.25rem 0.625rem;
+  transition: color 250ms;
+}
+label.hcb-content.hcb-cards-label.active, label.hcb-content.hcb-cards-label:hover {
+  color: var(--cards-color);
+}
+div.hcb-content.hcb-cards-content {
+  display: none;
+}
+div.hcb-content.hcb-cards-content.active {
+  display: block;
+}
+</style>
+    <meta name="description" content="自学日语，也是无纸化笔记的尝试~">
+<meta property="og:type" content="article">
+<meta property="og:title" content="新标日初级上笔记（N5）">
+<meta property="og:url" content="https://oscarcx.com/japanese/jp1-notes.html">
+<meta property="og:site_name" content="Cow">
+<meta property="og:description" content="自学日语，也是无纸化笔记的尝试~">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/jp1_notes1.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/stickers/dino_44.jpg">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/stickers/dino_44.jpg">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/stickers/dino_44.jpg">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/stickers/dino_17.jpg">
+<meta property="article:published_time" content="2021-05-24T12:32:16.000Z">
+<meta property="article:modified_time" content="2025-05-18T16:05:39.207Z">
+<meta property="article:author" content="oscarcx123">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://oscarcx.com/hexo_resource/img/jp1_notes1.png">
+
+
+<link rel="canonical" href="https://oscarcx.com/japanese/jp1-notes.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://oscarcx.com/japanese/jp1-notes.html","path":"japanese/jp1-notes.html","title":"新标日初级上笔记（N5）"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>新标日初级上笔记（N5） | Cow</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<style type="text/css">
+.spoiler {
+  display: inline;
+}
+p.spoiler {
+  display: flex;
+}
+.spoiler a {
+  pointer-events: none;
+}
+.spoiler-blur, .spoiler-blur > * {
+  transition: text-shadow .5s ease;
+}
+.spoiler .spoiler-blur, .spoiler .spoiler-blur > * {
+  color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  text-shadow: 0 0 10px grey;
+  cursor: pointer;
+}
+.spoiler .spoiler-blur:hover, .spoiler .spoiler-blur:hover > * {
+  text-shadow: 0 0 5px grey;
+}
+.spoiler-box, .spoiler-box > * {
+  transition: color .5s ease,
+  background-color .5s ease;
+}
+.spoiler .spoiler-box, .spoiler .spoiler-box > * {
+  color: black;
+  background-color: black;
+  text-shadow: none;
+}</style></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Cow</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%94%E5%8D%81%E9%9F%B3%E5%9B%BE"><span class="nav-number">1.</span> <span class="nav-text"> 五十音图</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%A5%E9%97%A8%E5%8D%95%E5%85%83"><span class="nav-number">2.</span> <span class="nav-text"> 入门单元</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%83%8C%E5%8D%95%E8%AF%8D"><span class="nav-number">3.</span> <span class="nav-text"> 背单词</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E8%AF%8D%E5%A3%B0%E8%B0%83"><span class="nav-number">3.1.</span> <span class="nav-text"> 单词声调</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%86%9F%E5%AD%97%E8%AE%AD-%E5%BD%93%E3%81%A6%E5%AD%97"><span class="nav-number">3.2.</span> <span class="nav-text"> 熟字训 &#x2F; 当て字</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%80%A3%E6%BF%81"><span class="nav-number">3.3.</span> <span class="nav-text"> 連濁</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%97%E5%85%B8"><span class="nav-number">3.4.</span> <span class="nav-text"> 字典</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E8%AF%8D%E8%BD%AF%E4%BB%B6"><span class="nav-number">3.5.</span> <span class="nav-text"> 单词软件</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E6%B3%95"><span class="nav-number">4.</span> <span class="nav-text"> 输入法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%A0%87%E7%82%B9%E7%AC%A6%E5%8F%B7%E9%80%97%E5%8F%B7"><span class="nav-number">5.</span> <span class="nav-text"> 标点符号（逗号）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#l1-%E6%9D%8E%E3%81%95%E3%82%93%E3%81%AF-%E4%B8%AD%E5%9B%BD%E4%BA%BA%E3%81%A7%E3%81%99"><span class="nav-number">6.</span> <span class="nav-text"> L1 - 李さんは　中国人です</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%AD%E6%B3%95"><span class="nav-number">6.1.</span> <span class="nav-text"> 语法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#l2-%E3%81%93%E3%82%8C%E3%81%AF%E6%9C%AC%E3%81%A7%E3%81%99"><span class="nav-number">7.</span> <span class="nav-text"> L2 - これは本です</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E8%AF%8D"><span class="nav-number">7.1.</span> <span class="nav-text"> 单词</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%AD%E6%B3%95-2"><span class="nav-number">7.2.</span> <span class="nav-text"> 语法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#l3-%E3%81%93%E3%81%93%E3%81%AF-%E3%83%87%E3%83%91%E3%83%BC%E3%83%88%E3%81%A7%E3%81%99"><span class="nav-number">8.</span> <span class="nav-text"> L3 - ここは　デパートです</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E8%AF%8D-2"><span class="nav-number">8.1.</span> <span class="nav-text"> 单词</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%AD%E6%B3%95-3"><span class="nav-number">8.2.</span> <span class="nav-text"> 语法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#l4-%E9%83%A8%E5%B1%8B%E3%81%AB-%E6%9C%BA%E3%81%A8-%E3%81%84%E3%81%99%E3%81%8C-%E3%81%82%E3%82%8A%E3%81%BE%E3%81%99"><span class="nav-number">9.</span> <span class="nav-text"> L4 - 部屋に　机と　いすが　あります</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E8%AF%8D-3"><span class="nav-number">9.1.</span> <span class="nav-text"> 单词</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%AD%E6%B3%95-4"><span class="nav-number">9.2.</span> <span class="nav-text"> 语法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#l5-%E6%A3%AE%E3%81%95%E3%82%93%E3%81%AF-7%E6%99%82%E3%81%AB-%E8%B5%B7%E3%81%8D%E3%81%BE%E3%81%99"><span class="nav-number">10.</span> <span class="nav-text"> L5 - 森さんは　７時に　起きます</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E8%AF%8D-4"><span class="nav-number">10.1.</span> <span class="nav-text"> 单词</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8A%BD%E8%B1%A1%E6%97%B6%E9%97%B4%E5%90%8D%E8%AF%8D"><span class="nav-number">10.1.1.</span> <span class="nav-text"> 抽象时间名词</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%98%9F%E6%9C%9F"><span class="nav-number">10.1.2.</span> <span class="nav-text"> 星期</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%97%A9%E4%B8%AD%E6%99%9A"><span class="nav-number">10.1.3.</span> <span class="nav-text"> 早中晚</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%97%B6%E5%88%BB%E5%85%B7%E4%BD%93%E6%97%B6%E9%97%B4%E5%90%8D%E8%AF%8D"><span class="nav-number">10.1.4.</span> <span class="nav-text"> 时刻（具体时间名词）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8A%A8%E8%AF%8D"><span class="nav-number">10.1.5.</span> <span class="nav-text"> 动词</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B6%E5%AE%83"><span class="nav-number">10.1.6.</span> <span class="nav-text"> 其它</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%AD%E6%B3%95-5"><span class="nav-number">10.2.</span> <span class="nav-text"> 语法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#l6-%E5%90%89%E7%94%B0%E3%81%95%E3%82%93%E3%81%AF-%E6%9D%A5%E6%9C%88-%E4%B8%AD%E5%9B%BD%E3%81%B8-%E8%A1%8C%E3%81%8D%E3%81%BE%E3%81%99"><span class="nav-number">11.</span> <span class="nav-text"> L6 - 吉田さんは　来月　中国へ　行きます</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E8%AF%8D-5"><span class="nav-number">11.1.</span> <span class="nav-text"> 单词</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8A%A8%E8%AF%8D-2"><span class="nav-number">11.1.1.</span> <span class="nav-text"> 动词</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%88%E4%BB%BD"><span class="nav-number">11.1.2.</span> <span class="nav-text"> 月份</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%97%A5%E6%9C%9F"><span class="nav-number">11.1.3.</span> <span class="nav-text"> 日期</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B6%E5%AE%83-2"><span class="nav-number">11.1.4.</span> <span class="nav-text"> 其它</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%AD%E6%B3%95-6"><span class="nav-number">11.2.</span> <span class="nav-text"> 语法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#l7-%E6%9D%8E%E3%81%95%E3%82%93%E3%81%AF-%E6%AF%8E%E6%97%A5-%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC%E3%82%92-%E9%A3%B2%E3%81%BF%E3%81%BE%E3%81%99"><span class="nav-number">12.</span> <span class="nav-text"> L7 - 李さんは　毎日　コーヒーを　飲みます</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E8%AF%8D-6"><span class="nav-number">12.1.</span> <span class="nav-text"> 单词</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8A%A8%E8%AF%8D-3"><span class="nav-number">12.1.1.</span> <span class="nav-text"> 动词</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B6%E5%AE%83-3"><span class="nav-number">12.1.2.</span> <span class="nav-text"> 其它</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%AD%E6%B3%95-7"><span class="nav-number">12.2.</span> <span class="nav-text"> 语法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#l8-%E6%9D%8E%E3%81%95%E3%82%93%E3%81%AF-%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%81%A7-%E6%89%8B%E7%B4%99%E3%82%92-%E6%9B%B8%E3%81%8D%E3%81%BE%E3%81%99"><span class="nav-number">13.</span> <span class="nav-text"> L8 - 李さんは　日本語で　手紙を　書きます</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E8%AF%8D-7"><span class="nav-number">13.1.</span> <span class="nav-text"> 单词</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8A%A8%E8%AF%8D-4"><span class="nav-number">13.1.1.</span> <span class="nav-text"> 动词</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B6%E5%AE%83-4"><span class="nav-number">13.1.2.</span> <span class="nav-text"> 其它</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%AD%E6%B3%95-8"><span class="nav-number">13.2.</span> <span class="nav-text"> 语法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#l9-%E5%9B%9B%E5%B7%9D%E6%96%99%E7%90%86%E3%81%AF-%E8%BE%9B%E3%81%84%E3%81%A7%E3%81%99"><span class="nav-number">14.</span> <span class="nav-text"> L9 - 四川料理は　辛いです</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E8%AF%8D-8"><span class="nav-number">14.1.</span> <span class="nav-text"> 单词</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A3%B0%E8%B0%83%E5%8F%98%E5%8C%96"><span class="nav-number">14.2.</span> <span class="nav-text"> 声调变化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%AD%E6%B3%95-9"><span class="nav-number">14.3.</span> <span class="nav-text"> 语法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#l10-%E4%BA%AC%E9%83%BD%E3%81%AE-%E7%B4%85%E8%91%89%E3%81%AF-%E6%9C%89%E5%90%8D%E3%81%A7%E3%81%99"><span class="nav-number">15.</span> <span class="nav-text"> L10 - 京都の　紅葉は　有名です</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E8%AF%8D-9"><span class="nav-number">15.1.</span> <span class="nav-text"> 单词</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%AD%E6%B3%95-10"><span class="nav-number">15.2.</span> <span class="nav-text"> 语法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#l11-%E5%B0%8F%E9%87%8E%E3%81%95%E3%82%93%E3%81%AF-%E6%AD%8C%E3%81%8C-%E5%A5%BD%E3%81%8D%E3%81%A7%E3%81%99"><span class="nav-number">16.</span> <span class="nav-text"> L11 - 小野さんは　歌が　好きです</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E8%AF%8D-10"><span class="nav-number">16.1.</span> <span class="nav-text"> 单词</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%AD%E6%B3%95-11"><span class="nav-number">16.2.</span> <span class="nav-text"> 语法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#l12-%E6%9D%8E%E3%81%95%E3%82%93%E3%81%AF-%E6%A3%AE%E3%81%95%E3%82%93%E3%82%88%E3%82%8A-%E8%8B%A5%E3%81%84%E3%81%A7%E3%81%99"><span class="nav-number">17.</span> <span class="nav-text"> L12 - 李さんは　森さんより　若いです</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E8%AF%8D-11"><span class="nav-number">17.1.</span> <span class="nav-text"> 单词</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%AD%E6%B3%95-12"><span class="nav-number">17.2.</span> <span class="nav-text"> 语法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#l13-%E6%9C%BA%E3%81%AE-%E4%B8%8A%E3%81%AB-%E6%9C%AC%E3%81%8C-3%E5%86%8A-%E3%81%82%E3%82%8A%E3%81%BE%E3%81%99"><span class="nav-number">18.</span> <span class="nav-text"> L13 - 机の　上に　本が　３冊　あります</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E8%AF%8D-12"><span class="nav-number">18.1.</span> <span class="nav-text"> 单词</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%87%8F%E8%AF%8D"><span class="nav-number">18.2.</span> <span class="nav-text"> 量词</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%AD%E6%B3%95-13"><span class="nav-number">18.3.</span> <span class="nav-text"> 语法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#l14-%E6%98%A8%E6%97%A5-%E3%83%87%E3%83%91%E3%83%BC%E3%83%88%E3%81%B8-%E8%A1%8C%E3%81%A3%E3%81%A6-%E8%B2%B7%E3%81%84%E7%89%A9%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F"><span class="nav-number">19.</span> <span class="nav-text"> L14 - 昨日　デパートへ　行って、買い物しました</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E8%AF%8D-13"><span class="nav-number">19.1.</span> <span class="nav-text"> 单词</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8A%A8%E8%AF%8D-5"><span class="nav-number">19.2.</span> <span class="nav-text"> 动词</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E3%81%A6%E5%BD%A2"><span class="nav-number">19.3.</span> <span class="nav-text"> て形</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%AD%E6%B3%95-14"><span class="nav-number">19.4.</span> <span class="nav-text"> 语法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#l15-%E5%B0%8F%E9%87%8E%E3%81%95%E3%82%93%E3%81%AF-%E4%BB%8A-%E6%96%B0%E8%81%9E%E3%82%92-%E8%AA%AD%E3%82%93%E3%81%A7-%E3%81%84%E3%81%BE%E3%81%99"><span class="nav-number">20.</span> <span class="nav-text"> L15 - 小野さんは　今　新聞を　読んで　います</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E8%AF%8D-14"><span class="nav-number">20.1.</span> <span class="nav-text"> 单词</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%AD%E6%B3%95-15"><span class="nav-number">20.2.</span> <span class="nav-text"> 语法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#l16-%E3%83%9B%E3%83%86%E3%83%AB%E3%81%AE-%E9%83%A8%E5%B1%8B%E3%81%AF-%E5%BA%83%E3%81%8F%E3%81%A6-%E6%98%8E%E3%82%8B%E3%81%84%E3%81%A7%E3%81%99"><span class="nav-number">21.</span> <span class="nav-text"> L16 - ホテルの　部屋は　広くて　明るいです</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E8%AF%8D-15"><span class="nav-number">21.1.</span> <span class="nav-text"> 单词</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%AD%E6%B3%95-16"><span class="nav-number">21.2.</span> <span class="nav-text"> 语法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#l17-%E7%A7%81%E3%81%AF-%E6%96%B0%E3%81%97%E3%81%84-%E6%B4%8B%E6%9C%8D%E3%81%8C-%E6%AC%B2%E3%81%97%E3%81%84%E3%81%A7%E3%81%99"><span class="nav-number">22.</span> <span class="nav-text"> L17 - 私は　新しい　洋服が　欲しいです</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E8%AF%8D-16"><span class="nav-number">22.1.</span> <span class="nav-text"> 单词</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%AD%E6%B3%95%E6%84%BF%E6%9C%9B-%E5%B8%8C%E6%9C%9B%E5%92%8C%E9%82%80%E8%AF%B7"><span class="nav-number">22.2.</span> <span class="nav-text"> 语法（愿望、希望和邀请）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%AD%E6%B3%95%E5%85%B6%E5%AE%83"><span class="nav-number">22.3.</span> <span class="nav-text"> 语法（其它）</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#l18-%E6%90%BA%E5%B8%AF%E9%9B%BB%E8%A9%B1%E3%81%AF-%E3%81%A8%E3%81%A6%E3%82%82-%E5%B0%8F%E3%81%95%E3%81%8F-%E3%81%AA%E3%82%8A%E3%81%BE%E3%81%97%E3%81%9F"><span class="nav-number">23.</span> <span class="nav-text"> L18 - 携帯電話は　とても　小さく　なりました</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E8%AF%8D-17"><span class="nav-number">23.1.</span> <span class="nav-text"> 单词</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%AD%E6%B3%95-17"><span class="nav-number">23.2.</span> <span class="nav-text"> 语法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#l19-%E9%83%A8%E5%B1%8B%E3%81%AE-%E3%81%8B%E3%81%8E%E3%82%92-%E5%BF%98%E3%82%8C%E3%81%AA%E3%81%84%E3%81%A7-%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84"><span class="nav-number">24.</span> <span class="nav-text"> L19 - 部屋の　かぎを　忘れないで　ください</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E8%AF%8D-18"><span class="nav-number">24.1.</span> <span class="nav-text"> 单词</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E3%81%AA%E3%81%84%E5%BD%A2"><span class="nav-number">24.2.</span> <span class="nav-text"> ない形</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%AD%E6%B3%95-18"><span class="nav-number">24.3.</span> <span class="nav-text"> 语法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#l20-%E3%82%B9%E3%83%9F%E3%82%B9%E3%81%95%E3%82%93%E3%81%AF-%E3%83%94%E3%82%A2%E3%83%8E%E3%82%92-%E5%BC%BE%E3%81%8F-%E3%81%93%E3%81%A8%E3%81%8C-%E3%81%A7%E3%81%8D%E3%81%BE%E3%81%99"><span class="nav-number">25.</span> <span class="nav-text"> L20 - スミスさんは　ピアノを　弾く　ことが　できます</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E8%AF%8D-19"><span class="nav-number">25.1.</span> <span class="nav-text"> 单词</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%AD%E6%B3%95-19"><span class="nav-number">25.2.</span> <span class="nav-text"> 语法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#l21-%E7%A7%81%E3%81%AF-%E3%81%99%E3%81%8D%E7%84%BC%E3%81%8D%E3%82%92-%E9%A3%9F%E3%81%B9%E3%81%9F-%E3%81%93%E3%81%A8%E3%81%8C-%E3%81%82%E3%82%8A%E3%81%BE%E3%81%99"><span class="nav-number">26.</span> <span class="nav-text"> L21 - 私は　すき焼きを　食べた　ことが　あります</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E8%AF%8D-20"><span class="nav-number">26.1.</span> <span class="nav-text"> 单词</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E3%81%9F%E5%BD%A2"><span class="nav-number">26.2.</span> <span class="nav-text"> た形</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%AD%E6%B3%95-20"><span class="nav-number">26.3.</span> <span class="nav-text"> 语法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#l22-%E6%A3%AE%E3%81%95%E3%82%93%E3%81%AF-%E6%AF%8E%E6%99%A9-%E3%83%86%E3%83%AC%E3%83%93%E3%82%92-%E8%A6%8B%E3%82%8B"><span class="nav-number">27.</span> <span class="nav-text"> L22 - 森さんは　毎晩　テレビを　見る</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E8%AF%8D-21"><span class="nav-number">27.1.</span> <span class="nav-text"> 单词</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AE%80%E4%BD%93%E5%BD%A2"><span class="nav-number">27.2.</span> <span class="nav-text"> 简体形</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8A%A8%E8%AF%8D-6"><span class="nav-number">27.2.1.</span> <span class="nav-text"> 动词</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%E7%B1%BB%E5%BD%A2%E5%AE%B9%E8%AF%8D"><span class="nav-number">27.2.2.</span> <span class="nav-text"> 一类形容词</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C%E7%B1%BB%E5%BD%A2%E5%AE%B9%E8%AF%8D%E5%92%8C%E5%90%8D%E8%AF%8D"><span class="nav-number">27.2.3.</span> <span class="nav-text"> 二类形容词和名词</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E3%81%91%E3%81%A9%E8%BD%AC%E6%8A%98%E5%85%B3%E7%B3%BB"><span class="nav-number">27.2.4.</span> <span class="nav-text"> けど（转折关系）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E3%81%8B%E3%81%AA%E7%AE%80%E4%BD%93%E5%8A%A9%E8%AF%8D"><span class="nav-number">27.2.5.</span> <span class="nav-text"> かな（简体助词）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E3%81%AE%E7%AE%80%E4%BD%93%E5%8A%A9%E8%AF%8D"><span class="nav-number">27.2.6.</span> <span class="nav-text"> の（简体助词）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%AD%E6%B3%95-21"><span class="nav-number">27.3.</span> <span class="nav-text"> 语法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#l23-%E4%BC%91%E3%81%BF%E3%81%AE%E6%97%A5-%E6%95%A3%E6%AD%A9%E3%81%97%E3%81%9F%E3%82%8A-%E8%B2%B7%E3%81%84%E7%89%A9%E3%81%AB-%E8%A1%8C%E3%81%A3%E3%81%9F%E3%82%8A-%E3%81%97%E3%81%BE%E3%81%99"><span class="nav-number">28.</span> <span class="nav-text"> L23 - 休みの日、散歩したり　買い物に　行ったり　します</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E8%AF%8D-22"><span class="nav-number">28.1.</span> <span class="nav-text"> 单词</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%AD%E6%B3%95-22"><span class="nav-number">28.2.</span> <span class="nav-text"> 语法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#l24-%E6%9D%8E%E3%81%95%E3%82%93%E3%81%AF-%E3%82%82%E3%81%86-%E3%81%99%E3%81%90-%E6%9D%A5%E3%82%8B%E3%81%A8-%E6%80%9D%E3%81%84%E3%81%BE%E3%81%99"><span class="nav-number">29.</span> <span class="nav-text"> L24 - 李さんは　もう　すぐ　来ると　思います</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E8%AF%8D-23"><span class="nav-number">29.1.</span> <span class="nav-text"> 单词</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B8%B8%E7%94%A8%E5%AF%B9%E8%AF%9D"><span class="nav-number">29.2.</span> <span class="nav-text"> 常用对话</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%AD%E6%B3%95-23"><span class="nav-number">29.3.</span> <span class="nav-text"> 语法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#jlpt-n5-%E3%82%B2%E3%83%83%E3%83%88"><span class="nav-number">30.</span> <span class="nav-text"> JLPT N5 ゲット！</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="oscarcx123"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">oscarcx123</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">32</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/oscarcx123" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;oscarcx123" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://oscarcx.com/japanese/jp1-notes.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="oscarcx123">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Cow">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="新标日初级上笔记（N5） | Cow">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          新标日初级上笔记（N5）
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-05-24 12:32:16" itemprop="dateCreated datePublished" datetime="2021-05-24T12:32:16+00:00">2021-05-24</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/japanese/" itemprop="url" rel="index"><span itemprop="name">日语</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>35k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1:56</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>自学日语，也是无纸化笔记的尝试~</p>
+<span id="more"></span>
+<p>注意：由于技术限制，中日混合输入的时候，编码相同的日语汉字会被渲染成中文汉字（<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E6%97%A5%E9%9F%93%E7%B5%B1%E4%B8%80%E8%A1%A8%E6%84%8F%E6%96%87%E5%AD%97">CJK Unified Ideographs</a>）。两者之间偶尔会有细微差别，若有疑问请以词典为准~</p>
+<h1 id="五十音图"><a class="markdownIt-Anchor" href="#五十音图"></a> 五十音图</h1>
+<p>这玩意儿就是死记硬背，别强行搞那么多乱七八糟的联想。而且这一部分我认为非常重要，一定要打好基础，否则随便读一句话就呃呃呃半天可就糟了。</p>
+<p>五十音图只是一个叫法，实际上只有46音（但是分平假名片假名，所以还要x2）。一天背10个，应该算是比较舒服的节奏，而且不容易混淆相似的假名。五十音图搞定之后，剩下的浊音和拗音，花个两天就能熟悉了。</p>
+<p>我花了两个星期，把五十音图背的滚瓜烂熟，横着竖着乱序都能随便写。</p>
+<p>这里推荐两个练习网站：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://realkana.com/hiragana/">根据假名写罗马音</a></li>
+<li><a href="https://oscarcx.com/gojuon-practice/">根据罗马音写假名</a>（这个是我自己糊的网页）</li>
+</ul>
+<h1 id="入门单元"><a class="markdownIt-Anchor" href="#入门单元"></a> 入门单元</h1>
+<p><strong>元音的清化（<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Japanese_phonology#Devoicing">Vowel Devoicing</a>）</strong></p>
+<ul>
+<li>元音必须是一个短的「i」/「u」</li>
+<li>在元音前面的必须是清辅音（voiceless consonant）:
+<ul>
+<li>/k/</li>
+<li>/s/ (也包括「しゅ」)</li>
+<li>/t/</li>
+<li>/h/ (「ふ」和「ひ」)</li>
+<li>/p/ (这类比较少见)</li>
+</ul>
+</li>
+<li>元音必须在单词末尾，或者后面跟着另一个清辅音</li>
+<li>清化现象不可以连续出现
+<ul>
+<li>s<strong>u</strong>ki（「i」不清化）</li>
+<li>ts<strong>u</strong>kush<strong>i</strong>ta（中间的「u」不清化）</li>
+</ul>
+</li>
+<li>例：
+<ul>
+<li>清化：s<strong>u</strong>koshi，h<strong>i</strong>kari</li>
+<li>不清化：s<strong>u</strong>goi，b<strong>i</strong>kkuri</li>
+</ul>
+</li>
+</ul>
+<p>所以，「おや<strong>す</strong>みなさい」的「す」不清化，但是「おはようございま<strong>す</strong>」的「す」要清化。通常「です」和「ます」的「す」都会清化。</p>
+<p>参考：<a target="_blank" rel="noopener" href="https://japanese.stackexchange.com/questions/1095/what-are-the-rules-regarding-mute-vowels-u-after-s-and-i-after-sh">What are the rules regarding &quot;mute vowels&quot; (&quot;u&quot; after &quot;s&quot; and &quot;i&quot; after &quot;sh&quot;)?</a></p>
+<p><strong>长音的书写方法</strong></p>
+<ul>
+<li>「あいう」段 + 「あいう」
+<ul>
+<li>e.g., おか<strong>あ</strong>さん（母亲）、ほし<strong>い</strong>（想要）、たいふ<strong>う</strong>（台风）</li>
+</ul>
+</li>
+<li>「え」段 + 「い」，读作「え」
+<ul>
+<li>e.g., とけ<strong>い</strong>（表）、え<strong>い</strong>が（电影）、れ<strong>い</strong>ぞうこ（冰箱）</li>
+<li>例外：おね<strong>え</strong>さん（姐姐）、え<strong>え</strong>（是）</li>
+</ul>
+</li>
+<li>「お」段 + 「う」，读作「お」
+<ul>
+<li>e.g., そ<strong>う</strong>じ（打扫）、おと<strong>う</strong>と（弟弟）、こ<strong>う</strong>つう（交通）</li>
+<li>例外：と<strong>お</strong>い（远）、お<strong>お</strong>きい（大）</li>
+<li>注意：汉字是「お」段，后面接「う」的话，单独发音
+<ul>
+<li>例：思う（おも<strong>う</strong>）、吸う（す<strong>う</strong>）</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>片假名 + ー
+<ul>
+<li>e.g., キ<strong>ー</strong>（钥匙）、コ<strong>ー</strong>ヒ<strong>ー</strong>（咖啡）</li>
+</ul>
+</li>
+</ul>
+<h1 id="背单词"><a class="markdownIt-Anchor" href="#背单词"></a> 背单词</h1>
+<h2 id="单词声调"><a class="markdownIt-Anchor" href="#单词声调"></a> 单词声调</h2>
+<p>注意：背单词的时候一定要连带<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%97%A5%E8%AA%9E%E9%AB%98%E4%BD%8E%E9%9F%B3%E8%AA%BF">高低声调（pitch accent）</a>一起记住。声调的不同，会对应不同的字，也就是单词和意思全都变了。各种网课老师的动词音调不一定对，一定要挨个查字典！</p>
+<p>声调有两个特性：</p>
+<ul>
+<li>第一个音节与第二个音节的音高必定不同</li>
+<li>在同一个词里，声调一旦降下去，不能再起来</li>
+</ul>
+<p>下面两个字的假名完全一样，仅仅声调不同：</p>
+<ul>
+<li>桃 (peach)：「もも」 (Low-High / 0)
+<ul>
+<li>例外：女性名字「桃/もも/モモ」，跟「腿」一个读音</li>
+</ul>
+</li>
+<li>腿 (thigh)：「もも」 (High-Low / 1)</li>
+</ul>
+<p>声调怎么数：</p>
+<ul>
+<li>以假名为单位</li>
+<li>拗音（きゃ等）、促音（っ）都算作一个假名</li>
+<li>ほっきょくせい [4] -&gt; ほ/っ/きょ/く/(Low)せ/い</li>
+</ul>
+<p>参考：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://japanese.stackexchange.com/questions/53487/what-is-the-difference-in-pronunciation-between-%E6%A1%83%E3%82%82%E3%82%82-and-%E8%85%BF%E3%82%82%E3%82%82">What is the difference in pronunciation between 桃 and 腿?</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.reddit.com/r/LearnJapanese/comments/2lhq9e/true_phonetic_dictionary_with_pitch_accent">True Phonetic Dictionary with Pitch Accent?</a></li>
+</ul>
+<h2 id="熟字训-当て字"><a class="markdownIt-Anchor" href="#熟字训-当て字"></a> 熟字训 / 当て字</h2>
+<p><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%86%9F%E5%AD%97%E8%A8%93">熟字训（じゅくじくん）</a>，是以每个“熟语”（由两个或以上的汉字组成的词汇）为单位使用的训读。换句话说，读音跟单个汉字的音读训读完全没关系，要作为一个整体来记。例如：お土産（おみやげ）[L2]，今日（きょう）[L3]，浴衣（ゆかた）[L9]，可愛い（かわいい）[L9]。</p>
+<p><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Ateji">当て字（あてじ）</a>，是按照发音来借字，并无视字本来的用法。例如「すし」一般会写作汉字「寿司」，因为「寿」的音读是「す」，「司」的音读是「し」。但是「寿司」二字本身的意思跟“sushi”这种食物完全没关系。广义上的「当て字」当然也包括「熟字训」。</p>
+<h2 id="連濁"><a class="markdownIt-Anchor" href="#連濁"></a> 連濁</h2>
+<p><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Rendaku">連濁（れんだく）</a>，指日语中两个词组合构成复合词时，复合词后一部分的词首清音常变为浊音的现象。</p>
+<p>这里给出几个例子：</p>
+<ul>
+<li>中（ちゅう）+ 国（こく）= 中国（ちゅう<strong>ご</strong>く）（L1）</li>
+<li>手（て）+ 紙（かみ）= 手紙（て<strong>が</strong>み）（L7）</li>
+<li>時（とき）+ 時（とき）= 時々(とき<strong>ど</strong>き) （L11）</li>
+</ul>
+<p>连浊规则比较繁杂，而且例外很多，见一个记一个即可~</p>
+<h2 id="字典"><a class="markdownIt-Anchor" href="#字典"></a> 字典</h2>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.mojidict.com/search">MOJi辞書</a>，日中词典，有声调，能听发音，也有释义和例句，就是要注册登录。需要注意的是，部分发音不对，个别声调标注有误。</li>
+<li><a target="_blank" rel="noopener" href="https://jisho.org/">Jisho</a>，日英词典，在释义、读音、例句、字形都有不俗的表现（有时候中文释义可能比较困惑，这时候可以看英文的）</li>
+<li><a target="_blank" rel="noopener" href="https://sakura-paris.org/dict/NHK%E6%97%A5%E6%9C%AC%E8%AA%9E%E7%99%BA%E9%9F%B3%E3%82%A2%E3%82%AF%E3%82%BB%E3%83%B3%E3%83%88%E8%BE%9E%E5%85%B8/">広辞苑無料検索（NHK日本語発音アクセント辞典）</a>，用来查声调，似乎都是真人朗读，而且针对尾高型单词提供「助詞付」（后面接续助词）版本来帮助记忆</li>
+<li><a target="_blank" rel="noopener" href="https://www.wadoku.de/">和独辞典</a>，日德词典，仅用于查单词声调（以数字和折线显示）</li>
+<li><a target="_blank" rel="noopener" href="http://www.gavo.t.u-tokyo.ac.jp/ojad/phrasing/index">OJAD韻律読み上げチュータスズキクン</a>，可以分析任意句子的声调，特别实用</li>
+</ul>
+<h2 id="单词软件"><a class="markdownIt-Anchor" href="#单词软件"></a> 单词软件</h2>
+<p>我用的是开源项目<a target="_blank" rel="noopener" href="https://github.com/ankitects/anki">Anki</a>，单词卡可以在<a target="_blank" rel="noopener" href="https://ankiweb.net/shared/decks/japanese">Japanese - AnkiWeb</a>找到。平板上我使用<a target="_blank" rel="noopener" href="https://github.com/ankidroid/Anki-Android">Anki-Android</a>，在注册账号之后可以跟电脑版同步进度。</p>
+<p>我个人使用的单词卡是<a target="_blank" rel="noopener" href="https://ankiweb.net/shared/info/2051172113">新标准日本语 · 初级 (释义到日文) 教材原版发音</a>，比跟着官方录音一个个暂停跟读方便多了，非常感谢大佬们的整理。</p>
+<p>安装Anki之后，双击下载的单词包就会自动导入。我个人习惯把每一课的单词分开背，所以点击牌组，然后选择“自定义学习”，选择“按照卡片状态或标签学习”，然后选择对应标签，就会生成指定一课的单词表了。</p>
+<p>Anki的单词卡默认字体特别小，好在是用css控制的，可以很容易的修改。在主界面按“B”，然后点击“卡片...”（Cards...），在模板区域选中“样式”（Styling），即可随意修改。下面是我的css配置。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@font-face</span> &#123;</span><br><span class="line"> <span class="attribute">font-family</span>: IPAexMincho; <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">&#x27;_ipaexm.ttf&#x27;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.jp</span> &#123;</span><br><span class="line">  <span class="attribute">font-family</span>: IPAexMincho;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.card</span> &#123;</span><br><span class="line"> <span class="attribute">font-family</span>: arial;</span><br><span class="line"> <span class="attribute">font-size</span>: <span class="number">36px</span>;</span><br><span class="line"> <span class="attribute">text-align</span>: center;</span><br><span class="line"> <span class="attribute">color</span>: black;</span><br><span class="line"> <span class="attribute">background-color</span>: white;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">@media</span> (<span class="attribute">min-width</span>:<span class="number">320px</span>) &#123;</span><br><span class="line">  <span class="selector-class">.android</span> <span class="selector-class">.card</span> &#123; </span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">32px</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">@media</span> (<span class="attribute">min-width</span>:<span class="number">768px</span>) &#123;</span><br><span class="line">  <span class="selector-class">.android</span> <span class="selector-class">.card</span> &#123; </span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">48px</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">img</span> &#123;</span><br><span class="line">  <span class="attribute">height</span>: auto <span class="meta">!important</span>;</span><br><span class="line">  <span class="attribute">max-height</span>: <span class="number">300px</span> <span class="meta">!important</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>有些单词没什么用，例如人名公司名什么的，可以把对应单词卡删掉。Anki主界面点击“浏览”就可以看到所有单词，然后选中不想背的，按<code>Ctrl</code>+<code>Del</code>删除。</p>
+<p>复制卡片可以使用<a target="_blank" rel="noopener" href="https://ankiweb.net/shared/info/1114271285">Duplicate and Reorder</a>这个插件，在“浏览”页面，按照“添加日期”排序时，选中卡片，按<code>Alt</code>+<code>D</code>就能复制卡片。这个在额外补充一些单词的时候特别方便，不用重新填写所有信息。</p>
+<p>参考：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://forums.ankiweb.net/t/can-we-review-cards-with-specified-tag/870">Can we review cards with specified tag?</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.reddit.com/r/LearnJapanese/comments/37ddh7/any_way_to_make_flashcard_fonts_bigger_in_anki/">Any way to make flashcard fonts bigger in Anki?</a></li>
+</ul>
+<h1 id="输入法"><a class="markdownIt-Anchor" href="#输入法"></a> 输入法</h1>
+<p>Win10自带的日语输入法太烂了，不推荐使用。建议安装<a target="_blank" rel="noopener" href="https://www.google.co.jp/ime/">Google日语输入法</a>，不管是词库还是输入体验都吊打微软。这里给出一些常用的快捷键组合。</p>
+<table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>效果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ALT + Caps</td>
+<td>直接输入 -&gt; 平假名 -&gt; 片假名</td>
+</tr>
+<tr>
+<td>CTRL + Caps</td>
+<td>片假名 -&gt; 平假名</td>
+</tr>
+<tr>
+<td>ALT + ~</td>
+<td>直接输入 &lt;-&gt; 最后用过的模式（默认平假名）</td>
+</tr>
+</tbody>
+</table>
+<p>在输入的时候，下面这些快捷键会生效</p>
+<table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>效果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>F6</td>
+<td>转换成平假名</td>
+</tr>
+<tr>
+<td>F7</td>
+<td>转换成片假名</td>
+</tr>
+<tr>
+<td>F8</td>
+<td>转换成半角片假名（节省空间，多用于银行和字幕）</td>
+</tr>
+<tr>
+<td>F9</td>
+<td>转换成全角字母数字</td>
+</tr>
+<tr>
+<td>F10</td>
+<td>转换成半角字母数字</td>
+</tr>
+<tr>
+<td>Spacebar</td>
+<td>第一次按会输出默认候选词，继续按会展开候选列表并选中第二个候选词</td>
+</tr>
+<tr>
+<td>TAB</td>
+<td>展开候选词列表</td>
+</tr>
+</tbody>
+</table>
+<p>注意，无论按下空格还是手动选中候选词，检查无误后，不需要进行任何确认操作，直接继续输入即可。</p>
+<p>「は」和「へ」作为助词使用时，「は」读作 wa，「へ」读作 e，但是打字仍然按原来的读音。同理，「を」读作 o 但是输入 wo。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">例子：わたしは</span><br><span class="line">读作：watashiwa</span><br><span class="line">输入：watashiha</span><br></pre></td></tr></table></figure>
+<p>「っ」（促音）有两种方法输入：</p>
+<ul>
+<li>xtsu</li>
+<li>把跟着促音的假名的首字母输入两次
+<ul>
+<li>例：喫茶店（ki<strong>ssa</strong>tenn）</li>
+</ul>
+</li>
+</ul>
+<p>其它大部分“小假名”也都可以通过附加 x 的方式输入，例如：</p>
+<ul>
+<li>デュ（dexyu / dhu）
+<ul>
+<li>这个如果直接输入 dyu 会打出「ヂュ」</li>
+</ul>
+</li>
+<li>ティ（texi / thi）</li>
+</ul>
+<p>读音一样的假名的输入方法：</p>
+<ul>
+<li>「ず」zu；「づ」du</li>
+<li>「じ」ji；「ぢ」di</li>
+</ul>
+<p>「・」：按「/」键（在句号右边）</p>
+<p>参考：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.reddit.com/r/LearnJapanese/comments/2w5bux/japanese_ime_input_annoyance/">Japanese IME input annoyance</a></li>
+<li><a target="_blank" rel="noopener" href="https://japanese.meta.stackexchange.com/questions/1827/can-i-type-%E3%83%87%E3%83%A5-without-using-the-small-letter-modifier">Can I type デュ without using the small letter modifier?</a></li>
+<li><a target="_blank" rel="noopener" href="https://superuser.com/questions/474554/how-can-i-type-%E3%83%86%E3%82%A3-tei-small-%E3%82%A3-in-japanese-on-osx/474556">How can I type ティ “ti” (small ィ) in Japanese?</a></li>
+</ul>
+<h1 id="标点符号逗号"><a class="markdownIt-Anchor" href="#标点符号逗号"></a> 标点符号（逗号）</h1>
+<p>新标日系列教材中使用的「，。」并没有错，是遵照了日本文部省在昭和26年（1951年）提出的的公文书写规范。但是，实际上基本没人用「，。」，新闻报道、杂志、报纸等大众媒体全都用的「、。」。所以我按照日本人的日常书写习惯，使用「、。」。</p>
+<h1 id="l1-李さんは-中国人です"><a class="markdownIt-Anchor" href="#l1-李さんは-中国人です"></a> L1 - 李さんは　中国人です</h1>
+<h2 id="语法"><a class="markdownIt-Anchor" href="#语法"></a> 语法</h2>
+<p><strong>[名]は　[名]です</strong></p>
+<ul>
+<li>判断句：A是B</li>
+<li>例句：
+<ul>
+<li>李（り）さんは　中国人（ちゅごくじん）です。</li>
+<li>私（わたし）は　学生（がくせい）です。</li>
+</ul>
+</li>
+</ul>
+<p><strong>[名]は　[名]では　ありません</strong></p>
+<ul>
+<li>判断句：A不是B</li>
+<li>例句：
+<ul>
+<li>李（り）さんは　日本人（にほんじん）では　ありません。</li>
+</ul>
+</li>
+<li>正式程度从低到高：
+<ul>
+<li>じゃない（です）</li>
+<li>ではない（です）</li>
+<li>じゃありません</li>
+<li>ではありません</li>
+</ul>
+</li>
+</ul>
+<p>参考：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://japanese.stackexchange.com/questions/12846/negation-with-%E3%81%A7%E3%81%AF%E3%81%82%E3%82%8A%E3%81%BE%E3%81%9B%E3%82%93-vs-%E3%81%98%E3%82%83%E3%81%AA%E3%81%84">Negation with ではありません vs. じゃない</a></li>
+<li><a target="_blank" rel="noopener" href="https://japanese.stackexchange.com/questions/2574/is-%E3%81%98%E3%82%83%E3%81%AA%E3%81%84%E3%81%A7%E3%81%99-equally-correct-as-%E3%81%98%E3%82%83%E3%81%82%E3%82%8A%E3%81%BE%E3%81%9B%E3%82%93">Is じゃないです equally correct as じゃありません?</a></li>
+</ul>
+<p><strong>[名]は　[名]ですか</strong></p>
+<ul>
+<li>疑问句：A是B吗？</li>
+<li>注意：句尾升调表示疑问，降调表示感叹</li>
+<li>日语疑问句<strong>不用问号</strong>！</li>
+<li>例句：
+<ul>
+<li>李（り）さんは　中国人（ちゅごくじん）ですか。</li>
+</ul>
+</li>
+<li>应答：
+<ul>
+<li>はい（是）
+<ul>
+<li>はい、そうです。</li>
+<li>はい、[名]です。</li>
+</ul>
+</li>
+<li>いいえ（不是）
+<ul>
+<li>いいえ、ちがいます。</li>
+<li>いいえ、[名]では　ありません。</li>
+</ul>
+</li>
+<li>わかりません（不知道）</li>
+</ul>
+</li>
+</ul>
+<p><strong>[名]の　[名]</strong></p>
+<ul>
+<li><code>の</code>在绝大部分情况都等于“的”，但是有些时候中文会把“的”省略
+<ul>
+<li>日语书 -&gt; 日本語<strong>の</strong>本</li>
+<li>大学老师 -&gt; 大学<strong>の</strong>先生</li>
+</ul>
+</li>
+</ul>
+<h1 id="l2-これは本です"><a class="markdownIt-Anchor" href="#l2-これは本です"></a> L2 - これは本です</h1>
+<h2 id="单词"><a class="markdownIt-Anchor" href="#单词"></a> 单词</h2>
+<p>鉛筆（えんぴつ）- 铅笔</p>
+<ul>
+<li>注意：「enp<strong>i</strong>tsu」有元音清化（i 不发音）</li>
+<li>ペン（pen）- 不管什么笔都可以用这个词</li>
+</ul>
+<p>靴（くつ）[2] - 鞋</p>
+<ul>
+<li>注意元音弱化（k<strong>u</strong>tsu）</li>
+<li>声调：尾高型，所以后面接其它词的时候，例如「くつは」的「は」，需要降调</li>
+</ul>
+<p>新聞（しんぶん）- 报纸</p>
+<ul>
+<li>ニュース（news）- 这个才是中文里的“新闻”</li>
+<li>注意：「聞」的「耳」不出头（<a target="_blank" rel="noopener" href="https://jisho.org/search/%E8%81%9E%20%23kanji">具体写法</a>）</li>
+</ul>
+<p>テレビ（television）- 电视机</p>
+<ul>
+<li>番組（ばんぐみ）[0] - 节目</li>
+<li>テレビ番組（ばんぐみ）[4] - 电视节目</li>
+</ul>
+<p>ラジオ（radio）- 收音机</p>
+<ul>
+<li>ラジオ番組（ばんぐみ）[4] - 电台节目</li>
+</ul>
+<p>電話（でんわ）- 电话</p>
+<ul>
+<li>携帯電話（けいたいでんわ）[5] - 手机
+<ul>
+<li>但是这个词太长了，所以一般都用下面这个</li>
+</ul>
+</li>
+<li>携帯（けいたい）[0] - 手机</li>
+<li>スマホ（smartphone）[0] - 智能手机</li>
+</ul>
+<p>かぎ - 钥匙 / 锁</p>
+<ul>
+<li>严格来说，「鍵（かぎ）」是钥匙，「錠（じょう）」是锁。但是在日常对话中几乎不会用到「錠」，因为「鍵」也可以用来指代锁，所以需要根据上下文判断「鍵」的意思。</li>
+<li>有些固定词组会使用「錠」来指代锁
+<ul>
+<li>施錠（せじょう）- (to) lock</li>
+<li>開錠（かいじょう）- unlock</li>
+<li>南京錠（なんきんじょう）- padlock</li>
+</ul>
+</li>
+<li>参考：<a target="_blank" rel="noopener" href="https://japanese.stackexchange.com/questions/5405/how-can-you-figure-out-whether-%E9%8D%B5-%E3%81%8B%E3%81%8E-means-lock-or-key">How can you figure out whether 鍵 means &quot;lock&quot; or &quot;key&quot;?</a></li>
+</ul>
+<p>方（かた）- （敬称）位，人</p>
+<ul>
+<li>あの人（ひと）- 那个人</li>
+<li>あの方（かた）- 那位</li>
+</ul>
+<p>家族成员</p>
+<ul>
+<li>母（はは）- （我）母亲</li>
+<li>お母（かあ）さん - 母亲</li>
+<li>父（ちち）- （我）父亲</li>
+<li>お父（とう）さん - 父亲</li>
+<li>お兄さん（おにいさん）- 哥哥</li>
+<li>お姉さん（おねえさん）- 姐姐</li>
+<li>おばさん [0] - 伯母，叔母</li>
+<li>おばあさん [2] - 奶奶，外婆</li>
+<li>おじさん [0] - 伯父、叔父</li>
+<li>おじいさん [2] - 爷爷，外公</li>
+</ul>
+<p>「母」和「お母さん」的区别</p>
+<ul>
+<li>母
+<ul>
+<li>跟别人谈话时提到自己母亲
+<ul>
+<li>これをあなたに話したのは（私の）母ですか。</li>
+<li>是（我）母亲告诉你的吗？</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>お母さん
+<ul>
+<li>谈话时提及对方的母亲
+<ul>
+<li>あなたのお母さんは元気ですか？</li>
+<li>你母亲还好吗？</li>
+</ul>
+</li>
+<li>跟自己母亲说话
+<ul>
+<li>お母さんはどう思う？</li>
+<li>妈，你怎么看？</li>
+</ul>
+</li>
+<li>母亲跟你说话时的自称
+<ul>
+<li>お母さんは愛しているよ。</li>
+<li>妈妈爱你。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>参考：<a target="_blank" rel="noopener" href="https://hinative.com/ja/questions/1826">【母】 と 【お母さん】 はどう違いますか？</a></li>
+</ul>
+<p>语言</p>
+<ul>
+<li>日本語（にほんご）- 日语</li>
+<li>中国語（ちゅごくご）- 中文</li>
+<li>フランス語 - 法语</li>
+<li><strong>英語（えいご）</strong> - 英语
+<ul>
+<li>イギリス - 英国</li>
+</ul>
+</li>
+</ul>
+<p>はい vs ええ - 嗯，是（应答）</p>
+<ul>
+<li>两者基本可以交替使用
+<ul>
+<li>但是应答点名的时候只能用「はい」</li>
+</ul>
+</li>
+<li>「ええ」更加随意</li>
+</ul>
+<p>おいくつ - （问）多大年纪</p>
+<ul>
+<li>其中「お」是美化语</li>
+<li>问小孩岁数：何歳（なんさい） / いくつ</li>
+</ul>
+<h2 id="语法-2"><a class="markdownIt-Anchor" href="#语法-2"></a> 语法</h2>
+<p><strong>[これ / それ / あれ]は　[名]です</strong></p>
+<ul>
+<li>これ / それ / あれ 用于指示事物
+<ul>
+<li>これ：近距离</li>
+<li>それ：中距离（若面对面，则是离听话人比较近的）</li>
+<li>あれ：远距离</li>
+</ul>
+</li>
+<li>例句：
+<ul>
+<li><strong>これ</strong>は　本です。</li>
+<li><strong>それ</strong>は　かばんです。</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/jp1_notes1.png" alt="" /></p>
+<p><strong>[だれ / 何（なん）]ですか</strong></p>
+<ul>
+<li>问人用「だれ」，比较礼貌的说法是「どなた」（who）</li>
+<li>问事物用「何（なん）」（what）
+<ul>
+<li>注意：「何」一般读作「なに」，但在「だ」、「で」、「の」前面读作「なん」</li>
+</ul>
+</li>
+<li>例句：
+<ul>
+<li>それは　<strong>何</strong>ですか。</li>
+<li>スミスさんは　<strong>どなた</strong>ですか。</li>
+<li>あの人は　<strong>だれ</strong>ですか。</li>
+</ul>
+</li>
+<li>如果两个人面对面，那么用「それ」问，就要用「これ」答
+<ul>
+<li><strong>それ</strong>は　何ですか。</li>
+<li><strong>これ</strong>は　日本語の本です。</li>
+</ul>
+</li>
+</ul>
+<p><strong>[この / その / あの][名]は　[名]です</strong></p>
+<ul>
+<li>用于修饰名词，位置关系和 これ / それ / あれ 相同</li>
+<li>例：<strong>この</strong>カメラは　スミスさんのです。</li>
+</ul>
+<p><strong>[どれ / どの]　[名]</strong></p>
+<ul>
+<li>どれ - which / 哪个（东西，三个或以上）</li>
+<li>どちら - which / 哪个（东西，两个）
+<ul>
+<li>注：「どちら」还有 where 的意思</li>
+</ul>
+</li>
+<li>例句：
+<ul>
+<li>森さんのかばんは　<strong>どれ</strong>　ですか。</li>
+<li>小野さんの机は　<strong>どの</strong>机　ですか。</li>
+</ul>
+</li>
+</ul>
+<h1 id="l3-ここは-デパートです"><a class="markdownIt-Anchor" href="#l3-ここは-デパートです"></a> L3 - ここは　デパートです</h1>
+<h2 id="单词-2"><a class="markdownIt-Anchor" href="#单词-2"></a> 单词</h2>
+<p>デパート（department store）- 百货商店</p>
+<ul>
+<li>スーパー（supermarket）[1] - 超市</li>
+<li>コンビニ（convenience store）- 便利店</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%96%AB%E8%8C%B6%E5%BA%97">喫茶店（きっさてん）</a> - 咖啡店</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%92%96%E5%95%A1%E5%BA%97">カフェ（café）</a> [1] - 咖啡店
+<ul>
+<li>「喫茶店」和「カフェ」似乎只是营业执照不同，经营范围也不太一样</li>
+</ul>
+</li>
+<li><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%B6%B2%E5%90%A7%E9%9B%A3%E6%B0%91">ネットカフェ（internet café）</a> - 网吧</li>
+</ul>
+<p>入口 / 入り口（いりぐち）[0] &lt;-&gt; 出口（でぐち）[1]</p>
+<ul>
+<li>入口 = 入り口（完全等价，因为「り」在这里经常被省略，而且似乎「入口」更常用）</li>
+<li>参考：<a target="_blank" rel="noopener" href="https://hinative.com/ja/questions/5653848">【入り口】 と 【入口】 はどう違いますか？</a></li>
+</ul>
+<p>エスカレーター（escalator）- 自动扶梯</p>
+<ul>
+<li>エレベーター（elevator）[3] - 电梯</li>
+</ul>
+<p>ビル（building）- 大楼</p>
+<ul>
+<li>ビール（beer）- 啤酒</li>
+<li>マンション（mansion）- 高级公寓
+<ul>
+<li>注意：<a target="_blank" rel="noopener" href="https://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%B3">マンション</a>实际上指的是英语中的condo（condominium），不要想当然以为就是<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Mansion">mansion</a></li>
+</ul>
+</li>
+<li>アパート（apartment）- 公寓</li>
+<li>ビル vs 建物（たてもの）
+<ul>
+<li>ビル - 通常由混凝土制成，至少有两层，通常更高</li>
+<li>建物 - 可以是任何高度、材料、结构、建造时期的</li>
+<li>e.g. 「京都の金閣寺」是「建物」，但不是「ビル」</li>
+<li>参考：<a target="_blank" rel="noopener" href="https://hinative.com/ja/questions/123252">【ビル】 と 【建物】 はどう違いますか？</a></li>
+</ul>
+</li>
+</ul>
+<p>売り場（うりば）- 卖场</p>
+<ul>
+<li>かばん売り場 - 包包的卖场（中间不用加「の」）</li>
+</ul>
+<p>階（量词）- 楼层</p>
+<ul>
+<li>１階（い<strong>っ</strong>かい）</li>
+<li>３階（さん<strong>が</strong>い）</li>
+<li>地下（ちか）１階</li>
+</ul>
+<p>弁護士（べんごし）- 律师</p>
+<p>手袋（てぶくろ）[2] - 手套</p>
+<h2 id="语法-3"><a class="markdownIt-Anchor" href="#语法-3"></a> 语法</h2>
+<p><strong>[ここ / そこ / あそこ][名]は　[名]です</strong></p>
+<ul>
+<li>用于指示场所，位置关系和 これ / それ / あれ 相同</li>
+<li>「どこ」 - 问地点在哪里（where）</li>
+<li>こちら / そちら / あちら / どちら 是礼貌说法</li>
+<li>例句：
+<ul>
+<li><strong>ここ</strong>は　デパートです。（一般）</li>
+<li><strong>こちら</strong>は　デパートです。（礼貌）</li>
+</ul>
+</li>
+</ul>
+<p><strong>[名]は　どこですか</strong></p>
+<ul>
+<li>用于询问某地点在哪儿</li>
+<li>例句：
+<ul>
+<li>トイレは　どこですか。
+<ul>
+<li>あそこです。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>[名]も　[名]です</strong></p>
+<ul>
+<li>助词「も」基本相当于汉语的“也”</li>
+<li>例句：
+<ul>
+<li>李さんは　中国人です。</li>
+<li>わたし<strong>も</strong>　中国人です。</li>
+<li>あなた<strong>も</strong>　中国人ですか。</li>
+</ul>
+</li>
+</ul>
+<p><strong>[名]は　[名]ですか、[名]ですか</strong></p>
+<ul>
+<li>单项选择题（答案是问题中多种可能的一种）</li>
+<li>要回答一个选项，不能回复「はい」或者「いいえ」。</li>
+<li>例句：
+<ul>
+<li>今日は　水曜日（すいようび）ですか、木曜日（もくようび）ですか。
+<ul>
+<li>水曜日です。</li>
+</ul>
+</li>
+<li>林さんは　韓国人ですか、日本人ですか、中国人ですか。
+<ul>
+<li>日本人です。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>[名]は　いくらですか</strong></p>
+<ul>
+<li>问价格（固定搭配，直接背下来）</li>
+<li>例句：
+<ul>
+<li>これは　いくらですか。
+<ul>
+<li>それは　5,800円です。</li>
+</ul>
+</li>
+<li>あれは？（同类型追问，可以省略问题）
+<ul>
+<li>あれも　5,800円です。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="l4-部屋に-机と-いすが-あります"><a class="markdownIt-Anchor" href="#l4-部屋に-机と-いすが-あります"></a> L4 - 部屋に　机と　いすが　あります</h1>
+<h2 id="单词-3"><a class="markdownIt-Anchor" href="#单词-3"></a> 单词</h2>
+<p>居間（いま）- 起居室</p>
+<ul>
+<li>注意：「居間」和「今」的声调不同，不能混淆
+<ul>
+<li>居間：「いまꜜ」 (Low-High / 2)</li>
+<li>今（现在）：「いꜜま」 (High-Low / 1)</li>
+</ul>
+</li>
+</ul>
+<p>冷蔵庫（れいぞうこ）- 冰箱</p>
+<ul>
+<li>这个「冷」字，常见的<a target="_blank" rel="noopener" href="https://jisho.org/search/%E5%86%B7%20%23kanji">印刷体和手写体不一样</a>，但这不是异体字，更不是错别字，只是同一个汉字的多种写法。</li>
+<li>「冷」的手写体跟中文的「冷」应该是一样的，具体可以查阅《常用漢字表》第7-10页。</li>
+<li>这类问题后面不再赘述。</li>
+<li>参考：
+<ul>
+<li><a target="_blank" rel="noopener" href="https://japanese.stackexchange.com/questions/3191/why-are-there-two-versions-of-the-kanji-for-%E5%86%B7">Why are there two versions of the kanji for 冷?</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.reddit.com/r/LearnJapanese/comments/lz87oe/the_kanjis_on_jisho_is_showing_two_different/">The kanjis on Jisho is showing two different kanjis for the same word.</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/pdf/joyokanjihyo_20101130.pdf">常用漢字表（PDF）</a></li>
+</ul>
+</li>
+</ul>
+<p>眼鏡（めがね）- 眼镜</p>
+<ul>
+<li>有时也能看到「メガネ」这种写法（例如儿童读物）</li>
+<li>参考：<a target="_blank" rel="noopener" href="https://hinative.com/ja/questions/1629117">【眼鏡】 と 【メガネ】 と 【めがね】 はどう違いますか？</a></li>
+</ul>
+<p>性别（男 &amp; 女）</p>
+<ul>
+<li>男（おとこ）
+<ul>
+<li>男の子（おとこのこ）- 男孩子</li>
+</ul>
+</li>
+<li>女（おんな）
+<ul>
+<li>女の子（おんなのこ）- 女孩子</li>
+</ul>
+</li>
+</ul>
+<p>生徒（せいと）- （低龄）学生</p>
+<ul>
+<li>一般指大学以下的学生（高中、初中等）</li>
+<li>学生（がくせい）- 大学生（比较专业的学生）</li>
+<li>参考：<a target="_blank" rel="noopener" href="https://hinative.com/ja/questions/15478032">【学生】 と 【生徒】 はどう違いますか？</a></li>
+</ul>
+<p>近く（ちかく）- 附近（near）</p>
+<ul>
+<li>隣（となり）- 旁边（adjacent to / next to）</li>
+<li>周辺（しゅうへん）- 周围（around）</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://hinative.com/ja/questions/1344761">【近く】 と 【隣】 と 【周辺】 はどう違いますか？</a></p>
+<p>花屋（はなや）- 花店</p>
+<ul>
+<li>~屋 - （某家）店
+<ul>
+<li>例：本屋（ほんや）- 书店</li>
+</ul>
+</li>
+<li>~屋さん - （某家）店的老板
+<ul>
+<li>例：花屋さん - 花店老板</li>
+</ul>
+</li>
+</ul>
+<p>駅（えき）- （地铁、火车）车站</p>
+<ul>
+<li>バス停（てい）[0] - 公交车站</li>
+</ul>
+<p>交番（こうばん）[0] - 派出所</p>
+<p>向い（むかい）[0] - 面对；朝向</p>
+<p>ブランコ [1] - 秋千</p>
+<p>警官（けいかん）[0]</p>
+<h2 id="语法-4"><a class="markdownIt-Anchor" href="#语法-4"></a> 语法</h2>
+<p><strong>存在句</strong></p>
+<ul>
+<li>作用：表示事物的存在</li>
+<li>あります（原型：ある [1]）- 用于植物、（无生命）物体</li>
+<li>います（原型：いる [0]）- 用于人、动物</li>
+</ul>
+<p><strong>[名 场所]に　[名 物/人]が　あります/います</strong></p>
+<ul>
+<li>强调事物的<strong>存在</strong>（There be句型）</li>
+<li>意思：【场所】<strong>有</strong>【物/人】。</li>
+<li>例句：
+<ul>
+<li>部屋<strong>に</strong>　机<strong>が</strong>　あります。（房间里<strong>有</strong>桌子。）</li>
+<li>公園<strong>に</strong>　猫<strong>が</strong>　います。（公园里<strong>有</strong>猫。）</li>
+<li>庭<strong>に</strong>　何<strong>が</strong>　ありますか。（院子里<strong>有</strong>什么？）</li>
+</ul>
+</li>
+</ul>
+<p><strong>[名 物/人]は　[名 场所]に　あります/います</strong></p>
+<ul>
+<li>强调事物的<strong>位置</strong></li>
+<li>意思：【物/人】<strong>在</strong>【场所】。</li>
+<li>例句：
+<ul>
+<li>机<strong>は</strong>　部屋<strong>に</strong>　あります。（桌子<strong>在</strong>房间里。）</li>
+<li>猫<strong>は</strong>　公園<strong>に</strong>　います。（猫<strong>在</strong>公园里。）</li>
+<li>図書館<strong>は</strong>　どこ<strong>に</strong>　ありますか。（图书馆<strong>在</strong>哪儿？）
+<ul>
+<li>等效句型（L3）：図書館は　どこですか。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>[名]と　[名]（并列）</strong></p>
+<ul>
+<li>「と」在这里相当于汉语的“和”（and）</li>
+</ul>
+<p><strong>名词 + の + 方位词</strong></p>
+<ul>
+<li>表示具体位置</li>
+<li>方位词：
+<ul>
+<li>上（うえ）
+<ul>
+<li>日语的「上」只表示垂直上方的范围。“墙上有开关”指的是墙的表面，所以不能用「壁の上に」，应该用「壁に」。</li>
+</ul>
+</li>
+<li>下（した）</li>
+<li>前（まえ）</li>
+<li>後ろ（うしろ）</li>
+<li>隣（となり）</li>
+<li>中（なか）</li>
+<li>外（そと）</li>
+</ul>
+</li>
+<li>例句：
+<ul>
+<li>机の　<strong>上</strong>に　猫が　います。（桌子上有一只猫。）</li>
+<li>猫は　箱の　<strong>中</strong>に　います。（猫在箱子里面。）</li>
+</ul>
+</li>
+</ul>
+<p><strong>ね（确认）</strong></p>
+<ul>
+<li>「ね」放在句尾，希望：
+<ul>
+<li>征求对方的同意（isn't it?）</li>
+<li>（自己不确定 / 不清楚的事情）得到对方的确认（right?）</li>
+</ul>
+</li>
+<li>例句：
+<ul>
+<li>美味（おい）しい　です<strong>ね</strong>。</li>
+<li>駅の　前に　銀行が　あります<strong>ね</strong>。</li>
+</ul>
+</li>
+<li>参考：<a target="_blank" rel="noopener" href="https://www.wasabi-jpn.com/japanese-grammar/sentence-ending-particles/">Sentence Ending Particles: ね, よ, and よね</a></li>
+</ul>
+<p><strong>疑问词 + も + 动（否定）</strong></p>
+<ul>
+<li>表示全面否定</li>
+<li>例句：
+<ul>
+<li>教室は　だれ<strong>も</strong>　いません。（教室里谁也没有。）</li>
+<li>冷蔵庫に　何<strong>も</strong>　ありません。（冰箱里什么也没有。）</li>
+</ul>
+</li>
+</ul>
+<h1 id="l5-森さんは-7時に-起きます"><a class="markdownIt-Anchor" href="#l5-森さんは-7時に-起きます"></a> L5 - 森さんは　７時に　起きます</h1>
+<h2 id="单词-4"><a class="markdownIt-Anchor" href="#单词-4"></a> 单词</h2>
+<h3 id="抽象时间名词"><a class="markdownIt-Anchor" href="#抽象时间名词"></a> 抽象时间名词</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>[-2] 先々（先先）</th>
+<th>[-1] 先（せん）</th>
+<th>[0] 今（こん）</th>
+<th>[+1] 来（らい）</th>
+<th>[+2] 再来（さらい）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>日（にち）</strong></td>
+<td>一昨日（おととい）[3]</td>
+<td>昨日（きのう）</td>
+<td>今日（きょう）</td>
+<td>明日（あした）</td>
+<td>明後日（あさって）</td>
+</tr>
+<tr>
+<td><strong>週（しゅう）</strong></td>
+<td>先々週</td>
+<td>先週</td>
+<td>今週</td>
+<td>来週</td>
+<td>再来週</td>
+</tr>
+<tr>
+<td><strong>月（げつ）</strong></td>
+<td>先々月</td>
+<td>先月</td>
+<td>今月</td>
+<td>来月</td>
+<td>再来月</td>
+</tr>
+<tr>
+<td><strong>年（ねん）</strong></td>
+<td>一昨年（おととし）[2]</td>
+<td>去年（きょねん）</td>
+<td>今年（ことし）[0]</td>
+<td>来年</td>
+<td>再来年</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>「日」和「年」需要特别去记，其它可以直接拼出来</li>
+<li>「明日」也读作「あす」（多见于歌词）</li>
+<li>「再」有时候直接写作「さ」（再来年 -&gt; さ来年）</li>
+</ul>
+<h3 id="星期"><a class="markdownIt-Anchor" href="#星期"></a> 星期</h3>
+<p>月火水木金土日（1234567）</p>
+<ul>
+<li>月（げつ）曜日</li>
+<li>火（か）曜日</li>
+<li>水（すい）曜日</li>
+<li>木（もく）曜日</li>
+<li>金（きん）曜日</li>
+<li>土（ど）曜日</li>
+<li>日（にち）曜日</li>
+</ul>
+<p>口语有时候会省略“日”（び），例如：“木曜”（もくよう）</p>
+<p>今日は何（はん）曜日ですか。 - 今天星期几？</p>
+<h3 id="早中晚"><a class="markdownIt-Anchor" href="#早中晚"></a> 早中晚</h3>
+<table>
+<thead>
+<tr>
+<th>早</th>
+<th>中</th>
+<th>晩</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>朝（あさ）</td>
+<td>昼（ひる）</td>
+<td>晩（ばん）/ 夜（よる）</td>
+</tr>
+<tr>
+<td>今朝（<strong>けさ</strong>）</td>
+<td>今日（<strong>きょう</strong>）</td>
+<td>今晩（こんばん）</td>
+</tr>
+</tbody>
+</table>
+<p><code>晩上</code>相关的词，没有固定搭配的情况下，一般用「夜」</p>
+<h3 id="时刻具体时间名词"><a class="markdownIt-Anchor" href="#时刻具体时间名词"></a> 时刻（具体时间名词）</h3>
+<p>基本上都是：数字 + 時 / 分</p>
+<p>这些「時」要特别记住：</p>
+<ul>
+<li>４時（<strong>よ</strong>じ）</li>
+<li>７時（<strong>しち</strong>じ）</li>
+<li>９時（<strong>く</strong>じ）</li>
+<li>０時（れいじ）</li>
+<li>何時（なんじ）</li>
+</ul>
+<p>「分」要相对复杂一些：</p>
+<ul>
+<li>１分（いっ<strong>ぷ</strong>ん）</li>
+<li>２分（にふん）</li>
+<li>３分（さん<strong>ぷ</strong>ん）</li>
+<li>４分（よん<strong>ぷ</strong>ん）</li>
+<li>５分（ごふん）</li>
+<li>６分（ろっ<strong>ぷ</strong>ん）</li>
+<li>７分（ななふん）</li>
+<li>８分（はっ<strong>ぷ</strong>ん）</li>
+<li>９分（きゅうふん）</li>
+<li>１０分（じゅっ<strong>ぷ</strong>ん）</li>
+<li>１１分（じゅういっ<strong>ぷ</strong>ん）</li>
+<li>１５分（じゅうごふん）</li>
+<li>３０分（さんじゅっ<strong>ぷ</strong>ん，半（はん））</li>
+<li>４５分（よんじゅうごふん）</li>
+<li>何分（なん<strong>ぷ</strong>ん）</li>
+</ul>
+<p>今何時ですか。 - 现在几点？</p>
+<h3 id="动词"><a class="markdownIt-Anchor" href="#动词"></a> 动词</h3>
+<table>
+<thead>
+<tr>
+<th>原型</th>
+<th>音调</th>
+<th>动词类型</th>
+<th>意思</th>
+<th>ます型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>休む（やすむ）</td>
+<td>[2]</td>
+<td>动1</td>
+<td>休息</td>
+<td>休みます</td>
+</tr>
+<tr>
+<td>働く（はたらく）</td>
+<td>[0]</td>
+<td>动1</td>
+<td>工作</td>
+<td>働きます</td>
+</tr>
+<tr>
+<td>始まる（はじまる）</td>
+<td>[0]</td>
+<td>动1</td>
+<td>开始</td>
+<td>始まります</td>
+</tr>
+<tr>
+<td>終わる（おわる）</td>
+<td>[0]</td>
+<td>动1</td>
+<td>结束</td>
+<td>終わります</td>
+</tr>
+<tr>
+<td>起きる（おきる）</td>
+<td>[2]</td>
+<td>动2</td>
+<td>起床</td>
+<td>起きます</td>
+</tr>
+<tr>
+<td>寝る（ねる）</td>
+<td>[0]</td>
+<td>动2</td>
+<td>睡觉</td>
+<td>寝ます</td>
+</tr>
+<tr>
+<td>勉強（べんきょう）する</td>
+<td>[0]</td>
+<td>动3</td>
+<td>学习</td>
+<td>勉強します</td>
+</tr>
+</tbody>
+</table>
+<h3 id="其它"><a class="markdownIt-Anchor" href="#其它"></a> 其它</h3>
+<p>お宅（おたく）- 您家（敬语）</p>
+<ul>
+<li>注意：「お宅」不能写成「オタク」，后者是<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%BE%A1%E5%AE%85%E6%97%8F">御宅族</a>的意思，贬义词。</li>
+<li><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E8%9F%84%E5%B1%85">引（ひ）きこもり</a> - 汉语中的“死宅”（闭门不出、家里蹲）</li>
+</ul>
+<p>毎日（まいにち）- 每天</p>
+<ul>
+<li>注意：「毎」的写法跟汉字“每”不一样，里面是“一竖”而不是“两点”。</li>
+</ul>
+<p>予定表（よていひょう）[2] - 日程表，行程表</p>
+<p>資料（しりょう）[1]</p>
+<h2 id="语法-5"><a class="markdownIt-Anchor" href="#语法-5"></a> 语法</h2>
+<p><strong>今　～時　～分です</strong></p>
+<ul>
+<li>用于表示时间</li>
+<li>例句：
+<ul>
+<li>Q：今何時ですか。</li>
+<li>A：８時３０分です。</li>
+<li>A：８時<strong>半</strong>です。（３０分 = 半）</li>
+<li>A：今<strong>午前</strong>８時半です。（加上「午前」、「午後」就更具体）</li>
+</ul>
+</li>
+</ul>
+<p><strong>动词的「ます」型</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>现在 / 将来</th>
+<th>过去</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>肯定</td>
+<td>ます</td>
+<td>ました</td>
+</tr>
+<tr>
+<td>否定</td>
+<td>ません</td>
+<td>ませんでした</td>
+</tr>
+</tbody>
+</table>
+<p>下面是「ます」型的动词变位表（动词原型上面已经写过了）：</p>
+<table>
+<thead>
+<tr>
+<th>～ます</th>
+<th>～ません</th>
+<th>～ました</th>
+<th>～ませんでした</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>働き　ます</td>
+<td>働き　ません</td>
+<td>働き　ました</td>
+<td>働き　ませんでした</td>
+</tr>
+<tr>
+<td>休み　ます</td>
+<td>休み　ません</td>
+<td>休み　ました</td>
+<td>休み　ませんでした</td>
+</tr>
+<tr>
+<td>起き　ます</td>
+<td>起き　ません</td>
+<td>起き　ました</td>
+<td>起き　ませんでした</td>
+</tr>
+<tr>
+<td>寝ま　す</td>
+<td>寝　ません</td>
+<td>寝　ました</td>
+<td>寝　ませんでした</td>
+</tr>
+<tr>
+<td>あり　ます</td>
+<td>あり　ません</td>
+<td>あり　ました</td>
+<td>あり　ませんでした</td>
+</tr>
+</tbody>
+</table>
+<p>例句：</p>
+<ul>
+<li>森さんは　毎日　働き　<strong>ます</strong>。</li>
+<li>田中さんは　明日　休み　<strong>ます</strong>。</li>
+<li>田中さんは　今日　働き　<strong>ません</strong>。</li>
+<li>森さんは　明日　休み　<strong>ません</strong>。</li>
+<li>森さんは　先週　休み　<strong>ました</strong>。</li>
+<li>私は　昨日　働き　<strong>ませんでした</strong>。</li>
+<li>田中さんは　明日　働き　<strong>ますか</strong>。</li>
+<li>李さんは　先週　休み　<strong>ましたか</strong>。</li>
+</ul>
+<p><strong>[具体时间]に　[动词]</strong></p>
+<ul>
+<li>表示动作发生的时间</li>
+<li>例句：
+<ul>
+<li>森さんは　７時<strong>に</strong>　起きます。</li>
+<li>学校は　８時半<strong>に</strong>　始まります。</li>
+</ul>
+</li>
+<li>注意：抽象时间名词（「昨日」、「今日」等）后面不能加「に」
+<ul>
+<li>例：私は　<strong>明日</strong>　休みます。</li>
+</ul>
+</li>
+</ul>
+<p><strong>[时间]から　[时间]まで　[动词]</strong></p>
+<ul>
+<li>意思：从。。。到。。。（某动作发生在某个期间）
+<ul>
+<li>「から」、「まで」可以单独拿出来用</li>
+<li>这个句型同样也可以用在“空间”上（L6）</li>
+</ul>
+</li>
+<li>例子：
+<ul>
+<li>私は　９時<strong>から</strong>　５時<strong>まで</strong>　働きます。</li>
+<li>私は　９時<strong>から</strong>　働きます。</li>
+<li>森さんは　２時<strong>まで</strong>　勉強します。</li>
+</ul>
+</li>
+</ul>
+<p><strong>いつ　[动词]ますか</strong></p>
+<ul>
+<li>いつ - 什么时候（when?）
+<ul>
+<li>一般都是假名形式出现，不写成汉字</li>
+</ul>
+</li>
+<li>何時（なんじ） - 几点（what time? / which hour?）</li>
+<li>询问具体时间需要加「に」
+<ul>
+<li>例：何時（なんじ）に、何曜日に</li>
+</ul>
+</li>
+<li>例句：
+<ul>
+<li>試験は　<strong>いつ</strong>　始まりますか。</li>
+<li>仕事は　<strong>何時に</strong>　終わりますか。</li>
+</ul>
+</li>
+<li>问持续性动作的起点或终点，可以跟「から」、「まで」搭配使用
+<ul>
+<li>例：いつから、何曜日まで</li>
+</ul>
+</li>
+<li>例句：
+<ul>
+<li>展覧会は　<strong>いつから</strong>　始まりますか。（展览会什么时候开始？）</li>
+<li>張さんは　<strong>何曜日まで</strong>　休みますか。（小张休息到星期几？）
+<ul>
+<li>火曜日までです。（休息到星期二。）</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>「は」表示“对比&quot;</strong></p>
+<ul>
+<li>表示“对比&quot;的时候，需要稍微重读（强调）「は」</li>
+<li>例句：
+<ul>
+<li>森さんは　毎朝　何時に　起きますか。
+<ul>
+<li>森先生，你每天早上几点起床？</li>
+</ul>
+</li>
+<li>いつも<strong>は</strong>　７時ごろです。
+<ul>
+<li>「いつも」在这里是名词，意思也从 always (adv.) 变成 usual (n.)</li>
+<li>我平常都是7点左右起床的（，但今天。。。）</li>
+<li>言外之意，今天睡过头迟到完全是意外</li>
+</ul>
+</li>
+<li>如果去掉「は」：いつも　７時ごろです。
+<ul>
+<li>我一直都是都是7点左右起床。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>[时间]ごろ</strong></p>
+<ul>
+<li>表示大致的时间范围</li>
+<li>「ごろ」后面不加「に」，因为已经不是具体时间了</li>
+<li>例句：
+<ul>
+<li>昨日　１２時半<strong>ごろ</strong>　寝ました。</li>
+</ul>
+</li>
+</ul>
+<h1 id="l6-吉田さんは-来月-中国へ-行きます"><a class="markdownIt-Anchor" href="#l6-吉田さんは-来月-中国へ-行きます"></a> L6 - 吉田さんは　来月　中国へ　行きます</h1>
+<h2 id="单词-5"><a class="markdownIt-Anchor" href="#单词-5"></a> 单词</h2>
+<h3 id="动词-2"><a class="markdownIt-Anchor" href="#动词-2"></a> 动词</h3>
+<table>
+<thead>
+<tr>
+<th>原型</th>
+<th>音调</th>
+<th>动词类型</th>
+<th>意思</th>
+<th>ます型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>行く（いく）</td>
+<td>[0]</td>
+<td>动1</td>
+<td>去</td>
+<td>行きます</td>
+</tr>
+<tr>
+<td>帰る（かえる）</td>
+<td>[1]</td>
+<td>动1</td>
+<td>回来，回去</td>
+<td>帰ります</td>
+</tr>
+<tr>
+<td>来る（<strong>くる</strong>）</td>
+<td>[1]</td>
+<td>动3</td>
+<td>来</td>
+<td>来ます（<strong>きます</strong>）</td>
+</tr>
+</tbody>
+</table>
+<h3 id="月份"><a class="markdownIt-Anchor" href="#月份"></a> 月份</h3>
+<table>
+<thead>
+<tr>
+<th>月份</th>
+<th>假名</th>
+<th>月份</th>
+<th>假名</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>１月</td>
+<td>いちがつ</td>
+<td>７月</td>
+<td>しちがつ</td>
+</tr>
+<tr>
+<td>２月</td>
+<td>にがつ</td>
+<td>８月</td>
+<td>はちがつ</td>
+</tr>
+<tr>
+<td>３月</td>
+<td>さんがつ</td>
+<td>９月</td>
+<td>くがつ</td>
+</tr>
+<tr>
+<td>４月</td>
+<td>しがつ</td>
+<td>１０月</td>
+<td>じゅうがつ</td>
+</tr>
+<tr>
+<td>５月</td>
+<td>ごがつ</td>
+<td>１１月</td>
+<td>じゅういちがつ</td>
+</tr>
+<tr>
+<td>６月</td>
+<td>ろくがつ</td>
+<td>１２月</td>
+<td>じゅうにがつ</td>
+</tr>
+</tbody>
+</table>
+<p>注意</p>
+<ul>
+<li><strong>除了3、5、9月是1调之外，其它月份的音调都是“尾高型”</strong>（后续助词降调）</li>
+<li>注意4、7、9月的变化（4-し，7-しち，9-く）</li>
+<li>提问：何月（なんがつ）ですか。</li>
+</ul>
+<h3 id="日期"><a class="markdownIt-Anchor" href="#日期"></a> 日期</h3>
+<table>
+<thead>
+<tr>
+<th>日期</th>
+<th>假名</th>
+<th>声调</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>１日</td>
+<td><strong>ついたち</strong></td>
+<td>4</td>
+</tr>
+<tr>
+<td>２日</td>
+<td><strong>ふつか</strong></td>
+<td>0</td>
+</tr>
+<tr>
+<td>３日</td>
+<td><strong>みっか</strong></td>
+<td>0</td>
+</tr>
+<tr>
+<td>４日</td>
+<td><strong>よっか</strong></td>
+<td>0</td>
+</tr>
+<tr>
+<td>５日</td>
+<td><strong>いつか</strong></td>
+<td>0</td>
+</tr>
+<tr>
+<td>６日</td>
+<td><strong>むいか</strong></td>
+<td>0</td>
+</tr>
+<tr>
+<td>７日</td>
+<td><strong>なのか</strong></td>
+<td>0</td>
+</tr>
+<tr>
+<td>８日</td>
+<td><strong>ようか</strong></td>
+<td>0</td>
+</tr>
+<tr>
+<td>９日</td>
+<td><strong>ここのか</strong></td>
+<td>0</td>
+</tr>
+<tr>
+<td>１０日</td>
+<td><strong>とおか</strong></td>
+<td>0</td>
+</tr>
+<tr>
+<td>１１日</td>
+<td>じゅういちにち</td>
+<td>-1</td>
+</tr>
+<tr>
+<td>１２日</td>
+<td>じゅうににち</td>
+<td>-1</td>
+</tr>
+<tr>
+<td>１３日</td>
+<td>じゅうさんにち</td>
+<td>3</td>
+</tr>
+<tr>
+<td>１４日</td>
+<td><strong>じゅうよっか</strong></td>
+<td>1+0</td>
+</tr>
+<tr>
+<td>１５日</td>
+<td>じゅうごにち</td>
+<td>3</td>
+</tr>
+<tr>
+<td>１６日</td>
+<td>じゅうろくにち</td>
+<td>-1</td>
+</tr>
+<tr>
+<td>１７日</td>
+<td><strong>じゅうしちにち</strong></td>
+<td>-1</td>
+</tr>
+<tr>
+<td>１８日</td>
+<td>じゅうはちにち</td>
+<td>-1</td>
+</tr>
+<tr>
+<td>１９日</td>
+<td>じゅうくにち</td>
+<td>3</td>
+</tr>
+<tr>
+<td>２０日</td>
+<td><strong>はつか</strong></td>
+<td>0</td>
+</tr>
+<tr>
+<td>２１日</td>
+<td>にじゅういちにち</td>
+<td></td>
+</tr>
+<tr>
+<td>２２日</td>
+<td>にじゅうににち</td>
+<td></td>
+</tr>
+<tr>
+<td>２３日</td>
+<td>にじゅうさんにち</td>
+<td></td>
+</tr>
+<tr>
+<td>２４日</td>
+<td><strong>にじゅうよっか</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>２５日</td>
+<td>にじゅうごにち</td>
+<td></td>
+</tr>
+<tr>
+<td>２６日</td>
+<td>にじゅうろくにち</td>
+<td></td>
+</tr>
+<tr>
+<td>２７日</td>
+<td><strong>にじゅうしちにち</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>２８日</td>
+<td>にじゅうはちにち</td>
+<td></td>
+</tr>
+<tr>
+<td>２９日</td>
+<td>にじゅうくにち</td>
+<td></td>
+</tr>
+<tr>
+<td>３０日</td>
+<td>さんじゅうにち</td>
+<td></td>
+</tr>
+<tr>
+<td>３１日</td>
+<td>さんじゅういちにち</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><s>日期可以先不急着背，用到再说</s>（中级上学了一半，回来背这个了，欠下的迟早要还。。。）</p>
+<p>注意：</p>
+<ul>
+<li>2-10日用日语传统的数法</li>
+<li>1、14、20、24日也要重点关注</li>
+<li>两位数的3、5、9日读降调（位置在“日”前面）</li>
+<li>提问：何日（なんにち）ですか。</li>
+<li>参考：<a target="_blank" rel="noopener" href="https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1414757494">子供に教えたいのですが、日付けの正式な読み方を教えて下さい</a></li>
+</ul>
+<h3 id="其它-2"><a class="markdownIt-Anchor" href="#其它-2"></a> 其它</h3>
+<p>コンサート（concert）- 音乐会（范围比较广）</p>
+<ul>
+<li>ライブ（live）- （明星歌手、流行音乐的）现场演唱会</li>
+</ul>
+<p>クリスマス（Christmas）</p>
+<ul>
+<li>クリスマスイブ（Christmas Eve）</li>
+<li>クリスマスプレゼント（Christmas present）</li>
+<li>クリスマスツリー（Christmas tree）</li>
+<li>クリスマスカード（Christmas card）</li>
+</ul>
+<p>誕生日（たんじょうび）- 生日</p>
+<ul>
+<li>お誕生日　おめでとうございます。 - 生日快乐
+<ul>
+<li>如果比较熟的话：誕生日　おめでとう。</li>
+</ul>
+</li>
+</ul>
+<p>こどもの日（ひ）- 儿童节</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%84%BF%E7%AB%A5%E8%8A%82_(%E6%97%A5%E6%9C%AC)">日本的儿童节</a>是5月5日</li>
+<li>一般不写成「子供の日」</li>
+</ul>
+<p>休み</p>
+<ul>
+<li>春（はる）[1] 休み - 春假</li>
+<li>夏（なつ）[2] 休み - 暑假</li>
+<li>秋（あき）[1] 休み - 秋假</li>
+<li>冬（ふゆ）[2] 休み - 寒假</li>
+</ul>
+<p>家</p>
+<ul>
+<li>家（うち）- 广义的家（包括环境、家庭、实体建筑等等）
+<ul>
+<li>默认说的是自己的家</li>
+</ul>
+</li>
+<li>家（いえ）- 实体的家（指建筑）
+<ul>
+<li>如果要指“我家”，必须说「私の家」</li>
+</ul>
+</li>
+<li>注：类似 home 和 house 的区别</li>
+<li>参考：
+<ul>
+<li><a target="_blank" rel="noopener" href="https://japanese.stackexchange.com/questions/3726/what-is-the-difference-between-%E3%81%84%E3%81%88-and-%E3%81%86%E3%81%A1">What is the difference between いえ and うち?</a></li>
+</ul>
+</li>
+</ul>
+<p>まっすぐ - [副] 径直</p>
+<ul>
+<li>まっすぐ行きます - 径直的走</li>
+</ul>
+<p>一緒に（いっしょに）- [副] 一起</p>
+<ul>
+<li>注：课本没给汉字形式，这里补充</li>
+</ul>
+<p>佐藤（さとう）[1]</p>
+<ul>
+<li>砂糖（さとう）[2]（L27）</li>
+</ul>
+<p>北海道（ほっかいどう）</p>
+<ul>
+<li>名産品：<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%99%BD%E8%89%B2%E6%88%80%E4%BA%BA">白い恋人（しろいこいびと）</a></li>
+</ul>
+<p>確か（たしか）- [副词] 大概、印象中</p>
+<ul>
+<li>例句：
+<ul>
+<li>あの人は　だれですか？</li>
+<li><strong>たしか</strong>　李さんの　会社の　人です。（我记得好像是小李他们公司的人）</li>
+</ul>
+</li>
+</ul>
+<p>映画館（えいがかん）[3] - 电影院</p>
+<p>バイク [1] - 摩托车</p>
+<h2 id="语法-6"><a class="markdownIt-Anchor" href="#语法-6"></a> 语法</h2>
+<p><strong>[名　场所]へ　[动]</strong></p>
+<ul>
+<li>移动行为的目的地用助词「へ」表示</li>
+<li>例句：
+<ul>
+<li>吉田さんは　中国<strong>へ</strong>　行きます。</li>
+<li>森さんは　日本<strong>へ</strong>　帰ります。</li>
+<li>李さんは　どこ<strong>へ</strong>　行きましたか。</li>
+</ul>
+</li>
+</ul>
+<p><strong>[名　场所]から　[名　场所]まで　[动词]</strong></p>
+<ul>
+<li>意思：从。。。到。。。（表示移动的范围）
+<ul>
+<li>「から」、「まで」可以单独拿出来用</li>
+<li>这个句型同样也可以用在“时间”上（L5）</li>
+</ul>
+</li>
+<li>例句：
+<ul>
+<li>森さんは　東京<strong>から</strong>　広島<strong>まで</strong>　新幹線で　行きます。</li>
+<li>李さんは　先月　北京<strong>から</strong>　来ますた。</li>
+<li>あの方は　どこ<strong>から</strong>　来ましたか。</li>
+</ul>
+</li>
+</ul>
+<p><strong>[名　人]と　[动]</strong></p>
+<ul>
+<li>「と」在这里的用法是“with”，和某人一起（做某事）</li>
+<li>例句：
+<ul>
+<li>小野さんは　友達<strong>と</strong>　帰りました。</li>
+</ul>
+</li>
+<li>注：L4学过「と」作为“and”的用法。
+<ul>
+<li>例句稍作修改：小野さん<strong>と</strong>　友達は　帰りました。</li>
+<li>这两句话翻译成中文应该没有区别，但是翻译成英语是有区别的。</li>
+</ul>
+</li>
+<li>参考：<a target="_blank" rel="noopener" href="https://www.japanistry.com/the-connecting-particle/">The Connecting Particle (と)</a></li>
+</ul>
+<p><strong>[名　交通工具]で　[动]</strong></p>
+<ul>
+<li>「で」在这里的用法是“by”或者“by means of”，就是出行方式</li>
+<li>注意：走路是「歩（ある）い<strong>て</strong>」</li>
+<li>例句：
+<ul>
+<li>上海まで　飛行機<strong>で</strong>　行きます。</li>
+<li>李さんは　<strong>歩いて</strong>　アパートへ　帰りました。</li>
+<li>京都へ　何（なに）<strong>で</strong>　来ましたか。</li>
+</ul>
+</li>
+</ul>
+<h1 id="l7-李さんは-毎日-コーヒーを-飲みます"><a class="markdownIt-Anchor" href="#l7-李さんは-毎日-コーヒーを-飲みます"></a> L7 - 李さんは　毎日　コーヒーを　飲みます</h1>
+<h2 id="单词-6"><a class="markdownIt-Anchor" href="#单词-6"></a> 单词</h2>
+<h3 id="动词-3"><a class="markdownIt-Anchor" href="#动词-3"></a> 动词</h3>
+<table>
+<thead>
+<tr>
+<th>原型</th>
+<th>音调</th>
+<th>动词类型</th>
+<th>意思</th>
+<th>ます型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>飲む（のむ）</td>
+<td>[1]</td>
+<td>动1</td>
+<td>喝</td>
+<td>飲みます</td>
+</tr>
+<tr>
+<td>買う（かう）</td>
+<td>[0]</td>
+<td>动1</td>
+<td>买</td>
+<td>買います</td>
+</tr>
+<tr>
+<td>撮る（とる）</td>
+<td>[1]</td>
+<td>动1</td>
+<td>拍照</td>
+<td>撮ります</td>
+</tr>
+<tr>
+<td>書く（かく）</td>
+<td>[1]</td>
+<td>动1</td>
+<td>写</td>
+<td>書きます</td>
+</tr>
+<tr>
+<td>読む（よむ）</td>
+<td>[1]</td>
+<td>动1</td>
+<td>读（read）</td>
+<td>読みます</td>
+</tr>
+<tr>
+<td>聞く（きく）</td>
+<td>[0]</td>
+<td>动1</td>
+<td>听</td>
+<td>聞きます</td>
+</tr>
+<tr>
+<td>食べる（たべる）</td>
+<td>[2]</td>
+<td>动2</td>
+<td>吃</td>
+<td>食べます</td>
+</tr>
+<tr>
+<td>見る（みる）</td>
+<td>[1]</td>
+<td>动2</td>
+<td>看（see）</td>
+<td>見ます</td>
+</tr>
+<tr>
+<td><strong>する</strong></td>
+<td>[0]</td>
+<td>动3</td>
+<td>做（do）</td>
+<td><strong>します</strong></td>
+</tr>
+<tr>
+<td>掃除（そうじ）する</td>
+<td>[0]</td>
+<td>动3</td>
+<td>打扫，扫除</td>
+<td>掃除します</td>
+</tr>
+</tbody>
+</table>
+<h3 id="其它-3"><a class="markdownIt-Anchor" href="#其它-3"></a> 其它</h3>
+<p>飲み物（のみもの）[2] - 饮料</p>
+<ul>
+<li>ミルクティー（milk tea）- 奶茶</li>
+<li>水（みず）[0] - <strong>冷</strong>水</li>
+</ul>
+<p>食べ物（たべもの）[2] - 食物</p>
+<p>一日三餐</p>
+<ul>
+<li>朝ご飯（あさごはん）</li>
+<li>昼ご飯（ひるごはん）</li>
+<li>晩ご飯（ばんごはん）</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E4%B8%BC%E7%89%A9">丼（どん）</a> - 盖浇饭</p>
+<ul>
+<li>丼（どんぶり）- 陶瓷大碗</li>
+<li>丼物（どんぶりもの）- 盖浇饭
+<ul>
+<li>可以简写成「丼（どん）」</li>
+</ul>
+</li>
+<li>「丼（どん）」可以作为后缀，表示某种盖浇饭。
+<ul>
+<li><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%89%9B%E4%B8%BC">牛丼（ぎゅうどん）</a>- 牛肉盖浇饭</li>
+<li><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E8%A6%AA%E5%AD%90%E4%B8%BC">親子丼（おやこどん）</a>- 滑蛋鸡肉饭 / 鸡肉鸡蛋盖饭
+<ul>
+<li>注：叫「親子丼」是因为「卵（たまご）」（鸡蛋）和「鶏（にわとり）[0]」（鸡肉）一起用</li>
+</ul>
+</li>
+<li><a target="_blank" rel="noopener" href="https://ja.wikipedia.org/wiki/%E4%BB%96%E4%BA%BA%E4%B8%BC">他人丼（たにんどん）</a>- 非鸡肉的鸡蛋盖饭（基本都是牛肉，也有猪肉）
+<ul>
+<li>他人（たにん）- 陌生人</li>
+<li>是「親子丼」的衍生词</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>リンゴ - 苹果</p>
+<ul>
+<li>平时基本不写成「林檎」，因为太难写</li>
+</ul>
+<p>邦（ほう）- 日本把自己称为“邦xxx”</p>
+<ul>
+<li>音楽（おんがく）- 音乐</li>
+<li>邦楽（ほうがく）- 日本音乐</li>
+<li>映画（えいが）- 电影</li>
+<li>邦画（ほうが）- 日本电影</li>
+</ul>
+<p>これから - 从现在起，今后</p>
+<ul>
+<li>其实就是「これ」+「から」</li>
+<li>在句子里可以翻译成“现在”</li>
+<li>例：李さん、<strong>これから</strong>昼ご飯ですか。（小李，现在去吃午饭吗？）</li>
+</ul>
+<p>じゃあ / では - 那么（then）</p>
+<ul>
+<li>「じゃあ」比较偏口语化，「では」比较正式</li>
+<li>用途：
+<ul>
+<li>接过别人的话题来发表自己的看法</li>
+<li>中断谈话</li>
+</ul>
+</li>
+<li>「じゃあ」- 再见
+<ul>
+<li>其实是“那么，我们明天见”，只不过后面这些在日语全部被省略了。</li>
+</ul>
+</li>
+<li>「ではまた」- 再见
+<ul>
+<li>注意：「では」不能直接表示再见，必须要加上「また」（“再”的意思）</li>
+</ul>
+</li>
+</ul>
+<p>失礼します - 打扰了，告辞了</p>
+<ul>
+<li>敬语，用在比较正式的场合</li>
+<li>场景：
+<ul>
+<li>进门（会议室等）</li>
+<li>分开，失陪</li>
+</ul>
+</li>
+<li>お邪魔（じゃま）します -（去别人家里拜访）打扰了
+<ul>
+<li>进门和离开的时候都可以用</li>
+</ul>
+</li>
+</ul>
+<p>我走啦 / 我出门啦（以要返回该处为前提）</p>
+<ul>
+<li>いってきます（家里用）</li>
+<li>いってまいります（敬语，例如在公司可以用，L48）</li>
+<li>一般回答：いってらっしゃい</li>
+</ul>
+<p>ただいま - 我回来了</p>
+<p>お帰りなさい - 你回来啦</p>
+<ul>
+<li>「なさい」表示敬意，可以不加 -&gt; お帰り</li>
+</ul>
+<p>いらっしゃいませ - 欢迎光临</p>
+<ul>
+<li>是顾客进门时，店员对顾客说的，语气非常郑重</li>
+<li>「いらっしゃい」的语气就比较随便，常用于欢迎朋友或亲近的人来家里做客的场景</li>
+<li>例句：
+<ul>
+<li>李さん、<strong>いらっしゃい</strong>。</li>
+<li>森さん、こんにちは。お邪魔します。</li>
+</ul>
+</li>
+</ul>
+<p>かしこまりました - 我知道了</p>
+<ul>
+<li>这个服务员用的比较多</li>
+<li>一般直接说：分かりました</li>
+</ul>
+<p>そうですか - 是吗</p>
+<ul>
+<li>读降调时，表示理解了所听到的新信息。</li>
+<li>读升调时，表示对对方所说的内容持有疑问。</li>
+</ul>
+<p>そうですね - 好啊（同意对方的提议）</p>
+<ul>
+<li>注意：「ね」不要读成长音，否则意思会变。</li>
+</ul>
+<p>午前中（ごぜんちゅう）- 上午<strong>之内</strong></p>
+<p>工場（こうじょう）[0] - 工厂</p>
+<p>牛乳（ぎゅうにゅう）[0] - 牛奶</p>
+<h2 id="语法-7"><a class="markdownIt-Anchor" href="#语法-7"></a> 语法</h2>
+<p><strong>[名]を　[动]</strong></p>
+<ul>
+<li>动作的对象用助词「を」表示</li>
+<li>日语是<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Subject%E2%80%93object%E2%80%93verb">SOV语序</a> ，宾语放在动词前面。中文和英语则是<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Subject%E2%80%93verb%E2%80%93object">SVO语序</a>，宾语放在动词后面。</li>
+<li>例句：
+<ul>
+<li>私は　毎日　ジョギング<strong>を</strong>　します。</li>
+<li>私は　新聞<strong>を</strong>　読みません。</li>
+<li>李さんは　毎朝　何<strong>を</strong>　食べますか。</li>
+</ul>
+</li>
+</ul>
+<p><strong>[名 场所]で　[动]</strong></p>
+<ul>
+<li>动作的场所用助词「で」表示</li>
+<li><strong>「で」和「に」的区别：</strong>
+<ul>
+<li>「に」强调某物<strong>存在</strong>的位置（一般与动词いる、ある一起使用）（L4）</li>
+<li>「で」强调<strong>动作发生</strong>的地点（重点是这个动作，不是存在本身）</li>
+</ul>
+</li>
+<li>例句：
+<ul>
+<li>李さんは　図書館<strong>で</strong>　勉強します。</li>
+<li>私は　コンビニ<strong>で</strong>　お弁当を　買います。</li>
+<li>今日　どこ<strong>で</strong>　新聞を　読みましたか。</li>
+</ul>
+</li>
+<li>参考：<a target="_blank" rel="noopener" href="https://japanese.stackexchange.com/questions/60/particles-%E3%81%AB-vs-%E3%81%A7">Particles: に vs. で</a></li>
+</ul>
+<p><strong>[名]か　[名]</strong></p>
+<ul>
+<li>名词之间加上「か」，表示“或者”（or）</li>
+<li>例句：
+<ul>
+<li>私は　毎朝　パン<strong>か</strong>　お粥を　食べます。</li>
+</ul>
+</li>
+</ul>
+<p><strong>[名]を　ください</strong></p>
+<ul>
+<li>意思：请给我。。。。。</li>
+<li>买东西，点菜，索要东西等场合下使用（无论是否需要花钱）</li>
+<li>例句：
+<ul>
+<li>コーラと　ケーキを　ください。</li>
+<li>申込書を　ください。</li>
+<li>この本を　ください。</li>
+</ul>
+</li>
+</ul>
+<p><strong>「何」的读法</strong></p>
+<ul>
+<li>「なに」（基本读音）
+<ul>
+<li><strong>何</strong>と　<strong>何</strong>を　買いますか。</li>
+<li>あそこに　<strong>何</strong>が　ありますか。</li>
+<li><strong>何</strong>を　食べますか。</li>
+</ul>
+</li>
+<li>「なに」/「なん」（在「で」前两种读法皆可）
+<ul>
+<li><strong>何</strong>で　会社へ　行きますか。</li>
+</ul>
+</li>
+<li>「なん」（在助词「の」和量词前）
+<ul>
+<li>それは　<strong>何</strong>の　本ですか。</li>
+<li>李さんは　<strong>何</strong>時に　来ますか。</li>
+</ul>
+</li>
+</ul>
+<h1 id="l8-李さんは-日本語で-手紙を-書きます"><a class="markdownIt-Anchor" href="#l8-李さんは-日本語で-手紙を-書きます"></a> L8 - 李さんは　日本語で　手紙を　書きます</h1>
+<h2 id="单词-7"><a class="markdownIt-Anchor" href="#单词-7"></a> 单词</h2>
+<h3 id="动词-4"><a class="markdownIt-Anchor" href="#动词-4"></a> 动词</h3>
+<table>
+<thead>
+<tr>
+<th>原型</th>
+<th>音调</th>
+<th>动词类型</th>
+<th>意思</th>
+<th>ます型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>もらう</td>
+<td>[0]</td>
+<td>动1</td>
+<td>得到（get）</td>
+<td>もらいます</td>
+</tr>
+<tr>
+<td>会う（あう）</td>
+<td>[1]</td>
+<td>动1</td>
+<td>见面</td>
+<td>会います</td>
+</tr>
+<tr>
+<td>送る（おくる）</td>
+<td>[0]</td>
+<td>动1</td>
+<td>送，寄送</td>
+<td>送ります</td>
+</tr>
+<tr>
+<td>作る（つくる）</td>
+<td>[2]</td>
+<td>动1</td>
+<td>做，制造（make）</td>
+<td>作ります</td>
+</tr>
+<tr>
+<td>太る（ふとる）</td>
+<td>[2]</td>
+<td>动1</td>
+<td>发胖，变胖</td>
+<td>太ります</td>
+</tr>
+<tr>
+<td>出す（だす）</td>
+<td>[1]</td>
+<td>动1</td>
+<td>寄（信）</td>
+<td>出します</td>
+</tr>
+<tr>
+<td>届く（とどく）</td>
+<td>[2]</td>
+<td>动1</td>
+<td>收到，寄到</td>
+<td>届きます</td>
+</tr>
+<tr>
+<td>描く（かく）</td>
+<td>[1]</td>
+<td>动1</td>
+<td>画</td>
+<td>描きます</td>
+</tr>
+<tr>
+<td>貸す（かす）</td>
+<td>[0]</td>
+<td>动1</td>
+<td>借出（lend）</td>
+<td>貸します</td>
+</tr>
+<tr>
+<td>習う（ならう）</td>
+<td>[2]</td>
+<td>动1</td>
+<td>学习</td>
+<td>習います</td>
+</tr>
+<tr>
+<td>あげる</td>
+<td>[0]</td>
+<td>动2</td>
+<td>给</td>
+<td>あげます</td>
+</tr>
+<tr>
+<td>かける</td>
+<td>[2]</td>
+<td>动2</td>
+<td>打（电话）</td>
+<td>かけます</td>
+</tr>
+<tr>
+<td>借りる（かりる）</td>
+<td>[2]</td>
+<td>动2</td>
+<td>借入（borrow）</td>
+<td>借ります</td>
+</tr>
+<tr>
+<td>教える（おしえる）</td>
+<td>[0]</td>
+<td>动2</td>
+<td>教，告诉</td>
+<td>教えます</td>
+</tr>
+</tbody>
+</table>
+<p>描く vs 書く</p>
+<ul>
+<li>两者读音相同，ます型也一样，注意汉字的区分</li>
+<li>絵を<strong>描</strong>く - 画画</li>
+<li>手紙を<strong>書</strong>く - 写信</li>
+</ul>
+<p>習う vs 勉強する</p>
+<ul>
+<li>習う - to learn (from a teacher)</li>
+<li>勉強する - to study (by yourself)</li>
+<li>参考：<a target="_blank" rel="noopener" href="https://www.italki.com/post/question-28303?hl=ja">「勉強する」、「学ぶ」、「習う」はどう違うんですか。</a></li>
+</ul>
+<h3 id="其它-4"><a class="markdownIt-Anchor" href="#其它-4"></a> 其它</h3>
+<p><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%B0%8F%E5%86%8A%E5%AD%90">パンフレット（pamphlet）</a> - 小册子</p>
+<p>メール（mail） - <strong>手机短信</strong>，邮件</p>
+<ul>
+<li>作为“手机短信”用的更多</li>
+</ul>
+<p>新聞 vs 新聞紙（しんぶんし）</p>
+<ul>
+<li>新聞 - 每天看的那种报纸</li>
+<li>新聞紙
+<ul>
+<li><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Newsprint">新闻纸</a>（印报纸用的纸张，newsprint）</li>
+<li>包装用的旧报纸<br />
+参考：<a target="_blank" rel="noopener" href="https://hinative.com/ja/questions/4096582">【新聞紙】 と 【新聞】 はどう違いますか？</a></li>
+</ul>
+</li>
+</ul>
+<p>チョコレート（chocolate）- 巧克力</p>
+<ul>
+<li>平常简称为「チョコ」</li>
+</ul>
+<p>アイスクリーム（ice cream）- 雪糕</p>
+<ul>
+<li>平常简称为「アイス」</li>
+</ul>
+<p>もう - 已经，already; yet（副词）</p>
+<ul>
+<li>例句：
+<ul>
+<li>A：昼ご飯を　食べましたか。</li>
+<li>B：ええ、<strong>もう</strong>　食べました。</li>
+</ul>
+</li>
+</ul>
+<p>たった今 vs さっき</p>
+<ul>
+<li>たった今（いま）- 就刚刚（just now）</li>
+<li>さっき - 刚才（a little while ago）
+<ul>
+<li>可以是几个小时之前</li>
+</ul>
+</li>
+<li>所以「たった今」比「さっき」要更靠近现在</li>
+<li>例：李さんは　<strong>たった今</strong>　帰りましたよ。</li>
+<li>参考：<a target="_blank" rel="noopener" href="https://hinative.com/ja/questions/369127">【たった今】 と 【さっき】 はどう違いますか？</a></li>
+</ul>
+<p>色鉛筆（いろえんぴつ）[3] - 彩色铅笔</p>
+<p>切符（きっぷ）[0] - 车票</p>
+<p>経済学（けいざいがく）[3]</p>
+<p>妻（つま）[1] - 妻子</p>
+<p>ダイヤ（ダイヤモンド）[1] - diamond</p>
+<p>指輪（ゆびわ）[0] - 戒指</p>
+<h2 id="语法-8"><a class="markdownIt-Anchor" href="#语法-8"></a> 语法</h2>
+<p><strong>[名1 人]は　[名2 人]に　[名3 物]を　あげます</strong></p>
+<ul>
+<li>「あげます」相当于汉语的“给”</li>
+<li>接受者用助词「に」表示
+<ul>
+<li>切记：<strong>“我”不能作为接受者</strong>（此情况用「もらいます」表达）</li>
+</ul>
+</li>
+<li>例句：
+<ul>
+<li>私は　小野さんに　お土産を　あげます。
+<ul>
+<li>我给小野女士礼物。</li>
+</ul>
+</li>
+<li>小野さんは　森さんに　チョコレートを　あげました。
+<ul>
+<li>小野女士给了森先生巧克力。</li>
+</ul>
+</li>
+<li>弟は　小野さんに　花を　あげました。
+<ul>
+<li>弟弟送花给小野女士。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>注意：当面给/送别人东西的时候，不要直接用「あげます」
+<ul>
+<li>用「どうぞ」或「どうですか」比较合适</li>
+<li>例：李さん、これ、どうぞ。</li>
+</ul>
+</li>
+</ul>
+<p><strong>[名1 人]は　[名2 人]に　[名3 物]を　もらいます</strong></p>
+<ul>
+<li>「もらいます」相当于汉语的“得到”、“接受”</li>
+<li>赠送者用助词「に/から」表示
+<ul>
+<li>因为赠送者可以看成是物品移动的起点，所以也可以用「から」代替「に」</li>
+<li>如果赠送者是人，一般多用「に」</li>
+<li>如果赠送者是“会社”或“学校”之类的组织/团体，一般多用「から」</li>
+<li>切记：<strong>“我”不能作为赠送者</strong>（此情况用「あげます」表达）</li>
+</ul>
+</li>
+<li>例句：
+<ul>
+<li>私は　小野さんに　辞書を　もらいました。
+<ul>
+<li>我从小野女士那儿得到一本词典。</li>
+<li>汉语通常会说：小野女士给了我一本词典。</li>
+</ul>
+</li>
+<li>私は　長島さん<strong>から</strong>　写真を　もらいました。
+<ul>
+<li>我从长岛先生那儿得到了照片。</li>
+</ul>
+</li>
+<li>森さんは　長島さんに　パンフレットを　もらいました。
+<ul>
+<li>森先生从长岛先生那儿得到了小册子。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>授受关系（Giving and Receiving）</strong></p>
+<ul>
+<li>「あげる」和「もらう」</li>
+<li><strong>“我”必须是主语，用助词「に」表示的人不能是“我”</strong></li>
+<li>我给小野
+<ul>
+<li>不能“从我那里得到”</li>
+<li>私は　小野さんに　お土産を　あげます。</li>
+</ul>
+</li>
+<li>我从小野那里得到
+<ul>
+<li>不能“给我”</li>
+<li>私は　小野さんに　お土産を　もらいます。</li>
+</ul>
+</li>
+</ul>
+<p><strong>[名　工具]で　[动]</strong></p>
+<ul>
+<li>「で」表示动作的<strong>手段</strong>或<strong>原材料</strong>
+<ul>
+<li>之前学过「で」表示出行手段（L6），实际上不仅限于此。</li>
+</ul>
+</li>
+<li>例句：
+<ul>
+<li>李さんは　日本語<strong>で</strong>　手紙を　書きます。</li>
+<li>手紙を　速達<strong>で</strong>　送りました。</li>
+<li>新聞紙<strong>で</strong>　紙飛行機を　作りました。</li>
+<li>何<strong>で</strong>　うどんを　作りますか。</li>
+</ul>
+</li>
+</ul>
+<p><strong>[名　人]に　会います</strong></p>
+<ul>
+<li>「会います」是“会见”的意思，见面对象用助词「に」表示。</li>
+<li>例句：
+<ul>
+<li>李さんは　明日　長島さんに　会います。</li>
+</ul>
+</li>
+</ul>
+<p><strong>用在句尾的助词「よ」</strong></p>
+<ul>
+<li><strong>读升调</strong></li>
+<li>跟汉语的“哦”、“哟”比较类似</li>
+<li>用于告知、提醒对方不知道不了解的事情</li>
+<li>例句：
+<ul>
+<li>A：すみません、李さんは　いますか。（请问，小李在吗？）</li>
+<li>B：もう　帰りました<strong>よ</strong>。（已经回去了哟。）</li>
+<li>A：私は　毎日　アイスクリームを　食べます。（我每天都吃雪糕。）</li>
+<li>B：太ります<strong>よ</strong>。（会变胖的哦。）</li>
+</ul>
+</li>
+</ul>
+<p><strong>[A]も　[B]も</strong></p>
+<ul>
+<li>助词「も」跟汉语的“也”、“都”相同</li>
+<li>句型意思：A和B都。。。</li>
+<li>例句：ファックス<strong>も</strong>　メール<strong>も</strong>　届きました。（传真和邮件都收到了）
+<ul>
+<li>不能翻译成：传真都邮件都收到了</li>
+</ul>
+</li>
+</ul>
+<h1 id="l9-四川料理は-辛いです"><a class="markdownIt-Anchor" href="#l9-四川料理は-辛いです"></a> L9 - 四川料理は　辛いです</h1>
+<h2 id="单词-8"><a class="markdownIt-Anchor" href="#单词-8"></a> 单词</h2>
+<p>料理（りょうり）</p>
+<ul>
+<li>四川（しせん）料理</li>
+<li>広東（かんとん）料理</li>
+<li>日本料理</li>
+<li><strong>中華（ちゅうか）料理</strong>
+<ul>
+<li>日式中国菜，价格亲民，街头随处可见</li>
+<li>拉面、炒饭、天津饭、干烧虾仁等</li>
+</ul>
+</li>
+<li><strong>中国料理</strong>
+<ul>
+<li>正宗中国菜，价格较贵</li>
+<li>鱼翅、北京烤鸭等</li>
+</ul>
+</li>
+<li>参考：<a target="_blank" rel="noopener" href="https://www.nippon.com/cn/features/c02941/">日本的“中华料理”与“中国料理”</a></li>
+</ul>
+<p>眺め（ながめ）- [名] 景色，风景（高处，视野开阔）</p>
+<ul>
+<li>眺める [3] - [动] 眺望</li>
+</ul>
+<p>薬（くすり）- 药</p>
+<ul>
+<li><strong>薬を飲む</strong> - 吃药（日语是“喝药”）</li>
+</ul>
+<p>グラス（glass）- 玻璃杯</p>
+<ul>
+<li>サングラス（sunglass(es)）- 墨镜</li>
+</ul>
+<p>辛い（からい）- 辣，呛</p>
+<ul>
+<li>不止是辣，像是“呛”这种带有刺激性的味道（比如「わさび」- 芥末），都用「辛い」形容</li>
+</ul>
+<p>塩辛い（しおからい）/ しょっぱい - 咸</p>
+<ul>
+<li>しょっぱい - 关东人常用</li>
+<li>塩辛い - 关西人常用</li>
+<li>参考：<a target="_blank" rel="noopener" href="https://mshabit.info/shoppai_area/">「しょっぱい」はどこの方言？</a></li>
+</ul>
+<p>美味しい（おいしい） - 美味，好吃</p>
+<ul>
+<li>うまい [2] - 美味，好吃（基本上男性用）</li>
+<li><a target="_blank" rel="noopener" href="https://japanese.stackexchange.com/questions/14812/difference-between-%E3%81%86%E3%81%BE%E3%81%84-and-%E7%BE%8E%E5%91%B3%E3%81%97%E3%81%84-when-talking-about-food">Difference between うまい and 美味しい when talking about food</a></li>
+</ul>
+<p>面白い（おもしろい）- 有趣</p>
+<p>いい - 好（good）</p>
+<ul>
+<li>同义词：よい</li>
+<li>反义词：<strong>よくない</strong></li>
+<li>素晴らしい（すばらしい）- 非常好（wonderful）</li>
+</ul>
+<p>高い（たかい） - 高，贵</p>
+<ul>
+<li>高 -&gt; tall, high</li>
+<li>贵 -&gt; expensive</li>
+<li>反义词：
+<ul>
+<li>低い（ひくい）- 低</li>
+<li>安い（やすい）- 便宜</li>
+</ul>
+</li>
+<li>背が高い（せがたかい）- 高个子</li>
+<li>背が低い（せがひくい）- 矮个子</li>
+</ul>
+<p>冷たい vs 寒い</p>
+<ul>
+<li>冷たい（つめたい）- 冷（东西，比如手、脚等）</li>
+<li>寒い（さむい）- 寒冷（天气）</li>
+</ul>
+<p>熱い vs 暑い</p>
+<ul>
+<li>熱い（あつい）- 烫（东西）</li>
+<li>暑い（あつい）- 热（天气）</li>
+<li>两者读音完全相同，汉字不同</li>
+</ul>
+<p>難しい（むずかしい）- 困难</p>
+<ul>
+<li>非正规场合可以缩写成「むずい」</li>
+</ul>
+<p>易しい（やさしい）- 容易</p>
+<ul>
+<li>優しい（やさしい）- 温柔体贴</li>
+<li>两者读音完全相同，汉字不同</li>
+<li>簡単（かんたん）- 简单
+<ul>
+<li>「易しい」用得比较少，通常都是用「簡単」</li>
+</ul>
+</li>
+</ul>
+<p>多い（おおい）&amp; 少ない（すくない）</p>
+<ul>
+<li>这两个词不能单独修饰名词</li>
+<li>例子：
+<ul>
+<li>正确：公園に　<strong>たくさんの人</strong>が　います。</li>
+<li>错误：公園に　多いの人が　います。</li>
+</ul>
+</li>
+</ul>
+<p>かわいい - 可爱（cute, adorable）</p>
+<ul>
+<li>也有很多人写成「可愛い」</li>
+</ul>
+<p>本当に（ほんとうに）- 真的</p>
+<ul>
+<li>也有短音版本的：「ほんとに」</li>
+</ul>
+<p>程度副词</p>
+<ul>
+<li>とても / たいへん
+<ul>
+<li>很，非常，very</li>
+</ul>
+</li>
+<li>少し（すこし）/ ちょっと
+<ul>
+<li>一点儿，little</li>
+</ul>
+</li>
+<li>あまり + <strong>[否定]</strong>
+<ul>
+<li>不太，(not) very; (not) much</li>
+</ul>
+</li>
+<li>全然（ぜんぜん）+ <strong>[否定]</strong>
+<ul>
+<li>根本不，not ... at all</li>
+<li>注意：口语中「全然」也可以用来形容正面的“根本”（extremely; very）</li>
+</ul>
+</li>
+<li>例句：
+<ul>
+<li>この料理は　<strong>とても</strong>　美味しいです。</li>
+<li>このスープは　<strong>少し</strong>　辛いです。</li>
+<li>このスープは　<strong>あまり</strong>　熱くないです。</li>
+<li>試験は　<strong>全然</strong>　難しくなかったです。</li>
+</ul>
+</li>
+</ul>
+<p>～用（よう）</p>
+<ul>
+<li>「～用」表示使用者或者用途，相当于汉语“～用的”</li>
+<li>例子：子供用，女性用，お客様用</li>
+</ul>
+<p>あら - <strong>女性</strong>在感到惊讶、疑惑时用的叹词</p>
+<p>冷房車（れいぼうしゃ）[3] - 空调车厢</p>
+<p>見物（けんぶつ）[0] - 观光</p>
+<h2 id="声调变化"><a class="markdownIt-Anchor" href="#声调变化"></a> 声调变化</h2>
+<p>形容词（しい -&gt; しいです）</p>
+<ul>
+<li>美味しい -&gt; 美味しꜜいです</li>
+<li>難しい -&gt; 難しꜜいです</li>
+<li>易しい -&gt; 易しꜜいです</li>
+</ul>
+<p>3音节形容词的否定形式（い -&gt; くない）</p>
+<ul>
+<li>声调前移一位</li>
+<li>あつꜜい -&gt; あꜜつくない</li>
+<li>わるꜜい -&gt; わꜜるくない</li>
+<li>对比（4音节不变）：かわいꜜい -&gt; かわいꜜくない</li>
+</ul>
+<p>「かったです」降调</p>
+<ul>
+<li>昨日のパーティーは　面白ꜜかったです。</li>
+<li>試験は　易しꜜかったですか。</li>
+<li>よꜜかったです。</li>
+</ul>
+<h2 id="语法-9"><a class="markdownIt-Anchor" href="#语法-9"></a> 语法</h2>
+<p><strong>[名]は [一类形]です</strong></p>
+<ul>
+<li>一类形容词全部以「い」结尾</li>
+<li>这里一类形容词做谓语，所以<strong>后面要加上「です」</strong></li>
+<li>否定式：词尾的「い」变成「く」，再加上「ないです」或「ありません」
+<ul>
+<li>3音节形容词注意变调（详见“声调变化”）</li>
+<li>例：広<strong>い</strong> -&gt; 広<strong>くない</strong> + です</li>
+</ul>
+</li>
+<li>过去式：词尾的「い」变成「かった」，再加上「です」
+<ul>
+<li>例：楽し<strong>い</strong> -&gt; 楽し<strong>かった</strong> + です</li>
+</ul>
+</li>
+<li>过去否定式：先否定，再过去
+<ul>
+<li>例：忙し<strong>い</strong> -&gt; 忙し<strong>くない</strong> -&gt; 忙しくな<strong>かった</strong> + です</li>
+</ul>
+</li>
+<li>注意：描述过去的体验（比如好吃），必须用过去式！
+<ul>
+<li>美味しいです。（正在吃的时候）</li>
+<li>美味しかったです。（吃完以后）</li>
+</ul>
+</li>
+<li>例句：
+<ul>
+<li>あのスープは　冷たいです。</li>
+<li>このお茶は　熱いです。</li>
+<li>今日は　寒くないです。</li>
+<li>この本は　高くありません。</li>
+<li>旅行は　楽しかったです。</li>
+<li>昨日は　寒くなかったです。</li>
+</ul>
+</li>
+</ul>
+<p><strong>[一类形] + [名]</strong></p>
+<ul>
+<li>一类形容词可以直接修饰名词，不能加「の」</li>
+<li>例子：
+<ul>
+<li>広い　国</li>
+<li>青い　空</li>
+<li>白い　紙</li>
+<li>美味しい　料理</li>
+</ul>
+</li>
+</ul>
+<p><strong>を -&gt; は（表示对比）</strong></p>
+<ul>
+<li>对比强调的时候，「を」要变成「は」，没有「をは」这种形式</li>
+<li>例句：
+<ul>
+<li>私は　コーヒー<strong>は</strong>　飲みません。</li>
+</ul>
+</li>
+</ul>
+<p><strong>否定疑问句</strong></p>
+<ul>
+<li>用于确认对方是否和自己持有相同看法</li>
+<li>例句：
+<ul>
+<li>Q：熱くないですか。（水不烫吗？）</li>
+<li>A：はい、熱くないです。（是的，不烫。）
+<ul>
+<li>「はい」对「熱くない」加以肯定</li>
+</ul>
+</li>
+<li>A：いいえ、熱くないです。（不，不烫。）
+<ul>
+<li>「いいえ」否定对方「熱い」的担心</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="l10-京都の-紅葉は-有名です"><a class="markdownIt-Anchor" href="#l10-京都の-紅葉は-有名です"></a> L10 - 京都の　紅葉は　有名です</h1>
+<h2 id="单词-9"><a class="markdownIt-Anchor" href="#单词-9"></a> 单词</h2>
+<p>紅葉</p>
+<ul>
+<li>紅葉（もみじ）- 枫叶，maple</li>
+<li>紅葉（こうよう）- （泛指）红叶，red leaves</li>
+</ul>
+<p>故郷</p>
+<ul>
+<li>故郷（こきょう）- 音读，常用于书面语</li>
+<li>故郷（ふるさと）[2] - 训读，常用于口语</li>
+<li>参考：<a target="_blank" rel="noopener" href="https://hinative.com/ja/questions/239964">【故郷(こきょう)】 と 【故郷(ふるさと)】 はどう違いますか？</a></li>
+</ul>
+<p>通り（とおり）- 大街，avenue; street; way; road</p>
+<ul>
+<li>大通り（おおどおり）- 大马路，main street</li>
+</ul>
+<p>「場所（ばしょ）」vs「所（ところ）」</p>
+<ul>
+<li>「場所」和「所」都可以指物理上的位置</li>
+<li>「所」还可以指抽象的位置（例如时间）</li>
+<li>参考：
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.facebook.com/Nihongonomori/posts/653361768116502/">「場所」と「所」の違い</a></li>
+<li><a target="_blank" rel="noopener" href="https://hinative.com/ja/questions/2132">【ところ】 と 【場所】 はどう違いますか？</a></li>
+</ul>
+</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Confectionery">お菓子（おかし）</a>- 点心（糖果，糕点）</p>
+<ul>
+<li>和菓子（わがし）- 日式点心（traditional Japanese confectionery）</li>
+</ul>
+<p>シーズン vs 季節</p>
+<ul>
+<li>シーズン（season）- 季（多指电视节目，体育赛季，农业季节，活动，行动等）
+<ul>
+<li>スキーシーズン - 滑雪季</li>
+<li>私はけいおん２シーズンを見ました（我看了K-ON!第二季）</li>
+</ul>
+</li>
+<li>季節（きせつ）[1] - 季节（春夏秋冬）</li>
+<li>参考：<a target="_blank" rel="noopener" href="https://hinative.com/ja/questions/19875330">【シーズン】 と 【季節】 はどう違いますか？</a></li>
+</ul>
+<p>平日（へいじつ）- 平日，非休息日</p>
+<ul>
+<li>休日（きゅうじつ）- 休息日（L35）</li>
+</ul>
+<p>きれい - 漂亮，干净</p>
+<ul>
+<li>一般不写成「綺麗」，但是这个汉字形式比较重要。</li>
+<li>虽然「きれい」看起来是「い」结尾，但实际上这个「い」是「麗（れい）」的一部分，所以是二类形容词。</li>
+<li>作为对比，「きたない」写成汉字是「汚い」，所以是一类形容词。</li>
+</ul>
+<p>嫌い（きらい） - 讨厌</p>
+<ul>
+<li>是二类形容词！！（跟「好き」一起记）</li>
+</ul>
+<p>ハンサム（handsome）- 帅气</p>
+<ul>
+<li>イケメン - 帅哥</li>
+</ul>
+<p>どんな - 什么样的，what kind of，what sort of</p>
+<ul>
+<li>例句：<strong>どんな</strong>人ですか。（是什么样的人呢？）</li>
+</ul>
+<p>どう [副词] - 怎样，如何，How about</p>
+<ul>
+<li>「いかが」是「どう」的敬语</li>
+<li>例句：
+<ul>
+<li><strong>どう</strong>ですか。（你觉得如何？）</li>
+<li><strong>いかが</strong>ですか。（你觉得如何？）</li>
+<li>これから<strong>どう</strong>しますか。（你想怎么做呢？）</li>
+</ul>
+</li>
+<li>参考：<a target="_blank" rel="noopener" href="https://japanese.stackexchange.com/questions/8306/how-to-use-%E3%81%84%E3%81%8B%E3%81%8C%E3%81%A7%E3%81%99%E3%81%8B">How to use いかがですか？</a></li>
+</ul>
+<p>色々（いろいろ）</p>
+<ul>
+<li>[副词] - 各种各样，variously, in many ways
+<ul>
+<li><strong>いろいろ</strong>あります - 有各种各样（的东西）</li>
+</ul>
+</li>
+<li>[二类形容词] - 各种各样的，various
+<ul>
+<li><strong>いろいろな</strong>猫 - 有各种各样的猫</li>
+<li><strong>いろんな</strong>猫（口语）</li>
+</ul>
+</li>
+</ul>
+<p>でも - 但是，but</p>
+<ul>
+<li>例句：
+<ul>
+<li>これ美味しいです、<strong>でも</strong>太ります。（这个很好吃，但是会变胖）</li>
+<li>私の部屋は狭いです。<strong>でも</strong>、きれいです。（我的房间很小，但是很干净）</li>
+</ul>
+</li>
+</ul>
+<p>そして - 而且，and (then)</p>
+<ul>
+<li>例句：私の部屋は狭いです。そして、汚いです。（我的房间很小，而且很脏）</li>
+</ul>
+<p>ところで - 话说，by the way（转移话题）</p>
+<h2 id="语法-10"><a class="markdownIt-Anchor" href="#语法-10"></a> 语法</h2>
+<p><strong>两种形容词的区别</strong></p>
+<ul>
+<li>一类形容词：かわいい猫（可爱<strong>的</strong>猫）</li>
+<li>二类形容词：きれい<strong>な</strong>猫（漂亮<strong>的</strong>猫）</li>
+<li>名词 + 名词：私<strong>の</strong>猫（我<strong>的</strong>猫 ）</li>
+<li>参考：<a target="_blank" rel="noopener" href="https://japanese.stackexchange.com/questions/1008/why-does-japanese-have-two-kinds-of-adjectives-i-adjectives-and-na-adjective">Why does Japanese have two kinds of adjectives? (-i adjectives and -na adjectives)</a></li>
+</ul>
+<p><strong>[名]は [二类形]です</strong></p>
+<ul>
+<li>二类形容词不以「い」结尾</li>
+<li>二类形容词在这里做谓语</li>
+<li>跟一类形容词不同，二类形容词遵循判断句的时态变化。
+<ul>
+<li>です</li>
+<li>でした</li>
+<li>では　ありません</li>
+<li>では　ありませんでした</li>
+</ul>
+</li>
+<li>例句：
+<ul>
+<li>この通りは　にぎやか　では　ありません。</li>
+<li>この町は　にぎやか　でした。</li>
+</ul>
+</li>
+</ul>
+<p><strong>どんな[名]</strong></p>
+<ul>
+<li>询问人或事物的性质（什么样的？）</li>
+<li>例句：
+<ul>
+<li>横浜は　どんな　町ですか。
+<ul>
+<li>とても　にぎやかな　町です。</li>
+</ul>
+</li>
+<li>張さんは　どんな　人ですか。
+<ul>
+<li>親切な　人です。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>どんな　vs　何の</strong></p>
+<ul>
+<li>「どんな」问“性质”</li>
+<li>「何（なん）の」问“内容”或“材料”</li>
+<li>例：
+<ul>
+<li>何の　本ですか。（自動車の　本です。）</li>
+<li>どんな　本ですか。（面白い　本です。）</li>
+<li>何の　料理ですか。（魚の　料理です。）</li>
+<li>どんな　料理ですか。（ちょっと　辛い　料理です。）</li>
+</ul>
+</li>
+</ul>
+<p><strong>どうですか</strong></p>
+<ul>
+<li>用于询问想法和意见</li>
+<li>也可用于劝诱对方进行某动作</li>
+<li>过去式：どうでしたか</li>
+<li>例句：
+<ul>
+<li>この料理は<strong>どうですか</strong>。</li>
+<li>京都は<strong>どうでしたか</strong>。</li>
+<li>お茶、<strong>どうですか</strong>。
+<ul>
+<li>ありがとうございます。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>自然现象（下雨、下雪等）</strong></p>
+<ul>
+<li>在日语中用名词方式表达。</li>
+<li>例：
+<ul>
+<li>雪です。</li>
+<li>昨日は晴れでした。</li>
+<li>一昨日は雨でした。</li>
+</ul>
+</li>
+</ul>
+<p><strong>～中（じゅう）</strong></p>
+<ul>
+<li>[场所] + 中 - 表示场所范围内的全部
+<ul>
+<li>世界中 - 全世界</li>
+<li>日本中 - 全日本</li>
+<li>学校中 - 全校</li>
+</ul>
+</li>
+<li>[时间] + 中 - 表示在某个期间一直
+<ul>
+<li>一日中 - 一整天</li>
+<li>一（ひと）晩中 - 一晚上</li>
+<li>一年中 - 全年</li>
+</ul>
+</li>
+</ul>
+<p><strong>形容词 + の</strong></p>
+<ul>
+<li>这里用助词「の」指代前面交代过的东西，从而使句子更简洁。</li>
+<li>基本可以看作是把名词换成「の」</li>
+<li>例句：
+<ul>
+<li>小野：世界中の　有名な　作家の　<strong>彫刻</strong>です。</li>
+<li>長島：美術館の　庭にも　色々　面白い<strong>の</strong>が　ありますよ。（面白い<strong>彫刻</strong>が）</li>
+<li>A：この　<strong>パソコン</strong>は　いかがですか。</li>
+<li>B：もう　少し　小さい<strong>の</strong>が　いいです。（小さい<strong>パソコン</strong>が）</li>
+<li>これは　ちょっと　難しいです。もう少し　簡単<strong>なの</strong>は　ありませんか。</li>
+</ul>
+</li>
+</ul>
+<h1 id="l11-小野さんは-歌が-好きです"><a class="markdownIt-Anchor" href="#l11-小野さんは-歌が-好きです"></a> L11 - 小野さんは　歌が　好きです</h1>
+<h2 id="单词-10"><a class="markdownIt-Anchor" href="#单词-10"></a> 单词</h2>
+<p>カラオケ（karaoke）- 卡拉OK</p>
+<ul>
+<li>空（から）+ オーケストラ（orchestra）</li>
+</ul>
+<p>ポップ（pop）- 流行音乐</p>
+<ul>
+<li>J-POP（ジェーポップ）- 日本流行音乐</li>
+</ul>
+<p>ヒマワリ - 向日葵</p>
+<ul>
+<li>日（ひ）+ 回り（まわり）= 绕着太阳转</li>
+</ul>
+<p>男性自称</p>
+<ul>
+<li>僕（ぼく）- humble</li>
+<li>俺（おれ）- rough</li>
+<li>参考：<a target="_blank" rel="noopener" href="https://cotoacademy.com/how-to-call-yourself-in-japanese-boku-ore-watashi/">Boku, Ore, Watashi</a></li>
+</ul>
+<p>分かる [2] [动1] - 明白，to understand</p>
+<ul>
+<li>分かりましたか。
+<ul>
+<li>分かりました。</li>
+<li>分かりません。（注意：“没懂”不能用过去式）</li>
+</ul>
+</li>
+</ul>
+<p>迷う（まよう）[2] [动1] - 犹豫，to hesitate</p>
+<ul>
+<li>用于难以立即做出选择的场合
+<ul>
+<li>Q：たくさん料理がありますね。何を食べますか。（饭菜种类很多啊，吃什么呢？）</li>
+<li>A：うーん、迷いますね。（Hmmm，还真不好选。）</li>
+</ul>
+</li>
+<li>也可以用来表示“迷路”的意思
+<ul>
+<li>ホテルの中で迷いました。（在酒店里迷路了。）</li>
+</ul>
+</li>
+</ul>
+<p>できる [2] [动2] - 会，能（做某事）</p>
+<ul>
+<li>例：日本語が少しできます。（我会一点日语）</li>
+</ul>
+<p>閉める（しめる）[2] [动2] - 关闭，关门</p>
+<p>疲れる（つかれる）[3] [动2] - 疲倦，疲惫</p>
+<p>散歩する（さんぽする）[0] [动3] - 散步</p>
+<p>気に入る（きにいる）[0] [动1] - 中意，to like; to be pleased with</p>
+<ul>
+<li>「気に入る」用于<strong>第一次见到某事物而感到中意</strong>，不表示自己原有的喜好。对象用「が」表示</li>
+<li>「気に入る」只能用于朋友或熟人之间，不可以对长辈用<br />
+この赤いかばんが<strong>気に入りました</strong>から、これを買います。（我看中了这个红色的包，就买这个。）</li>
+<li>对比：「好きです」一般用于<strong>持续性的爱好</strong>
+<ul>
+<li>私はコーヒーが<strong>好きです</strong>。</li>
+</ul>
+</li>
+</ul>
+<p>上手（じょうず）vs 得意（とくい）</p>
+<ul>
+<li>「上手」只能夸别人，如果说“自己擅长”要用「得意」</li>
+<li>例句：
+<ul>
+<li>日本語がお<strong>上手</strong>ですね（你的日语很好）</li>
+<li>私は日本語が<strong>得意</strong>です（我的日语很好）</li>
+</ul>
+</li>
+<li>参考：<a target="_blank" rel="noopener" href="https://japanese.stackexchange.com/questions/26105/what-is-the-difference-between-%E5%BE%97%E6%84%8F-and-%E4%B8%8A%E6%89%8B">What is the difference between 得意 and 上手?</a></li>
+</ul>
+<p>下手（へた）vs 苦手（にがて）</p>
+<ul>
+<li>「下手」是客观上的水平低（想做，但是做不好）</li>
+<li>「苦手」是主观上的不擅长（心理上排斥抗拒，但是不代表客观上做不好）</li>
+<li>参考：<a target="_blank" rel="noopener" href="https://hinative.com/ja/questions/14982">【苦手】 と 【下手】 はどう違いますか？</a></li>
+</ul>
+<p>また vs まだ</p>
+<ul>
+<li>また [0] - 又，again</li>
+<li>まだ [1] - 尚未，还没，not yet</li>
+</ul>
+<p>为什么</p>
+<ul>
+<li>どうして - 最普通的问法</li>
+<li>なんで - 偏口语，比较随意</li>
+<li>なぜ（何故）- 偏向书面语</li>
+</ul>
+<p>うーん - 嗯。。。（思考），Hmmmm....</p>
+<ul>
+<li>うん - 嗯，yeah</li>
+<li>ううん - 不，no</li>
+</ul>
+<p>そうですね - 怎么说呢，Hmmmm....</p>
+<ul>
+<li>表示正在思考接下来要回答的内容（拖时间）</li>
+<li>例句：
+<ul>
+<li>日本の食べ物はどうですか。</li>
+<li><strong>そうですね</strong>...、とても美味しいです。でも、ちょっと高いです。</li>
+</ul>
+</li>
+<li>L7 也提到过“同意对方提议”的用法</li>
+</ul>
+<p>硬い（かたい）[0]</p>
+<h2 id="语法-11"><a class="markdownIt-Anchor" href="#语法-11"></a> 语法</h2>
+<p>自動詞（じどうし）vs. 他動詞（たどうし）</p>
+<ul>
+<li>[自动词 / intransitive verb）
+<ul>
+<li>私は　疲れる。</li>
+</ul>
+</li>
+<li><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Intransitive_verb">他动词</a>：搭配宾语（及物动词 / transitive verb）
+<ul>
+<li>私は　<strong>窓を</strong>　閉める。</li>
+</ul>
+</li>
+<li>很多动词既有「自動詞」形式，也有「他動詞」形式</li>
+<li>现阶段有初步的认知即可，无需深究</li>
+<li>参考：<a target="_blank" rel="noopener" href="http://www.guidetojapanese.org/learn/grammar/in-transitive">Transitive and Intransitive Verbs</a></li>
+</ul>
+<p><strong>[名1]は　[名2]が　[形]です</strong></p>
+<ul>
+<li>形容词可以是“<strong>情感</strong>”或者“<strong>能力相关</strong>”的词语</li>
+<li>名词1 - 形容的主体</li>
+<li>名词2 - 形容的对象</li>
+<li>例句：
+<ul>
+<li>小野さんは　歌が　好きです。（小野喜欢唱歌）</li>
+<li>王さんは　肉が　嫌いです。（小王不喜欢吃肉）</li>
+<li>林さんは　犬が　怖いです。（林先生害怕狗）</li>
+<li>スミスさんは　韓国語が　分かります。（史密斯先生懂韩语）</li>
+<li>私は　コンピュータが　できません。（我不会用电脑）</li>
+<li>小野さんは　料理が　上手です。（小野擅长做料理）</li>
+</ul>
+</li>
+</ul>
+<p><strong>[名]や　[名]（など）</strong></p>
+<ul>
+<li>助词「や」用于连接名词，而且只列举许多项目中的两项，经常和「など」搭配使用。相比之下，「と」则是列举所有项目（L4）</li>
+<li>「など」的汉字形式是「等」</li>
+<li>助词「や」可以翻译成：[名]啊/呀/啦 [名]什么的</li>
+<li>例句：
+<ul>
+<li>吉田さんは　時々　中国<strong>や</strong>　韓国へ　行きます。（吉田先生有时候去中国啦韩国什么的）</li>
+<li>森さんは　サッカー<strong>や</strong>　野球が　好きです。（森先生喜欢足球啦棒球什么的）</li>
+<li>私は　お店で　野菜<strong>や</strong>　果物<strong>など</strong>を　買いました。（我在店里买了蔬菜啦水果等等）</li>
+</ul>
+</li>
+</ul>
+<p><strong>因果关系（～から / だから）</strong></p>
+<ul>
+<li>「から」紧跟在原因后面，表示“因为”</li>
+<li>「だから」放在结果前面，表示“所以”</li>
+<li>「から」和「だから」只能选一个使用（跟英语的 because 和 so 类似）</li>
+<li>敬体 vs. 常体：
+<ul>
+<li>「から」&amp; 一类形：天気がいい <strong>（です / X ）</strong> から</li>
+<li>「から」&amp; 二类形：好き <strong>（です / だ）</strong> から</li>
+<li>「だから」：明日は休みです。<strong>（ですから / だから）</strong>、子供と動物園へ行きます。</li>
+</ul>
+</li>
+<li>例句：
+<ul>
+<li>森さんはお酒が好きです<strong>から</strong>、毎日飲みます。</li>
+<li>寒いです<strong>から</strong>、窓を閉めます。
+<ul>
+<li>窓を閉めます。寒いです<strong>から</strong>。</li>
+</ul>
+</li>
+<li>キムさんは野菜が嫌いです。<strong>だから</strong>、あまり野菜を食べません。</li>
+</ul>
+</li>
+</ul>
+<p><strong>[名 场所]で　[名 事件]が　あります</strong></p>
+<ul>
+<li>这里描述的是“在某处发生某事”，事件发生的场所用「で」表示
+<ul>
+<li>L7：动作的场所用「で」，强调动作发生的地点</li>
+<li>L4：「に」强调某物存在的位置</li>
+</ul>
+</li>
+<li>例句：
+<ul>
+<li>ホテル<strong>で</strong>写真展<strong>が</strong>あります。</li>
+<li>来週、金曜日の夜７時から、ホテル<strong>で</strong>パーティー<strong>が</strong>あります。</li>
+</ul>
+</li>
+</ul>
+<p><strong>いかがですか</strong></p>
+<ul>
+<li>是「どうですか」的礼貌形式（L10）</li>
+<li>例句：</li>
+<li>コーヒーはいかがですか。
+<ul>
+<li>接受：どうもありがとうございます。いただきます。</li>
+<li>拒绝：今は結構です。（さっき飲みましたから。）
+<ul>
+<li>不要直接说「いいえ」，会显得很没礼貌</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>频率副词</strong></p>
+<ul>
+<li>いつも - 总是，always</li>
+<li>よく - 经常，often</li>
+<li>時々（ときどき）- 有时候，sometimes</li>
+<li>たまに - 偶尔，occasionally</li>
+<li>あまり - 不太。。，not much</li>
+<li>全然（ぜんぜん）- 完全不，never</li>
+</ul>
+<p><strong>省略重复谓语</strong></p>
+<ul>
+<li>Q：気に入りましたか。</li>
+<li>A：はい、とても <strong>（気に入りました）</strong>。</li>
+<li>Q：北京ダックは美味しいですね。</li>
+<li>A：ええ、とても <strong>（美味しいです）</strong>。</li>
+<li>Q：小野さん、素晴らしい眺めですね。（L9 - 应用课文）</li>
+<li>A：ええ、本当に <strong>（素晴らしい眺めですね）</strong>。</li>
+</ul>
+<h1 id="l12-李さんは-森さんより-若いです"><a class="markdownIt-Anchor" href="#l12-李さんは-森さんより-若いです"></a> L12 - 李さんは　森さんより　若いです</h1>
+<h2 id="单词-11"><a class="markdownIt-Anchor" href="#单词-11"></a> 单词</h2>
+<p>日本料理（にほんりょうり）</p>
+<ul>
+<li>寿司（すし）[2]</li>
+<li>刺身（さしみ）[3]</li>
+</ul>
+<p>果物</p>
+<ul>
+<li>ナシ（梨）[2]</li>
+<li>バナナ（banana）[1]</li>
+<li>ミカン（蜜柑）[1] - 橘子</li>
+</ul>
+<p>茶</p>
+<ul>
+<li>紅茶（こうちゃ）[0]</li>
+<li>ウーロン茶（鳥龍茶）[3]</li>
+<li>ジャスミン茶（jasmine）[3] - 茉莉花茶</li>
+<li>緑茶（りょくちゃ）[0]</li>
+</ul>
+<p>人気（にんき）[0]</p>
+<ul>
+<li>例：人気があります</li>
+<li>大人気（だいにんき）[3] - 非常有人气
+<ul>
+<li>例：大人気です</li>
+</ul>
+</li>
+</ul>
+<p>背（せ）[1] - 个子，height; stature</p>
+<ul>
+<li>例：背が高い（个子高）</li>
+</ul>
+<p>最近（さいきん）</p>
+<ul>
+<li>和中文“最近”不同，不能表示将来的时间</li>
+<li>例：
+<ul>
+<li>最近少し太りました。（最近有些胖了）</li>
+<li>最近十年間は元気でした。（最近十年身体都很好）</li>
+</ul>
+</li>
+</ul>
+<p>降る（ふる）[1] [动1] - 下（雨、雪）</p>
+<ul>
+<li>雨が降る - 下雨</li>
+</ul>
+<p>暖かい（あたたかい）[4] -（气温）暖和，温暖，warm</p>
+<ul>
+<li>口语可以读成：あったかい [4]</li>
+</ul>
+<p>速い / 早い（はやい）[2]</p>
+<ul>
+<li>速い - 快，fast; quick</li>
+<li>早い - 早，early，(too) soon</li>
+<li>副词：速く / 早く（はやく）</li>
+</ul>
+<p>ずっと - ～得多，much (better, etc.)</p>
+<ul>
+<li>例：冬の北京は東京よりずっと寒いです。</li>
+<li>「ずっと」还有“一直，始终”的意思（L32）</li>
+</ul>
+<p>一番（いちばん）[0] - 第一，first place；最，best，most</p>
+<ul>
+<li>一番好きです（最喜欢）</li>
+</ul>
+<p>やはり / やっぱり - 果然，as expected；仍然，还是，still</p>
+<ul>
+<li>「やっぱり」常用于口语</li>
+<li>例：
+<ul>
+<li>やっぱり雨が降りましたね（果然下雨了呢~）</li>
+<li>Q：どのお茶が一番人気がありますか。（哪种茶最受欢迎呢？）</li>
+<li>A：やっぱりウーロン茶です。（还是乌龙茶。）</li>
+</ul>
+</li>
+</ul>
+<p>エベレスト（Everest）[3]</p>
+<ul>
+<li>又叫「チョモランマ」（Qomolangma）[3]</li>
+</ul>
+<p>テキスト [1] - 课本（textbook）</p>
+<h2 id="语法-12"><a class="markdownIt-Anchor" href="#语法-12"></a> 语法</h2>
+<p><strong>[名A]は　[名B]より　[形]です</strong></p>
+<ul>
+<li>A 比 B 。。。（B 是比较的参照物）</li>
+<li>例句：
+<ul>
+<li>李さんは　森さん<strong>より</strong>　若いです。（小李比森先生年轻）</li>
+<li>中国は　日本<strong>より</strong>　広いです。（中国比日本辽阔）</li>
+<li>上海は　北京<strong>より</strong>　にぎやかですか。（上海比北京热闹吗）</li>
+</ul>
+</li>
+</ul>
+<p><strong>[名A]より　[名B]の　ほうが　[形]です</strong></p>
+<ul>
+<li>比起 A，还是 B 更。。。（A 是比较的参照物）</li>
+<li>例句：
+<ul>
+<li>日本<strong>より</strong>　中国<strong>の　ほうが</strong>　広いです。（与日本相比，中国更辽阔）</li>
+<li>北京<strong>より</strong>　東京<strong>の　ほうが</strong>　温かいです。（与北京相比，东京更暖和）</li>
+<li>大阪<strong>より</strong>　東京<strong>の　ほうが</strong>　にぎやかですか。（与大阪相比，东京更热闹吗）</li>
+</ul>
+</li>
+</ul>
+<p><strong>[名A]は　[名B]ほど　[形 否定]</strong></p>
+<ul>
+<li>A 不如 B 。。。（B 是比较的参照物）</li>
+<li>形容词否定：
+<ul>
+<li>一类形 + くないです</li>
+<li>二类形 + ではありません</li>
+</ul>
+</li>
+<li>例句：
+<ul>
+<li>東京の冬は　北京の冬<strong>ほど</strong>　寒くないです。</li>
+<li>神戸は　大阪<strong>ほど</strong>　にぎやかではありません。</li>
+<li>私の部屋は　王さんの部屋<strong>ほど</strong>　きれいではありません。</li>
+</ul>
+</li>
+</ul>
+<p><strong>[名A]の　中で　[名B]が　一番　[形]です</strong></p>
+<ul>
+<li>在 A 中，B 最。。。。
+<ul>
+<li>A 的范围比 B 大</li>
+</ul>
+</li>
+<li>名词 A 不能是场所和时间！（有另外的句型描述）</li>
+<li>例句：
+<ul>
+<li>スポーツ<strong>の中で</strong>　サッカー<strong>が　一番</strong>面白いです。（在各种体育活动中，足球最有意思）</li>
+<li>日本料理<strong>の中で</strong>　寿司<strong>が　一番</strong>美味しいです。（在日本料理中，寿司最好吃）</li>
+</ul>
+</li>
+</ul>
+<p><strong>[名 场所/时间]で　一番　[形] [名A]は　[名B]です</strong></p>
+<ul>
+<li>在（时间/范围）里，最（形容词）的 A 是 B。
+<ul>
+<li>A 的范围比 B 大</li>
+</ul>
+</li>
+<li>例句：
+<ul>
+<li>日本で　一番高い山は　富士山です。（日本最高的山是富士山）</li>
+<li>１年で　一番寒い月は　２月です。（一年当中最冷的月份是2月份）</li>
+</ul>
+</li>
+</ul>
+<p>注：日语的「一番」必须要指明比较对象或范围（[名]の　中で / [名 场所/时间]で）</p>
+<p><strong>[名A]と　[名B]と　どちらが　[形]ですか</strong></p>
+<ul>
+<li>询问程度（<strong>二选一！</strong>）</li>
+<li>回答：
+<ul>
+<li>做出选择：[名]の　ほうが　[形]です</li>
+<li>程度相当：どちらも　[形]です</li>
+</ul>
+</li>
+<li>例句：
+<ul>
+<li>日本語<strong>と</strong>　英語<strong>と</strong>　<strong>どちらが</strong>　難しいですか。（日语和英语哪个难学？）
+<ul>
+<li>日本語のほうが　難しいです。（日语难学。）</li>
+<li>どちらも　難しいです。（都难学。）</li>
+</ul>
+</li>
+<li>コーヒー<strong>と</strong>　紅茶<strong>と</strong>　<strong>どちらが</strong>　好きですか。（咖啡和红茶更喜欢哪个？）
+<ul>
+<li>紅茶のほうが　好きです。（更喜欢红茶。）</li>
+<li>どちらも　好きです。（都喜欢。）</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>注：「どちら」在口语中可以说成「どっち」</li>
+</ul>
+<p><strong>（どの[名] / いつ / どれ / だれ / 何）が　一番　[形]ですか</strong></p>
+<ul>
+<li>询问程度（<strong>三个以上的选项！</strong>）</li>
+<li>根据询问对象，使用不同的疑问词：
+<ul>
+<li>人：だれが</li>
+<li>物品：どの[名]が，どれが，何が
+<ul>
+<li>选项在上下文有提及，或者是存在于眼前时，用「どの[名]が」或「どれが」。</li>
+<li>反之，则用「何が」</li>
+</ul>
+</li>
+<li>时间：いつが</li>
+</ul>
+</li>
+<li>例句：
+<ul>
+<li>Q：この中で　<strong>どの料理が</strong>　一番美味しいですか。（在这些菜中，哪个菜最好吃？）</li>
+<li>A：この料理が　一番美味しいです。（这个菜最好吃。）</li>
+<li>Q：季節の中で　<strong>いつが</strong>　一番好きですか。（在四季中，你最喜欢哪个？）</li>
+<li>A：私は　春が　一番好きです。（我最喜欢春天。）</li>
+<li>リンゴとナシとバナナの中で　<strong>どれが</strong>　一番好きですか。
+<ul>
+<li>上下文有提及选项，所以用「どれが」</li>
+</ul>
+</li>
+<li>果物の中で　<strong>何が</strong>　一番好きですか。
+<ul>
+<li>没有提及选项，只说明了“水果当中”，所以用「何が」</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>～が...（只说半句话）</strong></p>
+<ul>
+<li>在拒绝别人、难以启齿的情况下，日本人常常不把话说完，用「が」收尾，给人委婉含蓄的印象。</li>
+<li>例句：
+<ul>
+<li>あのう、そこは私の席ですが...（对不起，那是我的座位。。。）
+<ul>
+<li>言外之意：你赶紧让开！</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>注：这个语法点现阶段不用太关心。</li>
+</ul>
+<h1 id="l13-机の-上に-本が-3冊-あります"><a class="markdownIt-Anchor" href="#l13-机の-上に-本が-3冊-あります"></a> L13 - 机の　上に　本が　３冊　あります</h1>
+<h2 id="单词-12"><a class="markdownIt-Anchor" href="#单词-12"></a> 单词</h2>
+<p>他（ほか）[0] - 另外，其它，other (place, thing, person)</p>
+<ul>
+<li>その他 [2] - 其它，the rest; the others（常用于名词列举）</li>
+</ul>
+<p>肉じゃが - 土豆炖肉</p>
+<ul>
+<li>肉 + ジャガイモ [0]（土豆）</li>
+<li>日本人的一道家常菜</li>
+</ul>
+<p>かかる [2] [自动词] - 花费（时间，金钱），to take (a resource, e.g. time or money)</p>
+<ul>
+<li>お金がかかる - 很费钱</li>
+<li>時間がかかる - 很费时间</li>
+</ul>
+<p>咲く（さく）[0] [自动词] - 花开，to bloom</p>
+<ul>
+<li>花が咲く - 开花</li>
+</ul>
+<p>泳ぐ（およぐ）[2] [自动词] - 游泳</p>
+<ul>
+<li>海で泳ぎます - 在海里游泳</li>
+</ul>
+<p>遊ぶ（あそぶ）[0] [自动词] - 玩，to play (games, sports)</p>
+<ul>
+<li>公園で遊びます - 在公园玩</li>
+<li>PS4で遊びます - 玩PS4
+<ul>
+<li>因为是自动词，所以玩游戏不用「を」，应该用「で」（用什么在玩）</li>
+</ul>
+</li>
+</ul>
+<p>吸う（すう）[0] [他动词] - 吸（烟），to smoke</p>
+<ul>
+<li>タバコを吸います</li>
+</ul>
+<p>切る（きる）[1] <strong>[动1]</strong> [他动词] - 剪，切，割，to cut; to cut through;</p>
+<ul>
+<li>注意：虽然是「（い段）る」，但这个是一类动词！</li>
+<li>髪を切ります - 剪头发</li>
+<li>紙を切ります - 剪纸</li>
+</ul>
+<p>大体（だいたい）- 大概，roughly; almost;</p>
+<ul>
+<li>大体２時間ぐらい - 大概两个小时</li>
+</ul>
+<p>とりあえず - 暂且，for now; for the time being</p>
+<ul>
+<li>从几种可能的动作或事项中，暂且选一个先做，暗示剩余事项会随后进行</li>
+<li>在饭店点菜常用，先点一部分容易决定的东西</li>
+<li>例：とりあえず　生ビールを　３つ　お願いします（先来3杯生啤）</li>
+</ul>
+<p>どのくらい / どれくらい - 多久（时间），多少钱，how long; how much</p>
+<ul>
+<li>两者在使用上几乎没有区别，可以相互替换</li>
+<li>「くらい」和「ぐらい」相同，意思是“大概，左右”</li>
+<li>「どのくらい」经常和「かかる」搭配使用</li>
+<li>例句：
+<ul>
+<li>どのぐらい　時間が　かかりますか。</li>
+<li>Q：家から　会社まで　どのぐらい　かかりますか。</li>
+<li>A：電車で　１時間ぐらい　かかります。</li>
+<li>Q：修理は　どのぐらい　かかりますか。</li>
+<li>A：２万円ぐらい　かかります。</li>
+</ul>
+</li>
+<li>参考：
+<ul>
+<li><a target="_blank" rel="noopener" href="https://hinative.com/ja/questions/1765532">【どれくらい】 と 【どのくらい】 はどう違いますか？</a></li>
+<li><a target="_blank" rel="noopener" href="https://hinative.com/ja/questions/5496987">【どのくらい】 と 【どのぐらい】 はどう違いますか？</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="量词"><a class="markdownIt-Anchor" href="#量词"></a> 量词</h2>
+<p><strong>量词和使用对象</strong></p>
+<ul>
+<li><strong>～人（にん）</strong>- 人</li>
+<li><strong>～台（だい）</strong>- 机械，车辆（机动车，电脑）</li>
+<li><strong>～枚（まい）</strong>- 薄、平的物品（纸，盘子，邮票，衬衫）</li>
+<li><strong>～冊（さつ）</strong>- 书，笔记本等</li>
+<li><strong>～歳（さい）</strong>- 年龄</li>
+<li><strong>～回（かい）</strong>- 次数</li>
+<li><strong>～着（ちゃく）</strong>- 衣服等
+<ul>
+<li>注意：<a target="_blank" rel="noopener" href="https://jisho.org/search/%E7%9D%80%20%23kanji">字形</a>和汉语有细微差别</li>
+</ul>
+</li>
+<li><strong>～個（こ）</strong>
+<ul>
+<li>立体物品（鸡蛋，饭团，球）</li>
+<li>容器（箱子，盒子，玻璃杯）</li>
+<li>概念性的，抽象的事物（密码）</li>
+</ul>
+</li>
+<li><strong>～本（ほん）</strong>- 细长物品（瓶子，铅笔，伞，香蕉）</li>
+<li><strong>～杯（はい）</strong>- 容器内的饮料（茶，咖啡，啤酒）</li>
+<li><strong>～匹（ひき）</strong>- 小动物（猫，狗，昆虫，鱼）</li>
+<li><strong>～頭（とう）</strong>- 大动物（牛，马，象）</li>
+<li><strong>～羽（わ）</strong>- 鸟，兔</li>
+<li><strong>～番（ばん）</strong>- 顺序</li>
+<li><strong>～足（そく）</strong>- 成对的物品（鞋子，袜子）</li>
+<li><strong>～つ</strong>
+<ul>
+<li>1-9岁的年龄</li>
+<li>立体物品（橘子，帽子）</li>
+<li>抽象的事物（选项）</li>
+<li>注意：不用于10以上的数字</li>
+</ul>
+</li>
+</ul>
+<p><strong>数词和量词</strong></p>
+<ul>
+<li>数数方法有两种
+<ul>
+<li>音读（いち，に，さん，し，ご，ろく，しち，はち，きゅう，じゅう）</li>
+<li>训读（ひ，ふ，み，よ，いつ，む，なな，や，ここ，とお）</li>
+</ul>
+</li>
+<li>读法不发生变化
+<ul>
+<li>～台（だい），～枚（まい），～番（ばん）</li>
+</ul>
+</li>
+<li>1，6，8，10 变促音
+<ul>
+<li>～個（こ），～階（かい），～回（かい）</li>
+</ul>
+</li>
+<li>1，6，8，10 变促音，3 变浊化
+<ul>
+<li>～本（ほん），～杯（はい），～匹（ひき）</li>
+</ul>
+</li>
+<li>变化规则很复杂，而且有例外，还是查表最靠谱</li>
+<li>现阶段只背「～つ」和「～人」即可，因为实在不会可以用「～つ」或者「～個」来代替其它量词
+<ul>
+<li>例：生ビールを３つ（这里用「～つ」代替了「～杯」）</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>～つ</th>
+<th>～人</th>
+<th>～台</th>
+<th>～個</th>
+<th>～本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>ひと</strong>つ [2]</td>
+<td><strong>ひとり</strong> [2]</td>
+<td>いちだい</td>
+<td><strong>いっ</strong>こ</td>
+<td><strong>いっぽ</strong>ん</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>ふた</strong>つ [3]</td>
+<td><strong>ふたり</strong> [3]</td>
+<td>にだい</td>
+<td>にこ</td>
+<td>にほん</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>みっ</strong>つ [3]</td>
+<td>さんにん</td>
+<td>さんだい</td>
+<td>さんこ</td>
+<td><strong>さんぼ</strong>ん</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>よっ</strong>つ [3]</td>
+<td>よにん</td>
+<td>よんだい</td>
+<td>よんこ</td>
+<td>よんほん</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>いつ</strong>つ [2]</td>
+<td>ごにん</td>
+<td>ごだい</td>
+<td>ごこ</td>
+<td>ごほん</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>むっ</strong>つ [3]</td>
+<td>ろくにん</td>
+<td>ろくだい</td>
+<td><strong>ろっ</strong>こ</td>
+<td><strong>ろっぽ</strong>ん</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>なな</strong>つ [2]</td>
+<td>ななにん</td>
+<td>ななだい</td>
+<td>ななこ</td>
+<td>ななほん</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>やっ</strong>つ [3]</td>
+<td>はちにん</td>
+<td>はちだい</td>
+<td><strong>はっ</strong>こ</td>
+<td><strong>はっぽ</strong>ん</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>ここの</strong>つ [2]</td>
+<td>きゅうにん</td>
+<td>きゅうだい</td>
+<td>きゅうこ</td>
+<td>きゅうほん</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>とお</strong> [1]</td>
+<td>じゅうにん</td>
+<td>じゅうだい</td>
+<td><strong>じゅっ</strong>こ</td>
+<td><strong>じゅっぽ</strong>ん</td>
+</tr>
+<tr>
+<td>何</td>
+<td>いくつ [1]</td>
+<td>なんにん</td>
+<td>なんだい</td>
+<td>なんこ</td>
+<td>なん<strong>ぼ</strong>ん</td>
+</tr>
+</tbody>
+</table>
+<h2 id="语法-13"><a class="markdownIt-Anchor" href="#语法-13"></a> 语法</h2>
+<p><strong>动词的分类</strong></p>
+<ul>
+<li>一类：比较多
+<ul>
+<li>不符合二类和三类的动词</li>
+<li>不是「る」结尾，肯定是一类</li>
+<li>特殊的一类动词（看起来是二类，实际上是一类）
+<ul>
+<li>「い段」或「え段」假名包含在汉字发音里</li>
+<li>例：入る（はいる）[1]；切る（きる）[1]</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>二类：比较少
+<ul>
+<li>～（い段）る，例：借りる，起きる</li>
+<li>～（え段）る，例：食べる，教える</li>
+</ul>
+</li>
+<li>三类：一共两个
+<ul>
+<li>する - 做</li>
+<li>来る - 来</li>
+</ul>
+</li>
+</ul>
+<p><strong>动词变位（ます形）</strong></p>
+<ul>
+<li>一类
+<ul>
+<li>把末尾假名变成同一行的「い」段假名，然后加上「ます」</li>
+<li>例：会う -&gt; 会います（う -&gt; い + ます）</li>
+</ul>
+</li>
+<li>二类
+<ul>
+<li>去掉「る」，加上「ます」</li>
+<li>例：借りる -&gt; 借ります</li>
+</ul>
+</li>
+<li>三类
+<ul>
+<li>する -&gt; します</li>
+<li>来る（くる）[1] -&gt; 来ます（きます）[0]</li>
+</ul>
+</li>
+</ul>
+<p><strong>动词连用形（动词的词根形式）</strong></p>
+<ul>
+<li>也叫 <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Japanese_verb_conjugation#%E9%80%A3%E7%94%A8%E5%BD%A2">verb stem / masu stem</a></li>
+<li>就是这些动词的「ます形」去掉「ます」</li>
+<li>例：
+<ul>
+<li>会う（会います）- 会い</li>
+<li>食べる（食べます）- 食べ</li>
+<li>来る（来ます）- 来</li>
+<li>する（します）- し</li>
+</ul>
+</li>
+</ul>
+<p><strong>[名 场所]へ　[动]に　行きます/来ます</strong></p>
+<ul>
+<li>表示移动行为的目的（去某地做某事）</li>
+<li>动词使用<strong>连用形</strong>，即「ます形」去掉「ます」</li>
+<li>例句：
+<ul>
+<li>午後　郵便局へ　荷物を　<strong>出ꜜしに</strong>　行きます。（下午去邮局寄包裹）</li>
+<li>小野さんは　プールへ　<strong>泳ꜜぎに</strong>　行きます。（小野去泳池游泳）</li>
+<li>李さんは　私の家へ　<strong>遊びに</strong>　来ました。（小李来我家玩了）</li>
+<li>猜测：连用形读音根据基本形来决定</li>
+</ul>
+</li>
+<li>注意：飲みに　行きます
+<ul>
+<li>如果不说明喝什么，默认就是喝酒</li>
+<li>これから　森さんと　<strong>飲みに　行きます</strong>。（现在和森先生<strong>去喝酒</strong>）</li>
+<li>これから　森さんと　<strong>お茶を　飲みに　行きます</strong>。（现在和森先生<strong>去喝茶</strong>）</li>
+</ul>
+</li>
+</ul>
+<p><strong>数量词 + 动词</strong></p>
+<ul>
+<li>数量词用在动词前面</li>
+<li>根据修饰的事物来选择量词</li>
+<li>询问数量时，在「何（なん）」的后面加量词</li>
+<li>例句：
+<ul>
+<li>卵を　<strong>１個（いっこ）</strong>　食べます。</li>
+<li>本を　<strong>２冊（にさつ）</strong>　買いました。</li>
+<li>緑茶を　<strong>３杯（さんばい）</strong>　飲みました。</li>
+<li>教室に学生が　<strong>４人（よにん）</strong>　います。</li>
+<li>ガレージに車が　<strong>５台（ごだい）</strong>　あります。</li>
+<li>引き出しに鉛筆が　<strong>１０本（じゅっぽん）</strong>　あります。</li>
+<li>切手を　<strong>何枚（なんまい）</strong>　買いましたか。</li>
+<li>この動物園には象が　<strong>２頭（にとう）</strong>　います。</li>
+<li>友達に猫を　<strong>１匹（いっぴき）</strong>　もらいました。</li>
+</ul>
+</li>
+</ul>
+<p><strong>数量词 + で</strong></p>
+<ul>
+<li>讨论价格时使用（不称重量，论个数卖的）</li>
+<li>数量是一个的时候不加「で」</li>
+<li>例句：
+<ul>
+<li>このケーキは　<strong>３個で</strong>　５００円です。</li>
+<li>このケーキは　<strong>１個</strong>　２００円です。</li>
+</ul>
+</li>
+</ul>
+<p><strong>时间数量 + 动词</strong></p>
+<ul>
+<li>表示动作、状态持续的时间</li>
+<li>时间数量后面不加「に」</li>
+<li>例句：
+<ul>
+<li>李さんは　毎日　<strong>７時間</strong>　働きます。</li>
+<li>昼　<strong>１時間</strong>　休みます。</li>
+<li>森さんは　<strong>９時間</strong>　寝ます。</li>
+</ul>
+</li>
+</ul>
+<p><strong>[名 时间]に　[名 次数] + [动]</strong></p>
+<ul>
+<li>表示一定时间内进行若干次动作（e.g. twice a week）</li>
+<li>例句：
+<ul>
+<li>李さんは　<strong>１週間に　２回</strong>　プールへ　行きます。（一周两次）
+<ul>
+<li>以一定期间为基准计算频率时，可以省略「１」和「間」
+<ul>
+<li>１週間に２回 == 週に２回</li>
+<li>１日に == 日に</li>
+<li>１か月に == 月に</li>
+<li>１年に == 年に</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>この花は　<strong>２年に　１度</strong>　咲きます。（两年一次）</li>
+</ul>
+</li>
+</ul>
+<h1 id="l14-昨日-デパートへ-行って-買い物しました"><a class="markdownIt-Anchor" href="#l14-昨日-デパートへ-行って-買い物しました"></a> L14 - 昨日　デパートへ　行って、買い物しました</h1>
+<p>太难了<img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/stickers/dino_44.jpg" style="margin:0; display: inline;"></p>
+<h2 id="单词-13"><a class="markdownIt-Anchor" href="#单词-13"></a> 单词</h2>
+<p>書類（し<strong>ょ</strong>るい）[0] - 文件，文稿</p>
+<ul>
+<li>注意区分：種類（し<strong>ゅ</strong>るい）[1]</li>
+</ul>
+<p>駅前（えきまえ）[3] - 车站周围</p>
+<ul>
+<li>駅の前 - 车站前面</li>
+<li>例句：
+<ul>
+<li>この　バスは　<strong>駅前</strong>を　通りますか。（这趟公交经过车站周围吗）</li>
+<li>昨日　<strong>駅の前</strong>で　森さんに　会いました。（昨天在车站前见到了森先生）</li>
+</ul>
+</li>
+</ul>
+<p>橋（はし）[2] - 桥</p>
+<ul>
+<li>注意区分：箸（はし）[1] - 筷子（L8）</li>
+</ul>
+<p>角（かど）[1] - 拐角，(street) corner</p>
+<ul>
+<li>角（つの）[2] - 动物头上的角，horn，antler</li>
+</ul>
+<p>それから vs これから（L7）</p>
+<ul>
+<li>それから - 然后（连接上下文），and then; after that
+<ul>
+<li>図書館へ行って、勉強をします。<strong>それから</strong>家へ帰って、手紙を書きます。
+<ul>
+<li>全部用「て」会让人难以理解，所以适当的使用「それから」断句</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>これから - 今后，往后，现在，接下来。。。，from now on
+<ul>
+<li><strong>これから</strong>どうするの？（接下来你打算怎么办？）</li>
+</ul>
+</li>
+</ul>
+<p>それから vs そして（L10）</p>
+<ul>
+<li>两者都有“and (then)”的意思</li>
+<li>「それから」：前后句的话题不一定相关
+<ul>
+<li>昨日は小説（しょうせつ [0]）を読みました。それから、テレビを見ました。</li>
+</ul>
+</li>
+<li>「そして」：前后句的话题相同
+<ul>
+<li>友達は家に来ました。そして、一緒に遊びました。</li>
+<li>今日は晴れます。そして明日も晴れます。</li>
+</ul>
+</li>
+<li>参考：<a target="_blank" rel="noopener" href="https://www.sigure.tw/learn-japanese/mix/difference/sorekara-korekara.php">「そして」「それで」「それに」「それから」「これから」的差别</a></li>
+</ul>
+<p>なかなか [0] - 相当，很，非常，very; fairly; quite</p>
+<ul>
+<li>一般是上级对下级，长辈对晚辈的评价</li>
+<li>含有“出乎意料”的意思（实际情况比预想要高）</li>
+<li>例句：
+<ul>
+<li>李さんの日本語は　<strong>なかなか</strong>　上手ですね。（小李的日语相当棒）</li>
+<li>小野さんの料理は　<strong>なかなか</strong>　美味しいです。（小野做的菜相当好吃）</li>
+</ul>
+</li>
+</ul>
+<p>もう - 马上，就要，soon; shortly（副词）</p>
+<ul>
+<li>例：李さん、<strong>もう</strong>会社を出ますか。（小李，这就走吗？）</li>
+<li>注：前面学过“已经”的意思，因此当时句中动词用过去式（L8）</li>
+</ul>
+<p>すみませんが - 麻烦你，不好意思（请求别人做某事）</p>
+<ul>
+<li>家人或关系密切的朋友之间不怎么使用</li>
+<li>例：<strong>すみませんが</strong>、この書類をコピーしてください。（麻烦你帮我复印这份文件）</li>
+</ul>
+<p>こう / そう / ああ - 这样 / 那样</p>
+<ul>
+<li>用于指示状态或动作</li>
+<li>例句：
+<ul>
+<li>A：速達で出しますか。（寄快递吗？）</li>
+<li>B：ええ、そうしてください。（对，寄快递）</li>
+<li>A：暗いですね。電気をつけますか。（真暗啊，开灯吗？）</li>
+<li>B：ええ、そうしてください。（好啊，开吧）</li>
+<li>「ええ、そうしてください」字面意思：“是的，请这样做。”</li>
+</ul>
+</li>
+</ul>
+<p>伊勢（いせ）[1]</p>
+<p>まず [1] - 首先</p>
+<p>イルカ [0] - 海豚</p>
+<p>松阪 [2]</p>
+<h2 id="动词-5"><a class="markdownIt-Anchor" href="#动词-5"></a> 动词</h2>
+<p>通る（とおる）[1] - 通过，经过（路过），to go past</p>
+<ul>
+<li>例：バスが駅前を通る</li>
+</ul>
+<p>急ぐ（いそぐ）[2] - 急忙，赶紧</p>
+<ul>
+<li>例：急いで + 动词</li>
+</ul>
+<p>飛ぶ（とぶ）[0] - 飞</p>
+<ul>
+<li>例：鳥が空を飛ぶ</li>
+</ul>
+<p>死ぬ（しぬ）[0] - 死</p>
+<ul>
+<li>例：～が死ぬ</li>
+</ul>
+<p>待つ（まつ）[1] - 等待</p>
+<ul>
+<li>例：順番を待つ（等待你的顺序，也就是排队叫号之类的）
+<ul>
+<li>順番（じゅんばん）[0] - 顺序，sequential order</li>
+</ul>
+</li>
+</ul>
+<p>売る（うる）[0] - 卖</p>
+<ul>
+<li>例：本を売る</li>
+</ul>
+<p>話す（はなす）[2] - 说话</p>
+<ul>
+<li>例：友達と話す</li>
+</ul>
+<p>渡る（わたる）[0] -（跨）过（桥，河，马路），go across</p>
+<ul>
+<li>例：橋を渡る，交差点を渡る</li>
+</ul>
+<p>下ろす（おろす）[2] - 取下，卸下（卸货）</p>
+<ul>
+<li>例：荷物を下ろす、<strong>お金を下ろす（取款）</strong></li>
+</ul>
+<p>選ぶ（えらぶ）[2] - 选择</p>
+<ul>
+<li>例：どっちを選ぶ？</li>
+</ul>
+<p>消す（けす）[0] - 消除，去除，关（灯）</p>
+<ul>
+<li>消しゴム [0] - 橡皮擦（L35）</li>
+<li>例：字を消す，電気を消す（关灯）</li>
+</ul>
+<p>歩く（あるく）[2] - 走路，步行</p>
+<ul>
+<li>例：歩いて行きます（L6，实际上这里用的就是「て形」）</li>
+</ul>
+<p>曲がる（まがる）[0] - 拐弯，to turn；曲折，to bend</p>
+<ul>
+<li>例：角を曲がる，右に曲がる</li>
+</ul>
+<p>洗う（あらう）[0] - 洗</p>
+<ul>
+<li>例：髪を洗う</li>
+</ul>
+<p>出る vs 出かける</p>
+<ul>
+<li>出る（でる）[1] - 离开（something moves out of a certain range）
+<ul>
+<li>例：家を出る（离开家，比如去上大学这类情况）</li>
+<li>注：家出（いえで）- 离家出走</li>
+<li>是二类动词！！</li>
+</ul>
+</li>
+<li>出かける（でかける）[0] - 出门（A <strong>human being</strong> goes out for <strong>some distance</strong> by his/her own will）
+<ul>
+<li>例：私はあまり出かけません</li>
+</ul>
+</li>
+<li>参考：<a target="_blank" rel="noopener" href="https://japanese.stackexchange.com/questions/33225/using-%E5%87%BA%E3%82%8B-as-opposed-to-%E5%87%BA%E3%81%8B%E3%81%91%E3%82%8B/">Using 出る as opposed to 出かける</a></li>
+</ul>
+<p>開ける（あける）[0] - 打开，to open (a door, etc.)</p>
+<ul>
+<li>例：窓を開ける</li>
+<li>注：是物理上的打开，比如打开窗、盖子等。开灯不能用「開ける」，要用「つける」。</li>
+</ul>
+<p>過ぎる（すぎる）[2] -（时间）经过，to pass (of time)</p>
+<ul>
+<li>例：一時間が過ぎる</li>
+</ul>
+<p>見せる（みせる）[2] - 给某人看，展示，to show</p>
+<ul>
+<li>例：写真を彼女に見せる（把照片给她看）</li>
+<li>見る - 看，to see; to look（L7）</li>
+</ul>
+<p>つける [2] - 开（灯）</p>
+<ul>
+<li>例：電気をつける（开灯）</li>
+</ul>
+<p>降りる（おりる）[2] - 下，下来（车，山，电梯）</p>
+<ul>
+<li>例：
+<ul>
+<li>車 / 電車 / タクシー <strong>を</strong>降りる（各种车都行）</li>
+<li>山<strong>を</strong>降りる</li>
+<li>エレベーター<strong>を</strong>降りる</li>
+</ul>
+</li>
+<li>注意区分：降る（ふる）[1] - 下（雨、雪）（L12）</li>
+</ul>
+<p>買い物する [0] - 买东西</p>
+<ul>
+<li>買い物（かいもの）[0]</li>
+<li>例：デパートで買い物します</li>
+</ul>
+<p>卒業する [0] - 毕业</p>
+<ul>
+<li>卒業（そつぎょう）[0]</li>
+<li>例：大学<strong>を</strong>卒業する</li>
+</ul>
+<p>食事する [0] - 吃饭，用餐</p>
+<ul>
+<li>食事（しょくじ）[0]</li>
+<li>例：高級レストランで食事する
+<ul>
+<li>高級（こうきゅう）[0]</li>
+</ul>
+</li>
+<li>注：不要用「ご飯を食べる」约别人吃饭，应该说「食事に行きませんか」</li>
+</ul>
+<p>整理する [1] - 整理</p>
+<ul>
+<li>整理（せいり）[1]</li>
+<li>例：書類を整理する</li>
+</ul>
+<p>コピーする [1] - 复印</p>
+<ul>
+<li>コピー（copy）[1]</li>
+<li>例：原稿をコピーする</li>
+</ul>
+<p>払う（はらう）[2] - 付钱</p>
+<h2 id="て形"><a class="markdownIt-Anchor" href="#て形"></a> て形</h2>
+<p>「て形」构成方式如下：</p>
+<ul>
+<li>一类动词
+<ul>
+<li><strong>～く -&gt; ～いて</strong>
+<ul>
+<li>書く -&gt; 書いて；聞く -&gt; 聞いて</li>
+<li><strong>行く -&gt; 行って</strong>（特殊）</li>
+</ul>
+</li>
+<li><strong>～ぐ -&gt; ～いで</strong>
+<ul>
+<li>泳ぐ -&gt; 泳いで；急ぐ -&gt; 急いで</li>
+</ul>
+</li>
+<li><strong>～す -&gt; ～して</strong>
+<ul>
+<li>消す -&gt; 消して；話す -&gt; 話して</li>
+</ul>
+</li>
+<li><strong>～む / ぶ / ぬ -&gt; ～んで</strong>
+<ul>
+<li>読む -&gt; 読んで；遊ぶ -&gt; 遊んで；死ぬ -&gt; 死んで</li>
+</ul>
+</li>
+<li><strong>～う / る / つ -&gt; ～って</strong>
+<ul>
+<li>買う -&gt; 買って；送る -&gt; 送って；待つ -&gt; 待って</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>二类动词
+<ul>
+<li><strong>～る -&gt; ～て</strong>
+<ul>
+<li>教える -&gt; 教えて；食べる -&gt; 食べて</li>
+</ul>
+</li>
+<li>大部分三音节二调词，[2] -&gt; [1]
+<ul>
+<li>食べる [2] -&gt; 食べて [1]</li>
+<li>降りる [2] -&gt; 降りて [1]</li>
+<li>例外：借りて [0]</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>三类动词
+<ul>
+<li>する -&gt; して</li>
+<li>来る（くる）[1] -&gt; 来て（きて）[1]</li>
+</ul>
+</li>
+</ul>
+<p>て形声调：</p>
+<ul>
+<li>原形 0 调，て形 0 调
+<ul>
+<li>例：買う 0 -&gt; 買って 0</li>
+</ul>
+</li>
+<li>原形 1 调，て形 1 调
+<ul>
+<li>例：読む 1 -&gt; 読んで 1</li>
+</ul>
+</li>
+<li>一类动词，原形 &gt;= 2 调，て形声调不变
+<ul>
+<li>例：急ぐ 2 -&gt; 急いで 2</li>
+</ul>
+</li>
+<li>二类动词，三类动词（三拍或四拍），原形 &gt;= 2 调，て形声调左移一个音节
+<ul>
+<li>例：食べる 2 -&gt; 食べて 1</li>
+</ul>
+</li>
+</ul>
+<h2 id="语法-14"><a class="markdownIt-Anchor" href="#语法-14"></a> 语法</h2>
+<p><strong>[动]て　[动]</strong></p>
+<ul>
+<li>用于连接两个动词，表示动作的先后顺序</li>
+<li>例句：
+<ul>
+<li>昨日　デパートへ　<strong>行って</strong>、買い物しました。（昨天去商场买东西了）</li>
+<li>家へ　<strong>帰って</strong>　宿題を　します。（回家，&lt;然后&gt;做作业）</li>
+<li>図書館へ　<strong>行って</strong>　本を　<strong>借りて</strong>、家へ　帰ります。（去图书馆借书，&lt;然后&gt;回家）</li>
+</ul>
+</li>
+</ul>
+<p><strong>[动]てから　[动]</strong></p>
+<ul>
+<li>用于连接两个动词，<strong>强调</strong>动作的先后顺序
+<ul>
+<li>强调做完这件事情之后再怎样怎样（例： 看完这集动画片之后，再去做作业）</li>
+<li>可以翻译成“～之后”，“～以后”</li>
+<li>多数情况下「て」可以跟「てから」混用</li>
+<li>「てから」不能在一个句子中反复使用两次以上</li>
+</ul>
+</li>
+<li>例句：
+<ul>
+<li>李さんは　毎晩　ラジオを　<strong>聞いてから</strong>　寝ます。（小李每晚听了收音机<strong>之后</strong>再睡觉）</li>
+<li>昼ご飯を　<strong>食べてから</strong>　出かけます。（吃了午饭<strong>之后</strong>再出门）</li>
+<li>家へ　<strong>帰ってから</strong>、もう一度　日本語の　勉強を　します。（回家<strong>之后</strong>，再学一遍日语）</li>
+</ul>
+</li>
+</ul>
+<p><strong>[动]て　ください</strong></p>
+<ul>
+<li>请求某人做某事</li>
+<li>在后面加上「ませんか」是更礼貌的形式
+<ul>
+<li>应该都是陈述语气</li>
+</ul>
+</li>
+<li>例句：
+<ul>
+<li>ここに　住所と　名前を　<strong>書いて　ください</strong>。（请在这里填写住址和姓名）</li>
+<li>この　荷物を　航空便で　<strong>送って　ください</strong>。（请用空运寄这个包裹）</li>
+<li>後で　写真も　<strong>見て　くださいませんか</strong>。（一会儿照片也请您过目）</li>
+<li>スケジュール表を　ファックスで　<strong>送って　くださいませんか</strong>。（请您将日程表传真给我）</li>
+</ul>
+</li>
+<li>口语中，可以省略「ください」，并且「て」读成升调
+<ul>
+<li>気をつけて（🡕）= 気をつけてください（请小心）</li>
+<li>頑張って（🡕）= 頑張ってください（请加油）
+<ul>
+<li>頑張る（がんばる）- 坚持，to hang on</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>[名 场所]を　[动 经过/离开]</strong></p>
+<ul>
+<li>经过/离开的场所，用助词「を」表示
+<ul>
+<li>经过：通る，渡る，過ぎる</li>
+<li>离开：出る，卒業する</li>
+</ul>
+</li>
+<li>例句：
+<ul>
+<li>この　バスは　駅前を　通ります。（这趟公交车经过车站周围）</li>
+<li>この　道を　まっすぐ　行って、橋を　渡って　ください。（沿这条路一直走，然后过那座桥）</li>
+<li>李さんは　毎朝　７時に　家を　出ます。（小李每天早上7点离开家）</li>
+<li>私は　来年　大学を　卒業します。（我明年大学毕业）</li>
+</ul>
+</li>
+</ul>
+<p><strong>三类动词的构成</strong></p>
+<ul>
+<li>构成方式有两种（含义相同）：
+<ul>
+<li>名词 + する</li>
+<li>名词 + を + する</li>
+</ul>
+</li>
+<li>名词基本为汉字词或外来词
+<ul>
+<li>旅行する / 旅行をする（旅行）</li>
+<li>仕事する / 仕事をする（工作）</li>
+<li>ジョギングする / ジョギングをする（慢跑）</li>
+<li>プレゼントする / プレゼントをする（送礼物）</li>
+</ul>
+</li>
+<li>例句：
+<ul>
+<li>私は日本語を<strong>勉強する</strong>。（动词对象是「日本語」）</li>
+<li>私は日本語の<strong>勉強をする</strong>。（动词对象是「日本語の勉強」）</li>
+</ul>
+</li>
+<li>参考：<a target="_blank" rel="noopener" href="https://hinative.com/ja/questions/3370301">【勉強する】 と 【勉強をする】 はどう違いますか？</a></li>
+</ul>
+<h1 id="l15-小野さんは-今-新聞を-読んで-います"><a class="markdownIt-Anchor" href="#l15-小野さんは-今-新聞を-読んで-います"></a> L15 - 小野さんは　今　新聞を　読んで　います</h1>
+<h2 id="单词-14"><a class="markdownIt-Anchor" href="#单词-14"></a> 单词</h2>
+<p>風邪（かぜ）[0] - 感冒（名词）</p>
+<ul>
+<li>風（かぜ）[0] - 风</li>
+<li>風邪を引く - 感冒（动词），catch a cold</li>
+</ul>
+<p>熱（ねつ）[2] - 发烧（名词）</p>
+<ul>
+<li>熱がある - 发烧（动词）</li>
+</ul>
+<p>睡眠（すいみん）[0] - 睡眠（名词）</p>
+<ul>
+<li>睡眠を取る - 获取睡眠（动词）</li>
+</ul>
+<p>お風呂（おふろ）[2] - 澡堂，浴室</p>
+<ul>
+<li>お風呂に入る - 去洗澡</li>
+</ul>
+<p>クーラー（cooler）[1] - 空调（仅制冷）</p>
+<ul>
+<li>更常见的说法：エアコン [0] - 空调（冷暖两用）
+<ul>
+<li>全称：エアーコンディショナー（air conditioner）</li>
+</ul>
+</li>
+<li>参考：<a target="_blank" rel="noopener" href="https://www.nhk.or.jp/bunken/research/kotoba/20190601_4.html">「クーラー」？ 「エアコン」？</a></li>
+</ul>
+<p>火（ひ）[1] - 火</p>
+<ul>
+<li>火をつける - 点火</li>
+<li>火を消す - 灭火</li>
+</ul>
+<p>気（き）- 精神，意识</p>
+<ul>
+<li>気をつける [0] - 小心，注意
+<ul>
+<li>気をつけてください</li>
+</ul>
+</li>
+</ul>
+<p>打ち合わせ（うちあわせ）[0] - 事先商量，碰头会</p>
+<ul>
+<li>打ち合わせをする</li>
+<li>打ち合わせに行く</li>
+</ul>
+<p>無理 vs だめ</p>
+<ul>
+<li>無理（むり）[1] - 勉强，做不到（在能力范围内难以办到）</li>
+<li>だめ [2] - 不行（主观上不同意）</li>
+</ul>
+<p>乗る（のる）[0] - 乘坐</p>
+<ul>
+<li>跟「降りる」是反义词，但是助词搭配不同</li>
+<li>車 / 電車 / タクシー <strong>に</strong>乗る</li>
+</ul>
+<p>使う（つかう）[0] - 使用</p>
+<ul>
+<li>...を使う</li>
+</ul>
+<p>座る（すわる）[0] - 坐</p>
+<ul>
+<li>椅子に座る</li>
+</ul>
+<p>入る（はいる）[1] <strong>[动1]</strong> - 进入，加入</p>
+<ul>
+<li>...に入る - 进入某个地方</li>
+</ul>
+<p>申す（もうす）[1] - to say; to be called (name)</p>
+<ul>
+<li>「言う」的自谦语</li>
+<li>（名前）と申します - 我的名字叫。。。（初次见面介绍名字的时候）</li>
+</ul>
+<p>取る（とる）[1] - 取，取得</p>
+<p>歌う（うたう）[0] - 唱（歌）</p>
+<p>伝える（つたえる）[0] - 转告，传达</p>
+<ul>
+<li>先生に伝えてください - 请转告老师</li>
+</ul>
+<p>止める（とめる）[0] - 停，制止</p>
+<ul>
+<li>車を止める - 停车</li>
+<li>目覚まし時計を止める - 关掉闹钟
+<ul>
+<li>目覚まし時計（めざましどけい）[5] - 闹钟</li>
+</ul>
+</li>
+</ul>
+<p>温かい vs 暖かい</p>
+<ul>
+<li>两者都读作「あたたかい」[4]，口语可读作「あったかい」</li>
+<li>温かい -（可触摸的物体）温暖，热乎，摸起来感觉温暖
+<ul>
+<li>温かいご飯</li>
+<li>特例：温かい心（温暖的心）</li>
+</ul>
+</li>
+<li>暖かい -（天气、气温）温暖（L12）
+<ul>
+<li>この部屋は暖かい</li>
+</ul>
+</li>
+<li>参考：<a target="_blank" rel="noopener" href="https://japanese.stackexchange.com/questions/5382/what-is-the-difference-between-%E6%9A%96%E3%81%8B%E3%81%84-and-%E6%B8%A9%E3%81%8B%E3%81%84">what is the difference between 暖かい and 温かい?</a></li>
+</ul>
+<p>ゆっくり [3] - 慢悠悠地，slowly；好好地，well (e.g. sleep)</p>
+<ul>
+<li>例：じゃあ、病院へ行ってから、ゆっくり休んでください。</li>
+</ul>
+<p>お大事に - 请多保重</p>
+<ul>
+<li>用于对生病或受伤的人表示关心
+<ul>
+<li>看望病人告辞时</li>
+<li>听说别人身体欠佳时</li>
+<li>不能对身体健康的人使用！</li>
+</ul>
+</li>
+<li>完整形式：どうぞ　お大事に　して　ください</li>
+</ul>
+<p>どうしました？ - 怎么了？</p>
+<p>～を休む - 向...请假</p>
+<ul>
+<li>会社を休む - 向公司请假</li>
+<li>学校を休む - 向学校请假</li>
+</ul>
+<p>薬を出す -（医生）开药</p>
+<p>大丈夫 vs かまいません</p>
+<ul>
+<li>大丈夫 - 没关系</li>
+<li>かまいません - 我不介意</li>
+<li>实际使用时，两者没有显著区别</li>
+<li>参考：<a target="_blank" rel="noopener" href="https://hinative.com/ja/questions/4441054">【大丈夫です】 と 【構いません】 はどう違いますか？</a></li>
+</ul>
+<h2 id="语法-15"><a class="markdownIt-Anchor" href="#语法-15"></a> 语法</h2>
+<p><strong>[动]て　います</strong></p>
+<ul>
+<li>现在进行时</li>
+<li>例句：
+<ul>
+<li>小野さんは　今　新聞を　<strong>読んで　います</strong>。</li>
+<li>森さんは　今　仕事を　<strong>して　います</strong>。</li>
+<li>太郎さんは　コーヒーを　<strong>飲んで　います</strong>。</li>
+<li>私は　今　パソコンを　<strong>使って　いません</strong>。（否定）</li>
+</ul>
+</li>
+<li>口语中可以省略「い」
+<ul>
+<li>～ている -&gt; ～てる</li>
+<li>～ています -&gt; ～てます</li>
+<li>例：愛してる</li>
+</ul>
+</li>
+</ul>
+<p><strong>[动]ても　いいです</strong></p>
+<ul>
+<li>表示许可（同意 / 征求许可）</li>
+<li>回答可以
+<ul>
+<li>根据心情或判断
+<ul>
+<li>どうぞ</li>
+<li>かまいません</li>
+</ul>
+</li>
+<li>根据社会惯例或公共准则
+<ul>
+<li>いいですよ（🡕）</li>
+<li>大丈夫です</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>回答不行
+<ul>
+<li>根据心情或判断
+<ul>
+<li>いえ、ちょっと...</li>
+<li>すみません、～から</li>
+</ul>
+</li>
+<li>根据社会惯例或公共准则
+<ul>
+<li>だめ！</li>
+<li>～てはいけません。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>例句：
+<ul>
+<li>ここに　座っ<strong>ても　いいです</strong>か。（我可以坐在这里吗？）</li>
+<li>携帯を　借り<strong>ても　いいです</strong>か。（我可以借你的电话吗？）</li>
+<li>家で　仕事を　し<strong>ても　いいです</strong>。（在家里工作也可以）</li>
+</ul>
+</li>
+</ul>
+<p><strong>[动]ては　いけません</strong></p>
+<ul>
+<li>表示禁止，疑问句征求（否定）许可</li>
+<li>例句：
+<ul>
+<li>飛行機の中で　タバコを　吸っ<strong>ては　いけません</strong>。（飞机上不能吸烟）</li>
+<li>教室で　物を　食べ<strong>ては　いけません</strong>。（教室里不能吃东西）</li>
+<li>この部屋に　入っ<strong>ては　いけません</strong>か。（不能进这个屋子吗？）
+<ul>
+<li>いいえ、いいです（不，可以）</li>
+<li>はい、いけません。（是的，不能）</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>注：对长辈一般不用「～てはいけません」，要使用「～ないでください」</li>
+</ul>
+<p><strong>[名 附着点]に　[动]</strong></p>
+<ul>
+<li>表示人或物体的附着点（停留在交通工具或椅子上等）</li>
+<li>这种情况绝对不能用「を」表示</li>
+<li>例句：
+<ul>
+<li>小野さんは　公園で　ボート<strong>に</strong>　乗りました。</li>
+<li>李さんは　電車<strong>に</strong>　乗りました。</li>
+<li>このいす<strong>に</strong>　座って　ください。</li>
+<li>李さんは　かばん<strong>に</strong>　書類を　入れました。</li>
+</ul>
+</li>
+</ul>
+<p><strong>[名 目的地]に　[动]</strong></p>
+<ul>
+<li>移动行为的目的地既可以用「へ」表示（L6），也可以用「に」表示
+<ul>
+<li>「へ」强调移动方向</li>
+<li>「に」强调目的地</li>
+<li>只有表示典型移动动词的目的地时，才可以通用
+<ul>
+<li>例：行く，来る，帰る</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>例句：
+<ul>
+<li>李さんは　病院<strong>に</strong>　行きます。</li>
+<li>李さんは　家<strong>に</strong>　帰ります。</li>
+</ul>
+</li>
+</ul>
+<p><strong>打电话流程</strong></p>
+<ul>
+<li>もしもし（喂）</li>
+<li>打电话一方报出身份
+<ul>
+<li>こちらは森ですが...（我是森）</li>
+<li>森と申しますが...（我是森）</li>
+</ul>
+</li>
+<li>确认对方身份
+<ul>
+<li>小野さんのお宅ですか。（是小野家吗？）</li>
+</ul>
+</li>
+<li>说明要找的人
+<ul>
+<li>緑さんお願いします。（请叫绿小姐接电话）</li>
+</ul>
+</li>
+<li>所找的人接电话后，谈论事情</li>
+</ul>
+<h1 id="l16-ホテルの-部屋は-広くて-明るいです"><a class="markdownIt-Anchor" href="#l16-ホテルの-部屋は-広くて-明るいです"></a> L16 - ホテルの　部屋は　広くて　明るいです</h1>
+<h2 id="单词-15"><a class="markdownIt-Anchor" href="#单词-15"></a> 单词</h2>
+<p>産業（さんぎょう）[0]</p>
+<p>形（かたち）[0] - 形状</p>
+<ul>
+<li>どんな形ですか。（这是什么形状？）</li>
+</ul>
+<p>緑（みどり）[1] - 绿色</p>
+<ul>
+<li>还有“绿色植物（greenery）”的意思</li>
+</ul>
+<p>指（ゆび）[2] - 手指</p>
+<ul>
+<li>指輪（ゆびわ）[0] - 戒指</li>
+</ul>
+<p>頭（あたま）[3] - 头，头脑</p>
+<ul>
+<li>頭がいい - 聪明</li>
+<li>頭が痛い - 头疼</li>
+</ul>
+<p>看板（かんばん）[0] - 牌子</p>
+<ul>
+<li>看板娘（かんばんむすめ）[5]</li>
+</ul>
+<p>皆さん（みなさん）[2] - 牌子</p>
+<ul>
+<li>关系亲近可以用「みんな」</li>
+</ul>
+<p>子（こ）- 孩子</p>
+<ul>
+<li>称呼年轻女孩子也可以用（あの子，その子）</li>
+</ul>
+<p>持つ（もつ）[1] - 持有</p>
+<ul>
+<li>～を持っています。</li>
+</ul>
+<p>住む（すむ）[1] - 居住</p>
+<ul>
+<li>～<strong>に</strong>住んでいます。</li>
+</ul>
+<p>知る（しる）[0] - 知道</p>
+<ul>
+<li>～を知っています。</li>
+</ul>
+<p>直す（なおす）[2] - 修改，修理</p>
+<ul>
+<li>宿題を直す</li>
+</ul>
+<p>片付ける（かたづける）[4] - 收拾，整理</p>
+<ul>
+<li>部屋を片付ける</li>
+</ul>
+<p>練習する（れんしゅうする）[0] - 练习</p>
+<p>結婚する（けっこんする）[0] - 结婚</p>
+<ul>
+<li>結婚していますか。（你结婚了吗？）
+<ul>
+<li>はい、結婚しています。</li>
+<li>いいえ、結婚していません。</li>
+</ul>
+</li>
+<li>婚姻届（こんいんとどけ）[5] - 婚姻申请（表）</li>
+<li>デキ婚（できこん）[0] - 奉子成婚</li>
+</ul>
+<p>安心する（あんしんする）[0] - 安心，放心</p>
+<p>真面目（まじめ）[0] - 认真</p>
+<ul>
+<li>真面目な人 - 认真的人</li>
+</ul>
+<p>随分（ずいぶん）[1] - 相当，非常</p>
+<ul>
+<li>含有“超出想象”的意思（无论是好是坏）</li>
+<li>例：そのかばん、<strong>随分</strong>大きですね。</li>
+</ul>
+<p>有料（ゆうりょう）[0] - 收费</p>
+<p>無料（むりょう）[0] - 免费</p>
+<h2 id="语法-16"><a class="markdownIt-Anchor" href="#语法-16"></a> 语法</h2>
+<p><strong>[一类形]て　[一类形]</strong></p>
+<ul>
+<li>两个以上的一类形容词并列，前面的变成「て形」，词尾的「い」变成「くて」</li>
+<li>例句：
+<ul>
+<li>ホテルの部屋は　<strong>広くて</strong>　明るいです。</li>
+<li>この本は　<strong>安くて</strong>　面白いです。</li>
+<li>このリンゴは　<strong>大きくて</strong>、<strong>甘くて</strong>、美味しいです。</li>
+<li><strong>軽くて</strong>　暖かい　コートを　買いました。（并列修饰名词）</li>
+</ul>
+</li>
+</ul>
+<p><strong>[二类形]で　[二类形]</strong></p>
+<ul>
+<li>两个以上的二类形容词并列，前面的变成「て形」，就是在形容词后面加上「で」</li>
+<li>例句：
+<ul>
+<li>このコンピュータの操作は　簡単<strong>で</strong>　便利です。</li>
+<li>森さんは　親切<strong>で</strong>　優しいです。</li>
+<li>この公園は　静か<strong>で</strong>　広いです。</li>
+</ul>
+</li>
+</ul>
+<p><strong>[名1]で　[名2]</strong></p>
+<ul>
+<li>
+<p>两个以上的名词并列，用「で」连接</p>
+</li>
+<li>
+<p>例句：</p>
+<ul>
+<li>スミスさんは　旅行会社の社員<strong>で</strong>、営業部の部長です。</li>
+<li>この機械は　日中電気の製品<strong>で</strong>、中国製です。</li>
+</ul>
+</li>
+<li>
+<p>移动行为的目的地既可以用「へ」表示（L6），也可以用「に」表示</p>
+<ul>
+<li>「へ」强调移动方向</li>
+<li>「に」强调目的地</li>
+<li>只有表示典型移动动词的目的地时，才可以通用
+<ul>
+<li>例：行く，来る，帰る</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>例句：</p>
+<ul>
+<li>小野さんは　公園で　ボート<strong>に</strong>　乗りました。</li>
+<li>李さんは　電車<strong>に</strong>　乗りました。</li>
+<li>このいす<strong>に</strong>　座って　ください。</li>
+<li>李さんは　かばん<strong>に</strong>　書類を　入れました。</li>
+</ul>
+</li>
+</ul>
+<p><strong>[动]て　います</strong></p>
+<ul>
+<li>除了表示现在进行时（L15），还能表示结果状态</li>
+<li>例句：
+<ul>
+<li>森さんは　車を　<strong>持っています</strong>。</li>
+<li>私は　北京に　<strong>住んでいます</strong>。</li>
+<li>田中さんを　<strong>知っていますか</strong>。</li>
+</ul>
+</li>
+<li>注意：通常使用「～て　いません」来做否定回答，但是对「知っていますか」做否定回答时必须使用「知りません」。</li>
+</ul>
+<p><strong>[小句]が、[小句]</strong></p>
+<ul>
+<li>表示两个小句的转折关系（但是，可是）</li>
+<li>例句：
+<ul>
+<li>３か月　パソコンを　勉強しました<strong>が</strong>、まだ　あまり　できません。</li>
+<li>このレストランは　美味しいです<strong>が</strong>、ちょっと　高いです。</li>
+</ul>
+</li>
+</ul>
+<p><strong>まだ + [动（否定）]</strong></p>
+<ul>
+<li>表示还没有达到那样的程度</li>
+<li>例句：
+<ul>
+<li>何年ぐらい　日本語を　勉強しましたか。</li>
+<li>２年　勉強しました、<strong>まだ</strong>　あまり　でき<strong>ません</strong>。</li>
+</ul>
+</li>
+<li>对「もう」提问的句子做否定回答时，使用「まだ　～て　いません」</li>
+<li>例句：
+<ul>
+<li>小野さんは　<strong>もう</strong>　結婚していますか。</li>
+<li>いいえ、<strong>まだ</strong>　結婚し<strong>ていません</strong>。</li>
+</ul>
+</li>
+</ul>
+<h1 id="l17-私は-新しい-洋服が-欲しいです"><a class="markdownIt-Anchor" href="#l17-私は-新しい-洋服が-欲しいです"></a> L17 - 私は　新しい　洋服が　欲しいです</h1>
+<h2 id="单词-16"><a class="markdownIt-Anchor" href="#单词-16"></a> 单词</h2>
+<p>外国人（がいこくじん）[4]</p>
+<ul>
+<li>外人（がいじん）[0] - 意思相同，可能没那么中性</li>
+</ul>
+<p>始める（はじめる）[0] [他动词] - 开始</p>
+<ul>
+<li>～を始める（开始做某件事情）</li>
+<li>始まる（L5）是自动词，用法：～が始まる（～开始）</li>
+<li>初次见面则是「初めまして」，平时不写成汉字形式</li>
+</ul>
+<p>連絡する（れんらく）[0] - 联系</p>
+<ul>
+<li>～に連絡する</li>
+</ul>
+<p>初詣（はつもうで）[3] - 新年参拜</p>
+<ul>
+<li>指在元旦当天前往参拜神社或寺庙，祈祷考试、结婚、恋爱、健康、工作等。</li>
+</ul>
+<p>お汁粉（おしるこ）[0] - <a target="_blank" rel="noopener" href="https://www3.nhk.or.jp/nhkworld/zh/radio/cooking/20110107.html">年糕小豆汤</a></p>
+<p>今度 vs. 今回</p>
+<ul>
+<li>今度（こんど）[1] - 下次</li>
+<li>今回（こんかい）[1] - 这次</li>
+</ul>
+<p>いつも vs. いつでも</p>
+<ul>
+<li>いつも - 经常（强调频率）
+<ul>
+<li>いつも　行きます（经常去）</li>
+</ul>
+</li>
+<li>いつでも - 不论何时（强调灵活性）
+<ul>
+<li>いつでも　行きます（随时可以去）</li>
+</ul>
+</li>
+</ul>
+<h2 id="语法愿望-希望和邀请"><a class="markdownIt-Anchor" href="#语法愿望-希望和邀请"></a> 语法（愿望、希望和邀请）</h2>
+<p><strong>[名]が　欲しいです</strong></p>
+<ul>
+<li>表达愿望</li>
+<li>例句：
+<ul>
+<li>私は　新しい洋服<strong>が</strong>　欲しいです。</li>
+<li>（あなたは）　何<strong>が</strong>　欲しいですか。</li>
+<li>新しいパソコン<strong>が</strong>　欲しいです。</li>
+</ul>
+</li>
+<li>注：主语有时可以省略，因为可以从语境判断出来</li>
+</ul>
+<p><strong>[名]を/が　[动]たいです</strong></p>
+<ul>
+<li>表达“想做某事”</li>
+<li>「たい」前面接“连用形”（「ます形」去掉「ます」，L13）</li>
+<li>「たい」的对象可以用「を」或者「が」，但是「欲しい」的对象只能用「が」</li>
+<li>例句：
+<ul>
+<li>（私は）　映画<strong>を</strong>　見たいです。</li>
+<li>今日は　お酒<strong>を</strong>　飲みたくないです。</li>
+<li>水<strong>を/が</strong>　飲みたいです。</li>
+</ul>
+</li>
+</ul>
+<p><strong>全面否定回复</strong></p>
+<ul>
+<li>全面否定「名词 + を + 动词」，使用「疑问词 + も + 动词否定」
+<ul>
+<li>（あなたは）　何<strong>を</strong>　したいですか。</li>
+<li>何<strong>も</strong>　したくありません</li>
+</ul>
+</li>
+<li>全面否定「名词 + に/から/と + 动词」，使用「疑问词 + に/から/と + も + 动词否定」
+<ul>
+<li>だれに　会いたいですか。</li>
+<li>だれ<strong>にも</strong>　会いたくないです。</li>
+</ul>
+</li>
+<li>全面否定「名词 + へ + 动词」，使用「疑问词 +（へ）+ も + 动词否定」
+<ul>
+<li>どこへ　行きたいですか。</li>
+<li>どこ<strong>へも</strong>　行きたくないです。</li>
+</ul>
+</li>
+</ul>
+<p><strong>全面肯定回复（啥都行）</strong></p>
+<ul>
+<li>表达什么都行的时候，使用「疑问词 + でも」</li>
+<li>例句：
+<ul>
+<li>李さん、何を　食べたいですか。</li>
+<li><strong>何でも</strong>　いいです。</li>
+<li><strong>いつでも</strong>　電話をしてください。</li>
+<li><strong>だれでも</strong>　分かります。</li>
+</ul>
+</li>
+</ul>
+<p><strong>[动]ませんか</strong></p>
+<ul>
+<li>表示提议</li>
+<li>例句：
+<ul>
+<li>一緒に　お茶を　<strong>飲みませんか</strong>。</li>
+<li>少し　<strong>休みませんか</strong>。</li>
+<li>明日　故宮へ　<strong>行きませんか</strong>。</li>
+</ul>
+</li>
+</ul>
+<p><strong>[动]ましょう</strong></p>
+<ul>
+<li>表示提议，但没有「ませんか」礼貌</li>
+<li>动词「ます形」的「ます」换成「ましょう」</li>
+<li>例句：
+<ul>
+<li>ちょっと　<strong>休みましょう</strong>。</li>
+<li>そろそろ　<strong>行きましょう</strong>。</li>
+<li>一緒に　お茶を　<strong>飲みましょう</strong>。</li>
+</ul>
+</li>
+</ul>
+<p><strong>どうですか</strong></p>
+<ul>
+<li>面对上级和长辈时，「欲しいですか」和「～たいですか」会显得不太礼貌，应该使用「どうですか」或者「～ませんか」</li>
+<li>例句：
+<ul>
+<li>デパートへ　買い物に　行きます。李さんも　一緒に　<strong>どうですか</strong>。</li>
+<li>はい、<strong>行きたいです</strong>。</li>
+<li>コンサートへ　<strong>行きませんか</strong>。</li>
+<li>いいですね。<strong>行きましょう</strong>。</li>
+</ul>
+</li>
+</ul>
+<h2 id="语法其它"><a class="markdownIt-Anchor" href="#语法其它"></a> 语法（其它）</h2>
+<p><strong>ね（缓和语气）</strong></p>
+<ul>
+<li>「ね」放在句尾，可以缓和语气
+<ul>
+<li>也能表示确认（L4）</li>
+</ul>
+</li>
+<li>例句：
+<ul>
+<li>まず　恋人が　欲しいです<strong>ね</strong>。</li>
+<li>真面目で　優しい　人が　いいです<strong>ね</strong>。</li>
+</ul>
+</li>
+</ul>
+<p><strong>[时间]中に</strong></p>
+<ul>
+<li>表示在该期间结束之前的意思（L10学过不带「に」的用法，表示在某个期间一直）</li>
+<li>「中」的读音（じゅう / ちゅう）
+<ul>
+<li>中（じゅう）：今日，明日，今年</li>
+<li>中（ちゅう）：～週，～月</li>
+</ul>
+</li>
+<li>例句：
+<ul>
+<li><strong>今年中に</strong>　結婚したいです。</li>
+<li>この仕事は　<strong>今日中に</strong>　終わります。</li>
+<li><strong>来週中に</strong>　もう一度　連絡します。</li>
+</ul>
+</li>
+</ul>
+<p><strong>ぜひ</strong></p>
+<ul>
+<li>表示“一定”，“必定”的意思</li>
+<li>例句：
+<ul>
+<li>お汁粉？<strong>ぜひ</strong>　食べたいです。</li>
+<li>今度　<strong>ぜひ</strong>　家へ　遊びに　来てください。</li>
+</ul>
+</li>
+</ul>
+<h1 id="l18-携帯電話は-とても-小さく-なりました"><a class="markdownIt-Anchor" href="#l18-携帯電話は-とても-小さく-なりました"></a> L18 - 携帯電話は　とても　小さく　なりました</h1>
+<h2 id="单词-17"><a class="markdownIt-Anchor" href="#单词-17"></a> 单词</h2>
+<p>音 vs 声</p>
+<ul>
+<li>音（おと）[2] - 物体的声音</li>
+<li>声（こえ）[1] - 人和动物的声音
+<ul>
+<li>声がきれい</li>
+</ul>
+</li>
+</ul>
+<p>なる [1] - 变成。。。</p>
+<ul>
+<li>病気になる - 生病</li>
+</ul>
+<p>開く [0] - 开（自动词）</p>
+<ul>
+<li>ドア<strong>が</strong>開く - 门自己开了（主语是门）</li>
+<li>（私は）ドア<strong>を</strong>開ける - 有人去打开门</li>
+</ul>
+<p>似合う [2] - 适合，相称</p>
+<ul>
+<li>よく似合いますね！</li>
+<li>似合ってる！</li>
+<li>小野さん<strong>は</strong>　浴衣<strong>が</strong>　似合います。</li>
+<li>このシャツ<strong>は</strong>　父<strong>に</strong>　似合いません。派手ですよ。</li>
+</ul>
+<p>まとめて - 一起，altogether</p>
+<ul>
+<li>原型：まとめる [0] - 汇总</li>
+<li>お正月は洋服が安くなりますから、<strong>まとめて</strong>買います。</li>
+</ul>
+<p>割引（わりびき）[0] - ~ off (discount)</p>
+<ul>
+<li>３割引（さんわりびき）[3] - 30% off（7折）</li>
+<li>１５％引（じゅうごパーセント　びき）- 15% off（85折）
+<ul>
+<li>「％」读作「パーセント」[3]</li>
+</ul>
+</li>
+</ul>
+<p>間もなく vs もうすぐ</p>
+<ul>
+<li>两者都是副词，表示 soon，shortly</li>
+<li>「間もなく」比较郑重，常用于书面语</li>
+<li>「もうすぐ」常用于口语</li>
+</ul>
+<p>さらに vs もっと</p>
+<ul>
+<li>两者都是“更加”的意思</li>
+<li>「さらに」比较郑重</li>
+<li>「もっと」比较随意</li>
+</ul>
+<p>さあ - 提出建议，促使对方做某事</p>
+<ul>
+<li>今から７時までもっと安くなります。<strong>さあ</strong>、行きましょう。</li>
+<li><strong>さあ</strong>、今から試験を始めますよ。準備はいいですか。</li>
+<li>「さあ」还有很多其它的用法，比如「さあね」是 who knows 的意思</li>
+</ul>
+<h2 id="语法-17"><a class="markdownIt-Anchor" href="#语法-17"></a> 语法</h2>
+<p><strong>自動詞（じどうし）vs. 他動詞（たどうし）Part 2</strong></p>
+<ul>
+<li>自动词：一类动词
+<ul>
+<li>開く，入る，始まる</li>
+</ul>
+</li>
+<li>他动词：二类动词（需要接宾语，通常有「を」）
+<ul>
+<li>開ける，入れる，始める</li>
+</ul>
+</li>
+<li>大部分都符合上面规则，但有不少例外</li>
+<li>以「す」结尾的肯定是他动词，它相对的是自动词
+<ul>
+<li>自动词：癒える，壊れる，起きる（这些都是第一条规律的例外）</li>
+<li>他动词：癒す，壊す，起こす</li>
+</ul>
+</li>
+<li>规则总有例外，还是要记用法，熟能生巧</li>
+<li>对比例句：
+<ul>
+<li>窓<strong>が</strong>　開きました。（開く）</li>
+<li>（李さんが）窓<strong>を</strong>　開けました。（開ける）</li>
+<li>タイムサービス<strong>が</strong>　始まります。（始まる）</li>
+<li>（デパートが）タイムサービス<strong>を</strong>　始めます。（始める）</li>
+</ul>
+</li>
+<li>参考：<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/427812306/answer/1550154438">日语自动词和他动词只能考死记硬背吗？</a></li>
+</ul>
+<p><strong>【なる】[自动词] 变得～，变成～，成为～</strong></p>
+<ul>
+<li>描述事物或状态的自然变化</li>
+<li>い形：「い」变「く」+「なる」
+<ul>
+<li>だんだん　<strong>暖かくなります</strong>。（だんだん = 逐渐）</li>
+<li>携帯電話は　<strong>小さくなりました</strong>。</li>
+<li>パソコンは　<strong>安くなりました</strong>。</li>
+</ul>
+</li>
+<li>な形 +「に」+「なる」
+<ul>
+<li>もう　<strong>元気になりました</strong>。</li>
+</ul>
+</li>
+<li>名词 +「に」+「なる」
+<ul>
+<li>息子は　<strong>医者になりました</strong>。</li>
+<li>来年　<strong>社会人になります</strong>。</li>
+</ul>
+</li>
+</ul>
+<p><strong>【する】[他动词] 把～</strong></p>
+<ul>
+<li>描述有意识、主动进行的变化</li>
+<li>い形：「い」变「く」+「する」
+<ul>
+<li>テレビの音を　<strong>大きくします</strong>。（把电视机的声音开大一点）</li>
+<li>ジュースを　<strong>冷たくします</strong>。（把果汁冰镇一下）</li>
+</ul>
+</li>
+<li>な形 +「に」+「する」
+<ul>
+<li>部屋を　<strong>きれいにしてください</strong>。（请把房间打扫干净）</li>
+</ul>
+</li>
+<li>名词 +「に」+「する」
+<ul>
+<li>会議室を　<strong>禁煙にします</strong>。（会议室里禁烟）</li>
+</ul>
+</li>
+</ul>
+<p><strong>[一类形/二类形]　ほうが　いいです</strong></p>
+<ul>
+<li>表示自己的选择或者向别人提议（还是[形容词]好）</li>
+<li>例句：
+<ul>
+<li>旅行の荷物は　<strong>軽い　ほうがいいです</strong>。</li>
+<li>部屋は　<strong>広い　ほうがいいです</strong>。</li>
+<li>子供は　<strong>元気な　ほうがいいです</strong>。</li>
+<li>公園は　<strong>静かな　ほうがいいです</strong>。</li>
+</ul>
+</li>
+</ul>
+<h1 id="l19-部屋の-かぎを-忘れないで-ください"><a class="markdownIt-Anchor" href="#l19-部屋の-かぎを-忘れないで-ください"></a> L19 - 部屋の　かぎを　忘れないで　ください</h1>
+<h2 id="单词-18"><a class="markdownIt-Anchor" href="#单词-18"></a> 单词</h2>
+<p>人混み vs 人集り</p>
+<ul>
+<li>人混み（ひとごみ）[0]
+<ul>
+<li>大勢の人がいて混雑していること</li>
+<li>crowded with a lot of people</li>
+</ul>
+</li>
+<li>人集り（ひとだかり）[0]
+<ul>
+<li>大勢の人が共通の目的に対して集まっていること</li>
+<li>a lot of people crowded for one specific purpose</li>
+</ul>
+</li>
+</ul>
+<p>パスポート [3] - 护照（passport）</p>
+<ul>
+<li>旅券（りょけん）[0] - 护照</li>
+</ul>
+<p>ビザ [1] - 签证（visa）</p>
+<ul>
+<li>査証（さしょう）[0] - 签证</li>
+</ul>
+<p>触る（さわる）[0] [自动词] - 碰，触</p>
+<ul>
+<li>～に触る</li>
+<li>～触らないでください</li>
+</ul>
+<p>脱ぐ（ぬぐ）[1] [他动词] - 脱</p>
+<ul>
+<li>～を脱ぐ</li>
+</ul>
+<p>転ぶ（ころぶ）[0] [自动词] - 摔倒，跌倒</p>
+<p>渇く（かわく）[2] - 渴</p>
+<ul>
+<li>喉が渇きました（我口渴了）</li>
+</ul>
+<p>治る（なおる）[2] - 痊愈，医好</p>
+<ul>
+<li>この病気は治らないです。</li>
+</ul>
+<p>滑る（すべる）[2] - 滑，滑行</p>
+<ul>
+<li>氷（こおり 0）の上を～</li>
+</ul>
+<p>呼ぶ（よぶ）[0] - 叫上，叫来</p>
+<ul>
+<li>救急車（きゅうきゅうしゃ 3）を呼ぶ</li>
+</ul>
+<p>返す（かえす）[1] [他动词] - 归还</p>
+<ul>
+<li>[人]に[物品]を返す</li>
+<li>倍返し（ばいがえし）[3] - 加倍奉还</li>
+</ul>
+<p>手伝う（てつだう）[3] - 帮忙</p>
+<ul>
+<li>家事を手伝う</li>
+</ul>
+<p>運ぶ（はこぶ）[0] - 搬运</p>
+<ul>
+<li>荷物を運ぶ</li>
+</ul>
+<p>なくす [0] - 丢，丢失</p>
+<ul>
+<li>財布をなくす</li>
+</ul>
+<p>落とす（おとす）[2] [他动词] - 掉，使落下</p>
+<ul>
+<li>～を落とす</li>
+<li>財布を落としましたよ（钱包掉了哦）</li>
+<li>スピードを落とす（减速）</li>
+<li>男を落とす（恋爱方面俘获男性）
+<ul>
+<li>好きな人を落とす</li>
+</ul>
+</li>
+</ul>
+<p>置く（おく）[0] [自动词] - 放置</p>
+<ul>
+<li>～を～に置く</li>
+<li>携帯電話をテーブルに置く</li>
+</ul>
+<p>払う（はらう）[2] - 支付</p>
+<ul>
+<li>お金を払う</li>
+<li>食事代を払う
+<ul>
+<li>食事代（しょくじだい）[0]</li>
+</ul>
+</li>
+</ul>
+<p>立つ（たつ）[1] [自动词] - 站，立</p>
+<ul>
+<li>廊下に立つ
+<ul>
+<li>廊下（ろうか）[0] - 走廊</li>
+</ul>
+</li>
+<li>立って言ってください</li>
+</ul>
+<p>忘れる（わすれる）[0] [他动词] - 忘记</p>
+<ul>
+<li>～を忘れる</li>
+<li>カギを忘れる</li>
+<li>私のことを忘れないでください</li>
+</ul>
+<p>慌てる（あわてる）[0] - 慌张，惊慌，着急</p>
+<ul>
+<li>慌てないでください（请不要慌张）
+<ul>
+<li>慌てるな！</li>
+</ul>
+</li>
+</ul>
+<p>捨てる（すてる）[0] - 扔，扔掉</p>
+<ul>
+<li>ゴミを捨てる</li>
+</ul>
+<p>残業する（ざんぎょうする）[0] - 加班</p>
+<ul>
+<li>注意：日语的<a target="_blank" rel="noopener" href="https://jisho.org/search/%E6%AE%8B%20%23kanji">「残」有三横</a>，跟中文的不一样！</li>
+</ul>
+<p>心配する（しんぱいする）[0] - 担心</p>
+<ul>
+<li>心配しないでください</li>
+</ul>
+<p>本当（ほんとう）[0] - 真的</p>
+<ul>
+<li>本当に本当？（真的吗？）</li>
+</ul>
+<p>やっと [0] - 好不容易，终于</p>
+<ul>
+<li>やっと成功（せいこう 0）しました</li>
+</ul>
+<p>だいぶ [0] - 相当地，considerably</p>
+<ul>
+<li>表示程度相当高</li>
+<li>用于「なりました」等表示变化的句型中时，突出强调变化的程度</li>
+<li>例句：
+<ul>
+<li>昨日は　<strong>だいぶ</strong>　お酒を飲みました。</li>
+<li>風は　よくなりましたか。</li>
+<li><strong>だいぶ</strong>　よくなりました（我好多了）</li>
+</ul>
+</li>
+</ul>
+<p>高級 vs 上級</p>
+<ul>
+<li>高級（こうきゅう）[0] - 描述高质量的物品
+<ul>
+<li>高級レストラン</li>
+</ul>
+</li>
+<li>上級（じょうきゅう）[0] - 描述人的技能、技术
+<ul>
+<li>上級者（じょうきゅうしゃ）[3] - 高手</li>
+</ul>
+</li>
+</ul>
+<h2 id="ない形"><a class="markdownIt-Anchor" href="#ない形"></a> ない形</h2>
+<p>「ない形」构成方式如下：</p>
+<ul>
+<li>一类动词：「连用形」最后一个音变成「あ段」+「ない」
+<ul>
+<li>最后一个音是「う」，把「う」变成「わ」，再加「ない」</li>
+</ul>
+</li>
+<li>二类动词：「连用形」+「ない」</li>
+<li>三类动词
+<ul>
+<li>来る（<strong>く</strong>る）- 来ない（<strong>こ</strong>ない）</li>
+<li>する - しない</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>基本形</th>
+<th>ます形</th>
+<th>连用形</th>
+<th>ない形</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>書く</td>
+<td>書きます</td>
+<td>書<strong>き</strong></td>
+<td>書<strong>か</strong>ない</td>
+</tr>
+<tr>
+<td>急ぐ</td>
+<td>急ぎます</td>
+<td>急<strong>ぎ</strong></td>
+<td>急<strong>が</strong>ない</td>
+</tr>
+<tr>
+<td>飛ぶ</td>
+<td>飛びます</td>
+<td>飛<strong>び</strong></td>
+<td>飛<strong>ば</strong>ない</td>
+</tr>
+<tr>
+<td>読む</td>
+<td>読みます</td>
+<td>読<strong>み</strong></td>
+<td>読<strong>ま</strong>ない</td>
+</tr>
+<tr>
+<td>死ぬ</td>
+<td>死にます</td>
+<td>死<strong>に</strong></td>
+<td>死<strong>な</strong>ない</td>
+</tr>
+<tr>
+<td>待つ</td>
+<td>待ちます</td>
+<td>待<strong>ち</strong></td>
+<td>待<strong>た</strong>ない</td>
+</tr>
+<tr>
+<td>売る</td>
+<td>売ります</td>
+<td>売<strong>り</strong></td>
+<td>売<strong>ら</strong>ない</td>
+</tr>
+<tr>
+<td>買う</td>
+<td>買います</td>
+<td>買<strong>い</strong></td>
+<td>買<strong>わ</strong>ない</td>
+</tr>
+<tr>
+<td>話す</td>
+<td>話します</td>
+<td>話<strong>し</strong></td>
+<td>話<strong>さ</strong>ない</td>
+</tr>
+<tr>
+<td>食べる</td>
+<td>食べます</td>
+<td>食べ</td>
+<td>食べない</td>
+</tr>
+<tr>
+<td>見る</td>
+<td>見ます</td>
+<td>見</td>
+<td>見ない</td>
+</tr>
+<tr>
+<td>来る</td>
+<td>来ます</td>
+<td>来</td>
+<td>来ない</td>
+</tr>
+<tr>
+<td>する</td>
+<td>します</td>
+<td>し</td>
+<td>しない</td>
+</tr>
+</tbody>
+</table>
+<p>ない形声调：</p>
+<ul>
+<li>原形 0 调，ない形 0 调
+<ul>
+<li>例：笑う 0 -&gt; 笑わない 0</li>
+</ul>
+</li>
+<li>原形非 0 调，ない形 -3 调
+<ul>
+<li>例：読む 1 -&gt; 読まない 2</li>
+</ul>
+</li>
+<li>如果加「です」，最后一个高音在「な」上
+<ul>
+<li>笑わないです 4；読まないです 3</li>
+</ul>
+</li>
+</ul>
+<h2 id="语法-18"><a class="markdownIt-Anchor" href="#语法-18"></a> 语法</h2>
+<p><strong>[动]ないでください</strong></p>
+<ul>
+<li>表示否定的命令时，使用「～<strong>で</strong>ください」</li>
+<li>例句：
+<ul>
+<li>部屋のかぎを　忘れないでください。</li>
+<li>この部屋には　入らないでください。</li>
+<li>無理をしないでください。</li>
+</ul>
+</li>
+<li>注意区分：肯定的命令，使用「～<strong>て</strong>ください」
+<ul>
+<li>忘れない<strong>で</strong>ください</li>
+<li>覚え<strong>て</strong>ください</li>
+</ul>
+</li>
+</ul>
+<p><strong>[动]なければ　なりません</strong></p>
+<ul>
+<li>表示必须</li>
+<li>把「ない形」的「ない」换成「なければ　なりません」或者「ないと　いけません」
+<ul>
+<li>「なければ　なりません」多用于书面语</li>
+<li>「ないと　いけません」的省略形式是「ないと」</li>
+</ul>
+</li>
+<li>例句：
+<ul>
+<li>李さんは　今日　早く　<strong>帰らなければ　なりません</strong>。</li>
+<li>この薬は　毎日　<strong>飲まなければ　なりません</strong>。</li>
+<li>すぐに　書類を　<strong>送らないと　いけません</strong>。</li>
+<li>あっ、８時ですね。もう駅へ　<strong>行かないと</strong>。</li>
+</ul>
+</li>
+</ul>
+<p><strong>[动]なくても　いいです</strong></p>
+<ul>
+<li>表示不做某事也可以，是「なければ　なりません」的否定</li>
+<li>把「ない形」的「ない」换成「なくても　いいです」</li>
+<li>例句：
+<ul>
+<li>明日は　<strong>残業しなくても　いいです</strong>。</li>
+<li><strong>慌てなくても　いいです</strong>よ。</li>
+<li>靴を　<strong>脱がなくても　いいです</strong>か。</li>
+</ul>
+</li>
+</ul>
+<p><strong>[名1]が　[名2]です</strong></p>
+<ul>
+<li>新信息做主语，名词1是新信息，名词2是旧信息
+<ul>
+<li>也可以写成：[名2]は　[名1]です</li>
+</ul>
+</li>
+<li>例句：
+<ul>
+<li>山田先生は　どの方ですか。</li>
+<li>山田先生は　あの方です。</li>
+<li>あの方<strong>が</strong>　山田先生です。</li>
+<li>吉田課長は　いますか。</li>
+<li>私<strong>が</strong>　吉田ですが...</li>
+<li>あなたのかばんは　どれですか。</li>
+<li>これ<strong>が</strong>　私のかばんです。</li>
+</ul>
+</li>
+<li>叙述直接观察到的某事物，而不是作为话题在谈论这个事物时，也用这个句式</li>
+<li>例句：
+<ul>
+<li>子供<strong>が</strong>　公園に　遊んでいます。</li>
+<li>バス<strong>が</strong>　来ました。</li>
+</ul>
+</li>
+<li>「何（なに）」「だれ」「どこ」「いつ」等疑问词做主语的时候，不能用「は」，只能用「が」，因为这些词不能表示旧信息</li>
+<li>例句：
+<ul>
+<li>だれ<strong>が</strong>　いますか。</li>
+<li>どこ<strong>が</strong>　痛いですか。</li>
+<li>何<strong>が</strong>　好きですか。</li>
+</ul>
+</li>
+</ul>
+<p>何（なん）+ [量词] + も + [肯定形式]</p>
+<ul>
+<li>表示数量很多</li>
+<li>例句：
+<ul>
+<li>何度（なんど）も転びましたが、とても面白いです。（我摔了好几次，不过挺有意思的）</li>
+<li>喉が渇きましたから、水を何杯（なんぱい）も飲みました。（口渴了，喝了好几杯水）</li>
+</ul>
+</li>
+</ul>
+<h1 id="l20-スミスさんは-ピアノを-弾く-ことが-できます"><a class="markdownIt-Anchor" href="#l20-スミスさんは-ピアノを-弾く-ことが-できます"></a> L20 - スミスさんは　ピアノを　弾く　ことが　できます</h1>
+<h2 id="单词-19"><a class="markdownIt-Anchor" href="#单词-19"></a> 单词</h2>
+<p>趣味 vs 興味</p>
+<ul>
+<li>趣味（しゅみ）[1] - hobby，爱好
+<ul>
+<li>私の趣味は　切手を集めることです。</li>
+</ul>
+</li>
+<li>興味（きょうみ）[1] - interest (in something)，感兴趣
+<ul>
+<li>～に興味がある</li>
+<li>私は　日本の書道に　興味があります。</li>
+</ul>
+</li>
+</ul>
+<p>夢（ゆめ）[2] - 梦，理想</p>
+<ul>
+<li>夢を見る</li>
+</ul>
+<p>編み物（あみもの）[2] - 编织品</p>
+<ul>
+<li>編む [1] - 编织（动词）</li>
+<li>注：这是日语常见的一种造词方法
+<ul>
+<li>食べる &gt; 食べます &gt; 食べ物</li>
+<li>飲む &gt; 飲みます &gt; 飲み物</li>
+</ul>
+</li>
+</ul>
+<p>授業（じゅぎょう）[1] - 授课，上课</p>
+<ul>
+<li>授業をする - 讲课</li>
+<li>授業を受ける - 听课</li>
+</ul>
+<p>弾く（ひく）[0] - 弹</p>
+<ul>
+<li>ピアノを弾く</li>
+</ul>
+<p>すく [0] - （肚子）饿</p>
+<ul>
+<li>汉字形式「空く」，一般不用</li>
+<li>お腹がすきました</li>
+<li>腹減った！（はら　へった）</li>
+</ul>
+<p>登る（のぼる）[0] - 登，上</p>
+<ul>
+<li>山<strong>に</strong>登る</li>
+<li>山<strong>を</strong>降りる</li>
+<li>バスに乗る</li>
+</ul>
+<p>集める（あつめる）[3] - 收集</p>
+<ul>
+<li>ねこあつめ（猫集め）- 前几年比较火的养猫游戏</li>
+</ul>
+<p>浴びる（あびる）[0] - 淋，浇</p>
+<ul>
+<li>シャワーを浴びる</li>
+</ul>
+<p>ごちそうする[0] - 请客（摆盛宴）</p>
+<ul>
+<li>ごちそうさまでした - 谢谢款待</li>
+<li>奢る（おごる）[0] - 请客（普通）</li>
+</ul>
+<p>帰国する（きこく～）[0] - 回国</p>
+<ul>
+<li>帰国子女（きこくしじょ）[4]</li>
+</ul>
+<h2 id="语法-19"><a class="markdownIt-Anchor" href="#语法-19"></a> 语法</h2>
+<p><strong>[人]は　[动（基本形）]　ことが　できます</strong></p>
+<ul>
+<li>表示能力</li>
+<li>肯定回答「できます」，否定回答「できません」</li>
+<li>例句：
+<ul>
+<li>スミスさんは　ピアノを<strong>弾く</strong>　ことができます。</li>
+<li>森さんは　中華料理を<strong>作る</strong>　ことができますか。</li>
+<li>はい、できます。</li>
+</ul>
+</li>
+<li>动（基本形）+「こと」= 名词<br />
+小野さんは　<strong>車を運転すること</strong>が　できません。<br />
+小野さんは　<strong>車の運転</strong>が　できません。</li>
+<li>有时根据上下文也可以表示允许
+<ul>
+<li>日本では　何歳から　<strong>結婚することができます</strong>か。</li>
+<li>女の人は　１６歳から、男の人は　１８歳から　<strong>できます</strong>。
+<ul>
+<li>注：根据<a target="_blank" rel="noopener" href="https://www.nippon.com/cn/japan-data/h01285/">修订版《民法》</a>，从2022年开始，男女可以结婚的年龄都是18岁</li>
+</ul>
+</li>
+<li>寮の洗濯機は　何時まで　<strong>使うことができます</strong>か。</li>
+<li>８時までです。それからは　<strong>使うことができません</strong>。</li>
+</ul>
+</li>
+</ul>
+<p><strong>[名]は　[动（基本形）]　ことです</strong></p>
+<ul>
+<li>可以表示爱好，特长，理想等（谓语部分是动作和行为）</li>
+<li>例句：
+<ul>
+<li>私の趣味は　切手を<strong>集める</strong>ことです。</li>
+<li>王さんの特技は　胡弓を<strong>弾く</strong>ことです。</li>
+<li>森さんの夢は　外国で<strong>働く</strong>ことです。</li>
+</ul>
+</li>
+</ul>
+<p><strong>[动（基本形）]　前に、～</strong></p>
+<ul>
+<li>表示一个动作在另一个动作之前发生</li>
+<li>例句：
+<ul>
+<li>こちらへ<strong>来る前に</strong>　電話をかけてください。</li>
+<li>毎日<strong>寝る前に</strong>　シャワーを浴びます。</li>
+</ul>
+</li>
+<li>也可以「名词」+「の」+「前に」
+<ul>
+<li><strong>会議の前に</strong>、資料をコピーします。</li>
+</ul>
+</li>
+</ul>
+<p><strong>疑问词 + か</strong></p>
+<ul>
+<li>「いつ」「どこ」「だれ」等词 +「か」，表示“某时”，“某地”，“某人”等意思</li>
+<li>也可以理解成表示不确定（要做什么吗？）</li>
+<li>例句：
+<ul>
+<li>どこへ行く - 你去哪？
+<ul>
+<li>重点在「どこ」，去哪里</li>
+</ul>
+</li>
+<li><strong>どこか</strong>へ行く - 你要去哪儿吗？
+<ul>
+<li>重点在问「行く」，要出去吗</li>
+</ul>
+</li>
+<li>部屋に<strong>だれか</strong>いますか。（房间里有人吗？）</li>
+<li>部屋に<strong>だれが</strong>いますか。（房间里有谁？）</li>
+<li>じゃあ、一緒に<strong>どこか</strong>へ行きませんか。</li>
+</ul>
+</li>
+<li>「いつか」「どこか」「だれか」「何か」等本身不表示疑问，也可以用于陈述句
+<ul>
+<li>冬休み、<strong>どこか</strong>へ行きたいです。（寒假想去个什么地方）</li>
+<li>お腹がすきましたね。<strong>何か</strong>食べましょう。（肚子饿了吧，吃点东西吧）</li>
+</ul>
+</li>
+</ul>
+<p><strong>～よね</strong></p>
+<ul>
+<li>表示提出自己的意见，征求对方的同意
+<ul>
+<li>ね：对方和自己意见想法完全相同</li>
+<li>よね：对自己意见想法没有足够把握</li>
+</ul>
+</li>
+<li>例句：
+<ul>
+<li>手作りの餃子の皮は　美味しいです<strong>よね</strong>。</li>
+<li>この傘は　森さんのです<strong>よね</strong>。</li>
+<li>小野さんも　一緒に行きます<strong>よね</strong>。</li>
+</ul>
+</li>
+</ul>
+<p><strong>人数 + で</strong></p>
+<ul>
+<li>以这样的人数做某件事情
+<ul>
+<li>みんなで - 大家一起来做</li>
+<li>１人で - 一个人来做</li>
+<li>自分で - 自己来做</li>
+<li>全員で - 全体人员一起来做</li>
+</ul>
+</li>
+<li>例句：
+<ul>
+<li><strong>みんなで</strong>　餃子を作ります。</li>
+<li>先月クラス　<strong>全員で</strong>　キャンプへ　行きました。</li>
+</ul>
+</li>
+</ul>
+<h1 id="l21-私は-すき焼きを-食べた-ことが-あります"><a class="markdownIt-Anchor" href="#l21-私は-すき焼きを-食べた-ことが-あります"></a> L21 - 私は　すき焼きを　食べた　ことが　あります</h1>
+<h2 id="单词-20"><a class="markdownIt-Anchor" href="#单词-20"></a> 单词</h2>
+<p>言葉（ことば）[3] - 语言</p>
+<ul>
+<li>言の葉（ことのは）[3] - 语言（出现在歌词或诗歌中）</li>
+</ul>
+<p>ゴールデンウイーク [7] - Golden Week (GW)</p>
+<ul>
+<li>可以写作「黄金週間」，但是读法不变</li>
+</ul>
+<p>地震（じしん）[0]</p>
+<ul>
+<li>～で地震がある</li>
+</ul>
+<p>泥棒（どろぼう）[0] - 小偷，盗贼</p>
+<ul>
+<li>泥棒猫（どろぼうねこ）[5] - 偷腥猫（狐狸精）</li>
+</ul>
+<p>渡す（わたす）[0] - 交给</p>
+<ul>
+<li>[物]を[人]に渡す</li>
+</ul>
+<p>遅れる（おくれる）[0] - 迟到</p>
+<ul>
+<li>～に遅れる</li>
+<li>授業に遅れる</li>
+</ul>
+<p>考える（かんがえる）[4] - 考虑（理性的，持续的）</p>
+<ul>
+<li>思う（おもう）[2] - 思考（情绪的，一时的）（L24）</li>
+</ul>
+<p>調べる（しらべる）[3] - 调查</p>
+<ul>
+<li>事件を調べる</li>
+</ul>
+<p>着る（きる）[0] - 穿</p>
+<ul>
+<li>服を着る</li>
+<li>白いTシャツを着ています</li>
+<li>切る（きる）[1] -&gt; 切って</li>
+</ul>
+<h2 id="た形"><a class="markdownIt-Anchor" href="#た形"></a> た形</h2>
+<ul>
+<li>「た形」基于「て形（L14）」，把「て」变成「た」，「で」变成「だ」，构成方式如下：</li>
+<li>一类动词
+<ul>
+<li><strong>～く -&gt; ～いて</strong>
+<ul>
+<li>書く -&gt; 書いた；聞く -&gt; 聞いた</li>
+<li><strong>行く -&gt; 行った</strong>（特殊）</li>
+</ul>
+</li>
+<li><strong>～ぐ -&gt; ～いで</strong>
+<ul>
+<li>泳ぐ -&gt; 泳いだ；急ぐ -&gt; 急いだ</li>
+</ul>
+</li>
+<li><strong>～す -&gt; ～して</strong>
+<ul>
+<li>消す -&gt; 消した；話す -&gt; 話した</li>
+</ul>
+</li>
+<li><strong>～む / ぶ / ぬ -&gt; ～んで</strong>
+<ul>
+<li>読む -&gt; 読んだ；遊ぶ -&gt; 遊んだ；死ぬ -&gt; 死んだ</li>
+</ul>
+</li>
+<li><strong>～う / る / つ -&gt; ～って</strong>
+<ul>
+<li>買う -&gt; 買った；送る -&gt; 送った；待つ -&gt; 待った</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>二类动词
+<ul>
+<li><strong>～る -&gt; ～て</strong>
+<ul>
+<li>教える -&gt; 教えた；食べる -&gt; 食べた</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>三类动词
+<ul>
+<li>する -&gt; した</li>
+<li>来る（くる）[1] -&gt; 来て（きた）[1]</li>
+</ul>
+</li>
+</ul>
+<p>声调变化和「て形」完全一样。</p>
+<h2 id="语法-20"><a class="markdownIt-Anchor" href="#语法-20"></a> 语法</h2>
+<p><strong>[动（た形）]　ことが　あります</strong></p>
+<ul>
+<li>表示过去的经历（曾经～过）</li>
+<li>例句：
+<ul>
+<li>私は　すき焼きを　<strong>食べた　ことがあります</strong>。（我吃过寿喜烧）</li>
+<li>北京へ　<strong>行った　ことがあります</strong>か。（你去过北京吗）</li>
+<li>いいえ、一度も　<strong>行った　ことがありません</strong>。</li>
+<li>いいえ、ありません。</li>
+<li>注意：不能回答「いいえ、ことがありません。」</li>
+</ul>
+</li>
+</ul>
+<p><strong>[动（た形）]　後で、～</strong></p>
+<ul>
+<li>表示一个动作在另一个动作之后发生</li>
+<li>例句：
+<ul>
+<li>会社が<strong>終わった後で</strong>、飲みに行きます。</li>
+<li>映画を<strong>見た後で</strong>、食事をしました。</li>
+</ul>
+</li>
+<li>也可以「名词」+「の」+「後で」
+<ul>
+<li><strong>仕事の後で</strong>、映画を見ます。</li>
+</ul>
+</li>
+<li>注：这个结构跟「～前に」（L20）很像，需要注意区分
+<ul>
+<li>「～前に」前面用「基本形」</li>
+<li>「～後で」前面用「た形」</li>
+</ul>
+</li>
+</ul>
+<p><strong>[动（た形）]　ほうが　いいです</strong></p>
+<ul>
+<li>用于建议对方做一些动作和行为</li>
+<li>肯定用「た形」，否定用「ない形」</li>
+<li>例句：
+<ul>
+<li>もっと　野菜を　<strong>食べた　ほうがいいです</strong>よ。（还是多吃点蔬菜好啊）</li>
+<li>そんなに　<strong>慌てない　ほうがいいです</strong>よ。（别那么慌张啊）</li>
+<li>ホテルを　<strong>予約した　ほうがいいです</strong>か。（酒店还是先预约为好吗）</li>
+</ul>
+</li>
+<li>这个句型也可以表示选择
+<ul>
+<li>「名词/これ/それ/あれ」+ の + ほうがいいです</li>
+<li>「名词/この/その/あの」+ ほうがいいです</li>
+</ul>
+</li>
+<li>例句：
+<ul>
+<li>リンゴと　ミカンと　どちらがいいですか。</li>
+<li>私は　<strong>リンゴのほうがいいです</strong>。</li>
+<li>ビールのグラスは、これと　あれと　どちらがいいですか。</li>
+<li><strong>これのほうがいいです</strong>。</li>
+<li>デザインは、この車と　あの車と　ちらがいいですか。</li>
+<li><strong>あのほうがいいです</strong>。</li>
+<li>すぐに　吉田さんに　連絡したほうがいいですか。</li>
+<li>ええ、<strong>そのほうがいいです</strong>ね。すぐに電話してください。</li>
+</ul>
+</li>
+</ul>
+<p><strong>[动]ましょうか</strong></p>
+<ul>
+<li>提议对方和自己一起做某事，或者自己为对方做某事</li>
+<li>与「～ませんか」「～ましょう」（L17）相比，还有向对方确认提议是否可行的意思，语调更柔和</li>
+<li>同意帮忙：「お願いします」</li>
+<li>同意一起做事：「はい、そうしましょう」「いいですね」</li>
+<li>拒绝提议：「～ないでください」「いいえ、ちょっと…」</li>
+<li>例句：
+<ul>
+<li>何か<strong>食べましょうか</strong>。</li>
+<li>荷物を<strong>持ちましょうか</strong>。</li>
+<li>はい、お願いします。</li>
+<li>窓を<strong>閉めましょうか</strong>。</li>
+<li>いいえ、閉めないでください。</li>
+</ul>
+</li>
+</ul>
+<p><strong>何度か</strong></p>
+<ul>
+<li>表示不定数量（几次），和「疑问词 + か」（L20）一样表示不确定</li>
+<li>例：仕事の後で、<strong>何度か</strong>　見に行った　ことがあります。</li>
+<li>注：类似的还有「何人か」「何册か」</li>
+</ul>
+<p><strong>～過ぎ</strong></p>
+<ul>
+<li>时间：数词 + 時/分 + 過ぎ
+<ul>
+<li>ゆうべ　<strong>１０時過ぎ</strong>に　地震がありました。</li>
+</ul>
+</li>
+<li>年龄：数词 + 過ぎ（中间没有「歳」）
+<ul>
+<li>その泥棒はいくつぐらいでしたか。</li>
+<li>そうですね…、<strong>３０過ぎ</strong>でした。</li>
+</ul>
+</li>
+</ul>
+<h1 id="l22-森さんは-毎晩-テレビを-見る"><a class="markdownIt-Anchor" href="#l22-森さんは-毎晩-テレビを-見る"></a> L22 - 森さんは　毎晩　テレビを　見る</h1>
+<h2 id="单词-21"><a class="markdownIt-Anchor" href="#单词-21"></a> 单词</h2>
+<p>都合（つごう）[0] -（时间上）方便，convenience；对自己有利</p>
+<ul>
+<li>都合がいい</li>
+<li>都合が悪い</li>
+</ul>
+<p>予定（よてい）[0] - 预计，预定</p>
+<ul>
+<li>予定がある（有安排了）</li>
+</ul>
+<p>火事（かじ）[1] - 火灾</p>
+<ul>
+<li>～で火事がある</li>
+<li>家事（かじ）[1] - 家务</li>
+</ul>
+<p>転勤（てんきん）[0] - 调动工作</p>
+<ul>
+<li>～から～に転勤する</li>
+</ul>
+<p>やる [0] - 做</p>
+<ul>
+<li>和「する」一个意思（做），但是「する」更正式一些</li>
+<li>「やる」可以用在朋友之间，比较随意</li>
+<li>「やる」还有其它意思，目前不用管</li>
+</ul>
+<p>嬉しい vs 楽しい</p>
+<ul>
+<li>嬉しい（うれしい）[3] - happy
+<ul>
+<li>瞬间的喜悦（比如收到礼物）</li>
+<li>嬉しい！ありがとう！</li>
+</ul>
+</li>
+<li>楽しい（たのしい）[3] - enjoy
+<ul>
+<li>持续的快乐（比如约会完了）</li>
+<li>今日はありがとう、すごく楽しかったよ！</li>
+</ul>
+</li>
+</ul>
+<p>重い（おもい）[0] - 重，沉重</p>
+<ul>
+<li>気が重い - 心情很沉重</li>
+<li>重い女 - 情感上过度依赖他人的女性</li>
+<li>軽い女 - 轻浮的女性</li>
+</ul>
+<p>急（きゅう）[0] - 突然</p>
+<ul>
+<li>急にお腹が痛い</li>
+<li>急にお腹が痛くなった</li>
+</ul>
+<p>あんまり [0] - （肯定用法）太，过于</p>
+<ul>
+<li>あんまりだよ！（你太过分了！ ）</li>
+<li>「あまり」的口语形式</li>
+</ul>
+<p>ごめん [0] - 抱歉</p>
+<ul>
+<li>ごめんなさい（稍微正式一点，女生和小孩用得多）</li>
+</ul>
+<p>いや [0] - No</p>
+<ul>
+<li>「いいえ」的口语说法</li>
+</ul>
+<p>～方（かた）</p>
+<ul>
+<li>动词连用形 + 方 = ～的做法（都是0调词）</li>
+<li>話し<s>ます</s> -&gt; 話し方（说法）</li>
+<li>読み<s>ます</s> -&gt; 読み方（读法）</li>
+<li>作り<s>ます</s> -&gt; 作り方（做法）</li>
+<li>やり<s>ます</s> -&gt; やり方（办法）</li>
+<li>使い<s>ます</s> -&gt; 使い方（用法）</li>
+</ul>
+<h2 id="简体形"><a class="markdownIt-Anchor" href="#简体形"></a> 简体形</h2>
+<p>前面所学的都是「ます」「です」这种敬体形，一般对长辈或者关系不太亲密的人使用。简体形则是对同辈，晚辈，或者关系近的人使用。日记，报纸等也都用简体形。</p>
+<p>动词本身具有敬体形和简体形，但是形容词和名词只有做谓语的时候，才有敬体形和简体形。</p>
+<p>简体形的对话中通常省略助词。</p>
+<p>简体形也会省略一些音，「ている」形式（表示进行中的动作或状态）通常会缩略为「てる」，比如「知っている」说成「知ってる」</p>
+<h3 id="动词-6"><a class="markdownIt-Anchor" href="#动词-6"></a> 动词</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>敬体形</th>
+<th>简体形</th>
+<th>变形</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>现在肯定</td>
+<td>買います</td>
+<td>買う</td>
+<td>基本形</td>
+</tr>
+<tr>
+<td>现在否定</td>
+<td>買いません</td>
+<td>買わない</td>
+<td>ない形</td>
+</tr>
+<tr>
+<td>过去肯定</td>
+<td>買いました</td>
+<td>買った</td>
+<td>た形</td>
+</tr>
+<tr>
+<td>过去否定</td>
+<td>買いませんでした</td>
+<td>買わなかった</td>
+<td>なかった形</td>
+</tr>
+</tbody>
+</table>
+<p>注意：「ある」的现在否定简体形是「<strong>ない</strong>」</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>敬体形</th>
+<th>简体形</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>现在肯定</td>
+<td>あります</td>
+<td>ある</td>
+</tr>
+<tr>
+<td>现在否定</td>
+<td>ありません</td>
+<td><strong>ない</strong></td>
+</tr>
+<tr>
+<td>过去肯定</td>
+<td>ありました</td>
+<td>あった</td>
+</tr>
+<tr>
+<td>过去否定</td>
+<td>ありませんでした</td>
+<td>なかった</td>
+</tr>
+</tbody>
+</table>
+<p>一些例句：</p>
+<ul>
+<li>森さんは毎晩テレビを<strong>見る</strong>。</li>
+<li>コーヒー、<strong>飲む</strong>？</li>
+<li>ううん、<strong>飲まない</strong>。</li>
+<li>昨日テレビ、<strong>見た</strong>？</li>
+<li>ううん、<strong>見なかった</strong>。</li>
+</ul>
+<h3 id="一类形容词"><a class="markdownIt-Anchor" href="#一类形容词"></a> 一类形容词</h3>
+<p>一类形容词，把末尾的「です」去掉就是简体形</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>敬体形</th>
+<th>简体形</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>现在肯定</td>
+<td>忙しいです</td>
+<td>忙しい</td>
+</tr>
+<tr>
+<td>现在否定</td>
+<td>忙しくないです</td>
+<td>忙しくない</td>
+</tr>
+<tr>
+<td>过去肯定</td>
+<td>忙しかったです</td>
+<td>忙しかった</td>
+</tr>
+<tr>
+<td>过去否定</td>
+<td>忙しくなかったです</td>
+<td>忙しくなかった</td>
+</tr>
+</tbody>
+</table>
+<p>一些例句：</p>
+<ul>
+<li>そのカレー、<strong>美味しい</strong>？</li>
+<li>ううん、あんまり<strong>美味しくないよ</strong>。</li>
+<li>昨日の試験、<strong>どうだった</strong>？</li>
+<li>ちょっと<strong>難しかった</strong>。</li>
+</ul>
+<h3 id="二类形容词和名词"><a class="markdownIt-Anchor" href="#二类形容词和名词"></a> 二类形容词和名词</h3>
+<p>二类形容词和名词的变化方法一样</p>
+<p>注意：现在肯定疑问句中，直接使用二类形容词 / 名词本身（去掉对应简体形的「だ」）</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>敬体形</th>
+<th>简体形</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>现在肯定</td>
+<td>簡単です</td>
+<td>簡単だ</td>
+</tr>
+<tr>
+<td>现在否定</td>
+<td>簡単ではありません</td>
+<td>簡単じゃない</td>
+</tr>
+<tr>
+<td>过去肯定</td>
+<td>簡単でした</td>
+<td>簡単だった</td>
+</tr>
+<tr>
+<td>过去否定</td>
+<td>簡単ではありませんでした</td>
+<td>簡単じゃなかった</td>
+</tr>
+</tbody>
+</table>
+<p>一些例句：</p>
+<ul>
+<li>このネクタイ、<strong>派手</strong>？</li>
+<li>ううん、全然<strong>派手じゃない</strong>わ。</li>
+<li>森さんのアパート、<strong>静か</strong>？</li>
+<li>うん、<strong>静かだ</strong>よ。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>敬体形</th>
+<th>简体形</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>现在肯定</td>
+<td>晴れです</td>
+<td>晴れだ</td>
+</tr>
+<tr>
+<td>现在否定</td>
+<td>晴れではありません</td>
+<td>晴れじゃない</td>
+</tr>
+<tr>
+<td>过去肯定</td>
+<td>晴れでした</td>
+<td>晴れだった</td>
+</tr>
+<tr>
+<td>过去否定</td>
+<td>晴れではありませんでした</td>
+<td>晴れじゃなかった</td>
+</tr>
+</tbody>
+</table>
+<p>一些例句：</p>
+<ul>
+<li>今日は<strong>曇りだ</strong>。</li>
+<li>明日は<strong>水曜日だ</strong>ね？</li>
+<li><strong>水曜日じゃない</strong>よ。<strong>木曜日だ</strong>よ。</li>
+<li>昨日、スキー場は<strong>雪だった</strong>？</li>
+<li>ううん、<strong>雪じゃなかった</strong>よ。いい<strong>天気だった</strong>。</li>
+</ul>
+<h3 id="けど转折关系"><a class="markdownIt-Anchor" href="#けど转折关系"></a> けど（转折关系）</h3>
+<p>「けど」连接两个句子，用于口语，跟「が」（L16）一样表示转折</p>
+<p>例句：</p>
+<ul>
+<li>昨日の試験、どうだった？</li>
+<li>ちょっと難しかった<strong>けど</strong>、まあまあできたよ。</li>
+</ul>
+<p>「けど」也可以表示铺垫</p>
+<p>例句：</p>
+<ul>
+<li>来週、送別会をする<strong>けど</strong>、都合はどうかな？（下周要开一个欢送会，你时间方便吗？）</li>
+</ul>
+<h3 id="かな简体助词"><a class="markdownIt-Anchor" href="#かな简体助词"></a> かな（简体助词）</h3>
+<p>「かな」本来用于自言自语的场合。如果是说给别人听，表示向对方提供不太确定的信息</p>
+<p>例句：</p>
+<ul>
+<li>今日李さんは来る<strong>かな</strong>。（小李今天会来吗？）</li>
+<li>期間は４年か５年<strong>かな</strong>。（时间好像是4年或者5年）</li>
+</ul>
+<h3 id="の简体助词"><a class="markdownIt-Anchor" href="#の简体助词"></a> の（简体助词）</h3>
+<ul>
+<li>ああ、清水君、どうした<strong>の</strong>？</li>
+<li>寒い<strong>の</strong>？</li>
+</ul>
+<h2 id="语法-21"><a class="markdownIt-Anchor" href="#语法-21"></a> 语法</h2>
+<p><strong>～って</strong></p>
+<p>「～って」一般加在动词简体形后面，表示听说或传闻</p>
+<p>例句：</p>
+<ul>
+<li>太田、今度中国へ転勤だ<strong>って</strong>。</li>
+<li>彼は結婚する<strong>って</strong>聞いたよ。</li>
+</ul>
+<p><strong>わ vs よ</strong></p>
+<p>「わ」和「よ」都是句尾的语气词，其中：</p>
+<ul>
+<li>「わ」主要是女性使用</li>
+<li>「よ」主要是男性使用</li>
+</ul>
+<p>例句：</p>
+<ul>
+<li>全然派手じゃない<strong>わ</strong></li>
+<li>この携帯、とても便利<strong>よ</strong>。</li>
+<li>あそこが私のうち<strong>よ</strong>。</li>
+<li>あのう、すみません。この靴、ちょっと大きです<strong>わ</strong>。</li>
+</ul>
+<p><strong>电话号码读法</strong></p>
+<p>数字一个一个读，横杠读作「の」</p>
+<p>例：３４９３ー３９４５读作「さんよんきゅうさん　の　さんきゅうよんご」</p>
+<h1 id="l23-休みの日-散歩したり-買い物に-行ったり-します"><a class="markdownIt-Anchor" href="#l23-休みの日-散歩したり-買い物に-行ったり-します"></a> L23 - 休みの日、散歩したり　買い物に　行ったり　します</h1>
+<p>这课的语法挺抽象的<img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/stickers/dino_44.jpg" style="margin:0; display: inline;"></p>
+<h2 id="单词-22"><a class="markdownIt-Anchor" href="#单词-22"></a> 单词</h2>
+<p>生地（きじ）- 布料，cloth, fabric；dough（面团）</p>
+<ul>
+<li>記事（L14）同音词，注意区分</li>
+</ul>
+<p>違う（たがう）[2] - 不同，不一样</p>
+<p>込む（こむ）[1] - 拥挤，混杂</p>
+<p>決まる（きまる）[0] [自动词] - 决定</p>
+<ul>
+<li>～が決まる - 某件事情定下来了</li>
+</ul>
+<p>知らせる（しらせる）[0] - 通知</p>
+<ul>
+<li>お知らせ - 通知（名词）</li>
+</ul>
+<p>確かめる（たしかめる）[4] - 查看，弄清</p>
+<p>多分（たぶん）[1] - 可能，大概</p>
+<p>あっ、そうだ</p>
+<ul>
+<li>突然想到或者想起某事，相当于“啊，对了”，“啊，想起来了”</li>
+<li><strong>あっ、そうだ</strong>。生地を買って、私が作りますよ。</li>
+<li>あの人の名前は…。ええと、<strong>あっ、そうだ</strong>、田中さんですよ。</li>
+</ul>
+<h2 id="语法-22"><a class="markdownIt-Anchor" href="#语法-22"></a> 语法</h2>
+<p><strong>～たり　～たり</strong>用于列举若干种有代表性的动作或者状态，前面可以接动词，形容词，名词。一般翻译成“有时/有时”，“既有/也有”。</p>
+<p><strong>[动]たり　[动]たり　します</strong></p>
+<ul>
+<li>把动词「た形」的「た」变成「たり」</li>
+<li>例句：
+<ul>
+<li>小野さんは休みの日、<strong>散歩したり</strong>　買い物に<strong>行ったり　します</strong>。</li>
+<li>吉田さんは日曜日には何をしますか。</li>
+<li>家の<strong>掃除をしたり　洗濯をしたり　します</strong>。</li>
+</ul>
+</li>
+</ul>
+<p><strong>[一类形]かったり　[一类形]かったり　です</strong></p>
+<ul>
+<li>把一类形容词的过去简体形「～かった」的「た」变成「たり」</li>
+<li>例句：
+<ul>
+<li>飛行機のチケットは　<strong>高かったり　安かったり　です</strong>。</li>
+<li>マンションの部屋は　<strong>広かったり　狭かったり　です</strong>。</li>
+</ul>
+</li>
+</ul>
+<p><strong>[二类形/名]だったり　[二类形/名]だったり　です</strong></p>
+<ul>
+<li>把二类形容词和名词的过去简体形「～だった」的「た」变成「たり」</li>
+<li>例句：
+<ul>
+<li>この公園は時間によって　<strong>静かだったり　にぎやかだったり　です</strong>。</li>
+<li>日本語の先生は　<strong>中国人だったり　日本人だったり　です</strong>。</li>
+</ul>
+</li>
+</ul>
+<p>形容词和名词后面不是总要接「です」，也可以接其它东西</p>
+<ul>
+<li>浴衣は高かっ<strong>たり</strong>安かっ<strong>たり</strong>、<strong>いろいろあります</strong>。
+<ul>
+<li>浴衣有贵的，有便宜的，种类很多。</li>
+</ul>
+</li>
+<li>この店の料理は味が濃かっ<strong>たり</strong>薄かっ<strong>たり</strong>、<strong>毎回違います</strong>。
+<ul>
+<li>这个点的菜，口味有时轻有时重，每次都不一样。</li>
+</ul>
+</li>
+<li>通勤は電車だっ<strong>たり</strong>車だっ<strong>たり</strong>、<strong>日によって違います</strong>。
+<ul>
+<li>根据每天的不同，有时坐电车上班，有时开车上班。</li>
+</ul>
+</li>
+</ul>
+<p><strong>从句 + か</strong></p>
+<p>从句作为复合句的一部分时，从句的动词和一类形容词，要使用简体形，再加「か」。二类形容词和名词可以直接加「か」（切记不加「だ」）。</p>
+<p>注意：主句的话题标记用「は」，从句的话题标记用「が」</p>
+<p><strong>从句 + か　どうか</strong></p>
+<ul>
+<li>[简体形]か　どうか = [简体形]か　[ない形]か</li>
+<li>一般用于：我 [不记得 / 忘记 / 不知道] + [是不是 / 有没有 / 会不会]
+<ul>
+<li>例：我不知道他明天会不会来（明日彼が来るかどうか分かりません）</li>
+</ul>
+</li>
+<li>例句1：
+<ul>
+<li>从句：私は今年の夏、北京へ行きますか。</li>
+<li>主句：私は分かりません。</li>
+<li>复合句：私は今年の夏、北京へ　<strong>行くか　どうか</strong>　分かりません。</li>
+<li>等价复合句：私は今年の夏、北京へ　<strong>行くか　行かないか</strong>　分かりません。</li>
+</ul>
+</li>
+<li>例句2：
+<ul>
+<li>从句：この料理<strong>は</strong>辛いですか。</li>
+<li>主句：私は知りません。</li>
+<li>复合句：私はこの料理<strong>が　辛いか　どうか</strong>　知りません。</li>
+<li>等价复合句：私はこの料理<strong>が　辛いか　辛くないか</strong>　知りません。</li>
+</ul>
+</li>
+<li>例句3：
+<ul>
+<li>从句：キムさん<strong>は</strong>中国人ですか。</li>
+<li>主句：私は知りません。</li>
+<li>复合句：私はキムさん<strong>が　中国人か　どうか</strong>　知りません。</li>
+<li>等价复合句：私はキムさん<strong>が　中国人か　中国人じゃないか</strong>　知りません。</li>
+</ul>
+</li>
+<li>其它例句：
+<ul>
+<li>あの子の写真を見たことがないから、<strong>可愛いか　どうか</strong>　分かりません。</li>
+<li>小野さんは仕事<strong>が　終わったか　どうか</strong>　聞いてください。</li>
+</ul>
+</li>
+</ul>
+<p><strong>疑问词小句 + か</strong></p>
+<ul>
+<li>あなたはだれ　<strong>か</strong>　忘れました。（我忘了/你是谁）</li>
+<li>かぎがどこにある　<strong>か</strong>　教えてください。（请告诉我/钥匙在哪）</li>
+<li>昨日何を食べた　<strong>か</strong>　忘れました。（我忘了/昨天吃什么了）</li>
+<li>どの料理が辛い　<strong>か</strong>　知りません。（我不知道/哪道菜辣）</li>
+<li>この歌がだれの歌　<strong>か</strong>　知っていますか。（你知道/这是谁的歌吗）</li>
+</ul>
+<p><strong>～に　よって</strong></p>
+<ul>
+<li>「よって」表示因果关系，可以翻译为“根据。。。的不同”</li>
+<li>「～によって違います」这个形式很常用
+<ul>
+<li>人によって違います（depend on the person）</li>
+</ul>
+</li>
+<li>例句：
+<ul>
+<li>飛行機のチケットは季節<strong>によって</strong>高かったり安かったりです。
+<ul>
+<li>可以写成：飛行機のチケットは季節<strong>によります</strong>。</li>
+<li>飞机票根据季节，有时贵，有时便宜。</li>
+</ul>
+</li>
+<li>結婚式のやり方は国<strong>によって</strong>違います。
+<ul>
+<li>婚礼的形式因国别而异。</li>
+</ul>
+</li>
+<li>この電車はいつも込みますか。</li>
+<li>いえ、時間<strong>によります</strong>。</li>
+</ul>
+</li>
+</ul>
+<h1 id="l24-李さんは-もう-すぐ-来ると-思います"><a class="markdownIt-Anchor" href="#l24-李さんは-もう-すぐ-来ると-思います"></a> L24 - 李さんは　もう　すぐ　来ると　思います</h1>
+<p>这课的语法也挺抽象的<img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/stickers/dino_44.jpg" style="margin:0; display: inline;"></p>
+<h2 id="单词-23"><a class="markdownIt-Anchor" href="#单词-23"></a> 单词</h2>
+<p>ハイキング - 郊游，远足</p>
+<ul>
+<li>遠足（えんそく）[0]</li>
+</ul>
+<p>別れる（わかれる）[3] - 分别，分手</p>
+<ul>
+<li>お別れ（おわかれ）[0] （名词）</li>
+</ul>
+<p>話（はなし）[3] - 话，故事</p>
+<ul>
+<li>ちょっと話がある</li>
+<li>いい話ですね</li>
+<li>話にならない</li>
+</ul>
+<p>見送る（みおくる）[0] - 送行，送别</p>
+<ul>
+<li>見送り（みおくり）[0]（名词）</li>
+</ul>
+<p>間（あいだ）[0] - 期间</p>
+<ul>
+<li>冬休みの間 - 寒假期间</li>
+<li>この間 - 前几天，最近，recently</li>
+<li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=mJkcPEdTDnQ">長い間（Kiroro）</a>，中文翻唱：很爱很爱你（刘若英）</li>
+<li>例：短い間でしたが、とても楽しがったですよ。</li>
+</ul>
+<p>思う（おもう）[2] - 思考（情绪的，一时的）</p>
+<ul>
+<li>想う（おもう）[2] - 思念</li>
+<li>考える - 考虑（理性的，持续的）（L21）</li>
+</ul>
+<p>言う（いう）[0] - 说，讲</p>
+<ul>
+<li>話す（L14）- 谈话</li>
+</ul>
+<p>探す（さがす）[0] - 找，寻找，寻求</p>
+<ul>
+<li>運命の人を探す</li>
+<li>仕事を探す</li>
+</ul>
+<p>笑う（わらう）[0] - 笑</p>
+<p>やめる [0] - 停止，戒除，放弃</p>
+<ul>
+<li>タバコをやめる - 戒烟</li>
+</ul>
+<p>辞める（やめる）[0] - 辞职</p>
+<ul>
+<li>仕事を辞める</li>
+</ul>
+<p>決める [0] [他动词] - 决定</p>
+<ul>
+<li>～を決める - 决定事情</li>
+<li>日本へ留学に行くことを決めました</li>
+<li>決まる [0] [自动词]（L23）</li>
+</ul>
+<p>寝坊する（ねぼう～）[0] - 睡懒觉</p>
+<p>外出する（がいしゅつ～）[0] - 外出</p>
+<p>研究する（けんきゅう～）[0] - 研究</p>
+<p>おかしい [3] - 可笑，奇怪</p>
+<ul>
+<li>汉字形式「可笑しい」，不常用</li>
+<li>怪しい（あやしい）[3] - 可疑</li>
+</ul>
+<p>いっぱい [0] - 满（副词）</p>
+<ul>
+<li>お腹がいっぱいです - 吃饱了</li>
+</ul>
+<p>とうとう [1] - 终于，at last（副词）</p>
+<ul>
+<li>汉字形式「到頭」，不常用</li>
+<li>「とうとう」比较中性，就是经历了各种过程的感觉</li>
+<li>例句：
+<ul>
+<li><strong>とうとう</strong>お別れですね。</li>
+<li>息子が<strong>とうとう</strong>大学を卒業しました。</li>
+</ul>
+</li>
+<li>やっと（L19）- 好不容易，辛苦了很久的感觉</li>
+</ul>
+<p>必ず（かならず）[0] - 必定（确信），without exception</p>
+<ul>
+<li>きっと（L42）- 推测，或者带有希望（主观的）
+<ul>
+<li>彼は<strong>きっと</strong>来る。</li>
+<li>この薬を飲めば、<strong>きっと</strong>効きますよ。（主观认为）</li>
+</ul>
+</li>
+<li>必ず - 确定性（客观的）
+<ul>
+<li>明日<strong>必ず</strong>来てください。</li>
+<li>太陽は<strong>必ず</strong>東から出て西に沈む。（客观事实）</li>
+</ul>
+</li>
+<li>ぜひ（L17）- 强烈的期待和希望
+<ul>
+<li>ぜひ～たい</li>
+<li>ぜひ～ください</li>
+</ul>
+</li>
+<li>絶対に（ぜったいに）[0] - 绝对，100%（强制性）
+<ul>
+<li>絶対に来て下さい。</li>
+</ul>
+</li>
+<li>参考内容：<a target="_blank" rel="noopener" href="https://www.yutonsmaile.com/entry/japaneseadverb-conviction">「かならず・きっと・絶対に・ぜひ」いったい何が違うの？似ている副詞の使い分け</a></li>
+</ul>
+<h2 id="常用对话"><a class="markdownIt-Anchor" href="#常用对话"></a> 常用对话</h2>
+<p>お世話になりました - 收到别人的照顾和帮助，离别时表达感谢</p>
+<ul>
+<li>如果是今后将要得到别人的帮助，使用「お世話になります」</li>
+<li>例句：
+<ul>
+<li>ありがとうございました。本当に<strong>お世話になりました</strong>。</li>
+<li>はじめまして、李です。これから<strong>お世話になります</strong>。</li>
+</ul>
+</li>
+</ul>
+<p>～に　よろしくお伝えください - 请向。。。问好</p>
+<ul>
+<li>加重语气：～に　どうぞ　よろしくお伝えください</li>
+<li>不需要客套：～に　よろしく</li>
+<li>例句：
+<ul>
+<li>どうぞ吉田課長<strong>によろしくお伝えください</strong>。</li>
+<li>李さん<strong>によろしく</strong>。</li>
+</ul>
+</li>
+</ul>
+<p>お元気で - 请多保重（用于时间较长的分离）</p>
+<ul>
+<li>お大事に（L15）也是请多保重，但是只能对病人使用！</li>
+<li>李さん、<strong>お元気で</strong>。</li>
+</ul>
+<p>お気をつけて - 路上小心</p>
+<ul>
+<li>李さん、どうぞ<strong>お気をつけて</strong>。</li>
+</ul>
+<h2 id="语法-23"><a class="markdownIt-Anchor" href="#语法-23"></a> 语法</h2>
+<p><strong>简体小句 + と　思います</strong></p>
+<ul>
+<li>表示思考的内容，通常用于缓和语气（日本人一般尽量避免使用绝对性的说法）</li>
+<li>一般翻译成“我想”，“我觉得”</li>
+<li><strong>「～と思います」只能表示说话人自己的思考！</strong></li>
+<li>「～と思いました」和「～と思っています」可以是自己思考，也可以是别人思考</li>
+<li>「～と思っています」着重于思考的内容（更常用），而「～と思います」着重于思考这个行为</li>
+<li>例句：
+<ul>
+<li>李さんはもうすぐ来る<strong>と思います</strong>。
+<ul>
+<li>所以这里并不是小李想，而是我想小李马上会来</li>
+</ul>
+</li>
+<li>田中さんは来ない<strong>と思います</strong>。</li>
+<li>この本は面白い<strong>と思います</strong>。</li>
+<li>日本はきれいだ<strong>と思います</strong>。</li>
+<li>明日はいい天気だ<strong>と思います</strong>。</li>
+<li>今日は外出しないほうがいい<strong>と思います</strong>。</li>
+<li>この色のほうが似合う<strong>と思います</strong>。</li>
+<li>馬さんは日本へ行きたい<strong>と思っています</strong>。</li>
+</ul>
+</li>
+<li>注意：「～と思います」前面出现名词或者二类形容词，简体形切记要加「だ」</li>
+</ul>
+<p><strong>[人]は　[简体小句]と　言いました</strong></p>
+<ul>
+<li>用于转述他人说的话</li>
+<li>如果要指出向谁说的，在句子中加入「人名 + に」</li>
+<li>转述某人反复说起的事情时，用「～と言っています」</li>
+<li>例句：
+<ul>
+<li>陳さんはパーティーに行く<strong>と言いました</strong>。</li>
+<li>森さんは中国語の試験は難しかった<strong>と言いました</strong>。</li>
+<li>小野さんは李さんにちょっと休みたい<strong>と言いました</strong>。</li>
+<li>来週のハイキングに張さんも行きたい<strong>と言っています</strong>。</li>
+</ul>
+</li>
+<li>注意：「～と言いました」前面出现名词或者二类形容词，简体形同样要加「だ」</li>
+</ul>
+<p><strong>～のです / んです</strong></p>
+<ul>
+<li>「んです」是日语独有的语法现象，无法直接翻译成中文和英文</li>
+<li>「んです」用于当发生一些事情的时候，再对这类事情作解释
+<ul>
+<li>add an explanatory feel to a sentence</li>
+<li>直接使用「です」不改变所传达的信息，但是会显得不自然</li>
+</ul>
+</li>
+<li>「んです」无法用在即时的情況、不确定的想法、单向的说话或人人都知道的事实</li>
+<li>「んです」前面接简体形，但是名词和二类形容词，现在肯定简体形的「だ」要换成「な」</li>
+<li>会以「んだ」「んです」「のだ」「のです」几种形式出现</li>
+<li>例句：
+<ul>
+<li>すみません、頭が痛い<strong>んです</strong>。</li>
+<li>タバコはやめたほうがいいですよ。</li>
+<li>そう<strong>なんです</strong>が、辞めるとこができない<strong>んです</strong>。</li>
+<li>すごい人気ですね。</li>
+<li>ええ、あの歌手は日本ではとても有名<strong>なんです</strong>。</li>
+<li>これ、京都のお土産<strong>なんです</strong>。どうぞ。</li>
+</ul>
+</li>
+<li>参考内容：
+<ul>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/83204877">日语中的んです该如何使用？</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.tofugu.com/japanese-grammar/explanatory-nda-ndesu-noda-nodesu/">んだ: Japanese Explanatory Form (んです/のだ/のです)</a></li>
+</ul>
+</li>
+</ul>
+<p><strong>どうして　～のですか / んですか</strong></p>
+<ul>
+<li>是「どうしてですか」的完整形式</li>
+<li>回答时使用「～のです / んです」</li>
+<li>例句：
+<ul>
+<li>どうして食べない<strong>んですか</strong>。</li>
+<li>もうお腹がいっぱい<strong>なんです</strong>。</li>
+<li>昨日、どうして休んだ<strong>んですか</strong>。</li>
+<li>頭が痛かった<strong>んです</strong>。</li>
+<li>どうして遅刻した<strong>んですか</strong>。</li>
+<li>寝坊した<strong>んです</strong>。</li>
+</ul>
+</li>
+</ul>
+<p><strong>[小句]が、[小句]（铺垫）</strong></p>
+<ul>
+<li>和「けど」（L22）一样，「が」（L16）也可以表示铺垫</li>
+<li>「が」多用于书面语</li>
+<li>例句：
+<ul>
+<li>東京タワーへ行きたいんです<strong>が</strong>、どうやって行きますか。</li>
+<li>李さんは探しているんです<strong>が</strong>、どこにいますか。</li>
+<li>明日から連休です<strong>が</strong>、どうするか決めましたか。</li>
+<li>明日から連休だ<strong>けど</strong>、どうするか決めた？</li>
+</ul>
+</li>
+</ul>
+<p><strong>どうやって～</strong></p>
+<ul>
+<li>「どうやって」：询问方法，由疑问词「どう」+「やって」构成</li>
+<li>「どうして」（L11）：询问理由，由疑问词「どう」+「して」构成</li>
+<li>例句：
+<ul>
+<li>東京タワーへ行きたいんですが、<strong>どうやって</strong>行きますか。
+<ul>
+<li>我想去东京塔，请问怎么走？</li>
+</ul>
+</li>
+<li><strong>どうして</strong>食べないんですか。
+<ul>
+<li>你为什么不吃呢？</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>～に　ついて</strong></p>
+<ul>
+<li>关于，regarding，as to</li>
+<li>后面一般接表示思维活动的词语，比如「考える」「思う」「研究する」</li>
+<li>例句：日本の音楽に<strong>ついて</strong>どう思いますか。（关于日本音乐，你怎么看？）</li>
+<li>用作标题时，一般省略后面的动词，如「日本の音楽に<strong>ついて</strong>」（关于日本音乐）</li>
+</ul>
+<p><strong>～中（ちゅう）【动作进行中】</strong></p>
+<ul>
+<li>一类二类动词 + 「中」，使用「连用形」</li>
+<li>三类动词「来る」不能接「中」</li>
+<li>并非所有的一类二类动词都能接「中」</li>
+<li>例句：
+<ul>
+<li>課長は<strong>出張中</strong>ですが、李さんによろしくと言っていましたよ。</li>
+<li>森さんに何度も電話をかけましたが、<strong>話し中</strong>でした。</li>
+</ul>
+</li>
+</ul>
+<h1 id="jlpt-n5-ゲット"><a class="markdownIt-Anchor" href="#jlpt-n5-ゲット"></a> JLPT N5 ゲット！</h1>
+<p>新标日初级上，终于结束啦！！！<img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/stickers/dino_17.jpg" style="margin:0; display: inline;"></p>
+<p>断断续续学了这么久，终于把上册啃完了。当然，N5 做套模拟题就当过了，毕竟 N5 证书没什么用，应该没有人浪费钱去考的吧。。。</p>
+<p>模拟题我写的课本最后的“4 级模拟试题”（<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/zh-hans/%E6%97%A5%E6%9C%AC%E8%AF%AD%E8%83%BD%E5%8A%9B%E6%B5%8B%E8%AF%95#%E5%8E%86%E5%8F%B2%E6%B2%BF%E9%9D%A9">等同于 N5 水平</a>），听力部分没找到录音，就只写了「文字・語彙」和「文法・読解」。75 分钟的卷子，我 33 分钟就写完了，感觉跟开卷考试似的。「文字・語彙」35 题全对，「文法・読解」38 题错了 2 个，总分是 95.7%（60% 合格）。说实话，这个结果我相当满意了。</p>
+<p>其实本来已经放弃自学日语一年多了，但是 2023 年 6 月发生了一些事情，又重新捡起来继续学了。每天努力和懒癌作斗争，在图书馆看网课、读课文、背单词、写习题，果然学习日语还是要有爱啊~</p>
+<p>所以 N5 水平能干啥呢？簧片前面的剧情，能听懂一半。。。嘛，N5 是这样的了，还得多多努力啊~</p>
+<p>oscarcx 写于 2023/07/07</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/tech/python-review.html" rel="prev" title="Python知识点查缺补漏">
+                  <i class="fa fa-angle-left"></i> Python知识点查缺补漏
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/tech/decrypt-manga.html" rel="next" title="记一次乱序漫画的拼接复原">
+                  记一次乱序漫画的拼接复原 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 2020 – 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="fa fa-terminal"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">oscarcx123</span>
+        <span class="post-meta-item">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-chart-line"></i>
+          </span>
+          <span title="站点总字数">268k</span>
+        </span>
+        <span class="post-meta-item">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-coffee"></i>
+          </span>
+          <span title="站点阅读时长">14:53</span>
+        </span>
+  </div>
+  <div class="powered-by">
+    <span class="post-meta-item">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v6.3.0 强力驱动
+    </span>
+    <span class="post-meta-item"> 主题 – <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v8.18.1
+    </span>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script size="300" alpha="0.6" zIndex="-1" src="/js/ribbon.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.6.0/pjax.min.js" integrity="sha256-vxLn1tSKWD4dqbMRyv940UYw4sXgMtYcK6reefzZrao=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.0.8/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/pjax.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/katex.min.css" integrity="sha256-3574TpfThVfeAhg+I4+N39EJiLN3QUkuEsMVe8hWAR4=" crossorigin="anonymous">
+  <script class="next-config" data-name="katex" type="application/json">{"copy_tex_js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/contrib/copy-tex.min.js","integrity":"sha256-Us54+rSGDSTvIhKKUs4kygE2ipA0RXpWWh0/zLqw3bs="}}</script>
+  <script src="/js/third-party/math/katex.js"></script>
+
+
+<script type="text/javascript">
+  // 显示“展开”和“折叠”
+  function collapsableTitle(x) {
+    var nav = document.getElementsByClassName("sidebar-nav-toc")[0];
+    if (x.matches) { // If media query matches
+      var content = document.getElementsByClassName("sidebar-panel-container")[0];
+      if (content.style.display = "none") {
+        nav.textContent = "文章目录 [展开]";
+      }
+      else {
+        nav.textContent = "文章目录 [折叠]";
+      }
+    } 
+    else {
+      nav.textContent = "文章目录";
+    }
+  }
+
+  var x = window.matchMedia("(max-width: 991px)"); // media query
+  collapsableTitle(x);
+  x.addListener(collapsableTitle);
+
+  // 控制目录的折叠
+  var tos = document.getElementsByClassName("sidebar-nav")[0];
+  var i;
+
+  tos.addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = document.getElementsByClassName("sidebar-panel-container")[0];
+    var nav = document.getElementsByClassName("sidebar-nav-toc")[0];
+    if (content.style.display === "block" && window.innerWidth < 991) {
+      content.style.display = "none";
+      nav.textContent = "文章目录 [展开]";
+    } else {
+      content.style.display = "block";
+      if (window.innerWidth < 991) {
+        nav.textContent = "文章目录 [折叠]";
+      }
+    }
+  });
+
+  // 因为启用pjax，需要监听complete事件，来实现默认折叠效果
+  document.addEventListener('pjax:complete', function() {
+    if (window.innerWidth < 991) {
+      let content = document.getElementsByClassName("sidebar-panel-container")[0];
+      content.style.display = "none";
+      let nav = document.getElementsByClassName("sidebar-nav-toc")[0];
+      nav.textContent = "文章目录 [展开]";
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,2368 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-64x64-dragon.jpg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-64x64-dragon.jpg">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-64x64-dragon.jpg">
+  <link rel="mask-icon" href="/images/favicon-64x64-dragon.jpg" color="#222">
+  <meta name="google-site-verification" content="-QMh-gRPduq5T_vg3_Pwi3kZsNSiyuEpPBaDIXV8J34">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"oscarcx.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.18.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":true,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+
+
+  <style type="text/css">
+
+div.hcb-content.hcb-block.hcbnote, details.hcb-content.box.hcbnote,div.hcb-content.hcb-block.hcbabstract, details.hcb-content.box.hcbabstract,div.hcb-content.hcb-block.hcbinfo, details.hcb-content.box.hcbinfo,div.hcb-content.hcb-block.hcbtip, details.hcb-content.box.hcbtip,div.hcb-content.hcb-block.hcbsuccess, details.hcb-content.box.hcbsuccess,div.hcb-content.hcb-block.hcbquestion, details.hcb-content.box.hcbquestion,div.hcb-content.hcb-block.hcbwarning, details.hcb-content.box.hcbwarning,div.hcb-content.hcb-block.hcbfailure, details.hcb-content.box.hcbfailure,div.hcb-content.hcb-block.hcbdanger, details.hcb-content.box.hcbdanger,div.hcb-content.hcb-block.hcbbug, details.hcb-content.box.hcbbug,div.hcb-content.hcb-block.hcbexample, details.hcb-content.box.hcbexample,div.hcb-content.hcb-block.hcbquote, details.hcb-content.box.hcbquote {
+  border: .05rem solid #448aff;
+  border-radius: .2rem;
+  font-size: 0.96rem;
+  margin: 1.5625em 0;
+  padding: 0 1.2rem;
+  transition: box-shadow 250ms;
+}
+div.hcb-content.hcb-block.hcbnote, details.hcb-content.box.hcbnote {
+  border-color: #448aff;
+}
+div.hcb-content.hcb-block.hcbabstract, details.hcb-content.box.hcbabstract {
+  border-color: #00b0ff;
+}
+div.hcb-content.hcb-block.hcbinfo, details.hcb-content.box.hcbinfo {
+  border-color: #00b8d4;
+}
+div.hcb-content.hcb-block.hcbtip, details.hcb-content.box.hcbtip {
+  border-color: #00bfa5;
+}
+div.hcb-content.hcb-block.hcbsuccess, details.hcb-content.box.hcbsuccess {
+  border-color: #00c853;
+}
+div.hcb-content.hcb-block.hcbquestion, details.hcb-content.box.hcbquestion {
+  border-color: #64dd17;
+}
+div.hcb-content.hcb-block.hcbwarning, details.hcb-content.box.hcbwarning {
+  border-color: #ff9100;
+}
+div.hcb-content.hcb-block.hcbfailure, details.hcb-content.box.hcbfailure {
+  border-color: #ff5252;
+}
+div.hcb-content.hcb-block.hcbdanger, details.hcb-content.box.hcbdanger {
+  border-color: #ff1744;
+}
+div.hcb-content.hcb-block.hcbbug, details.hcb-content.box.hcbbug {
+  border-color: #f50057;
+}
+div.hcb-content.hcb-block.hcbexample, details.hcb-content.box.hcbexample {
+  border-color: #7c4dff;
+}
+div.hcb-content.hcb-block.hcbquote, details.hcb-content.box.hcbquote {
+  border-color: #9e9e9e;
+}
+div.hcb-content.hcb-block.hcbnote:focus-within, details.hcb-content.box.hcbnote:focus-within {
+  box-shadow: 0 0 0 .2rem #448aff1a;
+}
+div.hcb-content.hcb-block.hcbabstract:focus-within, details.hcb-content.box.hcbabstract:focus-within {
+  box-shadow: 0 0 0 .2rem #00b0ff1a;
+}
+div.hcb-content.hcb-block.hcbinfo:focus-within, details.hcb-content.box.hcbinfo:focus-within {
+  box-shadow: 0 0 0 .2rem #00b8d41a;
+}
+div.hcb-content.hcb-block.hcbtip:focus-within, details.hcb-content.box.hcbtip:focus-within {
+  box-shadow: 0 0 0 .2rem #00bfa51a;
+}
+div.hcb-content.hcb-block.hcbsuccess:focus-within, details.hcb-content.box.hcbsuccess:focus-within {
+  box-shadow: 0 0 0 .2rem #00c8531a;
+}
+div.hcb-content.hcb-block.hcbquestion:focus-within, details.hcb-content.box.hcbquestion:focus-within {
+  box-shadow: 0 0 0 .2rem #64dd171a;
+}
+div.hcb-content.hcb-block.hcbwarning:focus-within, details.hcb-content.box.hcbwarning:focus-within {
+  box-shadow: 0 0 0 .2rem #ff91001a;
+}
+div.hcb-content.hcb-block.hcbfailure:focus-within, details.hcb-content.box.hcbfailure:focus-within {
+  box-shadow: 0 0 0 .2rem #ff52521a;
+}
+div.hcb-content.hcb-block.hcbdanger:focus-within, details.hcb-content.box.hcbdanger:focus-within {
+  box-shadow: 0 0 0 .2rem #ff17441a;
+}
+div.hcb-content.hcb-block.hcbbug:focus-within, details.hcb-content.box.hcbbug:focus-within {
+  box-shadow: 0 0 0 .2rem #f500571a;
+}
+div.hcb-content.hcb-block.hcbexample:focus-within, details.hcb-content.box.hcbexample:focus-within {
+  box-shadow: 0 0 0 .2rem #7c4dff1a;
+}
+div.hcb-content.hcb-block.hcbquote:focus-within, details.hcb-content.box.hcbquote:focus-within {
+  box-shadow: 0 0 0 .2rem #9e9e9e1a;
+}
+div.hcb-content.hcb-block.hcbnote *, details.hcb-content.box.hcbnote *,div.hcb-content.hcb-block.hcbabstract *, details.hcb-content.box.hcbabstract *,div.hcb-content.hcb-block.hcbinfo *, details.hcb-content.box.hcbinfo *,div.hcb-content.hcb-block.hcbtip *, details.hcb-content.box.hcbtip *,div.hcb-content.hcb-block.hcbsuccess *, details.hcb-content.box.hcbsuccess *,div.hcb-content.hcb-block.hcbquestion *, details.hcb-content.box.hcbquestion *,div.hcb-content.hcb-block.hcbwarning *, details.hcb-content.box.hcbwarning *,div.hcb-content.hcb-block.hcbfailure *, details.hcb-content.box.hcbfailure *,div.hcb-content.hcb-block.hcbdanger *, details.hcb-content.box.hcbdanger *,div.hcb-content.hcb-block.hcbbug *, details.hcb-content.box.hcbbug *,div.hcb-content.hcb-block.hcbexample *, details.hcb-content.box.hcbexample *,div.hcb-content.hcb-block.hcbquote *, details.hcb-content.box.hcbquote * {
+  box-sizing: border-box;
+}
+div.hcb-content.hcb-block.hcbnote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbnote > summary,div.hcb-content.hcb-block.hcbabstract > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbabstract > summary,div.hcb-content.hcb-block.hcbinfo > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbinfo > summary,div.hcb-content.hcb-block.hcbtip > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbtip > summary,div.hcb-content.hcb-block.hcbsuccess > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbsuccess > summary,div.hcb-content.hcb-block.hcbquestion > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquestion > summary,div.hcb-content.hcb-block.hcbwarning > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbwarning > summary,div.hcb-content.hcb-block.hcbfailure > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbfailure > summary,div.hcb-content.hcb-block.hcbdanger > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbdanger > summary,div.hcb-content.hcb-block.hcbbug > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbbug > summary,div.hcb-content.hcb-block.hcbexample > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbexample > summary,div.hcb-content.hcb-block.hcbquote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquote > summary {
+  border-top-right-radius: 0.1rem;
+  border-top-left-radius: 0.1rem;
+  border-left-width: 0.2rem;
+  display: block;
+  min-height: 1rem;
+  border: none;
+  font-weight: 700;
+  margin: 0 -1.2rem 1rem;
+  padding: 0.4rem 0.6rem;
+  position: relative;
+  outline: none;
+}
+details.hcb-content.box.hcbnote > summary,details.hcb-content.box.hcbabstract > summary,details.hcb-content.box.hcbinfo > summary,details.hcb-content.box.hcbtip > summary,details.hcb-content.box.hcbsuccess > summary,details.hcb-content.box.hcbquestion > summary,details.hcb-content.box.hcbwarning > summary,details.hcb-content.box.hcbfailure > summary,details.hcb-content.box.hcbdanger > summary,details.hcb-content.box.hcbbug > summary,details.hcb-content.box.hcbexample > summary,details.hcb-content.box.hcbquote > summary {
+  cursor: pointer;
+}
+details.hcb-content.box.hcbnote:not([open]) > summary,details.hcb-content.box.hcbabstract:not([open]) > summary,details.hcb-content.box.hcbinfo:not([open]) > summary,details.hcb-content.box.hcbtip:not([open]) > summary,details.hcb-content.box.hcbsuccess:not([open]) > summary,details.hcb-content.box.hcbquestion:not([open]) > summary,details.hcb-content.box.hcbwarning:not([open]) > summary,details.hcb-content.box.hcbfailure:not([open]) > summary,details.hcb-content.box.hcbdanger:not([open]) > summary,details.hcb-content.box.hcbbug:not([open]) > summary,details.hcb-content.box.hcbexample:not([open]) > summary,details.hcb-content.box.hcbquote:not([open]) > summary {
+  margin-bottom: 0;
+}
+div.hcb-content.hcb-block.hcbnote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbnote > summary {
+  background-color: #448aff1a;
+}
+div.hcb-content.hcb-block.hcbabstract > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbabstract > summary {
+  background-color: #00b0ff1a;
+}
+div.hcb-content.hcb-block.hcbinfo > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbinfo > summary {
+  background-color: #00b8d41a;
+}
+div.hcb-content.hcb-block.hcbtip > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbtip > summary {
+  background-color: #00bfa51a;
+}
+div.hcb-content.hcb-block.hcbsuccess > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbsuccess > summary {
+  background-color: #00c8531a;
+}
+div.hcb-content.hcb-block.hcbquestion > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquestion > summary {
+  background-color: #64dd171a;
+}
+div.hcb-content.hcb-block.hcbwarning > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbwarning > summary {
+  background-color: #ff91001a;
+}
+div.hcb-content.hcb-block.hcbfailure > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbfailure > summary {
+  background-color: #ff52521a;
+}
+div.hcb-content.hcb-block.hcbdanger > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbdanger > summary {
+  background-color: #ff17441a;
+}
+div.hcb-content.hcb-block.hcbbug > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbbug > summary {
+  background-color: #f500571a;
+}
+div.hcb-content.hcb-block.hcbexample > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbexample > summary {
+  background-color: #7c4dff1a;
+}
+div.hcb-content.hcb-block.hcbquote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquote > summary {
+  background-color: #9e9e9e1a;
+}
+div.hcb-content.hcb-block.hcbnote > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbnote > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #448aff;
+}
+div.hcb-content.hcb-block.hcbabstract > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbabstract > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00b0ff;
+}
+div.hcb-content.hcb-block.hcbinfo > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbinfo > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00b8d4;
+}
+div.hcb-content.hcb-block.hcbtip > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbtip > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00bfa5;
+}
+div.hcb-content.hcb-block.hcbsuccess > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbsuccess > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00c853;
+}
+div.hcb-content.hcb-block.hcbquestion > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbquestion > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #64dd17;
+}
+div.hcb-content.hcb-block.hcbwarning > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbwarning > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff9100;
+}
+div.hcb-content.hcb-block.hcbfailure > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbfailure > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff5252;
+}
+div.hcb-content.hcb-block.hcbdanger > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbdanger > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff1744;
+}
+div.hcb-content.hcb-block.hcbbug > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbbug > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #f50057;
+}
+div.hcb-content.hcb-block.hcbexample > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbexample > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #7c4dff;
+}
+div.hcb-content.hcb-block.hcbquote > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbquote > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #9e9e9e;
+}
+details.hcb-content.box.hcbnote > summary > div.hcb-box-open-button,details.hcb-content.box.hcbabstract > summary > div.hcb-box-open-button,details.hcb-content.box.hcbinfo > summary > div.hcb-box-open-button,details.hcb-content.box.hcbtip > summary > div.hcb-box-open-button,details.hcb-content.box.hcbsuccess > summary > div.hcb-box-open-button,details.hcb-content.box.hcbquestion > summary > div.hcb-box-open-button,details.hcb-content.box.hcbwarning > summary > div.hcb-box-open-button,details.hcb-content.box.hcbfailure > summary > div.hcb-box-open-button,details.hcb-content.box.hcbdanger > summary > div.hcb-box-open-button,details.hcb-content.box.hcbbug > summary > div.hcb-box-open-button,details.hcb-content.box.hcbexample > summary > div.hcb-box-open-button,details.hcb-content.box.hcbquote > summary > div.hcb-box-open-button {
+  float: right;
+}
+details.hcb-content.box.hcbnote > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbabstract > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbinfo > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbtip > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbsuccess > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbquestion > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbwarning > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbfailure > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbdanger > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbbug > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbexample > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbquote > summary > div.hcb-box-open-button > i {
+  margin: 0 0.6rem 0 0.6rem;
+  font-size: 0.7rem;
+  transition: transform 250ms
+}
+details.hcb-content.box.hcbnote:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbabstract:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbinfo:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbtip:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbsuccess:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquestion:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbwarning:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbfailure:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbdanger:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbbug:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbexample:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquote:not([open]) > summary > div.hcb-box-open-button i {
+  transform: rotate(270deg);
+}
+details.hcb-content.box.hcbnote[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbabstract[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbinfo[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbtip[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbsuccess[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquestion[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbwarning[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbfailure[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbdanger[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbbug[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbexample[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquote[open] > summary > div.hcb-box-open-button i {
+  transform: rotate(180deg);
+}
+details.hcb-content.box.hcbnote summary div.hcb-box-open-button i {
+  color: #448aff;
+}
+details.hcb-content.box.hcbabstract summary div.hcb-box-open-button i {
+  color: #00b0ff;
+}
+details.hcb-content.box.hcbinfo summary div.hcb-box-open-button i {
+  color: #00b8d4;
+}
+details.hcb-content.box.hcbtip summary div.hcb-box-open-button i {
+  color: #00bfa5;
+}
+details.hcb-content.box.hcbsuccess summary div.hcb-box-open-button i {
+  color: #00c853;
+}
+details.hcb-content.box.hcbquestion summary div.hcb-box-open-button i {
+  color: #64dd17;
+}
+details.hcb-content.box.hcbwarning summary div.hcb-box-open-button i {
+  color: #ff9100;
+}
+details.hcb-content.box.hcbfailure summary div.hcb-box-open-button i {
+  color: #ff5252;
+}
+details.hcb-content.box.hcbdanger summary div.hcb-box-open-button i {
+  color: #ff1744;
+}
+details.hcb-content.box.hcbbug summary div.hcb-box-open-button i {
+  color: #f50057;
+}
+details.hcb-content.box.hcbexample summary div.hcb-box-open-button i {
+  color: #7c4dff;
+}
+details.hcb-content.box.hcbquote summary div.hcb-box-open-button i {
+  color: #9e9e9e;
+}
+div.hcb-content.hcb-cards * {
+  box-sizing: border-box;
+}
+input.hcb-content.hcb-cards-input {
+  display: none;
+}
+div.hcb-content.hcb-cards-labels {
+  position: relative;
+  box-shadow: 0 -0.05rem #00000012 inset;
+  display: flex;
+  margin-bottom: 1.25rem;
+}
+div.hcb-content.hcb-cards-labels:before {
+  background: var(--cards-color);
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: translateX(var(--md-indicator-x));
+  transition: width 225ms, transform 250ms;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  width: var(--md-indicator-width);
+}
+label.hcb-content.hcb-cards-label {
+  border-bottom: 0.1rem solid #0000;
+  border-radius: 0.1rem 0.1rem 0 0;
+  cursor: pointer;
+  color: #0000008a;
+  font-size: 0.92em;
+  font-weight: 700;
+  padding: 0 1.25rem 0.625rem;
+  transition: color 250ms;
+}
+label.hcb-content.hcb-cards-label.active, label.hcb-content.hcb-cards-label:hover {
+  color: var(--cards-color);
+}
+div.hcb-content.hcb-cards-content {
+  display: none;
+}
+div.hcb-content.hcb-cards-content.active {
+  display: block;
+}
+</style>
+    <meta name="description" content="自学法考，在b站跟钟秀勇的民法课">
+<meta property="og:type" content="article">
+<meta property="og:title" content="民法笔记（Civil Law）">
+<meta property="og:url" content="https://oscarcx.com/law/civil-law.html">
+<meta property="og:site_name" content="Cow">
+<meta property="og:description" content="自学法考，在b站跟钟秀勇的民法课">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/stickers/dino_50.jpg">
+<meta property="article:published_time" content="2025-04-26T14:00:00.000Z">
+<meta property="article:modified_time" content="2025-05-18T16:05:39.204Z">
+<meta property="article:author" content="oscarcx123">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://oscarcx.com/hexo_resource/stickers/dino_50.jpg">
+
+
+<link rel="canonical" href="https://oscarcx.com/law/civil-law.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://oscarcx.com/law/civil-law.html","path":"law/civil-law.html","title":"民法笔记（Civil Law）"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>民法笔记（Civil Law） | Cow</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<style type="text/css">
+.spoiler {
+  display: inline;
+}
+p.spoiler {
+  display: flex;
+}
+.spoiler a {
+  pointer-events: none;
+}
+.spoiler-blur, .spoiler-blur > * {
+  transition: text-shadow .5s ease;
+}
+.spoiler .spoiler-blur, .spoiler .spoiler-blur > * {
+  color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  text-shadow: 0 0 10px grey;
+  cursor: pointer;
+}
+.spoiler .spoiler-blur:hover, .spoiler .spoiler-blur:hover > * {
+  text-shadow: 0 0 5px grey;
+}
+.spoiler-box, .spoiler-box > * {
+  transition: color .5s ease,
+  background-color .5s ease;
+}
+.spoiler .spoiler-box, .spoiler .spoiler-box > * {
+  color: black;
+  background-color: black;
+  text-shadow: none;
+}</style></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Cow</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E7%BC%96-%E6%B0%91%E6%B3%95%E6%80%BB%E5%88%99"><span class="nav-number">1.</span> <span class="nav-text"> 第一编 - 民法总则</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B0%91%E4%BA%8B%E6%B3%95%E5%BE%8B%E5%85%B3%E7%B3%BB"><span class="nav-number">1.1.</span> <span class="nav-text"> 民事法律关系</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B0%91%E4%BA%8B%E6%B3%95%E5%BE%8B%E4%BA%8B%E5%AE%9E"><span class="nav-number">1.1.1.</span> <span class="nav-text"> 民事法律事实</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A9%9A%E7%BA%A6%E5%92%8C%E5%BD%A9%E7%A4%BC"><span class="nav-number">1.1.2.</span> <span class="nav-text"> 婚约和彩礼</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B0%91%E4%BA%8B%E6%B3%95%E5%BE%8B%E5%85%B3%E7%B3%BB%E5%88%86%E7%B1%BB%E5%92%8C%E8%A6%81%E7%B4%A0"><span class="nav-number">1.1.3.</span> <span class="nav-text"> 民事法律关系分类和要素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%94%AF%E9%85%8D%E6%9D%83-%E8%AF%B7%E6%B1%82%E6%9D%83"><span class="nav-number">1.1.4.</span> <span class="nav-text"> 支配权、请求权</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8A%97%E8%BE%A9%E6%9D%83"><span class="nav-number">1.1.5.</span> <span class="nav-text"> 抗辩权</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BD%A2%E6%88%90%E6%9D%83"><span class="nav-number">1.1.6.</span> <span class="nav-text"> 形成权</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%80%BA%E5%88%B8%E5%B9%B3%E7%AD%89%E6%80%A7%E7%9A%84%E4%B8%A4%E4%B8%AA%E9%87%8D%E8%A6%81%E4%BE%8B%E5%A4%96"><span class="nav-number">1.1.7.</span> <span class="nav-text"> 债券平等性的两个重要例外</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A6%81%E6%AD%A2%E6%9D%83%E5%88%A9%E6%BB%A5%E7%94%A8%E8%A7%84%E5%88%99"><span class="nav-number">1.1.8.</span> <span class="nav-text"> 禁止权利滥用规则</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%87%AA%E7%84%B6%E4%BA%BA"><span class="nav-number">1.2.</span> <span class="nav-text"> 自然人</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9D%83%E5%88%A9%E5%A7%8B%E4%BA%8E%E5%87%BA%E7%94%9F"><span class="nav-number">1.2.1.</span> <span class="nav-text"> 权利始于出生</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9D%83%E5%88%A9%E7%BB%88%E4%BA%8E%E6%AD%BB%E4%BA%A1"><span class="nav-number">1.2.2.</span> <span class="nav-text"> 权利终于死亡</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B0%91%E4%BA%8B%E8%A1%8C%E4%B8%BA%E8%83%BD%E5%8A%9B"><span class="nav-number">1.2.3.</span> <span class="nav-text"> 民事行为能力</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%9B%91%E6%8A%A4%E8%81%8C%E8%B4%A3"><span class="nav-number">1.2.4.</span> <span class="nav-text"> 监护职责</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%9B%91%E6%8A%A4%E7%B1%BB%E5%9E%8B"><span class="nav-number">1.2.5.</span> <span class="nav-text"> 监护类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%9B%91%E6%8A%A4%E8%B5%84%E6%A0%BC%E7%9A%84%E6%92%A4%E9%94%80-%E6%81%A2%E5%A4%8D"><span class="nav-number">1.2.6.</span> <span class="nav-text"> 监护资格的撤销、恢复</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%A3%E5%91%8A%E5%A4%B1%E8%B8%AA"><span class="nav-number">1.2.7.</span> <span class="nav-text"> 宣告失踪</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%A3%E5%91%8A%E6%AD%BB%E4%BA%A1"><span class="nav-number">1.2.8.</span> <span class="nav-text"> 宣告死亡</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B3%95%E4%BA%BA"><span class="nav-number">1.3.</span> <span class="nav-text"> 法人</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B3%95%E4%BA%BA%E7%9A%84%E6%A6%82%E5%BF%B5%E4%B8%8E%E7%89%B9%E5%BE%81"><span class="nav-number">1.3.1.</span> <span class="nav-text"> 法人的概念与特征</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B3%95%E4%BA%BA%E4%BA%BA%E6%A0%BC%E5%90%A6%E8%AE%A4"><span class="nav-number">1.3.2.</span> <span class="nav-text"> 法人人格否认</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B3%95%E4%BA%BA%E4%BA%BA%E6%A0%BC%E7%BA%B5%E5%90%91%E5%90%A6%E8%AE%A4"><span class="nav-number">1.3.3.</span> <span class="nav-text"> 法人人格纵向否认</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B3%95%E4%BA%BA%E4%BA%BA%E6%A0%BC%E6%A8%AA%E5%90%91%E5%90%A6%E8%AE%A4"><span class="nav-number">1.3.4.</span> <span class="nav-text"> 法人人格横向否认</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B3%95%E4%BA%BA%E4%BA%BA%E6%A0%BC%E5%8F%8D%E5%90%91%E5%90%A6%E8%AE%A4"><span class="nav-number">1.3.5.</span> <span class="nav-text"> 法人人格反向否认</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B3%95%E5%AE%9A%E4%BB%A3%E8%A1%A8%E4%BA%BA"><span class="nav-number">1.3.6.</span> <span class="nav-text"> 法定代表人</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B3%95%E5%AE%9A%E4%BB%A3%E8%A1%A8%E4%BA%BA%E7%9A%84%E6%B3%95%E5%BE%8B%E4%BE%B5%E6%9D%83%E8%A1%8C%E4%B8%BA"><span class="nav-number">1.3.7.</span> <span class="nav-text"> 法定代表人的法律&#x2F;侵权行为</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%81%8C%E5%8A%A1%E4%BB%A3%E7%90%86%E4%BA%BA%E5%91%98%E7%9A%84%E6%B3%95%E5%BE%8B%E4%BE%B5%E6%9D%83%E8%A1%8C%E4%B8%BA"><span class="nav-number">1.3.8.</span> <span class="nav-text"> 职务代理人员的法律&#x2F;侵权行为</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%BA%E7%AB%A0%E4%B8%8D%E4%B8%80%E8%87%B4%E6%97%B6%E5%90%88%E5%90%8C%E7%9A%84%E5%BD%92%E5%B1%9E"><span class="nav-number">1.3.9.</span> <span class="nav-text"> 人章不一致时合同的归属</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%AC%E5%8F%B8%E5%AF%B9%E5%A4%96%E6%8B%85%E4%BF%9D"><span class="nav-number">1.3.10.</span> <span class="nav-text"> 公司对外担保</span></a></li></ol></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="oscarcx123"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">oscarcx123</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">32</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/oscarcx123" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;oscarcx123" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://oscarcx.com/law/civil-law.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="oscarcx123">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Cow">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="民法笔记（Civil Law） | Cow">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          民法笔记（Civil Law）
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2025-04-26 14:00:00" itemprop="dateCreated datePublished" datetime="2025-04-26T14:00:00+00:00">2025-04-26</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/law/" itemprop="url" rel="index"><span itemprop="name">法律</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>18k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>59 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>自学法考，在b站跟钟秀勇的民法课</p>
+<span id="more"></span>
+<p>新中国近代民法历史</p>
+<ul>
+<li>1986年发布《民法通则》</li>
+<li>2017年发布《民法总则》</li>
+<li>2020年发布《民法典》</li>
+</ul>
+<h1 id="第一编-民法总则"><a class="markdownIt-Anchor" href="#第一编-民法总则"></a> 第一编 - 民法总则</h1>
+<h2 id="民事法律关系"><a class="markdownIt-Anchor" href="#民事法律关系"></a> 民事法律关系</h2>
+<p>民法内容</p>
+<ul>
+<li>民法是规定各种「民法规范」的部门法</li>
+<li>民法规范包括「构成要件」和「法律效果」（如果...那么...）</li>
+<li>「民法法条」是民法规范的载体之一</li>
+<li>民法调整「人身关系」和「财产关系」【民2条】</li>
+</ul>
+<p>民法规范的适用过程概述</p>
+<ul>
+<li>规定了「构成要件(T)」和「法律效果(R)」的民法规范
+<ul>
+<li>T → R（具备要件(T)时，适用法律效果(R)）</li>
+<li>构成要件(T)一般由多个要件特征(M)构成</li>
+</ul>
+</li>
+<li>法律事实完全符合全部的要件特征
+<ul>
+<li>S = T（特定案件事实(S)该当于构成要件(T)）</li>
+</ul>
+</li>
+<li>得出适用结论
+<ul>
+<li>S → R（特定案件事实(S)发生法律效果(R)）</li>
+</ul>
+</li>
+</ul>
+<p>民法的法源</p>
+<ul>
+<li>直接法源（规范法源）【民10条】
+<ul>
+<li>制定法：法律、司法解释、各种条例等</li>
+<li>习惯法【民法典总则编若干问题的解释2条 (2022)】
+<ul>
+<li>制定法无规定（有补充性）</li>
+<li>长期遵守的民间习俗、惯常做法</li>
+<li>不得违背核心价值观、公序良俗</li>
+<li>例：青岛的「顶盆过继案」</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>间接法源（社会学法源）
+<ul>
+<li>无直接法源时，可以用作裁判依据</li>
+<li>学理（法律原理）、学界通说、判例</li>
+<li>国家政策、民众的法理念/法感情</li>
+</ul>
+</li>
+</ul>
+<h3 id="民事法律事实"><a class="markdownIt-Anchor" href="#民事法律事实"></a> 民事法律事实</h3>
+<p>民事法律事实</p>
+<ul>
+<li>状态（近亲属关系、未成年、善意、恶意等）</li>
+<li>事件（绝对事件、相对事件）</li>
+<li>表示行为
+<ul>
+<li>法律行为</li>
+<li>准法律行为
+<ul>
+<li>意思通知</li>
+<li>观念通知</li>
+<li>情感表示</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>非表示行为（事实行为）</li>
+</ul>
+<p><strong>好意施惠关系（情谊关系）</strong></p>
+<ul>
+<li>不属于民事法律事实！</li>
+<li>不成立合同关系！<strong>（不产生违约、缔约过失）</strong></li>
+<li>不排除侵权之债的成立！
+<ul>
+<li>例如故意违背善良风俗加损害于他人【民1165条】</li>
+<li>例：请吃饭恶意放鸽子、到站故意不叫醒</li>
+</ul>
+</li>
+<li>典型「无偿」约定或承诺：
+<ul>
+<li>搭便车</li>
+<li>叫醒乘客到站下车</li>
+<li>顺路代办事（寄信、买零食等）</li>
+<li>各类约定（请人吃饭、参加旅游等）</li>
+<li>为人指路</li>
+<li>为倒车的人打手势</li>
+</ul>
+</li>
+<li>搭便车因过失发生交通事故，车主有侵权赔偿责任【民1217条】
+<ul>
+<li>非故意/重大过失，可以减轻责任</li>
+</ul>
+</li>
+</ul>
+<p>法外空间（不属于法律事实）</p>
+<ul>
+<li>不具有法律意义的行为
+<ul>
+<li>未构成不可抗力的自然现象
+<ul>
+<li>日出、日落、刮风、下雨等</li>
+</ul>
+</li>
+<li>散步、读报、起床、睡觉、做梦</li>
+</ul>
+</li>
+<li>引发宗教、同乡、师生、同学、同事、恋爱关系的客观情况</li>
+<li>原则上「爱情」不属于民事法律事实
+<ul>
+<li>但是若感情确已破裂【民1079条】</li>
+<li>缺乏爱情的客观情况具有法律意义</li>
+<li>双方享有离婚请求权</li>
+</ul>
+</li>
+</ul>
+<h3 id="婚约和彩礼"><a class="markdownIt-Anchor" href="#婚约和彩礼"></a> 婚约和彩礼</h3>
+<p>婚约：在中国大陆，婚约（订婚）不属于民事法律事实（但是在德国，属于民事法律事实）</p>
+<p>彩礼：属于民事法律事实，是附法定解除条件的赠与合同</p>
+<ul>
+<li>依据习俗，以婚姻为目的【彩礼纠纷规定1条 (2024)】</li>
+<li>特定情形给付的财务不属于彩礼【彩礼纠纷规定3条】
+<ul>
+<li>纪念日送的<strong>价值不大</strong>的礼物、礼金（520、1314等）</li>
+<li>表达/增进感情的<strong>日常消费性支出</strong></li>
+<li>其他价值不大的财物</li>
+</ul>
+</li>
+<li>原则上，已经支付的彩礼，不得请求返还</li>
+</ul>
+<p>彩礼返还规则</p>
+<ul>
+<li>属于下面情形，应当支持返还【民法典婚姻家庭编解释（一）5条】
+<ul>
+<li>双方<strong>未登记结婚</strong></li>
+<li>登记了但<strong>未共同生活</strong>（需离婚）</li>
+<li>婚前给付导致<strong>给付人生活困难</strong>（需离婚）</li>
+</ul>
+</li>
+<li>未登记但共同生活【彩礼纠纷规定6条】
+<ul>
+<li>根据彩礼实际使用情况、嫁妆情况</li>
+<li>综合考虑孕育情况、双方过错等</li>
+</ul>
+</li>
+<li>已登记且共同生活【彩礼纠纷规定5条】
+<ul>
+<li>彩礼原则不退还</li>
+<li>除非共同生活时间较短，且彩礼数额过高</li>
+</ul>
+</li>
+<li>以彩礼为名<strong>借婚姻勒索财物</strong>，应该支持返还【彩礼纠纷规定2条】
+<ul>
+<li>属于遭受揭破订立的赠与合同</li>
+<li>也违背善良风俗</li>
+<li>请求撤销赠与合同，并且<strong>不以离婚为条件</strong></li>
+</ul>
+</li>
+</ul>
+<p>彩礼请求返还的起诉</p>
+<ul>
+<li>实际给付/接收彩礼的父母可为共同原告/被告【彩礼纠纷规定4条1款】</li>
+<li>离婚纠纷中，即使提出返还彩礼请求，当事人仍为夫妻双方【彩礼纠纷规定4条2款】</li>
+</ul>
+<h3 id="民事法律关系分类和要素"><a class="markdownIt-Anchor" href="#民事法律关系分类和要素"></a> 民事法律关系分类和要素</h3>
+<p>民事法律关系分类</p>
+<ul>
+<li>人身法律关系
+<ul>
+<li>人格权、身份权（绝对关系）</li>
+</ul>
+</li>
+<li>财产法律关系
+<ul>
+<li>知识产权、物权（绝对关系）</li>
+<li>物权请求权、占有保护请求权（相对关系）</li>
+<li>债权（合同、侵权、不当得利等）（相对关系）<br />
+绝对民事法律关系：X以外的一切不特定第三人，都有不作为义务</li>
+</ul>
+</li>
+</ul>
+<p>民事法律关系的要素</p>
+<ul>
+<li>主体（享有民事权利、承担民事义务的人）
+<ul>
+<li>自然人、法人、非法人组织、国家</li>
+<li>国家发行国债时，即为主体</li>
+</ul>
+</li>
+<li>内容（权利、义务、风险、权能等）</li>
+<li>客体（又叫标的，是权利、义务指向的对象）
+<ul>
+<li>物权（物、权利）</li>
+<li>人格权（人格利益：身体、肖像、姓名等）</li>
+<li>身份权（身份利益：同居、忠实、扶养等）</li>
+<li>知识产权（无形财产：技术方案、作品等）</li>
+<li>债权（给付：债务人的作为或不作为）</li>
+</ul>
+</li>
+</ul>
+<p>民事法律关系必有客体（标的），但不一定有标的物！</p>
+<ul>
+<li>例如甲学校和乙教师签订独家授课合同</li>
+<li>甲向乙的给付
+<ul>
+<li>客体：支付报酬的行为</li>
+<li>标的物：金钱</li>
+</ul>
+</li>
+<li>乙向甲的给付
+<ul>
+<li>客体：作为（授课）、不作为（不得在其他机构授课）</li>
+<li>标的物：无</li>
+</ul>
+</li>
+</ul>
+<p>所有债权法律关系的客体均为给付</p>
+<ul>
+<li>例如甲乙约定，甲向乙出售A车，价格30万</li>
+<li>买卖合同的客体是双方的给付
+<ul>
+<li>甲交付车并移转所有权的<strong>行为</strong></li>
+<li>乙支付价款并移转金钱所有权的<strong>行为</strong></li>
+</ul>
+</li>
+<li>汽车不是标的，而是标的物！</li>
+</ul>
+<h3 id="支配权-请求权"><a class="markdownIt-Anchor" href="#支配权-请求权"></a> 支配权、请求权</h3>
+<p>支配权：权利人直接支配权利客体，享有特定利益，排斥他人干涉的权利</p>
+<ul>
+<li>范围：物权、人格权、身份权、知识产权、网络虚拟财产权等
+<ul>
+<li>德国认为人格权不是支配权</li>
+<li>中国大陆认为人格权的客体不是人，是特定的人格利益，因此是支配权</li>
+</ul>
+</li>
+<li>主体：权利主体特定，义务主体不特定（X以外的一切不特定第三人）
+<ul>
+<li>义务人均有不侵犯支配权的不作为义务</li>
+</ul>
+</li>
+<li>内容：
+<ul>
+<li><strong>支配性</strong>：直接支配</li>
+<li><strong>排他性</strong>：同一客体<strong>不能同时并存</strong>两个「<strong>相同内容</strong>」的支配权
+<ul>
+<li>共有：只成立一个所有权，两个人分享</li>
+<li>同一财产向两个以上债权人抵押【民414条】
+<ul>
+<li>两个抵押权内容不同，有先后顺位</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>优先性</strong>：同一客体互相矛盾的支配权，存在实现的先后顺位
+<ul>
+<li>同一财产既设立抵押权又设立质权【民415条】
+<ul>
+<li>公示的优先于非公示，按公示时间排顺位</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>直接性</strong>：无需义务人积极行为，只需不作为即可</li>
+<li><strong>公示性</strong>：原则上，未经公示，不能发生支配权变动</li>
+</ul>
+</li>
+<li>客体：特定的利益（人格、身份、财产利益）</li>
+<li><strong>支配权不适用诉讼时效</strong>（支配权存在的本身即存在的目的）</li>
+<li>人格权、身份权、所有权<strong>无存续期间限制</strong>
+<ul>
+<li>建筑物区分所有权是例外（50/70年产权）</li>
+</ul>
+</li>
+<li>用益物权、知识产权有存续期间限制</li>
+<li>地役权、担保物权有<strong>消灭上的从属性</strong>【民381条】</li>
+</ul>
+<p>请求权：特定人请求特定人为特定行为（作为或者不作为）的权利</p>
+<ul>
+<li>范围
+<ul>
+<li>支配权请求权</li>
+<li>占有保护请求权</li>
+<li>债权请求权</li>
+<li>继承权回复请求权</li>
+</ul>
+</li>
+<li>主体：权利主体特定，义务主体特定
+<ul>
+<li>原则上具有<strong>相对性</strong>，仅能针对特定的义务人行使</li>
+<li>合同的相对性为其典型</li>
+</ul>
+</li>
+<li>特征：
+<ul>
+<li><strong>请求性</strong>：表现为请求，而非对特定利益的直接支配</li>
+<li><strong>非排他性</strong>：同一标的物上可成立两项以上「<strong>相同内容</strong>」的请求权</li>
+<li><strong>平等性</strong>：相同内容的请求权，彼此平等，互不享有优先效力
+<ul>
+<li>债券平等性有两个重要例外</li>
+<li><strong>普通/特殊动产多重买卖</strong>【买卖合同解释6-7条】</li>
+<li><strong>一房数租</strong>【城镇房屋租赁合同解释5条】</li>
+</ul>
+</li>
+<li><strong>合作性</strong>：请求后需义务人配合，请求权才能实现</li>
+<li><strong>非公示性</strong>：原则上，请求权的变动无须公示</li>
+<li>请求权<strong>基于一定的基础权利</strong>而产生：
+<ul>
+<li>债权请求权（债权）</li>
+<li>物权请求权（物权）</li>
+<li>人格权请求权（人格权）</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>客体：义务人的特定行为（作为或不作为）</li>
+<li><strong>「支配权请求权」不适用诉讼时效 / 除斥期间</strong>
+<ul>
+<li>例外：基于<strong>未登记的动产物权</strong>发生的返还原物请求权适用诉讼时效【民196条】</li>
+</ul>
+</li>
+<li>「占有返还请求权」适用1年的除斥期间【民462条】</li>
+<li>「债权请求权」原则上均适用诉讼时效期间，但有若干例外
+<ul>
+<li>请求支付抚养费【民196条】</li>
+</ul>
+</li>
+</ul>
+<p><strong>「请求权」包含「债权请求权」，「债权」是「债权请求权」的基础权利，这三个概念不一样！</strong></p>
+<p>支配权请求权：使支配权恢复到不受侵害的圆满状态或较不受侵害的状态，支配权人请求特定人为特定行为（作为或不作为）的请求权</p>
+<ul>
+<li>范围：
+<ul>
+<li>物权请求权：请求返还原物【民235条】</li>
+<li>人格权请求权：请求停止侵害、消除影响、恢复名誉等【民995条】</li>
+<li>身份权请求权：如配偶间的同居请求权、忠实请求权【民1001条】</li>
+<li>知识产权请求权：请求停止侵害、销毁侵权物品、删除盗版软件复制件等【著52条】</li>
+</ul>
+</li>
+<li>特征：
+<ul>
+<li><strong>不以过错为要件</strong>：其成立不要求加害人具有过错。</li>
+<li><strong>不要求遭受损害</strong>（Damage）：只要求支配权遭受侵害（Infringement）或有遭受侵害的现实危险</li>
+<li><strong>原则上不适用诉讼时效</strong>（例外：未登记的动产【民196条】）</li>
+</ul>
+</li>
+</ul>
+<p>侵权损害赔偿请求权：支配权遭受侵害后产生，属于债权请求权</p>
+<ul>
+<li>功能：填补财产损失、抚慰精神损失</li>
+<li>特征：
+<ul>
+<li><strong>以过错为要件</strong></li>
+<li><strong>需要受到损害</strong>（无损害则无赔偿）</li>
+<li><strong>适用诉讼时效</strong>（法律另有规定的除外）</li>
+</ul>
+</li>
+</ul>
+<h3 id="抗辩权"><a class="markdownIt-Anchor" href="#抗辩权"></a> 抗辩权</h3>
+<p>抗辩权分为「一时抗辩权」（种类有很多）和「永久抗辩权」【民188条】</p>
+<ul>
+<li>抗辩权不导致请求权消灭！（即承认对方的请求权）</li>
+<li>抗辩权用于阻碍全部或部分请求权的行使</li>
+</ul>
+<p>狭义的抗辩（否认权）：抗辩人不承认对方享有其主张的请求权</p>
+<ul>
+<li>全部/部分不成立的抗辩：合同不成立或无效、自己未侵权</li>
+<li>全部/部分已消灭的抗辩：债权已因清偿等原因全部或部分消灭</li>
+</ul>
+<p><strong>法院可以主动适用「狭义的抗辩」，但是「抗辩权」必须由抗辩权人主张！</strong></p>
+<p>例：债权人甲起诉请求债务人乙偿还100万元。诉讼中乙未主张任何抗辩</p>
+<ul>
+<li>经查明：
+<ul>
+<li>乙已清偿20万元</li>
+<li>剩余80万元债权诉讼时效期间经过</li>
+</ul>
+</li>
+<li>狭义的抗辩：针对已清偿的20万元债权，即使乙未主动主张，法院可依职权予以认定</li>
+<li>抗辩权：乙享有「时效经过抗辩权」，但是乙没有主张，因此法院应当佯装不知，对剩下的80万还款请求判甲胜诉</li>
+</ul>
+<h3 id="形成权"><a class="markdownIt-Anchor" href="#形成权"></a> 形成权</h3>
+<p>形成权：依照权利人<strong>单方</strong>的意思表示，即可导致某一既存的法律关系（权利）发生、变更或消灭</p>
+<ul>
+<li>范围
+<ul>
+<li>财产法上的形成权</li>
+<li>身份法上的形成权</li>
+</ul>
+</li>
+<li>特征
+<ul>
+<li>客体是民事法律关系（行使后导致关系变动）</li>
+<li>形成权无对应的义务（相对人只能容忍）</li>
+<li>形成权须依附于基础法律关系（从属性）</li>
+</ul>
+</li>
+<li>行使方式
+<ul>
+<li>可采用明示（书面通知或口头通知）、暗示（推定）、单纯沉默行使</li>
+<li><strong>单纯形成权</strong>
+<ul>
+<li>无需通过诉讼，多数形成权都是这个</li>
+<li><strong>通知到达对方时产生形成力</strong></li>
+<li>胜诉判决是「确认判决」</li>
+</ul>
+</li>
+<li><strong>形成诉权</strong>
+<ul>
+<li>只能通过诉讼或申请仲裁行使</li>
+<li><strong>胜诉判决生效才产生形成力</strong></li>
+<li>胜诉判决是「形成判决」</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>形成权适用除斥期间！</strong>（不行使会消灭）</li>
+<li>行使形成权的行为，<strong>不得附条件或期限</strong></li>
+<li>「离婚请求权」「遗产分割请求权」实际上都是形成权！</li>
+<li>这两种权利不属于形成权
+<ul>
+<li>「债权人撤销权」是综合性权利（请求 + 形成），不属于形成权</li>
+<li>效力待定合同中相对人的「催告权」（不会发生直接引起权力变动的效果）</li>
+</ul>
+</li>
+</ul>
+<h3 id="债券平等性的两个重要例外"><a class="markdownIt-Anchor" href="#债券平等性的两个重要例外"></a> 债券平等性的两个重要例外</h3>
+<p>特殊动产多重买卖【买卖合同解释7条】</p>
+<ul>
+<li>特殊动产：机动车、船舶、航空器</li>
+<li>多重买卖三要素：
+<ul>
+<li><strong>同一个出卖人</strong></li>
+<li>就<strong>同一个动产</strong>与多个买受人分别订立买卖合同</li>
+<li>所有买卖合同均属<strong>有权处分</strong></li>
+</ul>
+</li>
+<li>实际履行的请求顺位不平等
+<ul>
+<li><strong>交付、登记、合同先成立</strong></li>
+<li>实际交付最优先！！即使过户了亦可请求涂销</li>
+</ul>
+</li>
+<li>顺位低的人无实际履行请求权，只能主张其它救济方式
+<ul>
+<li>解除合同，请求损害赔偿</li>
+</ul>
+</li>
+<li>注意：<strong>挖掘机有履带，属于普通动产！！</strong></li>
+</ul>
+<p>普通动产多重买卖【买卖合同解释6条】</p>
+<ul>
+<li>普通动产：除机动车、船舶、航空器外的其他动产</li>
+<li>多重买卖三要素：
+<ul>
+<li><strong>同一个出卖人</strong></li>
+<li>就<strong>同一个动产</strong>与多个买受人分别订立买卖合同</li>
+<li>所有买卖合同均属<strong>有权处分</strong></li>
+</ul>
+</li>
+<li>实际履行的请求顺位不平等
+<ul>
+<li><strong>交付、先付款、合同先成立</strong></li>
+<li>不管支付价款的数额，只要先支付即可！</li>
+</ul>
+</li>
+<li>顺位低的人无实际履行请求权，只能主张其它救济方式
+<ul>
+<li>解除合同，请求损害赔偿</li>
+</ul>
+</li>
+</ul>
+<p><strong>一房数租</strong>【城镇房屋租赁合同解释5条】</p>
+<ul>
+<li>出租人就<strong>同一房屋</strong>订立<strong>数份租赁合同</strong></li>
+<li>实际履行的请求顺位不平等
+<ul>
+<li><strong>合法占有、办理登记备案、合同先成立</strong></li>
+<li>不管支付价款的数额，只要先支付即可！</li>
+</ul>
+</li>
+<li>顺位低的人无实际履行请求权，只能主张其它救济方式
+<ul>
+<li>解除合同，请求损害赔偿</li>
+</ul>
+</li>
+</ul>
+<h3 id="禁止权利滥用规则"><a class="markdownIt-Anchor" href="#禁止权利滥用规则"></a> 禁止权利滥用规则</h3>
+<p>滥用民事权利：</p>
+<ul>
+<li><strong>构成滥用的，该行为不发生相应法律效力</strong>【民法典总则编若干问题的解释3条】</li>
+<li>包括下面三类行为：
+<ul>
+<li>以损害他人为主要目的（损人不利己）
+<ul>
+<li>乙倾其所有，故意把自家2米围墙加高到10米，遮挡甲的眺望</li>
+</ul>
+</li>
+<li>以损害国家利益、社会公共利益为主要目的
+<ul>
+<li>铁路局擅自占用土地后，甲要求铁路局拆除高铁，返还原物（土地）</li>
+<li>不得主张返还原物，但可以主张损害赔偿</li>
+</ul>
+</li>
+<li>以其他违反诚实信用原则的方式
+<ul>
+<li>细微损害、比例原则（债权人部分履行、延迟履行）</li>
+<li>妨害义务人履行义务（故意人间蒸发导致对方无法交租）</li>
+<li>矛盾行为（权利人出尔反尔，仍然行使权利）</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>滥用代表权或代理权</p>
+<ul>
+<li>法定代表人、负责人或代理人与相对人<strong>恶意串通</strong>，以法人/非法人组织名义<strong>订立合同损害其权益</strong>的【民法典合同编通则解释23条】：
+<ul>
+<li>法人/非法人组织可选择是否追认
+<ul>
+<li>追认即承认合同效力</li>
+</ul>
+</li>
+<li>法人/非法人组织可主张不承担民事责任</li>
+<li>并且有权要求代理人与相对人对因此造成的损失承担连带赔偿责任
+<ul>
+<li>无论是否追认！！</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="自然人"><a class="markdownIt-Anchor" href="#自然人"></a> 自然人</h2>
+<h3 id="权利始于出生"><a class="markdownIt-Anchor" href="#权利始于出生"></a> 权利始于出生</h3>
+<p>自然人民事权利能力：自然人依法享有民事权利和承担民事义务的资格</p>
+<ul>
+<li>自然人的民事权利能力一律平等【民14条】</li>
+<li>民事权利能力不得抛弃</li>
+</ul>
+<p>自然人民事权利能力始于「出生」【民13条】</p>
+<ul>
+<li>出：脱离母体</li>
+<li>生：保有生命（不论存活时间长短）</li>
+<li>出生时间以<strong>出生证明</strong>为准【民15条】
+<ul>
+<li>没出生证就看<strong>户籍登记</strong>或其它有效身份登记（<strong>暂住证、回乡证</strong>）</li>
+<li>有其他证据（如<strong>接生婆证言</strong>）足以推翻上述登记时间时，以此为准</li>
+</ul>
+</li>
+</ul>
+<p>胎儿的民事权利能力【民16条】</p>
+<ul>
+<li>自受胎时即享有民事权利能力（总括保护主义），附法定解除条件
+<ul>
+<li>活着出生：自受胎之时享有民事权利（条件不成就）</li>
+<li>娩出时为死体：溯及自受胎之时不享有民事权利（条件成就）</li>
+</ul>
+</li>
+<li>权利的<strong>单向性</strong>
+<ul>
+<li>享有民事权利资格（为保护胎儿利益）
+<ul>
+<li>人格权：健康权、身体权、姓名权</li>
+<li>财产权：继承权、受赠与的合同债权</li>
+<li>救济权：侵权损害赔偿请求权</li>
+</ul>
+</li>
+<li>无负担义务的资格（如合同义务）</li>
+</ul>
+</li>
+<li>还没出生的胎儿，民事权利由其父母作为法定代理人代为行使【民法典总则编若干问题的解释4条】
+<ul>
+<li>行使权利并实际获利后，若娩出时为死体，其父母承担返还不当得利的责任</li>
+</ul>
+</li>
+<li>胎儿受领遗产，接受赠与，均由监护人代理
+<ul>
+<li>如需办理登记，以其监护人为权利人完成</li>
+<li>登记附注实际权利人为胎儿</li>
+</ul>
+</li>
+</ul>
+<p>涉及胎儿的遗产处理规则【民法典继承编解释（一）31条】</p>
+<ul>
+<li>应当为胎儿保留的遗产份额没有保留的，应从继承人所继承的遗产中<strong>扣回</strong></li>
+<li>为胎儿保留的遗产份额
+<ul>
+<li>如胎儿<strong>出生后死亡</strong>的，由其继承人继承</li>
+<li>如胎儿<strong>娩出时是死体</strong>的，由被继承人的继承人继承</li>
+</ul>
+</li>
+</ul>
+<p>涉及胎儿的遗产处理例子</p>
+<ul>
+<li>甲死亡时，其妻子怀孕（胎儿为乙）</li>
+<li>乙作为胎儿即享有继承权，法律地位等同于甲的第一顺序法定继承人</li>
+<li>为乙保留应继份，乙<strong>出生后死亡</strong>
+<ul>
+<li>保留份额由乙的继承人继承</li>
+</ul>
+</li>
+<li>为乙保留应继份，但乙<strong>娩出时是死体</strong>
+<ul>
+<li>保留份额由甲的继承人继承</li>
+</ul>
+</li>
+<li>未保留应继份，但乙活着出生
+<ul>
+<li>应从其他继承人处按比例扣回乙的应继份</li>
+</ul>
+</li>
+</ul>
+<h3 id="权利终于死亡"><a class="markdownIt-Anchor" href="#权利终于死亡"></a> 权利终于死亡</h3>
+<p>自然人民事权利能力终于「死亡」【民13条】</p>
+<ul>
+<li>生理死亡（自然死亡）
+<ul>
+<li>心脏停止跳动</li>
+<li>自主呼吸消失</li>
+<li>血压为零</li>
+</ul>
+</li>
+<li>宣告死亡</li>
+<li>死亡时间的判断【民15条】
+<ul>
+<li>没有<strong>死亡证明</strong>就看<strong>户籍登记</strong>或其它有效身份登记</li>
+<li>有其他证据（如<strong>医生、救援人员的证言</strong>）足以推翻上述登记时间时，以此为准</li>
+</ul>
+</li>
+</ul>
+<p><strong>生理死亡顺序的推定规则</strong></p>
+<p><strong>相互有继承关系</strong>的数人在同一事件中死亡，且<strong>难以确定死亡时间</strong>【民1121条】</p>
+<ul>
+<li>没有其他（事故外）继承人：推定先死亡</li>
+<li>均有其他继承人时：
+<ul>
+<li>辈分不同：推定<strong>长辈</strong>先死亡</li>
+<li>辈分相同：推定<strong>同时</strong>死亡（相互不发生继承）</li>
+</ul>
+</li>
+<li>例：丈夫甲、妻子乙，带领3岁独生子丙旅游途中发生车祸，无法确定死亡先后顺序
+<ul>
+<li>甲唯一在世亲人为哥哥A；乙唯一在世亲人为姐姐B</li>
+<li>由于丙除了父母外没有其他继承人，推定丙先死亡</li>
+<li>父母甲乙作为丙的第一法定继承人，继承丙的遗产</li>
+<li>甲乙都有其它继承人，并且是同辈关系，推定甲乙同时死亡，互相不继承</li>
+<li>甲的全部遗产由第二顺序继承人A继承</li>
+<li>乙的全部遗产由第二顺序继承人B继承</li>
+<li>总结：哥哥A和姐姐B一人一半</li>
+</ul>
+</li>
+<li>例：丈夫甲、妻子乙，带领3岁独生子丙旅游途中发生车祸。救援人员赶到时，发现甲、丙均以死亡（无法确定顺序），<strong>乙奄奄一息</strong>。乙在送往医院途中死亡。
+<ul>
+<li>甲唯一在世亲人为哥哥A；乙唯一在世亲人为姐姐B</li>
+<li>现有证据<strong>可证明甲、丙先于乙死亡</strong>，因此仅需推定甲、丙的死亡顺序</li>
+<li>丙有其他继承人（妈妈乙），甲有其他继承人（妻子乙、哥哥A）</li>
+<li>由于均有其他继承人，通过辈分推定长辈甲先死亡，丙后死亡</li>
+<li>甲先死亡，全部遗产由第一顺序继承人乙、丙继承</li>
+<li>然后丙死亡，全部遗产由第一顺序继承人乙继承</li>
+<li>乙的全部遗产由第二顺序继承人B继承</li>
+<li>总结：他们家全部财产都由姐姐B继承</li>
+</ul>
+</li>
+</ul>
+<p>被保险人身故后保险金归属遗产的三种情形【保42条1款】</p>
+<ul>
+<li>未指定受益人，或受益人指定不明</li>
+<li><strong>受益人先于被保险人死亡</strong>，且无其他受益人</li>
+<li>受益人丧失/放弃受益权，且无其他受益人</li>
+<li>保险关系中的死亡顺序推定【保42条2款】：受益人与被保险人在同一事件中死亡，不能确定死亡顺序的，<strong>推定受益人死亡在先</strong></li>
+</ul>
+<p>死亡顺序相关的法律适用规则</p>
+<ul>
+<li>【保42条】属于特别法，仅适用于保险合同中推定被保险人与受益人死亡顺序</li>
+<li>【民1121条】属于一般法，适用于其他所有情形</li>
+<li>例：丈夫甲、妻子乙，带领3岁独生子丙旅游途中发生车祸，无法确定死亡先后顺序
+<ul>
+<li>甲唯一在世亲人为哥哥A；乙唯一在世亲人为姐姐B</li>
+<li>甲生前以自己为被保险人，投保人身保险，受益人为乙，保险金100万</li>
+<li>甲有婚前房屋一套；乙有婚前汽车一辆</li>
+<li>就保险金而言，<strong>根据【保42条】，推定乙先于甲死亡</strong>，保险金属于甲的遗产</li>
+<li>就甲乙的财产，<strong>根据【民1121条】，推定甲乙同时死亡</strong>，互不继承（已经推定丙先死亡）</li>
+<li>婚前房屋、保险金由A继承；婚前汽车由B继承</li>
+</ul>
+</li>
+</ul>
+<p>宣告死亡时死亡时间的认定</p>
+<ul>
+<li>被宣告死亡的人，人民法院<strong>宣告死亡的判决作出之日</strong>视为其死亡的日期</li>
+<li>因<strong>意外事件</strong>下落不明宣告死亡的，<strong>意外事件发生之日</strong>视为其死亡的日期
+<ul>
+<li>主要和人寿保险金的归属有关</li>
+</ul>
+</li>
+</ul>
+<h3 id="民事行为能力"><a class="markdownIt-Anchor" href="#民事行为能力"></a> 民事行为能力</h3>
+<p>完全民事行为能力人</p>
+<ul>
+<li>18+的成年人【民18条1款】</li>
+<li>16-18岁的未成年人【民18条2款】
+<ul>
+<li>以<strong>自己的劳动收入为主要生活来源</strong>，<strong>视为</strong>完全民事行为能力人</li>
+<li>仅仅依靠继承、赠与的财产作为主要生活来源的，不能视为完全民事行为能力人</li>
+</ul>
+</li>
+<li>法律意义：完全民事行为能力人可以独立实施民事法律行为，不会因为行为能力方面的欠缺而具有效力瑕疵</li>
+</ul>
+<p>限制民事行为能力人<br />
+<strong>8岁以上</strong>的未成年人【民19条】<br />
+<strong>(持续性)不能完全辨认自己行为</strong>的成年人【民22条】<br />
+精神疾病、遭受人身伤害、年老体衰等</p>
+<ul>
+<li>法律意义：原则上，限制民事行为能力人实施法律行为，由其<strong>法定代理人代理</strong>或者经其<strong>法定代理人事先同意</strong>【民145条】
+<ul>
+<li>不能是一揽子的同意</li>
+<li>必须是针对特定法律行为，事先特定的同意</li>
+</ul>
+</li>
+</ul>
+<p>若没有代理或事先同意，限制民事行为能力人独立行为的效力状况：</p>
+<ul>
+<li><strong>纯获法律利益</strong>（如接受赠与）的法律行为，有效
+<ul>
+<li>是「法律利益」，不是「经济利益」</li>
+<li>不使限制民事行为能力人负担民事义务、承担民事责任</li>
+<li>例：甲(20岁)将市价9000的手机以2000卖给乙(14岁)，乙将负担支付2000的义务，因此已经<strong>成立</strong>的买卖合同<strong>效力待定</strong></li>
+</ul>
+</li>
+<li><strong>中性</strong>（如被授予委托代理权）法律行为，有效
+<ul>
+<li>中性行为：不享有权利，也不负担义务</li>
+<li>授权行为本身，不使代理人负担实施代理行为的义务</li>
+<li>代理权本身只是一种地位、资格</li>
+</ul>
+</li>
+<li>与其年龄、智力、精神健康状况<strong>相适应</strong>的法律行为，有效
+<ul>
+<li>例：花数额不大的钱买学习用品、买饭</li>
+</ul>
+</li>
+<li>依法不能独立订立的<strong>合同</strong>，<strong>效力待定</strong></li>
+<li>不能独立实施的<strong>单方法律行为</strong>（订立遗嘱、捐助、解除合同、免除债务）<strong>无效</strong></li>
+<li>不能独立实施的<strong>多方法律行为</strong>（订立合伙协议、订立设立公司的协议）<strong>无效</strong></li>
+<li>注意：<strong>合同要先成立，才能讨论效力！</strong></li>
+</ul>
+<p>无民事行为能力人</p>
+<ul>
+<li>不满八周岁的未成年人【民20条】</li>
+<li>(持续性)不能辨认自己行为的成年人【民21条1款】
+<ul>
+<li>精神疾病、遭受人身伤害等</li>
+</ul>
+</li>
+<li>8岁以上的未成年人，(持续性)不能辨认自己行为的【民21条2款】
+<ul>
+<li>精神疾病、遭受人身伤害、天生残疾等</li>
+</ul>
+</li>
+<li>无民事行为能力人实施的民事法律行为无效【民144条】</li>
+<li>法律意义：
+<ul>
+<li>无民事行为能力人，由其<strong>法定代理人代理</strong>实施民事法律行为。</li>
+<li>未经法定代理人代理，<strong>全部无效</strong>（<strong>包括纯获法律利益</strong>的法律行为）。
+<ul>
+<li>赠与须通过其法定代理人代理，赠与合同才能有效</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>注意：按照目前法律，6岁小孩未经代理买冰棍属于无效。但是按照通说观点，小额即时结清的应当算有效。这里只能等待司法解释去完善。</li>
+</ul>
+<p>成年人醉酒与民事行为能力、合同效力</p>
+<ul>
+<li><strong>持续性</strong>不能完全辨认、不能辨认自己行为的状态（严重的病理性醉酒），醉酒者成为限制/无民事行为能力人</li>
+<li><strong>一时性</strong>不能完全辨认、不能辨认自己行为的状态（生理性醉酒），醉酒者仍是完全民事行为能力人，原则上法律行为<strong>有效</strong>
+<ul>
+<li>若<strong>喝断片</strong>了（暂时<strong>失去意识</strong>、暂时<strong>精神错乱</strong>），则法律行为<strong>无效</strong>【通说观点】</li>
+<li>若未喝断片，但法律行为符合<strong>重大误解</strong>或者<strong>显失公平</strong>的构成要件，醉酒者<strong>有权撤销</strong></li>
+</ul>
+</li>
+</ul>
+<p><strong>注意：《民法总则》于2018年1月1日起实施后，「乘人之危」被并入「显失公平」，符合「乘人之危」要件也只能以「显失公平」为由撤销</strong></p>
+<h3 id="监护职责"><a class="markdownIt-Anchor" href="#监护职责"></a> 监护职责</h3>
+<p>监护：监护人对被监护人（未成年人和需要保护的成年人）的人身、财产和其他合法权益依法实行监督和保护的制度</p>
+<ul>
+<li>监护人：承担监护义务</li>
+<li>被监护人：受监护人监督和保护</li>
+<li>监护人享有的「监护权」，实为一种「资格」</li>
+</ul>
+<p>监护人的职责</p>
+<ul>
+<li>监护人应当按照<strong>最有利于被监护人的原则</strong>履行监护职责，保护被监护人的人身权利、财产权利以及其他合法权益【民34条】</li>
+<li><strong>除为维护被监护人利益外</strong>，不得处分被监护人的财产【民35条1款】</li>
+<li>监护人<strong>若非维护被监护人的利益</strong>处分被监护人的财产的：
+<ul>
+<li>若以被监护人的名义，属于「<strong>无权代理</strong>」</li>
+<li>若以监护人自己的名义，属于「<strong>无权处分</strong>」</li>
+</ul>
+</li>
+<li>代理实施民事法律行为、进行诉讼【民23条】</li>
+<li>对被监护人的侵权行为，承担无过错的替代责任【民1188条】
+<ul>
+<li>在被监护人无财产或财产不足以承担责任时</li>
+</ul>
+</li>
+<li><strong>未成年人的监护人</strong>履行监护职责，应当<strong>尊重被监护人的真实意愿</strong>【民35条2款】</li>
+<li><strong>成年人的监护人</strong>履行监护职责，应当<strong>最大程度地尊重被监护人的真实意愿</strong>【民35条3款】
+<ul>
+<li><strong>对被监护人有能力独立处理的事务，不得干涉</strong></li>
+</ul>
+</li>
+<li>监护人不履行监护职责，或侵害被监护人合法权益的，应当承担法律责任
+<ul>
+<li>例：监护人以被监护人的50万，为被监护人购买了股票，结果股市大跌</li>
+</ul>
+</li>
+</ul>
+<p>【民法典婚姻家庭编解释（二）15条】：父母双方以<strong>法定代理人</strong>身份，处分用<strong>夫妻共同财产</strong>购买并<strong>登记在未成年子女名下</strong>的房屋后，又以违反【民35条】(损害未成年子女利益)为由，向相对人主张该民事法律行为<strong>无效</strong>的，人民法院不予支持</p>
+<ul>
+<li>理解：
+<ul>
+<li>父母基于合理的商业判断处分房屋，通常无需担心损害未成年子女利益</li>
+<li>父母的代理行为属于<strong>有权代理</strong>、<strong>直接代理</strong></li>
+<li>该行为<strong>归属于未成年子女承受</strong>，对被代理人<strong>发生效力</strong>【民162条】</li>
+</ul>
+</li>
+<li>人话：卖房之后，房价暴涨，不能通过主张「子女利益受损，行为无效」撤销交易</li>
+</ul>
+<h3 id="监护类型"><a class="markdownIt-Anchor" href="#监护类型"></a> 监护类型</h3>
+<p>《民法典》规定的监护类型</p>
+<ul>
+<li>法定监护【民27、28、32条】</li>
+<li>协议监护【民30条】
+<ul>
+<li>有监护资格的人通过协议确定</li>
+<li>可以突破法定顺序限制</li>
+</ul>
+</li>
+<li>指定监护【民31条】</li>
+<li>遗嘱监护【民29条】</li>
+<li>意定监护【民33条】（成年协议监护）</li>
+</ul>
+<p><strong>未成年人监护人的五个顺序</strong></p>
+<ul>
+<li>自动地由顺序在前且有监护能力的人担任监护人</li>
+<li>没有前一顺序的人或者前一顺序的人均没有监护能力的，自动地由后一顺序且有监护能力的人担任监护人</li>
+<li>监护人可以为一人，亦可为数人</li>
+<li>第一顺序：父母（婚生、非婚生、养父母、形成抚养关系的继父母）
+<ul>
+<li>父母是「<strong>当然</strong>」监护人【民法典总则编若干问题的解释8条】</li>
+<li>父母有监护能力时，不能启动协议监护或者指定监护，将父母以外的人确定为监护人</li>
+<li>但可以<strong>未雨绸缪</strong>，订立协议约定<strong>在父母丧失监护能力时</strong>，由该具有监护资格的人担任监护人</li>
+<li>未成年人的父母<strong>离婚</strong>，<strong>不影响</strong>法定监护关系
+<ul>
+<li>离婚后的父母仍为未成年子女的当然监护人</li>
+<li><strong>监护地位平等</strong>，仅抚养义务的轻重不同</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>第二顺序：祖父母、外祖父母
+<ul>
+<li>父母均已死亡，或均没有监护能力时</li>
+<li>注意：(外)祖父母必须要有监护能力</li>
+</ul>
+</li>
+<li>第三顺序：兄、姐
+<ul>
+<li>不要求兄、姐一定要成年</li>
+<li>例如16-18岁，自食其力，视为完全民事行为能力人【民18条2款】</li>
+</ul>
+</li>
+<li>第四顺序：经未成年人住所地的居民委员会、村民委员会或者民政部门<strong>同意</strong>，<strong>其它愿意担任监护人的个人或者有关组织</strong></li>
+<li>第五顺序：监护人由<strong>民政部门</strong>担任，也可以由具备条件的被监护人住所地的<strong>居民委员会</strong>、<strong>村民委员会</strong>担任。【民32条】</li>
+</ul>
+<p>拟制婚生子女的一种情形【民法典婚姻家庭编解释（一）40条】无论血缘、基因关系，符合下面条件的视为婚生子女</p>
+<ul>
+<li>建立了<strong>合法的婚姻关系</strong></li>
+<li><strong>一致同意</strong>采用<strong>合法的人工生殖技术</strong>
+<ul>
+<li>合法：丈夫不育症，他人提供精子</li>
+<li>排除非法的技术，如克隆</li>
+</ul>
+</li>
+<li>在婚姻关系存续期间<strong>受胎</strong>或<strong>出生</strong></li>
+<li>由妻子<strong>亲自生育</strong>（不能代孕）</li>
+<li>注：代孕所生子女，认定父母子女关系的法律，大陆现行法无规定！</li>
+</ul>
+<p>拟制血亲：「自然血亲」的对称，是指本来没有血缘关系，或没有直接的血缘关系，但法律确定其地位与血亲相同的亲属。</p>
+<p>拟制：又叫法律拟制，依据法律政策，将甲事实看做乙事实，而不考虑真实为何</p>
+<p>拟制婚生子女例题：郭某与杜某婚后多年未育，因郭某患不育症，经其同意，杜某于3月通过合法人工授精（使用他人精子）怀孕。5月，郭某患癌后要求杜某流产被拒，遂立遗嘱将全部遗产留给父母，未为胎儿保留份额。郭某于10月去世，杜某同年12月生下杜小洋。杜某无力独自抚养，要求郭某父母分担抚养义务，但对方以孩子改姓郭为条件，杜某拒绝。</p>
+<ul>
+<li>郭某的父母应当对杜小洋履行部分抚养义务
+<ul>
+<li>视为婚生子女【民法典婚姻家庭编解释（一）40条】</li>
+</ul>
+</li>
+<li>郭某的父母无权请求将杜小洋改为姓郭
+<ul>
+<li>随母姓符合法律规定</li>
+</ul>
+</li>
+<li>分割郭某的遗产时，应当为杜小洋保留必要的份额
+<ul>
+<li>受胎之日视为有民事权利能力【民16条】</li>
+</ul>
+</li>
+<li>杜某有权代理杜小洋主张郭某的遗嘱部分无效
+<ul>
+<li>剥夺了缺乏劳动能力，没有生活来源的杜小洋应继份</li>
+</ul>
+</li>
+<li>当然，从郭某父母的角度看，确实是做大冤种了</li>
+</ul>
+<p>有抚养关系继父母子女继承关系</p>
+<ul>
+<li>继父母和<strong>受其抚养教育</strong>的继子女间的权利义务关系，适用本法关于父母子女关系的规定【民1072条2款】</li>
+<li>确认受其抚养教育事实【民法典婚姻家庭编解释（二）18条】：
+<ul>
+<li>以共同生活时间长短为基础</li>
+<li>继父母是否实际进行生活照料</li>
+<li>是否履行家庭教育职责</li>
+<li>是否承担抚养教育费用</li>
+</ul>
+</li>
+<li>二婚家庭<strong>离婚</strong>后，继父母和<strong>曾受其抚养教育的继子女</strong>之间的权利义务关系，<strong>不再适用</strong>民法典关于父母子女关系规定【民法典婚姻家庭编解释（二）19条1款】
+<ul>
+<li>但与继父母成立<strong>收养关系</strong>或者<strong>共同生活</strong>的除外</li>
+<li>注意：该条款取代了【民法典婚姻家庭编解释（一）54条】</li>
+</ul>
+</li>
+<li>继父母子女关系<strong>解除</strong>后，若继父母<strong>缺乏劳动能力又缺乏生活来源</strong>，<strong>曾受其抚养教育的成年继子女</strong>负有<strong>给付适当生活费</strong>的法定义务【民法典婚姻家庭编解释（三）19条2款】
+<ul>
+<li>但继父或者继母曾在<strong>虐待</strong>、<strong>遗弃</strong>继子女等情况的除外</li>
+</ul>
+</li>
+</ul>
+<p><strong>无、限制民事行为能力成年人的法定监护顺序</strong></p>
+<ul>
+<li>监护人可以为一人，亦可为数人</li>
+<li>第一顺序：配偶
+<ul>
+<li>并非当然监护人！</li>
+<li>可启动协议监护、指定监护</li>
+</ul>
+</li>
+<li>第二顺序：父母、子女
+<ul>
+<li>婚生、非婚生、养父母、形成抚养关系的继父母</li>
+<li>子女也类似上述分类</li>
+</ul>
+</li>
+<li>第三顺序：其他近亲属
+<ul>
+<li>兄弟姐妹、(外)祖父母、(外)孙子女</li>
+</ul>
+</li>
+<li>第四顺序：经被监护人住所地的居民委员会、村民委员会或者民政部门<strong>同意</strong>，<strong>其它愿意担任监护人的个人或者有关组织</strong></li>
+<li>第五顺序：监护人由<strong>民政部门</strong>担任，也可以由具备条件的被监护人住所地的<strong>居民委员会</strong>、<strong>村民委员会</strong>担任。【民32条】</li>
+</ul>
+<p><strong>协议监护（通过达成协议的方式）【民30条】</strong></p>
+<ul>
+<li>未成年人：2-4顺位人</li>
+<li>无、限制民事行为能力的成年人：1-4顺位人</li>
+<li>不受《民法典》规定顺序的限制【民法典总则编若干问题的解释8条2款】
+<ul>
+<li>可以协议由顺序在后的人担任监护人</li>
+<li>可以协议由不同顺序的人共同担任监护人</li>
+</ul>
+</li>
+</ul>
+<p><strong>指定监护（争当监护人、推脱承担监护职责）【民31条】</strong></p>
+<ul>
+<li>有争议、不能协商确定监护人时，由有权机关指定监护人
+<ul>
+<li>未成年人的父母具有监护能力时，不适用指定监护！</li>
+</ul>
+</li>
+<li>由被监护人住所地的居民委员会、村民委员会或者民政部门指定【民法典总则编若干问题的解释10条】
+<ul>
+<li><strong>不服</strong>，在接到通知<strong>30日内</strong>向人民法院申请指定监护人
+<ul>
+<li>指定并无不当，则裁定驳回申请</li>
+<li>指定不当，则撤销指定并另行指定监护人</li>
+</ul>
+</li>
+<li><strong>不服</strong>，且在接到通知<strong>30日后</strong>提出申请
+<ul>
+<li>按照<strong>变更监护关系</strong>处理</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>指定限制：
+<ul>
+<li>应当<strong>尊重被监护人的真实意愿</strong></li>
+<li>按照<strong>最有利于被监护人的原则</strong>指定监护人</li>
+</ul>
+</li>
+<li>临时监护：若被监护人在指定前，权益处于无人保护状态，民政部门等担任<strong>临时监护人</strong></li>
+<li>效果：
+<ul>
+<li>监护人被指定后，<strong>不得擅自变更</strong></li>
+<li>擅自变更的，<strong>不免除被指定的监护人的监护责任</strong></li>
+<li>接受变更的新监护人，于违反监护职责时，自然也应当承担相应的责任</li>
+</ul>
+</li>
+</ul>
+<p>「委托监护」不导致监护关系的移转！</p>
+<ul>
+<li>委托监护人只是依照有效的委托合同，代为履行监护人的全部或部分监护职责</li>
+<li>因此委托监护人不按【民1188条】作为监护人承担无过错的替代责任</li>
+<li>例如：甲委托医院照料其患精神病的配偶乙，医院是委托监护人</li>
+</ul>
+<p>例题：关于监护，下列哪一表述是正确的？</p>
+<ul>
+<li>甲委托医院照料其患精神病的配偶乙，医院是委托监护人</li>
+<li>甲的幼子乙在寄宿制幼儿园期间，甲的监护职责全部转移给幼儿园
+<ul>
+<li>教育机构负担教育、管理、保护的义务</li>
+</ul>
+</li>
+<li>甲丧夫后携幼子乙改嫁，乙的爷爷有权要求法院确定自己为乙的法定监护人
+<ul>
+<li>妈妈甲拥有监护能力，其它人无权启动指定监护程序</li>
+</ul>
+</li>
+<li>市民甲、乙之子丙5周岁，甲乙离婚后对谁担任丙的监护人发生争议，丙住所地的居民委员会有权指定
+<ul>
+<li>离婚不影响监护，无需争议</li>
+</ul>
+</li>
+</ul>
+<p>遗嘱监护【民29条】</p>
+<ul>
+<li>被监护人的父母担任监护人的，可以通过遗嘱指定监护人</li>
+<li>成立条件：
+<ul>
+<li><strong>父母</strong>担任<strong>未成年子女</strong>或者<strong>无、限制民事行为能力的成年子女</strong>的<strong>监护人</strong>期间
+<ul>
+<li>父母的监护权未被撤销或因其他原因终止</li>
+</ul>
+</li>
+<li>父母订立遗嘱指定父母双方或者一方死亡后子女的监护人
+<ul>
+<li>遗嘱需符合生效的实质要件和形式要件</li>
+</ul>
+</li>
+<li>遗嘱生效时<strong>被指定的人同意担任监护人</strong>
+<ul>
+<li>若不同意，法院应当按顺位确定监护人【民27-28条】</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>效力：
+<ul>
+<li>遗嘱监护优先于法定监护</li>
+<li>范围不限于法定监护中有监护资格的人</li>
+<li>劣后于<strong>有监护能力</strong>的未成年人父母的<strong>当然法定监护人</strong>地位【民法典总则编若干问题的解释7条2款】</li>
+<li>根据通说观点，父母均订立遗嘱且指定的监护人不同时，依<strong>最后行使监护权的父或母</strong>一方作出的遗嘱为准。【一审草案规定】</li>
+</ul>
+</li>
+</ul>
+<p><strong>意定监护（成年协议监护）【民33条】</strong></p>
+<ul>
+<li>具有完全民事行为能力的成年人，若担心将来（因年老、疾病等原因导致意志力、判断力和体力下降）不能自我保护，可通过书面协议的方式，为自己设定监护人</li>
+<li>打破了监护法上被监护人不得为自己指定监护人的陈规</li>
+<li>既可以约定为有偿，亦可约定为无偿
+<ul>
+<li>即使有偿，也不违背善良风俗</li>
+</ul>
+</li>
+<li>效力：
+<ul>
+<li>意定监护优先于法定监护</li>
+<li>意定监护也优先于遗嘱监护</li>
+</ul>
+</li>
+<li>在仍然具有完全民事行为能力时，双方具有任意解除权【民法典总则编若干问题的解释11条1款】</li>
+<li>不再具有完全民事行为能力时，只有一般解除权【民563条1款】</li>
+</ul>
+<h3 id="监护资格的撤销-恢复"><a class="markdownIt-Anchor" href="#监护资格的撤销-恢复"></a> 监护资格的撤销、恢复</h3>
+<p>监护人可被撤销监护资格的情况【民36条1款】：</p>
+<ul>
+<li>实施严重损害被监护人身心健康的行为
+<ul>
+<li>虐待、性侵害</li>
+</ul>
+</li>
+<li>怠于/无法履行监护职责，亦拒绝委托给他人，导致被监护人处于危困状态</li>
+<li>有严重侵害被监护人合法权益的其他行为</li>
+<li><strong>监护权被撤销，不影响「赡养义务」和「抚养义务」</strong>【民37条】</li>
+</ul>
+<p>有权向法院提出撤销监护人资格申请的个人或组织包括：</p>
+<ul>
+<li>其他有监护资格的人</li>
+<li>被监护人住所地的居民委员会、村民委员会</li>
+<li>学校、医疗卫生机构</li>
+<li>妇女联合会、残疾人联合会</li>
+<li>未成年人保护组织</li>
+<li>依法设立的老年人组织</li>
+<li><strong>民政部门</strong>（其它个人/组织只是「有权」申请，民政部门有「法定义务」申请！）</li>
+<li>若被监护人处于无人看管状态，适用「临时监护」</li>
+</ul>
+<p>监护人可恢复监护资格的情况【民38条】</p>
+<ul>
+<li>被监护人的<strong>父母</strong>或者<strong>子女</strong>
+<ul>
+<li>若不在范围内，一经撤销永不恢复</li>
+</ul>
+</li>
+<li>没有对被监护人实施故意犯罪</li>
+<li>确有悔改情形</li>
+<li>尊重被监护人真实意愿</li>
+</ul>
+<p>监护关系终止【民39条】</p>
+<ul>
+<li>有下列情形之一的，监护关系终止：
+<ul>
+<li>被监护人取得或者恢复完全民事行为能力</li>
+<li>监护人丧失监护能力</li>
+<li>被监护人或者监护人死亡</li>
+<li>人民法院认定监护关系终止的其他情形</li>
+</ul>
+</li>
+<li>监护关系终止后，被监护人仍然需要监护的，应当依法另行确定监护人</li>
+</ul>
+<h3 id="宣告失踪"><a class="markdownIt-Anchor" href="#宣告失踪"></a> 宣告失踪</h3>
+<p>宣告失踪的条件</p>
+<ul>
+<li>自然人<strong>下落不明满二年</strong>（失去音讯之日起计算）</li>
+<li>须利害关系人向人民法院申请【民法典总则编若干问题的解释14条】
+<ul>
+<li><strong>近亲属</strong>（配偶、父母、子女、兄弟姐妹、(外)祖父母、(外)孙子女）</li>
+<li><strong>有第一顺序法定继承权的亲属</strong>（尽了<strong>主要赡养义务</strong>的<strong>丧偶儿媳/女婿</strong>）【民1129条】</li>
+<li><strong>地位相当于第一顺序的代位继承人</strong>（子女先于被申请人死亡的情况下，子女的子女）【民1128条1款】</li>
+<li><strong>地位相当于第二顺序的代位继承人</strong>（兄弟姐妹先于被申请人死亡的情况下，兄弟姐妹的子女）【民1128条2款】</li>
+<li>债权人、债务人、合伙人（<strong>不申请也不影响其权利行使、义务履行的除外</strong>）</li>
+</ul>
+</li>
+<li>须经法院依法宣告</li>
+<li>法院受理后，<strong>公告期三个月</strong>，期满仍无下落才能宣告失踪</li>
+</ul>
+<p>注：「代位继承」保障了在“子女先于父母死亡”的情况下，可以由“子女的子女”来继承</p>
+<p>宣告失踪的法律效果：<strong>为失踪人设立财产代管人</strong></p>
+<ul>
+<li>代管人：配偶、成年子女、父母，或由法院指定</li>
+<li>因故意或者重大过失造成财产损失的，要承担赔偿责任
+<ul>
+<li>一般过失、无过错，那就是无责</li>
+</ul>
+</li>
+<li>代管人基于「诉讼担当」列为原/被告【民法典总则编著干问题的解释15条】
+<ul>
+<li>被宣告失踪人权利的行使/义务的履行</li>
+</ul>
+</li>
+</ul>
+<p>宣告失踪的人重新出现【民45条】</p>
+<ul>
+<li>条件：
+<ul>
+<li>失踪人重新出现</li>
+<li>经本人或者利害关系人申请</li>
+</ul>
+</li>
+<li>效果：
+<ul>
+<li>法院撤销失踪宣告</li>
+<li>财产代管人及时<strong>移交</strong>有关财产、<strong>报告</strong>财产代管情况</li>
+</ul>
+</li>
+</ul>
+<p>注意：下落不明并不是死亡，因此仍然维持有效的婚姻关系</p>
+<h3 id="宣告死亡"><a class="markdownIt-Anchor" href="#宣告死亡"></a> 宣告死亡</h3>
+<p>宣告死亡的条件</p>
+<ul>
+<li><strong>下落不明达到法定期间</strong>
+<ul>
+<li>原则上须下落不明<strong>满四年</strong>（包括战争期间）
+<ul>
+<li>战争：自<strong>战争结束之日</strong>或者<strong>有关机关确定的下落不明之日</strong>起计算</li>
+</ul>
+</li>
+<li>因<strong>意外事件</strong>下落不明<strong>满二年</strong></li>
+<li>因<strong>意外事件</strong>下落不明，<strong>经有关机关证明该自然人不可能生存的</strong></li>
+</ul>
+</li>
+<li><strong>须利害关系人向人民法院申请</strong>（若不同人分别申请失踪、死亡，符合宣告死亡条件的，应当宣告死亡【民47条】）
+<ul>
+<li><strong>宣告失踪并非宣告死亡的前置程序</strong></li>
+</ul>
+</li>
+<li><strong>须经法院依法宣告</strong>
+<ul>
+<li>受理后发出寻找下落不明人的公告</li>
+<li>原则上公告期为一年</li>
+<li>下落不明 &amp; 证明不可能生存，公告期为三个月</li>
+</ul>
+</li>
+</ul>
+<p>申请宣告死亡的利害关系人范围【民法典总则编若干问题的解释16条】</p>
+<ul>
+<li>配偶、父母、子女</li>
+<li><strong>有第一顺序法定继承权的亲属</strong>（尽了<strong>主要赡养义务</strong>的<strong>丧偶儿媳/女婿</strong>）【民1129条】</li>
+<li>〔限〕<strong>其他近亲属</strong>（兄弟姐妹、(外)祖父母、(外)孙子女）
+<ul>
+<li>例：孙子向老人支付赡养费（保护合法权益）</li>
+</ul>
+</li>
+<li>〔限〕<strong>地位相当于第一顺序的代位继承人</strong>（子女先于被申请人死亡的情况下，子女的子女）【民1128条1款】</li>
+<li>〔限〕<strong>地位相当于第二顺序的代位继承人</strong>（兄弟姐妹先于被申请人死亡的情况下，兄弟姐妹的子女）【民1128条2款】</li>
+<li><strong>不申请宣告死亡不能保护其相应合法权益的</strong>债权人、债务人、合伙人
+<ul>
+<li>例：给下落不明者支付退休金的单位</li>
+</ul>
+</li>
+<li><strong>部分利害关系人附带限制条件</strong>：
+<ul>
+<li>被申请人的配偶、父母、子女<strong>均已</strong>死亡或者下落不明</li>
+<li>不申请宣告死亡不能保护其相应合法权益</li>
+<li>注：因为这部分人不当然属于利害关系人</li>
+</ul>
+</li>
+</ul>
+<p><strong>注意：利害关系人没有顺序限制</strong></p>
+<ul>
+<li>已经考虑了他们应受保护利益的位阶</li>
+<li>不同的利害关系人规定了<strong>不同的条件</strong></li>
+</ul>
+<p>宣告死亡的法律效果（拟制死亡）</p>
+<ul>
+<li><strong>判决作出之日</strong>视为其死亡的日期
+<ul>
+<li>意外事件下落不明的，则为<strong>意外事件发生之日</strong></li>
+</ul>
+</li>
+<li>注意：如果实际上人没死，<strong>不影响</strong>他在被宣告死亡期间实施的民事法律行为的效力</li>
+<li>权利变动：
+<ul>
+<li>身份关系（<strong>婚姻关系</strong>自死亡宣告之日起消灭）</li>
+<li>财产关系（个人财产成为<strong>遗产</strong>，按继承办理）</li>
+</ul>
+</li>
+</ul>
+<p>死亡宣告的撤销条件</p>
+<ul>
+<li>被宣告死亡的人重新出现</li>
+<li>本人或者利害关系人提出申请</li>
+<li>人民法院依法撤销死亡宣告</li>
+</ul>
+<p>死亡宣告的法律效果</p>
+<ul>
+<li>夫妻关系自撤销死亡宣告之日起自行恢复
+<ul>
+<li>配偶再婚除外</li>
+<li>配偶向婚姻登记机关书面声明不愿意恢复的除外</li>
+</ul>
+</li>
+<li>在被宣告死亡期间，其子女被他人<strong>依法收养</strong>的，<strong>不得以未经本人同意为由主张收养关系无效</strong></li>
+<li>有权请求依照<strong>继承法</strong>取得其财产的人，返还财产
+<ul>
+<li>原物存在，<strong>返还原物</strong></li>
+<li>原物不存在，适当<strong>补偿</strong></li>
+<li>第三人通过其他途径合法（买卖、赠与）取得，不负返还责任</li>
+</ul>
+</li>
+</ul>
+<h2 id="法人"><a class="markdownIt-Anchor" href="#法人"></a> 法人</h2>
+<h3 id="法人的概念与特征"><a class="markdownIt-Anchor" href="#法人的概念与特征"></a> 法人的概念与特征</h3>
+<p>「法人」不是人，是社会组织</p>
+<ul>
+<li>依法成立</li>
+<li>具有民事权利能力、民事行为能力</li>
+<li>依法独立享有民事权利、承担民事义务</li>
+<li>感觉日语的解释更好懂：人間ではないが、権利・義務の主体となる法律上の人格を認められた組織体</li>
+</ul>
+<p>法人与其成员在三方面各自独立</p>
+<ul>
+<li>财产独立</li>
+<li>人格独立</li>
+<li>责任独立【民60条】</li>
+</ul>
+<p>法人无限责任，成员有限责任（以出资额为限）</p>
+<ul>
+<li>成员仅负担岀资义务</li>
+</ul>
+<h3 id="法人人格否认"><a class="markdownIt-Anchor" href="#法人人格否认"></a> 法人人格否认</h3>
+<p>相关法条：【民83条】【公23条】</p>
+<p>在英美法中，法人人格否认又叫「刺破公司面纱」（Piercing the Corporate Veil），日语叫「法人格否認の法理」</p>
+<p>法人人格否认的构成要件</p>
+<ul>
+<li><strong>控制股东/实际控制人</strong>实施了<strong>滥用</strong>法人独立地位和出资人有限责任的行为
+<ul>
+<li>人格混同</li>
+<li>过度支配与控制</li>
+<li>资本显著不足</li>
+</ul>
+</li>
+<li>造成严重损害法人、债权人利益的损害后果
+<ul>
+<li><strong>不足以清偿</strong>数额较大的债权</li>
+</ul>
+</li>
+<li>滥用行为与利益遭受严重损害的后果之间具有<strong>因果关系</strong>
+<ul>
+<li>因果关系千万不能忽略！！</li>
+</ul>
+</li>
+<li>滥用者主观上为<strong>故意</strong>，且具有通过滥用行为逃避债务，损害法人、债权人利益的<strong>恶意</strong></li>
+</ul>
+<p>人格混同</p>
+<ul>
+<li>公司人格事实上不独立</li>
+<li><strong>持续性缺乏公司独立意志</strong></li>
+<li>公司沦为股东执行其个人意志的一个工具(傀儡)</li>
+<li>常常如影随形地造成财产混同</li>
+<li>关键要审查是否构成人格混同，而不要求同时具备其他方面的混同</li>
+</ul>
+<p><strong>人格混同的认定【九民纪要10条】</strong></p>
+<ul>
+<li>判断公司是否具有<strong>独立意思</strong>和<strong>独立财产</strong></li>
+<li>公司的财产与股东的<strong>财产是否混同</strong>且<strong>无法区分</strong></li>
+</ul>
+<p>九民纪要：指《全国法院民商事审判工作会议纪要（2019）》，这是最高人民法院出台的第九个会议纪要，聚焦民商事审判工作。涉及公司纠纷、合同纠纷、担保纠纷等多个领域。</p>
+<ul>
+<li>《九民纪要》不是现行法，答题时不能说「依照」「根据」</li>
+<li>要写：「参照」九民纪要第XX条规定的精神</li>
+</ul>
+<p>人格混同综合考虑以下因素：</p>
+<ul>
+<li>股东<strong>无偿使用</strong>公司资金或者财产，<strong>不作财务记载</strong></li>
+<li>股东<strong>用公司的资金偿还股东的债务</strong>，或者将公司的资金供关联公司无偿使用，<strong>不作财务记载</strong></li>
+<li>公司账簿与股东<strong>账簿不分</strong>，致使公司财产与股东<strong>财产无法区分</strong></li>
+<li>股东自身收益与公司<strong>盈利不加区分</strong>，致使双方利益不清</li>
+<li>公司的<strong>财产记载于股东名下</strong>，由股东<strong>占有、使用</strong></li>
+<li>人格混同的其他情形</li>
+</ul>
+<p>过度支配与控制</p>
+<ul>
+<li>股东对公司过度支配与控制</li>
+<li>公司股东/实际控制人<strong>操纵公司的决策过程</strong></li>
+<li>使公司<strong>完全丧失独立性</strong></li>
+</ul>
+<p><strong>过度支配与控制的认定【九民纪要11条】</strong></p>
+<ul>
+<li>公司是否具有<strong>独立意思</strong>和<strong>独立财产</strong></li>
+<li>母子公司之间、者子公司之间进行<strong>利益输送</strong>的</li>
+<li>母子公司、子公司之间进行交易，<strong>收益归一方，损失却由另一方承担</strong>的</li>
+<li>先从原公司<strong>抽走资金</strong>，然后<strong>再成立经营目的相同或者类似的公司</strong>，逃避原公司债务的</li>
+<li>先<strong>解散公司</strong>，再以原公司场所、设备、人员及相同或者相似的经营目的<strong>另设公司</strong>，逃避原公司债务的</li>
+<li>过度支配与控制的其他情形</li>
+</ul>
+<p>资本显著不足：股东<strong>实际投入</strong>公司的资本数额与<strong>公司经营所隐含的风险</strong>相比<strong>明显不匹配</strong></p>
+<p><strong>资本显著不足的认定【九民纪要12条】</strong></p>
+<ul>
+<li>股东利用较少资本从事力所不及的经营</li>
+<li>其没有从事公司经营的诚意</li>
+<li>实质是恶意利用公司独立人格和股东有限责任把投资风险转嫁给债权人</li>
+<li>注意：要与公司采取“以小博大”的正常经营方式相区分</li>
+</ul>
+<p><strong>Walkovszky v. Carlton, 223 N.E.2d 6 (N.Y. 1966)</strong></p>
+<ul>
+<li>Carlton注册了10家子公司，每个子公司拥有1-2辆出租车</li>
+<li>每家公司仅持有法律要求的最低责任保险（每车1万美元）</li>
+<li>所有公司实际由Carlton统一控制</li>
+<li>其中一辆出租车因过失撞伤行人Walkovszky</li>
+<li>受害人只能起诉资产极少的子公司，难以获得足额赔偿</li>
+<li>判决：纽约上诉法院最终维持了子公司独立的法人人格</li>
+<li>但判决后，纽约州提高了出租车公司的最低保险要求，以弥补类似漏洞</li>
+<li>原告后来尝试以其他理由（如Carlton以个人名义经营）再次起诉，但此案未改变原判决结论</li>
+</ul>
+<p>稍微修改，即可否认法人人格</p>
+<ul>
+<li>甲设立10个公司，每个公司投入50万，开展出租车营运业务</li>
+<li>每个公司购买了两辆出租车（和牌照）</li>
+<li>每辆车投保了“交强险”，但均未投保“第三者责任商业险”</li>
+<li>此时若出车祸，两百多万的损害赔偿责任远大于子公司的财产</li>
+<li>因投入和风险不匹配，而且甲故意把业务拆分成10个公司，可认定为“资本显著不足”</li>
+<li>注意：但如果只有一个50万注册资本的公司，而且甲主观上无恶意，就变成了「以小博大」</li>
+</ul>
+<p>法人人格否认的类型</p>
+<ul>
+<li>法人人格的<strong>正向</strong>否认
+<ul>
+<li><strong>纵向</strong>否认（和股东/实控人发生财产混同）</li>
+<li><strong>横向</strong>否认（和关联公司发生财产混同）</li>
+</ul>
+</li>
+<li>法人人格的<strong>反向</strong>否认</li>
+</ul>
+<h3 id="法人人格纵向否认"><a class="markdownIt-Anchor" href="#法人人格纵向否认"></a> 法人人格纵向否认</h3>
+<p>法人人格纵向否认的法律效果</p>
+<ul>
+<li>对法人的债务承担<strong>连带责任</strong>
+<ul>
+<li>仅限于实施滥用行为的法人的控制股东/实际控制人</li>
+<li>其他股东不承担责任</li>
+</ul>
+</li>
+<li>在个案中被否认人格的公司仍享有民事权利能力与民事行为能力
+<ul>
+<li>并非使法人民事权利能力消灭</li>
+</ul>
+</li>
+<li><strong>一案一否定</strong>
+<ul>
+<li>判决仅对本案当事人具有既判力</li>
+<li>该生效判决确认的滥用事实可作为后案的证据使用</li>
+</ul>
+</li>
+</ul>
+<p>既判力（定谳yàn）：一旦判决确定后，对于同一事件，当事人不可再行起诉，法院亦不可再为裁判</p>
+<p>法人人格纵向否认时的诉讼架构【九民纪要13条】</p>
+<ul>
+<li><strong>债权已经由生效裁判确认</strong>，其另行提起公司人格否认诉讼
+<ul>
+<li>列股东为被告</li>
+<li>公司为无独立请求权的第三人</li>
+</ul>
+</li>
+<li>对债权提起诉讼的同时，<strong>一并提起公司人格否认诉讼</strong>
+<ul>
+<li>列公司和股东为共同被告</li>
+<li>先审理债务是否合法有效</li>
+<li>若有效，再审理法人人格否认</li>
+</ul>
+</li>
+<li><strong>债权尚未经生效裁判确认</strong>，直接提起公司人格否认诉讼
+<ul>
+<li>债权人应当变更诉讼请求，追加公司为共同被告</li>
+<li>若债权人拒绝追加被告，坚持仅起诉股东，则驳回起诉</li>
+</ul>
+</li>
+</ul>
+<h3 id="法人人格横向否认"><a class="markdownIt-Anchor" href="#法人人格横向否认"></a> 法人人格横向否认</h3>
+<p>法人人格横向否认的法律效果</p>
+<ul>
+<li>股东利用其控制的<strong>两个以上公司</strong>实施前款规定行为的，<strong>各公司</strong>应当对<strong>任一公司</strong>的债务承担<strong>连带责任</strong>【公23条】</li>
+<li>特征：财产边界不清、财务混同、利益相互输送【九民纪要11条】</li>
+<li>最严厉的一种后果是「合并破产」</li>
+</ul>
+<p>合并破产与合并重整</p>
+<ul>
+<li>《全国法院破产审判工作会议纪要》第32条</li>
+<li>适用条件（审慎适用）
+<ul>
+<li>关联企业成员之间存在法人人格高度混同</li>
+<li>区分各关联企业成员财产的成本过高</li>
+<li>严重损害债权人公平清偿利益</li>
+</ul>
+</li>
+<li>法律后果
+<ul>
+<li>各关联企业成员之间的债权债务归于消灭</li>
+<li>各成员的财产作为合并后统一的破产财产</li>
+<li>各成员的债权人在同一程序中按照<strong>法定顺序公平受偿</strong></li>
+</ul>
+</li>
+</ul>
+<p>2021年3月，对海航集团等321家公司实施实质合并重整</p>
+<ul>
+<li>管理高度混同（除海航集团外，没有使用本公司印章的自由）</li>
+<li>财务高度混同（统一适用海航集团制定的财务管理制度）</li>
+<li>资金严重混同（大量资金由海航集团统一调拨）</li>
+<li>人员严重混同（其它公司无权制定人事管理制度）</li>
+<li>业务严重混同（海航集团统一制定经营方针和计划）</li>
+</ul>
+<p>2016年11月，对重庆金江印染、重庆川江针纺进行实质合并破产清算【指导案例165号】</p>
+<ul>
+<li>实际控制人一致</li>
+<li>生产经营场所混同（库房共用）</li>
+<li>人员混同（管理人员存在交叉）</li>
+<li>主营业务混同</li>
+<li>资产及负债混同（资金的安排使用上混同度较高，且均与实际控制人的个人账户往来较频繁）</li>
+</ul>
+<h3 id="法人人格反向否认"><a class="markdownIt-Anchor" href="#法人人格反向否认"></a> 法人人格反向否认</h3>
+<p><strong>外部人</strong>主张反向否认：指因控制股东与法人发生人格混同，且因此严重损害股东债权人利益时，控制股东的债权人诉请否认法人人格，请求判令法人对控制股东的债务承担连带责任。（也就是让你的子公司承担连带责任）</p>
+<p><strong>内部人</strong>主张反向否认：较为罕见，指因控制股东与法人发生人格混同，控制股东诉请否认法人人格，从而使得控制股东或者法人能够因法人人格被否认而<strong>获得某种法律上的优待</strong>。</p>
+<p>下面是一个内部人主张反向否认的判例</p>
+<p>Cargill, Inc. v. Hedge, 375 N.W.2d 477 (1985)</p>
+<ul>
+<li>Hedges 夫妇通过家族农场公司（Hedge Farm, Inc.）拥有160英亩土地</li>
+<li>Cargill 因 Sam Hedge 长期赊购农资而起诉追债，并试图执行公司名下的土地拍卖</li>
+<li>Hedges 夫妇主张法人人格反向否认，以适用宅地豁免（homestead exemption），保护部分土地免于强制执行</li>
+<li>判决：法人人格反向否认，土地视为 Hedges 夫妇共同所有，Sam 可主张80英亩的宅地豁免，Cargill 的执行拍卖部分无效</li>
+</ul>
+<p>宅地豁免（homestead exemption）：美国大多数州通过的法律。允许宅地拥有人或家长标明一处房屋及土地作为其宅地，在执行其一般债务时，该宅地免予被强制执行。</p>
+<h3 id="法定代表人"><a class="markdownIt-Anchor" href="#法定代表人"></a> 法定代表人</h3>
+<p>代表法人行使职权的负责人，是法人的法定代表人</p>
+<ul>
+<li>无须法人实施授予代表权限的独立的授权行为</li>
+<li>法定代表人当然享有在职权范围内代表法人实施法律行为的概括代表权限</li>
+<li>法定代表人基于职权享有的概括代表权限，受两类限制：
+<ul>
+<li><strong>法定限制</strong>【公15条】</li>
+<li>法人章程或者权力机构的「<strong>意定限制</strong>」</li>
+</ul>
+</li>
+<li>法定代表人若超越对其代表权的限制，属于「<strong>越权代表</strong>」</li>
+</ul>
+<p><strong>意定限制</strong>：指由公司章程或公司内部决议自主设定的对法定代表人行使职权的限制</p>
+<ul>
+<li>甲公司以科技为本，在法人章程规定，未经股东会表决通过，法定代表人不享有解聘甲公司科研人员的代表权限</li>
+<li>甲公司发生一系列事以后，甲公司召开有效的董事会表决通过了一个政策，从今以后没有经过甲公司股东会表决通过，法定代表人不得订立标的额超过两个亿的合同</li>
+</ul>
+<h3 id="法定代表人的法律侵权行为"><a class="markdownIt-Anchor" href="#法定代表人的法律侵权行为"></a> 法定代表人的法律/侵权行为</h3>
+<p><strong>法定代表人实施的法律行为</strong></p>
+<ul>
+<li>因有权代表行为(<strong>法定代表人</strong>、<strong>在代表权限内</strong>、<strong>以法人名义</strong>)所实施的民事法律行为，归属于法人承受【民61条】</li>
+<li>法定代表人执行职务时
+<ul>
+<li>无独立人格</li>
+<li>法定代表人的人格被吸收</li>
+<li>法定代表人的行为就是法人的行为</li>
+</ul>
+</li>
+<li>「法律行为」，亦可适用于准法律行为、合法的事实行为（如收款、交货）等【民61条2款】</li>
+</ul>
+<p><strong>法定代表人工商变更登记的法律效力</strong></p>
+<ul>
+<li>法人存续期间登记事项发生变化的，应当依法向登记机关申请<strong>变更登记</strong>【民64条】</li>
+<li>法人的<strong>实际情况</strong>与登记的事项不一致的，<strong>不得对抗善意相对人</strong>【民65条】</li>
+<li>工商变更登记并非法定代表人变更的「生效要件」，只是对抗善意相对人的「对抗要件」</li>
+</ul>
+<p>例子：甲公司经合法程序罢免了A的法定代表人资格，选举B为新的法定代表人，但未办理变更登记，工商登记的甲公司法定代表人仍为A</p>
+<ul>
+<li>自甲公司决议生效时，B取得甲公司法定代表人资格，A不再是甲公司的法定代表人</li>
+<li>B在代表权限范围内以甲公司名义订立的合同，归属于甲公司承受</li>
+<li>但因为工商登记的甲公司法定代表人仍为A，形成了相对人有理由相信A为甲公司法定代表人的权利外观</li>
+<li>因此，若A以甲公司名义与乙公司订立合同，
+<ul>
+<li>虽属无权代表，</li>
+<li>推定相对人乙公司为善意</li>
+<li>乙公司有权主张成立表见代表</li>
+<li>该合同直接归属于甲公司承受</li>
+<li>除非甲公司提供反证证明乙公司为恶意</li>
+</ul>
+</li>
+</ul>
+<p><strong>善意</strong>：行为人事先不知情（法律上の効果を生じさせる一定の事情を知らないこと。◇私法上、原則として善意の行為は保護され、責任は軽減される。）</p>
+<p><strong>恶意</strong>：行为人事先知情（法律上の効力に影響を及ぼすような事実を知っていること。盗品と知りつつ買うなど。）</p>
+<p><strong>对抗要件</strong>：主要解决权利冲突问题。指某一法律关系必须具备一定条件才能对抗另外一个法律关系。它主要涉及的是权利之间的对抗关系，即在存在多个权利主张时，哪一方的权利应得到优先保护。</p>
+<p><strong>生效要件</strong>：决定一个法律行为或合同是否有效。指使某一法律关系生效必须具备的条件。它主要关注的是法律关系何时产生法律效力，即何时开始对当事人产生法律上的权利和义务。</p>
+<p><strong>权利外观</strong>：行为人所享有权利的外在表现形式</p>
+<p><strong>表见代理</strong>：行为人虽没有代理权，但第三人在客观上有理由相信其有代理权而与其实施法律行为，该法律行为的后果由本人承担的代理（这个代理行为让别人看起来是有权代理）</p>
+<p>表見代理：無権代理のうち、代理権のない者と本人との間に特殊の関係があるために、その者を本当の代理人と誤信して取引した相手方を保護するため、その代理行為を代理権のある行為として扱い、本人に対して効力を生じさせる制度。また、その代理行為。</p>
+<p>例えば、AがBを代理人に選任してはいないのに、第三者Cに「Bが私（A）の代理人だ」と紹介した場合、BがAの代理人としてCと契約を行ったら、Aは契約どおりの責任をCに対して負うような場合がある。</p>
+<p>这几个概念都是从日语直接引入中文的，所以名称晦涩难懂，或是跟中文本身的意思不同。尤其是「善意」「恶意」，千万要注意。</p>
+<p>Source: <a target="_blank" rel="noopener" href="https://ja.wikipedia.org/wiki/%E6%A8%A9%E5%88%A9%E5%A4%96%E8%A6%B3%E7%90%86%E8%AB%96">権利外観理論（Rechtsscheintheorie）</a></p>
+<p><strong>法定代表人越权代表</strong></p>
+<ul>
+<li><strong>超越权限</strong>订立的合同，除相对人<strong>知道</strong>或者<strong>应当知道</strong>其超越权限外，<strong>该代表行为有效</strong>，订立的合同<strong>对法人或者非法人组织发生效力</strong>【民504条】</li>
+<li><strong>法人章程</strong>或者法人<strong>权力机构</strong>对法定代表人代表权的<strong>限制</strong>，<strong>不得对抗善意相对人</strong>【民61条】</li>
+</ul>
+<p>若相对人善意</p>
+<ul>
+<li>有权主张成立表见代表</li>
+<li>该合同无须追认，直接归属于法人承受</li>
+<li>单位因此遭受的损失有权向法定代表人追偿【民62条】
+<ul>
+<li>法律或公司章程必须有规定</li>
+<li>法定代表人必须有过错</li>
+</ul>
+</li>
+</ul>
+<p>若相对人恶意</p>
+<ul>
+<li>不成立表见代表</li>
+<li>对甲公司效果归属未定【合同编通则解释20条】</li>
+<li>甲追认的，合同溯及到成立之日其，归属于甲承受</li>
+<li>甲不追认的，合同不能归属于甲承受
+<ul>
+<li>对恶意相对人承担缔约过失责任</li>
+<li>恶意的相对人也有过错</li>
+<li>因此各自承担与其过错相应的缔约过失损害赔偿责任</li>
+</ul>
+</li>
+</ul>
+<p>相对人“善意”的证明责任分配规则</p>
+<ul>
+<li>若法定代表人超越“对其代表权限的<strong>意定限制</strong>”，<strong>推定相对人为善意</strong>
+<ul>
+<li>因为这类限制往往不对外公开</li>
+</ul>
+</li>
+<li>若法定代表人超越“对其代表权限的<strong>法定限制</strong>”，由<strong>相对人对其善意承担证明责任</strong>，证明标准为“举证证明订立合同时尽到了合理的审查义务仍不知越权代表的事实”
+<ul>
+<li>不得以“不知道法律的规定”作为抗辩事由</li>
+</ul>
+</li>
+</ul>
+<h3 id="职务代理人员的法律侵权行为"><a class="markdownIt-Anchor" href="#职务代理人员的法律侵权行为"></a> 职务代理人员的法律/侵权行为</h3>
+<p>职务代理权：（法定代表人以外的）其他工作人员，在基于<strong>职务授权</strong>所享有的委托代理权限范围内（<strong>在执行工作任务的职权范围内</strong>），<strong>以法人名义</strong>独立实施的法律行为，归属于法人承受【民170条】</p>
+<ul>
+<li>规范理由：直接代理 + 有权代理</li>
+</ul>
+<p>若越权职务代理，<strong>原则上对法人无效</strong>，<strong>不得对抗善意相对人（表见代理）</strong>【合同编通则解释21条1款】</p>
+<p>认定“超越职权”的四种情形【合同编通则解释21条2款】</p>
+<ul>
+<li>依法需<strong>权力/决策机构决议</strong>的事项</li>
+<li>依法需<strong>执行机构决定</strong>的事项</li>
+<li>依法需<strong>法定代表人/负责人亲自实施</strong>的事项</li>
+<li><strong>非通常职权范围内</strong>的事项</li>
+</ul>
+<p>内部限制的对外效力：若事项未超越上述「超越职权」范围，但<strong>超越法人内部对工作人员的限制</strong>，合同对法人有效【合同编通则解释21条3款】</p>
+<ul>
+<li>无需考虑「表见代理」</li>
+<li>除非法人<strong>能证明相对人恶意</strong></li>
+</ul>
+<p>法人因<strong>表见代理</strong>或内部限制的对外效力（合同编通则解释21条3款）担责后，可向故意或重大过失的工作人员追偿【合同编通则解释21条4款】</p>
+<p>其他工作人员实施的侵权行为【民1191条】：（法定代表人之外）的其他工作人员，因执行工作任务致人损害，成立侵权的，由用人单位承担无过错的替代责任。执行工作任务的工作人员不对外承担责任。</p>
+<ul>
+<li>规范理由：报偿理论</li>
+</ul>
+<h3 id="人章不一致时合同的归属"><a class="markdownIt-Anchor" href="#人章不一致时合同的归属"></a> 人章不一致时合同的归属</h3>
+<p>总结：**认人不认章！**效力关键在行为人权限，而非公章真实性</p>
+<p>公章的意义：公章用于表明行为“以法人名义”而非个人名义，真实性不影响名义认定。</p>
+<ul>
+<li>即使未盖章，其他事实（如合同抬头、法定代表人签字）也可认定“以法人名义”</li>
+</ul>
+<p><strong>真人假章</strong></p>
+<ul>
+<li>法定代表人/有权代理人在权限内盖章（即使假章），合同直接归属法人</li>
+<li>例：法定代表人用私刻公章签约，合同仍对法人有效。</li>
+</ul>
+<p><strong>真人无章</strong></p>
+<ul>
+<li>法定代表人/有权代理人在权限内仅签名/按指印，未盖公章</li>
+<li>只要相对人能证明合同是法定代表人/有权代理人在权限内订立，合同直接归属法人</li>
+<li>注意：当事人<strong>约定以加盖公章作为合同成立条件</strong>的除外</li>
+</ul>
+<p><strong>真章无人</strong></p>
+<ul>
+<li>合同仅加盖公章，无人员签名/按指印</li>
+<li>只要相对人能证明合同是法定代表人/有权代理人在权限内订立，合同直接归属法人</li>
+</ul>
+<p><strong>假人真章/假章/无章（反正人是假的）</strong></p>
+<ul>
+<li>无权代理人/越权代表人用真章签约，是否归属法人分两种情况：
+<ul>
+<li>构成表见代表/代理：直接归属法人</li>
+<li>不构成表见代表/代理，且未追认：不归属法人</li>
+</ul>
+</li>
+</ul>
+<h3 id="公司对外担保"><a class="markdownIt-Anchor" href="#公司对外担保"></a> 公司对外担保</h3>
+<p>民法怎么这么多啊！！<img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/stickers/dino_50.jpg" style="margin:0; display: inline;"></p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/japanese/jp-galgame-setup.html" rel="prev" title="如何优雅地啃日语生肉（Galgame）">
+                  <i class="fa fa-angle-left"></i> 如何优雅地啃日语生肉（Galgame）
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 2020 – 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="fa fa-terminal"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">oscarcx123</span>
+        <span class="post-meta-item">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-chart-line"></i>
+          </span>
+          <span title="站点总字数">268k</span>
+        </span>
+        <span class="post-meta-item">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-coffee"></i>
+          </span>
+          <span title="站点阅读时长">14:53</span>
+        </span>
+  </div>
+  <div class="powered-by">
+    <span class="post-meta-item">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v6.3.0 强力驱动
+    </span>
+    <span class="post-meta-item"> 主题 – <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v8.18.1
+    </span>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script size="300" alpha="0.6" zIndex="-1" src="/js/ribbon.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.6.0/pjax.min.js" integrity="sha256-vxLn1tSKWD4dqbMRyv940UYw4sXgMtYcK6reefzZrao=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.0.8/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/pjax.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/katex.min.css" integrity="sha256-3574TpfThVfeAhg+I4+N39EJiLN3QUkuEsMVe8hWAR4=" crossorigin="anonymous">
+  <script class="next-config" data-name="katex" type="application/json">{"copy_tex_js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/contrib/copy-tex.min.js","integrity":"sha256-Us54+rSGDSTvIhKKUs4kygE2ipA0RXpWWh0/zLqw3bs="}}</script>
+  <script src="/js/third-party/math/katex.js"></script>
+
+
+<script type="text/javascript">
+  // 显示“展开”和“折叠”
+  function collapsableTitle(x) {
+    var nav = document.getElementsByClassName("sidebar-nav-toc")[0];
+    if (x.matches) { // If media query matches
+      var content = document.getElementsByClassName("sidebar-panel-container")[0];
+      if (content.style.display = "none") {
+        nav.textContent = "文章目录 [展开]";
+      }
+      else {
+        nav.textContent = "文章目录 [折叠]";
+      }
+    } 
+    else {
+      nav.textContent = "文章目录";
+    }
+  }
+
+  var x = window.matchMedia("(max-width: 991px)"); // media query
+  collapsableTitle(x);
+  x.addListener(collapsableTitle);
+
+  // 控制目录的折叠
+  var tos = document.getElementsByClassName("sidebar-nav")[0];
+  var i;
+
+  tos.addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = document.getElementsByClassName("sidebar-panel-container")[0];
+    var nav = document.getElementsByClassName("sidebar-nav-toc")[0];
+    if (content.style.display === "block" && window.innerWidth < 991) {
+      content.style.display = "none";
+      nav.textContent = "文章目录 [展开]";
+    } else {
+      content.style.display = "block";
+      if (window.innerWidth < 991) {
+        nav.textContent = "文章目录 [折叠]";
+      }
+    }
+  });
+
+  // 因为启用pjax，需要监听complete事件，来实现默认折叠效果
+  document.addEventListener('pjax:complete', function() {
+    if (window.innerWidth < 991) {
+      let content = document.getElementsByClassName("sidebar-panel-container")[0];
+      content.style.display = "none";
+      let nav = document.getElementsByClassName("sidebar-nav-toc")[0];
+      nav.textContent = "文章目录 [展开]";
+      }
+    });
+  </script>
+</body>
+</html>

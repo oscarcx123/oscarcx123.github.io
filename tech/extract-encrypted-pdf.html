@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-64x64-dragon.jpg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-64x64-dragon.jpg">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-64x64-dragon.jpg">
+  <link rel="mask-icon" href="/images/favicon-64x64-dragon.jpg" color="#222">
+  <meta name="google-site-verification" content="-QMh-gRPduq5T_vg3_Pwi3kZsNSiyuEpPBaDIXV8J34">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"oscarcx.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.18.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":true,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+
+
+  <style type="text/css">
+
+div.hcb-content.hcb-block.hcbnote, details.hcb-content.box.hcbnote,div.hcb-content.hcb-block.hcbabstract, details.hcb-content.box.hcbabstract,div.hcb-content.hcb-block.hcbinfo, details.hcb-content.box.hcbinfo,div.hcb-content.hcb-block.hcbtip, details.hcb-content.box.hcbtip,div.hcb-content.hcb-block.hcbsuccess, details.hcb-content.box.hcbsuccess,div.hcb-content.hcb-block.hcbquestion, details.hcb-content.box.hcbquestion,div.hcb-content.hcb-block.hcbwarning, details.hcb-content.box.hcbwarning,div.hcb-content.hcb-block.hcbfailure, details.hcb-content.box.hcbfailure,div.hcb-content.hcb-block.hcbdanger, details.hcb-content.box.hcbdanger,div.hcb-content.hcb-block.hcbbug, details.hcb-content.box.hcbbug,div.hcb-content.hcb-block.hcbexample, details.hcb-content.box.hcbexample,div.hcb-content.hcb-block.hcbquote, details.hcb-content.box.hcbquote {
+  border: .05rem solid #448aff;
+  border-radius: .2rem;
+  font-size: 0.96rem;
+  margin: 1.5625em 0;
+  padding: 0 1.2rem;
+  transition: box-shadow 250ms;
+}
+div.hcb-content.hcb-block.hcbnote, details.hcb-content.box.hcbnote {
+  border-color: #448aff;
+}
+div.hcb-content.hcb-block.hcbabstract, details.hcb-content.box.hcbabstract {
+  border-color: #00b0ff;
+}
+div.hcb-content.hcb-block.hcbinfo, details.hcb-content.box.hcbinfo {
+  border-color: #00b8d4;
+}
+div.hcb-content.hcb-block.hcbtip, details.hcb-content.box.hcbtip {
+  border-color: #00bfa5;
+}
+div.hcb-content.hcb-block.hcbsuccess, details.hcb-content.box.hcbsuccess {
+  border-color: #00c853;
+}
+div.hcb-content.hcb-block.hcbquestion, details.hcb-content.box.hcbquestion {
+  border-color: #64dd17;
+}
+div.hcb-content.hcb-block.hcbwarning, details.hcb-content.box.hcbwarning {
+  border-color: #ff9100;
+}
+div.hcb-content.hcb-block.hcbfailure, details.hcb-content.box.hcbfailure {
+  border-color: #ff5252;
+}
+div.hcb-content.hcb-block.hcbdanger, details.hcb-content.box.hcbdanger {
+  border-color: #ff1744;
+}
+div.hcb-content.hcb-block.hcbbug, details.hcb-content.box.hcbbug {
+  border-color: #f50057;
+}
+div.hcb-content.hcb-block.hcbexample, details.hcb-content.box.hcbexample {
+  border-color: #7c4dff;
+}
+div.hcb-content.hcb-block.hcbquote, details.hcb-content.box.hcbquote {
+  border-color: #9e9e9e;
+}
+div.hcb-content.hcb-block.hcbnote:focus-within, details.hcb-content.box.hcbnote:focus-within {
+  box-shadow: 0 0 0 .2rem #448aff1a;
+}
+div.hcb-content.hcb-block.hcbabstract:focus-within, details.hcb-content.box.hcbabstract:focus-within {
+  box-shadow: 0 0 0 .2rem #00b0ff1a;
+}
+div.hcb-content.hcb-block.hcbinfo:focus-within, details.hcb-content.box.hcbinfo:focus-within {
+  box-shadow: 0 0 0 .2rem #00b8d41a;
+}
+div.hcb-content.hcb-block.hcbtip:focus-within, details.hcb-content.box.hcbtip:focus-within {
+  box-shadow: 0 0 0 .2rem #00bfa51a;
+}
+div.hcb-content.hcb-block.hcbsuccess:focus-within, details.hcb-content.box.hcbsuccess:focus-within {
+  box-shadow: 0 0 0 .2rem #00c8531a;
+}
+div.hcb-content.hcb-block.hcbquestion:focus-within, details.hcb-content.box.hcbquestion:focus-within {
+  box-shadow: 0 0 0 .2rem #64dd171a;
+}
+div.hcb-content.hcb-block.hcbwarning:focus-within, details.hcb-content.box.hcbwarning:focus-within {
+  box-shadow: 0 0 0 .2rem #ff91001a;
+}
+div.hcb-content.hcb-block.hcbfailure:focus-within, details.hcb-content.box.hcbfailure:focus-within {
+  box-shadow: 0 0 0 .2rem #ff52521a;
+}
+div.hcb-content.hcb-block.hcbdanger:focus-within, details.hcb-content.box.hcbdanger:focus-within {
+  box-shadow: 0 0 0 .2rem #ff17441a;
+}
+div.hcb-content.hcb-block.hcbbug:focus-within, details.hcb-content.box.hcbbug:focus-within {
+  box-shadow: 0 0 0 .2rem #f500571a;
+}
+div.hcb-content.hcb-block.hcbexample:focus-within, details.hcb-content.box.hcbexample:focus-within {
+  box-shadow: 0 0 0 .2rem #7c4dff1a;
+}
+div.hcb-content.hcb-block.hcbquote:focus-within, details.hcb-content.box.hcbquote:focus-within {
+  box-shadow: 0 0 0 .2rem #9e9e9e1a;
+}
+div.hcb-content.hcb-block.hcbnote *, details.hcb-content.box.hcbnote *,div.hcb-content.hcb-block.hcbabstract *, details.hcb-content.box.hcbabstract *,div.hcb-content.hcb-block.hcbinfo *, details.hcb-content.box.hcbinfo *,div.hcb-content.hcb-block.hcbtip *, details.hcb-content.box.hcbtip *,div.hcb-content.hcb-block.hcbsuccess *, details.hcb-content.box.hcbsuccess *,div.hcb-content.hcb-block.hcbquestion *, details.hcb-content.box.hcbquestion *,div.hcb-content.hcb-block.hcbwarning *, details.hcb-content.box.hcbwarning *,div.hcb-content.hcb-block.hcbfailure *, details.hcb-content.box.hcbfailure *,div.hcb-content.hcb-block.hcbdanger *, details.hcb-content.box.hcbdanger *,div.hcb-content.hcb-block.hcbbug *, details.hcb-content.box.hcbbug *,div.hcb-content.hcb-block.hcbexample *, details.hcb-content.box.hcbexample *,div.hcb-content.hcb-block.hcbquote *, details.hcb-content.box.hcbquote * {
+  box-sizing: border-box;
+}
+div.hcb-content.hcb-block.hcbnote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbnote > summary,div.hcb-content.hcb-block.hcbabstract > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbabstract > summary,div.hcb-content.hcb-block.hcbinfo > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbinfo > summary,div.hcb-content.hcb-block.hcbtip > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbtip > summary,div.hcb-content.hcb-block.hcbsuccess > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbsuccess > summary,div.hcb-content.hcb-block.hcbquestion > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquestion > summary,div.hcb-content.hcb-block.hcbwarning > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbwarning > summary,div.hcb-content.hcb-block.hcbfailure > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbfailure > summary,div.hcb-content.hcb-block.hcbdanger > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbdanger > summary,div.hcb-content.hcb-block.hcbbug > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbbug > summary,div.hcb-content.hcb-block.hcbexample > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbexample > summary,div.hcb-content.hcb-block.hcbquote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquote > summary {
+  border-top-right-radius: 0.1rem;
+  border-top-left-radius: 0.1rem;
+  border-left-width: 0.2rem;
+  display: block;
+  min-height: 1rem;
+  border: none;
+  font-weight: 700;
+  margin: 0 -1.2rem 1rem;
+  padding: 0.4rem 0.6rem;
+  position: relative;
+  outline: none;
+}
+details.hcb-content.box.hcbnote > summary,details.hcb-content.box.hcbabstract > summary,details.hcb-content.box.hcbinfo > summary,details.hcb-content.box.hcbtip > summary,details.hcb-content.box.hcbsuccess > summary,details.hcb-content.box.hcbquestion > summary,details.hcb-content.box.hcbwarning > summary,details.hcb-content.box.hcbfailure > summary,details.hcb-content.box.hcbdanger > summary,details.hcb-content.box.hcbbug > summary,details.hcb-content.box.hcbexample > summary,details.hcb-content.box.hcbquote > summary {
+  cursor: pointer;
+}
+details.hcb-content.box.hcbnote:not([open]) > summary,details.hcb-content.box.hcbabstract:not([open]) > summary,details.hcb-content.box.hcbinfo:not([open]) > summary,details.hcb-content.box.hcbtip:not([open]) > summary,details.hcb-content.box.hcbsuccess:not([open]) > summary,details.hcb-content.box.hcbquestion:not([open]) > summary,details.hcb-content.box.hcbwarning:not([open]) > summary,details.hcb-content.box.hcbfailure:not([open]) > summary,details.hcb-content.box.hcbdanger:not([open]) > summary,details.hcb-content.box.hcbbug:not([open]) > summary,details.hcb-content.box.hcbexample:not([open]) > summary,details.hcb-content.box.hcbquote:not([open]) > summary {
+  margin-bottom: 0;
+}
+div.hcb-content.hcb-block.hcbnote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbnote > summary {
+  background-color: #448aff1a;
+}
+div.hcb-content.hcb-block.hcbabstract > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbabstract > summary {
+  background-color: #00b0ff1a;
+}
+div.hcb-content.hcb-block.hcbinfo > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbinfo > summary {
+  background-color: #00b8d41a;
+}
+div.hcb-content.hcb-block.hcbtip > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbtip > summary {
+  background-color: #00bfa51a;
+}
+div.hcb-content.hcb-block.hcbsuccess > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbsuccess > summary {
+  background-color: #00c8531a;
+}
+div.hcb-content.hcb-block.hcbquestion > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquestion > summary {
+  background-color: #64dd171a;
+}
+div.hcb-content.hcb-block.hcbwarning > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbwarning > summary {
+  background-color: #ff91001a;
+}
+div.hcb-content.hcb-block.hcbfailure > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbfailure > summary {
+  background-color: #ff52521a;
+}
+div.hcb-content.hcb-block.hcbdanger > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbdanger > summary {
+  background-color: #ff17441a;
+}
+div.hcb-content.hcb-block.hcbbug > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbbug > summary {
+  background-color: #f500571a;
+}
+div.hcb-content.hcb-block.hcbexample > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbexample > summary {
+  background-color: #7c4dff1a;
+}
+div.hcb-content.hcb-block.hcbquote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquote > summary {
+  background-color: #9e9e9e1a;
+}
+div.hcb-content.hcb-block.hcbnote > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbnote > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #448aff;
+}
+div.hcb-content.hcb-block.hcbabstract > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbabstract > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00b0ff;
+}
+div.hcb-content.hcb-block.hcbinfo > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbinfo > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00b8d4;
+}
+div.hcb-content.hcb-block.hcbtip > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbtip > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00bfa5;
+}
+div.hcb-content.hcb-block.hcbsuccess > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbsuccess > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00c853;
+}
+div.hcb-content.hcb-block.hcbquestion > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbquestion > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #64dd17;
+}
+div.hcb-content.hcb-block.hcbwarning > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbwarning > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff9100;
+}
+div.hcb-content.hcb-block.hcbfailure > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbfailure > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff5252;
+}
+div.hcb-content.hcb-block.hcbdanger > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbdanger > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff1744;
+}
+div.hcb-content.hcb-block.hcbbug > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbbug > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #f50057;
+}
+div.hcb-content.hcb-block.hcbexample > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbexample > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #7c4dff;
+}
+div.hcb-content.hcb-block.hcbquote > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbquote > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #9e9e9e;
+}
+details.hcb-content.box.hcbnote > summary > div.hcb-box-open-button,details.hcb-content.box.hcbabstract > summary > div.hcb-box-open-button,details.hcb-content.box.hcbinfo > summary > div.hcb-box-open-button,details.hcb-content.box.hcbtip > summary > div.hcb-box-open-button,details.hcb-content.box.hcbsuccess > summary > div.hcb-box-open-button,details.hcb-content.box.hcbquestion > summary > div.hcb-box-open-button,details.hcb-content.box.hcbwarning > summary > div.hcb-box-open-button,details.hcb-content.box.hcbfailure > summary > div.hcb-box-open-button,details.hcb-content.box.hcbdanger > summary > div.hcb-box-open-button,details.hcb-content.box.hcbbug > summary > div.hcb-box-open-button,details.hcb-content.box.hcbexample > summary > div.hcb-box-open-button,details.hcb-content.box.hcbquote > summary > div.hcb-box-open-button {
+  float: right;
+}
+details.hcb-content.box.hcbnote > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbabstract > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbinfo > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbtip > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbsuccess > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbquestion > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbwarning > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbfailure > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbdanger > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbbug > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbexample > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbquote > summary > div.hcb-box-open-button > i {
+  margin: 0 0.6rem 0 0.6rem;
+  font-size: 0.7rem;
+  transition: transform 250ms
+}
+details.hcb-content.box.hcbnote:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbabstract:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbinfo:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbtip:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbsuccess:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquestion:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbwarning:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbfailure:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbdanger:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbbug:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbexample:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquote:not([open]) > summary > div.hcb-box-open-button i {
+  transform: rotate(270deg);
+}
+details.hcb-content.box.hcbnote[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbabstract[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbinfo[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbtip[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbsuccess[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquestion[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbwarning[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbfailure[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbdanger[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbbug[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbexample[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquote[open] > summary > div.hcb-box-open-button i {
+  transform: rotate(180deg);
+}
+details.hcb-content.box.hcbnote summary div.hcb-box-open-button i {
+  color: #448aff;
+}
+details.hcb-content.box.hcbabstract summary div.hcb-box-open-button i {
+  color: #00b0ff;
+}
+details.hcb-content.box.hcbinfo summary div.hcb-box-open-button i {
+  color: #00b8d4;
+}
+details.hcb-content.box.hcbtip summary div.hcb-box-open-button i {
+  color: #00bfa5;
+}
+details.hcb-content.box.hcbsuccess summary div.hcb-box-open-button i {
+  color: #00c853;
+}
+details.hcb-content.box.hcbquestion summary div.hcb-box-open-button i {
+  color: #64dd17;
+}
+details.hcb-content.box.hcbwarning summary div.hcb-box-open-button i {
+  color: #ff9100;
+}
+details.hcb-content.box.hcbfailure summary div.hcb-box-open-button i {
+  color: #ff5252;
+}
+details.hcb-content.box.hcbdanger summary div.hcb-box-open-button i {
+  color: #ff1744;
+}
+details.hcb-content.box.hcbbug summary div.hcb-box-open-button i {
+  color: #f50057;
+}
+details.hcb-content.box.hcbexample summary div.hcb-box-open-button i {
+  color: #7c4dff;
+}
+details.hcb-content.box.hcbquote summary div.hcb-box-open-button i {
+  color: #9e9e9e;
+}
+div.hcb-content.hcb-cards * {
+  box-sizing: border-box;
+}
+input.hcb-content.hcb-cards-input {
+  display: none;
+}
+div.hcb-content.hcb-cards-labels {
+  position: relative;
+  box-shadow: 0 -0.05rem #00000012 inset;
+  display: flex;
+  margin-bottom: 1.25rem;
+}
+div.hcb-content.hcb-cards-labels:before {
+  background: var(--cards-color);
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: translateX(var(--md-indicator-x));
+  transition: width 225ms, transform 250ms;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  width: var(--md-indicator-width);
+}
+label.hcb-content.hcb-cards-label {
+  border-bottom: 0.1rem solid #0000;
+  border-radius: 0.1rem 0.1rem 0 0;
+  cursor: pointer;
+  color: #0000008a;
+  font-size: 0.92em;
+  font-weight: 700;
+  padding: 0 1.25rem 0.625rem;
+  transition: color 250ms;
+}
+label.hcb-content.hcb-cards-label.active, label.hcb-content.hcb-cards-label:hover {
+  color: var(--cards-color);
+}
+div.hcb-content.hcb-cards-content {
+  display: none;
+}
+div.hcb-content.hcb-cards-content.active {
+  display: block;
+}
+</style>
+    <meta name="description" content="前情提要 最近备考GRE，在GitHub上面找到了一些备考资料，其中有个文件叫数学120题.exe。我开始以为是某种模考软件，clone仓库之后才发现居然是加密的PDF文档。好家伙，以前只见过PDF自带的密码，还真没见过这种“一机一码”形式的。这么个绝佳的研究（摸鱼）机会，当然不能放过啦~">
+<meta property="og:type" content="article">
+<meta property="og:title" content="记一次China-DRM加密的PDF破解">
+<meta property="og:url" content="https://oscarcx.com/tech/extract-encrypted-pdf.html">
+<meta property="og:site_name" content="Cow">
+<meta property="og:description" content="前情提要 最近备考GRE，在GitHub上面找到了一些备考资料，其中有个文件叫数学120题.exe。我开始以为是某种模考软件，clone仓库之后才发现居然是加密的PDF文档。好家伙，以前只见过PDF自带的密码，还真没见过这种“一机一码”形式的。这么个绝佳的研究（摸鱼）机会，当然不能放过啦~">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/extract_encrypted_pdf_1.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/extract_encrypted_pdf_2.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/extract_encrypted_pdf_3.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/extract_encrypted_pdf_4.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/extract_encrypted_pdf_5.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/extract_encrypted_pdf_6.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/extract_encrypted_pdf_7.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/extract_encrypted_pdf_8.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/extract_encrypted_pdf_9.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/extract_encrypted_pdf_10.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/extract_encrypted_pdf_11.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/extract_encrypted_pdf_12.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/extract_encrypted_pdf_13.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/extract_encrypted_pdf_14.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/extract_encrypted_pdf_15.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/extract_encrypted_pdf_16.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/extract_encrypted_pdf_17.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/extract_encrypted_pdf_18.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/extract_encrypted_pdf_19.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/extract_encrypted_pdf_20.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/extract_encrypted_pdf_21.png">
+<meta property="og:image" content="https://oscarcx.com/hexo_resource/img/extract_encrypted_pdf_22.png">
+<meta property="article:published_time" content="2020-07-22T15:16:40.000Z">
+<meta property="article:modified_time" content="2025-05-18T16:05:39.205Z">
+<meta property="article:author" content="oscarcx123">
+<meta property="article:tag" content="hack">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://oscarcx.com/hexo_resource/img/extract_encrypted_pdf_1.png">
+
+
+<link rel="canonical" href="https://oscarcx.com/tech/extract-encrypted-pdf.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://oscarcx.com/tech/extract-encrypted-pdf.html","path":"tech/extract-encrypted-pdf.html","title":"记一次China-DRM加密的PDF破解"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>记一次China-DRM加密的PDF破解 | Cow</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<style type="text/css">
+.spoiler {
+  display: inline;
+}
+p.spoiler {
+  display: flex;
+}
+.spoiler a {
+  pointer-events: none;
+}
+.spoiler-blur, .spoiler-blur > * {
+  transition: text-shadow .5s ease;
+}
+.spoiler .spoiler-blur, .spoiler .spoiler-blur > * {
+  color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  text-shadow: 0 0 10px grey;
+  cursor: pointer;
+}
+.spoiler .spoiler-blur:hover, .spoiler .spoiler-blur:hover > * {
+  text-shadow: 0 0 5px grey;
+}
+.spoiler-box, .spoiler-box > * {
+  transition: color .5s ease,
+  background-color .5s ease;
+}
+.spoiler .spoiler-box, .spoiler .spoiler-box > * {
+  color: black;
+  background-color: black;
+  text-shadow: none;
+}</style></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Cow</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%89%8D%E6%83%85%E6%8F%90%E8%A6%81"><span class="nav-number">1.</span> <span class="nav-text"> 前情提要</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%98%8E%E5%AF%9F%E7%A7%8B%E6%AF%AB"><span class="nav-number">2.</span> <span class="nav-text"> 明察秋毫</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%88%9D%E9%9C%B2%E9%94%8B%E8%8A%92"><span class="nav-number">3.</span> <span class="nav-text"> 初露锋芒</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9B%B0%E9%9A%BE%E9%87%8D%E9%87%8D"><span class="nav-number">4.</span> <span class="nav-text"> 困难重重</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%9F%B3%E6%9A%97%E8%8A%B1%E6%98%8E"><span class="nav-number">5.</span> <span class="nav-text"> 柳暗花明</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%BD%92%E6%A0%B9%E7%BB%93%E5%BA%95"><span class="nav-number">6.</span> <span class="nav-text"> 归根结底</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="oscarcx123"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">oscarcx123</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">32</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/oscarcx123" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;oscarcx123" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://oscarcx.com/tech/extract-encrypted-pdf.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="oscarcx123">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Cow">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="记一次China-DRM加密的PDF破解 | Cow">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          记一次China-DRM加密的PDF破解
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2020-07-22 15:16:40" itemprop="dateCreated datePublished" datetime="2020-07-22T15:16:40+00:00">2020-07-22</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/tech/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>1.9k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>6 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h1 id="前情提要"><a class="markdownIt-Anchor" href="#前情提要"></a> 前情提要</h1>
+<p>最近备考GRE，在GitHub上面找到了一些备考资料，其中有个文件叫<code>数学120题.exe</code>。我开始以为是某种模考软件，clone仓库之后才发现居然是加密的PDF文档。好家伙，以前只见过PDF自带的密码，还真没见过这种“一机一码”形式的。这么个绝佳的研究（摸鱼）机会，当然不能放过啦~</p>
+<span id="more"></span>
+<p>既然要分析这种来路不明的可执行文件，当然要在虚拟机里头折腾啦。我这次犯的错误，就是直接在Host OS上面运行了，后面当然也吃到了一点苦头。</p>
+<h1 id="明察秋毫"><a class="markdownIt-Anchor" href="#明察秋毫"></a> 明察秋毫</h1>
+<p>第一步当然就是双击程序看看，结果却吃了闭门羹。</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/extract_encrypted_pdf_1.png" alt="" /></p>
+<p>既然如此，那我下载个Adobe Reader 9应该就能打开了吧。不出所料，这回终于见到了交互界面。</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/extract_encrypted_pdf_2.png" alt="" /></p>
+<p>我当然是没有阅读密码的，那就随便输入点内容看看会有啥反应吧。看起来只能输入一串16进制的数字，而且如果输入内容过长就会直接闪退。不过这个中文的报错信息“阅读授权不正确”貌似可以作为突破口。</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/extract_encrypted_pdf_3.png" alt="" /></p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/extract_encrypted_pdf_4.png" alt="" /></p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/extract_encrypted_pdf_5.png" alt="" /></p>
+<h1 id="初露锋芒"><a class="markdownIt-Anchor" href="#初露锋芒"></a> 初露锋芒</h1>
+<p>用peid看了下，这个加密文件貌似没有壳，那就直接上逆向工具了。</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/extract_encrypted_pdf_6.png" alt="" /></p>
+<p>用IDA打开加密文件，发现加密文件中绝大部分都是数据，看上去货真价实。</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/extract_encrypted_pdf_7.png" alt="" /></p>
+<p>试图使用<code>Local Windows debugger</code>进行调试，然而报错，报错内容如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">766C43D2: unknown exception code EF000007 (exc.code ef000007, tid 13496)</span><br><span class="line">UNKNOWN 766C43D2: KernelBase.dll:kernelbase_RaiseException+62</span><br></pre></td></tr></table></figure>
+<p>条条大路通罗马，既然没法调试，那就按F5看看伪代码吧，然而又失败，报错如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Decompilation failure:</span><br><span class="line">4D87A0: call analysis failed</span><br><span class="line"></span><br><span class="line">Please refer to the manual to find appropriate actions</span><br></pre></td></tr></table></figure>
+<p>我去网上搜了一圈，好像要做什么“堆栈平衡”，于是乎我依葫芦画瓢，开启显示<code>Stack Pointer</code>，然后<code>Alt+K</code>手动调整，然而还是失败。</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/extract_encrypted_pdf_8.png" alt="" /></p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/extract_encrypted_pdf_9.png" alt="" /></p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/extract_encrypted_pdf_10.png" alt="" /></p>
+<p>到这里我已经跟这加密文件杠上了，有种不撞南墙不回头的感觉，既然IDA不好使，就换个工具。于是我掏出了古老的OllyDbg，成功附加到加密文件上了。</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/extract_encrypted_pdf_11.png" alt="" /></p>
+<p>用<code>Ctrl+G</code>跳转到程序入口，然后<code>F9</code>让程序加载完成之后，<code>右键</code> &gt; <code>中文搜索引擎</code> &gt; <code>智能搜索</code>就可以看到文本字符串了~</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/extract_encrypted_pdf_12.png" alt="" /></p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/extract_encrypted_pdf_13.png" alt="" /></p>
+<p>比较奇怪的是，之前用工具看的结果是<code>Microsoft Visual C++ 6.0</code>，但是这里居然能看到<code>Borland Delphi</code>的字符串，感觉有点问题。</p>
+<table>
+<thead>
+<tr>
+<th>地址</th>
+<th>反汇编</th>
+<th>文本字符串</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>00405DDC</td>
+<td>push crackme.00405FDC</td>
+<td>Software\Borland\Locales</td>
+</tr>
+<tr>
+<td>00405DFA</td>
+<td>push crackme.00405FDC</td>
+<td>Software\Borland\Locales</td>
+</tr>
+<tr>
+<td>00405E18</td>
+<td>push crackme.00405FF8</td>
+<td>Software\Borland\Delphi\Locales</td>
+</tr>
+<tr>
+<td>004319CD</td>
+<td>push crackme.004319F8</td>
+<td>Delphi Picture</td>
+</tr>
+<tr>
+<td>004319DD</td>
+<td>push crackme.00431A08</td>
+<td>Delphi Component</td>
+</tr>
+</tbody>
+</table>
+<p>再往下翻翻，发现程序居然往硬盘上写东西，路径是<code>c:\china-drm\</code>。看了眼，文件夹里头只有一个名为<code>pdfreadersts.ini</code>的空文件。不过也歪打正着知道了这个加密的名称。大概在网上搜了下关键词，发现虽然有零星几篇半桶水教程，但是他们都是在有一对确定可用的机器码和密钥的情况下破解的，破解方法就是替换机器码。这显然不适用于我，那就只能继续摸索了呗。</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/extract_encrypted_pdf_14.png" alt="" /></p>
+<p>继续翻看，又发现了一些耐人寻味的东西，看起来在试图阻止截图和打印。</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/extract_encrypted_pdf_15.png" alt="" /></p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/extract_encrypted_pdf_16.png" alt="" /></p>
+<p>然后我还发现了这两条指令，果不其然，这个加密文件直接关闭了我的<code>Print Spooler</code>服务，这时候试图打印会提示<code>No Printer Installed</code>，然而实际上当然有安装打印机。所以吃一堑长一智，以后这种东西一定要放虚拟机里头捣鼓。这回运气好，只是被关了服务，要是触发暗桩被格盘可就惨了。</p>
+<table>
+<thead>
+<tr>
+<th>地址</th>
+<th>反汇编</th>
+<th>文本字符串</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0049AF17</td>
+<td>push crackme.0049B16C</td>
+<td>cmd.exe /c net stop Spooler</td>
+</tr>
+<tr>
+<td>0049C71E</td>
+<td>push crackme.0049C7D4</td>
+<td>cmd.exe /c net start Spooler</td>
+</tr>
+</tbody>
+</table>
+<h1 id="困难重重"><a class="markdownIt-Anchor" href="#困难重重"></a> 困难重重</h1>
+<p>刚刚在上面看到<code>阅读密码不正确</code>这个关键的字符串，那就定位过去看看实际的汇编代码。</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/extract_encrypted_pdf_17.png" alt="" /></p>
+<p>我开始以为<code>test</code>也是数值比较，后来查阅资料发现，<code>test</code>是用来测试一个位（performs a bitwise AND on two operands），这里应该是用来测试一方寄存器是否为空，具体可以看<a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/13064809/the-point-of-test-eax-eax">The point of test %eax %eax</a>。<code>je</code>是如果真就跳转（Jump if condition is met）。因为这里要跳过<code>阅读密码不正确</code>，所以直接把<code>je</code>改成<code>jmp</code>，即无条件跳转（performs an unconditional jump）。改完之后如下所示。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">00496E00    84DB            test bl,bl</span><br><span class="line">00496E02    EB 0F           jmp short crackme.00496E13</span><br><span class="line">00496E04    B8 9C714900     mov eax,crackme.0049719C                 ; 阅读密码不正确</span><br><span class="line">00496E09    E8 F267F9FF     call crackme.0042D600</span><br><span class="line">00496E0E    E9 91020000     jmp crackme.004970A4</span><br><span class="line">00496E13    8B86 08030000   mov eax,dword ptr ds:[esi+0x308]</span><br><span class="line">00496E19    8B10            mov edx,dword ptr ds:[eax]</span><br></pre></td></tr></table></figure>
+<p>一共有三处<code>阅读密码不正确</code>，全都如法炮制就可以了。然后随意输入阅读密码，这回就不出现<code>阅读密码不正确</code>，但是又出现了另一个错误提示。</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/extract_encrypted_pdf_18.png" alt="" /></p>
+<p>下断点定位，看起来这个地方应该是无法从上往下正常到达的，必然是通过<code>jmp</code>。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">00496BC0    E8 53DFF6FF     call crackme.00404B18</span><br><span class="line">00496BC5    74 1E           je short crackme.00496BE5</span><br><span class="line">00496BC7    B8 44714900     mov eax,crackme.00497144                 ; 阅读授权不合法！</span><br><span class="line">00496BCC    E8 2F6AF9FF     call crackme.0042D600</span><br><span class="line">00496BD1    E9 CE040000     jmp crackme.004970A4</span><br><span class="line">00496BD6    B8 60714900     mov eax,crackme.00497160                 ; 阅读授权不正确！</span><br><span class="line">00496BDB    E8 206AF9FF     call crackme.0042D600</span><br><span class="line">00496BE0    E9 BF040000     jmp crackme.004970A4</span><br><span class="line">00496BE5    8BC3            mov eax,ebx</span><br><span class="line">00496BE7    E8 B0CDF6FF     call crackme.0040399C</span><br></pre></td></tr></table></figure>
+<p>所以通过堆栈得知跳转之前的地址，然后把<code>jnz</code>变成<code>nop</code>就好了</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/extract_encrypted_pdf_19.png" alt="" /></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">00496AC3    83F8 04         cmp eax,0x4</span><br><span class="line">00496AC6    90              nop</span><br><span class="line">00496AC7    90              nop</span><br><span class="line">00496AC8    90              nop</span><br><span class="line">00496AC9    90              nop</span><br><span class="line">00496ACA    90              nop</span><br><span class="line">00496ACB    90              nop</span><br><span class="line">00496ACC    8D8D 04FEFFFF   lea ecx,dword ptr ss:[ebp-0x1FC]</span><br><span class="line">00496AD2    33D2            xor edx,edx                              ; crackme.00416BD8</span><br></pre></td></tr></table></figure>
+<p>折腾半天之后，确实不会提示阅读密码错误了，但是点击“确定”之后，又毫无反应，也没有捕获到任何错误。到这里就毫无头绪了，尝试一步步跟“机器码”和“阅读码”的计算，也没发现什么突破口，应该就是我太菜了。真就是一顿操作猛如虎，最后像个二百五。</p>
+<h1 id="柳暗花明"><a class="markdownIt-Anchor" href="#柳暗花明"></a> 柳暗花明</h1>
+<p>因为自己技术实在不行，到这儿也开始打退堂鼓了。不过在放弃之前，还是想最后再试试看，能不能发现什么线索。之前一直都用的是<code>中文搜索引擎</code>，这次试一试原生搜索功能。原生搜索在<code>右键</code> &gt; <code>查找</code> &gt; <code>所有参考文本字串</code>可以找到。</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/extract_encrypted_pdf_20.png" alt="" /></p>
+<p>Molebox？？这个东西在我以前搞魔塔的时候见过，有作者直接把RMXP游戏打包成一个exe文件，从而防止玩家随意篡改工程文件。当时只是以为在游戏领域有用，没想到能在这里再次见到。看来这加密PDF文件是有壳的啊！peid也太垃圾了吧，居然测不出来。</p>
+<table>
+<thead>
+<tr>
+<th>地址</th>
+<th>反汇编</th>
+<th>文本字符串</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>004D98D3</td>
+<td>push crackme.004EB73C</td>
+<td>ASCII &quot;VirtualProtect&quot;</td>
+</tr>
+<tr>
+<td>004D98E7</td>
+<td>push crackme.004EB72C</td>
+<td>ASCII &quot;VirtualQuery&quot;</td>
+</tr>
+<tr>
+<td>004E40E4</td>
+<td>mov dword ptr ss:[ebp-0x4],crackme.004EBF54</td>
+<td>ASCII &quot;VIRTUALPROTECT BROKEN&quot;</td>
+</tr>
+<tr>
+<td>004E21EA</td>
+<td>push crackme.004EBD28</td>
+<td>ASCII &quot;D:\Projects\My.SRC\MoleStudio\MoleBox\molebox2\bootup\mbx_DLL.cpp&quot;</td>
+</tr>
+</tbody>
+</table>
+<p>这回我找了<code>ExEinfoPE</code>来检测，试了两个版本，都回报<code>Molebox</code>，看来还是<code>peid</code>的问题了。而且是<code>Molebox</code>的话，我拆不出来那就太正常了~</p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/extract_encrypted_pdf_21.png" alt="" /></p>
+<p><img src="https://oscarcx.com/hexo_resource/img/loading_cow.png" data-src="https://oscarcx.com/hexo_resource/img/extract_encrypted_pdf_22.png" alt="" /></p>
+<p>知道是<code>Molebox 2.x</code>就好办了，网上都有现成的解包工具<code>demoleition v0.60</code>。我顺便去作者博客看了一眼，现在已经更新到<code>v0.64</code>了，不过<code>v0.60</code>应该已经足够。抱着试试的心态，我把加密文件拖进了解包工具。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">[i] Loading file: C:\Users\*****\Desktop\crackme.exe</span><br><span class="line">[+] MD5: e697f91b13068abac7d2c1d77ebd3edc</span><br><span class="line">[i] Molebox Pro v2.2570</span><br><span class="line">[i] MD5 check enabled. Decrypting control information, stage 2</span><br><span class="line">[i] Overlay found</span><br><span class="line">[i] MD5 check passed</span><br><span class="line">[i] Decrypting File System</span><br><span class="line">[i] Total files: 2</span><br><span class="line">[i] Extracting china-drm.ini</span><br><span class="line">[i] Extracting 数学120题.pdf</span><br><span class="line">[i] Saving crackme_unpacked.exe</span><br><span class="line">[i] Finished! Have a nice day!</span><br></pre></td></tr></table></figure>
+<p>居然成了。。。没想到逆向会以这种戏剧性的方式结束啊~</p>
+<h1 id="归根结底"><a class="markdownIt-Anchor" href="#归根结底"></a> 归根结底</h1>
+<p>这个东西按道理是肯定可以写出注册机的，据我步进跟踪的结果，最后应该是两个32位的hex在进行比较，但是既然已经有现成的工具，就没有继续深究。demoleition的原理当然无从得知，不过既然可以直接绕开密码，我猜可能可以在加密文件加载之后直接dump内存，然后把PDF文件扒出来吧，以后有空再试试了。</p>
+<p>虽然说最后只看结果，但是过程也是很重要的，毕竟每一次的摸索都能提高对工具和汇编的熟悉程度~</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/hack/" rel="tag"># hack</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/tech/spine-skeleton-decode.html" rel="prev" title="读取Spine骨骼动画">
+                  <i class="fa fa-angle-left"></i> 读取Spine骨骼动画
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/tech/manjaro-xfce-setup.html" rel="next" title="Manjaro XFCE 安装和调教">
+                  Manjaro XFCE 安装和调教 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 2020 – 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="fa fa-terminal"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">oscarcx123</span>
+        <span class="post-meta-item">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-chart-line"></i>
+          </span>
+          <span title="站点总字数">268k</span>
+        </span>
+        <span class="post-meta-item">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-coffee"></i>
+          </span>
+          <span title="站点阅读时长">14:53</span>
+        </span>
+  </div>
+  <div class="powered-by">
+    <span class="post-meta-item">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v6.3.0 强力驱动
+    </span>
+    <span class="post-meta-item"> 主题 – <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v8.18.1
+    </span>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script size="300" alpha="0.6" zIndex="-1" src="/js/ribbon.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.6.0/pjax.min.js" integrity="sha256-vxLn1tSKWD4dqbMRyv940UYw4sXgMtYcK6reefzZrao=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.0.8/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/pjax.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/katex.min.css" integrity="sha256-3574TpfThVfeAhg+I4+N39EJiLN3QUkuEsMVe8hWAR4=" crossorigin="anonymous">
+  <script class="next-config" data-name="katex" type="application/json">{"copy_tex_js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/contrib/copy-tex.min.js","integrity":"sha256-Us54+rSGDSTvIhKKUs4kygE2ipA0RXpWWh0/zLqw3bs="}}</script>
+  <script src="/js/third-party/math/katex.js"></script>
+
+
+<script type="text/javascript">
+  // 显示“展开”和“折叠”
+  function collapsableTitle(x) {
+    var nav = document.getElementsByClassName("sidebar-nav-toc")[0];
+    if (x.matches) { // If media query matches
+      var content = document.getElementsByClassName("sidebar-panel-container")[0];
+      if (content.style.display = "none") {
+        nav.textContent = "文章目录 [展开]";
+      }
+      else {
+        nav.textContent = "文章目录 [折叠]";
+      }
+    } 
+    else {
+      nav.textContent = "文章目录";
+    }
+  }
+
+  var x = window.matchMedia("(max-width: 991px)"); // media query
+  collapsableTitle(x);
+  x.addListener(collapsableTitle);
+
+  // 控制目录的折叠
+  var tos = document.getElementsByClassName("sidebar-nav")[0];
+  var i;
+
+  tos.addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = document.getElementsByClassName("sidebar-panel-container")[0];
+    var nav = document.getElementsByClassName("sidebar-nav-toc")[0];
+    if (content.style.display === "block" && window.innerWidth < 991) {
+      content.style.display = "none";
+      nav.textContent = "文章目录 [展开]";
+    } else {
+      content.style.display = "block";
+      if (window.innerWidth < 991) {
+        nav.textContent = "文章目录 [折叠]";
+      }
+    }
+  });
+
+  // 因为启用pjax，需要监听complete事件，来实现默认折叠效果
+  document.addEventListener('pjax:complete', function() {
+    if (window.innerWidth < 991) {
+      let content = document.getElementsByClassName("sidebar-panel-container")[0];
+      content.style.display = "none";
+      let nav = document.getElementsByClassName("sidebar-nav-toc")[0];
+      nav.textContent = "文章目录 [展开]";
+      }
+    });
+  </script>
+</body>
+</html>

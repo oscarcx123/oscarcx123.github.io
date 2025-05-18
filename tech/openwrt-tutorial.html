@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-64x64-dragon.jpg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-64x64-dragon.jpg">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-64x64-dragon.jpg">
+  <link rel="mask-icon" href="/images/favicon-64x64-dragon.jpg" color="#222">
+  <meta name="google-site-verification" content="-QMh-gRPduq5T_vg3_Pwi3kZsNSiyuEpPBaDIXV8J34">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"oscarcx.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.18.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":true,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+
+
+  <style type="text/css">
+
+div.hcb-content.hcb-block.hcbnote, details.hcb-content.box.hcbnote,div.hcb-content.hcb-block.hcbabstract, details.hcb-content.box.hcbabstract,div.hcb-content.hcb-block.hcbinfo, details.hcb-content.box.hcbinfo,div.hcb-content.hcb-block.hcbtip, details.hcb-content.box.hcbtip,div.hcb-content.hcb-block.hcbsuccess, details.hcb-content.box.hcbsuccess,div.hcb-content.hcb-block.hcbquestion, details.hcb-content.box.hcbquestion,div.hcb-content.hcb-block.hcbwarning, details.hcb-content.box.hcbwarning,div.hcb-content.hcb-block.hcbfailure, details.hcb-content.box.hcbfailure,div.hcb-content.hcb-block.hcbdanger, details.hcb-content.box.hcbdanger,div.hcb-content.hcb-block.hcbbug, details.hcb-content.box.hcbbug,div.hcb-content.hcb-block.hcbexample, details.hcb-content.box.hcbexample,div.hcb-content.hcb-block.hcbquote, details.hcb-content.box.hcbquote {
+  border: .05rem solid #448aff;
+  border-radius: .2rem;
+  font-size: 0.96rem;
+  margin: 1.5625em 0;
+  padding: 0 1.2rem;
+  transition: box-shadow 250ms;
+}
+div.hcb-content.hcb-block.hcbnote, details.hcb-content.box.hcbnote {
+  border-color: #448aff;
+}
+div.hcb-content.hcb-block.hcbabstract, details.hcb-content.box.hcbabstract {
+  border-color: #00b0ff;
+}
+div.hcb-content.hcb-block.hcbinfo, details.hcb-content.box.hcbinfo {
+  border-color: #00b8d4;
+}
+div.hcb-content.hcb-block.hcbtip, details.hcb-content.box.hcbtip {
+  border-color: #00bfa5;
+}
+div.hcb-content.hcb-block.hcbsuccess, details.hcb-content.box.hcbsuccess {
+  border-color: #00c853;
+}
+div.hcb-content.hcb-block.hcbquestion, details.hcb-content.box.hcbquestion {
+  border-color: #64dd17;
+}
+div.hcb-content.hcb-block.hcbwarning, details.hcb-content.box.hcbwarning {
+  border-color: #ff9100;
+}
+div.hcb-content.hcb-block.hcbfailure, details.hcb-content.box.hcbfailure {
+  border-color: #ff5252;
+}
+div.hcb-content.hcb-block.hcbdanger, details.hcb-content.box.hcbdanger {
+  border-color: #ff1744;
+}
+div.hcb-content.hcb-block.hcbbug, details.hcb-content.box.hcbbug {
+  border-color: #f50057;
+}
+div.hcb-content.hcb-block.hcbexample, details.hcb-content.box.hcbexample {
+  border-color: #7c4dff;
+}
+div.hcb-content.hcb-block.hcbquote, details.hcb-content.box.hcbquote {
+  border-color: #9e9e9e;
+}
+div.hcb-content.hcb-block.hcbnote:focus-within, details.hcb-content.box.hcbnote:focus-within {
+  box-shadow: 0 0 0 .2rem #448aff1a;
+}
+div.hcb-content.hcb-block.hcbabstract:focus-within, details.hcb-content.box.hcbabstract:focus-within {
+  box-shadow: 0 0 0 .2rem #00b0ff1a;
+}
+div.hcb-content.hcb-block.hcbinfo:focus-within, details.hcb-content.box.hcbinfo:focus-within {
+  box-shadow: 0 0 0 .2rem #00b8d41a;
+}
+div.hcb-content.hcb-block.hcbtip:focus-within, details.hcb-content.box.hcbtip:focus-within {
+  box-shadow: 0 0 0 .2rem #00bfa51a;
+}
+div.hcb-content.hcb-block.hcbsuccess:focus-within, details.hcb-content.box.hcbsuccess:focus-within {
+  box-shadow: 0 0 0 .2rem #00c8531a;
+}
+div.hcb-content.hcb-block.hcbquestion:focus-within, details.hcb-content.box.hcbquestion:focus-within {
+  box-shadow: 0 0 0 .2rem #64dd171a;
+}
+div.hcb-content.hcb-block.hcbwarning:focus-within, details.hcb-content.box.hcbwarning:focus-within {
+  box-shadow: 0 0 0 .2rem #ff91001a;
+}
+div.hcb-content.hcb-block.hcbfailure:focus-within, details.hcb-content.box.hcbfailure:focus-within {
+  box-shadow: 0 0 0 .2rem #ff52521a;
+}
+div.hcb-content.hcb-block.hcbdanger:focus-within, details.hcb-content.box.hcbdanger:focus-within {
+  box-shadow: 0 0 0 .2rem #ff17441a;
+}
+div.hcb-content.hcb-block.hcbbug:focus-within, details.hcb-content.box.hcbbug:focus-within {
+  box-shadow: 0 0 0 .2rem #f500571a;
+}
+div.hcb-content.hcb-block.hcbexample:focus-within, details.hcb-content.box.hcbexample:focus-within {
+  box-shadow: 0 0 0 .2rem #7c4dff1a;
+}
+div.hcb-content.hcb-block.hcbquote:focus-within, details.hcb-content.box.hcbquote:focus-within {
+  box-shadow: 0 0 0 .2rem #9e9e9e1a;
+}
+div.hcb-content.hcb-block.hcbnote *, details.hcb-content.box.hcbnote *,div.hcb-content.hcb-block.hcbabstract *, details.hcb-content.box.hcbabstract *,div.hcb-content.hcb-block.hcbinfo *, details.hcb-content.box.hcbinfo *,div.hcb-content.hcb-block.hcbtip *, details.hcb-content.box.hcbtip *,div.hcb-content.hcb-block.hcbsuccess *, details.hcb-content.box.hcbsuccess *,div.hcb-content.hcb-block.hcbquestion *, details.hcb-content.box.hcbquestion *,div.hcb-content.hcb-block.hcbwarning *, details.hcb-content.box.hcbwarning *,div.hcb-content.hcb-block.hcbfailure *, details.hcb-content.box.hcbfailure *,div.hcb-content.hcb-block.hcbdanger *, details.hcb-content.box.hcbdanger *,div.hcb-content.hcb-block.hcbbug *, details.hcb-content.box.hcbbug *,div.hcb-content.hcb-block.hcbexample *, details.hcb-content.box.hcbexample *,div.hcb-content.hcb-block.hcbquote *, details.hcb-content.box.hcbquote * {
+  box-sizing: border-box;
+}
+div.hcb-content.hcb-block.hcbnote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbnote > summary,div.hcb-content.hcb-block.hcbabstract > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbabstract > summary,div.hcb-content.hcb-block.hcbinfo > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbinfo > summary,div.hcb-content.hcb-block.hcbtip > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbtip > summary,div.hcb-content.hcb-block.hcbsuccess > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbsuccess > summary,div.hcb-content.hcb-block.hcbquestion > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquestion > summary,div.hcb-content.hcb-block.hcbwarning > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbwarning > summary,div.hcb-content.hcb-block.hcbfailure > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbfailure > summary,div.hcb-content.hcb-block.hcbdanger > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbdanger > summary,div.hcb-content.hcb-block.hcbbug > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbbug > summary,div.hcb-content.hcb-block.hcbexample > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbexample > summary,div.hcb-content.hcb-block.hcbquote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquote > summary {
+  border-top-right-radius: 0.1rem;
+  border-top-left-radius: 0.1rem;
+  border-left-width: 0.2rem;
+  display: block;
+  min-height: 1rem;
+  border: none;
+  font-weight: 700;
+  margin: 0 -1.2rem 1rem;
+  padding: 0.4rem 0.6rem;
+  position: relative;
+  outline: none;
+}
+details.hcb-content.box.hcbnote > summary,details.hcb-content.box.hcbabstract > summary,details.hcb-content.box.hcbinfo > summary,details.hcb-content.box.hcbtip > summary,details.hcb-content.box.hcbsuccess > summary,details.hcb-content.box.hcbquestion > summary,details.hcb-content.box.hcbwarning > summary,details.hcb-content.box.hcbfailure > summary,details.hcb-content.box.hcbdanger > summary,details.hcb-content.box.hcbbug > summary,details.hcb-content.box.hcbexample > summary,details.hcb-content.box.hcbquote > summary {
+  cursor: pointer;
+}
+details.hcb-content.box.hcbnote:not([open]) > summary,details.hcb-content.box.hcbabstract:not([open]) > summary,details.hcb-content.box.hcbinfo:not([open]) > summary,details.hcb-content.box.hcbtip:not([open]) > summary,details.hcb-content.box.hcbsuccess:not([open]) > summary,details.hcb-content.box.hcbquestion:not([open]) > summary,details.hcb-content.box.hcbwarning:not([open]) > summary,details.hcb-content.box.hcbfailure:not([open]) > summary,details.hcb-content.box.hcbdanger:not([open]) > summary,details.hcb-content.box.hcbbug:not([open]) > summary,details.hcb-content.box.hcbexample:not([open]) > summary,details.hcb-content.box.hcbquote:not([open]) > summary {
+  margin-bottom: 0;
+}
+div.hcb-content.hcb-block.hcbnote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbnote > summary {
+  background-color: #448aff1a;
+}
+div.hcb-content.hcb-block.hcbabstract > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbabstract > summary {
+  background-color: #00b0ff1a;
+}
+div.hcb-content.hcb-block.hcbinfo > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbinfo > summary {
+  background-color: #00b8d41a;
+}
+div.hcb-content.hcb-block.hcbtip > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbtip > summary {
+  background-color: #00bfa51a;
+}
+div.hcb-content.hcb-block.hcbsuccess > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbsuccess > summary {
+  background-color: #00c8531a;
+}
+div.hcb-content.hcb-block.hcbquestion > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquestion > summary {
+  background-color: #64dd171a;
+}
+div.hcb-content.hcb-block.hcbwarning > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbwarning > summary {
+  background-color: #ff91001a;
+}
+div.hcb-content.hcb-block.hcbfailure > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbfailure > summary {
+  background-color: #ff52521a;
+}
+div.hcb-content.hcb-block.hcbdanger > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbdanger > summary {
+  background-color: #ff17441a;
+}
+div.hcb-content.hcb-block.hcbbug > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbbug > summary {
+  background-color: #f500571a;
+}
+div.hcb-content.hcb-block.hcbexample > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbexample > summary {
+  background-color: #7c4dff1a;
+}
+div.hcb-content.hcb-block.hcbquote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquote > summary {
+  background-color: #9e9e9e1a;
+}
+div.hcb-content.hcb-block.hcbnote > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbnote > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #448aff;
+}
+div.hcb-content.hcb-block.hcbabstract > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbabstract > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00b0ff;
+}
+div.hcb-content.hcb-block.hcbinfo > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbinfo > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00b8d4;
+}
+div.hcb-content.hcb-block.hcbtip > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbtip > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00bfa5;
+}
+div.hcb-content.hcb-block.hcbsuccess > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbsuccess > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00c853;
+}
+div.hcb-content.hcb-block.hcbquestion > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbquestion > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #64dd17;
+}
+div.hcb-content.hcb-block.hcbwarning > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbwarning > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff9100;
+}
+div.hcb-content.hcb-block.hcbfailure > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbfailure > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff5252;
+}
+div.hcb-content.hcb-block.hcbdanger > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbdanger > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff1744;
+}
+div.hcb-content.hcb-block.hcbbug > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbbug > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #f50057;
+}
+div.hcb-content.hcb-block.hcbexample > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbexample > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #7c4dff;
+}
+div.hcb-content.hcb-block.hcbquote > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbquote > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #9e9e9e;
+}
+details.hcb-content.box.hcbnote > summary > div.hcb-box-open-button,details.hcb-content.box.hcbabstract > summary > div.hcb-box-open-button,details.hcb-content.box.hcbinfo > summary > div.hcb-box-open-button,details.hcb-content.box.hcbtip > summary > div.hcb-box-open-button,details.hcb-content.box.hcbsuccess > summary > div.hcb-box-open-button,details.hcb-content.box.hcbquestion > summary > div.hcb-box-open-button,details.hcb-content.box.hcbwarning > summary > div.hcb-box-open-button,details.hcb-content.box.hcbfailure > summary > div.hcb-box-open-button,details.hcb-content.box.hcbdanger > summary > div.hcb-box-open-button,details.hcb-content.box.hcbbug > summary > div.hcb-box-open-button,details.hcb-content.box.hcbexample > summary > div.hcb-box-open-button,details.hcb-content.box.hcbquote > summary > div.hcb-box-open-button {
+  float: right;
+}
+details.hcb-content.box.hcbnote > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbabstract > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbinfo > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbtip > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbsuccess > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbquestion > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbwarning > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbfailure > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbdanger > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbbug > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbexample > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbquote > summary > div.hcb-box-open-button > i {
+  margin: 0 0.6rem 0 0.6rem;
+  font-size: 0.7rem;
+  transition: transform 250ms
+}
+details.hcb-content.box.hcbnote:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbabstract:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbinfo:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbtip:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbsuccess:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquestion:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbwarning:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbfailure:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbdanger:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbbug:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbexample:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquote:not([open]) > summary > div.hcb-box-open-button i {
+  transform: rotate(270deg);
+}
+details.hcb-content.box.hcbnote[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbabstract[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbinfo[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbtip[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbsuccess[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquestion[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbwarning[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbfailure[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbdanger[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbbug[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbexample[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquote[open] > summary > div.hcb-box-open-button i {
+  transform: rotate(180deg);
+}
+details.hcb-content.box.hcbnote summary div.hcb-box-open-button i {
+  color: #448aff;
+}
+details.hcb-content.box.hcbabstract summary div.hcb-box-open-button i {
+  color: #00b0ff;
+}
+details.hcb-content.box.hcbinfo summary div.hcb-box-open-button i {
+  color: #00b8d4;
+}
+details.hcb-content.box.hcbtip summary div.hcb-box-open-button i {
+  color: #00bfa5;
+}
+details.hcb-content.box.hcbsuccess summary div.hcb-box-open-button i {
+  color: #00c853;
+}
+details.hcb-content.box.hcbquestion summary div.hcb-box-open-button i {
+  color: #64dd17;
+}
+details.hcb-content.box.hcbwarning summary div.hcb-box-open-button i {
+  color: #ff9100;
+}
+details.hcb-content.box.hcbfailure summary div.hcb-box-open-button i {
+  color: #ff5252;
+}
+details.hcb-content.box.hcbdanger summary div.hcb-box-open-button i {
+  color: #ff1744;
+}
+details.hcb-content.box.hcbbug summary div.hcb-box-open-button i {
+  color: #f50057;
+}
+details.hcb-content.box.hcbexample summary div.hcb-box-open-button i {
+  color: #7c4dff;
+}
+details.hcb-content.box.hcbquote summary div.hcb-box-open-button i {
+  color: #9e9e9e;
+}
+div.hcb-content.hcb-cards * {
+  box-sizing: border-box;
+}
+input.hcb-content.hcb-cards-input {
+  display: none;
+}
+div.hcb-content.hcb-cards-labels {
+  position: relative;
+  box-shadow: 0 -0.05rem #00000012 inset;
+  display: flex;
+  margin-bottom: 1.25rem;
+}
+div.hcb-content.hcb-cards-labels:before {
+  background: var(--cards-color);
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: translateX(var(--md-indicator-x));
+  transition: width 225ms, transform 250ms;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  width: var(--md-indicator-width);
+}
+label.hcb-content.hcb-cards-label {
+  border-bottom: 0.1rem solid #0000;
+  border-radius: 0.1rem 0.1rem 0 0;
+  cursor: pointer;
+  color: #0000008a;
+  font-size: 0.92em;
+  font-weight: 700;
+  padding: 0 1.25rem 0.625rem;
+  transition: color 250ms;
+}
+label.hcb-content.hcb-cards-label.active, label.hcb-content.hcb-cards-label:hover {
+  color: var(--cards-color);
+}
+div.hcb-content.hcb-cards-content {
+  display: none;
+}
+div.hcb-content.hcb-cards-content.active {
+  display: block;
+}
+</style>
+    <meta name="description" content="我用Openwrt也有相当一段时间了，并且零零散散的写过不少东西，本文整合了以前几篇文章，算是一站式攻略。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Openwrt从入门到放弃">
+<meta property="og:url" content="https://oscarcx.com/tech/openwrt-tutorial.html">
+<meta property="og:site_name" content="Cow">
+<meta property="og:description" content="我用Openwrt也有相当一段时间了，并且零零散散的写过不少东西，本文整合了以前几篇文章，算是一站式攻略。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-04-21T16:47:19.000Z">
+<meta property="article:modified_time" content="2025-05-18T16:05:39.210Z">
+<meta property="article:author" content="oscarcx123">
+<meta property="article:tag" content="OpenWrt">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://oscarcx.com/tech/openwrt-tutorial.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://oscarcx.com/tech/openwrt-tutorial.html","path":"tech/openwrt-tutorial.html","title":"Openwrt从入门到放弃"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Openwrt从入门到放弃 | Cow</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<style type="text/css">
+.spoiler {
+  display: inline;
+}
+p.spoiler {
+  display: flex;
+}
+.spoiler a {
+  pointer-events: none;
+}
+.spoiler-blur, .spoiler-blur > * {
+  transition: text-shadow .5s ease;
+}
+.spoiler .spoiler-blur, .spoiler .spoiler-blur > * {
+  color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  text-shadow: 0 0 10px grey;
+  cursor: pointer;
+}
+.spoiler .spoiler-blur:hover, .spoiler .spoiler-blur:hover > * {
+  text-shadow: 0 0 5px grey;
+}
+.spoiler-box, .spoiler-box > * {
+  transition: color .5s ease,
+  background-color .5s ease;
+}
+.spoiler .spoiler-box, .spoiler .spoiler-box > * {
+  color: black;
+  background-color: black;
+  text-shadow: none;
+}</style></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Cow</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%B3%E4%BA%8Eopenwrt"><span class="nav-number">1.</span> <span class="nav-text"> 关于OpenWrt</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%A5%E5%9D%91%E5%8E%9F%E5%9B%A0"><span class="nav-number">2.</span> <span class="nav-text"> 入坑原因</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AE%89%E8%A3%85"><span class="nav-number">3.</span> <span class="nav-text"> 安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E5%AF%86%E7%A0%81"><span class="nav-number">4.</span> <span class="nav-text"> 设置密码</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#ssh"><span class="nav-number">4.1.</span> <span class="nav-text"> ssh</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#luci"><span class="nav-number">4.2.</span> <span class="nav-text"> LuCI</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%BC%80%E5%90%AFwifi"><span class="nav-number">5.</span> <span class="nav-text"> 开启WIFI</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#opkg%E5%8C%85%E7%AE%A1%E7%90%86"><span class="nav-number">6.</span> <span class="nav-text"> opkg包管理</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AE%89%E8%A3%85%E6%89%93%E5%8D%B0%E6%9C%8D%E5%8A%A1"><span class="nav-number">7.</span> <span class="nav-text"> 安装打印服务</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%B7%AF%E7%94%B1%E5%99%A8%E7%AB%AF"><span class="nav-number">7.1.</span> <span class="nav-text"> 路由器端</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%B5%E8%84%91%E7%AB%AF"><span class="nav-number">7.2.</span> <span class="nav-text"> 电脑端</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#windows-10"><span class="nav-number">7.2.1.</span> <span class="nav-text"> Windows 10</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#linux"><span class="nav-number">7.2.2.</span> <span class="nav-text"> Linux</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%81%A2%E5%A4%8D%E5%87%BA%E5%8E%82%E8%AE%BE%E7%BD%AE"><span class="nav-number">8.</span> <span class="nav-text"> 恢复出厂设置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%B3%BB%E7%BB%9F%E5%8D%87%E7%BA%A7"><span class="nav-number">9.</span> <span class="nav-text"> 系统升级</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#ssh-2"><span class="nav-number">9.1.</span> <span class="nav-text"> ssh</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#luci-2"><span class="nav-number">9.2.</span> <span class="nav-text"> LuCI</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5"><span class="nav-number">10.</span> <span class="nav-text"> 问题排查</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#tp-link-archer-a7-c7-%E9%97%B4%E6%AD%87%E6%80%A7%E6%96%AD%E6%B5%81"><span class="nav-number">10.1.</span> <span class="nav-text"> TP-Link Archer A7 &#x2F; C7 间歇性断流</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%95%91%E7%A0%96"><span class="nav-number">11.</span> <span class="nav-text"> 救砖</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="oscarcx123"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">oscarcx123</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">32</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/oscarcx123" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;oscarcx123" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://oscarcx.com/tech/openwrt-tutorial.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="oscarcx123">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Cow">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Openwrt从入门到放弃 | Cow">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Openwrt从入门到放弃
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-04-21 16:47:19" itemprop="dateCreated datePublished" datetime="2021-04-21T16:47:19+00:00">2021-04-21</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/tech/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>1.8k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>6 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>我用Openwrt也有相当一段时间了，并且零零散散的写过不少东西，本文整合了以前几篇文章，算是一站式攻略。</p>
+<span id="more"></span>
+<h1 id="关于openwrt"><a class="markdownIt-Anchor" href="#关于openwrt"></a> 关于OpenWrt</h1>
+<ul>
+<li>全称：Open Wireless Router</li>
+<li>是一个Linux发行版</li>
+<li>能够跑在很多路由器上</li>
+<li>相比原厂固件，可以完全掌控路由器，自行安装软件包</li>
+</ul>
+<h1 id="入坑原因"><a class="markdownIt-Anchor" href="#入坑原因"></a> 入坑原因</h1>
+<p>我用的猫（modem）是TP-Link的TC-W7960，这个设备有点特殊，是猫（modem）和路由器一体的。但是这个猫的WIFI只有2.4GHz，不能跑满我的带宽，所以在2019年黑五另外买了TP-Link Archer A7 v5，税后价格是$35。在美国，这个价格买全新路由器感觉也还可以了，不过当然没有国内实惠。碰巧我有台激光打印机，想连接到路由器实现无线打印功能，但是TP-Link原厂固件没法实现这个需求。后来我发现了Openwrt这个东西，就打开了新世界的大门。</p>
+<h1 id="安装"><a class="markdownIt-Anchor" href="#安装"></a> 安装</h1>
+<p>首先，在<a target="_blank" rel="noopener" href="https://openwrt.org/toh/start">[OpenWrt Wiki] Table of Hardware</a>查看支持的路由器型号，然后进入对应型号的Wiki页面。下面以我的Archer A7 v5为例。</p>
+<p>进入<a target="_blank" rel="noopener" href="https://openwrt.org/toh/tp-link/archer_a7_v5">[OpenWrt Wiki] TP-Link Archer A7 v5</a>之后，就能找到所有的相关信息了。基本上就两种安装方法，一种是直接在原厂固件的升级页面安装，另一种就是通过TFTP来安装。</p>
+<p>注意：有些型号可能很难甚至无法恢复到原厂固件，所以刷机前三思而后行。</p>
+<h1 id="设置密码"><a class="markdownIt-Anchor" href="#设置密码"></a> 设置密码</h1>
+<p>有两种方式可以登录安装了OpenWrt的路由器，分别是命令行（ssh）和WebUI（LuCI）。值得注意的是，路由器默认没有密码，并且不会自动开启WIFI，所以这里需要接一根网线进行设置。</p>
+<h2 id="ssh"><a class="markdownIt-Anchor" href="#ssh"></a> ssh</h2>
+<p>进去之后应该会看到类似下面这样的内容，然后要通过passwd命令设置密码。注意，这里密码在输入的时候是看不到的。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&gt; ssh root@192.168.1.1</span><br><span class="line">BusyBox v1.30.1 () built-in shell (ash)</span><br><span class="line"></span><br><span class="line">  _______                     ________        __</span><br><span class="line"> |       |.-----.-----.-----.|  |  |  |.----.|  |_</span><br><span class="line"> |   -   ||  _  |  -__|     ||  |  |  ||   _||   _|</span><br><span class="line"> |_______||   __|_____|__|__||________||__|  |____|</span><br><span class="line">          |__| W I R E L E S S   F R E E D O M</span><br><span class="line"> -----------------------------------------------------</span><br><span class="line"> OpenWrt 19.07.7, r11306-c4a6851c72</span><br><span class="line"> -----------------------------------------------------</span><br><span class="line">=== WARNING! =====================================</span><br><span class="line">There is no root password defined on this device!</span><br><span class="line">Use the &quot;passwd&quot; command to set up a new password</span><br><span class="line">in order to prevent unauthorized SSH logins.</span><br><span class="line">--------------------------------------------------</span><br></pre></td></tr></table></figure>
+<h2 id="luci"><a class="markdownIt-Anchor" href="#luci"></a> LuCI</h2>
+<p>浏览器直接访问<code>192.168.1.1</code>，然后不需要输入密码，直接点登录，就进去了。接下来在 System（系统）&gt; Administration（管理权）&gt; Router Password（路由器密码）可以直接修改密码。</p>
+<p>一般来说OpenWrt都是自带LuCI的，如果没有，可以用下面命令安装。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">opkg update</span><br><span class="line">opkg install luci</span><br><span class="line">// 如果要安装中文语言包，还要额外运行下面命令</span><br><span class="line">// 因为语言设置默认是auto，所以安装完语言包之后就会自动切换成中文</span><br><span class="line">opkg install luci-i18n-base-zh-cn</span><br></pre></td></tr></table></figure>
+<h1 id="开启wifi"><a class="markdownIt-Anchor" href="#开启wifi"></a> 开启WIFI</h1>
+<p>WIFI最好通过图形界面（LuCI）开启，相关设置在 Network（网络）&gt; Wireless（无线）里头。</p>
+<p>选择启用之后，记得进入 Edit（编辑）&gt; Interface Configuration（接口配置）&gt; Wireless Security（无线安全）来设置密码。</p>
+<p>WIFI名在 Interface Configuration（接口配置）&gt; General Setup（常规设置）&gt; ESSID 修改。</p>
+<h1 id="opkg包管理"><a class="markdownIt-Anchor" href="#opkg包管理"></a> opkg包管理</h1>
+<p>OpenWrt通过opkg来管理软件包，可以在LuCI的 System（系统）&gt; Software 进行管理，或者直接使用命令行操作。</p>
+<p>opkg命令行的用法可以参考<a target="_blank" rel="noopener" href="https://openwrt.org/docs/guide-user/additional-software/opkg">[OpenWrt Wiki] Opkg package manager</a>。</p>
+<p>基本用法如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">// 安装软件包</span><br><span class="line">opkg update</span><br><span class="line">opkg install &lt;package&gt;</span><br><span class="line"></span><br><span class="line">// 卸载软件包</span><br><span class="line">opkg remove &lt;package&gt;</span><br><span class="line"></span><br><span class="line">// 查看全部软件包（可以自行用 grep / awk 进行筛选）</span><br><span class="line">opkg list</span><br><span class="line"></span><br><span class="line">// 查看已安装软件包</span><br><span class="line">opkg list-installed</span><br><span class="line"></span><br><span class="line">// 查看可升级软件包</span><br><span class="line">opkg list-upgradable</span><br></pre></td></tr></table></figure>
+<p>个人建议能正常运作就不要瞎折腾。</p>
+<h1 id="安装打印服务"><a class="markdownIt-Anchor" href="#安装打印服务"></a> 安装打印服务</h1>
+<p>如果你有一台有线打印机，那么可以把打印机直接连接到路由器上，从而实现无线打印。</p>
+<h2 id="路由器端"><a class="markdownIt-Anchor" href="#路由器端"></a> 路由器端</h2>
+<p>先安装下面这几个模块</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">opkg install kmod-usb-printer p910nd luci-app-p910nd</span><br></pre></td></tr></table></figure>
+<p>然后把打印机用USB连到路由器上，输入<code>dmesg | grep printer</code>，如果返回类似下面这个就代表打印机被识别了。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[   12.358708] usblp 1-1:1.0: usblp0: USB Bidirectional printer dev 2 <span class="keyword">if</span> 0 alt 0 proto 2 vid 0x04F9 pid 0x0062</span><br></pre></td></tr></table></figure>
+<p>确认打印机能够被识别后，记得重启路由器！</p>
+<p>接下来登入LuCI，进入“服务” &gt; “p910nd - Printer server”。</p>
+<ul>
+<li>enable打勾</li>
+<li>如果默认的设备（/dev/usb/lp0）不对，可以自行修改（ls /dev/usb/lp*可以查看打印机是否被识别）</li>
+<li>接口保持“未指定”，无需修改</li>
+<li>端口也不需要改，就是默认的9100</li>
+<li>Bidirectional mode打勾</li>
+</ul>
+<p>到这里，路由器这边就配置完成了。</p>
+<h2 id="电脑端"><a class="markdownIt-Anchor" href="#电脑端"></a> 电脑端</h2>
+<h3 id="windows-10"><a class="markdownIt-Anchor" href="#windows-10"></a> Windows 10</h3>
+<ul>
+<li>控制面板 &gt; 硬件和声音 &gt; 设备和打印机</li>
+<li>添加打印机</li>
+<li>点击“我需要的打印机不在列表中”</li>
+<li>选从TCP/IP添加
+<ul>
+<li>这步之后会要求更多信息，选自定义</li>
+</ul>
+</li>
+<li>添加标准TCP/IP端口（Standard TCP/IP Port）
+<ul>
+<li>端口名随意（我写的打印机型号）</li>
+<li>打印机名或IP地址：192.168.1.1</li>
+<li>协议（Protocol）：Raw</li>
+<li>端口（Port Number）：9100</li>
+</ul>
+</li>
+<li>安装打印机驱动</li>
+</ul>
+<h3 id="linux"><a class="markdownIt-Anchor" href="#linux"></a> Linux</h3>
+<p>Linux则是通过CUPS配置，需要准备打印机的ppd文件，打印机地址是<code>socket://192.168.1.1:9100</code>。</p>
+<h1 id="恢复出厂设置"><a class="markdownIt-Anchor" href="#恢复出厂设置"></a> 恢复出厂设置</h1>
+<p>注意：出厂设置指的是重置OpenWrt系统，并不能恢复原厂固件。</p>
+<p>OpenWrt使用的是<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/OverlayFS">overlayfs</a>，所有的修改都是在/overlay目录下，因此可以很容易的还原。直接运行<code>firstboot</code>就可以了。</p>
+<p>跑完之后，就直接输入reboot，然后ssh就会断开，稍等片刻就可以尝试再次连接。因为恢复了出厂设置，所以登录密码也会被清除。</p>
+<h1 id="系统升级"><a class="markdownIt-Anchor" href="#系统升级"></a> 系统升级</h1>
+<p>升级OpenWrt是很容易的，可以通过ssh或者LuCI操作。</p>
+<p>首先在对应设备的Wiki页面找到带有 sysupgrade 的升级包。</p>
+<h2 id="ssh-2"><a class="markdownIt-Anchor" href="#ssh-2"></a> ssh</h2>
+<p>使用wget下载升级包，如下所示。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">root@OpenWrt:~# wget http://downloads.openwrt.org/releases/19.07.1/targets/ath79/generic/openwrt-19.07.1-ath79-generic-tplink_archer-a7-v5-squashfs-sysupgrade.bin</span><br></pre></td></tr></table></figure>
+<p>然后就使用sysupgrade命令进行升级。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">root@OpenWrt:~# sysupgrade -v openwrt-19.07.1-ath79-generic-tplink_archer-a7-v5-squashfs-sysupgrade.bin </span><br><span class="line">（篇幅所限，省略对本文无意义的输出内容。。。）</span><br><span class="line">Commencing upgrade. Closing all shell sessions.</span><br><span class="line">Connection to 192.168.1.1 closed by remote host.</span><br><span class="line">Connection to 192.168.1.1 closed.</span><br></pre></td></tr></table></figure>
+<p>稍等片刻，就可以再次尝试登录OpenWrt了。</p>
+<h2 id="luci-2"><a class="markdownIt-Anchor" href="#luci-2"></a> LuCI</h2>
+<p>在电脑上直接下载升级包，然后在 System（系统）&gt; Backup / Flash Firmware（备份/升级）&gt; Flash new firmware image（刷写新的固件）上传固件进行升级。</p>
+<h1 id="问题排查"><a class="markdownIt-Anchor" href="#问题排查"></a> 问题排查</h1>
+<p>出现问题之后千万不要慌，先看日志。</p>
+<p>在 System（系统）菜单可以找到 System Log（系统日志）和 Kernel Log（内核日志）。如果发现了报错信息，可以复制出来上网搜下，大概率别人已经遇到过了。如果没找到相关问题，可以在OpenWrt论坛上面发帖求助。</p>
+<h2 id="tp-link-archer-a7-c7-间歇性断流"><a class="markdownIt-Anchor" href="#tp-link-archer-a7-c7-间歇性断流"></a> TP-Link Archer A7 / C7 间歇性断流</h2>
+<p>似乎是这俩型号特有的问题，表现就是全部设备的WiFi被断开，然后过10秒左右自动恢复。完整日志如下所示：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br></pre></td><td class="code"><pre><span class="line">Sun Nov 28 13:53:51 2021 kern.warn kernel: [2750260.203769] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon</span><br><span class="line">Sun Nov 28 13:53:51 2021 kern.warn kernel: [2750260.306164] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon</span><br><span class="line">Sun Nov 28 13:53:51 2021 kern.warn kernel: [2750260.408586] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon</span><br><span class="line">Sun Nov 28 13:53:51 2021 kern.warn kernel: [2750260.510985] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon</span><br><span class="line">Sun Nov 28 13:53:51 2021 kern.warn kernel: [2750260.613385] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon</span><br><span class="line">Sun Nov 28 13:53:51 2021 kern.warn kernel: [2750260.715785] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon</span><br><span class="line">Sun Nov 28 13:53:51 2021 kern.warn kernel: [2750260.818187] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon</span><br><span class="line">Sun Nov 28 13:53:51 2021 kern.warn kernel: [2750260.920592] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon</span><br><span class="line">Sun Nov 28 13:53:52 2021 kern.warn kernel: [2750261.022992] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon</span><br><span class="line">Sun Nov 28 13:53:52 2021 kern.warn kernel: [2750261.125391] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon</span><br><span class="line">Sun Nov 28 13:53:52 2021 kern.warn kernel: [2750261.227795] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon</span><br><span class="line">Sun Nov 28 13:53:52 2021 kern.warn kernel: [2750261.330184] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon</span><br><span class="line">Sun Nov 28 13:53:52 2021 kern.warn kernel: [2750261.432594] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon</span><br><span class="line">Sun Nov 28 13:53:52 2021 kern.warn kernel: [2750261.535001] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon</span><br><span class="line">Sun Nov 28 13:53:52 2021 kern.warn kernel: [2750261.637397] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon</span><br><span class="line">Sun Nov 28 13:53:52 2021 kern.warn kernel: [2750261.739808] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon</span><br><span class="line">Sun Nov 28 13:53:52 2021 kern.warn kernel: [2750261.842191] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon</span><br><span class="line">Sun Nov 28 13:53:52 2021 kern.warn kernel: [2750261.944618] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon</span><br><span class="line">Sun Nov 28 13:53:53 2021 kern.warn kernel: [2750262.047010] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon</span><br><span class="line">Sun Nov 28 13:53:53 2021 kern.warn kernel: [2750262.149411] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon</span><br><span class="line">Sun Nov 28 13:53:53 2021 kern.warn kernel: [2750262.251815] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon</span><br><span class="line">Sun Nov 28 13:53:53 2021 kern.warn kernel: [2750262.354220] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon</span><br><span class="line">Sun Nov 28 13:53:53 2021 kern.warn kernel: [2750262.456724] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon</span><br><span class="line">Sun Nov 28 13:53:53 2021 kern.warn kernel: [2750262.559017] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon</span><br><span class="line">Sun Nov 28 13:53:53 2021 kern.warn kernel: [2750262.661421] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon</span><br><span class="line">Sun Nov 28 13:53:53 2021 kern.warn kernel: [2750262.763833] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon</span><br><span class="line">Sun Nov 28 13:53:53 2021 kern.warn kernel: [2750262.866227] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.warn kernel: [2750262.968634] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.warn kernel: [2750263.071038] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.warn kernel: [2750263.173435] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.err kernel: [2750263.185820] ath10k_pci 0000:00:00.0: Cannot communicate with firmware, previous wmi cmds: 36904:274997163 36954:274997100 36904:274997090 36904:274997088, jiffies: 274997408, attempting to fake crash and restart firmware, dev-flags: 0x42</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.warn kernel: [2750263.208099] ath10k_pci 0000:00:00.0: failed to send wmi nop: -143</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.warn kernel: [2750263.214587] ath10k_pci 0000:00:00.0: could not request stats (type -268435456 ret -143 specifier 1)</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.warn kernel: [2750263.224477] ath10k_pci 0000:00:00.0: failed to send pdev bss chan info request: -143</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.warn kernel: [2750263.234778] ath10k_pci 0000:00:00.0: failed to set beacon mode for vdev 0: -143</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.warn kernel: [2750263.242615] ath10k_pci 0000:00:00.0: failed to set dtim period for vdev 0: -143</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.err kernel: [2750263.250709] ath10k_pci 0000:00:00.0: firmware crashed! (guid 0b8c75c5-c47d-46de-8864-73c4d3092d00)</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.info kernel: [2750263.260233] ath10k_pci 0000:00:00.0: qca988x hw2.0 target 0x4100016c chip_id 0x043202ff sub 0000:0000</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.info kernel: [2750263.269947] ath10k_pci 0000:00:00.0: kconfig debug 0 debugfs 1 tracing 0 dfs 1 testmode 0</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.info kernel: [2750263.282073] ath10k_pci 0000:00:00.0: firmware ver 10.1-ct-8x-__fW-022-ecad3248 api 2 features wmi-10.x,has-wmi-mgmt-tx,mfp,txstatus-noack,wmi-10.x-CT,ratemask-CT,regdump-CT,txrate-CT,flush-all-CT,pingpong-CT,ch-regs-CT,nop-CT,set-special-CT,get-temp-CT,tx-rc-CT,cust-stats-CT,retry-gt2-CT,txrate2-CT,beacon-cb-CT,wmi-block-ack-CT crc32 3e4cf97f</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.info kernel: [2750263.313602] ath10k_pci 0000:00:00.0: board_file api 1 bmi_id N/A crc32 bebc7c08</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.info kernel: [2750263.321340] ath10k_pci 0000:00:00.0: htt-ver 2.1 wmi-op 2 htt-op 2 cal file max-sta 128 raw 0 hwcrypto 1</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.err kernel: [2750263.331391] ath10k_pci 0000:00:00.0: firmware register dump:</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.err kernel: [2750263.337425] ath10k_pci 0000:00:00.0: [00]: 0x00940750 0x00400C00 0x00980000 0x009AF0DC</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.err kernel: [2750263.345787] ath10k_pci 0000:00:00.0: [04]: 0x009AF148 0x009AF264 0x00941B6C 0x00941B20</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.err kernel: [2750263.354139] ath10k_pci 0000:00:00.0: [08]: 0x00941B00 0x009423A4 0x009422DC 0x009422C4</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.err kernel: [2750263.362501] ath10k_pci 0000:00:00.0: [12]: 0x00941B90 0x009423F4 0x009423D4 0x009423DC</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.err kernel: [2750263.370866] ath10k_pci 0000:00:00.0: [16]: 0x009423E4 0x009423EC 0x00942888 0x00942520</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.err kernel: [2750263.379230] ath10k_pci 0000:00:00.0: [20]: 0x009424FC 0x0094241C 0x00942540 0x00942498</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.err kernel: [2750263.387588] ath10k_pci 0000:00:00.0: [24]: 0x00942450 0x0094250C 0x009424D0 0x00942750</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.err kernel: [2750263.395945] ath10k_pci 0000:00:00.0: [28]: 0x00942798 0x00942844 0x009428C4 0x00942594</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.err kernel: [2750263.404298] ath10k_pci 0000:00:00.0: [32]: 0x0094258C 0x00942C28 0x00942F4C 0x00942F7C</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.err kernel: [2750263.412658] ath10k_pci 0000:00:00.0: [36]: 0x00942F90 0x00942FE4 0x00942FF8 0x00943040</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.err kernel: [2750263.421016] ath10k_pci 0000:00:00.0: [40]: 0x0094077C 0x00940790 0x00943084 0x00942F00</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.err kernel: [2750263.429376] ath10k_pci 0000:00:00.0: [44]: 0x009AF290 0x00942A80 0x00942D40 0x00942D64</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.err kernel: [2750263.437735] ath10k_pci 0000:00:00.0: [48]: 0x00942D78 0x00942D9C 0x00957E18 0x00957E28</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.err kernel: [2750263.446094] ath10k_pci 0000:00:00.0: [52]: 0x00957E20 0x00940788 0x009430EC 0x00000000</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.err kernel: [2750263.454446] ath10k_pci 0000:00:00.0: [56]: 0x00000000 0x00000000 0x00000000 0x00000000</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.err kernel: [2750263.462804] ath10k_pci 0000:00:00.0: Copy Engine register dump:</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.err kernel: [2750263.469111] ath10k_pci 0000:00:00.0: [00]: 0x00057400   8   8   3   3</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.err kernel: [2750263.475952] ath10k_pci 0000:00:00.0: [01]: 0x00057800  31  31  65  66</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.err kernel: [2750263.482782] ath10k_pci 0000:00:00.0: [02]: 0x00057c00   0   0 111   0</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.err kernel: [2750263.489624] ath10k_pci 0000:00:00.0: [03]: 0x00058000  18  18  18  18</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.err kernel: [2750263.496462] ath10k_pci 0000:00:00.0: [04]: 0x00058400 6645 6645  36 252</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.err kernel: [2750263.503471] ath10k_pci 0000:00:00.0: [05]: 0x00058800  30  30 336 350</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.err kernel: [2750263.510317] ath10k_pci 0000:00:00.0: [06]: 0x00058c00   5   5   5   5</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.err kernel: [2750263.517161] ath10k_pci 0000:00:00.0: [07]: 0x00059000   0   0   0   0</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.warn kernel: [2750263.524103] ath10k_pci 0000:00:00.0: debug log header, dbuf: 0x411aa8  dropped: 0</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.warn kernel: [2750263.532082] ath10k_pci 0000:00:00.0: [0] next: 0x411ac0 buf: 0x40f90c sz: 1500 len: 480 count: 30 free: 0</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.err kernel: [2750263.542225] ath10k_pci 0000:00:00.0: ath10k_pci ATH10K_DBG_BUFFER:</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.err kernel: [2750263.548799] ath10k: [0000]: AA0BDC07 204CFC0B 08000000 0B000000 BE0BDC07 204CFC0B 08000000 0B000000</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.err kernel: [2750263.558326] ath10k: [0008]: D30BDC07 204CFC0B 08000000 0B000000 E70BDC07 204CFC0B 08000000 0B000000</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.err kernel: [2750263.567851] ath10k: [0016]: FC0BDC07 204CFC0B 08000000 0B000000 100CDC07 204CFC0B 08000000 0B000000</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.err kernel: [2750263.577378] ath10k: [0024]: 250CDC07 204CFC0B 08000000 0B000000 390CDC07 204CFC0B 08000000 0B000000</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.err kernel: [2750263.586897] ath10k: [0032]: 4E0CDC07 204CFC0B 08000000 0B000000 620CDC07 204CFC0B 08000000 0B000000</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.err kernel: [2750263.596424] ath10k: [0040]: 770CDC07 204CFC0B 08000000 0B000000 8B0CDC07 204CFC0B 08000000 0B000000</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.err kernel: [2750263.605949] ath10k: [0048]: A00CDC07 204CFC0B 08000000 0B000000 B40CDC07 204CFC0B 08000000 0B000000</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.err kernel: [2750263.615467] ath10k: [0056]: C90CDC07 204CFC0B 08000000 0B000000 DD0CDC07 204CFC0B 08000000 0B000000</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.err kernel: [2750263.624988] ath10k: [0064]: F20CDC07 204CFC0B 08000000 0B000000 060DDC07 204CFC0B 08000000 0B000000</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.err kernel: [2750263.634513] ath10k: [0072]: 1B0DDC07 204CFC0B 08000000 0B000000 2F0DDC07 204CFC0B 08000000 0B000000</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.err kernel: [2750263.644038] ath10k: [0080]: 440DDC07 204CFC0B 08000000 0B000000 580DDC07 204CFC0B 08000000 0B000000</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.err kernel: [2750263.653562] ath10k: [0088]: 6D0DDC07 204CFC0B 08000000 0B000000 810DDC07 204CFC0B 08000000 0B000000</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.err kernel: [2750263.663086] ath10k: [0096]: 960DDC07 204CFC0B 08000000 0B000000 AA0DDC07 204CFC0B 08000000 0B000000</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.err kernel: [2750263.672612] ath10k: [0104]: BF0DDC07 204CFC0B 08000000 0B000000 D30DDC07 204CFC0B 08000000 0B000000</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.err kernel: [2750263.682135] ath10k: [0112]: E80DDC07 204CFC0B 08000000 0B000000 FC0DDC07 204CFC0B 08000000 0B000000</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.err kernel: [2750263.691657] ath10k_pci 0000:00:00.0: ATH10K_END</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.warn kernel: [2750263.696593] ath10k_pci 0000:00:00.0: [1] next: 0x411aa8 buf: 0x40fefc sz: 1500 len: 0 count: 0 free: 0</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.warn kernel: [2750263.711174] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.warn kernel: [2750263.719087] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.warn kernel: [2750263.726943] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.warn kernel: [2750263.734751] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.warn kernel: [2750263.742611] ath10k_pci 0000:00:00.0: SWBA overrun on vdev 0, skipped old beacon</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.warn kernel: [2750263.763620] ath10k_pci 0000:00:00.0: failed to set cts protection for vdev 0: -143</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.warn kernel: [2750263.771680] ath10k_pci 0000:00:00.0: failed to recalculate rts/cts prot for vdev 0: -143</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.warn kernel: [2750263.780252] ath10k_pci 0000:00:00.0: failed to set preamble for vdev 0: -143</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.warn kernel: [2750263.787729] ath10k_pci 0000:00:00.0: failed to set mgmt tx rate -143</span><br><span class="line">Sun Nov 28 13:53:54 2021 kern.warn kernel: [2750263.834240] ath10k_pci 0000:00:00.0: failed to transmit management frame via WMI: -143</span><br><span class="line">Sun Nov 28 13:53:55 2021 kern.warn kernel: [2750263.940262] ath10k_pci 0000:00:00.0: removing peer, cleanup-all, deleting: peer faa4cef1 vdev: 0 addr: 3c:6a:a7:93:2a:c4</span><br><span class="line">Sun Nov 28 13:53:55 2021 kern.warn kernel: [2750263.951823] ath10k_pci 0000:00:00.0: removing peer, cleanup-all, deleting: peer 2deeafc4 vdev: 0 addr: 74:e2:0c:ac:46:24</span><br><span class="line">Sun Nov 28 13:53:55 2021 kern.warn kernel: [2750263.963357] ath10k_pci 0000:00:00.0: removing peer, cleanup-all, deleting: peer f35f1b0d vdev: 0 addr: 44:5e:cd:b1:9c:96</span><br><span class="line">Sun Nov 28 13:53:55 2021 kern.warn kernel: [2750263.974856] ath10k_pci 0000:00:00.0: removing peer, cleanup-all, deleting: peer ac4a0710 vdev: 0 addr: fc:49:2d:40:62:11</span><br><span class="line">Sun Nov 28 13:53:55 2021 kern.warn kernel: [2750263.986359] ath10k_pci 0000:00:00.0: removing peer, cleanup-all, deleting: peer aa7968b7 vdev: 0 addr: 98:da:c4:0a:7d:23</span><br><span class="line">Sun Nov 28 13:53:55 2021 kern.info kernel: [2750264.160387] ieee80211 phy0: Hardware restart was requested</span><br><span class="line">Sun Nov 28 13:53:56 2021 kern.warn kernel: [2750265.136442] ath10k_pci 0000:00:00.0: 10.1 wmi init: vdevs: 16  peers: 127  tid: 256</span><br><span class="line">Sun Nov 28 13:53:56 2021 kern.info kernel: [2750265.154051] ath10k_pci 0000:00:00.0: wmi print &#x27;P 128 V 8 T 410&#x27;</span><br><span class="line">Sun Nov 28 13:53:56 2021 kern.info kernel: [2750265.160725] ath10k_pci 0000:00:00.0: wmi print &#x27;msdu-desc: 1424  sw-crypt: 0 ct-sta: 0&#x27;</span><br><span class="line">Sun Nov 28 13:53:56 2021 kern.info kernel: [2750265.169220] ath10k_pci 0000:00:00.0: wmi print &#x27;alloc rem: 24984 iram: 38672&#x27;</span><br><span class="line">Sun Nov 28 13:53:56 2021 kern.warn kernel: [2750265.237998] ath10k_pci 0000:00:00.0: pdev param 0 not supported by firmware</span><br><span class="line">Sun Nov 28 13:53:56 2021 kern.warn kernel: [2750265.245750] ath10k_pci 0000:00:00.0: set-coverage-class, phyclk: 88  value: 0</span><br><span class="line">Sun Nov 28 13:53:56 2021 kern.info kernel: [2750265.254112] ath10k_pci 0000:00:00.0: rts threshold -1</span><br><span class="line">Sun Nov 28 13:53:56 2021 kern.err kernel: [2750265.271405] ath10k_pci 0000:00:00.0: Invalid state: 3 in ath10k_htt_tx_32, warning will not be repeated.</span><br><span class="line">Sun Nov 28 13:53:56 2021 kern.warn kernel: [2750265.281432] ------------[ cut here ]------------</span><br><span class="line">Sun Nov 28 13:53:56 2021 kern.warn kernel: [2750265.286475] WARNING: CPU: 0 PID: 15852 at target-mips_24kc_musl/linux-ath79_generic/ath10k-ct-regular/ath10k-ct-2021-09-22-e6a7d5b5/ath10k-5.10/htt_tx.c:1490 ieee80211_is_robust_mgmt_frame_tx+0xba8/0xc24 [ath10k_core]</span><br><span class="line">Sun Nov 28 13:53:56 2021 kern.warn kernel: [2750265.306575] Modules linked in: ath9k ath9k_common pppoe ppp_async iptable_nat ath9k_hw ath10k_pci ath10k_core ath xt_state xt_nat xt_conntrack xt_REDIRECT xt_MASQUERADE xt_FLOWOFFLOAD xt_CT pppox ppp_generic nf_nat nf_flow_table_hw nf_flow_table nf_conntrack mac80211 ipt_REJECT cfg80211 xt_time xt_tcpudp xt_multiport xt_mark xt_mac xt_limit xt_comment xt_TCPMSS xt_LOG usblp slhc nf_reject_ipv4 nf_log_ipv4 nf_defrag_ipv6 nf_defrag_ipv4 iptable_mangle iptable_filter ip_tables hwmon crc_ccitt compat ledtrig_usbport nf_log_ipv6 nf_log_common ip6table_mangle ip6table_filter ip6_tables ip6t_REJECT x_tables nf_reject_ipv6 sha256_generic libsha256 seqiv jitterentropy_rng drbg hmac ghash_generic gf128mul gcm ctr cmac ccm fsl_mph_dr_of ehci_platform ehci_fsl ehci_hcd gpio_button_hotplug usbcore nls_base usb_common aead cryptomgr crypto_null crypto_hash</span><br><span class="line">Sun Nov 28 13:53:56 2021 kern.warn kernel: [2750265.383875] CPU: 0 PID: 15852 Comm: kworker/0:2 Not tainted 5.4.155 #0</span><br><span class="line">Sun Nov 28 13:53:56 2021 kern.warn kernel: [2750265.390926] Workqueue: events_freezable 0x86c00118</span><br><span class="line">Sun Nov 28 13:53:56 2021 kern.warn kernel: [2750265.396068] Stack : 85869c80 877adcac 00000009 4000001e 86f48c30 800be140 80623e78 00000017</span><br><span class="line">Sun Nov 28 13:53:56 2021 kern.warn kernel: [2750265.404879]         85869cbc 00000000 80616d54 85915b04 877adcac 00000001 85915ad8 95cb7e69</span><br><span class="line">Sun Nov 28 13:53:56 2021 kern.warn kernel: [2750265.413696]         00000000 00000000 806d64a0 0000044d 00000000 00000000 20307838 36633030</span><br><span class="line">Sun Nov 28 13:53:56 2021 kern.warn kernel: [2750265.422510]         0000044d 859159e3 ffffffff ffffffff 00000000 00000000 00000000 877adcac</span><br><span class="line">Sun Nov 28 13:53:56 2021 kern.warn kernel: [2750265.431317]         00000009 4000001e 86f48c30 87ec6070 00000003 8032d470 00000000 80820000</span><br><span class="line">Sun Nov 28 13:53:56 2021 kern.warn kernel: [2750265.440125]         ...</span><br><span class="line">Sun Nov 28 13:53:56 2021 kern.warn kernel: [2750265.442825] Call Trace:</span><br><span class="line">Sun Nov 28 13:53:56 2021 kern.warn kernel: [2750265.445541] [&lt;8006970c&gt;] show_stack+0x30/0x100</span><br><span class="line">Sun Nov 28 13:53:56 2021 kern.warn kernel: [2750265.450317] [&lt;80084fe8&gt;] __warn+0xc0/0x10c</span><br><span class="line">Sun Nov 28 13:53:56 2021 kern.warn kernel: [2750265.454721] [&lt;80085090&gt;] warn_slowpath_fmt+0x5c/0xac</span><br><span class="line">Sun Nov 28 13:53:56 2021 kern.warn kernel: [2750265.460096] [&lt;877adcac&gt;] ieee80211_is_robust_mgmt_frame_tx+0xba8/0xc24 [ath10k_core]</span><br><span class="line">Sun Nov 28 13:53:56 2021 kern.warn kernel: [2750265.468301] [&lt;87782308&gt;] 0x87782308</span><br><span class="line">Sun Nov 28 13:53:56 2021 kern.warn kernel: [2750265.472090] ---[ end trace 8d6ffe41140f20d1 ]---</span><br><span class="line">Sun Nov 28 13:53:56 2021 kern.warn kernel: [2750265.477046] ath10k_pci 0000:00:00.0: failed to transmit packet, dropping: -19</span><br><span class="line">Sun Nov 28 13:53:56 2021 kern.warn kernel: [2750265.484600] ath10k_pci 0000:00:00.0: failed to submit frame: -19</span><br><span class="line">Sun Nov 28 13:53:56 2021 kern.warn kernel: [2750265.490992] ath10k_pci 0000:00:00.0: failed to push frame: -19</span><br><span class="line">Sun Nov 28 13:53:56 2021 kern.info kernel: [2750265.497223] ath10k_pci 0000:00:00.0: device successfully recovered</span><br></pre></td></tr></table></figure>
+<p>很明显，固件崩溃了，然后自动重启，那具体的表现当然是设备掉线咯。这种问题，复制报错第一行内容，然后搜论坛，大概率有人踩过坑了~</p>
+<p>果不其然，很快就找到了一些相关帖子：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://forum.openwrt.org/t/tp-link-archer-c7-v2-ac1750-ath10-firmware-crashes/106569">TP-Link Archer C7 v2 AC1750 ath10 firmware crashes</a></li>
+<li><a target="_blank" rel="noopener" href="https://forum.openwrt.org/t/please-consider-ath10k-non-ct-drivers-instead-of-ct/85051">Please consider ath10k (non-ct) drivers instead of ct</a></li>
+<li><a target="_blank" rel="noopener" href="https://forum.openwrt.org/t/changing-to-non-ct-drivers-via-opkg/64070">Changing to non-CT drivers via OPKG</a></li>
+</ul>
+<p>看起来，这里有两种固件，一种是原厂的闭源驱动（<a target="_blank" rel="noopener" href="https://openwrt.org/docs/techref/driver.wlan/ath10k">Ath10k</a>），另一种是Candela Technologies的改版驱动（<a target="_blank" rel="noopener" href="https://openwrt.org/docs/techref/driver.wlan/ath10k-ct">Ath10k-ct</a>）。然而不知道从什么时候开始，Openwrt就把默认的驱动从Ath10k换成了Ath10k-ct，然后一些型号就出了奇奇怪怪的毛病。所以把驱动手动换回去就完事了。。。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">opkg update</span><br><span class="line">opkg remove ath10k-firmware-qca988x-ct kmod-ath10k-ct</span><br><span class="line">opkg install ath10k-firmware-qca988x kmod-ath10k</span><br><span class="line">reboot</span><br></pre></td></tr></table></figure>
+<h1 id="救砖"><a class="markdownIt-Anchor" href="#救砖"></a> 救砖</h1>
+<p>OpenWrt还是比较经得起折腾的，万一弄坏了，也还有救。不过如果变砖（无法进入系统），那就稍微有点麻烦了。</p>
+<p>一般来说，bootloader不会被破坏，所以可以通过TFTP（Trivial File Transfer Protocol）来传输固件。关于TFTP的使用方法，可以看<a target="_blank" rel="noopener" href="https://openwrt.org/docs/guide-user/troubleshooting/tftpserver">[OpenWrt Wiki] Setting up a TFTP server for TFTP Recovery/Install</a></p>
+<p>TFTP服务端有很多，这里推荐几个：</p>
+<ul>
+<li>Windows
+<ul>
+<li>Solarwinds TFTP server</li>
+<li>Tftpd64 / Tftpd32</li>
+</ul>
+</li>
+<li>Linux
+<ul>
+<li>tftpd-hpa</li>
+</ul>
+</li>
+</ul>
+<p>Windows上的TFTP服务端操作比较友好，所以这里单独写下Linux上的操作。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">// 修改配置文件来指定ip地址</span><br><span class="line">sudo nano /etc/dhcpcd.conf</span><br><span class="line"></span><br><span class="line">// 重启网卡</span><br><span class="line">sudo ifconfig eth0 down</span><br><span class="line">sudo ifconfig eth0 up</span><br><span class="line"></span><br><span class="line">// 检查69端口（查看tftp server是否启动）</span><br><span class="line">sudo netstat -tupena | grep :69</span><br><span class="line"></span><br><span class="line">// 重启tftpd-hpa</span><br><span class="line">sudo systemctl restart tftpd-hpa</span><br><span class="line"></span><br><span class="line">// 修改tftpd-hpa配置</span><br><span class="line">sudo nano /etc/default/tftpd-hpa</span><br><span class="line"></span><br><span class="line">// 查看tftpd-hpa日志</span><br><span class="line">tail -n 100 /var/log/syslog | grep tftpd</span><br></pre></td></tr></table></figure>
+<p>如果TFTP都救不回来，那基本只能拆机了。如果真走到这一步，除非你有成套的工具，否则还是建议直接买个新的好了。。。</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/OpenWrt/" rel="tag"># OpenWrt</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/tech/raspberrypi-nas.html" rel="prev" title="从零开始在树莓派上搭建NAS">
+                  <i class="fa fa-angle-left"></i> 从零开始在树莓派上搭建NAS
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/tech/python-review.html" rel="next" title="Python知识点查缺补漏">
+                  Python知识点查缺补漏 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 2020 – 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="fa fa-terminal"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">oscarcx123</span>
+        <span class="post-meta-item">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-chart-line"></i>
+          </span>
+          <span title="站点总字数">268k</span>
+        </span>
+        <span class="post-meta-item">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-coffee"></i>
+          </span>
+          <span title="站点阅读时长">14:53</span>
+        </span>
+  </div>
+  <div class="powered-by">
+    <span class="post-meta-item">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v6.3.0 强力驱动
+    </span>
+    <span class="post-meta-item"> 主题 – <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v8.18.1
+    </span>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script size="300" alpha="0.6" zIndex="-1" src="/js/ribbon.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.6.0/pjax.min.js" integrity="sha256-vxLn1tSKWD4dqbMRyv940UYw4sXgMtYcK6reefzZrao=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.0.8/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/pjax.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/katex.min.css" integrity="sha256-3574TpfThVfeAhg+I4+N39EJiLN3QUkuEsMVe8hWAR4=" crossorigin="anonymous">
+  <script class="next-config" data-name="katex" type="application/json">{"copy_tex_js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/contrib/copy-tex.min.js","integrity":"sha256-Us54+rSGDSTvIhKKUs4kygE2ipA0RXpWWh0/zLqw3bs="}}</script>
+  <script src="/js/third-party/math/katex.js"></script>
+
+
+<script type="text/javascript">
+  // 显示“展开”和“折叠”
+  function collapsableTitle(x) {
+    var nav = document.getElementsByClassName("sidebar-nav-toc")[0];
+    if (x.matches) { // If media query matches
+      var content = document.getElementsByClassName("sidebar-panel-container")[0];
+      if (content.style.display = "none") {
+        nav.textContent = "文章目录 [展开]";
+      }
+      else {
+        nav.textContent = "文章目录 [折叠]";
+      }
+    } 
+    else {
+      nav.textContent = "文章目录";
+    }
+  }
+
+  var x = window.matchMedia("(max-width: 991px)"); // media query
+  collapsableTitle(x);
+  x.addListener(collapsableTitle);
+
+  // 控制目录的折叠
+  var tos = document.getElementsByClassName("sidebar-nav")[0];
+  var i;
+
+  tos.addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = document.getElementsByClassName("sidebar-panel-container")[0];
+    var nav = document.getElementsByClassName("sidebar-nav-toc")[0];
+    if (content.style.display === "block" && window.innerWidth < 991) {
+      content.style.display = "none";
+      nav.textContent = "文章目录 [展开]";
+    } else {
+      content.style.display = "block";
+      if (window.innerWidth < 991) {
+        nav.textContent = "文章目录 [折叠]";
+      }
+    }
+  });
+
+  // 因为启用pjax，需要监听complete事件，来实现默认折叠效果
+  document.addEventListener('pjax:complete', function() {
+    if (window.innerWidth < 991) {
+      let content = document.getElementsByClassName("sidebar-panel-container")[0];
+      content.style.display = "none";
+      let nav = document.getElementsByClassName("sidebar-nav-toc")[0];
+      nav.textContent = "文章目录 [展开]";
+      }
+    });
+  </script>
+</body>
+</html>
