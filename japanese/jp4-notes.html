@@ -1,0 +1,1544 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-64x64-dragon.jpg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-64x64-dragon.jpg">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-64x64-dragon.jpg">
+  <link rel="mask-icon" href="/images/favicon-64x64-dragon.jpg" color="#222">
+  <meta name="google-site-verification" content="-QMh-gRPduq5T_vg3_Pwi3kZsNSiyuEpPBaDIXV8J34">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"oscarcx.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.18.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":true,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+
+
+  <style type="text/css">
+
+div.hcb-content.hcb-block.hcbnote, details.hcb-content.box.hcbnote,div.hcb-content.hcb-block.hcbabstract, details.hcb-content.box.hcbabstract,div.hcb-content.hcb-block.hcbinfo, details.hcb-content.box.hcbinfo,div.hcb-content.hcb-block.hcbtip, details.hcb-content.box.hcbtip,div.hcb-content.hcb-block.hcbsuccess, details.hcb-content.box.hcbsuccess,div.hcb-content.hcb-block.hcbquestion, details.hcb-content.box.hcbquestion,div.hcb-content.hcb-block.hcbwarning, details.hcb-content.box.hcbwarning,div.hcb-content.hcb-block.hcbfailure, details.hcb-content.box.hcbfailure,div.hcb-content.hcb-block.hcbdanger, details.hcb-content.box.hcbdanger,div.hcb-content.hcb-block.hcbbug, details.hcb-content.box.hcbbug,div.hcb-content.hcb-block.hcbexample, details.hcb-content.box.hcbexample,div.hcb-content.hcb-block.hcbquote, details.hcb-content.box.hcbquote {
+  border: .05rem solid #448aff;
+  border-radius: .2rem;
+  font-size: 0.96rem;
+  margin: 1.5625em 0;
+  padding: 0 1.2rem;
+  transition: box-shadow 250ms;
+}
+div.hcb-content.hcb-block.hcbnote, details.hcb-content.box.hcbnote {
+  border-color: #448aff;
+}
+div.hcb-content.hcb-block.hcbabstract, details.hcb-content.box.hcbabstract {
+  border-color: #00b0ff;
+}
+div.hcb-content.hcb-block.hcbinfo, details.hcb-content.box.hcbinfo {
+  border-color: #00b8d4;
+}
+div.hcb-content.hcb-block.hcbtip, details.hcb-content.box.hcbtip {
+  border-color: #00bfa5;
+}
+div.hcb-content.hcb-block.hcbsuccess, details.hcb-content.box.hcbsuccess {
+  border-color: #00c853;
+}
+div.hcb-content.hcb-block.hcbquestion, details.hcb-content.box.hcbquestion {
+  border-color: #64dd17;
+}
+div.hcb-content.hcb-block.hcbwarning, details.hcb-content.box.hcbwarning {
+  border-color: #ff9100;
+}
+div.hcb-content.hcb-block.hcbfailure, details.hcb-content.box.hcbfailure {
+  border-color: #ff5252;
+}
+div.hcb-content.hcb-block.hcbdanger, details.hcb-content.box.hcbdanger {
+  border-color: #ff1744;
+}
+div.hcb-content.hcb-block.hcbbug, details.hcb-content.box.hcbbug {
+  border-color: #f50057;
+}
+div.hcb-content.hcb-block.hcbexample, details.hcb-content.box.hcbexample {
+  border-color: #7c4dff;
+}
+div.hcb-content.hcb-block.hcbquote, details.hcb-content.box.hcbquote {
+  border-color: #9e9e9e;
+}
+div.hcb-content.hcb-block.hcbnote:focus-within, details.hcb-content.box.hcbnote:focus-within {
+  box-shadow: 0 0 0 .2rem #448aff1a;
+}
+div.hcb-content.hcb-block.hcbabstract:focus-within, details.hcb-content.box.hcbabstract:focus-within {
+  box-shadow: 0 0 0 .2rem #00b0ff1a;
+}
+div.hcb-content.hcb-block.hcbinfo:focus-within, details.hcb-content.box.hcbinfo:focus-within {
+  box-shadow: 0 0 0 .2rem #00b8d41a;
+}
+div.hcb-content.hcb-block.hcbtip:focus-within, details.hcb-content.box.hcbtip:focus-within {
+  box-shadow: 0 0 0 .2rem #00bfa51a;
+}
+div.hcb-content.hcb-block.hcbsuccess:focus-within, details.hcb-content.box.hcbsuccess:focus-within {
+  box-shadow: 0 0 0 .2rem #00c8531a;
+}
+div.hcb-content.hcb-block.hcbquestion:focus-within, details.hcb-content.box.hcbquestion:focus-within {
+  box-shadow: 0 0 0 .2rem #64dd171a;
+}
+div.hcb-content.hcb-block.hcbwarning:focus-within, details.hcb-content.box.hcbwarning:focus-within {
+  box-shadow: 0 0 0 .2rem #ff91001a;
+}
+div.hcb-content.hcb-block.hcbfailure:focus-within, details.hcb-content.box.hcbfailure:focus-within {
+  box-shadow: 0 0 0 .2rem #ff52521a;
+}
+div.hcb-content.hcb-block.hcbdanger:focus-within, details.hcb-content.box.hcbdanger:focus-within {
+  box-shadow: 0 0 0 .2rem #ff17441a;
+}
+div.hcb-content.hcb-block.hcbbug:focus-within, details.hcb-content.box.hcbbug:focus-within {
+  box-shadow: 0 0 0 .2rem #f500571a;
+}
+div.hcb-content.hcb-block.hcbexample:focus-within, details.hcb-content.box.hcbexample:focus-within {
+  box-shadow: 0 0 0 .2rem #7c4dff1a;
+}
+div.hcb-content.hcb-block.hcbquote:focus-within, details.hcb-content.box.hcbquote:focus-within {
+  box-shadow: 0 0 0 .2rem #9e9e9e1a;
+}
+div.hcb-content.hcb-block.hcbnote *, details.hcb-content.box.hcbnote *,div.hcb-content.hcb-block.hcbabstract *, details.hcb-content.box.hcbabstract *,div.hcb-content.hcb-block.hcbinfo *, details.hcb-content.box.hcbinfo *,div.hcb-content.hcb-block.hcbtip *, details.hcb-content.box.hcbtip *,div.hcb-content.hcb-block.hcbsuccess *, details.hcb-content.box.hcbsuccess *,div.hcb-content.hcb-block.hcbquestion *, details.hcb-content.box.hcbquestion *,div.hcb-content.hcb-block.hcbwarning *, details.hcb-content.box.hcbwarning *,div.hcb-content.hcb-block.hcbfailure *, details.hcb-content.box.hcbfailure *,div.hcb-content.hcb-block.hcbdanger *, details.hcb-content.box.hcbdanger *,div.hcb-content.hcb-block.hcbbug *, details.hcb-content.box.hcbbug *,div.hcb-content.hcb-block.hcbexample *, details.hcb-content.box.hcbexample *,div.hcb-content.hcb-block.hcbquote *, details.hcb-content.box.hcbquote * {
+  box-sizing: border-box;
+}
+div.hcb-content.hcb-block.hcbnote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbnote > summary,div.hcb-content.hcb-block.hcbabstract > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbabstract > summary,div.hcb-content.hcb-block.hcbinfo > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbinfo > summary,div.hcb-content.hcb-block.hcbtip > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbtip > summary,div.hcb-content.hcb-block.hcbsuccess > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbsuccess > summary,div.hcb-content.hcb-block.hcbquestion > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquestion > summary,div.hcb-content.hcb-block.hcbwarning > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbwarning > summary,div.hcb-content.hcb-block.hcbfailure > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbfailure > summary,div.hcb-content.hcb-block.hcbdanger > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbdanger > summary,div.hcb-content.hcb-block.hcbbug > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbbug > summary,div.hcb-content.hcb-block.hcbexample > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbexample > summary,div.hcb-content.hcb-block.hcbquote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquote > summary {
+  border-top-right-radius: 0.1rem;
+  border-top-left-radius: 0.1rem;
+  border-left-width: 0.2rem;
+  display: block;
+  min-height: 1rem;
+  border: none;
+  font-weight: 700;
+  margin: 0 -1.2rem 1rem;
+  padding: 0.4rem 0.6rem;
+  position: relative;
+  outline: none;
+}
+details.hcb-content.box.hcbnote > summary,details.hcb-content.box.hcbabstract > summary,details.hcb-content.box.hcbinfo > summary,details.hcb-content.box.hcbtip > summary,details.hcb-content.box.hcbsuccess > summary,details.hcb-content.box.hcbquestion > summary,details.hcb-content.box.hcbwarning > summary,details.hcb-content.box.hcbfailure > summary,details.hcb-content.box.hcbdanger > summary,details.hcb-content.box.hcbbug > summary,details.hcb-content.box.hcbexample > summary,details.hcb-content.box.hcbquote > summary {
+  cursor: pointer;
+}
+details.hcb-content.box.hcbnote:not([open]) > summary,details.hcb-content.box.hcbabstract:not([open]) > summary,details.hcb-content.box.hcbinfo:not([open]) > summary,details.hcb-content.box.hcbtip:not([open]) > summary,details.hcb-content.box.hcbsuccess:not([open]) > summary,details.hcb-content.box.hcbquestion:not([open]) > summary,details.hcb-content.box.hcbwarning:not([open]) > summary,details.hcb-content.box.hcbfailure:not([open]) > summary,details.hcb-content.box.hcbdanger:not([open]) > summary,details.hcb-content.box.hcbbug:not([open]) > summary,details.hcb-content.box.hcbexample:not([open]) > summary,details.hcb-content.box.hcbquote:not([open]) > summary {
+  margin-bottom: 0;
+}
+div.hcb-content.hcb-block.hcbnote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbnote > summary {
+  background-color: #448aff1a;
+}
+div.hcb-content.hcb-block.hcbabstract > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbabstract > summary {
+  background-color: #00b0ff1a;
+}
+div.hcb-content.hcb-block.hcbinfo > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbinfo > summary {
+  background-color: #00b8d41a;
+}
+div.hcb-content.hcb-block.hcbtip > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbtip > summary {
+  background-color: #00bfa51a;
+}
+div.hcb-content.hcb-block.hcbsuccess > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbsuccess > summary {
+  background-color: #00c8531a;
+}
+div.hcb-content.hcb-block.hcbquestion > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquestion > summary {
+  background-color: #64dd171a;
+}
+div.hcb-content.hcb-block.hcbwarning > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbwarning > summary {
+  background-color: #ff91001a;
+}
+div.hcb-content.hcb-block.hcbfailure > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbfailure > summary {
+  background-color: #ff52521a;
+}
+div.hcb-content.hcb-block.hcbdanger > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbdanger > summary {
+  background-color: #ff17441a;
+}
+div.hcb-content.hcb-block.hcbbug > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbbug > summary {
+  background-color: #f500571a;
+}
+div.hcb-content.hcb-block.hcbexample > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbexample > summary {
+  background-color: #7c4dff1a;
+}
+div.hcb-content.hcb-block.hcbquote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquote > summary {
+  background-color: #9e9e9e1a;
+}
+div.hcb-content.hcb-block.hcbnote > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbnote > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #448aff;
+}
+div.hcb-content.hcb-block.hcbabstract > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbabstract > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00b0ff;
+}
+div.hcb-content.hcb-block.hcbinfo > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbinfo > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00b8d4;
+}
+div.hcb-content.hcb-block.hcbtip > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbtip > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00bfa5;
+}
+div.hcb-content.hcb-block.hcbsuccess > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbsuccess > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00c853;
+}
+div.hcb-content.hcb-block.hcbquestion > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbquestion > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #64dd17;
+}
+div.hcb-content.hcb-block.hcbwarning > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbwarning > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff9100;
+}
+div.hcb-content.hcb-block.hcbfailure > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbfailure > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff5252;
+}
+div.hcb-content.hcb-block.hcbdanger > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbdanger > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff1744;
+}
+div.hcb-content.hcb-block.hcbbug > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbbug > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #f50057;
+}
+div.hcb-content.hcb-block.hcbexample > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbexample > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #7c4dff;
+}
+div.hcb-content.hcb-block.hcbquote > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbquote > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #9e9e9e;
+}
+details.hcb-content.box.hcbnote > summary > div.hcb-box-open-button,details.hcb-content.box.hcbabstract > summary > div.hcb-box-open-button,details.hcb-content.box.hcbinfo > summary > div.hcb-box-open-button,details.hcb-content.box.hcbtip > summary > div.hcb-box-open-button,details.hcb-content.box.hcbsuccess > summary > div.hcb-box-open-button,details.hcb-content.box.hcbquestion > summary > div.hcb-box-open-button,details.hcb-content.box.hcbwarning > summary > div.hcb-box-open-button,details.hcb-content.box.hcbfailure > summary > div.hcb-box-open-button,details.hcb-content.box.hcbdanger > summary > div.hcb-box-open-button,details.hcb-content.box.hcbbug > summary > div.hcb-box-open-button,details.hcb-content.box.hcbexample > summary > div.hcb-box-open-button,details.hcb-content.box.hcbquote > summary > div.hcb-box-open-button {
+  float: right;
+}
+details.hcb-content.box.hcbnote > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbabstract > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbinfo > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbtip > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbsuccess > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbquestion > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbwarning > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbfailure > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbdanger > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbbug > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbexample > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbquote > summary > div.hcb-box-open-button > i {
+  margin: 0 0.6rem 0 0.6rem;
+  font-size: 0.7rem;
+  transition: transform 250ms
+}
+details.hcb-content.box.hcbnote:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbabstract:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbinfo:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbtip:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbsuccess:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquestion:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbwarning:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbfailure:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbdanger:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbbug:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbexample:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquote:not([open]) > summary > div.hcb-box-open-button i {
+  transform: rotate(270deg);
+}
+details.hcb-content.box.hcbnote[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbabstract[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbinfo[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbtip[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbsuccess[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquestion[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbwarning[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbfailure[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbdanger[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbbug[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbexample[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquote[open] > summary > div.hcb-box-open-button i {
+  transform: rotate(180deg);
+}
+details.hcb-content.box.hcbnote summary div.hcb-box-open-button i {
+  color: #448aff;
+}
+details.hcb-content.box.hcbabstract summary div.hcb-box-open-button i {
+  color: #00b0ff;
+}
+details.hcb-content.box.hcbinfo summary div.hcb-box-open-button i {
+  color: #00b8d4;
+}
+details.hcb-content.box.hcbtip summary div.hcb-box-open-button i {
+  color: #00bfa5;
+}
+details.hcb-content.box.hcbsuccess summary div.hcb-box-open-button i {
+  color: #00c853;
+}
+details.hcb-content.box.hcbquestion summary div.hcb-box-open-button i {
+  color: #64dd17;
+}
+details.hcb-content.box.hcbwarning summary div.hcb-box-open-button i {
+  color: #ff9100;
+}
+details.hcb-content.box.hcbfailure summary div.hcb-box-open-button i {
+  color: #ff5252;
+}
+details.hcb-content.box.hcbdanger summary div.hcb-box-open-button i {
+  color: #ff1744;
+}
+details.hcb-content.box.hcbbug summary div.hcb-box-open-button i {
+  color: #f50057;
+}
+details.hcb-content.box.hcbexample summary div.hcb-box-open-button i {
+  color: #7c4dff;
+}
+details.hcb-content.box.hcbquote summary div.hcb-box-open-button i {
+  color: #9e9e9e;
+}
+div.hcb-content.hcb-cards * {
+  box-sizing: border-box;
+}
+input.hcb-content.hcb-cards-input {
+  display: none;
+}
+div.hcb-content.hcb-cards-labels {
+  position: relative;
+  box-shadow: 0 -0.05rem #00000012 inset;
+  display: flex;
+  margin-bottom: 1.25rem;
+}
+div.hcb-content.hcb-cards-labels:before {
+  background: var(--cards-color);
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: translateX(var(--md-indicator-x));
+  transition: width 225ms, transform 250ms;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  width: var(--md-indicator-width);
+}
+label.hcb-content.hcb-cards-label {
+  border-bottom: 0.1rem solid #0000;
+  border-radius: 0.1rem 0.1rem 0 0;
+  cursor: pointer;
+  color: #0000008a;
+  font-size: 0.92em;
+  font-weight: 700;
+  padding: 0 1.25rem 0.625rem;
+  transition: color 250ms;
+}
+label.hcb-content.hcb-cards-label.active, label.hcb-content.hcb-cards-label:hover {
+  color: var(--cards-color);
+}
+div.hcb-content.hcb-cards-content {
+  display: none;
+}
+div.hcb-content.hcb-cards-content.active {
+  display: block;
+}
+</style>
+    <meta name="description" content="考前再复习一下不熟悉的语法~">
+<meta property="og:type" content="article">
+<meta property="og:title" content="N1 &amp; N2 语法查缺补漏">
+<meta property="og:url" content="https://oscarcx.com/japanese/jp4-notes.html">
+<meta property="og:site_name" content="Cow">
+<meta property="og:description" content="考前再复习一下不熟悉的语法~">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-07-03T18:00:00.000Z">
+<meta property="article:modified_time" content="2026-07-04T14:32:16.241Z">
+<meta property="article:author" content="oscarcx123">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://oscarcx.com/japanese/jp4-notes.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://oscarcx.com/japanese/jp4-notes.html","path":"japanese/jp4-notes.html","title":"N1 & N2 语法查缺补漏"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>N1 & N2 语法查缺补漏 | Cow</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<style type="text/css">
+.spoiler {
+  display: inline;
+}
+p.spoiler {
+  display: flex;
+}
+.spoiler a {
+  pointer-events: none;
+}
+.spoiler-blur, .spoiler-blur > * {
+  transition: text-shadow .5s ease;
+}
+.spoiler .spoiler-blur, .spoiler .spoiler-blur > * {
+  color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  text-shadow: 0 0 10px grey;
+  cursor: pointer;
+}
+.spoiler .spoiler-blur:hover, .spoiler .spoiler-blur:hover > * {
+  text-shadow: 0 0 5px grey;
+}
+.spoiler-box, .spoiler-box > * {
+  transition: color .5s ease,
+  background-color .5s ease;
+}
+.spoiler .spoiler-box, .spoiler .spoiler-box > * {
+  color: black;
+  background-color: black;
+  text-shadow: none;
+}</style></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Cow</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="oscarcx123"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">oscarcx123</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">33</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/oscarcx123" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;oscarcx123" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://oscarcx.com/japanese/jp4-notes.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="oscarcx123">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Cow">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="N1 & N2 语法查缺补漏 | Cow">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          N1 & N2 语法查缺补漏
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2026-07-03 18:00:00" itemprop="dateCreated datePublished" datetime="2026-07-03T18:00:00+00:00">2026-07-03</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/japanese/" itemprop="url" rel="index"><span itemprop="name">日语</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>11k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>35 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>考前再复习一下不熟悉的语法~</p>
+<span id="more"></span>
+<p><strong>AあってのB（有A才B）</strong></p>
+<ul>
+<li>国民<u>あっての</u>国家</li>
+<li>理性<u>あっての</u>人間</li>
+<li>実験の成功は皆さんの努力<u>あっての</u>ことだ</li>
+</ul>
+<p><strong>Aいかんで / いかんによって + B（取决于A）</strong></p>
+<ul>
+<li>= A次第で、B…</li>
+<li>A不同，B也跟着变化（いかん = 如何）</li>
+<li>結果<u>いかんで</u>対応を決める</li>
+<li>大統領の発言<u>いかんで</u>、株価は上がったり下がったりする</li>
+</ul>
+<p><strong>Aいかんでは / いかんによっては + B（取决于A，甚至会出现B）</strong></p>
+<ul>
+<li>B = 具体的な一つの状況</li>
+<li>在某些情况下，甚至会出现B这种结果</li>
+<li>話し方<u>いかんで</u>相手に与える印象は変わる</li>
+<li>話し方<u>いかんでは</u>相手に不快感を与えることもある</li>
+</ul>
+<p><strong>Aいかんによらず・Aいかんにかかわらず + B（无论A如何，都B）</strong></p>
+<ul>
+<li>Aがどうあっても関係なくBだ</li>
+<li>能力や成果の<u>いかんによって</u>、報酬額が変わります</li>
+<li>能力や成果の<u>いかんによらず</u>、報酬額は一定です</li>
+<li>犯罪は理由の<u>いかんにかかわらず</u>絶対してはいけない</li>
+</ul>
+<p><strong>A意向形 + が/とも + B（就算A也…；不管A也…）</strong></p>
+<ul>
+<li>〜ても関係なく〜だ</li>
+<li>何を<u>言われようが</u>、考えを改めるつもりはない</li>
+<li>たとえ両親に<u>反対されようとも</u>、私はこの人と結婚すると決めた</li>
+<li>僕の大切な妹をいじめる奴は<u>誰だろうと</u>許さない</li>
+<li>注：い形容詞也可以。比如 おいしい → おいしかろうが</li>
+</ul>
+<p><strong>V意 + が/と + V辞 + まいが/と（不管做不做A，都B）</strong></p>
+<ul>
+<li>AしてもAしなくてもBだ</li>
+<li>食べ放題では、たくさん<u>食べようが食べまいが</u>料金は同じだ</li>
+<li>雨が<u>降ろうが降るまいが</u>、イベントは行われるそうだ</li>
+<li>食べようが食べまいが = …食べるまいが</li>
+<li>こようがくるまいが = …こまいが</li>
+<li>しようがするまいが = …しまいが = …すまいが</li>
+</ul>
+<p><strong>V意 + にも + V可能ない（即使想…也不能/没办法…）</strong></p>
+<ul>
+<li>暑くて<u>寝ようにも寝られない</u></li>
+<li>財布を忘れて、<u>買おうにも買えなかった</u></li>
+<li>= <u>買おうにも</u>財布を忘れて<u>買えなかった</u></li>
+</ul>
+<p><strong>限りだ = とても〜だ（非常A）</strong></p>
+<ul>
+<li>N1に合格した！うれしい<u>限りだ</u>！</li>
+</ul>
+<p><strong>Aたら最後 / たが最後 + B（一旦做A就B）</strong></p>
+<ul>
+<li>B通常是坏事</li>
+<li>〜したら、〜のような悪い結果になる</li>
+<li>カンニングなんてし<u>たら最後</u>、退学になる</li>
+<li>失敗し<u>たら最後</u>、首にされてしまう</li>
+<li>彼にお金を貸し<u>たが最後</u>、絶対に返してもらえないよ</li>
+</ul>
+<p><strong>N + かたがた（A顺便B）</strong></p>
+<ul>
+<li>= Aを兼ねてBをする</li>
+<li>結婚の報告<u>かたがた</u>、実家に帰ることにした</li>
+<li>東京出張<u>かたがた</u>、スカイツリーを見に行ってきた</li>
+<li>注：A基本都是 挨拶、報告、お見舞い、お礼、お詫び</li>
+</ul>
+<p><strong>V辞 + かたわら = ながら</strong></p>
+<ul>
+<li>彼女は大学に通う<u>かたわら</u>、モデルとして活動している</li>
+</ul>
+<p><strong>がてら = のついでに / をかねて</strong></p>
+<ul>
+<li>勉強<u>がてら</u>音楽をきく</li>
+<li>買い物<u>がてら</u>友達に本を返しに行った</li>
+</ul>
+<p><strong>V辞 + が早いか + B（刚一做A就B）</strong></p>
+<ul>
+<li>〜すると、すぐ…した</li>
+<li>只能用在过去，不能用在未来</li>
+<li>家に帰ってくる<u>が早いか</u>、また出かけていった</li>
+<li>大学を卒業する<u>が早いか</u>、日本に来ました</li>
+</ul>
+<p><strong>数量詞 + からする / からある / からの（A以上）</strong></p>
+<ul>
+<li>彼氏が１００万円<u>からする</u>指輪をくれた</li>
+<li>彼女は１０キロ<u>からある</u>荷物を持ち上げることができます</li>
+<li>昨日の事故で、１００人<u>からの</u>人がケガをした</li>
+<li>からする - 値段</li>
+<li>からある - 数量・高さ・大きさ</li>
+<li>からの - 人数</li>
+</ul>
+<p><strong>きらいがある（有…的倾向）</strong></p>
+<ul>
+<li>只能用在负面的倾向</li>
+<li>这里的「嫌い」是名词用法</li>
+<li>他人を見下す<u>きらいがある</u></li>
+<li>今の子供は野菜をあまり食べない<u>きらいがある</u></li>
+</ul>
+<p><strong>〜極まりない・〜極まる = 非常に〜だ</strong></p>
+<ul>
+<li>残念<u>極まりない</u></li>
+<li>彼女の生活は、不健康<u>極まりない</u></li>
+<li>= 彼女の生活は、不健康なこと極まりない</li>
+<li>= 彼女の生活は、不健康極まる</li>
+</ul>
+<p><strong>〜ごとし・〜ごとく・〜ごとき = まるで〜のようだ</strong></p>
+<ul>
+<li>かわいいこと天使の<u>ごとし</u></li>
+<li>天使の<u>ごとく</u>かわいい</li>
+<li>天使の<u>ごとき</u>かわいさだ</li>
+</ul>
+<p><strong>AこととてB = なので（因为A，所以B）</strong></p>
+<ul>
+<li>慣れない<u>こととて</u>失敗してしまいました</li>
+<li>１０年前の<u>こととて</u>、何も覚えていません…</li>
+<li>新人の<u>こととて</u>、わからないことも多いと思います</li>
+<li>注：一般B都是谢罪和道歉</li>
+</ul>
+<p><strong>N + なしに・V辞 + ことなしに（没有…的状态下,就…）</strong></p>
+<ul>
+<li>連絡<u>なしに</u>来られたら迷惑だよね</li>
+<li>今日は朝食を食べる<u>ことなしに</u>学校へ行った</li>
+<li>努力する<u>ことなしに</u>N１に合格はできない</li>
+</ul>
+<p><strong>〜ずくめ = 〜ばかりだ</strong></p>
+<ul>
+<li>无论好坏都能使用</li>
+<li>最近残業<u>ずくめ</u>でとても忙しい</li>
+</ul>
+<p><strong>～ないではおかない・～ずにはおかない（不能不，绝对）</strong></p>
+<ul>
+<li>【意志】絶対に〜してやる
+<ul>
+<li>仕返しをし<u>ないではおかない</u></li>
+<li>彼を処罰せ<u>ずにはおかない</u></li>
+</ul>
+</li>
+<li>【自発】自然に〜させてしまう
+<ul>
+<li>彼氏のうそは、彼女を不安にさせ<u>ないではおかなかった</u></li>
+<li>あの映画は、みんなを感動させ<u>ないではおかなかった</u></li>
+</ul>
+</li>
+</ul>
+<p><strong>ずには済まない・ないでは済まない（非…不可）</strong></p>
+<ul>
+<li>弁償し<u>ないでは済まない</u></li>
+<li>君が悪いのなら謝ら<u>ないではすまない</u></li>
+<li>検査結果によっては手術せ<u>ずにはすまなくなる</u>だろう</li>
+</ul>
+<p><strong>すら = さえ</strong></p>
+<ul>
+<li>お腹を壊したので、おかゆ<u>すら</u>食べられない</li>
+<li>アメリカに留学したことがあるのに、日常会話<u>すら</u>できない</li>
+</ul>
+<p><strong>V辞/た形 + そばから（刚…就…）</strong></p>
+<ul>
+<li>するとすぐに</li>
+<li>新しい単語を覚えた<u>そばから</u>忘れてしまう</li>
+<li>痩せたいと言った<u>そばから</u>焼きそばとラーメンを食べている</li>
+</ul>
+<p><strong>たところで</strong></p>
+<ul>
+<li>【その時】ご飯ができ<u>たところで</u>夫が帰ってきた</li>
+<li>【たとえ～でも】今さら謝っ<u>たところで</u>許されないだろう</li>
+</ul>
+<p><strong>だに（就连…；只要…就…）</strong></p>
+<ul>
+<li>Aさえしない / ～するだけで</li>
+<li>微動<u>だにしない</u> = 全く動かない</li>
+<li>考える<u>だに</u>恐ろしい事態だ</li>
+<li>今の人には想像<u>だに</u>できないだろうね</li>
+</ul>
+<p><strong>たりとも = １〜も〜ない（就连…也不能，哪怕…也不）</strong><br />
+一秒<u>たりとも</u>寝ていない<br />
+試合中は１分<u>たりとも</u>油断するな！<br />
+= 試合中は１分も油断するな</p>
+<p><strong>Nたる + N（作为…，应该）</strong></p>
+<ul>
+<li>后面一般接这个身份地位的规范、职责</li>
+<li>政治家<u>たる</u>者…</li>
+<li>彼には政治家<u>たる</u>資質がない</li>
+<li>医者<u>たる</u>もの、患者を第一に考えるべきだ</li>
+</ul>
+<p><strong>V連 + つ + V連 + つ（动作交替进行）</strong></p>
+<ul>
+<li>= 〜たり〜たり</li>
+<li>一组动词，可以互为反义，也可以是主动被动</li>
+<li>雲の間から、月が<u>見えつ隠れつ</u>している</li>
+<li>毎朝、<u>押しつ押されつ</u>満員電車に乗っている</li>
+<li>昨日の野球の試合は、<u>抜きつ抜かれつ</u>でおもしろかった</li>
+</ul>
+<p><strong>Aであれ(Bであれ)C（不论…还是…，都…）</strong></p>
+<ul>
+<li>であれ = であろうと = であろうが</li>
+<li>只用一个「であれ」的时候，通常会搭配疑问词</li>
+<li>理由は何<u>であれ</u>、遅刻した者の途中入室は認めません</li>
+<li>電車<u>であれ</u>飛行機<u>であれ</u>、この天気では無理だと思うよ</li>
+<li>大人<u>であれ</u>子供<u>であれ</u>、人に迷惑をかけてはいけない</li>
+<li>晴れ<u>であろうと</u>雨<u>であろうと</u>、イベントは予定通り行います</li>
+</ul>
+<p><strong>Vて + からというもの（自从…之后）</strong></p>
+<ul>
+<li>〜てから / 〜て以来</li>
+<li>をきっかけに、状態が大きく変わった</li>
+<li>后面不能接单次的动作，只能是持续的状态</li>
+<li>妹が生まれ<u>てからというもの</u>、お母さんは忙しそうだ</li>
+<li>結婚し<u>てからというもの</u>、お酒を飲んでいない</li>
+<li>一人暮らしをし<u>てからというもの</u>、カップラーメンを食べてばかりいる</li>
+</ul>
+<p><strong>でなくて何だろう（不是…又是什么呢）</strong></p>
+<ul>
+<li>これが悲劇<u>でなくて何だろう</u></li>
+</ul>
+<p><strong>Aじゃあるまいし（又不是…）</strong></p>
+<ul>
+<li>= 〜じゃないだろう</li>
+<li>子供<u>じゃあるまいし</u>、自分で買いなさい</li>
+<li>金持ち<u>ではあるまいし</u>、そんなに高いものは買えないよ！</li>
+</ul>
+<p><strong>〜てやまない（…不已；一直…）</strong></p>
+<ul>
+<li>ずっと〜ている / すごく〜ている</li>
+<li>Aの感情や動作がずっと強く続いている</li>
+<li>愛し<u>てやまない</u>妹</li>
+<li>彼は私が尊敬し<u>てやまない</u>先生だ</li>
+<li>二人の幸せを願っ<u>てやみません</u></li>
+</ul>
+<p><strong>〜とあって（因为）</strong></p>
+<ul>
+<li>という状況なので（Bという状況も当然だ）</li>
+<li>后面不能接推量/可能</li>
+<li>ラーメン１杯１００円<u>とあって</u>、３０分で完売した</li>
+<li>ゴールデンウィーク<u>とあって</u>、人気カフェにはたくさんの人が並んでいる</li>
+</ul>
+<p><strong>〜とあれば・〜とあらば = ～なら</strong></p>
+<ul>
+<li>あらば = 古い条件形</li>
+<li>常用搭配：〜のためとあれば</li>
+<li>山田くんは、お金のため<u>とあれば</u>何でもする</li>
+<li>かわいくて性格もいい<u>とあれば</u>、モテて当然だよ</li>
+</ul>
+<p><strong>NといいNといい（…也好…也好）</strong></p>
+<ul>
+<li>色<u>といい</u>デザイン<u>といい</u>、とてもステキだ</li>
+</ul>
+<p><strong>といったところだ / というところだ（大概是…；差不多…那个程度）</strong></p>
+<ul>
+<li>口语形：ってとこだ</li>
+<li>だいたい〜くらいだ / 〜という感じだ</li>
+<li>発車まで５分<u>といったところだ</u></li>
+<li>あの車は３００万円<u>といったところだろう</u></li>
+<li>あと４０分くらいで終わる<u>といったところだ</u>な</li>
+</ul>
+<p><strong>Aといえども（即使；虽然）</strong></p>
+<ul>
+<li>たとえAでも / いくらAでも</li>
+<li>Aの状態でも、予想することと違う場合もある</li>
+<li>先生<u>といえども</u>、間違えることはある【地位】</li>
+<li>プロ<u>といえども</u>失敗することはある【地位】</li>
+<li>９月<u>といえども</u>、まだまだ暑い日もある【予想】</li>
+<li>体にいい<u>といえども</u>、食べすぎるのはよくない【予想】</li>
+</ul>
+<p><strong>といったらない = とても〜だ（…极了）</strong></p>
+<ul>
+<li>由来：といったら(他に比べるものが)ない</li>
+<li>北海道の寒さ<u>といったらない</u></li>
+<li>北海道の寒さ<u>ったらない</u></li>
+<li>北海道は寒い<u>といったらない</u></li>
+<li>北海道は寒い<u>といったらありはしない</u></li>
+<li>北海道は寒い<u>といったらありゃしない</u></li>
+<li>= 北海道はとても寒い</li>
+<li>お母さんの料理はおいしい<u>といったらない</u></li>
+</ul>
+<p><strong>〜(か)と思いきや（原以为…没想到…）</strong></p>
+<ul>
+<li>「思いきや」的「き」是古语的过去形</li>
+<li>所以后面必须是过去形</li>
+<li>勉強している<u>かと思いきや</u>、寝ていた</li>
+<li>行った<u>と思いきや</u>、また戻ってきた</li>
+<li>今日はずっといい天気だ<u>と思いきや</u>、急に雨が降ってきた</li>
+</ul>
+<p><strong>〜ときたら（说到，提到）</strong></p>
+<ul>
+<li>うちの息子<u>ときたら</u>、勉強もしないでゲームをしてばかりいる</li>
+<li>唐揚げ<u>ときたら</u>、やっぱりビールだね！</li>
+<li>金曜日の夜<u>ときたら</u>、一杯飲まずにはいられない</li>
+</ul>
+<p><strong>〜ところを（正…的时候；…之时）</strong></p>
+<ul>
+<li>Aという状況のときにBする</li>
+<li>お忙しい<u>ところを</u>すみませんが、この文法を教えていただけますか？</li>
+<li>お疲れの<u>ところを</u>悪いんだけど、これに目を通してくれる？</li>
+</ul>
+<p><strong>にしたところで / としたところで（即使…也…；就算…也…）</strong></p>
+<ul>
+<li>Aの立場から考えてもBだ</li>
+<li>したところで = したって</li>
+<li>后面接悲观的内容</li>
+<li>進学しよう<u>としたって</u>学力がないとできない</li>
+<li>整形しよう<u>としたところで</u>中身まで変わるわけではない</li>
+<li>どれだけおいしい<u>にしたって</u>、食べ過ぎると飽きる</li>
+</ul>
+<p><strong>〜とは = なんて（竟然；没想到）</strong></p>
+<ul>
+<li>N1に満点で合格する<u>とは</u>驚いたわ！</li>
+<li>まさかあの人が失敗する<u>とは</u>…</li>
+<li>注：「とは」作为定义说明用法时，是「というのは」的省略</li>
+</ul>
+<p><strong>〜とはいえ = けれども（虽然…但是…）</strong></p>
+<ul>
+<li>飲み放題<u>とはいえ</u>、飲みすぎはよくないよ…</li>
+<li>英語が話せる<u>とはいえ</u>、日常会話できるくらいだ</li>
+</ul>
+<p><strong>〜と言わんばかりに・〜とばかりに（好像在说…，像是…）</strong></p>
+<ul>
+<li>うちの犬は、私が帰ると「おかえり」<u>と言わんばかりに</u>走ってくる</li>
+<li>彼は、こんな問題は簡単だ<u>とばかりに</u>、どんどん問題を解いていく</li>
+<li>あの人に恋人が居ないことを知り、ここぞ<u>とばかりに</u>告白した</li>
+<li>まずい<u>とばかりの</u>顔をして食べている</li>
+<li>注：ここぞとばかりに = 机会来啦，趁千载难逢的好机会</li>
+</ul>
+<p><strong>〜ともなく・〜ともなしに（前接疑问词 + 不知…）</strong></p>
+<ul>
+<li>（不確か）〜か、よくわからないが〜</li>
+<li>いつ + 助词 + ともなく - 不知何时</li>
+<li>だれ + 助词 + ともなく - 不知是谁</li>
+<li>どこ + 助词 + ともなく - 不知从哪</li>
+<li>山田くんは会計をする時になると、<u>どこへともなく</u>行ってしまう</li>
+<li><u>どこからともなく</u>、パンのいい匂いがする</li>
+</ul>
+<p><strong>〜ともなく・〜ともなしに（漫不经心地）</strong></p>
+<ul>
+<li>動A［る］ともなく動A［たら］</li>
+<li>動A［る］ともなく動A［る］と</li>
+<li>（無意識）〜しようというつもりなく、〜する</li>
+<li>テレビを<u>見るともなく見ていたら</u>、…</li>
+<li>夜空を<u>見るともなしに見ていたら</u>、流れ星が見えた</li>
+<li>ラジオを<u>聞くともなく聞いている</u>うちに寝てしまった</li>
+</ul>
+<p><strong>〜ともなると・〜ともなれば（一旦…的话；要是…）</strong></p>
+<ul>
+<li>Aという状況/場合になると、当然Bという状況になる</li>
+<li>３連休<u>ともなると</u>高速は渋滞する</li>
+<li>ケーキが１つ無料<u>ともなると</u>、多くのお客さんが来るだろう</li>
+<li>海外旅行<u>ともなれば</u>、しっかりバイトして貯金しなきゃいけないな…</li>
+</ul>
+<p><strong>～ないまでも（没有…至少也…；即使做不到…也该…）</strong></p>
+<ul>
+<li>高层次的达不到，但是低层次的还是可以的</li>
+<li>予習や復習は<u>しないまでも</u>、宿題くらいしなさい</li>
+<li>１００点<u>とは言わないまでも</u>、８０点は取りたい</li>
+<li>１０Kg<u>とは言わないまでも</u>、３Kgはやせたいな…</li>
+<li>毎日<u>とは言わないまでも</u>、せめて週に一度は電話してきてほしい</li>
+<li>彼女は美人だ<u>とは言わないまでも</u>、かわいいと思うよ</li>
+<li>常见搭配：〜とは言わないまでも</li>
+</ul>
+<p><strong>～ないものでもない・～ないでもない・～なくもない（也并非不）</strong></p>
+<ul>
+<li>= 少し〜の可能性がある</li>
+<li>すごく高いが、買え<u>ないものでもない</u></li>
+<li>彼の言いたいことがわから<u>ないものでもない</u></li>
+<li>今から急いで行ったら、間に合わ<u>ないものでもない</u></li>
+<li>「ないものでもない」一般用于个人判断和意向</li>
+<li>「ないこともない」还能用于客观事实</li>
+</ul>
+<p><strong>～ながらに・～ながらの（保持…的状态）</strong></p>
+<ul>
+<li>一般只有这几个搭配：
+<ul>
+<li>生まれながら（天生）</li>
+<li>昔ながら（一如既往）</li>
+<li>涙ながら（流着泪的状态）</li>
+</ul>
+</li>
+<li><u>昔ながらの</u>味</li>
+<li><u>昔ながらの</u>伝統を大切にしよう</li>
+<li>彼女は辛い経験を<u>涙ながらに</u>話した</li>
+<li>彼は<u>生まれながらの</u>天才です</li>
+<li>人には必ず<u>生まれながらの</u>使命がある</li>
+</ul>
+<p><strong>Nなくして(は) = Nがなかったらダメだ（如果没有…就不能…）</strong></p>
+<ul>
+<li>愛情<u>なくして</u>夫婦は務まらない</li>
+<li>失敗<u>なくして</u>は成功もありません</li>
+<li>正当な理由のあるときを除き、当該個人の同意<u>なくして</u>、個人情報を第三者へ開示いたしません</li>
+</ul>
+<p><strong>N + ならでは(のN)（只有～才有的～）</strong></p>
+<ul>
+<li>納豆は日本<u>ならではの</u>食べ物だ</li>
+<li>日本<u>ならではの</u>観光地へ行ってみたい</li>
+<li>この文化はこの国<u>ならではの</u>ものだ</li>
+</ul>
+<p><strong>V辞 + なり = 〜すると、すぐに〜（一…就立即…）</strong></p>
+<ul>
+<li>后面接马上发生了的事情，带有意外性</li>
+<li>所以不能接未来、意志、希望、要求</li>
+<li>也不能用在自己身上，前后主语也要一致</li>
+<li>娘は帰ってくる<u>なり</u>ゲームをし始めた</li>
+<li>彼女は手紙を読む<u>なり</u>笑い出した</li>
+</ul>
+<p><strong>〜なり〜なり（要么…要么…）</strong></p>
+<ul>
+<li>带有限制的「や～など～」「たり～たりする」</li>
+<li>一般只用于：命令、请求、建议、忠告</li>
+<li>煮る<u>なり</u>焼く<u>なり</u>好きにしろ</li>
+<li>パン<u>なり</u>おにぎり<u>なり</u>食べて行きなさい</li>
+<li>掃除<u>なり</u>洗濯<u>なり</u>手伝ってちょうだい</li>
+<li>コーヒー<u>なり</u>ジュース<u>なり</u>、好きなものを飲んでください</li>
+</ul>
+<p><strong>なりに / なりの + N（符合…程度，与…相应的程度、方式）</strong></p>
+<ul>
+<li>〜にふさわしい程度の</li>
+<li>私［自分］なりに - 自谦说法</li>
+<li>私<u>なりに</u>色々考えた企画です。ぜひご検討ください</li>
+<li>料理が下手<u>なりに</u>頑張って作りました</li>
+<li>安い物には安い<u>なりの</u>理由があるはずだ</li>
+<li>才能がないなら、ない<u>なりに</u>生きていく</li>
+<li>課長、先日、提出した案はどうお思いになりますか。あくまで、私<u>なりの</u>考えなんですが…</li>
+</ul>
+<p><strong>～に(は)あたらない = Aする必要/価値はない（不必；不值得）</strong></p>
+<ul>
+<li>一度失敗したぐらいで悲観する<u>にはあたらない</u></li>
+<li>ギリギリで合格したから、喜ぶ<u>にはあたらない</u>よ…</li>
+</ul>
+<p><strong>～てはたまらない・～てはかなわない = 〜ては困る（让人受不了）</strong></p>
+<ul>
+<li>試験に遅れてはかなわないので、今日は早く寝よう</li>
+<li>忙しいからといって、毎日残業させられてはかなわない</li>
+<li>て<u>は</u>たまらない：只能用于负面</li>
+<li>てたまらない：正面负面皆可</li>
+<li>例：嬉しく<u>てたまらない</u></li>
+</ul>
+<p><strong>N + にあって（处于…情况下）</strong></p>
+<ul>
+<li>どんな困難な状況<u>にあっても</u>、解決策は必ずある</li>
+<li>あの会社は経営状況の悪化<u>にあって</u>、倒産を余儀なくされたそうだ</li>
+</ul>
+<p><strong>〜に至って（到了…阶段）</strong></p>
+<ul>
+<li>友達に指摘される<u>に至って</u>、間違った日本語を使っていたことに気づいた</li>
+<li>上司に注意される<u>に至って</u>、敬語の使い方がおかしいとわかった</li>
+<li>ストレスで病気になるという状況<u>に至って</u>、会社を辞めることを決意した</li>
+</ul>
+<p><strong>〜に至るまで = 〜までも（甚至到）</strong></p>
+<ul>
+<li>あの映画は子供から大人<u>に至るまで</u>、みんなに人気だ</li>
+<li>お母さんは和食はもちろん、イタリアンから中華料理<u>に至るまで</u>何でも作れる</li>
+</ul>
+<p><strong>～にかかわる = ～に関係する（关系到…；影响到…）</strong></p>
+<ul>
+<li>会社の存続<u>にかかわる</u></li>
+<li>命<u>にかかわる</u>重病</li>
+</ul>
+<p><strong>〜にかたくない（不难）</strong></p>
+<ul>
+<li>= 〜するのは難しくない</li>
+<li>彼女の悔しさは想像<u>にかたくない</u></li>
+<li>彼の気持ちは理解する<u>にかたくない</u></li>
+</ul>
+<p><strong>〜にして（段階；並列）</strong></p>
+<ul>
+<li>段階 = 到了…阶段</li>
+<li>並列 = 是…同时也是…</li>
+<li>３回目<u>にして</u>、やっとN１に合格することができた</li>
+<li>あの子は９歳<u>にして</u>大学に合格したそうだ</li>
+<li>彼女は女優<u>にして</u>、３児の母である</li>
+<li>彼はサラリーマン<u>にして</u>世界的に有名な画家でもある</li>
+</ul>
+<p><strong>〜に即して（按，根据）</strong></p>
+<ul>
+<li>現実<u>に即して</u>行動する</li>
+<li>時代<u>に即した</u>考え方をするべきだ</li>
+</ul>
+<p><strong>〜にたえる・〜にたえない（值得…；不值得…）</strong></p>
+<ul>
+<li>〜する価値がある/ない</li>
+<li>鑑賞にたえる絵</li>
+<li>鑑賞にたえない絵</li>
+<li>鑑賞にたえる絵ではない</li>
+<li>そんな話は聞くに堪えない</li>
+<li>この本は子供向けだが、大人でも読むにたえる</li>
+</ul>
+<p><strong>〜にたえない（…不尽）</strong></p>
+<ul>
+<li>いつもお世話になり、感謝<u>にたえません</u></li>
+<li>色々とご支援くださり、感謝<u>にたえません</u></li>
+</ul>
+<p><strong>V辞に足る = Vできる（足以）</strong></p>
+<ul>
+<li>旅行する<u>に足る</u>お金が貯まった</li>
+<li>満足する<u>に足る</u>成績がとれた</li>
+<li>満足<u>に足る</u>成績がとれた</li>
+</ul>
+<p><strong>AにひきかえB（与…相比 正相反）</strong></p>
+<ul>
+<li>是「引き換える」的连用形</li>
+<li>姉<u>に引き換え</u>、妹はお転婆だ</li>
+<li>昨日<u>にひきかえ</u>、今日は寒い</li>
+<li>昨日までの寒さ<u>にひきかえ</u>、今日はとても暖かい</li>
+<li>友達は結婚していくの<u>にひきかえ</u>、私は彼氏すらいない</li>
+</ul>
+<p><strong>N/疑問詞 + にもまして（比…更加…）</strong></p>
+<ul>
+<li>Aもそうだが、Aはそれ以上にB</li>
+<li>今回のN１は、前<u>にもまして</u>難しかった</li>
+<li>今日の山田くんは、いつ<u>にもまして</u>ケチだ</li>
+<li>いつにもまして → いつも以上に</li>
+<li>誰にもまして → 誰よりも</li>
+<li>何にもまして → 何よりも一番・最も</li>
+<li>どこにもまして → どこよりも</li>
+<li>前にもまして・以前にもまして → 前よりもっと</li>
+</ul>
+<p><strong>〜の至り・〜の極み = 非常に〜だ（极其，至极）</strong></p>
+<ul>
+<li>感激の至り</li>
+<li>光栄の至り</li>
+<li>何から何までお世話になり、<u>恐縮の至り</u>です</li>
+<li>彼女は<u>贅沢の極み</u>を尽くした生活をしている</li>
+<li>１点足りず不合格だったとは、<u>痛恨の極み</u>だ</li>
+</ul>
+<p><strong>Vの / N + はおろか（不用说；岂止是A，连B都）</strong></p>
+<ul>
+<li>= 〜はもちろん、〜も</li>
+<li>只能接惊讶，不满等负面内容</li>
+<li>「〜はもちろん」正面负面皆可</li>
+<li>金<u>はおろか</u>命まで奪う</li>
+<li>酒<u>はおろか</u>ジュースさえ飲まなかった</li>
+<li>掃除<u>はおろか</u>、布団を上げたこともない</li>
+<li>このアパートにはお風呂<u>はおろか</u>、トイレもない</li>
+<li>足の骨が折れてしまったので、歩くの<u>はおろか</u>立つことさえできない</li>
+</ul>
+<p><strong>AばこそB = AだからこそB（正因为…才…）</strong></p>
+<ul>
+<li>動ば形 + こそ</li>
+<li>イ形語幹 + ければこそ</li>
+<li>ナ形語幹 + であればこそ／ならばこそ</li>
+<li>どんなことも命<u>あればこそ</u>できる</li>
+<li>死を<u>思えばこそ</u>、生の意味を知る</li>
+<li>健康で<u>あればこそ</u>、楽しい時間を過ごせる</li>
+</ul>
+<p><strong>〜たらそれまでだ・〜ばそれまでだ（若…就结束了；…的话也就没有意义了）</strong></p>
+<ul>
+<li>= それで終わりだ</li>
+<li>先生に<u>見つかったらそれまでだ</u></li>
+<li>たくさんお金を貯めても、<u>死んだらそれまでだよ</u></li>
+</ul>
+<p><strong>V辞 + べからず / V辞 + べからざる + N（禁止）</strong></p>
+<ul>
+<li>「べからず」是「べし」的否定形</li>
+<li>絵に触れる<u>べからず</u></li>
+<li>働かざる者、食う<u>べからず</u></li>
+<li>エサを与える<u>べからず</u></li>
+<li>半導体は電子部品に欠く<u>べからざる</u>物質です</li>
+</ul>
+<p><strong>～のではあるまいか = ～のではありませんか</strong></p>
+<ul>
+<li>慢性的な睡眠不足が体に様々な悪影響を及ぼしている<u>のではあるまいか</u></li>
+</ul>
+<p><strong>V辞 + べく = AするためにB（为了）</strong></p>
+<ul>
+<li>日本語を勉強す<u>べく</u>、日本に来ました</li>
+<li>車を買う<u>べく</u>、貯金をしている</li>
+</ul>
+<p><strong>〜まじき（不该…的）</strong></p>
+<ul>
+<li>基本只用在「あるまじき」「許すまじき」</li>
+<li>カンニングは、<u>あるまじき</u>行為だ</li>
+<li>万引きをするなんて、警察官として<u>あるまじき</u>行為だ</li>
+<li>飲酒運転は<u>許すまじき</u>行為だ</li>
+<li>「べし」「まじ」是古语的一组反义词</li>
+</ul>
+<p><strong>V辞 + までだ・〜までのことだ（大不了就是…而已）</strong></p>
+<ul>
+<li>= （〜がだめなら）〜すればいいから、問題ない</li>
+<li>電車がなくなったら、タクシーで帰る<u>までだ</u></li>
+<li>お金が足りなかったら、お母さんに借りる<u>までだ</u></li>
+</ul>
+<p><strong>Vた + までだ・〜までのことだ（不过是…）</strong></p>
+<ul>
+<li>= ただ～しただけだ</li>
+<li>私は事実を述べた<u>までのことだ</u></li>
+<li>聞かれたから答えた<u>までだ</u></li>
+</ul>
+<p><strong>までもない / までのことはない（不必…，用不着…）</strong></p>
+<ul>
+<li>= 〜する必要がない</li>
+<li>言うまでもない</li>
+<li>電卓を使う<u>までもない</u>さ</li>
+<li>風邪を引いただけだから、病院に行く<u>までもない</u>よ</li>
+<li>簡単な文法ですから、説明する<u>までもない</u>ですね</li>
+<li>そんなに遠くないし、タクシーに乗る<u>までのことはない</u></li>
+</ul>
+<p><strong>さることながら（不用说，不言而喻）</strong></p>
+<ul>
+<li>= AはもちろんB</li>
+<li>お金<u>もさることながら</u>、命はもっと大切だ</li>
+<li>その顔の美しさ<u>もさることながら</u>、何より声が素敵</li>
+<li>あのレストランは、料理<u>もさることながら</u>サービスがすばらしい</li>
+<li>ここの料理はそのボリューム<u>もさることながら</u>、視覚的な満足感もすごい</li>
+</ul>
+<p><strong>Aば/たら + BものをC = 〜のに（要是…就好了）</strong></p>
+<ul>
+<li>言ってくれたら、助けてあげた<u>ものを</u>、なぜ黙っていたんですか</li>
+<li>電話をしてくれたら、持っていってあげた<u>ものを</u>…</li>
+<li>教えてくれたら、手伝いに行った<u>ものを</u>…</li>
+</ul>
+<p><strong>や否や = 〜するとすぐに（一…立刻就…）</strong><br />
+えびを食べる<u>や否や</u>、体が痒くなった<br />
+薬を飲む<u>や否や</u>、腹痛が治った<br />
+彼女は、家に帰る<u>や否や</u>ゲームを始めた</p>
+<p><strong>V/A/N + (が)ゆえに（因为...所以）</strong></p>
+<ul>
+<li>AだからB。古文。硬い。</li>
+<li>彼女が美しい<u>が故に</u>、人生がうまく行ってる</li>
+<li>彼は失恋を恐れる<u>ゆえに</u>、告白できないでいる</li>
+<li>山田くんはケチ<u>ゆえに</u>モテないんだと思う</li>
+</ul>
+<p><strong>～をおいて～ない（除了…之外没有…）</strong></p>
+<ul>
+<li>貯金上手といえば、ぼくを<u>おいてほかにはいない</u>と思うんだ〜</li>
+<li>結婚するなら、彼を<u>おいてほかには考えられない</u>わ</li>
+<li>美人でダンスが上手な歌手は、彼女を<u>おいてほかにはいない</u>だろう</li>
+</ul>
+<p><strong>～を限りに・～限りで = を最後に（以…为最后；以…为止）</strong></p>
+<ul>
+<li>今日<u>を限りに</u>お酒はやめよう！</li>
+<li>健康のために、今日<u>を限りに</u>タバコは吸わないぞ</li>
+<li>今回<u>を限りに</u>二度と遅刻をしません</li>
+<li>この話はこの場<u>限りで</u>忘れてね</li>
+<li>子供のころよく遊んだ遊園地は今月<u>限りで</u>閉鎖されることになった</li>
+</ul>
+<p><strong>N + をもって（以…，凭…）</strong></p>
+<ul>
+<li>「もって」的汉字形式是「以て」</li>
+<li>用于表达&lt;手段・媒介&gt;的场景</li>
+<li>書面<u>をもって</u>お知らせします</li>
+<li>面接結果は、メール<u>をもって</u>通知します</li>
+<li>拍手<u>をもって</u>お二人をお迎えしましょう</li>
+<li>イベントを行うかどうかは、電話<u>をもって</u>連絡します</li>
+</ul>
+<p><strong>～を皮切りにして / を皮切りとして / を振り出しに（开始，以…起手）</strong></p>
+<ul>
+<li>接下来会有同类动作陆续发生</li>
+<li>東京公演<u>を皮切りに</u>日本各地で演奏会を開く</li>
+<li>東野圭吾<u>を皮切りに</u>、いろいろな小説を読むようになった</li>
+</ul>
+<p><strong>N + を禁じ得ない（不禁…）</strong></p>
+<ul>
+<li>涙［喜び］<u>を禁じえない</u></li>
+<li>この社会に絶望<u>を禁じ得ない</u></li>
+</ul>
+<p><strong>〜をものともせずに（不以为意，不把…当回事）</strong><br />
+お母さんは台風<u>をものともせずに</u>買い物に行った<br />
+周囲の反対<u>を物ともせず</u>、ひたすら意志を通した<br />
+子供たちは寒さ<u>をものともせずに</u>、外で遊んでいる</p>
+<p><strong>〜を余儀なくされる・〜を余儀なくさせる（被迫，不得已做某事）</strong></p>
+<ul>
+<li>= やむを得ない = 仕方ない</li>
+<li>辞職<u>を余儀なくされる</u></li>
+<li>撤退<u>を余儀なくされた</u></li>
+<li>XはAを余儀なくされた（受身形）</li>
+<li>= XはAするしかない状況に追い込まれた</li>
+<li>YがXにAを余儀なくさせた（使役形）</li>
+<li>= YがXをAするしかない状況に追い込む</li>
+<li><strong>X</strong>：人・組織</li>
+<li><strong>Y</strong>：事件・事情・原因</li>
+<li>慢性的な人手不足で社員<u>は</u>超過勤務<u>を余儀なくされている</u></li>
+<li>慢性的な人手不足<u>が</u>社員<u>に</u>超過勤務<u>を余儀なくさせている</u></li>
+<li>コロナの蔓延で、多くの飲食店<u>が</u>休業<u>を余儀なくされた</u>。</li>
+<li>コロナの蔓延<u>は</u>、多くの飲食店<u>に</u>休業<u>を余儀なくさせた</u>。</li>
+</ul>
+<p><strong>Nをよそに（丢在一边，不顾不管）</strong></p>
+<ul>
+<li>よそ = 余所</li>
+<li>〜を無視して</li>
+<li>〜を気にしないで</li>
+<li>〜に関係なく</li>
+<li>勉強<u>をよそに</u>遊ぶ</li>
+<li>彼は、お母さんの期待<u>をよそに</u>会社を辞めてしまった</li>
+</ul>
+<p><strong>Aんがために = AするためにB（为了…）</strong></p>
+<ul>
+<li>A（目的）必须要是重要，特别的</li>
+<li>普通的目的（比如去超市），直接用「するために」</li>
+<li>N１に<u>合格せんがために</u>、毎日がんばって勉強した</li>
+<li>大金を<u>得んがために</u>、犯罪を犯した</li>
+<li>注：这里的「が」就是现在的「の」，比如「我が社」「自由が丘」</li>
+</ul>
+<p><strong>現代・古文 意向形</strong></p>
+<ul>
+<li>飲もう - 飲まん</li>
+<li>受けよう - 受けん</li>
+<li>来よう - 来ん（こん）</li>
+<li>しよう - せん</li>
+</ul>
+<p><strong>V未 + んばかりに（几乎快要/就要…，几乎显出…的样子）</strong></p>
+<ul>
+<li>スル → せんばかりに</li>
+<li>今にも～しそうなくらい～</li>
+<li><u>溢れんばかり</u>の性欲</li>
+<li>彼女の<u>溢れんばかり</u>の笑顔に癒された</li>
+<li>頭が<u>割れんばかり</u>の頭痛に悩んでいる</li>
+<li><u>土下座せんばかり</u>に必死に謝ったが許してくれなかった</li>
+</ul>
+<p><strong>〜次第だ = 〜というわけだ（理由）</strong></p>
+<ul>
+<li>事故で電車が止まり、遅刻した<u>次第です</u></li>
+<li>母が病気になったため、帰国することにした<u>次第です</u></li>
+<li>日常生活见不到，商业场合比较多</li>
+</ul>
+<p><strong>V辞 + に + V可能否定形（想做…却不能…）</strong></p>
+<ul>
+<li>〜たいのに〜できない</li>
+<li>蚊がいたので<u>寝るに寝られなかった</u></li>
+<li>お金がないので、<u>買うに買えなかった</u></li>
+<li>上司が残業しているので、<u>帰るに帰れなかった</u></li>
+<li>受験に失敗した彼はとても落ち込んでいて、これからどうするかなんて今は<u>聞くに聞けない</u></li>
+</ul>
+<p><strong>AたらAたで（如果真的A了，那么A自然又有A自己的……）</strong></p>
+<ul>
+<li>すごく眠いのに<u>寝たら寝たで</u>すぐ起きてしまう = 终于睡着了，可睡着以后又马上醒了</li>
+<li>初恋の人に会ってみたいけど<u>会ったら会ったで</u>気まずいだろう = 真见面了，又会尴尬</li>
+<li>最初はあまり興味なかったけど、<u>観たら観たで</u>面白かった = 真看了以后，又发现有意思</li>
+<li>お金持ちになるのは簡単じゃないし、お金持ちに<u>なったらなったで</u>お金持ちなりの苦労も待っている = 有钱了，自然有有钱人的烦恼</li>
+</ul>
+<p><strong>AならAで（如果…就…）</strong></p>
+<ul>
+<li>「な形容詞・名詞」的情况，更倾向用「〜なら〜で」</li>
+<li><u>反対なら反対で</u>、ちゃんと理由を説明しなさい</li>
+<li>= 如果反对的话，就拿出反对的理由</li>
+<li><u>嫌なら嫌で</u>、そう言えばよかったじゃない！</li>
+<li><u>嫌だったら嫌だったで</u>、そう言えばよかったじゃない！</li>
+<li>= 如果你不喜欢，那就直接说不喜欢啊！</li>
+</ul>
+<p><strong>に越したことはない（~再好不过了）</strong></p>
+<ul>
+<li>給料は多い<u>に越したことはない</u></li>
+<li>健康のためには、タバコは吸わない<u>に越したことはない</u></li>
+<li>住む場所は静かである<u>に越したことはない</u></li>
+<li>注：な形・名詞は「ーである＋〜」という言い方もある</li>
+</ul>
+<p><strong>V辞 + べくして + Vた（结果完全是意料之中）</strong></p>
+<ul>
+<li>当然の結果として〜になった</li>
+<li>彼女はN１に<u>合格するべくして合格した</u></li>
+<li>彼は毎日がんばって練習していた。試合には<u>勝つべくして勝った</u>んだよ</li>
+<li>「べし」表示：应该、理所当然、必然</li>
+<li>「VるべくしてVた」字面就是：该V，所以V了</li>
+</ul>
+<p><strong>AならまだしもB（…的话就算了；…的话还好）</strong></p>
+<ul>
+<li>〜だったらまだいいが、〜は</li>
+<li>３０分くらい<u>ならまだしも</u>、２時間も並ぶなんてバカだね</li>
+<li>１回<u>ならまだしも</u>、２回も失敗してしまった</li>
+<li>逃げるだけ<u>ならまだしも</u>、俺は嘘を吐いてお前の父親に濡れ衣まで着せたんだ。許せないだろ？</li>
+</ul>
+<p><strong>～のをいいことに（利用…；以…为借口）</strong></p>
+<ul>
+<li>Aの状況、機会を利用してB(よくないこと)をする</li>
+<li>休みな<u>のをいいことに</u>昼まで寝てた</li>
+<li>顔見えない<u>のをいいことに</u>ひどいこと言う人は卑怯だ</li>
+<li>研究室に私しかいない<u>のをいいことに</u>、音楽をスピーカーで流しながら仕事をする</li>
+</ul>
+<p><strong>～た弾みに／弾みで／た拍子に／拍子で（刚一…就…）</strong></p>
+<ul>
+<li>転んだ<u>弾みに</u>、たまごを割ってしまった</li>
+<li>重いものを持ち上げた<u>はずみに</u>、腰を痛めてしまった</li>
+<li>友達にぶつかった<u>拍子で</u>、コーヒーをこぼしてしまった</li>
+</ul>
+<p><strong>～わ～わで = 〜し〜し（又…又…）</strong></p>
+<ul>
+<li>傘を忘れる<u>わ</u>、スマホがない<u>わで</u>大変だった</li>
+<li>= 傘を忘れる<u>し</u>、スマホがない<u>し</u>大変だった</li>
+<li>バイトがある<u>わ</u>、テストが近い<u>わ</u>で忙しい</li>
+<li>基本上都是用在负面情况，比如「大変だ」「困った」</li>
+</ul>
+<p><strong>〜だの〜だの = 〜や〜など（…啦…啦）</strong></p>
+<ul>
+<li>只能用在：非難する気持ち・不満</li>
+<li>主人はバッグ<u>だの</u>靴<u>だの</u>、娘が欲しがるものは何でも買ってくる…</li>
+<li>お母さんは勉強しろ<u>だの</u>早く寝ろ<u>だの</u>、本当にうるさい</li>
+<li>彼は給料が安い<u>だの</u>仕事が忙しすぎる<u>だの</u>、文句ばかり言っている</li>
+</ul>
+<p><strong>ありき（以…为前提）</strong></p>
+<ul>
+<li>～の存在を前提として</li>
+<li>結論<u>ありきの</u>会議に参加しても意味がない</li>
+<li>残業<u>ありきで</u>スケジュールを組むのは間違っている</li>
+</ul>
+<p><strong>AならいざしらずB（如果…的话另当别论，但是…的话就很严重了）</strong></p>
+<ul>
+<li>Aならまだいいが、Bは</li>
+<li>英語を始めて１年くらい<u>ならいざしらず</u>、５年も勉強しているのに話せるようにならない</li>
+<li>２０年前<u>ならいざしらず</u>、現在はネットなしでは生活できないと思う</li>
+<li>A：彼氏にドタキャンされたって本当？</li>
+<li>B：うん。仕事<u>ならいざしらず</u>、友達と飲みに行くからって言われたの…</li>
+<li>A：ひどい！そんな人とは別れたほうがいいよ！！</li>
+</ul>
+<p><strong>～ようによっては／ようでは（取决于/根据…的方式）</strong></p>
+<ul>
+<li>ようによって = いろいろな状況</li>
+<li>ようによっては = 具体的な一つの状況</li>
+<li>言葉は言い<u>ようによって</u>人を喜ばせも悲しませもする</li>
+<li>この絵は見<u>ようによって</u>少女に見たり老婆に見えたりする</li>
+<li>この選手は癖が強いが、使い<u>ようによっては</u>チームの中でうまく機能するはずだ</li>
+<li>ここから目的地まで、道の混み<u>ようによっては</u>１時間かかる場合もある</li>
+</ul>
+<p><strong>AひとつでB（全凭…）</strong><br />
+話し方<u>ひとつで</u>、相手にいい印象を与えることができるものです</p>
+<p><strong>Vた + ためしがない（从来没有…）</strong></p>
+<ul>
+<li>今まで〜だったことがない</li>
+<li>只用于负面的情况（非難する気持ち）</li>
+<li>彼女はいつも三日坊主で何をやっても<u>続いたためしがない</u></li>
+<li>よく宝くじを買うが、<u>当たったためしがない</u></li>
+<li>彼は約束を<u>守ったためしがない</u></li>
+<li>注：「ためし」写成汉字是「例」，意思是先例、前例</li>
+</ul>
+<p><strong>一…立刻就… 同义替换</strong></p>
+<ul>
+<li>駅に着い<u>たら、すぐ</u>電話してください。</li>
+<li>田中さんは仕事が終わる<u>と、すぐ</u>帰ってしまう。</li>
+<li>窓を開け<u>たとたん</u>、ペットのオウムが逃げてしまった。</li>
+<li>太郎は家に帰ってきた<u>かと思うと</u>、もう居間でゲームをしている。</li>
+<li>生徒たちは昼休み開始のチャイムが鳴る<u>か</u>鳴ら<u>ないかのうちに</u>、教室を飛び出していった。</li>
+<li>社長が戻り<u>次第</u>、こちらからお電話します。</li>
+<li>彼女は座席に着く<u>が早いか</u>、スマホでドラマを見始めた。</li>
+<li>犯人は警官の姿を見つける<u>なり</u>、慌てて逃げだした。</li>
+<li>無罪の判決が出る<u>や否や</u>、マスコミは一斉に無罪確定のニュースを報じた。</li>
+<li>部屋を片付ける<u>そばから</u>、子供が散らかすので、嫌になってしまう。</li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/law/civil-law.html" rel="prev" title="民法笔记（Civil Law）">
+                  <i class="fa fa-angle-left"></i> 民法笔记（Civil Law）
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 2020 – 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-terminal"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">oscarcx123</span>
+        <span class="post-meta-item">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-chart-line"></i>
+          </span>
+          <span title="站点总字数">278k</span>
+        </span>
+        <span class="post-meta-item">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-coffee"></i>
+          </span>
+          <span title="站点阅读时长">15:28</span>
+        </span>
+  </div>
+  <div class="powered-by">
+    <span class="post-meta-item">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v6.3.0 强力驱动
+    </span>
+    <span class="post-meta-item"> 主题 – <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v8.18.1
+    </span>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script size="300" alpha="0.6" zIndex="-1" src="/js/ribbon.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.6.0/pjax.min.js" integrity="sha256-vxLn1tSKWD4dqbMRyv940UYw4sXgMtYcK6reefzZrao=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.0.8/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/pjax.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/katex.min.css" integrity="sha256-3574TpfThVfeAhg+I4+N39EJiLN3QUkuEsMVe8hWAR4=" crossorigin="anonymous">
+  <script class="next-config" data-name="katex" type="application/json">{"copy_tex_js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/contrib/copy-tex.min.js","integrity":"sha256-Us54+rSGDSTvIhKKUs4kygE2ipA0RXpWWh0/zLqw3bs="}}</script>
+  <script src="/js/third-party/math/katex.js"></script>
+
+
+<script type="text/javascript">
+  // 显示“展开”和“折叠”
+  function collapsableTitle(x) {
+    var nav = document.getElementsByClassName("sidebar-nav-toc")[0];
+    if (x.matches) { // If media query matches
+      var content = document.getElementsByClassName("sidebar-panel-container")[0];
+      if (content.style.display = "none") {
+        nav.textContent = "文章目录 [展开]";
+      }
+      else {
+        nav.textContent = "文章目录 [折叠]";
+      }
+    } 
+    else {
+      nav.textContent = "文章目录";
+    }
+  }
+
+  var x = window.matchMedia("(max-width: 991px)"); // media query
+  collapsableTitle(x);
+  x.addListener(collapsableTitle);
+
+  // 控制目录的折叠
+  var tos = document.getElementsByClassName("sidebar-nav")[0];
+  var i;
+
+  tos.addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = document.getElementsByClassName("sidebar-panel-container")[0];
+    var nav = document.getElementsByClassName("sidebar-nav-toc")[0];
+    if (content.style.display === "block" && window.innerWidth < 991) {
+      content.style.display = "none";
+      nav.textContent = "文章目录 [展开]";
+    } else {
+      content.style.display = "block";
+      if (window.innerWidth < 991) {
+        nav.textContent = "文章目录 [折叠]";
+      }
+    }
+  });
+
+  // 因为启用pjax，需要监听complete事件，来实现默认折叠效果
+  document.addEventListener('pjax:complete', function() {
+    if (window.innerWidth < 991) {
+      let content = document.getElementsByClassName("sidebar-panel-container")[0];
+      content.style.display = "none";
+      let nav = document.getElementsByClassName("sidebar-nav-toc")[0];
+      nav.textContent = "文章目录 [展开]";
+      }
+    });
+  </script>
+</body>
+</html>
